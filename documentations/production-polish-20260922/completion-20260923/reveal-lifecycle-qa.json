@@ -1,0 +1,255 @@
+[
+  {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestRaccoon",
+      "Added": 1,
+      "UID": "52c4fc4d-bc15-4e3c-ae36-efcc85bce3ca"
+    },
+    "Action": "ContinueReward",
+    "Showcase": {
+      "Ok": true,
+      "Result": {
+        "Prompts": false,
+        "Busy": true,
+        "Phase": "Showcase",
+        "UID": "52c4fc4d-bc15-4e3c-ae36-efcc85bce3ca",
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true,
+        "Texture": "rbxassetid://129022509074285",
+        "Species": "ForestRaccoon",
+        "Mesh": "rbxassetid://97924899190875",
+        "Ready": true
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "Saved": {
+      "Ok": true,
+      "Result": {
+        "Owned": true,
+        "Equipped": false,
+        "Index": true
+      }
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestTreeFrog",
+      "Added": 1,
+      "UID": "07bd4abc-2249-4931-af76-0b5beac94d08"
+    },
+    "Action": "SkipHatch",
+    "Showcase": {
+      "Ok": true,
+      "Result": {
+        "Prompts": false,
+        "Busy": true,
+        "Phase": "Showcase",
+        "UID": "07bd4abc-2249-4931-af76-0b5beac94d08",
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true,
+        "Texture": "rbxassetid://133597800956686",
+        "Species": "ForestTreeFrog",
+        "Mesh": "rbxassetid://126806763850171",
+        "Ready": true
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "Saved": {
+      "Ok": true,
+      "Result": {
+        "Owned": true,
+        "Equipped": false,
+        "Index": true
+      }
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestBrownBat",
+      "Added": 1,
+      "UID": "742751c4-8da8-4d76-9adb-4a0a3da0a5b7"
+    },
+    "Action": "EquipReward",
+    "Showcase": {
+      "Ok": true,
+      "Result": {
+        "Prompts": false,
+        "Busy": true,
+        "Phase": "Showcase",
+        "UID": "742751c4-8da8-4d76-9adb-4a0a3da0a5b7",
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true,
+        "Texture": "rbxassetid://84452625990128",
+        "Species": "ForestBrownBat",
+        "Mesh": "rbxassetid://106744044776841",
+        "Ready": true
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "Saved": {
+      "Ok": true,
+      "Result": {
+        "Owned": true,
+        "Equipped": false,
+        "Index": true
+      }
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestLeafAntler",
+      "Added": 1,
+      "UID": "149ecc5f-cbf0-4311-b80b-f2dbac1aa27f"
+    },
+    "Action": "ContinueReward",
+    "Showcase": {
+      "Ok": true,
+      "Result": {
+        "Prompts": false,
+        "Busy": true,
+        "Phase": "Showcase",
+        "UID": "149ecc5f-cbf0-4311-b80b-f2dbac1aa27f",
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true,
+        "Texture": "rbxassetid://123865829385359",
+        "Species": "ForestLeafAntler",
+        "Mesh": "rbxassetid://111837749719637",
+        "Ready": true
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "Saved": {
+      "Ok": true,
+      "Result": {
+        "Owned": true,
+        "Equipped": false,
+        "Index": true
+      }
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestEmeraldWing",
+      "Added": 1,
+      "UID": "a7ce287e-48b6-4062-a403-3cab9210b1dc"
+    },
+    "Action": "ContinueReward",
+    "Showcase": {
+      "Ok": true,
+      "Result": {
+        "Prompts": false,
+        "Busy": true,
+        "Phase": "Showcase",
+        "UID": "a7ce287e-48b6-4062-a403-3cab9210b1dc",
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true,
+        "Texture": "rbxassetid://73081746031370",
+        "Species": "ForestEmeraldWing",
+        "Mesh": "rbxassetid://89750756176673",
+        "Ready": true
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "Saved": {
+      "Ok": true,
+      "Result": {
+        "Owned": true,
+        "Equipped": false,
+        "Index": true
+      }
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestSkunk",
+      "Added": 1,
+      "UID": "bb9ad6b8-e2fe-4bd1-a37c-641e569eaf54"
+    },
+    "DuringDeath": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "AfterRespawn": {
+      "Ok": true,
+      "Result": {
+        "Prompts": true,
+        "Busy": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "SubjectCurrent": true
+      }
+    },
+    "StillOwned": {
+      "Ok": true,
+      "Result": true
+    }
+  }
+]

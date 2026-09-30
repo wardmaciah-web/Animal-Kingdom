@@ -1,0 +1,663 @@
+{
+  "Compared": 164,
+  "Differences": [],
+  "Synced": false,
+  "Files": [
+    {
+      "File": "src/ReplicatedStorage/ClientSource/Client/AnimalKingdomController.lua",
+      "SHA256": "e9fb6107b80a5dda0b3a8d7b4b417c06b6858d1326e4cdc90ec96c40f80ef8b2"
+    },
+    {
+      "File": "src/ReplicatedStorage/ClientSource/Client/DataController.lua",
+      "SHA256": "92b55b69a38c4d35d79fc5eeb173c19ace75468780e909165c87b4f101e77d6c"
+    },
+    {
+      "File": "src/ReplicatedStorage/ClientSource/Client/TemplateController/init.lua",
+      "SHA256": "a00f916894752c2488b9bcac3d82deadfdff41184ae1cf5e554db8ea31960ade"
+    },
+    {
+      "File": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Accessor.lua",
+      "SHA256": "d51da2551e5538e8b106fbb9146880064a7c57252c7104d9667a6e4a36516380"
+    },
+    {
+      "File": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Mutator.lua",
+      "SHA256": "c5adc680b9c8402f5c7b32ecbfecf4fc4c05ff57623bc922453d6880d08fb41f"
+    },
+    {
+      "File": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Others/Template.lua",
+      "SHA256": "6773fc347ba34a0269bb15e133af5c5656260f03c4e5dc2c8a30da5110e280b4"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/AdminCameraDefinitions.lua",
+      "SHA256": "9017516c835c7e533121737c4b3364f73dd578edc3792d7a388ab1e40ea65466"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/AdminCommandDefinitions.lua",
+      "SHA256": "f66dcc34c7b8777385f106cb5afb47f52aee154625331d1717a9c0ea9e22d7e2"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Config/BiomeEnvironmentDatabase.lua",
+      "SHA256": "c7b2c740a7274cac6085bb6837be3373eac7fdd7fcff7b0f68dae11a5e257c3b"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/EventDefinitions.lua",
+      "SHA256": "a25725c6bfafb98ddf5e01b40e72aadfc68b8423c3e811d066aba0dce4ee1f7e"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/AssetResolver.lua",
+      "SHA256": "b864127fdb4589cc67444d04817527fdf85149c06352aab9ad485daf1a1021e4"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/CameraOwnership.lua",
+      "SHA256": "85aecf1d5230ee7a197e5a5687ee508ee37ac908af3689c42627c57d3e7c9449"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/AuthoredTreeDefinitions.lua",
+      "SHA256": "af481cc8dad05e92a46e127faf3d5ad23e6dbeee2bfe26f7f38e857237a3e3bc"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/BiomeDefinitions.lua",
+      "SHA256": "bcf040545054e127c32ca0ee6da006d7c17d553e43692c613e1b726dd927e878"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ChallengeDefinitions.lua",
+      "SHA256": "3e69cdfa917c32cd38af49cfb420c0d43cfc30ff3273f78693ea30e25068c66d"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/CurrencyDefinitions.lua",
+      "SHA256": "3688b534c3a889e6209188d8f3ac7f411056ba5434bf124856d19127707b9d95"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/DropTables.lua",
+      "SHA256": "bc421cffba1c5ab7cc75073499593d75d4fe021d2048e1844fd316e96afa8699"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua",
+      "SHA256": "fbe48ce495985e8dafd05bceb65cefb78750ca2e414bc3a5f31e9ea8cbd8ab29"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ForestPetDefinitions.lua",
+      "SHA256": "d97c43906a60e21084106aa2d9d4104c616feb27a7677294800133ae375cafa1"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ForestTreeDefinitions.lua",
+      "SHA256": "7bf126ee0cd180d694689bab1568b58e3aaa65f9f08bcd968a8994d5e140053f"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GameplayEffectsDefinitions.lua",
+      "SHA256": "69c794c660f08fb4871386fba5c6d59887cb30dda962c1d2a8a1af029198b9a7"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua",
+      "SHA256": "f231a250d69f3416eb5267f9e9cccc1eecf2c2133fb1eb024413e0adf521db38"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ImportedPetDefinitions.lua",
+      "SHA256": "5a7955dc9400fa71732a39967974627c0b1f3b64a2fdc3cc7e6a4c2ca4b3c727"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/IndexRewardDefinitions.lua",
+      "SHA256": "73e283118ff3b1cc16ea957f45ab96e85dbc27d40ac6e2c818a147e75aa59559"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/MeadowTreeDefinitions.lua",
+      "SHA256": "d397242403c27f5a932a43ebf764afee858c97abeb268beb24fc1245730ac1de"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+      "SHA256": "22e808b66092b33a28efac6d1bff9a65cf5ed8f2ddb62cdbe7e1b9ba246e1269"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/RarityDefinitions.lua",
+      "SHA256": "a72ee96621a1f7344484ab5751cdbdeaa11ee7e84b9ebd17f56c6608b8772ca8"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/SanctuaryDisplayDefinitions.lua",
+      "SHA256": "2b16822581f406733306585acd7b43aa3f8f4a8d5c42facf5aedcd95729d862f"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/SeasonalDefinitions.lua",
+      "SHA256": "7db7a99d5851e669f673ba67db5952ce33ea709ed1218e235f6c777758b4badf"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ShopDefinitions.lua",
+      "SHA256": "7c910fbff2ecf92cc478a86f7d7420d37dcee12b1b8b6883d633b05acb034c3b"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/TutorialDefinitions.lua",
+      "SHA256": "ce992db32e93c5f5887fd31fd0b0b7589d43bedd854e824a4467c619f1be3215"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/UpgradeDefinitions.lua",
+      "SHA256": "19b3ddf16f96df80f74d5331a8f38ba16466e0cb0ad1547df6d6733d14077387"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/VariantDefinitions.lua",
+      "SHA256": "ea6cd917646a395a6e07b91e4f3789f9858d615bad283b5978db463a7c2ac6ac"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/WeatherGameplayDefinitions.lua",
+      "SHA256": "0511b8ade2db6c356e481364c0c9a128f9775637a227a281a0935cec33ddfc61"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/FollowerFormation.lua",
+      "SHA256": "17a7943ad6b9ec10ef83792332247e28d2d2c0136a0a261c248061b2cce7e04f"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/GardenProgress.lua",
+      "SHA256": "d247a39a3fc0134dfc37f40b31cbafc8e2b1b7ec28bdb953aa9893c53477bb29"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua",
+      "SHA256": "58fd6a319a88a7af88f7b29a1d864ca49a0e86ee39e947683ed3e272f99e2cad"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetAssetLoading.lua",
+      "SHA256": "59e834ed9bc8b73dab2020b5e0a56aa8fd201316a08be6b1f7cc39f9b702c069"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetAssetValidator.lua",
+      "SHA256": "481079c63063d344b79295bff9d4f7979366ba37e6a994f70a41f7ac178d7118"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetMath.lua",
+      "SHA256": "73695312f6e088c981914b1cd85cdb5e92fd8e0f552a06653f8da73e5a82b989"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetModelResolver.lua",
+      "SHA256": "d0da6b39a163e6a9fd76bd0057de16e854d764efb702acf1ce4265e9063eb6ad"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetModelValidation.lua",
+      "SHA256": "7beb8ae7c52b9a48f4f94f336848ac62708c2814206ab09b546a199271fd179d"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetVisualGeometry.lua",
+      "SHA256": "743a2c8e19c1ca7e9b134f46922f595de97df11fef54daf3a5d2637814ba6703"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PresentationSounds.lua",
+      "SHA256": "fad71517df7a771999606315e92246fe65356068fd8b1bcc994319ec4c8b126d"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/ProfileMigrations.lua",
+      "SHA256": "c867c5f56551d01f2a5b7981cd2623dc8509c9faa2a2ee2c9d32a16ca080db91"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/WeightedRandom.lua",
+      "SHA256": "8ff7c0c07aac1e1aba5006fc1177d3a928baf67864372243a69f3490e27ff934"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/MeteorShowerEffects.lua",
+      "SHA256": "25e365fd5d5c447fe7c4bc3c7f1e4f7a7b9e09f1b6699a467c2c0b41582533c2"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/SpiritNightEffects.lua",
+      "SHA256": "dcc26352e435f7dbbfbbee0e740da5e1d5b2bc317c8f9144cbf7dde66446dda7"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/WeatherAudioController.lua",
+      "SHA256": "654fc173d917c60d8dec6d58ba20cf090f3b35eb2fbfdaec997d1f76a3516b55"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/WeatherCelestialEffects.lua",
+      "SHA256": "628dc357ef513183cb326325b366526ae076c948a5f44cd12c542cdf45ac8f93"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/WeatherEnvironmentEffects.lua",
+      "SHA256": "1a2b9330ed9ff0802e6023a157622d89228150d4e088e28063206705dc8cc302"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/WeatherSoundDefinitions.lua",
+      "SHA256": "9f0961ad2d346bdf6306b54a934ea5ae5136ff02cdd8f5650427b82902085786"
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/WeatherVFXQuality.lua",
+      "SHA256": "097ece0594f08ffd39704eaa0b6a5f8544e41832816061cef4de52d74358169d"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/AnimalKingdomConfig.lua",
+      "SHA256": "bdd0a10a09d174e394b89ab67d79d0350067fb1ea3803cb829004cd7e1775f91"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/BiomeDatabase.lua",
+      "SHA256": "cf4cb6ae6ba231ab1299c39e5ac60a6614109f9d369f811427a643666852909e"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/MutationDatabase.lua",
+      "SHA256": "7b92b202ce2faad60ffdc12524acd72d14d39fd439154941873418806e9c0d04"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/NumNomDatabase.lua",
+      "SHA256": "3042e6febd4b8e1d6e4857aff6c4ebf13af7c5e0e7015b5937ad4fbefa93900d"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/PetDatabase.lua",
+      "SHA256": "39bfe1e5696510254f32156ebd73ee222561edfa0fd66acf65f38c699fe10ab2"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/ProfileTemplate.lua",
+      "SHA256": "bc993ab91a4dd8f20789d712961c09fcf1bdcb431e53f8cab19fcd9dc58d25d8"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Datas/ShakeableDatabase.lua",
+      "SHA256": "94ba8d0201c5b3b5083342c6e33d70e7dc3d1518b216322a8c588878e4bafcc5"
+    },
+    {
+      "File": "src/ReplicatedStorage/SharedSource/Utilities/ScriptsLoader/ComponentsInitializer.lua",
+      "SHA256": "766b65ea6ce504af91a4310b47761a11068b99acca07dfe1b8fb0fda4a9787d8"
+    },
+    {
+      "File": "src/ServerScriptService/AK_BiomeLabelRemover.server.lua",
+      "SHA256": "fd7364acd5f90638018edf04fecb0f6bd917a2f3f1d78174fe0437fbbae88241"
+    },
+    {
+      "File": "src/ServerScriptService/AK_PlotAssignment.server.lua",
+      "SHA256": "5383671d94bd558d29b6135b4fb3939f434f7a7f0c97d49fe8ec6fe780996b7d"
+    },
+    {
+      "File": "src/ServerScriptService/AK_TownCollision.server.lua",
+      "SHA256": "00113600225ea68200ad24830dc3ed61efab55ac731a9b678e077d1045832eac"
+    },
+    {
+      "File": "src/ServerScriptService/AK_TownVisualRuntime.server.lua",
+      "SHA256": "eb1e8684f3752fb98aa6a0101a1622da57e0d3a770d0b0d0cdeba5e79a0f3361"
+    },
+    {
+      "File": "src/ServerScriptService/AdminCommandCenter/ActivityLog.lua",
+      "SHA256": "cd76334894d24111019ed96f077a8b9fbb712e8b8c594871b04a28bf1927d1bc"
+    },
+    {
+      "File": "src/ServerScriptService/AdminCommandCenter/PlotStatus.lua",
+      "SHA256": "18c98884dbc6857b2d0d294f90a4de6a793b19399eda8a6d4d1ed97cfa0ed671"
+    },
+    {
+      "File": "src/ServerScriptService/AdminCommandCenter/RequestPolicy.lua",
+      "SHA256": "16a927655566a2c79b059a6ef99573fb5f35a4dbf3fbf502ae74096e1e3c4cc9"
+    },
+    {
+      "File": "src/ServerScriptService/AdminCommandCenter/RoomPanels.lua",
+      "SHA256": "3b07aa3bf1df0e696d47decebc71a2ac04bac40920802afe6b4ed11de290dc6d"
+    },
+    {
+      "File": "src/ServerScriptService/AdminCommandCenter/Teleports.lua",
+      "SHA256": "34b83d09f65e13ce7166543a63bf966dcb24e598515973e4d2b7f23ae2eef854"
+    },
+    {
+      "File": "src/ServerScriptService/BiomeTeleport/init.server.lua",
+      "SHA256": "b66e007c0586895f2c73b31b1ff32b895799bf720bad4703c6ecc43da44575fc"
+    },
+    {
+      "File": "src/ServerScriptService/BiomeTeleport/Destinations.lua",
+      "SHA256": "f91958ec326ab800bf3126cc369c54e7c4c8382e19e516f3e318d96978207835"
+    },
+    {
+      "File": "src/ServerScriptService/BiomeTeleport/Landing.lua",
+      "SHA256": "78bba9786c36c5bebd29935ea9de6e6b9019c3e35b2f5e5c418fcc1d0aaf880a"
+    },
+    {
+      "File": "src/ServerScriptService/BiomeTeleport/RequestHandler.lua",
+      "SHA256": "3c665f8acfac1791fc8241984ff8218832d83c0481ed03ab056dea293c1f2cf9"
+    },
+    {
+      "File": "src/ServerScriptService/PetAssetDiagnostics.server.lua",
+      "SHA256": "57ed6d0d4df81cdb03fdd7562e60a0cd14a680fdd317d074c096497c9e9887c2"
+    },
+    {
+      "File": "src/ServerScriptService/PlotLocator.lua",
+      "SHA256": "33fd0b2b8856cb0b30165e9e3efbe7569797c0b63b4b72652f7710ab04cbb288"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Externals/ProfileService.lua",
+      "SHA256": "a7d3caeb6f4b46b09d1f54efdd976422839ed9a0b5494d8a06c3339a7451b983"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Externals/ProfileStore.lua",
+      "SHA256": "36a0bafea10a03d6de24835989fe560169f9aca3f641be741a77914dd51c8cef"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/AdminCommandService.lua",
+      "SHA256": "697fb9620f1785ff9621c6bc62b411d95e799fc9299de86d49a1bddf3622eb7d"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/BiomeService.lua",
+      "SHA256": "00746e04f1713ee4f7b73b49edb7c1c865f81f2951034896d496b9c12059b01f"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/ChallengeService.lua",
+      "SHA256": "92787ba6532b068090ae7c5c0845b1033893b01663335ddc83d52451d4d2d62a"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/CurrencyService.lua",
+      "SHA256": "75b60fd047873a4b1acd9e213bd0f484ec8edc520609585b0eb3b83697c866bd"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/EconomyService.lua",
+      "SHA256": "15d3ab8bc1beed30ce0792ba1548f2d0137e07180b15922b03a44ee8b483232a"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/EggService.lua",
+      "SHA256": "21aaee239c841a1d5e4aa3bd66f6a47672b6eac5b5b547baf1c4d7ba7b76f1fe"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/EventModifierService.lua",
+      "SHA256": "96d887a6af508c5923c6796634f11c6b8cb1c6fb01e4062a0f26da5ffca3b6a6"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+      "SHA256": "e7e6d39039dfb709f2b2907e8322181593631a5615febb239061a0d2ed9f4e21"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+      "SHA256": "a00ddc0e9ca0ec51b9f6f1800b9367031ee3e92b379a407a2852a61e617f49ea"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/HarvestService.lua",
+      "SHA256": "05aff322f3ed6c5e12bde4f349f2e80942df3091b4547bea3c50577bfadef458"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/IndexService.lua",
+      "SHA256": "667838186b8ff2bf3e4bccbb2aea51e8d68a9fff5017c88b7d1eb5c1562899a0"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/LootService.lua",
+      "SHA256": "ee48ad0649b790f9729a90676eaff319489e48f7d345611aa3d1e8c44cba181b"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/ModifierService.lua",
+      "SHA256": "f83c910b32f7d790448e64673a5c92dce920886796820ea8b3aa8fa216a8d6c8"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/NotificationService.lua",
+      "SHA256": "dd8a49483c50dd4103726d28488e85a9303ddd2a99f06ecef0a8ff890c0fa02e"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/NumNomService.lua",
+      "SHA256": "f342171a8061c2fe041d521a232838e63e2e4d56a2f05de9a07c742b62b70983"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+      "SHA256": "814d376c20f676d49de1d3b9c9f552e7843414d3df1e8e80f4a5b6dcd91706eb"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/PlacementService.lua",
+      "SHA256": "cc5442b7db369fe16c730e7ed3aaff34934e26ed0de0b2af409c9df308cb547f"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/PlayerDataService.lua",
+      "SHA256": "801d23d626f62609bb187224575fb18f98de2c65ad3785fa2f72166b87f2721e"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/PlotService.lua",
+      "SHA256": "e2db7e0febba8ca1b552615ab6aa6138d0e56c5fe081911d01be82082ad2554c"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/ProfileService.lua",
+      "SHA256": "02d4353a752ba8f3f8e122998d279674cee7c8c60132fde5c65effdfaa71ce8d"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/ProgressionService.lua",
+      "SHA256": "de3a715defead2179b2fd26622ed008b0759ae405e87ef8b81d3e450bd70794d"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/ResourceService.lua",
+      "SHA256": "efe4204226c6bde2ae3caa59dd38615406fe3086bba545db962e253907eaad9c"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/SanctuaryService.lua",
+      "SHA256": "a19caf86afc70d44e590367be70b6b144348baaa5f5560cb7e0168416ade9e55"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/SeasonalService.lua",
+      "SHA256": "792c83572e4bf1956b1961f863959220387e321ffc00909b2d8d92bcb19020d7"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/ShopService.lua",
+      "SHA256": "2fc31aa106441a4749cec681ee92b00b3dccba6d0c48da25a9693e9b6c910996"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/TemplateService/init.lua",
+      "SHA256": "e45caa20060db606368e9aedea8e758820d4d13cff5866aa107506e0b732ff23"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Accessor.lua",
+      "SHA256": "8c9e3cbbf952cee184e3a68d9e76ae985de14755745faa696dd1de7017de85b1"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Mutator.lua",
+      "SHA256": "f20c65b95b4b6cecbf7a399bfb1a20ecd8e2ff0c1a17976a79c49765b0388fb9"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Others/Template.lua",
+      "SHA256": "8f589352f62311c3d686192f819ed7c6cd9aac06e31f45ec4fbe640f453c2b79"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/TutorialService.lua",
+      "SHA256": "dc0f8aaf4da80831319f7cb42ab0f0c02c35dd8881dad76302898453b18acf23"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/UpgradeService.lua",
+      "SHA256": "54403c0239e3008107842917cce9ae91b7a158d7c10b34766e8fbc9336f1311f"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/WeatherAdminService.lua",
+      "SHA256": "bfa0ba0900bf409926c9ea5a8897f44f1225f08875a03f980c893ebfe3695cd7"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua",
+      "SHA256": "0c502f55bbb6b93f4d88c39bf602bc0e6aa2dfbd0e2d76b4197f1b077d6c9a65"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/WeatherGameplayService.lua",
+      "SHA256": "da9133b7519f4d0987b1da1f96a53a9818b2707ad8834f695aff6ced5974f24c"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/WorldContentService.lua",
+      "SHA256": "57e328a3be70c564b090c1ac6021c9415ea80ff3c484eaca439bce97b322d065"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/WorldService.lua",
+      "SHA256": "adedc8dacb525eaa61591eede0cd091acfe02cd6dcba72f60c2f25bbfd72a077"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/AuthoredTreeDiscovery.lua",
+      "SHA256": "eb66964c7c9b724b03372b296141d8422e917b56701b88a26efb936e3501ebf4"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/GameplayGuard.lua",
+      "SHA256": "8f81eff178045d9b14d5066c584dc55f486b69c8e1a64b979af20cf64446c754"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+      "SHA256": "57d5425c3a9f4d3c07c45dedf21f64417d71cc5eed72c953585b9fd2f9865cda"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/GardenPlotRuntime.lua",
+      "SHA256": "374040db645875c687e47e04b0c588791cf07e0decdcbe2230269943f7d4b26b"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/MeadowPoolReadiness.lua",
+      "SHA256": "0c54b040ec718bd9b0a05ebab9cbe64b7f1c912e5299441af3d9714a98180860"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua",
+      "SHA256": "a7d61cc45f8cf0d43962e12b9a2c41a4ed7227241cffbdf5e98342dca9eab501"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/RewardPoolValidation.lua",
+      "SHA256": "703360e575e9f3afd89e408eb4547ce1a33b9ac01c820c29cf6bc55fcd444c7b"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/SanctuarySlotLayout.lua",
+      "SHA256": "a6679cd6a2abbeae06b8ac140ebe00f8ddaaff4662f3521aeb85caa1f5c9dcb0"
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Utilities/TownCollisionPolicy.lua",
+      "SHA256": "bd8054ef61c3f1b61713f1bf983d9e80a0433d6c3d158f0ca41a0fea2731945d"
+    },
+    {
+      "File": "src/ServerScriptService/SuperbulletServer.server.lua",
+      "SHA256": "bc1f60f865f5a4695334017e60f586a2a74a319f3339f97d86401a90f3b558d0"
+    },
+    {
+      "File": "src/ServerScriptService/SuperbulletServerLogger/init.server.lua",
+      "SHA256": "cb40fa82b0a6747fa711534124f09158e9b4617d327584b1a0ace65b0791eba1"
+    },
+    {
+      "File": "src/ServerScriptService/SuperbulletServerLogger/ClientQueryRouter.lua",
+      "SHA256": "779d46b1fc23943abb209264079f112008625e76621a0cba494b573e81e3647c"
+    },
+    {
+      "File": "src/ServerScriptService/SuperbulletServerLogger/CodeExecutor.lua",
+      "SHA256": "9820bc453fc1defa19f86ffff9f29698c586ed1e4b768d0ff92d629fc02f96cd"
+    },
+    {
+      "File": "src/ServerScriptService/SuperbulletServerLogger/WebSocketClient.lua",
+      "SHA256": "ff8eea70bf839f1fd5fb1ac39737ae25ddcf1fbeb22ad811c0bc5d38ad2e8075"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Components.lua",
+      "SHA256": "86b3dcea95a790d34a89d25182b4aa258b3e0ccad0a773a9ad546b91db5c823d"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/HUD.lua",
+      "SHA256": "537b83044b4a0573fcb1233df1feb5294b2565b25143ff3a4bc55a9be79bcee7"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/MenuManager.lua",
+      "SHA256": "13d38ac07ae5e987ee1c4bb35ab42649fcdf781c4f6676b31eba06a6cb35a4b3"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Motion.lua",
+      "SHA256": "c1b916337adeab3852b44c05ca92c7a682cee961e3cd2b0de945cb8d3ea30540"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Overlays.lua",
+      "SHA256": "5d10cf324a77e900d2d603d3137a73f1ffe5f948dad6d069db80da14a079fa57"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Theme.lua",
+      "SHA256": "823c9eb2fbf429e80587d70059e131255ea9917312e40a0351d30c46f852bcab"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Viewport.lua",
+      "SHA256": "214576b257e47c2cf2053cab0299ea449770fe1077dd370f544cab5de523c76c"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/BiomeImages.lua",
+      "SHA256": "a792d4b694e39c026d0385ff41130d077c45851694182ab19c2433db936f88d8"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/Components.lua",
+      "SHA256": "e0da1b5f4b18ffae0a1709721000662ce907da4119f0c7d74bd96b7ceb5c575e"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/ExampleData.lua",
+      "SHA256": "476da1e9a2152e5b92796d8d91d86220ad7df64457b4236e9f576e367252492b"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/GameplayWidgets.lua",
+      "SHA256": "759b856defe24d36a9a8139b513cadaf90f8083dccccdeeff09bca861c1912bf"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/GardenMenus.lua",
+      "SHA256": "d6d1924f372b790938a913e5da9ee98e347210eaf5b8f3056b91473d4c0e08a8"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/HatchPresentation.lua",
+      "SHA256": "24cf9d61736fba9a248cf73f796ab16461705af4b32b9914a05986e7de5855ea"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+      "SHA256": "62888082cdbdd50e41a0c683d8509740fb3dc0cacc99c85cc36db582c6415a9b"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/PetMenus.lua",
+      "SHA256": "828e9f988485caa91728ff94af4d67b9c16f35567289245be2a96e5aa7e2831c"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/PlotMenu.lua",
+      "SHA256": "3b64bfa185c5ff5dc09128e5b40faf70e6305a0e84435db501b23a880ffcdcfe"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/ProgressionMenus.lua",
+      "SHA256": "1a63a5c4d50951c888742036bf1aeeb98f6323ce364bd1d8ba7e55d2d6532fe2"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/RemoteBridge.lua",
+      "SHA256": "5594b6b50899f407aa917fc687a95116e7fce28632cf82fb1c9abd54b0a5391e"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/Theme.lua",
+      "SHA256": "b08207ca3766e98fd4d8e7dcb104f3167fba39ad9a46382c190b6e80eba11166"
+    },
+    {
+      "File": "src/StarterGui/WeatherEventUI/WeatherEventController.client.lua",
+      "SHA256": "9fa16b9e490519c05c622904e41136e8e20af225967895f31ae8f1aa6f256d4d"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/AdminCameraController.client.lua",
+      "SHA256": "2a54bfdeb57e8f3cdf54770304404070994ece0969d5ea97aa044f832e6b798f"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/AdminCommandController.client.lua",
+      "SHA256": "86a498eda9a195bdf19b79ad63b602067e2173828bdca35c6444f823330dd2ad"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/AdminCommandUI.lua",
+      "SHA256": "735d30f8e549f7235551b3027a9ffbf945b7550e2517ea4acf7e7d6f7893e399"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/AdminSpectate.lua",
+      "SHA256": "4033883d706189d66363d3c86aae2e01f26ac5485ed955ae8872fe7862ba190a"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/AnimalKingdomAnnouncements.client.lua",
+      "SHA256": "760c60aba8c7a7aa64fe594a418a5650cf437dfe80431db23ab919c9154055fe"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua",
+      "SHA256": "cb283e922def85aa1b521a232cf7d75e3d3fe3cab7284da5d715d6199baf7f55"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/KingdomPrompts.client.lua",
+      "SHA256": "c6fd78844892d6c8165b19c264693177bf0a7556b8a45fcc555fff6d817a4490"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/MeadowPetPreloader.client.lua",
+      "SHA256": "1ffa7a1b9d9120fab57313f1401b9f7f2401b48f69f758b319a4630bff1907f5"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/PetFollowing.client.lua",
+      "SHA256": "60052f78c825bd1cd85b4729666c4ee18a514b6de131dff2969d10ec38fb4542"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/PlotAssignedNotification.client.lua",
+      "SHA256": "7f4777b8658048e52dffa5f767e54e82a88567236a2214ee743fdb1435335258"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/SanctuaryPresentation.client.lua",
+      "SHA256": "3e481e5ce6fc3f2aa6eca974526585c2c10f68a8140116384504aa3e4234f342"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClient.client.lua",
+      "SHA256": "5377c732faa7e3c5bd9a5cad3ea01332facd26c0e21788b00abc0ed4a205bbf6"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/init.client.lua",
+      "SHA256": "3dfc382e131467c732c56d9f0153eef0dcd8fedcce59a6e56dcb562fce441c82"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/ClientCodeExecutor.lua",
+      "SHA256": "aadf5fedf738c402bb0882d37db0d382f1fdac932f094357a044e7b0b5ba948f"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/TreePresentation.client.lua",
+      "SHA256": "7be38b8ab88c21ead4e4d59af09c5d2ae9b3faf5408623f595e80f9ed1d6d21a"
+    },
+    {
+      "File": "src/StarterPlayer/StarterPlayerScripts/WeatherVisualController.client.lua",
+      "SHA256": "4a259375445937d3b7a9f2feb0b650f11c94528ea6c03adab218eb24ef196d96"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"Passed":false,"Variants":[],"Failures":["ServerScriptService.AKActivitiesRoutesTest:10: variant completed Speed\nServerScriptService.AKActivitiesRoutesTest:10\nServerScriptService.AKActivitiesRoutesTest:12\n"],"Assertions":24,"Kind":"Studio Play transactions with mock/copy profile and scripted movement"}

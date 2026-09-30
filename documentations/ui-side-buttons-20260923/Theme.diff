@@ -1,0 +1,20 @@
+--- before/Theme.lua
++++ src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Theme.lua
+@@ -14,6 +14,9 @@
+ T.Radius={Button=12,Card=14,Panel=18}
+ T.Stroke={Normal=1.5,Button=2,Focus=3}
+ T.Shadow={Color=Color3.fromRGB(39,25,17),Transparency=.65,Offset=5}
++-- Side actions keep their entire shell, focus and badge inside the hit target.
++T.SideAction={Radius=14,Inset=2,Stroke=2,FocusStroke=3,Gap=8,LabelMax=14,BadgeMin=16,BadgeMax=21,
++ Body=Color3.fromRGB(148,86,43),Rim=Color3.fromRGB(224,166,86),ShadowTransparency=.28}
+ T.Rarities=require(game:GetService('ReplicatedStorage').Shared.Gameplay.Definitions.RarityDefinitions)
+ T.Font=Enum.Font.FredokaOne
+ T.Body=Enum.Font.GothamMedium
+@@ -21,6 +24,7 @@
+ T.Icons={Pets=0,Index=1,Garden=2,Biomes=3,Challenges=4,Upgrades=5,Plot=6,Settings=7,Shop=8,FriendshipTokens=9,Coins=10,Teleport=11,Leaf=12,Flower=13,Crown=14,Harvest=15,Daily=4}
+ T.Layers={HUD=1,Menu=20,Modal=50,Tooltip=65,Toast=70,Transition=90}
+ T.Motion={WindowOpen=.23,WindowClose=.18,ButtonHover=.11,ButtonPress=.08,TabSelected=.12,CardHover=.12,ModalOpen=.2,ModalClose=.16,ToastIn=.2,ToastOut=.18,CounterChange=.22,ProgressChange=.2,PetReveal=.26,UnlockReveal=.24}
++T.Motion.SideActionState=.1
+ T.Currency={Coins="Forest Coins",FriendshipTokens="Friendship Tokens",GardenHarvest="Harvest",HarvestCandy="Harvest Candy"}
+ function T.CurrencyName(id) return T.Currency[id] or id end
+ return T

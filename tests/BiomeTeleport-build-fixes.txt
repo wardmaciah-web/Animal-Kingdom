@@ -1,0 +1,6 @@
+Removed redundant ModuleScript className (inferred from init.lua) to fix active Rojo build:
+Documents/SuperbulletAI/m/src/ServerScriptService/ServerSource/Server/MovementService/init.meta.json
+Documents/SuperbulletAI/m/src/ReplicatedStorage/SharedSource/Utilities/KeyframePlayer/init.meta.json
+Documents/SuperbulletAI/m/src/ReplicatedStorage/SharedSource/Utilities/KeyframePlayer/AnimBase/init.meta.json
+Documents/SuperbulletAI/m/src/ReplicatedStorage/ClientSource/Client/MovementController/init.meta.json
+Documents/SuperbulletAI/m/src/ReplicatedStorage/Packages/Loadstring/init.meta.json

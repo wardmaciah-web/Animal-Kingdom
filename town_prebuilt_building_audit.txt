@@ -1,0 +1,275 @@
+ANIMAL KINGDOM — PREBUILT TOWN BUILDING AUDIT
+============================================================
+
+SOURCE ROOT
+/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip
+
+Audit scope: recursive inspection of every file and subfolder.
+Audit method: extension inventory plus direct parsing of every binary FBX 7.4 node tree for Geometry, Model, Material, LayerElementUV, Texture, Video, FileName, and RelativeFilename records.
+Uploads performed: 0
+Roblox Studio modifications: 0
+
+MODEL COUNTS
+Total supported model files: 39
+FBX: 39
+GLB: 0
+GLTF: 0
+OBJ: 0
+BLEND: 0
+FBX parse failures: 0
+Other files: 1 (.DS_Store only)
+
+TEXTURE COUNTS
+Total supported texture/image files: 0
+PNG: 0
+JPG: 0
+JPEG: 0
+WEBP: 0
+TGA: 0
+Preview images found: 0
+Preview images classified as textures: 0
+
+DIMENSION NOTE
+The dimensions below are raw FBX geometry bounds in the pack's source units, reported as X × Y footprint × Z height. They are suitable for relative size comparison. Roblox import scale must be verified later; no scaling or conversion was performed in this audit.
+
+COMPLETE BUILDING CANDIDATES (9)
+
+LARGE
+
+1. Fantasy Inn — Inn.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy Inn/Inn.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 4.03 × 4.02 × 3.49
+   Geometry: 1 complete mesh/model; 7,594 vertices; 7 named materials; UV layer present
+   Materials: Wood, Stone_Dark, RoofTiles_Red, Plaster, Stone_Light, Windows, Wood_Light
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: Trading Hall, guild hall, large welcoming town focal building
+
+2. Fantasy Stable — Stable.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy Stable/Stable.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 4.70 × 3.33 × 2.49
+   Geometry: 1 complete mesh/model; 6,376 vertices; 8 named materials; UV layer present
+   Materials: Beige, Wood, Wood_Side, Stone_Dark, RoofTiles, Windows, Wood_Light, Stone_Light
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: pet stable, animal-care building, decorative service building
+
+3. Fantasy Sawmill — Sawmill.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy Sawmill/Sawmill.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 4.40 × 3.28 × 2.86
+   Geometry: 1 complete mesh/model; 3,591 vertices; 10 named materials; UV layer present
+   Materials: RoofTiles_Red, Plaster, Wood_Side, DarkWood, Metal, Windows, Wood, Wood_Light, Stone_Dark, Stone_Light
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: visual crafting/workshop building; more industrial than the desired main hall
+
+4. Blacksmith — Blacksmith.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Blacksmith/Blacksmith.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 3.89 × 3.28 × 3.00
+   Geometry: 1 complete mesh/model; 5,875 vertices; 9 named materials; UV layer present
+   Materials: Plaster, Wood_Light, Wood_Side, Stone_Light, Stone_Dark, Wood, Windows, RoofTiles_Red, Stone
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: Decor Shop, crafting shop, visual merchant building
+
+5. Mill — Mill.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Mill/Mill.fbx
+   Format: FBX 7.4 binary
+   Approximate combined bounds: 3.40 × 2.62 × 5.82
+   Geometry: 2 meshes/models (Mill and Mill_Blades); 6,735 vertices; 10 named materials; UV layers present
+   Materials: RoofTiles, Stone_Light, Stone_Dark, Wood, Windows, Wood_Light, Plaster, Wood_Side, Green, Stone
+   Texture references/files: none / none required by FBX
+   Complete: YES, including separate blade component
+   Likely use: landmark or outer-town decorative industry; tall silhouette may compete with the Trading Hall
+
+MEDIUM
+
+6. Fantasy House 2 — House_2.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House-dcPho4SUA3/House_2.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 2.22 × 3.42 × 3.25
+   Geometry: 1 complete mesh/model; 6,003 vertices; 9 named materials; UV layer present
+   Materials: Beige, Wood, Stone_Dark, Windows, Wood_Light, RoofTiles, Stone_Light, Wood_Side, Stone
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: General Store or premium NPC house
+
+7. Fantasy House 1 — House_1.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House-BH2XHWUNmF/House_1.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 2.14 × 2.66 × 3.39
+   Geometry: 1 complete mesh/model; 4,927 vertices; 9 named materials; UV layer present
+   Materials: Plaster, Wood, Wood_Side, Windows, Wood_Light, Stone_Dark, Stone, RoofTiles, Stone_Light
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: Pet Shop or NPC house
+
+8. Fantasy Barracks / House 3 — House_3.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy Barracks/House_3.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 1.94 × 2.12 × 2.09
+   Geometry: 1 complete mesh/model; 3,619 vertices; 6 named materials; no UV layer found
+   Materials: Stone_Dark, Stone, Wood, Wood_Side, Wood_Light, Stone_Light
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: compact NPC/service building; palette is more stone-heavy and less welcoming
+
+SMALL
+
+9. Fantasy House 4 — House_4.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House/House_4.fbx
+   Format: FBX 7.4 binary
+   Approximate bounds: 1.94 × 2.12 × 1.07
+   Geometry: 1 complete mesh/model; 2,371 vertices; 6 named materials; UV layer present
+   Materials: Stone_Light, Stone_Dark, Wood, Wood_Side, Windows, Stone
+   Texture references/files: none / none required by FBX
+   Complete: YES
+   Likely use: Rewards Building or compact shop
+
+MAJOR STRUCTURE CANDIDATES (3)
+
+1. Bell Tower — Bell_Tower.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Bell Tower/Bell_Tower.fbx
+   Class: SPECIAL
+   Approximate bounds: 1.94 × 2.23 × 4.76
+   Geometry/materials: 1 complete mesh/model; 9,092 vertices; 10 materials; UV layer present
+   Complete: YES
+   Likely use: town landmark or entrance-side tower; not preferred as a welcoming main hall
+
+2. Gazebo — Gazebo.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Gazebo/Gazebo.fbx
+   Class: SPECIAL
+   Approximate bounds: 1.04 × 1.26 × 1.35
+   Geometry/materials: 1 complete mesh/model; 708 vertices; Plaster/Wood/RoofTiles_Red; UV layer present
+   Complete: YES
+   Likely use: secondary plaza shelter or decorative gathering point
+
+3. Well — Well.fbx
+   Full path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Well/Well.fbx
+   Class: SPECIAL
+   Approximate bounds: 0.67 × 1.00 × 1.25
+   Geometry/materials: 1 complete mesh/model; 1,199 vertices; Wood/Bag/RoofTiles_Red/Stone_Dark/Stone_Light; UV layer present
+   Complete: YES
+   Likely use: central town centerpiece
+
+MARKET / SHOP CANDIDATES
+
+1. MarketStand_1.fbx — complete covered market prefab; 0.95 × 1.19 × 1.05; 862 vertices; 4 materials; no UV layer; no texture references.
+   Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Market Stand/MarketStand_1.fbx
+2. MarketStand_2.fbx — complete narrow market prefab; 0.52 × 1.15 × 1.04; 640 vertices; 3 materials; no UV layer; no texture references.
+   Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Market Stand/MarketStand_2.fbx
+3. Cart.fbx — complete market cart; 0.46 × 0.93 × 0.80; 1,532 vertices; 5 materials; no UV layer; no texture references.
+   Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Cart/Cart.fbx
+4. Blacksmith.fbx — complete shop/workshop building; details in complete-building list.
+5. Inn.fbx — complete hospitality/shop-like building; details in complete-building list.
+
+DECORATIVE TOWN STRUCTURE CANDIDATES
+
+- Gazebo.fbx — complete shelter/gathering structure.
+- Well.fbx — complete central well.
+- Bell_Tower.fbx — complete landmark tower.
+- MarketStand_1.fbx and MarketStand_2.fbx — complete market structures.
+- Cart.fbx — complete market cart.
+- Fence.fbx — repeated perimeter element, not a main building.
+- Bench_1.fbx and Bench_2.fbx — finished seating props.
+- Bonfire.fbx — finished fire-pit prop.
+- Bell.fbx — standalone bell prop.
+- Barrel.fbx, Crate.fbx, Bags.fbx, Bag.fbx, Bag_Open.fbx, Package_1.fbx, Package_2.fbx, Hay.fbx — finished dressing props.
+- Cauldron.fbx — finished fantasy market/crafting prop.
+- Rock_3.fbx — finished landscaping prop.
+- Smoke.fbx — visual effect mesh; not a structure.
+
+MODULAR / CONSTRUCTION COMPONENTS EXCLUDED AS MAIN BUILDINGS
+
+Door_Round.fbx, Door_Straight.fbx, Window_1.fbx, Window_2.fbx, Window_4.fbx, Stairs.fbx, Path_Straight.fbx, Sawmill_saw.fbx, Fence.fbx, Bell.fbx.
+These may be useful as accessories but do not satisfy the complete-building requirement.
+
+SELECTED TRADING HALL
+
+Inn.fbx
+Reason: it is the strongest friendly complete building in the pack, has the broadest balanced building footprint, a readable inn/guild-hall silhouette, red roof and plaster/wood material vocabulary, windows, high detail, and no fortified/dungeon cues. It is a single complete model rather than a modular assembly.
+Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy Inn/Inn.fbx
+
+SELECTED REWARDS BUILDING
+
+House_4.fbx
+Reason: it is a complete compact fantasy house, visibly smaller than Inn.fbx, includes windows and wood/stone material separation, and is appropriate for a small rewards shop without competing with the Trading Hall.
+Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House/House_4.fbx
+
+SELECTED OPTIONAL BUILDINGS
+
+1. House_1.fbx — proposed visual role: Pet Shop.
+   Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House-BH2XHWUNmF/House_1.fbx
+2. House_2.fbx — proposed visual role: General Store or premium NPC house.
+   Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House-dcPho4SUA3/House_2.fbx
+3. Blacksmith.fbx — proposed visual role: Decor/Crafting Shop.
+   Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Blacksmith/Blacksmith.fbx
+
+These are selections for later placement analysis only. This audit does not commit all three to the final town footprint.
+
+SELECTED CENTRAL STRUCTURE
+
+Well.fbx
+Reason: compact, complete, readable from normal player distance, suitable for a cute village center, and less likely than the taller Gazebo or Bell Tower to obscure building sightlines.
+Path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Well/Well.fbx
+Alternate retained for later layout consideration: Gazebo.fbx.
+
+SELECTED MARKET ASSETS
+
+1. MarketStand_1.fbx
+2. MarketStand_2.fbx
+3. Cart.fbx
+
+Together these provide two distinct complete stall silhouettes plus one supporting cart without requiring loose construction pieces.
+
+TEXTURE / MATERIAL AUDIT
+
+- All 39 model files parsed successfully as FBX 7.4 binary.
+- External image files under the source root: 0.
+- FBX Texture nodes across all 39 files: 0.
+- FBX Video/embedded-image nodes across all 39 files: 0.
+- FileName/RelativeFilename texture references across all 39 files: 0.
+- Broken or missing referenced image paths: 0, because the FBXs do not reference image files.
+- The pack is authored around multiple embedded named material slots (for example Wood, Stone, Plaster, RoofTiles, Windows, Beige, Green, and Metal), not an external image atlas.
+- Material slots are preserved in the FBXs; no materials were flattened or repainted.
+- UV layers are present on Inn, House_4, House_1, House_2, Blacksmith, Well, Gazebo, Bell_Tower, Sawmill, Stable, and Mill.
+- MarketStand_1, MarketStand_2, Cart, and House_3 have no UV layer detected; their visual separation relies on assigned material slots/colors.
+- No preview image was mistaken for a material texture.
+- No shared atlas exists in this supplied source root.
+- Later Roblox import work must preserve the FBX material-slot colors. It must not invent a texture ID or substitute an unrelated atlas.
+
+FILES TO UPLOAD LATER (NOT UPLOADED BY THIS AUDIT)
+
+Required selected set:
+1. Fantasy Inn/Inn.fbx — Trading Hall
+2. Fantasy House/House_4.fbx — Rewards Building
+3. Fantasy House-BH2XHWUNmF/House_1.fbx — optional Pet Shop
+4. Fantasy House-dcPho4SUA3/House_2.fbx — optional General Store
+5. Blacksmith/Blacksmith.fbx — optional Decor/Crafting Shop
+6. Well/Well.fbx — central centerpiece
+7. Market Stand/MarketStand_1.fbx — market
+8. Market Stand/MarketStand_2.fbx — market
+9. Cart/Cart.fbx — market dressing
+
+Optional alternate, upload only if selected in the later town layout:
+10. Gazebo/Gazebo.fbx — alternate/secondary gathering structure
+
+Texture files to upload later: NONE FOUND / NONE REFERENCED
+Invented filenames: 0
+Invented asset IDs: 0
+Uploads performed: 0
+
+FINAL AUDIT STATUS
+Selected FBX files found: YES
+Complete prefab requirement met: YES
+Texture/material references inspected: YES
+External textures resolved: NOT APPLICABLE — no image files or image references exist
+Broken material references: 0
+Missing referenced textures: 0
+Preview images used as textures: 0
+Uploads performed: 0
+Studio modifications: 0

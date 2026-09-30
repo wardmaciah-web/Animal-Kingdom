@@ -1,0 +1,12 @@
+PASS additive/idempotent migration, legacy copies and unknown definitions, future version rejection, malformed values
+PASS authoritative economy: finite integers, supported currencies, cap, debit, overdraft, legacy adapter
+PASS pet ownership, independent copies, locked protection, one-use confirmation, Index retention, XP and power
+PASS free tree hatch, capacity before lock, range, cooldown, locked biome, retired egg remote, 50 simultaneous independent tree claims
+PASS auto-delete protection, progression prerequisites, upgrades, challenge one-time rewards/UTC rollover, Index one-time claims, inactive seasons
+PASS remote action schemas, no client-authoritative fields, malformed placement, global/per-action rate limits
+PASS real resource/egg integration: atomic race, claim owner/replay safety, single pet, exact hiding and twenty-second restoration, mid-shake full/death cancellation
+PASS all twelve free biome eggs, one challenge event each, all 304 Index pets obtainable, leave-after-commit restoration, retired/forged egg requests
+PASS actual asset resolver: fallback and imported-model selection for pets, eggs, trees, resources, furniture, decorations, seasonal
+PASS production weather/modifier services: all 18 event modifier sets, immediate cleanup, Golden/Rainbow values and Heatwave biome restrictions
+PASS plot ownership/visitor permissions, definition-priced shop inventory/capacity, inactive seasonal shop, placement ownership/definition/transform rejection
+GAMEPLAY_TESTS_DONE assertions=918 failures=0

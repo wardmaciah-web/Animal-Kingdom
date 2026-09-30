@@ -1,0 +1,33 @@
+{
+  "CameraCFrame": {
+    "1": 0,
+    "3": 20,
+    "2": 20,
+    "5": 0,
+    "4": 1,
+    "7": 0,
+    "6": 0,
+    "9": 0.6246950626373291,
+    "8": 0.7808688282966614,
+    "12": 0.7808688282966614,
+    "11": -0.6246950626373291,
+    "10": 0
+  },
+  "QAInstances": [],
+  "PlaceId": 132313449035787,
+  "CanonicalForestModels": 11,
+  "Name": "Animal Kingdom[TESTING}",
+  "Running": false,
+  "CameraType": "Fixed",
+  "GameId": 10764288431,
+  "Viewport": {
+    "1": 1437,
+    "2": 730
+  },
+  "SelectionCount": 0,
+  "OriginalCameraRestored": true,
+  "Device": "default",
+  "Published": false,
+  "CloudSaveForced": false,
+  "StudioId": "fcaf207c-b0eb-4315-b49a-d2b57866c5a1"
+}

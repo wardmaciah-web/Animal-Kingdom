@@ -1,0 +1,19 @@
+{
+  "Reward": {
+    "Ok": true,
+    "Result": {
+      "New": false,
+      "Species": "ForestBrownBat",
+      "Added": 1,
+      "UID": "2cc5b557-7325-44a2-a70e-7c38e684c91d"
+    }
+  },
+  "Saved": {
+    "Ok": true,
+    "Result": {
+      "Equipped": true,
+      "Count": 1
+    }
+  },
+  "Receipts": "[{\"Success\":true,\"Result\":{\"PoolId\":\"Forest_Shakeable_03\",\"Source\":\"Tree\",\"Cost\":750,\"Kind\":\"Hatch\",\"Duration\":0.6363636363636362,\"EggId\":\"Forest_Shakeable_03\",\"Results\":[{\"AutoDeleted\":false,\"NewDiscovery\":false,\"Pet\":{\"Shiny\":false,\"Prismatic\":false,\"UniquePetId\":\"2cc5b557-7325-44a2-a70e-7c38e684c91d\",\"UID\":\"2cc5b557-7325-44a2-a70e-7c38e684c91d\",\"Level\":1,\"PetId\":\"ForestBrownBat\",\"Favorite\":false,\"Locked\":false,\"Mutation\":\"Normal\",\"AcquiredAt\":1790199981,\"XP\":0}}]},\"Action\":\"TreeHatch\"},{\"Action\":\"Equip\",\"Success\":true,\"RequestId\":\"452d13b6-0d4b-43ca-b476-3e482a953562\"}]"
+}

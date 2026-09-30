@@ -1,0 +1,15 @@
+{
+  "Ok": true,
+  "Result": {
+    "Loaded": true,
+    "NoBiomeFlags": true,
+    "Signature": "rbxassetid://130215170262976|rbxassetid://135911004193278"
+  },
+  "Server": {
+    "Ok": true,
+    "Result": {
+      "NoSpeciesSpecificCode": true,
+      "Ready": true
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "Ok": true,
+  "Result": {
+    "Pools": [
+      {
+        "Id": "Forest_Shakeable_01",
+        "Entries": [
+          {
+            "Weight": 65,
+            "PetId": "ForestRaccoon"
+          },
+          {
+            "Weight": 25,
+            "PetId": "ForestBlackBearCub"
+          },
+          {
+            "Weight": 10,
+            "PetId": "ForestSkunk"
+          }
+        ],
+        "Cost": 750,
+        "Ready": true
+      },
+      {
+        "Id": "Forest_Shakeable_02",
+        "Entries": [
+          {
+            "Weight": 65,
+            "PetId": "ForestSkunk"
+          },
+          {
+            "Weight": 25,
+            "PetId": "ForestBadger"
+          },
+          {
+            "Weight": 10,
+            "PetId": "ForestTreeFrog"
+          }
+        ],
+        "Cost": 750,
+        "Ready": true
+      },
+      {
+        "Id": "Forest_Shakeable_03",
+        "Entries": [
+          {
+            "Weight": 65,
+            "PetId": "ForestTreeFrog"
+          },
+          {
+            "Weight": 25,
+            "PetId": "ForestRiverOtter"
+          },
+          {
+            "Weight": 10,
+            "PetId": "ForestBrownBat"
+          }
+        ],
+        "Cost": 750,
+        "Ready": true
+      },
+      {
+        "Id": "Forest_Shakeable_04",
+        "Entries": [
+          {
+            "Weight": 65,
+            "PetId": "ForestBrownBat"
+          },
+          {
+            "Weight": 25,
+            "PetId": "ForestWoodlandOwl"
+          },
+          {
+            "Weight": 10,
+            "PetId": "ForestCrestedOwl"
+          }
+        ],
+        "Cost": 750,
+        "Ready": true
+      },
+      {
+        "Id": "Forest_Shakeable_05",
+        "Entries": [
+          {
+            "Weight": 70,
+            "PetId": "ForestCrestedOwl"
+          },
+          {
+            "Weight": 25,
+            "PetId": "ForestLeafAntler"
+          },
+          {
+            "Weight": 5,
+            "PetId": "ForestEmeraldWing"
+          }
+        ],
+        "Cost": 750,
+        "Ready": true
+      }
+    ],
+    "Income": {
+      "Forest": {
+        "Count": 11,
+        "Mean": 36.45454545454545
+      },
+      "Meadow": {
+        "Count": 14,
+        "Mean": 4.178571428571429
+      }
+    },
+    "Catalog": {
+      "Definitions": 330,
+      "Warnings": 68,
+      "Errors": 250,
+      "Available": 25
+    },
+    "Models": [
+      {
+        "Id": "MeadowFieldMouse",
+        "Income": 1,
+        "Rarity": "Common",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowFieldMouse"
+      },
+      {
+        "Id": "MeadowChick",
+        "Income": 1.25,
+        "Rarity": "Common",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowChick"
+      },
+      {
+        "Id": "MeadowRedSquirrel",
+        "Income": 1.75,
+        "Rarity": "Uncommon",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowRedSquirrel"
+      },
+      {
+        "Id": "MeadowGoat",
+        "Income": 2,
+        "Rarity": "Uncommon",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowGoat"
+      },
+      {
+        "Id": "MeadowFawn",
+        "Income": 2.5,
+        "Rarity": "Rare",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowFawn"
+      },
+      {
+        "Id": "MeadowFluffyLop",
+        "Income": 3,
+        "Rarity": "Rare",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowFluffyLop"
+      },
+      {
+        "Id": "MeadowPatchworkLop",
+        "Income": 3.5,
+        "Rarity": "Rare",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowPatchworkLop"
+      },
+      {
+        "Id": "MeadowDaisyHedgehog",
+        "Income": 4,
+        "Rarity": "Epic",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyHedgehog"
+      },
+      {
+        "Id": "MeadowBuck",
+        "Income": 4.5,
+        "Rarity": "Epic",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowBuck"
+      },
+      {
+        "Id": "MeadowDaisyCrownBunny",
+        "Income": 5,
+        "Rarity": "Epic",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyCrownBunny"
+      },
+      {
+        "Id": "MeadowBlossomBunny",
+        "Income": 6,
+        "Rarity": "Legendary",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowBlossomBunny"
+      },
+      {
+        "Id": "MeadowPrismAntlerDeer",
+        "Income": 7,
+        "Rarity": "Legendary",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowPrismAntlerDeer"
+      },
+      {
+        "Id": "MeadowCloudtailFox",
+        "Income": 8,
+        "Rarity": "Legendary",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowCloudtailFox"
+      },
+      {
+        "Id": "MeadowCelestialLamb",
+        "Income": 9,
+        "Rarity": "Secret",
+        "Model": "ReplicatedStorage.MeadowPetTemplates.MeadowCelestialLamb"
+      },
+      {
+        "Id": "ForestRaccoon",
+        "Income": 10,
+        "Rarity": "Common",
+        "Model": "ReplicatedStorage.PetAssets.ForestRaccoon"
+      },
+      {
+        "Id": "ForestBlackBearCub",
+        "Income": 12,
+        "Rarity": "Common",
+        "Model": "ReplicatedStorage.PetAssets.ForestBlackBearCub"
+      },
+      {
+        "Id": "ForestSkunk",
+        "Income": 15,
+        "Rarity": "Uncommon",
+        "Model": "ReplicatedStorage.PetAssets.ForestSkunk"
+      },
+      {
+        "Id": "ForestBadger",
+        "Income": 18,
+        "Rarity": "Uncommon",
+        "Model": "ReplicatedStorage.PetAssets.ForestBadger"
+      },
+      {
+        "Id": "ForestTreeFrog",
+        "Income": 22,
+        "Rarity": "Rare",
+        "Model": "ReplicatedStorage.PetAssets.ForestTreeFrog"
+      },
+      {
+        "Id": "ForestRiverOtter",
+        "Income": 28,
+        "Rarity": "Rare",
+        "Model": "ReplicatedStorage.PetAssets.ForestRiverOtter"
+      },
+      {
+        "Id": "ForestBrownBat",
+        "Income": 36,
+        "Rarity": "Epic",
+        "Model": "ReplicatedStorage.PetAssets.ForestBrownBat"
+      },
+      {
+        "Id": "ForestWoodlandOwl",
+        "Income": 45,
+        "Rarity": "Epic",
+        "Model": "ReplicatedStorage.PetAssets.ForestWoodlandOwl"
+      },
+      {
+        "Id": "ForestCrestedOwl",
+        "Income": 55,
+        "Rarity": "Legendary",
+        "Model": "ReplicatedStorage.PetAssets.ForestCrestedOwl"
+      },
+      {
+        "Id": "ForestLeafAntler",
+        "Income": 70,
+        "Rarity": "Legendary",
+        "Model": "ReplicatedStorage.PetAssets.ForestLeafAntler"
+      },
+      {
+        "Id": "ForestEmeraldWing",
+        "Income": 90,
+        "Rarity": "Secret",
+        "Model": "ReplicatedStorage.PetAssets.ForestEmeraldWing"
+      }
+    ],
+    "FinalReward": {
+      "UID": "9a115784-771c-4ceb-ac6a-d5fe6ebca8e0",
+      "Id": "ForestRaccoon",
+      "Accepted": 1,
+      "Added": 1,
+      "Requests": 12
+    }
+  }
+}

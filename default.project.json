@@ -1,0 +1,128 @@
+{
+  "name": "Real_Animal_K",
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "$className": "Workspace",
+      "$ignoreUnknownInstances": true,
+      "GrassFloor": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Color": [
+            0.294118,
+            0.592157,
+            0.294118
+          ],
+          "Material": "Grass",
+          "Position": [
+            0,
+            -1,
+            0
+          ],
+          "Size": [
+            600,
+            2,
+            600
+          ],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "World": {
+        "$className": "Model",
+        "BiomeBlockout": {
+          "$className": "Model",
+          "Meadow": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.466667, 0.74902, 0.4], "Material": "Grass", "Position": [-450, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Forest": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.180392, 0.435294, 0.25098], "Material": "Grass", "Position": [-150, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Jungle": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.196078, 0.607843, 0.298039], "Material": "LeafyGrass", "Position": [150, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Desert": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.866667, 0.709804, 0.423529], "Material": "Sand", "Position": [450, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Snow": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.843137, 0.937255, 0.960784], "Material": "Snow", "Position": [450, 0, -150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Volcano": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.694118, 0.262745, 0.176471], "Material": "Slate", "Position": [450, 0, 150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Ocean": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.203922, 0.568627, 0.823529], "Material": "Sand", "Position": [450, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "AncientRuins": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.545098, 0.494118, 0.396078], "Material": "Cobblestone", "Position": [150, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "MagicalForest": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.45098, 0.309804, 0.588235], "Material": "Grass", "Position": [-150, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Sky": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.494118, 0.745098, 0.909804], "Material": "SmoothPlastic", "Position": [-450, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Prehistoric": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.45098, 0.458824, 0.262745], "Material": "Ground", "Position": [-450, 0, 150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          },
+          "Mythical": {
+            "$className": "Model",
+            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.427451, 0.247059, 0.596078], "Material": "Slate", "Position": [-450, 0, -150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+          }
+        },
+        "CentralArea": {
+          "$className": "Model",
+          "SpawnArea": { "$className": "Model" },
+          "SanctuaryArea": { "$className": "Model" },
+          "TownHallArea": { "$className": "Model" }
+        }
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedStorage"
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ServerScriptService"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$ignoreUnknownInstances": false,
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
+        "$path": "src/StarterPlayer/StarterPlayerScripts"
+      },
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$ignoreUnknownInstances": true
+      }
+    },
+    "ServerStorage": {
+      "$path": "src/ServerStorage",
+      "$ignoreUnknownInstances": true,
+      "$className": "ServerStorage"
+    },
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/StarterGui"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "phase": "tree-egg-flow-core",
+    "at": "2026-09-18T03:16:58Z",
+    "results": [
+      {
+        "command": [
+          "rojo",
+          "build",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay-source.rbxlx"
+        ],
+        "exit": 0,
+        "output": "Building project 'Real_Animal_K'\nBuilt project to AnimalKingdom-gameplay-source.rbxlx\n"
+      },
+      {
+        "command": [
+          "rojo",
+          "sourcemap",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json"
+        ],
+        "exit": 0,
+        "output": "Created sourcemap at /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json\n"
+      }
+    ],
+    "compiled": 129
+  },
+  {
+    "phase": "tree-egg-authored-map",
+    "at": "2026-09-18T03:19:15Z",
+    "results": [
+      {
+        "command": [
+          "rojo",
+          "build",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay-source.rbxlx"
+        ],
+        "exit": 0,
+        "output": "Building project 'Real_Animal_K'\nBuilt project to AnimalKingdom-gameplay-source.rbxlx\n"
+      },
+      {
+        "command": [
+          "rojo",
+          "sourcemap",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json"
+        ],
+        "exit": 0,
+        "output": "Created sourcemap at /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json\n"
+      }
+    ],
+    "compiled": 129
+  },
+  {
+    "phase": "tree-egg-final",
+    "at": "2026-09-18T03:34:41Z",
+    "results": [
+      {
+        "command": [
+          "rojo",
+          "build",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay-source.rbxlx"
+        ],
+        "exit": 0,
+        "output": "Building project 'Real_Animal_K'\nBuilt project to AnimalKingdom-gameplay-source.rbxlx\n"
+      },
+      {
+        "command": [
+          "rojo",
+          "sourcemap",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json"
+        ],
+        "exit": 0,
+        "output": "Created sourcemap at /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json\n"
+      }
+    ],
+    "compiled": 129
+  },
+  {
+    "phase": "tree-exact-imported-pivots",
+    "at": "2026-09-18T03:36:47Z",
+    "results": [
+      {
+        "command": [
+          "rojo",
+          "build",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay-source.rbxlx"
+        ],
+        "exit": 0,
+        "output": "Building project 'Real_Animal_K'\nBuilt project to AnimalKingdom-gameplay-source.rbxlx\n"
+      },
+      {
+        "command": [
+          "rojo",
+          "sourcemap",
+          "default.project.json",
+          "-o",
+          "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json"
+        ],
+        "exit": 0,
+        "output": "Created sourcemap at /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/gameplay-20-systems-20260917/AnimalKingdom-gameplay.sourcemap.json\n"
+      }
+    ],
+    "compiled": 129
+  }
+]

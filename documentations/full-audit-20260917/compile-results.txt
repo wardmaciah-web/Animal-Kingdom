@@ -1,0 +1,5 @@
+{
+  "compiled_at_utc": "2026-09-17T22:46:31.441084+00:00",
+  "first_party_script_count": 64,
+  "failures": []
+}

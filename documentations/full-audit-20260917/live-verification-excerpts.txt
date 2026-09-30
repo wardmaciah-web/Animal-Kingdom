@@ -1,0 +1,390 @@
+2026-09-17T21:49:55.211Z,790.211914,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Archived Workspace.Script — Legacy duplicate overlay scales empty canonical model to zero
+2026-09-17T21:49:55.215Z,790.215088,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Archived ServerScriptService.AK_PlotAssignment — Obsolete duplicate four-plot allocator; modern PlotLocator assignment owns lifecycle
+2026-09-17T21:49:55.215Z,790.215698,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Archived ServerScriptService.blockrmv — Legacy cleanup races authored WorldService; source now suppresses blockout safely
+2026-09-17T21:49:55.216Z,790.216187,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Archived ServerScriptService.Script — Legacy cleanup races authored WorldService; source now suppresses blockout safely
+2026-09-17T21:49:55.216Z,790.216797,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Archived ServerScriptService.Script — Legacy cleanup races authored WorldService; source now suppresses blockout safely
+2026-09-17T21:49:55.217Z,790.217590,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Archived ServerScriptService.AK_BiomeLabelRemover — Identical duplicate label-removal watcher
+2026-09-17T21:49:55.217Z,790.217651,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Live conflicting script cleanup complete
+2026-09-17T21:53:57.404Z,1032.404175,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Common playable floor Y = 9.128930568695068
+2026-09-17T21:53:57.456Z,1032.456543,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Meadow 9.12893 -> 9.12893 offset 0.00000 roots 0 parts 0
+2026-09-17T21:53:57.460Z,1032.460083,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Forest 10.12896 -> 9.12893 offset -1.00002 roots 1 parts 1
+2026-09-17T21:53:57.460Z,1032.460571,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Jungle 9.12895 -> 9.12893 offset 0.00000 roots 0 parts 0
+2026-09-17T21:53:57.461Z,1032.461182,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Desert 10.12893 -> 9.12893 offset -1.00000 roots 1 parts 1
+2026-09-17T21:53:57.461Z,1032.461548,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Snow 9.12894 -> 9.12893 offset 0.00000 roots 0 parts 0
+2026-09-17T21:53:57.491Z,1032.491089,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Volcano 10.55000 -> 9.12893 offset -1.42107 roots 91 parts 113
+2026-09-17T21:53:57.491Z,1032.491455,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Ocean 10.55000 -> 9.12893 offset -1.42107 roots 1 parts 1
+2026-09-17T21:53:57.501Z,1032.501221,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan AncientRuins 11.55000 -> 9.12893 offset -2.42107 roots 43 parts 113
+2026-09-17T21:53:57.569Z,1032.569214,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan MagicalForest 10.53674 -> 9.12893 offset -1.40781 roots 285 parts 662
+2026-09-17T21:53:57.587Z,1032.587158,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Sky 10.85000 -> 9.12893 offset -1.72107 roots 113 parts 230
+2026-09-17T21:53:57.597Z,1032.597778,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Prehistoric 9.61474 -> 9.12893 offset -0.48581 roots 37 parts 85
+2026-09-17T21:53:57.598Z,1032.598511,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Plan Mythical 10.30000 -> 9.12893 offset -1.17107 roots 1 parts 1
+2026-09-17T21:57:50.385Z,1265.385742,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Archived Prehistoric_Decor_Root_5_58 — Misplaced import far above/below world and outside named biome; retained for reuse
+2026-09-17T21:57:50.389Z,1265.389648,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Archived Prehistoric_Decor_Root_5_40 — Misplaced import far above/below world and outside named biome; retained for reuse
+2026-09-17T21:57:50.392Z,1265.392456,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Archived Prehistoric_Decor_log_large_79 — Misplaced import far above/below world and outside named biome; retained for reuse
+2026-09-17T21:57:50.394Z,1265.394409,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Archived Mythical_Decor_Root_6_71 — Misplaced import far above/below world and outside named biome; retained for reuse
+2026-09-17T21:57:50.398Z,1265.398560,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Archived Prehistoric_Decor_Root_5_58 — Misplaced import far above/below world and outside named biome; retained for reuse
+2026-09-17T21:57:50.400Z,1265.400024,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Meadow original 9.12893 corrected 9.12893 offset 0.00000
+2026-09-17T21:57:50.401Z,1265.401978,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Forest original 10.12896 corrected 9.12893 offset -1.00002
+2026-09-17T21:57:50.402Z,1265.402466,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Jungle original 9.12895 corrected 9.12895 offset 0.00000
+2026-09-17T21:57:50.402Z,1265.402832,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Desert original 10.12893 corrected 9.12893 offset -1.00000
+2026-09-17T21:57:50.402Z,1265.402954,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Snow original 9.12894 corrected 9.12894 offset 0.00000
+2026-09-17T21:57:50.434Z,1265.434082,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Volcano original 10.55000 corrected 9.12893 offset -1.42107
+2026-09-17T21:57:50.434Z,1265.434326,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Ocean original 10.55000 corrected 9.12893 offset -1.42107
+2026-09-17T21:57:50.456Z,1265.456299,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned AncientRuins original 11.55000 corrected 9.12893 offset -2.42107
+2026-09-17T21:57:50.515Z,1265.515747,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned MagicalForest original 10.53674 corrected 9.12893 offset -1.40781
+2026-09-17T21:57:50.534Z,1265.534180,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Sky original 10.85000 corrected 9.12893 offset -1.72107
+2026-09-17T21:57:50.538Z,1265.538574,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Prehistoric original 9.61474 corrected 9.12893 offset -0.48581
+2026-09-17T21:57:50.538Z,1265.538818,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Aligned Mythical original 10.30000 corrected 9.12893 offset -1.17107
+2026-09-17T21:57:50.539Z,1265.539795,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] BIOME_ALIGNMENT_PASS 555 whole roots / 1189 parts; all internal relative positions preserved
+2026-09-17T21:57:50.572Z,1265.572144,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Grounded Forest_Decor_plant_bushDetailed_11 offset -35.25406551361084
+2026-09-17T21:57:50.573Z,1265.573364,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Archived AK_AncientRuins_StylizedTree — Exact coincident duplicate of retained Ancient Ruins tree
+2026-09-17T21:57:50.574Z,1265.574707,2db2000,6,Info [FLog::CreatorOutput] [MapAudit] Geometry fixes: 38 invisible tree helpers, 78 static parts anchored
+2026-09-17T21:59:51.969Z,1386.969116,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ReplicatedStorage.Shared.EventDefinitions
+2026-09-17T21:59:51.969Z,1386.969360,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.AK_PlotAssignment
+2026-09-17T21:59:51.969Z,1386.969360,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.AK_TownVisualRuntime
+2026-09-17T21:59:51.969Z,1386.969482,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.PlotLocator
+2026-09-17T21:59:51.969Z,1386.969604,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.AdminCommandService
+2026-09-17T21:59:51.969Z,1386.969727,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.NumNomService
+2026-09-17T21:59:51.969Z,1386.969727,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.ProfileService
+2026-09-17T21:59:51.969Z,1386.969849,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WeatherAdminService
+2026-09-17T21:59:51.969Z,1386.969849,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WeatherEventService
+2026-09-17T21:59:51.969Z,1386.969971,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WorldService
+2026-09-17T21:59:51.969Z,1386.969971,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.Components
+2026-09-17T21:59:51.970Z,1386.970093,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.ExampleData
+2026-09-17T21:59:51.970Z,1386.970215,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.Main
+2026-09-17T21:59:51.970Z,1386.970215,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.RemoteBridge
+2026-09-17T21:59:51.970Z,1386.970337,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.WeatherEventUI.WeatherEventController
+2026-09-17T21:59:51.970Z,1386.970459,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterPlayer.StarterPlayerScripts.WeatherVisualController
+2026-09-17T21:59:51.979Z,1386.979248,23af000,6,Info [FLog::CreatorOutput] [MapAudit] All repaired sources verified; Studio tests staged
+2026-09-17T22:05:27.709Z,1722.709717,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS six room panels 
+2026-09-17T22:05:27.711Z,1722.711426,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS camera labels preserved 15
+2026-09-17T22:05:27.711Z,1722.711548,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS authoritative plots 1 / 4
+2026-09-17T22:05:28.377Z,1723.377563,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport PlayerPlots TELEPORTED
+2026-09-17T22:05:30.701Z,1725.701294,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Town TELEPORTED
+2026-09-17T22:05:32.042Z,1727.042480,454d000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Meadow TELEPORTED
+2026-09-17T22:05:33.376Z,1728.376587,454d000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Forest TELEPORTED
+2026-09-17T22:05:34.708Z,1729.708740,23af000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Jungle TELEPORTED
+2026-09-17T22:05:36.041Z,1731.041748,5953000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Desert TELEPORTED
+2026-09-17T22:05:37.392Z,1732.392456,23af000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Snow TELEPORTED
+2026-09-17T22:05:38.742Z,1733.742065,3b4a000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Volcano TELEPORTED
+2026-09-17T22:05:40.092Z,1735.092163,775c000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Ocean TELEPORTED
+2026-09-17T22:05:41.442Z,1736.442017,454d000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport AncientRuins TELEPORTED
+2026-09-17T22:05:42.775Z,1737.775024,4f50000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport MagicalForest TELEPORTED
+2026-09-17T22:05:44.141Z,1739.141479,5953000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Sky TELEPORTED
+2026-09-17T22:05:45.475Z,1740.475098,454d000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Prehistoric TELEPORTED
+2026-09-17T22:05:46.825Z,1741.825439,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport Mythical TELEPORTED
+2026-09-17T22:05:48.175Z,1743.175171,5953000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS teleport AdminRoom RETURNED TO ADMIN ROOM
+2026-09-17T22:05:49.541Z,1744.541748,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS filtered announcement [Admin] "Maciahxcx1": "Welcome to Animal Kingdom!"
+2026-09-17T22:05:51.824Z,1746.824707,454d000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS queue preserves current event 
+2026-09-17T22:05:51.824Z,1746.824829,454d000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS production event duration 
+2026-09-17T22:05:52.091Z,1747.091919,4f50000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS queued event starts and clears 
+2026-09-17T22:05:52.759Z,1747.759277,23af000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS reset requires confirmation 
+2026-09-17T22:05:54.442Z,1749.442749,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS reset returns to normal break 
+2026-09-17T22:05:54.442Z,1749.442993,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS production break restarts after reset 298.8951871395111
+2026-09-17T22:05:54.443Z,1749.443237,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE PASS production test mode off 
+2026-09-17T22:05:54.443Z,1749.443481,2db2000,6,Info [FLog::CreatorOutput] AK_P2_LIVE_DONE failures=0
+2026-09-17T22:06:22.995Z,1777.995850,23af000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Jungle teleport clearance
+2026-09-17T22:06:24.390Z,1779.390137,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Jungle route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:24.391Z,1779.391113,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Mythical teleport clearance
+2026-09-17T22:06:24.956Z,1779.956177,4f50000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Mythical route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:24.956Z,1779.956421,4f50000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Ocean teleport clearance
+2026-09-17T22:06:26.039Z,1781.039429,2db2000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Ocean route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:26.039Z,1781.039551,2db2000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Desert teleport clearance
+2026-09-17T22:06:26.339Z,1781.339355,3b4a000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Desert route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:26.339Z,1781.339844,3b4a000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Forest teleport clearance
+2026-09-17T22:06:26.455Z,1781.455811,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Forest route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:26.456Z,1781.456055,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Prehistoric teleport clearance
+2026-09-17T22:06:26.606Z,1781.606079,4f50000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Prehistoric route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:26.606Z,1781.606201,4f50000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Sky teleport clearance
+2026-09-17T22:06:26.822Z,1781.822754,3b4a000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Sky route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:26.822Z,1781.822998,3b4a000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Meadow teleport clearance
+2026-09-17T22:06:26.939Z,1781.939331,23af000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Meadow route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:26.939Z,1781.939453,23af000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS AncientRuins teleport clearance
+2026-09-17T22:06:27.039Z,1782.039185,23af000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS AncientRuins route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:27.039Z,1782.039429,23af000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Volcano teleport clearance
+2026-09-17T22:06:27.139Z,1782.139404,4f50000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Volcano route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:27.139Z,1782.139648,4f50000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS MagicalForest teleport clearance
+2026-09-17T22:06:27.239Z,1782.239624,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS MagicalForest route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:27.239Z,1782.239746,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Snow teleport clearance
+2026-09-17T22:06:27.339Z,1782.339966,2db2000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Snow route to Town Enum.PathStatus.Success 
+2026-09-17T22:06:27.423Z,1782.423340,3b4a000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Plot1Floor route to Town Enum.PathStatus.Success
+2026-09-17T22:06:27.539Z,1782.539185,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Plot2Floor route to Town Enum.PathStatus.Success
+2026-09-17T22:06:27.639Z,1782.639771,2db2000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Plot3Floor route to Town Enum.PathStatus.Success
+2026-09-17T22:06:27.739Z,1782.739258,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] PASS Plot4Floor route to Town Enum.PathStatus.Success
+2026-09-17T22:06:27.739Z,1782.739502,454d000,6,Info [FLog::CreatorOutput] [MapNavigation] COMPLETE failures=0
+2026-09-17T22:07:41.755Z,1856.755127,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS real plot floors discovered | 4
+2026-09-17T22:07:41.755Z,1856.755249,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot1Floor | 3009757271
+2026-09-17T22:07:41.756Z,1856.756470,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot1Floor
+2026-09-17T22:07:41.756Z,1856.756592,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot1Floor
+2026-09-17T22:07:41.756Z,1856.756592,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot2Floor | 0
+2026-09-17T22:07:41.757Z,1856.757080,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot2Floor
+2026-09-17T22:07:41.757Z,1856.757080,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot2Floor
+2026-09-17T22:07:41.757Z,1856.757202,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot3Floor | 0
+2026-09-17T22:07:41.757Z,1856.757935,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot3Floor
+2026-09-17T22:07:41.758Z,1856.758057,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot3Floor
+2026-09-17T22:07:41.758Z,1856.758057,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot4Floor | 0
+2026-09-17T22:07:41.758Z,1856.758667,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot4Floor
+2026-09-17T22:07:41.758Z,1856.758789,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot4Floor
+2026-09-17T22:07:41.758Z,1856.758789,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS player owns one real plot | Plot1Floor
+2026-09-17T22:07:41.758Z,1856.758911,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] FAIL profile loaded
+2026-09-17T22:07:41.758Z,1856.758911,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point PlayerPlots
+2026-09-17T22:07:41.759Z,1856.759033,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Town
+2026-09-17T22:07:41.759Z,1856.759033,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Meadow
+2026-09-17T22:07:41.759Z,1856.759033,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Forest
+2026-09-17T22:07:41.759Z,1856.759033,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Jungle
+2026-09-17T22:07:41.759Z,1856.759155,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Desert
+2026-09-17T22:07:41.759Z,1856.759155,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Snow
+2026-09-17T22:07:41.759Z,1856.759155,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Volcano
+2026-09-17T22:07:41.759Z,1856.759155,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Ocean
+2026-09-17T22:07:41.759Z,1856.759277,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point AncientRuins
+2026-09-17T22:07:41.759Z,1856.759277,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point MagicalForest
+2026-09-17T22:07:41.759Z,1856.759277,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Sky
+2026-09-17T22:07:41.759Z,1856.759277,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Prehistoric
+2026-09-17T22:07:41.759Z,1856.759399,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Mythical
+2026-09-17T22:07:41.759Z,1856.759399,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point HighOverview
+2026-09-17T22:07:41.759Z,1856.759399,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin room exists
+2026-09-17T22:07:41.759Z,1856.759644,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label PlayerPlots
+2026-09-17T22:07:41.759Z,1856.759766,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Town
+2026-09-17T22:07:41.759Z,1856.759766,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Meadow
+2026-09-17T22:07:41.759Z,1856.759888,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Forest
+2026-09-17T22:07:41.759Z,1856.759888,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Jungle
+2026-09-17T22:07:41.759Z,1856.759888,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Desert
+2026-09-17T22:07:41.760Z,1856.760010,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Snow
+2026-09-17T22:07:41.760Z,1856.760010,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Volcano
+2026-09-17T22:07:41.760Z,1856.760010,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Ocean
+2026-09-17T22:07:41.760Z,1856.760010,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label AncientRuins
+2026-09-17T22:07:41.760Z,1856.760132,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label MagicalForest
+2026-09-17T22:07:41.760Z,1856.760132,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Sky
+2026-09-17T22:07:41.760Z,1856.760132,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Prehistoric
+2026-09-17T22:07:41.760Z,1856.760254,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Mythical
+2026-09-17T22:07:41.760Z,1856.760254,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label HighOverview
+2026-09-17T22:07:41.760Z,1856.760376,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button PlayerPlots
+2026-09-17T22:07:41.760Z,1856.760376,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Town
+2026-09-17T22:07:41.760Z,1856.760376,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Meadow
+2026-09-17T22:07:41.760Z,1856.760376,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Forest
+2026-09-17T22:07:41.760Z,1856.760498,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Jungle
+2026-09-17T22:07:41.760Z,1856.760498,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Desert
+2026-09-17T22:07:41.760Z,1856.760498,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Snow
+2026-09-17T22:07:41.760Z,1856.760498,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Volcano
+2026-09-17T22:07:41.760Z,1856.760498,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Ocean
+2026-09-17T22:07:41.760Z,1856.760620,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button AncientRuins
+2026-09-17T22:07:41.760Z,1856.760620,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button MagicalForest
+2026-09-17T22:07:41.760Z,1856.760620,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Sky
+2026-09-17T22:07:41.760Z,1856.760620,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Prehistoric
+2026-09-17T22:07:41.760Z,1856.760742,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Mythical
+2026-09-17T22:07:41.760Z,1856.760742,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button HighOverview
+2026-09-17T22:07:41.761Z,1856.761108,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry safe landing
+2026-09-17T22:07:41.761Z,1856.761108,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry room membership
+2026-09-17T22:07:41.761Z,1856.761230,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry clears velocity
+2026-09-17T22:07:41.761Z,1856.761475,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS return to starting area
+2026-09-17T22:07:41.761Z,1856.761475,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] Finished: 1 failures; actual connected players=1
+2026-09-17T22:07:41.761Z,1856.761475,2db2000,6,Info [FLog::CreatorOutput] [SystemAudit] WARNING multiplayer admission/release still requires a separate two-client Studio test
+2026-09-17T22:09:37.285Z,1972.285889,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS real plot floors discovered | 4
+2026-09-17T22:09:37.286Z,1972.286011,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot1Floor | 3009757271
+2026-09-17T22:09:37.286Z,1972.286377,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot1Floor
+2026-09-17T22:09:37.286Z,1972.286499,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot1Floor
+2026-09-17T22:09:37.286Z,1972.286499,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot2Floor | 0
+2026-09-17T22:09:37.286Z,1972.286865,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot2Floor
+2026-09-17T22:09:37.286Z,1972.286865,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot2Floor
+2026-09-17T22:09:37.286Z,1972.286987,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot3Floor | 0
+2026-09-17T22:09:37.287Z,1972.287354,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot3Floor
+2026-09-17T22:09:37.287Z,1972.287354,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot3Floor
+2026-09-17T22:09:37.287Z,1972.287476,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot4Floor | 0
+2026-09-17T22:09:37.287Z,1972.287720,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot4Floor
+2026-09-17T22:09:37.287Z,1972.287842,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot4Floor
+2026-09-17T22:09:37.287Z,1972.287842,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS player owns one real plot | Plot1Floor
+2026-09-17T22:09:37.287Z,1972.287842,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS profile loaded
+2026-09-17T22:09:37.287Z,1972.287964,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ProfileStore session active
+2026-09-17T22:09:37.287Z,1972.287964,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS profile data reconciled
+2026-09-17T22:09:37.288Z,1972.288086,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point PlayerPlots
+2026-09-17T22:09:37.288Z,1972.288086,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Town
+2026-09-17T22:09:37.288Z,1972.288208,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Meadow
+2026-09-17T22:09:37.288Z,1972.288208,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Forest
+2026-09-17T22:09:37.288Z,1972.288330,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Jungle
+2026-09-17T22:09:37.288Z,1972.288330,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Desert
+2026-09-17T22:09:37.288Z,1972.288330,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Snow
+2026-09-17T22:09:37.288Z,1972.288452,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Volcano
+2026-09-17T22:09:37.288Z,1972.288452,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Ocean
+2026-09-17T22:09:37.288Z,1972.288574,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point AncientRuins
+2026-09-17T22:09:37.288Z,1972.288574,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point MagicalForest
+2026-09-17T22:09:37.288Z,1972.288574,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Sky
+2026-09-17T22:09:37.288Z,1972.288574,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Prehistoric
+2026-09-17T22:09:37.288Z,1972.288696,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Mythical
+2026-09-17T22:09:37.288Z,1972.288696,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point HighOverview
+2026-09-17T22:09:37.288Z,1972.288818,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin room exists
+2026-09-17T22:09:37.288Z,1972.288818,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label PlayerPlots
+2026-09-17T22:09:37.288Z,1972.288940,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Town
+2026-09-17T22:09:37.288Z,1972.288940,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Meadow
+2026-09-17T22:09:37.288Z,1972.288940,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Forest
+2026-09-17T22:09:37.289Z,1972.289062,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Jungle
+2026-09-17T22:09:37.289Z,1972.289062,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Desert
+2026-09-17T22:09:37.289Z,1972.289062,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Snow
+2026-09-17T22:09:37.289Z,1972.289062,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Volcano
+2026-09-17T22:09:37.289Z,1972.289185,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Ocean
+2026-09-17T22:09:37.289Z,1972.289185,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label AncientRuins
+2026-09-17T22:09:37.289Z,1972.289185,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label MagicalForest
+2026-09-17T22:09:37.289Z,1972.289307,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Sky
+2026-09-17T22:09:37.289Z,1972.289307,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Prehistoric
+2026-09-17T22:09:37.289Z,1972.289307,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Mythical
+2026-09-17T22:09:37.289Z,1972.289429,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label HighOverview
+2026-09-17T22:09:37.289Z,1972.289429,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button PlayerPlots
+2026-09-17T22:09:37.289Z,1972.289429,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Town
+2026-09-17T22:09:37.289Z,1972.289429,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Meadow
+2026-09-17T22:09:37.289Z,1972.289551,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Forest
+2026-09-17T22:09:37.289Z,1972.289551,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Jungle
+2026-09-17T22:09:37.289Z,1972.289551,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Desert
+2026-09-17T22:09:37.289Z,1972.289673,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Snow
+2026-09-17T22:09:37.289Z,1972.289673,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Volcano
+2026-09-17T22:09:37.289Z,1972.289673,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Ocean
+2026-09-17T22:09:37.289Z,1972.289673,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button AncientRuins
+2026-09-17T22:09:37.289Z,1972.289795,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button MagicalForest
+2026-09-17T22:09:37.289Z,1972.289795,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Sky
+2026-09-17T22:09:37.289Z,1972.289795,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Prehistoric
+2026-09-17T22:09:37.289Z,1972.289795,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Mythical
+2026-09-17T22:09:37.289Z,1972.289917,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button HighOverview
+2026-09-17T22:09:37.290Z,1972.290161,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry safe landing
+2026-09-17T22:09:37.290Z,1972.290283,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry room membership
+2026-09-17T22:09:37.290Z,1972.290283,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry clears velocity
+2026-09-17T22:09:37.290Z,1972.290405,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS return to starting area
+2026-09-17T22:09:37.290Z,1972.290405,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] Finished: 0 failures; actual connected players=1
+2026-09-17T22:09:37.290Z,1972.290527,3b4a000,6,Info [FLog::CreatorOutput] [SystemAudit] WARNING multiplayer admission/release still requires a separate two-client Studio test
+2026-09-17T22:28:40.633Z,3115.633789,23af000,6,Info [FLog::CreatorOutput] [EdgeAudit] 334.8482360839844, 37.32892990112305, 248.02099609375 VOID nil
+2026-09-17T22:28:40.633Z,3115.633789,23af000,6,Info [FLog::CreatorOutput] [EdgeAudit] -1010.4891357421875, 37.32892990112305, 248.02099609375 VOID nil
+2026-09-17T22:28:40.633Z,3115.633789,23af000,6,Info [FLog::CreatorOutput] [EdgeAudit] -337.8204650878906, 37.32892990112305, 932.1563110351562 VOID nil
+2026-09-17T22:28:40.635Z,3115.635010,23af000,6,Info [FLog::CreatorOutput] [EdgeAudit] -337.8204650878906, 37.32892990112305, -436.11431884765625 VOID nil
+2026-09-17T22:28:42.419Z,3117.419434,454d000,6,Info [FLog::CreatorOutput] [RespawnAudit] PASS Maciahxcx1 Plot1Floor -461.9914245605469, 13.687708854675293, 472.2572021484375
+2026-09-17T22:30:49.093Z,3244.093750,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ReplicatedStorage.Shared.EventDefinitions
+2026-09-17T22:30:49.093Z,3244.093994,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.AK_PlotAssignment
+2026-09-17T22:30:49.093Z,3244.093994,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.AK_TownVisualRuntime
+2026-09-17T22:30:49.093Z,3244.093994,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.PlotLocator
+2026-09-17T22:30:49.095Z,3244.095215,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.AdminCommandService
+2026-09-17T22:30:49.095Z,3244.095459,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.NumNomService
+2026-09-17T22:30:49.095Z,3244.095947,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.ProfileService
+2026-09-17T22:30:49.096Z,3244.096680,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WeatherAdminService
+2026-09-17T22:30:49.096Z,3244.096924,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WeatherEventService
+2026-09-17T22:30:49.096Z,3244.096924,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WorldService
+2026-09-17T22:30:49.097Z,3244.097656,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.Components
+2026-09-17T22:30:49.097Z,3244.097656,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.ExampleData
+2026-09-17T22:30:49.097Z,3244.097900,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.Main
+2026-09-17T22:30:49.098Z,3244.098877,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.RemoteBridge
+2026-09-17T22:30:49.098Z,3244.098877,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.WeatherEventUI.WeatherEventController
+2026-09-17T22:30:49.099Z,3244.099121,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterPlayer.StarterPlayerScripts.WeatherVisualController
+2026-09-17T22:30:49.111Z,3244.111816,23af000,6,Info [FLog::CreatorOutput] [MapAudit] All repaired sources verified; Studio tests staged
+2026-09-17T22:36:46.818Z,3601.818115,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Common playable floor Y = 9.128930568695068
+2026-09-17T22:36:46.818Z,3601.818115,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Meadow Y=9.128930568695068
+2026-09-17T22:36:46.818Z,3601.818115,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Forest Y=9.128930568695068
+2026-09-17T22:36:46.818Z,3601.818359,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Jungle Y=9.128946781158447
+2026-09-17T22:36:46.818Z,3601.818359,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Desert Y=9.128930509090424
+2026-09-17T22:36:46.818Z,3601.818359,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Snow Y=9.128937244415283
+2026-09-17T22:36:46.818Z,3601.818359,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Volcano Y=9.128930509090424
+2026-09-17T22:36:46.818Z,3601.818359,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Ocean Y=9.128930568695068
+2026-09-17T22:36:46.818Z,3601.818359,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS AncientRuins Y=9.128930568695068
+2026-09-17T22:36:46.818Z,3601.818604,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS MagicalForest Y=9.128930509090424
+2026-09-17T22:36:46.818Z,3601.818604,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Sky Y=9.128930509090424
+2026-09-17T22:36:46.818Z,3601.818604,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Prehistoric Y=9.128930389881134
+2026-09-17T22:36:46.818Z,3601.818604,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Mythical Y=9.128930568695068
+2026-09-17T22:36:46.818Z,3601.818604,3b4a000,6,Info [FLog::CreatorOutput] [FinalMapAudit] Perimeter 4
+2026-09-17T22:37:10.023Z,3625.023193,23af000,6,Info [FLog::CreatorOutput] [MapAudit] Common playable floor Y = 9.128930568695068
+2026-09-17T22:37:10.023Z,3625.023438,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Meadow Y=9.128930568695068
+2026-09-17T22:37:10.023Z,3625.023438,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Forest Y=9.128930568695068
+2026-09-17T22:37:10.023Z,3625.023438,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Jungle Y=9.128946781158447
+2026-09-17T22:37:10.023Z,3625.023682,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Desert Y=9.128930509090424
+2026-09-17T22:37:10.023Z,3625.023682,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Snow Y=9.128937244415283
+2026-09-17T22:37:10.023Z,3625.023682,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Volcano Y=9.128930509090424
+2026-09-17T22:37:10.023Z,3625.023682,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Ocean Y=9.128930568695068
+2026-09-17T22:37:10.023Z,3625.023682,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS AncientRuins Y=9.128930568695068
+2026-09-17T22:37:10.023Z,3625.023926,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS MagicalForest Y=9.128930509090424
+2026-09-17T22:37:10.023Z,3625.023926,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Sky Y=9.128930509090424
+2026-09-17T22:37:10.023Z,3625.023926,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Prehistoric Y=9.128930389881134
+2026-09-17T22:37:10.023Z,3625.023926,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] PASS Mythical Y=9.128930568695068
+2026-09-17T22:37:10.023Z,3625.023926,23af000,6,Info [FLog::CreatorOutput] [FinalMapAudit] Perimeter 4
+2026-09-17T22:48:01.945Z,4276.945312,4f50000,6,Info [FLog::CreatorOutput] [PerimeterAudit] PASS East 323.8482360839844, 10.828930854797363, 248.02099609375
+2026-09-17T22:48:01.945Z,4276.945312,4f50000,6,Info [FLog::CreatorOutput] [PerimeterAudit] PASS West -999.4891357421875, 10.828930854797363, 248.02099609375
+2026-09-17T22:48:01.945Z,4276.945801,4f50000,6,Info [FLog::CreatorOutput] [PerimeterAudit] PASS South -337.8204650878906, 10.828930854797363, 921.1563110351562
+2026-09-17T22:48:01.945Z,4276.945801,4f50000,6,Info [FLog::CreatorOutput] [PerimeterAudit] PASS North -337.8204650878906, 10.828930854797363, -425.11431884765625
+2026-09-17T22:48:01.947Z,4276.947754,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS real plot floors discovered | 4
+2026-09-17T22:48:01.947Z,4276.947754,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot1Floor | 3009757271
+2026-09-17T22:48:01.950Z,4276.950195,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot1Floor
+2026-09-17T22:48:01.950Z,4276.950195,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot1Floor
+2026-09-17T22:48:01.950Z,4276.950195,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot2Floor | 0
+2026-09-17T22:48:01.951Z,4276.951172,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot2Floor
+2026-09-17T22:48:01.951Z,4276.951172,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot2Floor
+2026-09-17T22:48:01.951Z,4276.951172,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot3Floor | 0
+2026-09-17T22:48:01.952Z,4276.952148,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot3Floor
+2026-09-17T22:48:01.952Z,4276.952148,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot3Floor
+2026-09-17T22:48:01.952Z,4276.952148,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ownership Plot4Floor | 0
+2026-09-17T22:48:01.954Z,4276.954590,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS safe plot landing Plot4Floor
+2026-09-17T22:48:01.954Z,4276.954590,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS plot landing clears velocity Plot4Floor
+2026-09-17T22:48:01.954Z,4276.954590,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS player owns one real plot | Plot1Floor
+2026-09-17T22:48:01.954Z,4276.954590,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS profile loaded
+2026-09-17T22:48:01.954Z,4276.954590,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS ProfileStore session active
+2026-09-17T22:48:01.954Z,4276.954590,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS profile data reconciled
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point PlayerPlots
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Town
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Meadow
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Forest
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Jungle
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Desert
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Snow
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Volcano
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Ocean
+2026-09-17T22:48:01.955Z,4276.955078,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point AncientRuins
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point MagicalForest
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Sky
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Prehistoric
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point Mythical
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera point HighOverview
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin room exists
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label PlayerPlots
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Town
+2026-09-17T22:48:01.955Z,4276.955566,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Meadow
+2026-09-17T22:48:01.956Z,4276.956055,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Forest
+2026-09-17T22:48:01.956Z,4276.956055,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Jungle
+2026-09-17T22:48:01.956Z,4276.956055,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Desert
+2026-09-17T22:48:01.956Z,4276.956055,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Snow
+2026-09-17T22:48:01.956Z,4276.956055,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Volcano
+2026-09-17T22:48:01.956Z,4276.956055,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Ocean
+2026-09-17T22:48:01.957Z,4276.957520,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label AncientRuins
+2026-09-17T22:48:01.957Z,4276.957520,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label MagicalForest
+2026-09-17T22:48:01.957Z,4276.957520,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Sky
+2026-09-17T22:48:01.957Z,4276.957520,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Prehistoric
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label Mythical
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera label HighOverview
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button PlayerPlots
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Town
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Meadow
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Forest
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Jungle
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Desert
+2026-09-17T22:48:01.958Z,4276.958008,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Snow
+2026-09-17T22:48:01.958Z,4276.958496,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Volcano
+2026-09-17T22:48:01.958Z,4276.958496,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Ocean
+2026-09-17T22:48:01.958Z,4276.958496,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button AncientRuins
+2026-09-17T22:48:01.958Z,4276.958496,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button MagicalForest
+2026-09-17T22:48:01.958Z,4276.958496,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Sky
+2026-09-17T22:48:01.958Z,4276.958496,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Prehistoric
+2026-09-17T22:48:01.959Z,4276.959473,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button Mythical
+2026-09-17T22:48:01.959Z,4276.959473,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS camera button HighOverview
+2026-09-17T22:48:01.959Z,4276.959961,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry safe landing
+2026-09-17T22:48:01.959Z,4276.959961,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry room membership
+2026-09-17T22:48:01.960Z,4276.960449,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS admin entry clears velocity
+2026-09-17T22:48:01.960Z,4276.960449,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] PASS return to starting area
+2026-09-17T22:48:01.960Z,4276.960938,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] Finished: 0 failures; actual connected players=1
+2026-09-17T22:48:01.960Z,4276.960938,4f50000,6,Info [FLog::CreatorOutput] [SystemAudit] WARNING multiplayer admission/release still requires a separate two-client Studio test
+2026-09-17T22:49:12.029Z,4347.029785,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ReplicatedStorage.Shared.EventDefinitions
+2026-09-17T22:49:12.029Z,4347.029785,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.AK_PlotAssignment
+2026-09-17T22:49:12.029Z,4347.029785,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.AK_TownVisualRuntime
+2026-09-17T22:49:12.029Z,4347.029785,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.PlotLocator
+2026-09-17T22:49:12.030Z,4347.030273,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.AdminCommandService
+2026-09-17T22:49:12.030Z,4347.030273,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.NumNomService
+2026-09-17T22:49:12.030Z,4347.030273,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.ProfileService
+2026-09-17T22:49:12.031Z,4347.031250,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WeatherAdminService
+2026-09-17T22:49:12.031Z,4347.031738,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WeatherEventService
+2026-09-17T22:49:12.031Z,4347.031738,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified ServerScriptService.ServerSource.Server.WorldService
+2026-09-17T22:49:12.031Z,4347.031738,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.Components
+2026-09-17T22:49:12.031Z,4347.031738,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.ExampleData
+2026-09-17T22:49:12.031Z,4347.031738,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.Main
+2026-09-17T22:49:12.032Z,4347.032227,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.AnimalKingdomUI.RemoteBridge
+2026-09-17T22:49:12.032Z,4347.032227,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterGui.WeatherEventUI.WeatherEventController
+2026-09-17T22:49:12.032Z,4347.032227,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] Source verified StarterPlayer.StarterPlayerScripts.WeatherVisualController
+2026-09-17T22:49:12.048Z,4347.048340,3b4a000,6,Info [FLog::CreatorOutput] [MapAudit] All repaired sources verified; Studio tests staged

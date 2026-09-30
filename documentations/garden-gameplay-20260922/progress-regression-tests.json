@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"MissingFields\":\"PASS\",\"CropRegrowthBeforeNodeReuse\":\"PASS\",\"BaseWeights\":{\"1\":40,\"3\":18,\"2\":30,\"5\":3,\"4\":9},\"NoProgressAfterCompletion\":\"PASS\",\"Durations\":{\"GardenShift\":{\"Cycles\":50,\"Harvest\":488.4480000000001},\"GrandHarvest\":{\"Cycles\":150,\"Harvest\":1465.3440000000003},\"SproutRun\":{\"Cycles\":10,\"Harvest\":97.68960000000001}},\"ExtendedPotionDoesNotDoubleLuck\":\"PASS\",\"Caps\":{\"Speed\":1.5,\"Radius\":44,\"Moonmelon\":0.08,\"Yield\":2},\"Events10000\":{\"Pumpkin\":1792,\"Starberry\":901,\"Moonmelon\":310,\"Tomato\":2998,\"Carrot\":3999},\"MalformedFieldRecovery\":\"PASS\",\"OfflineExpiryBoundaries\":{\"Crops\":{\"Pumpkin\":102,\"Starberry\":57,\"Moonmelon\":44,\"Tomato\":157,\"Carrot\":220},\"Result\":\"PASS\",\"Cycles\":156},\"AdditiveIdempotentMigration\":\"PASS\"}"
+    }
+  ],
+  "isError": false
+}

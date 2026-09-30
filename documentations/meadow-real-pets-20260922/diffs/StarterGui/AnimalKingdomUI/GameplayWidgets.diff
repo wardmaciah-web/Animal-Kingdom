@@ -1,0 +1,38 @@
+--- baseline/src/StarterGui/AnimalKingdomUI/GameplayWidgets.lua
++++ src/StarterGui/AnimalKingdomUI/GameplayWidgets.lua
+@@ -25,6 +25,35 @@
+  local view=W.New("ViewportFrame",{Size=size,Position=position,BackgroundTransparency=1,Ambient=Color3.fromRGB(190,190,190),LightColor=Color3.new(1,1,1)},parent)
+  local world=W.New("WorldModel",{},view);model.Parent=world
+  for _,object in ipairs(model:GetDescendants()) do if object:IsA("BillboardGui") or object:IsA("ParticleEmitter") then object:Destroy() end end
++ if model:GetAttribute("CanonicalMeadowPet") then
++  -- SurfaceAppearance packs stream separately and cannot be preloaded. For UI
++  -- clones use the exact authored albedo as a preloaded mesh texture; world
++  -- followers and Sanctuary clones retain their complete PBR appearances.
++  for _,part in ipairs(model:GetDescendants()) do
++   if part:IsA("MeshPart") then
++    local surface=part:FindFirstChildWhichIsA("SurfaceAppearance")
++    if surface then part.TextureID=surface.ColorMapContent.Uri;part.Color=Color3.new(1,1,1);surface:Destroy() end
++   end
++  end
++  local box=model:GetBoundingBox()
++  model:PivotTo(CFrame.new(-box.Position)*model:GetPivot())
++  local camera=W.New("Camera",{FieldOfView=35},view);view.CurrentCamera=camera
++  local function frame()
++   local cf,bounds=model:GetBoundingBox()
++   local aspect=math.max(view.AbsoluteSize.X,1)/math.max(view.AbsoluteSize.Y,1)
++   local rotation=CFrame.lookAt(Vector3.new(.28,.16,-1),Vector3.zero).Rotation
++   local tangent=math.tan(math.rad(camera.FieldOfView/2));local distance=.1
++   for _,x in ipairs({-1,1}) do for _,y in ipairs({-1,1}) do for _,z in ipairs({-1,1}) do
++    local corner=cf:PointToWorldSpace(bounds*Vector3.new(x,y,z)/2)-cf.Position
++    local point=rotation:VectorToObjectSpace(corner)
++    distance=math.max(distance,point.Z+1.12*math.max(math.abs(point.X)/(tangent*aspect),math.abs(point.Y)/tangent))
++   end end end
++   camera.CFrame=CFrame.new(cf.Position+rotation.ZVector*distance)*rotation
++  end
++  frame();local changed=view:GetPropertyChangedSignal("AbsoluteSize"):Connect(frame)
++  view.Destroying:Connect(function()changed:Disconnect()end)
++  return view
++ end
+  local cf,bounds=model:GetBoundingBox();local extent=math.max(bounds.X,bounds.Y,bounds.Z)
+  local camera=W.New("Camera",{FieldOfView=35,CFrame=CFrame.lookAt(cf.Position+Vector3.new(extent*.7,extent*.3,-extent*2.2),cf.Position)},view)
+  view.CurrentCamera=camera;return view

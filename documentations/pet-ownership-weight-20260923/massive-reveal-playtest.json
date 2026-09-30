@@ -1,0 +1,13 @@
+{
+  "Ok": true,
+  "Result": {
+    "Income": 173.54,
+    "Weight": 96,
+    "Location": "Inventory",
+    "PetId": "ForestEmeraldWing",
+    "Quality": "MASSIVE!",
+    "UID": "7b2370ff-29ea-4b0f-ae85-7497ed8cc45f",
+    "NetCoinDecreaseAfterSecondaryGatherRewards": 87,
+    "TreeSearchCost": 750
+  }
+}

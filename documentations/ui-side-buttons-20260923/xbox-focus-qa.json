@@ -1,0 +1,65 @@
+{
+  "Method": "Xbox device simulation; GuiService focus and local visual-state probe, not hardware A/B certification",
+  "FocusChecks": [
+    {
+      "BodyRimEnabled": false,
+      "Image": "",
+      "Name": "Nav_Shop",
+      "Focused": true,
+      "FocusVisible": true,
+      "Background": 1,
+      "Scale": 1,
+      "Selectable": true
+    },
+    {
+      "BodyRimEnabled": false,
+      "Image": "",
+      "Name": "Nav_Daily",
+      "Focused": true,
+      "FocusVisible": true,
+      "Background": 1,
+      "Scale": 1,
+      "Selectable": true
+    },
+    {
+      "BodyRimEnabled": false,
+      "Image": "",
+      "Name": "Nav_Teleport",
+      "Focused": true,
+      "FocusVisible": true,
+      "Background": 1,
+      "Scale": 1,
+      "Selectable": true
+    },
+    {
+      "BodyRimEnabled": false,
+      "Image": "",
+      "Name": "Nav_Friends",
+      "Focused": true,
+      "FocusVisible": true,
+      "Background": 1,
+      "Scale": 1,
+      "Selectable": true
+    },
+    {
+      "BodyRimEnabled": false,
+      "Image": "",
+      "Name": "Nav_Updates",
+      "Focused": true,
+      "FocusVisible": true,
+      "Background": 1,
+      "Scale": 1,
+      "Selectable": true
+    },
+    {
+      "BodyRimEnabled": false,
+      "Image": "",
+      "Name": "Nav_Profile",
+      "Focused": true,
+      "FocusVisible": true,
+      "Background": 1,
+      "Scale": 1,
+      "Selectable": true
+    }
+  ]
+}

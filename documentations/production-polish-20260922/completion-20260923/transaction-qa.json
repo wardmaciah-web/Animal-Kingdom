@@ -1,0 +1,100 @@
+[
+  {
+    "Action": "ShopBuy",
+    "Before": {
+      "Items": 0,
+      "Coins": 500000
+    },
+    "After": {
+      "Items": 1,
+      "Coins": 499500
+    },
+    "Feedback": {
+      "Raw": 16,
+      "Presented": 1
+    }
+  },
+  {
+    "Action": "Upgrade",
+    "Before": {
+      "Coins": 499500,
+      "Level": 0
+    },
+    "After": {
+      "Coins": 499000,
+      "Level": 1
+    },
+    "Feedback": {
+      "Raw": 16,
+      "Presented": 1
+    }
+  },
+  {
+    "Action": "ClaimChallenge",
+    "Before": {
+      "Tokens": 500,
+      "Claimed": false,
+      "Coins": 499000
+    },
+    "After": {
+      "Tokens": 510,
+      "Claimed": true,
+      "Coins": 500000
+    },
+    "Feedback": {
+      "Raw": 16,
+      "Presented": 1
+    }
+  },
+  {
+    "Action": "StartExpedition",
+    "Before": 0,
+    "After": 1,
+    "Feedback": {
+      "Raw": 16,
+      "Presented": 1
+    }
+  },
+  {
+    "Action": "ClaimExpedition",
+    "Before": {
+      "Carrots": 3407,
+      "Tokens": 510,
+      "Trips": 1,
+      "Coins": 500000,
+      "Harvest": 7077
+    },
+    "After": {
+      "Carrots": 3412,
+      "Tokens": 510,
+      "Trips": 0,
+      "Coins": 500000,
+      "Harvest": 7141
+    },
+    "Feedback": {
+      "Raw": 16,
+      "Presented": 1
+    }
+  },
+  {
+    "Action": "ClaimAllExpeditions",
+    "Before": {
+      "Carrots": 3412,
+      "Tokens": 510,
+      "Trips": 2,
+      "Coins": 500000,
+      "Harvest": 7141
+    },
+    "After": {
+      "Carrots": 3416,
+      "Tokens": 510,
+      "Trips": 0,
+      "Coins": 500000,
+      "Harvest": 7181
+    },
+    "Feedback": {
+      "Raw": 16,
+      "Presented": 1
+    }
+  }
+]

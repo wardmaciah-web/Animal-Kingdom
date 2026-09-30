@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-09-17T22:46:31.441084+00:00",
+  "changed": [
+    "src/ReplicatedStorage/Shared/EventDefinitions.lua",
+    "src/ServerScriptService/AK_PlotAssignment.server.lua",
+    "src/ServerScriptService/AK_TownVisualRuntime.server.lua",
+    "src/ServerScriptService/PlotLocator.lua",
+    "src/ServerScriptService/ServerSource/Server/AdminCommandService.lua",
+    "src/ServerScriptService/ServerSource/Server/NumNomService.lua",
+    "src/ServerScriptService/ServerSource/Server/ProfileService.lua",
+    "src/ServerScriptService/ServerSource/Server/WeatherAdminService.lua",
+    "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua",
+    "src/ServerScriptService/ServerSource/Server/WorldService.lua",
+    "src/StarterGui/AnimalKingdomUI/Components.lua",
+    "src/StarterGui/AnimalKingdomUI/ExampleData.lua",
+    "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "src/StarterGui/AnimalKingdomUI/RemoteBridge.lua",
+    "src/StarterGui/WeatherEventUI/WeatherEventController.client.lua",
+    "src/StarterPlayer/StarterPlayerScripts/WeatherVisualController.client.lua",
+    "tests/AdminCommandCenter.spec.lua",
+    "tests/AdminCommandCenter.studio.client.lua",
+    "tests/AdminCommandService.spec.lua",
+    "tests/BiomeTeleport.studio.lua"
+  ],
+  "added": [
+    "tests/AuthoredWorld.spec.lua",
+    "tests/MapNavigation.studio.server.lua",
+    "tests/MultiplayerAudit.studio.server.lua",
+    "tests/SystemAudit.spec.lua",
+    "tests/SystemAudit.studio.server.lua",
+    "tests/WeatherAudit.studio.client.lua",
+    "tests/run_system_audit_tests.py",
+    "tools/audit/ApplyBiomeAlignment.lua",
+    "tools/audit/ArchiveLiveConflicts.lua",
+    "tools/audit/FinalizeMap.lua",
+    "tools/audit/InspectMap.lua",
+    "tools/audit/InstallRepairedSources.lua",
+    "tools/audit/PlanBiomeAlignment.lua",
+    "tools/audit/capture_final_views.py"
+  ]
+}

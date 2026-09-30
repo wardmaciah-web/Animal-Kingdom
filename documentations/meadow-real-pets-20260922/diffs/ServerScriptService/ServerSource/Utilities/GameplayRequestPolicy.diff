@@ -1,0 +1,11 @@
+--- baseline/src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua
++++ src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua
+@@ -6,6 +6,8 @@
+ local target=function(v) return typeof(v)=="Instance" and (v:IsA("Model") or v:IsA("BasePart")) and v:IsDescendantOf(workspace) end
+ local offset=function(v) return typeof(v)=="Vector3" and Guard.Finite(v.X) and Guard.Finite(v.Y) and Guard.Finite(v.Z) and v.Magnitude<1000 end
+ Policy.Actions={
++ PetAssetsLoaded={.15,{Id=id,Signature=function(v)return type(v)=="string" and #v<=1024 end,Loaded=boolean}},
++ DisplayMeadowPet={.2,{UID=id,Displayed=boolean}},
+  Equip={.15,{UID=id,Equipped=boolean}},Favorite={.15,{UID=id,Value=boolean}},Lock={.15,{UID=id,Value=boolean}},
+  RequestDelete={.3,{UID=id}},Delete={.3,{UID=id,Token=id}},
+  Gather={.3,{Target=target}},Upgrade={.4,{Id=id}},UnlockBiome={.5,{Id=id}},ClaimChallenge={.4,{Period=function(v) return v=="Daily" or v=="Weekly" end,Id=id}},

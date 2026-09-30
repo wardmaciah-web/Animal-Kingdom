@@ -1,0 +1,92 @@
+{
+  "Ok": true,
+  "Result": {
+    "Result": {
+      "PlotsSeparate": true,
+      "CrossOwnershipRejected": true,
+      "GardenPlots": [
+        2,
+        1
+      ],
+      "PlaceId": 132313449035787,
+      "ClientA": {
+        "Plot": 2,
+        "GardenReady": 25,
+        "Camera": "Enum.CameraType.Custom",
+        "Owned": {
+          "e7aa9df4-9c41-4d05-a819-fe3414414e48": "ForestRiverOtter",
+          "892eb46d-6324-446e-b639-3ee24b78ccd6": "ForestRaccoon",
+          "1ca8e370-1981-4c4d-8973-38d0d037429b": "ForestBrownBat"
+        },
+        "PlaceId": 132313449035787,
+        "UserId": -2,
+        "Currencies": {
+          "Coins": 99536,
+          "FriendshipTokens": 100,
+          "GardenHarvest": 0
+        },
+        "Garden": {
+          "e7aa9df4-9c41-4d05-a819-fe3414414e48": "ForestRiverOtter"
+        },
+        "Player": "Player2",
+        "Display": {
+          "892eb46d-6324-446e-b639-3ee24b78ccd6": "ForestRaccoon"
+        },
+        "Followers": [
+          "ForestRaccoon",
+          "MeadowFieldMouse"
+        ],
+        "RevealPet": "ForestBrownBat",
+        "Mouse": "Enum.MouseBehavior.Default",
+        "Equipped": [
+          "892eb46d-6324-446e-b639-3ee24b78ccd6"
+        ],
+        "Ready": 25
+      },
+      "ClientB": {
+        "Plot": 1,
+        "GardenReady": 25,
+        "Owned": {
+          "dd188f64-a04f-43c4-a58d-00eb9194cb71": "MeadowFieldMouse",
+          "e4cb4acf-16d4-44cf-ad34-63dc60fd52b6": "ForestTreeFrog"
+        },
+        "PlaceId": 132313449035787,
+        "UserId": -1,
+        "Camera": "Enum.CameraType.Custom",
+        "Currencies": {
+          "Coins": 200000,
+          "FriendshipTokens": 200,
+          "GardenHarvest": 0
+        },
+        "Player": "Player1",
+        "Garden": {
+          "e4cb4acf-16d4-44cf-ad34-63dc60fd52b6": "ForestTreeFrog"
+        },
+        "Followers": [
+          "MeadowFieldMouse",
+          "ForestRaccoon"
+        ],
+        "Display": {
+          "dd188f64-a04f-43c4-a58d-00eb9194cb71": "MeadowFieldMouse"
+        },
+        "Mouse": "Enum.MouseBehavior.Default",
+        "Equipped": [
+          "dd188f64-a04f-43c4-a58d-00eb9194cb71"
+        ],
+        "Ready": 25
+      },
+      "ForestReward": "ForestBrownBat",
+      "GardensSeparate": true,
+      "PersonalReward": true,
+      "Plots": [
+        "Plot2Floor",
+        "Plot1Floor"
+      ],
+      "GameId": 10764288431,
+      "ProfilesSeparate": true,
+      "GardenClaimIsolated": true,
+      "Players": 2
+    },
+    "Ok": true
+  }
+}

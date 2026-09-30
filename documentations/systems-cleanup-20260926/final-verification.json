@@ -1,0 +1,14 @@
+{
+  "PlayStopped": true,
+  "CompilePass": 25,
+  "SourceMatches": 25,
+  "MockProfileMode": true,
+  "ArchivedModulesAbsent": 3,
+  "WorldInstancesCompared": 3339,
+  "WorldComparisonFailures": 0,
+  "WorldTransformed": 0,
+  "RojoBuild": "passed",
+  "RojoAutoSync": "paused (PID 19077)",
+  "CompactIndexDiscoveredCount": "visible and fits in iPhone portrait",
+  "Published": false
+}

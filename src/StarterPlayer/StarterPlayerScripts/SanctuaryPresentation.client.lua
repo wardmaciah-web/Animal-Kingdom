@@ -1,0 +1,55 @@
+-- One bounded client animation loop for every Sanctuary. Server placement and income stay authoritative.
+local Collection=game:GetService('CollectionService')
+local RunService=game:GetService('RunService')
+local Players=game:GetService('Players')
+local Geometry=require(game.ReplicatedStorage.Shared.Gameplay.PetVisualGeometry)
+local entries,pending={},{}
+local function initialize(model)
+ if not model:IsA('Model') or entries[model] then return true end
+  if not model.Parent then return true end
+  local bounds=Geometry.Measure(model);if not bounds then return false end
+  local phase=0;for i=1,#model.Name do phase=(phase+string.byte(model.Name,i)*i)%997 end
+  local e={Model=model,Bounds=bounds,Base=model:GetAttribute('DisplayBasePivot') or model:GetPivot(),Phase=phase/997*math.pi*2,Labels={}}
+  local function label(d)if d:IsA('BillboardGui')then d.Enabled=false;d.MaxDistance=48;table.insert(e.Labels,d)end end
+  for _,d in ipairs(model:GetDescendants())do label(d)end
+  e.LabelConnection=model.DescendantAdded:Connect(label)
+  e.Connection=model:GetAttributeChangedSignal('DisplayBasePivot'):Connect(function()e.Base=model:GetAttribute('DisplayBasePivot') or model:GetPivot()end)
+  entries[model]=e;return true
+end
+local function add(model)if model:IsA('Model')and not entries[model]then pending[model]=true end end
+local function remove(model)pending[model]=nil;local e=entries[model];if e then e.Connection:Disconnect();e.LabelConnection:Disconnect();entries[model]=nil end end
+Collection:GetInstanceAddedSignal('SanctuaryDisplayPet'):Connect(add)
+Collection:GetInstanceRemovedSignal('SanctuaryDisplayPet'):Connect(remove)
+for _,m in ipairs(Collection:GetTagged('SanctuaryDisplayPet'))do add(m)end
+local elapsed=0
+RunService.Heartbeat:Connect(function(dt)
+ elapsed+=dt;if elapsed<.05 then return end;elapsed=0
+ local initialized=0
+ for model in pairs(pending)do if initialized>=8 then break end;if initialize(model)then pending[model]=nil;initialized+=1 end end
+ local camera=workspace.CurrentCamera;if not camera then return end
+ local now=os.clock();local nearest,score=nil,math.huge
+ local reduced=Players.LocalPlayer:GetAttribute('AKReducedMotion')==true
+ for model,e in pairs(entries)do
+  if not model.Parent then remove(model);continue end
+  local distance=(camera.CFrame.Position-e.Base.Position).Magnitude
+  local point,onScreen=camera:WorldToViewportPoint(e.Base.Position)
+  if onScreen and distance<48 then
+   local center=Vector2.new(point.X,point.Y)-camera.ViewportSize/2
+   local rank=center.Magnitude+distance*2
+   if rank<score then nearest=e;score=rank end
+  end
+  if not reduced and onScreen and distance<140 then
+   local rate=distance<70 and .05 or .16
+   if not e.Next or now>=e.Next then
+    e.Next=now+rate
+    -- Yaw around the grounded bounding center. No vertical float or synchronized bounce.
+    local yaw=math.sin(now*.7+e.Phase)*.018
+    local rotation=e.Base.Rotation*CFrame.Angles(0,yaw,0)
+    local old=Geometry.RotateBounds(e.Bounds,e.Base.Rotation)
+    local surface=e.Base.Position+Vector3.new(old.Center.X,old.Min.Y,old.Center.Z)
+    model:PivotTo(Geometry.GroundCFrame(e.Bounds,surface,rotation,0))
+   end
+  elseif e.Next then model:PivotTo(e.Base);e.Next=nil end
+ end
+ for _,e in pairs(entries)do for _,label in ipairs(e.Labels)do label.Enabled=e==nearest end end
+end)

@@ -1,0 +1,2 @@
+AuthoredWorld.spec: four visible safe-edge walls, support height/corner fit, idempotence, rotation, unmanaged content preserved
+AuthoredWorld.spec: authored geometry preserved; fallback isolated; prototype loops disabled; portable fallback retained

@@ -1,0 +1,294 @@
+ANIMAL KINGDOM STUDIO IMPORT TOWN ASSET MANIFEST
+Import each FBX into Studio, place the resulting Model under ServerStorage.AnimalKingdomTownMaterialTemplates, and name it exactly as the filename stem.
+No textures, UV maps, or SurfaceAppearance objects are required.
+
+TradingHall_MaterialSplit.fbx
+  source building: Inn.fbx
+  combined dimensions: [4.0291125774383545, 3.491201900603664, 4.021362304687447]
+  source faces: 3865
+  packaged faces: 3865
+  bounds difference: 4.46594228265e-09
+  verification: PASS
+  contained mesh objects:
+    AK_Gold
+      source materials: Windows
+      material role: Gold
+      intended RGB: (220, 177, 81)
+      intended Roblox Material: Metal
+      faces: 14
+    AK_Roof
+      source materials: RoofTiles_Red
+      material role: Roof
+      intended RGB: (83, 82, 78)
+      intended Roblox Material: Slate
+      faces: 1336
+    AK_Stone
+      source materials: Stone_Dark, Stone_Light
+      material role: Stone
+      intended RGB: (145, 139, 126)
+      intended Roblox Material: Cobblestone
+      faces: 1240
+    AK_Timber
+      source materials: Wood, Wood_Light
+      material role: Timber
+      intended RGB: (79, 55, 42)
+      intended Roblox Material: WoodPlanks
+      faces: 1225
+    AK_Walls
+      source materials: Plaster
+      material role: Walls
+      intended RGB: (238, 218, 179)
+      intended Roblox Material: SmoothPlastic
+      faces: 50
+
+Rewards_MaterialSplit.fbx
+  source building: House_4.fbx
+  combined dimensions: [1.9369354248046875, 1.0733024920069512, 2.1235672601644935]
+  source faces: 1508
+  packaged faces: 1508
+  bounds difference: 3.9233398752e-09
+  verification: PASS
+  contained mesh objects:
+    AK_Roof
+      source materials: Stone_Dark
+      material role: Roof
+      intended RGB: (91, 78, 72)
+      intended Roblox Material: Slate
+      faces: 719
+    AK_Stone
+      source materials: Stone
+      material role: Stone
+      intended RGB: (145, 139, 126)
+      intended Roblox Material: Cobblestone
+      faces: 98
+    AK_Terracotta
+      source materials: Wood_Side
+      material role: Terracotta
+      intended RGB: (170, 73, 70)
+      intended Roblox Material: SmoothPlastic
+      faces: 20
+    AK_Timber
+      source materials: Wood
+      material role: Timber
+      intended RGB: (117, 78, 52)
+      intended Roblox Material: WoodPlanks
+      faces: 358
+    AK_Walls
+      source materials: Stone_Light
+      material role: Walls
+      intended RGB: (246, 232, 199)
+      intended Roblox Material: SmoothPlastic
+      faces: 313
+
+GeneralStore_MaterialSplit.fbx
+  source building: House_2.fbx
+  combined dimensions: [2.220160722732544, 3.2503521494986636, 3.420024515165922]
+  source faces: 3569
+  packaged faces: 3569
+  bounds difference: 4.51660131517e-09
+  verification: PASS
+  contained mesh objects:
+    AK_Roof
+      source materials: RoofTiles
+      material role: Roof
+      intended RGB: (144, 82, 61)
+      intended Roblox Material: Slate
+      faces: 608
+    AK_Sage
+      source materials: Windows
+      material role: Sage
+      intended RGB: (105, 145, 96)
+      intended Roblox Material: SmoothPlastic
+      faces: 16
+    AK_Stone
+      source materials: Stone, Stone_Dark, Stone_Light
+      material role: Stone
+      intended RGB: (145, 139, 126)
+      intended Roblox Material: Cobblestone
+      faces: 1734
+    AK_Timber
+      source materials: Wood, Wood_Light, Wood_Side
+      material role: Timber
+      intended RGB: (117, 78, 52)
+      intended Roblox Material: WoodPlanks
+      faces: 1199
+    AK_Walls
+      source materials: Beige
+      material role: Walls
+      intended RGB: (238, 218, 179)
+      intended Roblox Material: SmoothPlastic
+      faces: 12
+
+Blacksmith_MaterialSplit.fbx
+  source building: Blacksmith.fbx
+  combined dimensions: [3.8900245428085327, 3.003413919299571, 3.2834970963029644]
+  source faces: 3792
+  packaged faces: 3792
+  bounds difference: 4.97955321421e-09
+  verification: PASS
+  contained mesh objects:
+    AK_ForgeAccent
+      source materials: Windows
+      material role: ForgeAccent
+      intended RGB: (177, 91, 64)
+      intended Roblox Material: SmoothPlastic
+      faces: 4
+    AK_Roof
+      source materials: RoofTiles_Red
+      material role: Roof
+      intended RGB: (68, 67, 64)
+      intended Roblox Material: Slate
+      faces: 488
+    AK_Stone
+      source materials: Stone_Dark, Stone_Light
+      material role: Stone
+      intended RGB: (145, 139, 126)
+      intended Roblox Material: Cobblestone
+      faces: 2047
+    AK_Timber
+      source materials: Wood, Wood_Light, Wood_Side
+      material role: Timber
+      intended RGB: (79, 55, 42)
+      intended Roblox Material: WoodPlanks
+      faces: 1238
+    AK_Walls
+      source materials: Plaster
+      material role: Walls
+      intended RGB: (213, 187, 147)
+      intended Roblox Material: SmoothPlastic
+      faces: 15
+
+Well_MaterialSplit.fbx
+  source building: Well.fbx
+  combined dimensions: [0.66636723279953, 1.2504478522556637, 1.0035562750512248]
+  source faces: 899
+  packaged faces: 899
+  bounds difference: 4.92385854312e-10
+  verification: PASS
+  contained mesh objects:
+    AK_Roof
+      source materials: RoofTiles_Red
+      material role: Roof
+      intended RGB: (83, 82, 78)
+      intended Roblox Material: Slate
+      faces: 70
+    AK_Stone
+      source materials: Stone_Dark, Stone_Light
+      material role: Stone
+      intended RGB: (161, 154, 139)
+      intended Roblox Material: Cobblestone
+      faces: 504
+    AK_Wood
+      source materials: Bag, Wood
+      material role: Wood
+      intended RGB: (117, 78, 52)
+      intended Roblox Material: WoodPlanks
+      faces: 325
+
+MarketStand1_MaterialSplit.fbx
+  source building: MarketStand_1.fbx
+  combined dimensions: [0.950941264629364, 1.0491734790784848, 1.1898322137930748]
+  source faces: 774
+  packaged faces: 774
+  bounds difference: 1.41174316681e-09
+  verification: PASS
+  contained mesh objects:
+    AK_Canopy
+      source materials: RoofTiles_Red
+      material role: Canopy
+      intended RGB: (105, 145, 96)
+      intended Roblox Material: SmoothPlastic
+      faces: 152
+    AK_Cream
+      source materials: Beige
+      material role: Cream
+      intended RGB: (238, 218, 179)
+      intended Roblox Material: SmoothPlastic
+      faces: 112
+    AK_Wood
+      source materials: Wood, Wood_Side
+      material role: Wood
+      intended RGB: (117, 78, 52)
+      intended Roblox Material: WoodPlanks
+      faces: 510
+
+MarketStand2_MaterialSplit.fbx
+  source building: MarketStand_2.fbx
+  combined dimensions: [0.5171720087528229, 1.0421495150012217, 1.1542346953446034]
+  source faces: 566
+  packaged faces: 566
+  bounds difference: 2.44110109904e-09
+  verification: PASS
+  contained mesh objects:
+    AK_Canopy
+      source materials: RoofTiles_Red
+      material role: Canopy
+      intended RGB: (170, 73, 70)
+      intended Roblox Material: SmoothPlastic
+      faces: 130
+    AK_Cream
+      source materials: Beige
+      material role: Cream
+      intended RGB: (238, 218, 179)
+      intended Roblox Material: SmoothPlastic
+      faces: 96
+    AK_Wood
+      source materials: Wood
+      material role: Wood
+      intended RGB: (117, 78, 52)
+      intended Roblox Material: WoodPlanks
+      faces: 340
+
+Cart_MaterialSplit.fbx
+  source building: Cart.fbx
+  combined dimensions: [0.46199747920036316, 0.7960560128239125, 0.9273888518526426]
+  source faces: 1324
+  packaged faces: 1324
+  bounds difference: 3.99818428365e-10
+  verification: PASS
+  contained mesh objects:
+    AK_Accent
+      source materials: Red
+      material role: Accent
+      intended RGB: (177, 91, 64)
+      intended Roblox Material: SmoothPlastic
+      faces: 124
+    AK_DarkWood
+      source materials: DarkWood
+      material role: DarkWood
+      intended RGB: (117, 78, 52)
+      intended Roblox Material: WoodPlanks
+      faces: 158
+    AK_MainWood
+      source materials: Beige, Wood
+      material role: MainWood
+      intended RGB: (177, 123, 77)
+      intended Roblox Material: WoodPlanks
+      faces: 910
+    AK_WheelFrame
+      source materials: Stone_Dark
+      material role: WheelFrame
+      intended RGB: (79, 55, 42)
+      intended Roblox Material: WoodPlanks
+      faces: 132
+
+AK_STUDIO_IMPORT_PACKAGE_VERIFY
+asset=TradingHall_MaterialSplit.fbx meshObjects=5 sourceFaces=3865 packagedFaces=3865 boundsDifference=4.46594228265e-09 status=PASS
+asset=Rewards_MaterialSplit.fbx meshObjects=5 sourceFaces=1508 packagedFaces=1508 boundsDifference=3.9233398752e-09 status=PASS
+asset=GeneralStore_MaterialSplit.fbx meshObjects=5 sourceFaces=3569 packagedFaces=3569 boundsDifference=4.51660131517e-09 status=PASS
+asset=Blacksmith_MaterialSplit.fbx meshObjects=5 sourceFaces=3792 packagedFaces=3792 boundsDifference=4.97955321421e-09 status=PASS
+asset=Well_MaterialSplit.fbx meshObjects=3 sourceFaces=899 packagedFaces=899 boundsDifference=4.92385854312e-10 status=PASS
+asset=MarketStand1_MaterialSplit.fbx meshObjects=3 sourceFaces=774 packagedFaces=774 boundsDifference=1.41174316681e-09 status=PASS
+asset=MarketStand2_MaterialSplit.fbx meshObjects=3 sourceFaces=566 packagedFaces=566 boundsDifference=2.44110109904e-09 status=PASS
+asset=Cart_MaterialSplit.fbx meshObjects=4 sourceFaces=1324 packagedFaces=1324 boundsDifference=3.99818428365e-10 status=PASS
+
+SUMMARY
+Buildings packaged: 8/8
+Combined FBX files: 8
+Material pieces preserved: 33
+Geometry coverage: 100%
+Missing polygons: 0
+Duplicated polygons: 0
+Geometry movement: 0
+Blender used: NO
+Open Cloud required: NO

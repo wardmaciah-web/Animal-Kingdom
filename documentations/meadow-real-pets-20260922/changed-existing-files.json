@@ -1,0 +1,15 @@
+[
+  "src/StarterGui/AnimalKingdomUI/PetMenus.lua",
+  "src/StarterGui/AnimalKingdomUI/GameplayWidgets.lua",
+  "src/StarterGui/AnimalKingdomUI/HatchPresentation.lua",
+  "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+  "src/ServerScriptService/ServerSource/Server/WorldContentService.lua",
+  "src/ServerScriptService/ServerSource/Server/EggService.lua",
+  "src/ServerScriptService/ServerSource/Server/SanctuaryService.lua",
+  "src/ServerScriptService/ServerSource/Server/ResourceService.lua",
+  "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+  "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+  "src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua",
+  "src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+  "src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua"
+]

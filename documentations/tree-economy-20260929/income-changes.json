@@ -1,0 +1,134 @@
+[
+  {
+    "PetId": "MeadowFieldMouse",
+    "Name": "Field Mouse",
+    "Old": 1.0,
+    "New": 2.5
+  },
+  {
+    "PetId": "MeadowChick",
+    "Name": "Meadow Chick",
+    "Old": 1.25,
+    "New": 4
+  },
+  {
+    "PetId": "MeadowFawn",
+    "Name": "Meadow Fawn",
+    "Old": 2.5,
+    "New": 5
+  },
+  {
+    "PetId": "MeadowRedSquirrel",
+    "Name": "Red Squirrel",
+    "Old": 1.75,
+    "New": 6
+  },
+  {
+    "PetId": "MeadowFluffyLop",
+    "Name": "Fluffy Lop Bunny",
+    "Old": 3.0,
+    "New": 8
+  },
+  {
+    "PetId": "MeadowPrismAntlerDeer",
+    "Name": "Prism-Antler Deer",
+    "Old": 7.0,
+    "New": 12
+  },
+  {
+    "PetId": "MeadowGoat",
+    "Name": "Meadow Goat",
+    "Old": 2.0,
+    "New": 9
+  },
+  {
+    "PetId": "MeadowBuck",
+    "Name": "Meadow Buck",
+    "Old": 4.5,
+    "New": 12
+  },
+  {
+    "PetId": "MeadowDaisyCrownBunny",
+    "Name": "Daisy-Crown Bunny",
+    "Old": 5.0,
+    "New": 14
+  },
+  {
+    "PetId": "MeadowDaisyHedgehog",
+    "Name": "Daisy Hedgehog",
+    "Old": 4.0,
+    "New": 14
+  },
+  {
+    "PetId": "MeadowCelestialLamb",
+    "Name": "Celestial Lamb",
+    "Old": 9.0,
+    "New": 22
+  },
+  {
+    "PetId": "ForestRaccoon",
+    "Name": "Raccoon",
+    "Old": 10.0,
+    "New": 22
+  },
+  {
+    "PetId": "ForestTreeFrog",
+    "Name": "Tree Frog",
+    "Old": 22.0,
+    "New": 36
+  },
+  {
+    "PetId": "ForestEmeraldWing",
+    "Name": "Emerald-Wing Guardian",
+    "Old": 90.0,
+    "New": 180
+  },
+  {
+    "PetId": "ForestBlackBearCub",
+    "Name": "Black Bear Cub",
+    "Old": 12.0,
+    "New": 32
+  },
+  {
+    "PetId": "ForestBrownBat",
+    "Name": "Brown Bat",
+    "Old": 36.0,
+    "New": 52
+  },
+  {
+    "PetId": "ForestSkunk",
+    "Name": "Skunk",
+    "Old": 15.0,
+    "New": 46
+  },
+  {
+    "PetId": "ForestWoodlandOwl",
+    "Name": "Woodland Owl",
+    "Old": 45.0,
+    "New": 70
+  },
+  {
+    "PetId": "ForestBadger",
+    "Name": "Badger",
+    "Old": 18.0,
+    "New": 66
+  },
+  {
+    "PetId": "ForestLeafAntler",
+    "Name": "Leaf-Antler Guardian",
+    "Old": 70.0,
+    "New": 100
+  },
+  {
+    "PetId": "ForestRiverOtter",
+    "Name": "River Otter",
+    "Old": 28.0,
+    "New": 95
+  },
+  {
+    "PetId": "ForestCrestedOwl",
+    "Name": "Crested Owl",
+    "Old": 55.0,
+    "New": 140
+  }
+]

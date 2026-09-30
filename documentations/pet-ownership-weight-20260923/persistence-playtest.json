@@ -1,0 +1,11 @@
+{
+  "Ok": true,
+  "Result": {
+    "WeightAndLocationsPersisted": true,
+    "SavedOwnedPets": 40,
+    "MockOnly": true,
+    "Method": "Existing active mock profile Save, Mock:GetAsync, then migration. No new datastore or live write.",
+    "Store": "OriginalData1",
+    "PetDataVersion": 1
+  }
+}

@@ -1,0 +1,56 @@
+ANIMAL KINGDOM TOWN BAKED MATERIAL TEXTURE AUDIT
+Source: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip
+Method: direct binary FBX Geometry, LayerElementMaterial, LayerElementUV, UVIndex, PolygonVertexIndex, Material, Properties70/DiffuseColor, and connection inspection.
+Blender command line available: NO
+
+CRITICAL RESULT
+The selected FBXs are material-slot/color assets, not texture-atlas assets. They each contain one combined geometry. Their material boundaries are polygon material indices, but their UVs are absent or intentionally degenerate/overlapping. A PNG applied to the existing one-MeshPart Roblox imports cannot preserve those material boundaries. Baking a useful multicolor map requires creating a new non-overlapping UV atlas and exporting/re-uploading replacement geometry. Per the task constraint, replacement geometry is not applied in this pass.
+
+Inn.fbx
+Mesh: Cube.393; material slots: 7; polygons: 3865; UV layers: 1; UV coordinates: 5
+Materials: Wood (39,17,6)->TIMBER (79,55,42); Stone_Dark (39,47,58)->ROOF (83,82,78); RoofTiles_Red (38,7,4)->GREEN_ACCENT (105,145,96); Plaster (109,103,59)->WALL (238,218,179); Stone_Light (56,67,74)->STONE (145,139,126); Windows (9,9,9)->GOLD_DETAIL (220,177,81); Wood_Light (68,29,10)->TIMBER (79,55,42)
+UV usability: NO. Six material regions use the same single UV index; only Plaster uses the five-coordinate projection. Material regions overlap in UV space.
+
+House_4.fbx
+Mesh: Cube.037; material slots: 6; polygons: 1508; UV layers: 1; UV coordinates: 1
+Materials: Stone_Light->WALL (246,232,199); Stone_Dark->ROOF (91,78,72); Wood->TIMBER (117,78,52); Wood_Side->TERRACOTTA_ACCENT (170,73,70); Windows->GOLD_DETAIL (220,177,81); Stone->STONE (145,139,126)
+UV usability: NO. Every polygon/material samples the same UV coordinate.
+
+House_2.fbx
+Mesh: Cylinder.021; material slots: 9; polygons: 3569; UV layers: 1; UV coordinates: 17
+Materials: Beige->WALL (238,218,179); Wood/Wood_Light/Wood_Side->TIMBER (117,78,52); Stone_Dark/Stone/Stone_Light->STONE (145,139,126); Windows->SAGE_DETAIL (105,145,96); RoofTiles->ROOF (144,82,61)
+UV usability: NO. Eight material regions use one shared UV index; only RoofTiles uses the 17-coordinate projection. Material regions overlap.
+
+Blacksmith.fbx
+Mesh: Cube.000; material slots: 9; polygons: 3792; UV layers: 1; UV coordinates: 5
+Materials: Plaster->WALL_TAN (213,187,147); Wood/Wood_Light/Wood_Side->TIMBER (79,55,42); Stone_Light/Stone_Dark/Stone->STONE (145,139,126); Windows->FORGE_ACCENT (177,91,64); RoofTiles_Red->ROOF (68,67,64)
+UV usability: NO. Eight material regions use one shared UV index; only one region uses the five-coordinate projection. Material regions overlap.
+
+Well.fbx
+Mesh: Cube.274; material slots: 5; polygons: 899; UV layers: 1; UV coordinates: 5
+Materials: Wood->WOOD (117,78,52); Bag->WOOD_DETAIL (117,78,52); RoofTiles_Red->ROOF (83,82,78); Stone_Dark/Stone_Light->STONE (161,154,139). Water can be blue (84,178,200) only if separately identified after re-export.
+UV usability: NO. Four regions use one shared UV index; one region uses the five-coordinate projection. Material regions overlap.
+
+MarketStand_1.fbx
+Mesh: Cube.331; material slots: 4; polygons: 774; UV layers: 0
+Materials: Wood/Wood_Side->WOOD (117,78,52); Beige->CREAM (238,218,179); RoofTiles_Red->CANOPY (105,145,96)
+UV usability: NO. No UV data exists.
+
+MarketStand_2.fbx
+Mesh: Cube.334; material slots: 3; polygons: 566; UV layers: 0
+Materials: Wood->WOOD (117,78,52); Beige->CREAM (238,218,179); RoofTiles_Red->CANOPY (170,73,70)
+UV usability: NO. No UV data exists.
+
+Cart.fbx
+Mesh: Cube.350; material slots: 5; polygons: 1324; UV layers: 0
+Materials: Wood/Beige->MAIN_WOOD (177,123,77); DarkWood->DARK_WOOD (117,78,52); Stone_Dark->WHEEL_STRUCTURE (79,55,42); Red->ACCENT (177,91,64)
+UV usability: NO. No UV data exists.
+
+SUMMARY
+Present assets audited: 8/8
+Usable non-overlapping UV atlases: 0/8
+Valid baked PNGs produced: 0
+Images uploaded: 0
+Broken/misleading textures uploaded: 0
+Existing Roblox mesh geometry modified: NO
+Required next asset operation: create non-overlapping UV atlases while preserving geometry, bake the classified colors, export eight identical-shape replacement meshes, upload meshes and images, then replace the current MeshIds with explicit authorization. This polish pass intentionally does not perform that geometry replacement.

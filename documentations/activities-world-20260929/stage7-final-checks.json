@@ -1,0 +1,25 @@
+{
+  "Kind": "Final focused Studio checks",
+  "Compile": {
+    "Mode": "Edit",
+    "Scripts": 173,
+    "Errors": [],
+    "MockProfiles": true
+  },
+  "Receipt": {
+    "Kind": "Actual ShopService calls; simulated prior-rotation persisted receipt",
+    "Passed": true,
+    "Assertions": 5,
+    "Failures": []
+  },
+  "Ambient": {
+    "Kind": "Client Play with temporary local biome/weather/reduced-motion fixtures",
+    "ForestMistRate": 0.25,
+    "ForestMistTexture": "rbxasset://textures/particles/smoke_main.dds",
+    "TotalRate": 1.75,
+    "WeatherMist": 0,
+    "ReducedTotal": 0
+  },
+  "Viewport": "Device simulation stopped; landscape/default viewport restored",
+  "Published": false
+}

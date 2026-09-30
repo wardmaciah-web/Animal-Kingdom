@@ -1,0 +1,20 @@
+2026-09-18T00:07:14.458Z,9029.458984,2db2000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS impact lifetime configured to 30 seconds
+2026-09-18T00:07:18.466Z,9033.466797,23af000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS frequent flying meteors: 18 observed in four seconds
+2026-09-18T00:07:18.466Z,9033.466797,23af000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS fast meteors follow world trajectories after camera rotation/translation
+2026-09-18T00:07:21.683Z,9036.683594,2db2000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS large ground impact appears within 16 seconds
+2026-09-18T00:07:21.683Z,9036.683594,2db2000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS large meteor visibly flies before its impact
+2026-09-18T00:07:21.683Z,9036.683594,2db2000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS impact server-clock deadline is exactly 30 seconds
+2026-09-18T00:07:21.683Z,9036.683594,2db2000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS impact has rubble and ground cracks
+2026-09-18T00:07:52.015Z,9067.015625,4f50000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS individual impact persists then cleans itself after 30 seconds
+2026-09-18T00:07:52.015Z,9067.015625,4f50000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS bounded effects: peak flights=7, impacts=3
+2026-09-18T00:07:52.015Z,9067.015625,4f50000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS meteor/rubble/crack effects anchored and noncolliding
+2026-09-18T00:07:52.016Z,9067.016602,4f50000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS impacts preserve authored floor geometry and collision
+2026-09-18T00:07:54.332Z,9069.332031,23af000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS ending MeteorShower removes all remaining flights and impact scars
+2026-09-18T00:07:55.398Z,9070.398438,8b62000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS recognizable ghost crowd is present and bounded: 12
+2026-09-18T00:07:55.398Z,9070.398438,8b62000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS ghosts have visible sheet bodies, round heads, paired eyes and mouths
+2026-09-18T00:07:55.398Z,9070.398438,8b62000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS spirit wisps/fireflies active with bounded aggregate rate: 132
+2026-09-18T00:07:55.399Z,9070.399414,8b62000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS ghosts and spirit effects anchored and noncolliding
+2026-09-18T00:07:56.415Z,9071.415039,454d000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS ghost animates around its fixed world path when camera moves
+2026-09-18T00:07:58.732Z,9073.732422,454d000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS ending SpiritNight removes every ghost and emitter
+2026-09-18T00:07:58.732Z,9073.732422,454d000,6,Info [FLog::CreatorOutput] AK_PHENOMENA PASS both phenomena leave map geometry and collision unchanged
+2026-09-18T00:08:01.048Z,9076.048828,3b4a000,6,Info [FLog::CreatorOutput] AK_PHENOMENA_DONE assertions=19 failures=0

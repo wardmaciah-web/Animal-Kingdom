@@ -1,0 +1,50 @@
+{
+  "Size": "749, 361",
+  "Gap": 8,
+  "Menu": "",
+  "Buttons": {
+    "1": {
+      "Image": "",
+      "Name": "Nav_Shop",
+      "Overflow": [],
+      "Scale": 1,
+      "Background": 1,
+      "Size": "56, 49"
+    },
+    "3": {
+      "Image": "",
+      "Name": "Nav_Teleport",
+      "Overflow": [],
+      "Scale": 1,
+      "Background": 1,
+      "Size": "56, 49"
+    },
+    "2": {
+      "Image": "",
+      "Name": "Nav_Daily",
+      "Overflow": [],
+      "Scale": 1,
+      "Background": 1,
+      "BadgeSize": "16, 16",
+      "Size": "56, 49"
+    }
+  },
+  "NativePointerChecks": [
+    {
+      "Button": "Daily",
+      "Opened": "Daily",
+      "Closed": ""
+    },
+    {
+      "Button": "Teleport",
+      "Opened": "Teleport",
+      "Closed": ""
+    },
+    {
+      "Button": "Shop",
+      "Opened": "Shop",
+      "Closed": ""
+    }
+  ],
+  "PointerHarness": "Safe-viewport pointer offset includes Studio one-pixel viewport rounding (749/750). An earlier coordinate probe was corrected before these passes."
+}

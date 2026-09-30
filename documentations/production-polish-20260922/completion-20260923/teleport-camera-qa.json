@@ -1,0 +1,128 @@
+[
+  {
+    "Menu": "Garden",
+    "Before": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "Garden",
+        "Position": "-465.9891357421875, 12.820233345031738, 470.15631103515625",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "Biome": "Town"
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "",
+        "Position": "1963.1768798828125, 35.38129806518555, 2028.65576171875",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": true,
+        "Biome": "Town"
+      }
+    }
+  },
+  {
+    "Menu": "Garden",
+    "Before": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "Garden",
+        "Position": "1963.1768798828125, 35.38129806518555, 2028.65576171875",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": true,
+        "Biome": "Town"
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "",
+        "Position": "-461.9914855957031, 12.820233345031738, 470.1556091308594",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": false,
+        "Biome": "Town"
+      }
+    }
+  },
+  {
+    "Menu": "Biomes",
+    "Before": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "Biomes",
+        "Position": "-461.9914855957031, 12.820233345031738, 470.1556091308594",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": false,
+        "Biome": "Town"
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "",
+        "Position": "124.49995422363281, 13.120232582092285, 168.00001525878906",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": false,
+        "Biome": "Forest"
+      }
+    }
+  },
+  {
+    "Menu": "Plot",
+    "Before": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "Plot",
+        "Position": "124.49995422363281, 13.120232582092285, 168.00001525878906",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": false,
+        "Biome": "Forest"
+      }
+    },
+    "After": {
+      "Ok": true,
+      "Result": {
+        "Fade": false,
+        "Camera": "Enum.CameraType.Custom",
+        "Menu": "",
+        "Position": "-465.9891357421875, 12.820233345031738, 470.15631103515625",
+        "SubjectCurrent": true,
+        "Mouse": "Enum.MouseBehavior.Default",
+        "InGarden": false,
+        "Biome": "Town"
+      }
+    }
+  },
+  {
+    "MouseLookBefore": "{\"1\":-465.9891357421875,\"3\":478.9951477050781,\"2\":23.169069290161134,\"5\":0,\"4\":0.9999999403953552,\"7\":0,\"6\":0,\"9\":0.7071068286895752,\"8\":0.7071067690849304,\"12\":0.7071068286895752,\"11\":-0.7071067690849304,\"10\":0}",
+    "MouseLookAfter": "{\"1\":-465.9891357421875,\"3\":478.9951477050781,\"2\":23.169069290161134,\"5\":0,\"4\":0.9999999403953552,\"7\":0,\"6\":0,\"9\":0.7071068286895752,\"8\":0.7071067690849304,\"12\":0.7071068286895752,\"11\":-0.7071067690849304,\"10\":0}",
+    "Changed": false
+  },
+  {
+    "MouseLookInput": "VirtualInput.SendMouseDelta while right mouse held",
+    "Changed": true,
+    "AngleDeltaDegreesApprox": 60,
+    "Note": "SendMousePosition alone did not rotate a locked Roblox camera; SendMouseDelta produced actual camera rotation. Mouse released afterward."
+  }
+]

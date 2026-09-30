@@ -1,0 +1,405 @@
+{
+  "Ok": true,
+  "Result": {
+    "Migration": "Eight owned UIDs, previous displays, currencies and individual weights preserved; serialized reload passed.",
+    "Resale": {
+      "Forest_Shakeable_04": {
+        "MeanCostRecovered": 0.3606776,
+        "ProfitableRolls": 12,
+        "Cost": 750,
+        "Samples": 10000,
+        "MeanSellValue": 270.5082
+      },
+      "Meadow_Shakeable_05": {
+        "MeanCostRecovered": 0.2360416,
+        "ProfitableRolls": 0,
+        "Cost": 250,
+        "Samples": 10000,
+        "MeanSellValue": 59.0104
+      },
+      "Meadow_Shakeable_04": {
+        "MeanCostRecovered": 0.1282868,
+        "ProfitableRolls": 0,
+        "Cost": 250,
+        "Samples": 10000,
+        "MeanSellValue": 32.0717
+      },
+      "Forest_Shakeable_03": {
+        "MeanCostRecovered": 0.1913364,
+        "ProfitableRolls": 0,
+        "Cost": 750,
+        "Samples": 10000,
+        "MeanSellValue": 143.5023
+      },
+      "Forest_Shakeable_05": {
+        "MeanCostRecovered": 0.6499351999999999,
+        "ProfitableRolls": 746,
+        "Cost": 750,
+        "Samples": 10000,
+        "MeanSellValue": 487.4514
+      },
+      "Forest_Shakeable_01": {
+        "MeanCostRecovered": 0.067354,
+        "ProfitableRolls": 0,
+        "Cost": 750,
+        "Samples": 10000,
+        "MeanSellValue": 50.5155
+      },
+      "Meadow_Shakeable_02": {
+        "MeanCostRecovered": 0.0384676,
+        "ProfitableRolls": 0,
+        "Cost": 250,
+        "Samples": 10000,
+        "MeanSellValue": 9.6169
+      },
+      "Meadow_Shakeable_01": {
+        "MeanCostRecovered": 0.0206672,
+        "ProfitableRolls": 0,
+        "Cost": 250,
+        "Samples": 10000,
+        "MeanSellValue": 5.1668
+      },
+      "Forest_Shakeable_02": {
+        "MeanCostRecovered": 0.1110284,
+        "ProfitableRolls": 0,
+        "Cost": 750,
+        "Samples": 10000,
+        "MeanSellValue": 83.2713
+      },
+      "Meadow_Shakeable_03": {
+        "MeanCostRecovered": 0.0742636,
+        "ProfitableRolls": 0,
+        "Cost": 250,
+        "Samples": 10000,
+        "MeanSellValue": 18.5659
+      }
+    },
+    "Assertions": 60388,
+    "BaseWeights": {
+      "MeadowPrismAntlerDeer": 70,
+      "MeadowChick": 0.4,
+      "MeadowBlossomBunny": 3.5,
+      "MeadowPatchworkLop": 3,
+      "ForestRiverOtter": 9,
+      "ForestEmeraldWing": 40,
+      "ForestBlackBearCub": 18,
+      "ForestRaccoon": 6,
+      "ForestLeafAntler": 70,
+      "MeadowDaisyCrownBunny": 3.2,
+      "MeadowFawn": 14,
+      "ForestBadger": 12,
+      "ForestTreeFrog": 0.2,
+      "MeadowCelestialLamb": 12,
+      "MeadowRedSquirrel": 0.5,
+      "MeadowFluffyLop": 2.8,
+      "ForestWoodlandOwl": 1.5,
+      "MeadowFieldMouse": 0.1,
+      "ForestBrownBat": 0.3,
+      "ForestCrestedOwl": 2.4,
+      "ForestSkunk": 3,
+      "MeadowDaisyHedgehog": 1.2,
+      "MeadowBuck": 55,
+      "MeadowGoat": 18,
+      "MeadowCloudtailFox": 7
+    },
+    "RollsPerSpecies": 10000,
+    "Distributions": {
+      "MeadowFieldMouse": {
+        "Minimum": 0.1,
+        "MeanIncomeMultiplier": 1.0718609999999287,
+        "Maximum": 0.3,
+        "MeanRatio": 1.100600000000071,
+        "Bands": [
+          7956,
+          1533,
+          407,
+          104
+        ]
+      },
+      "MeadowPrismAntlerDeer": {
+        "Minimum": 70,
+        "MeanIncomeMultiplier": 1.0749947142857135,
+        "Maximum": 205.23,
+        "MeanRatio": 1.1035002000000056,
+        "Bands": [
+          7984,
+          1504,
+          412,
+          100
+        ]
+      },
+      "ForestEmeraldWing": {
+        "Minimum": 40,
+        "MeanIncomeMultiplier": 1.0741342888888876,
+        "Maximum": 118.62,
+        "MeanRatio": 1.1022971249999958,
+        "Bands": [
+          8011,
+          1508,
+          396,
+          85
+        ]
+      },
+      "ForestBlackBearCub": {
+        "Minimum": 18,
+        "MeanIncomeMultiplier": 1.0765499166666839,
+        "Maximum": 53.76,
+        "MeanRatio": 1.1058851666666618,
+        "Bands": [
+          7955,
+          1483,
+          464,
+          98
+        ]
+      },
+      "MeadowFluffyLop": {
+        "Minimum": 2.8,
+        "MeanIncomeMultiplier": 1.0730623333333789,
+        "Maximum": 8.3,
+        "MeanRatio": 1.100689285714247,
+        "Bands": [
+          7975,
+          1551,
+          391,
+          83
+        ]
+      },
+      "ForestBrownBat": {
+        "Minimum": 0.3,
+        "MeanIncomeMultiplier": 1.0774304444443943,
+        "Maximum": 0.89,
+        "MeanRatio": 1.1070966666667088,
+        "Bands": [
+          7889,
+          1576,
+          424,
+          111
+        ]
+      }
+    },
+    "Curves": {
+      "MeadowFieldMouse": [
+        {
+          "Income": 1,
+          "Scale": 1,
+          "Ratio": 1,
+          "SellValue": 4,
+          "Quality": ""
+        },
+        {
+          "Income": 1.18,
+          "Scale": 1.0812310390375761,
+          "Ratio": 1.25,
+          "SellValue": 5,
+          "Quality": ""
+        },
+        {
+          "Income": 1.36,
+          "Scale": 1.1524761342185503,
+          "Ratio": 1.5,
+          "SellValue": 6,
+          "Quality": "HEAVY!"
+        },
+        {
+          "Income": 1.68,
+          "Scale": 1.2745606273192622,
+          "Ratio": 2,
+          "SellValue": 7,
+          "Quality": "HUGE!"
+        },
+        {
+          "Income": 2.28,
+          "Scale": 1.4689007046000737,
+          "Ratio": 3,
+          "SellValue": 10,
+          "Quality": "MASSIVE!"
+        }
+      ],
+      "MeadowPrismAntlerDeer": [
+        {
+          "Income": 7,
+          "Scale": 1,
+          "Ratio": 1,
+          "SellValue": 49,
+          "Quality": ""
+        },
+        {
+          "Income": 8.28,
+          "Scale": 1.0812310390375761,
+          "Ratio": 1.25,
+          "SellValue": 59,
+          "Quality": ""
+        },
+        {
+          "Income": 9.49,
+          "Scale": 1.1524761342185503,
+          "Ratio": 1.5,
+          "SellValue": 68,
+          "Quality": "HEAVY!"
+        },
+        {
+          "Income": 11.77,
+          "Scale": 1.2745606273192622,
+          "Ratio": 2,
+          "SellValue": 85,
+          "Quality": "HUGE!"
+        },
+        {
+          "Income": 15.96,
+          "Scale": 1.4689007046000737,
+          "Ratio": 3,
+          "SellValue": 118,
+          "Quality": "MASSIVE!"
+        }
+      ],
+      "ForestEmeraldWing": [
+        {
+          "Income": 90,
+          "Scale": 1,
+          "Ratio": 1,
+          "SellValue": 792,
+          "Quality": ""
+        },
+        {
+          "Income": 106.4,
+          "Scale": 1.0812310390375761,
+          "Ratio": 1.25,
+          "SellValue": 947,
+          "Quality": ""
+        },
+        {
+          "Income": 121.99,
+          "Scale": 1.1524761342185503,
+          "Ratio": 1.5,
+          "SellValue": 1095,
+          "Quality": "HEAVY!"
+        },
+        {
+          "Income": 151.36,
+          "Scale": 1.2745606273192622,
+          "Ratio": 2,
+          "SellValue": 1379,
+          "Quality": "HUGE!"
+        },
+        {
+          "Income": 205.16,
+          "Scale": 1.4689007046000737,
+          "Ratio": 3,
+          "SellValue": 1907,
+          "Quality": "MASSIVE!"
+        }
+      ],
+      "ForestBlackBearCub": [
+        {
+          "Income": 12,
+          "Scale": 1,
+          "Ratio": 1,
+          "SellValue": 48,
+          "Quality": ""
+        },
+        {
+          "Income": 14.19,
+          "Scale": 1.0812310390375761,
+          "Ratio": 1.25,
+          "SellValue": 57,
+          "Quality": ""
+        },
+        {
+          "Income": 16.26,
+          "Scale": 1.1524761342185503,
+          "Ratio": 1.5,
+          "SellValue": 66,
+          "Quality": "HEAVY!"
+        },
+        {
+          "Income": 20.18,
+          "Scale": 1.2745606273192622,
+          "Ratio": 2,
+          "SellValue": 84,
+          "Quality": "HUGE!"
+        },
+        {
+          "Income": 27.35,
+          "Scale": 1.4689007046000737,
+          "Ratio": 3,
+          "SellValue": 116,
+          "Quality": "MASSIVE!"
+        }
+      ],
+      "MeadowFluffyLop": [
+        {
+          "Income": 3,
+          "Scale": 1,
+          "Ratio": 1,
+          "SellValue": 15,
+          "Quality": ""
+        },
+        {
+          "Income": 3.55,
+          "Scale": 1.0812310390375761,
+          "Ratio": 1.25,
+          "SellValue": 18,
+          "Quality": ""
+        },
+        {
+          "Income": 4.07,
+          "Scale": 1.1524761342185503,
+          "Ratio": 1.5,
+          "SellValue": 21,
+          "Quality": "HEAVY!"
+        },
+        {
+          "Income": 5.05,
+          "Scale": 1.2745606273192622,
+          "Ratio": 2,
+          "SellValue": 26,
+          "Quality": "HUGE!"
+        },
+        {
+          "Income": 6.84,
+          "Scale": 1.4689007046000737,
+          "Ratio": 3,
+          "SellValue": 36,
+          "Quality": "MASSIVE!"
+        }
+      ],
+      "ForestBrownBat": [
+        {
+          "Income": 36,
+          "Scale": 1,
+          "Ratio": 1,
+          "SellValue": 209,
+          "Quality": ""
+        },
+        {
+          "Income": 42.56,
+          "Scale": 1.0812310390375761,
+          "Ratio": 1.25,
+          "SellValue": 250,
+          "Quality": ""
+        },
+        {
+          "Income": 48.79,
+          "Scale": 1.1524761342185503,
+          "Ratio": 1.5,
+          "SellValue": 289,
+          "Quality": "HEAVY!"
+        },
+        {
+          "Income": 60.54,
+          "Scale": 1.2745606273192622,
+          "Ratio": 2,
+          "SellValue": 364,
+          "Quality": "HUGE!"
+        },
+        {
+          "Income": 82.06,
+          "Scale": 1.4689007046000737,
+          "Ratio": 3,
+          "SellValue": 503,
+          "Quality": "MASSIVE!"
+        }
+      ]
+    }
+  }
+}

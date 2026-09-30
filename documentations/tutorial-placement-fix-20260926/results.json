@@ -1,0 +1,253 @@
+{
+  "ObservedBefore": {
+    "Pets": [
+      {
+        "UID": "a436fedf-1230-4963-8c89-a809193531f9",
+        "CoinsPerSecond": 3.01,
+        "Weight": 2.81,
+        "Locked": false,
+        "Level": 1,
+        "XP": 10,
+        "WeightQuality": "",
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "a436fedf-1230-4963-8c89-a809193531f9",
+        "Mutation": "Normal",
+        "SellValue": 15,
+        "Favorite": false,
+        "Location": "Sanctuary",
+        "LocationSlot": 2,
+        "AcquiredAt": 1790451286,
+        "PetId": "MeadowFluffyLop"
+      }
+    ],
+    "Income": 429.5029659080505,
+    "Tutorial": {
+      "LegacyStep": 1,
+      "PetUID": "a436fedf-1230-4963-8c89-a809193531f9",
+      "SlotId": 1,
+      "Step": 4,
+      "FlowVersion": 2
+    },
+    "Active": ""
+  },
+  "Backend": {
+    "Passed": true,
+    "Checks": [
+      "existing starting balance funds normal first search",
+      "new tutorial uses existing Step",
+      "early complete/restart requests cannot skip objectives",
+      "client cannot invent a reward UID",
+      "legacy step retained during flow migration",
+      "actual Meadow position advances travel step",
+      "committed server reward UID recorded without skipping reveal",
+      "reveal cannot finish before authoritative duration",
+      "elapsed time alone does not complete active reveal",
+      "matching finished presentation acknowledged after real owned reward",
+      "Held slot alone does not make tutorial pet active",
+      "existing Equip selects exact tutorial UID",
+      "sole tutorial pet cannot be sold into unaffordable-search dead end",
+      "own plot arrival selects real empty physical slot",
+      "normal placement in another slot still works",
+      "another valid slot immediately completes PLACE through canonical profile update",
+      "placed pet stays on collection objective",
+      "placed pet stays on collection objective",
+      "placed pet stays on collection objective",
+      "placed pet stays on collection objective",
+      "placed pet stays on collection objective",
+      "normal manual pickup remains available",
+      "manual pickup returns to PLACE with an empty slot",
+      "place at selected physical slot",
+      "exact selected placement advances without changing stats",
+      "zero collection cannot advance tutorial",
+      "positive existing collection signal unlocks congratulations",
+      "restart resets guidance only",
+      "restart preserves pets, coins and placements",
+      "resume waits for the character to be ready",
+      "resume recovers an already placed exact UID after character readiness",
+      "Complete sets existing completion flag",
+      "existing mock ProfileStore save/readback persists completion",
+      "completed restored profile does not restart",
+      "single active Held sale credits exact existing value",
+      "Held sale frees slot and clears overhead UID",
+      "Held replay does not sell other inventory or double-credit",
+      "Held sale respects protection Locked",
+      "Held sale respects protection Favorite",
+      "Held sale respects protection Prismatic",
+      "Held sale respects protection MeadowCelestialLamb",
+      "Held sale respects protection AncientRuins_Mystic_02",
+      "cannot sell a non-active Held UID",
+      "STORE preserves exact record and all stats",
+      "Sell All remains Inventory-only",
+      "Sell All preserves a tutorial companion when selling the whole batch would strand onboarding",
+      "no duplicate UID 16bb4b98-44e1-45b3-b5e5-ebb918530a1f"
+    ]
+  },
+  "AfterPlace": {
+    "Suggested": 1,
+    "UID": "efd1d876-2cca-48cc-8e0a-70bc0709d997",
+    "Slot": 1,
+    "Location": "Sanctuary",
+    "Requested": 2,
+    "Step": 5,
+    "StatsPreserved": true
+  },
+  "AfterManualPickup": {
+    "Location": "Held",
+    "Step": 4,
+    "EmptyTarget": true,
+    "UID": "efd1d876-2cca-48cc-8e0a-70bc0709d997"
+  },
+  "ClientMonitor": {
+    "Changes": [
+      {
+        "Arrow": false,
+        "Target": "Travel_Meadow",
+        "Text": "Welcome to Animal Kingdom! | Travel to the Meadow to claim your first pet. | ",
+        "Step": 1
+      },
+      {
+        "Arrow": false,
+        "Target": "Nav_Biomes",
+        "Text": "Welcome to Animal Kingdom! | Travel to the Meadow to claim your first pet. | ",
+        "Step": 1
+      },
+      {
+        "Arrow": false,
+        "Target": "Nav_Biomes",
+        "Text": "Welcome to Animal Kingdom! | Travel to the Meadow to claim your first pet. | ",
+        "Step": 2
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Meet a companion | Finding an available Meadow tree… | ",
+        "Step": 2
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Meet a companion | Follow the arrow and search the tree for a pet! | ",
+        "Step": 2
+      },
+      {
+        "Arrow": false,
+        "Target": "Interact",
+        "Text": "Meet a companion | Follow the arrow and search the tree for a pet! | ",
+        "Step": 2
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Meet a companion | Finding an available Meadow tree… | ",
+        "Step": 2
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Meet a companion | Follow the arrow and search the tree for a pet! | ",
+        "Step": 2
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "",
+        "Step": 2,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Meet a companion | Meet your new companion, then continue! | ",
+        "Step": 2,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "HeldSlot_1",
+        "Text": "Your own Sanctuary | Tap your new pet to hold it. | ",
+        "Step": 3,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "Nav_Biomes",
+        "Text": "Your own Sanctuary | Travel to your Sanctuary. | ",
+        "Step": 3,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "Travel_Plot",
+        "Text": "Your own Sanctuary | Travel to your Sanctuary. | ",
+        "Step": 3,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "Nav_Biomes",
+        "Text": "Your own Sanctuary | Travel to your Sanctuary. | ",
+        "Step": 3,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Make yourself at home | Face the highlighted spot to use its PLACE prompt. | ",
+        "Step": 4,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "Interact",
+        "Text": "Make yourself at home | Place your pet here to start earning! | ",
+        "Step": 4,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Your first income | Head to the collection pad to claim your coins. | ",
+        "Step": 5,
+        "Location": "Sanctuary"
+      },
+      {
+        "Arrow": false,
+        "Target": "Interact",
+        "Text": "Make yourself at home | Place your pet here to start earning! | ",
+        "Step": 4,
+        "Location": "Held"
+      },
+      {
+        "Arrow": false,
+        "Target": "",
+        "Text": "Your first income | Head to the collection pad to claim your coins. | ",
+        "Step": 5,
+        "Location": "Sanctuary"
+      }
+    ],
+    "PickupTutorialText": 0,
+    "SanctuaryPawAfterPlacement": 0,
+    "CollectionArrowFrames": 695,
+    "WrongArrow": 0
+  },
+  "Resume": {
+    "Method": "Existing mock ProfileStore save/readback; restore via existing migrations in a fresh Studio Play session",
+    "Step": 5,
+    "PawTarget": "",
+    "CollectorArrowAlignment": 1
+  },
+  "Collection": {
+    "Before": 126,
+    "After": 223,
+    "Location": "Sanctuary",
+    "Step": 6,
+    "UID": "efd1d876-2cca-48cc-8e0a-70bc0709d997"
+  },
+  "SourceChanges": [
+    "src/ServerScriptService/ServerSource/Server/TutorialService.lua",
+    "src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua"
+  ],
+  "AllOtherSourceUnchanged": true,
+  "Published": false
+}

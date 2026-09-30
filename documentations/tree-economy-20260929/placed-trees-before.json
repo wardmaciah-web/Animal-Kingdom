@@ -1,0 +1,963 @@
+[
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_30_Type1",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Pivot": [
+      233,
+      9.103930473327637,
+      266,
+      0.034899309277534485,
+      0,
+      -0.9993908405303955,
+      0,
+      1,
+      0,
+      0.9993908405303955,
+      0,
+      0.034899309277534485
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_02_Type2",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Pivot": [
+      157,
+      9.103926658630371,
+      133,
+      0.6018150448799133,
+      0,
+      0.7986355423927307,
+      0,
+      1,
+      0,
+      -0.7986355423927307,
+      0,
+      0.6018150448799133
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_25_Type2",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Pivot": [
+      178,
+      9.103930473327637,
+      248,
+      -0.9135454297065735,
+      0,
+      -0.40673673152923584,
+      0,
+      1,
+      0,
+      0.40673673152923584,
+      0,
+      -0.9135454297065735
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_29_Type5",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Pivot": [
+      165,
+      9.104287147521973,
+      229,
+      0.46947160363197327,
+      0,
+      0.882947564125061,
+      0,
+      1,
+      0,
+      -0.882947564125061,
+      0,
+      0.46947160363197327
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_23_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      134,
+      9.104230880737305,
+      234,
+      -0.9702957272529602,
+      0,
+      0.24192185699939728,
+      0,
+      1,
+      0,
+      -0.24192185699939728,
+      0,
+      -0.9702957272529602
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_03",
+    "Pivot": [
+      265.74859619140625,
+      45.6455192565918,
+      -52.43803405761719,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_05",
+    "Pivot": [
+      208.13247680664062,
+      61.04559326171875,
+      -65.8523178100586,
+      0.7071067690849304,
+      0,
+      -0.7071067690849304,
+      0,
+      1,
+      0,
+      0.7071067690849304,
+      0,
+      0.7071067690849304
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_15_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      191,
+      9.104321479797363,
+      231,
+      0.2923716604709625,
+      0,
+      0.9563047885894775,
+      0,
+      1,
+      0,
+      -0.9563047885894775,
+      0,
+      0.2923716604709625
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_24_Type5",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Pivot": [
+      155,
+      9.1043119430542,
+      248,
+      0.6560588479042053,
+      0,
+      -0.7547097206115723,
+      0,
+      1,
+      0,
+      0.7547097206115723,
+      0,
+      0.6560588479042053
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_18_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      211,
+      9.104403495788574,
+      104.4000015258789,
+      -4.371138828673793e-8,
+      0,
+      1,
+      0,
+      1,
+      0,
+      -1,
+      0,
+      -4.371138828673793e-8
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_10_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      183,
+      9.1044282913208,
+      265,
+      -0.9975640773773193,
+      0,
+      -0.0697564035654068,
+      0,
+      1,
+      0,
+      0.0697564035654068,
+      0,
+      -0.9975640773773193
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_03",
+    "Pivot": [
+      145.35739135742188,
+      32.47390365600586,
+      -138.6834716796875,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_07_Type1",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Pivot": [
+      111,
+      9.103924751281738,
+      240,
+      -0.9205048680305481,
+      0,
+      -0.3907310962677002,
+      0,
+      1,
+      0,
+      0.3907310962677002,
+      0,
+      -0.9205048680305481
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_05_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      115,
+      9.104249954223633,
+      202,
+      0.7771461009979248,
+      0,
+      -0.6293202042579651,
+      0,
+      1,
+      0,
+      0.6293202042579651,
+      0,
+      0.7771461009979248
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_17_Type1",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Pivot": [
+      139,
+      9.103930473327637,
+      111,
+      -0.13917307555675507,
+      0,
+      0.9902680516242981,
+      0,
+      1,
+      0,
+      -0.9902680516242981,
+      0,
+      -0.13917307555675507
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_14_Type2",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Pivot": [
+      263,
+      9.103930473327637,
+      268,
+      -0.9998477101325989,
+      0,
+      0.017452457919716835,
+      0,
+      1,
+      0,
+      -0.017452457919716835,
+      0,
+      -0.9998477101325989
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_28_Type3",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_03",
+    "Pivot": [
+      236,
+      9.103924751281738,
+      104.5,
+      -4.371138828673793e-8,
+      0,
+      1,
+      0,
+      1,
+      0,
+      -1,
+      0,
+      -4.371138828673793e-8
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_04",
+    "Pivot": [
+      269.1849060058594,
+      48.628509521484375,
+      -127.16246795654297,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_21_Type2",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Pivot": [
+      137,
+      9.103930473327637,
+      192,
+      -0.034899286925792694,
+      0,
+      -0.9993908405303955,
+      0,
+      1,
+      0,
+      0.9993908405303955,
+      0,
+      -0.034899286925792694
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_03",
+    "Pivot": [
+      155.38792419433594,
+      31.972911834716797,
+      -39.08708953857422,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_02",
+    "Pivot": [
+      130.0505828857422,
+      33.6452751159668,
+      -165.86795043945312,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1",
+    "Id": "Meadow_Shakeable_01",
+    "Pivot": [
+      267.07318115234375,
+      9.12893295288086,
+      -97.19161224365234,
+      -1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      -1
+    ],
+    "Descendants": 8
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_02",
+    "Pivot": [
+      138.86044311523438,
+      34.94526672363281,
+      -8.467905044555664,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_04",
+    "Pivot": [
+      172.29217529296875,
+      24.626972198486328,
+      -164.64581298828125,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_01",
+    "Pivot": [
+      172.02882385253906,
+      26.94240951538086,
+      -117.0782470703125,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_26_Type1",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Pivot": [
+      247,
+      9.103930473327637,
+      217,
+      0.13917326927185059,
+      0,
+      -0.9902680516242981,
+      0,
+      1,
+      0,
+      0.9902680516242981,
+      0,
+      0.13917326927185059
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_05",
+    "Pivot": [
+      228.84829711914062,
+      47.176902770996094,
+      -132.80426025390625,
+      0.9999999403953552,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0.9999999403953552
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_12_Type5",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Pivot": [
+      237,
+      9.10446834564209,
+      241,
+      0.8910065293312073,
+      0,
+      0.45399051904678345,
+      0,
+      1,
+      0,
+      -0.45399051904678345,
+      0,
+      0.8910065293312073
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_20_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      110,
+      9.10433292388916,
+      109,
+      0.7313537001609802,
+      0,
+      0.6819983720779419,
+      0,
+      1,
+      0,
+      -0.6819983720779419,
+      0,
+      0.7313537001609802
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_09_Type2",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Pivot": [
+      108,
+      9.103928565979004,
+      266,
+      0.9816271662712097,
+      0,
+      0.1908089965581894,
+      0,
+      1,
+      0,
+      -0.1908089965581894,
+      0,
+      0.9816271662712097
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_11_Type1",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Pivot": [
+      213,
+      9.103930473327637,
+      265,
+      -0.3255681097507477,
+      0,
+      0.9455186128616333,
+      0,
+      1,
+      0,
+      -0.9455186128616333,
+      0,
+      -0.3255681097507477
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_01",
+    "Pivot": [
+      215.24305725097656,
+      29.478473663330078,
+      -38.421600341796875,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_01",
+    "Pivot": [
+      101.8217544555664,
+      28.478473663330078,
+      -124.53265380859375,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_03",
+    "Pivot": [
+      98.84825134277344,
+      26.010202407836914,
+      -55.144752502441406,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_13_Type3",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_03",
+    "Pivot": [
+      266,
+      9.103930473327637,
+      222,
+      0.9743700623512268,
+      0,
+      -0.22495102882385254,
+      0,
+      1,
+      0,
+      0.22495102882385254,
+      0,
+      0.9743700623512268
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_04_Type2",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Pivot": [
+      260,
+      9.103930473327637,
+      104,
+      -0.06975647807121277,
+      0,
+      0.9975640773773193,
+      0,
+      1,
+      0,
+      -0.9975640773773193,
+      0,
+      -0.06975647807121277
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_03",
+    "Pivot": [
+      196.3771209716797,
+      33.47391128540039,
+      -173.2864227294922,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_08_Type3",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_03",
+    "Pivot": [
+      140,
+      9.103928565979004,
+      263,
+      0.2923714816570282,
+      0,
+      -0.9563048481941223,
+      0,
+      1,
+      0,
+      0.9563048481941223,
+      0,
+      0.2923714816570282
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_27_Type4",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Pivot": [
+      262,
+      9.104239463806152,
+      248,
+      0.9510565400123596,
+      0,
+      0.30901700258255005,
+      0,
+      1,
+      0,
+      -0.30901700258255005,
+      0,
+      0.9510565400123596
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_19_Type5",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Pivot": [
+      129,
+      9.104228973388672,
+      143,
+      -0.48480960726737976,
+      0,
+      -0.874619722366333,
+      0,
+      1,
+      0,
+      0.874619722366333,
+      0,
+      -0.48480960726737976
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_22_Type3",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_03",
+    "Pivot": [
+      176,
+      9.103928565979004,
+      211,
+      -0.731353759765625,
+      0,
+      0.6819983124732971,
+      0,
+      1,
+      0,
+      -0.6819983124732971,
+      0,
+      -0.731353759765625
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_03_Type3",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_03",
+    "Pivot": [
+      175,
+      9.103930473327637,
+      109,
+      -0.9743700623512268,
+      0,
+      0.2249511182308197,
+      0,
+      1,
+      0,
+      -0.2249511182308197,
+      0,
+      -0.9743700623512268
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_16_Type5",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Pivot": [
+      105,
+      9.104315757751465,
+      176,
+      -0.9998477101325989,
+      0,
+      -0.01745239458978176,
+      0,
+      1,
+      0,
+      0.01745239458978176,
+      0,
+      -0.9998477101325989
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3",
+    "Id": "Meadow_Shakeable_03",
+    "Pivot": [
+      230.6868896484375,
+      9.128946304321289,
+      1.2138335704803467,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 9
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_01_Type1",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Pivot": [
+      112,
+      9.103926658630371,
+      126,
+      0.9455185532569885,
+      0,
+      0.32556813955307007,
+      0,
+      1,
+      0,
+      -0.32556813955307007,
+      0,
+      0.9455185532569885
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2",
+    "Id": "Meadow_Shakeable_02",
+    "Pivot": [
+      241.7105255126953,
+      9.128961563110352,
+      -7.6941680908203125,
+      0,
+      0,
+      -1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "Descendants": 11
+  },
+  {
+    "Path": "Workspace.Forest.SearchableTrees.ForestTree_06_Type5",
+    "SearchCost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Pivot": [
+      155,
+      9.104401588439941,
+      207,
+      -0.515038013458252,
+      0,
+      0.8571673035621643,
+      0,
+      1,
+      0,
+      -0.8571673035621643,
+      0,
+      -0.515038013458252
+    ],
+    "Descendants": 5
+  },
+  {
+    "Path": "Workspace.Scene",
+    "Id": "Meadow_Shakeable_01",
+    "Pivot": [
+      104.22595977783203,
+      26.80364227294922,
+      -32.679100036621094,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 3
+  },
+  {
+    "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2",
+    "Id": "Meadow_Shakeable_02",
+    "Pivot": [
+      180.27572631835938,
+      9.128917694091797,
+      -30.94970703125,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "Descendants": 11
+  }
+]

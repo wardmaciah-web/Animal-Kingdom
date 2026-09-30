@@ -1,0 +1,218 @@
+2026-09-18T00:52:20.797Z,11735.797852,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies starts
+2026-09-18T00:52:21.456Z,11736.456055,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:52:21.456Z,11736.456055,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE SunnySkies
+2026-09-18T00:52:23.959Z,11738.959961,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies real player walking remains safe (28 studs)
+2026-09-18T00:52:26.163Z,11741.163086,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies all cosmetic parts anchored and noninteractive
+2026-09-18T00:52:26.163Z,11741.163086,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies bounded object/particle/audio budgets
+2026-09-18T00:52:26.163Z,11741.163086,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS SunnySkies {"beams":0,"safe":true,"sounds":1,"emitters":12,"rate":9.000000357627869,"parts":6}
+2026-09-18T00:52:28.525Z,11743.525391,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies world cleanup
+2026-09-18T00:52:28.526Z,11743.526367,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies audio cleanup after fade
+2026-09-18T00:52:28.526Z,11743.526367,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies restores baseline Lighting
+2026-09-18T00:52:28.526Z,11743.526367,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies restores baseline wind
+2026-09-18T00:52:30.941Z,11745.941406,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay starts
+2026-09-18T00:52:31.608Z,11746.608398,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:52:31.609Z,11746.609375,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE RainyDay
+2026-09-18T00:52:34.111Z,11749.111328,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay real player walking remains safe (28 studs)
+2026-09-18T00:52:36.325Z,11751.325195,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay all cosmetic parts anchored and noninteractive
+2026-09-18T00:52:36.325Z,11751.325195,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay bounded object/particle/audio budgets
+2026-09-18T00:52:36.325Z,11751.325195,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS RainyDay {"beams":0,"safe":true,"sounds":2,"emitters":13,"rate":416.60000014305117,"parts":7}
+2026-09-18T00:52:38.691Z,11753.691406,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay world cleanup
+2026-09-18T00:52:38.691Z,11753.691406,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay audio cleanup after fade
+2026-09-18T00:52:38.691Z,11753.691406,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay restores baseline Lighting
+2026-09-18T00:52:38.691Z,11753.691406,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay restores baseline wind
+2026-09-18T00:52:41.108Z,11756.108398,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm starts
+2026-09-18T00:52:41.775Z,11756.775391,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:52:41.775Z,11756.775391,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Thunderstorm
+2026-09-18T00:52:44.281Z,11759.281250,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm real player walking remains safe (28 studs)
+2026-09-18T00:52:46.491Z,11761.491211,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm all cosmetic parts anchored and noninteractive
+2026-09-18T00:52:46.491Z,11761.491211,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm bounded object/particle/audio budgets
+2026-09-18T00:52:46.491Z,11761.491211,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Thunderstorm {"beams":0,"safe":true,"sounds":2,"emitters":14,"rate":730.3999998569489,"parts":7}
+2026-09-18T00:52:48.857Z,11763.857422,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm world cleanup
+2026-09-18T00:52:48.857Z,11763.857422,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm audio cleanup after fade
+2026-09-18T00:52:48.857Z,11763.857422,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm restores baseline Lighting
+2026-09-18T00:52:48.857Z,11763.857422,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm restores baseline wind
+2026-09-18T00:52:51.262Z,11766.262695,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall starts
+2026-09-18T00:52:51.910Z,11766.910156,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:52:51.911Z,11766.911133,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Snowfall
+2026-09-18T00:52:54.420Z,11769.420898,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall real player walking remains safe (28 studs)
+2026-09-18T00:52:56.626Z,11771.626953,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall all cosmetic parts anchored and noninteractive
+2026-09-18T00:52:56.626Z,11771.626953,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall bounded object/particle/audio budgets
+2026-09-18T00:52:56.626Z,11771.626953,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Snowfall {"beams":0,"safe":true,"sounds":2,"emitters":13,"rate":238.2000002861023,"parts":8}
+2026-09-18T00:52:58.991Z,11773.991211,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall world cleanup
+2026-09-18T00:52:58.991Z,11773.991211,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall audio cleanup after fade
+2026-09-18T00:52:58.991Z,11773.991211,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall restores baseline Lighting
+2026-09-18T00:52:58.991Z,11773.991211,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall restores baseline wind
+2026-09-18T00:53:01.396Z,11776.396484,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy starts
+2026-09-18T00:53:02.042Z,11777.042969,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:53:02.042Z,11777.042969,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Foggy
+2026-09-18T00:53:04.550Z,11779.550781,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy real player walking remains safe (28 studs)
+2026-09-18T00:53:06.754Z,11781.754883,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy all cosmetic parts anchored and noninteractive
+2026-09-18T00:53:06.754Z,11781.754883,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy bounded object/particle/audio budgets
+2026-09-18T00:53:06.754Z,11781.754883,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Foggy {"beams":0,"safe":true,"sounds":2,"emitters":12,"rate":18.600000500679017,"parts":6}
+2026-09-18T00:53:09.106Z,11784.106445,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy world cleanup
+2026-09-18T00:53:09.106Z,11784.106445,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy audio cleanup after fade
+2026-09-18T00:53:09.106Z,11784.106445,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy restores baseline Lighting
+2026-09-18T00:53:09.106Z,11784.106445,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy restores baseline wind
+2026-09-18T00:53:11.520Z,11786.520508,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy starts
+2026-09-18T00:53:12.190Z,11787.190430,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:53:12.192Z,11787.192383,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Windy
+2026-09-18T00:53:14.707Z,11789.707031,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy real player walking remains safe (28 studs)
+2026-09-18T00:53:16.923Z,11791.923828,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy all cosmetic parts anchored and noninteractive
+2026-09-18T00:53:16.923Z,11791.923828,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy bounded object/particle/audio budgets
+2026-09-18T00:53:16.923Z,11791.923828,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Windy {"beams":0,"safe":true,"sounds":2,"emitters":14,"rate":225.2000002861023,"parts":8}
+2026-09-18T00:53:19.290Z,11794.290039,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy world cleanup
+2026-09-18T00:53:19.290Z,11794.290039,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy audio cleanup after fade
+2026-09-18T00:53:19.290Z,11794.290039,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy restores baseline Lighting
+2026-09-18T00:53:19.290Z,11794.290039,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy restores baseline wind
+2026-09-18T00:53:21.695Z,11796.695312,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave starts
+2026-09-18T00:53:22.356Z,11797.356445,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:53:22.356Z,11797.356445,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Heatwave
+2026-09-18T00:53:24.868Z,11799.868164,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave real player walking remains safe (28 studs)
+2026-09-18T00:53:27.073Z,11802.073242,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave all cosmetic parts anchored and noninteractive
+2026-09-18T00:53:27.073Z,11802.073242,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave bounded object/particle/audio budgets
+2026-09-18T00:53:27.073Z,11802.073242,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Heatwave {"beams":0,"safe":true,"sounds":2,"emitters":12,"rate":9.300000071525574,"parts":7}
+2026-09-18T00:53:29.439Z,11804.439453,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave world cleanup
+2026-09-18T00:53:29.439Z,11804.439453,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave audio cleanup after fade
+2026-09-18T00:53:29.439Z,11804.439453,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave restores baseline Lighting
+2026-09-18T00:53:29.439Z,11804.439453,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave restores baseline wind
+2026-09-18T00:53:31.848Z,11806.848633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora starts
+2026-09-18T00:53:32.488Z,11807.488281,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:53:32.488Z,11807.488281,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Aurora
+2026-09-18T00:53:35.005Z,11810.005859,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora real player walking remains safe (28 studs)
+2026-09-18T00:53:37.223Z,11812.223633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora all cosmetic parts anchored and noninteractive
+2026-09-18T00:53:37.223Z,11812.223633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora bounded object/particle/audio budgets
+2026-09-18T00:53:37.223Z,11812.223633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Aurora {"beams":10,"safe":true,"sounds":1,"emitters":6,"rate":10.799999713897705,"parts":39}
+2026-09-18T00:53:39.588Z,11814.588867,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora world cleanup
+2026-09-18T00:53:39.588Z,11814.588867,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora audio cleanup after fade
+2026-09-18T00:53:39.589Z,11814.589844,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora restores baseline Lighting
+2026-09-18T00:53:39.589Z,11814.589844,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora restores baseline wind
+2026-09-18T00:53:42.005Z,11817.005859,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon starts
+2026-09-18T00:53:42.675Z,11817.675781,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:53:42.676Z,11817.676758,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE BloodMoon
+2026-09-18T00:53:45.188Z,11820.188477,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon real player walking remains safe (28 studs)
+2026-09-18T00:53:47.405Z,11822.405273,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon all cosmetic parts anchored and noninteractive
+2026-09-18T00:53:47.405Z,11822.405273,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon bounded object/particle/audio budgets
+2026-09-18T00:53:47.405Z,11822.405273,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS BloodMoon {"beams":0,"safe":true,"sounds":2,"emitters":12,"rate":12.329581618309021,"parts":24}
+2026-09-18T00:53:49.772Z,11824.772461,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon world cleanup
+2026-09-18T00:53:49.772Z,11824.772461,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon audio cleanup after fade
+2026-09-18T00:53:49.772Z,11824.772461,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon restores baseline Lighting
+2026-09-18T00:53:49.772Z,11824.772461,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon restores baseline wind
+2026-09-18T00:53:52.188Z,11827.188477,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower starts
+2026-09-18T00:53:52.855Z,11827.855469,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:53:52.855Z,11827.855469,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE MeteorShower
+2026-09-18T00:53:55.372Z,11830.372070,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower real player walking remains safe (28 studs)
+2026-09-18T00:53:57.588Z,11832.588867,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower all cosmetic parts anchored and noninteractive
+2026-09-18T00:53:57.588Z,11832.588867,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower bounded object/particle/audio budgets
+2026-09-18T00:53:57.588Z,11832.588867,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS MeteorShower {"beams":0,"safe":true,"sounds":3,"emitters":19,"rate":71.80000007152558,"parts":66}
+2026-09-18T00:53:59.954Z,11834.954102,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower world cleanup
+2026-09-18T00:53:59.955Z,11834.955078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower audio cleanup after fade
+2026-09-18T00:53:59.955Z,11834.955078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower restores baseline Lighting
+2026-09-18T00:53:59.955Z,11834.955078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower restores baseline wind
+2026-09-18T00:54:02.355Z,11837.355469,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight starts
+2026-09-18T00:54:03.021Z,11838.021484,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:54:03.022Z,11838.022461,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE SpiritNight
+2026-09-18T00:54:05.535Z,11840.535156,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight real player walking remains safe (28 studs)
+2026-09-18T00:54:07.737Z,11842.737305,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight all cosmetic parts anchored and noninteractive
+2026-09-18T00:54:07.737Z,11842.737305,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight bounded object/particle/audio budgets
+2026-09-18T00:54:07.737Z,11842.737305,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS SpiritNight {"beams":0,"safe":true,"sounds":2,"emitters":36,"rate":151.7999997138977,"parts":123}
+2026-09-18T00:54:10.098Z,11845.098633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight world cleanup
+2026-09-18T00:54:10.098Z,11845.098633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight audio cleanup after fade
+2026-09-18T00:54:10.098Z,11845.098633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight restores baseline Lighting
+2026-09-18T00:54:10.098Z,11845.098633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight restores baseline wind
+2026-09-18T00:54:12.503Z,11847.503906,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow starts
+2026-09-18T00:54:13.170Z,11848.170898,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:54:13.170Z,11848.170898,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Rainbow
+2026-09-18T00:54:15.688Z,11850.688477,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow real player walking remains safe (28 studs)
+2026-09-18T00:54:17.904Z,11852.904297,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow all cosmetic parts anchored and noninteractive
+2026-09-18T00:54:17.904Z,11852.904297,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow bounded object/particle/audio budgets
+2026-09-18T00:54:17.904Z,11852.904297,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Rainbow {"beams":14,"safe":true,"sounds":1,"emitters":6,"rate":15,"parts":7}
+2026-09-18T00:54:20.271Z,11855.271484,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow world cleanup
+2026-09-18T00:54:20.271Z,11855.271484,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow audio cleanup after fade
+2026-09-18T00:54:20.271Z,11855.271484,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow restores baseline Lighting
+2026-09-18T00:54:20.271Z,11855.271484,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow restores baseline wind
+2026-09-18T00:54:22.680Z,11857.680664,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos starts
+2026-09-18T00:54:23.336Z,11858.336914,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:54:23.337Z,11858.337891,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Chaos
+2026-09-18T00:54:25.837Z,11860.837891,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos real player walking remains safe (28 studs)
+2026-09-18T00:54:28.054Z,11863.054688,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos all cosmetic parts anchored and noninteractive
+2026-09-18T00:54:28.054Z,11863.054688,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos bounded object/particle/audio budgets
+2026-09-18T00:54:28.054Z,11863.054688,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Chaos {"beams":0,"safe":true,"sounds":5,"emitters":28,"rate":49,"parts":60}
+2026-09-18T00:54:30.420Z,11865.420898,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos world cleanup
+2026-09-18T00:54:30.420Z,11865.420898,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos audio cleanup after fade
+2026-09-18T00:54:30.420Z,11865.420898,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos restores baseline Lighting
+2026-09-18T00:54:30.420Z,11865.420898,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos restores baseline wind
+2026-09-18T00:54:32.825Z,11867.825195,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted starts
+2026-09-18T00:54:33.470Z,11868.470703,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:54:33.470Z,11868.470703,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Inverted
+2026-09-18T00:54:35.987Z,11870.987305,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted real player walking remains safe (28 studs)
+2026-09-18T00:54:38.196Z,11873.196289,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted all cosmetic parts anchored and noninteractive
+2026-09-18T00:54:38.196Z,11873.196289,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted bounded object/particle/audio budgets
+2026-09-18T00:54:38.196Z,11873.196289,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Inverted {"beams":0,"safe":true,"sounds":2,"emitters":12,"rate":16.799999713897706,"parts":24}
+2026-09-18T00:54:40.552Z,11875.552734,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted world cleanup
+2026-09-18T00:54:40.553Z,11875.553711,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted audio cleanup after fade
+2026-09-18T00:54:40.553Z,11875.553711,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted restores baseline Lighting
+2026-09-18T00:54:40.553Z,11875.553711,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted restores baseline wind
+2026-09-18T00:54:42.958Z,11877.958008,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare starts
+2026-09-18T00:54:43.620Z,11878.620117,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:54:43.620Z,11878.620117,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Nightmare
+2026-09-18T00:54:46.135Z,11881.135742,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare real player walking remains safe (28 studs)
+2026-09-18T00:54:48.347Z,11883.347656,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare all cosmetic parts anchored and noninteractive
+2026-09-18T00:54:48.348Z,11883.348633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare bounded object/particle/audio budgets
+2026-09-18T00:54:48.348Z,11883.348633,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Nightmare {"beams":0,"safe":true,"sounds":2,"emitters":12,"rate":18,"parts":18}
+2026-09-18T00:54:50.703Z,11885.703125,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare world cleanup
+2026-09-18T00:54:50.703Z,11885.703125,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare audio cleanup after fade
+2026-09-18T00:54:50.703Z,11885.703125,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare restores baseline Lighting
+2026-09-18T00:54:50.703Z,11885.703125,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare restores baseline wind
+2026-09-18T00:54:53.108Z,11888.108398,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void starts
+2026-09-18T00:54:53.769Z,11888.769531,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:54:53.769Z,11888.769531,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Void
+2026-09-18T00:54:56.286Z,11891.286133,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void real player walking remains safe (28 studs)
+2026-09-18T00:54:58.502Z,11893.502930,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void all cosmetic parts anchored and noninteractive
+2026-09-18T00:54:58.502Z,11893.502930,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void bounded object/particle/audio budgets
+2026-09-18T00:54:58.502Z,11893.502930,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Void {"beams":0,"safe":true,"sounds":1,"emitters":14,"rate":26.59999942779541,"parts":56}
+2026-09-18T00:55:00.870Z,11895.870117,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void world cleanup
+2026-09-18T00:55:00.870Z,11895.870117,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void audio cleanup after fade
+2026-09-18T00:55:00.870Z,11895.870117,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void restores baseline Lighting
+2026-09-18T00:55:00.870Z,11895.870117,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void restores baseline wind
+2026-09-18T00:55:03.274Z,11898.274414,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden starts
+2026-09-18T00:55:03.935Z,11898.935547,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:55:03.935Z,11898.935547,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE Golden
+2026-09-18T00:55:06.452Z,11901.452148,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden real player walking remains safe (28 studs)
+2026-09-18T00:55:08.668Z,11903.668945,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden all cosmetic parts anchored and noninteractive
+2026-09-18T00:55:08.668Z,11903.668945,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden bounded object/particle/audio budgets
+2026-09-18T00:55:08.668Z,11903.668945,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS Golden {"beams":12,"safe":true,"sounds":1,"emitters":12,"rate":20.099999964237214,"parts":6}
+2026-09-18T00:55:11.036Z,11906.036133,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden world cleanup
+2026-09-18T00:55:11.038Z,11906.038086,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden audio cleanup after fade
+2026-09-18T00:55:11.038Z,11906.038086,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden restores baseline Lighting
+2026-09-18T00:55:11.038Z,11906.038086,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden restores baseline wind
+2026-09-18T00:55:13.442Z,11908.442383,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse starts
+2026-09-18T00:55:14.101Z,11909.101562,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse world anchors unchanged after 360-degree camera rotation
+2026-09-18T00:55:14.101Z,11909.101562,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_CAPTURE AdminAbuse
+2026-09-18T00:55:16.618Z,11911.618164,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse real player walking remains safe (28 studs)
+2026-09-18T00:55:18.819Z,11913.819336,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse all cosmetic parts anchored and noninteractive
+2026-09-18T00:55:18.819Z,11913.819336,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse bounded object/particle/audio budgets
+2026-09-18T00:55:18.819Z,11913.819336,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_STATS AdminAbuse {"beams":17,"safe":true,"sounds":3,"emitters":30,"rate":63,"parts":104}
+2026-09-18T00:55:21.184Z,11916.184570,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse world cleanup
+2026-09-18T00:55:21.184Z,11916.184570,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse audio cleanup after fade
+2026-09-18T00:55:21.185Z,11916.185547,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse restores baseline Lighting
+2026-09-18T00:55:21.185Z,11916.185547,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse restores baseline wind
+2026-09-18T00:55:21.551Z,11916.551758,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SunnySkies Low graphics starts
+2026-09-18T00:55:22.035Z,11917.035156,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS RainyDay Low graphics starts
+2026-09-18T00:55:22.517Z,11917.517578,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Thunderstorm Low graphics starts
+2026-09-18T00:55:23.001Z,11918.001953,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Snowfall Low graphics starts
+2026-09-18T00:55:23.484Z,11918.484375,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Foggy Low graphics starts
+2026-09-18T00:55:23.938Z,11918.938477,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Windy Low graphics starts
+2026-09-18T00:55:24.403Z,11919.403320,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Heatwave Low graphics starts
+2026-09-18T00:55:24.873Z,11919.873047,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Aurora Low graphics starts
+2026-09-18T00:55:25.354Z,11920.354492,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS BloodMoon Low graphics starts
+2026-09-18T00:55:25.839Z,11920.839844,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS MeteorShower Low graphics starts
+2026-09-18T00:55:26.306Z,11921.306641,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS SpiritNight Low graphics starts
+2026-09-18T00:55:26.773Z,11921.773438,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Rainbow Low graphics starts
+2026-09-18T00:55:27.241Z,11922.241211,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Chaos Low graphics starts
+2026-09-18T00:55:27.704Z,11922.704102,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Inverted Low graphics starts
+2026-09-18T00:55:28.162Z,11923.162109,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Nightmare Low graphics starts
+2026-09-18T00:55:28.642Z,11923.642578,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Void Low graphics starts
+2026-09-18T00:55:29.125Z,11924.125000,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS Golden Low graphics starts
+2026-09-18T00:55:29.606Z,11924.606445,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS AdminAbuse Low graphics starts
+2026-09-18T00:55:32.119Z,11927.119141,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_PASS rapid Low-quality switching leaves no world or audio objects
+2026-09-18T00:55:34.636Z,11929.636719,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_DONE assertions=181 failures=0

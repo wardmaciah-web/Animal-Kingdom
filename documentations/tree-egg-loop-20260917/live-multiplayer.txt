@@ -1,0 +1,39 @@
+2026-09-18T03:33:09.315Z,492.315796,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_MULTI_RESTART players=2
+2026-09-18T03:33:12.337Z,495.337341,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Player1 begins tree loop with zero Coins
+2026-09-18T03:33:12.337Z,495.337921,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Player2 begins tree loop with zero Coins
+2026-09-18T03:33:12.341Z,495.341553,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Meadow registered real trees: 28
+2026-09-18T03:33:12.341Z,495.341644,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Forest registered real trees: 29
+2026-09-18T03:33:12.341Z,495.341797,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Jungle registered real trees: 35
+2026-09-18T03:33:12.341Z,495.341888,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Desert registered real trees: 19
+2026-09-18T03:33:12.341Z,495.341949,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Snow registered real trees: 31
+2026-09-18T03:33:12.342Z,495.342010,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Volcano registered real trees: 26
+2026-09-18T03:33:12.342Z,495.342041,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Ocean registered real trees: 27
+2026-09-18T03:33:12.342Z,495.342102,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS AncientRuins registered real trees: 22
+2026-09-18T03:33:12.342Z,495.342163,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS MagicalForest registered real trees: 55
+2026-09-18T03:33:12.342Z,495.342255,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Sky registered real trees: 19
+2026-09-18T03:33:12.345Z,495.345947,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Prehistoric registered real trees: 27
+2026-09-18T03:33:12.346Z,495.346252,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Mythical registered real trees: 4
+2026-09-18T03:33:12.442Z,495.442596,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS no generated gameplay geometry or ground egg prompts
+2026-09-18T03:33:14.070Z,497.070648,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS full inventory leaves original tree untouched
+2026-09-18T03:33:17.185Z,500.185760,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS one shared-tree race awards exactly one pet
+2026-09-18T03:33:17.185Z,500.185883,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS tree hidden before hatch presentation
+2026-09-18T03:33:17.185Z,500.185944,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS all original geometry/interaction disabled
+2026-09-18T03:33:17.185Z,500.185974,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS tree/hatch challenges advance exactly once
+2026-09-18T03:33:17.186Z,500.186005,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS tree pet enters existing Index
+2026-09-18T03:33:17.186Z,500.186066,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS egg never spends Coins
+2026-09-18T03:33:17.186Z,500.186279,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS awarded placeholder pet equips
+2026-09-18T03:33:17.186Z,500.186340,d7ac000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS server controls respawn deadline
+2026-09-18T03:33:35.768Z,518.768066,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS tree remains unavailable before twenty-second deadline
+2026-09-18T03:33:35.935Z,518.935364,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS same tree restores exact original pivot/rotation/part/effect/prompt properties
+2026-09-18T03:33:35.935Z,518.935486,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS cooldown causes no repeated pet or challenge credit
+2026-09-18T03:33:35.938Z,518.938354,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS tree hatching uses existing Rainbow luck
+2026-09-18T03:33:39.578Z,522.578613,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Player1 independent tree awards its own pet
+2026-09-18T03:33:39.578Z,522.578735,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS pet UID remains unique across all players
+2026-09-18T03:33:39.578Z,522.578796,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS pet UID remains unique across all players
+2026-09-18T03:33:39.578Z,522.578796,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Player1 tree owns its own cooldown
+2026-09-18T03:33:39.578Z,522.578857,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Player2 independent tree awards its own pet
+2026-09-18T03:33:39.578Z,522.578918,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS pet UID remains unique across all players
+2026-09-18T03:33:39.578Z,522.578979,c011000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS Player2 tree owns its own cooldown
+2026-09-18T03:33:42.036Z,525.036987,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS death/respawn after award preserves single committed pet
+2026-09-18T03:33:42.037Z,525.037048,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST PASS retired ground/triple request cannot create extra pets
+2026-09-18T03:33:42.038Z,525.038696,b60e000,6,Info [FLog::CreatorOutput] AK_TREE_TEST_DONE clients=2 assertions=37 failures=0 savedProfilesUnchanged=true

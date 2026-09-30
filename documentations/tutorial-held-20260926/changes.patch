@@ -1,0 +1,951 @@
+--- before/src/ReplicatedStorage/Shared/Gameplay/Definitions/TutorialDefinitions.lua
++++ after/src/ReplicatedStorage/Shared/Gameplay/Definitions/TutorialDefinitions.lua
+@@ -1,16 +1,9 @@
++-- Major steps persist in TutorialProgress.Step; only TutorialCompleted controls completion.
+ return {
+- {Title="Welcome to Animal Kingdom",Text="Build your collection, grow stronger, and explore twelve biomes.",Continue=true},
+- {Title="Your own plot",Text="Your username marks your plot. It belongs to you for this server session.",Continue=true},
+- {Title="Find your first tree",Text="Travel to Meadow from Biomes, then follow the tree marker and use Shake.",Target="Tree"},
+- {Title="A successful shake",Text="You found a companion! Each tree rewards one player at a time.",Continue=true},
+- {Title="Your first Coins",Text="Coins are a bonus from gathering. Save them for upgrades and biome unlocks.",Continue=true},
+- {Title="The tree disappeared",Text="Its reward has been collected and its interaction is disabled.",Continue=true},
+- {Title="Trees return",Text="Trees become available again after their search cooldown.",Continue=true},
+- {Title="Trees hold surprises",Text="Each tree shows its search cost. A successful search reveals one companion.",Continue=true},
+- {Title="Find your first companion",Text="Search a Meadow tree and meet the companion waiting inside.",Target="Tree"},
+- {Title="Equip your pet",Text="Open Pets and press Equip on your new companion."},
+- {Title="Your companion follows",Text="Your equipped pet follows you around the kingdom.",Continue=true},
+- {Title="Gather together",Text="Shake another tree with your pet equipped for more resources and pet XP.",Target="Tree"},
+- {Title="Explore the kingdom",Text="Open Biomes to see the next unlock. Each biome has stronger pets and better gathering rewards.",Continue=true},
+- {Title="You're ready!",Text="Complete challenges, collect Index rewards, and enjoy changing weather bonuses.",Continue=true},
++ {Title='Welcome to Animal Kingdom!',Text='Travel to the Meadow to claim your first pet.'},
++ {Title='Meet a companion',Text='Follow the arrow and search the tree for a pet!'},
++ {Title='Your own Sanctuary',Text='Place your pet in your Sanctuary to start earning Forest Coins.'},
++ {Title='Make yourself at home',Text='Place your pet here to start earning!'},
++ {Title='Your first income',Text='Head to the collection pad to claim your coins.'},
++ {Title='Congratulations!',Text='You’re ready to explore Animal Kingdom!\nCollect as many pets as you can and unlock new biomes.\nEnjoy your adventure!'},
+ }
+--- before/src/ReplicatedStorage/Shared/Gameplay/SellValueCalculator.lua
++++ after/src/ReplicatedStorage/Shared/Gameplay/SellValueCalculator.lua
+@@ -11,7 +11,15 @@
+   *(mutation and mutation.Power or 1)*(pet.Shiny and 1.5 or 1)*(pet.Prismatic and 2 or 1)
+  return math.clamp(math.floor(value+.5),1,1e12)
+ end
+-function M.Eligible(pet)
+- return Definitions[pet.PetId]~=nil and pet.Location=='Inventory' and not PetMath.Protected(pet)
++-- Prevent the only onboarding companion being sold below the cost of replacing it.
++-- This is temporary guidance safety, not another saved lock flag.
++function M.OnboardingProtected(data,pet,remainingCount,proceeds)
++ local p=data and data.TutorialProgress
++ return p and not data.TutorialCompleted and p.FlowVersion==2 and p.Step>=2 and p.Step<=5 and p.PetUID==pet.UID and (remainingCount or #data.Pets-1)==0
++  and data.Currencies.Coins+(proceeds or M.Calculate(pet))<require(script.Parent.Definitions.MeadowTreeDefinitions).Ordered[1].Cost
++end
++function M.Eligible(pet,location,data)
++ location=location or 'Inventory'
++ return (location=='Inventory' or location=='Held') and Definitions[pet.PetId]~=nil and pet.Location==location and not PetMath.Protected(pet) and not M.OnboardingProtected(data,pet)
+ end
+ return M
+--- before/src/ServerScriptService/ServerSource/Server/EggService.lua
++++ after/src/ServerScriptService/ServerSource/Server/EggService.lua
+@@ -118,7 +118,7 @@
+  lastHatch[player]=os.clock()+duration+1.5 -- allow reveal, also bounds presentation queue growth
+  Pets:Publish(player)
+  for _,result in ipairs(results) do Pets.Granted:Fire(player,result.Pet,result.NewDiscovery) end
+- self.Hatched:Fire(player,1,record.Biome)
++ self.Hatched:Fire(player,1,record.Biome,record.HatchResult)
+  return true,record.HatchResult
+ end
+ function Egg:HatchFromTree(player,tree,claim)
+--- before/src/ServerScriptService/ServerSource/Server/GameplayService.lua
++++ after/src/ServerScriptService/ServerSource/Server/GameplayService.lua
+@@ -28,7 +28,9 @@
+  elseif action=="ClaimChallenge" then return Knit.GetService("ChallengeService"):Claim(player,p.Period,p.Id)
+  elseif action=="ClaimIndex" then return Knit.GetService("IndexService"):Claim(player,p.Percent)
+  elseif action=="ClaimSeasonal" then return Knit.GetService("SeasonalService"):Claim(player,p.Season,p.RewardId)
+- elseif action=="TutorialNext" then return Knit.GetService("TutorialService"):Advance(player)
++ elseif action=="TutorialNext" or action=="TutorialComplete" then return Knit.GetService("TutorialService"):Complete(player)
++ elseif action=="TutorialRevealDone" then return Knit.GetService("TutorialService"):RevealDone(player,p.UID)
++ elseif action=="TutorialRestart" then return Knit.GetService("TutorialService"):Restart(player)
+   elseif action=="ShopBuy" then return Knit.GetService("ShopService"):Buy(player,p.Id)
+   elseif action=="StartExpedition" then return Knit.GetService("GardenExpeditionService"):Start(player,p.UID,p.DurationId,p.RequestId)
+   elseif action=="ClaimExpedition" then return Knit.GetService("GardenExpeditionService"):Claim(player,p.UID,p.RequestId)
+--- before/src/ServerScriptService/ServerSource/Server/PetService.lua
++++ after/src/ServerScriptService/ServerSource/Server/PetService.lua
+@@ -183,14 +183,26 @@
+ function Pets:Sell(player,mode,expectedUID)
+  return self:Transaction(player,function()
+   local data=Data:Get(player)
+-  if mode~='Inventory' or expectedUID~='' then return false,'Only eligible Inventory pets can be sold.' end
++  local heldSale=mode=='Held'
++  if mode~='Inventory' and not heldSale then return false,'Invalid sale mode.' end
++  if heldSale then
++   local held=self:FindOwned(data,expectedUID)
++   if not held or held.Location~='Held' or data.ActiveHeldPetUID~=held.UID then return false,'Select that Held pet first.' end
++   if SellValue.OnboardingProtected(data,held) then return false,'Keep this companion until you finish the tutorial, or earn enough coins for another search.' end
++   if not SellValue.Eligible(held,'Held',data) then return false,'This pet is locked or protected and cannot be sold.' end
++  elseif expectedUID~='' then return false,'Sell All uses your eligible Inventory pets.' end
+   local sold,total,count={},0,0
+   for _,pet in ipairs(data.Pets)do
+-   local eligible=SellValue.Eligible(pet) and pet.UID~=data.ActiveHeldPetUID
++   local eligible=heldSale and pet.UID==expectedUID and SellValue.Eligible(pet,'Held',data)
++    or not heldSale and SellValue.Eligible(pet,'Inventory',data) and pet.UID~=data.ActiveHeldPetUID
+    if eligible and Definitions[pet.PetId] then
+     local garden=false;for _,trip in ipairs(data.GardenExpeditions or {})do if trip.UID==pet.UID then garden=true;break end end
+     if not garden then sold[pet.UID]=true;total+=SellValue.Calculate(pet);count+=1 end
+    end
++  end
++  local companion=data.TutorialProgress and self:FindOwned(data,data.TutorialProgress.PetUID)
++  if companion and sold[companion.UID] and SellValue.OnboardingProtected(data,companion,#data.Pets-count,total) then
++   sold[companion.UID]=nil;total-=SellValue.Calculate(companion);count-=1
+   end
+   if count==0 then return false,'No eligible Inventory pets to sell. Locked and protected pets are kept.' end
+   if data.Currencies.Coins+total>CurrencyDefs.Coins.MaxBalance then return false,'Your coin balance is full.' end
+@@ -199,7 +211,7 @@
+   data.Pets=remaining;data.OwnedPets=remaining;data.Currencies.Coins+=total;data.ForestCoins=data.Currencies.Coins
+   self:Publish(player)
+   local economy=Knit.GetService('EconomyService');economy:Publish(player,'Coins');economy.Changed:Fire(player,'Coins',total,'PetSale')
+-  return true,{Kind='PetsSold',Count=count,Total=total}
++  return true,{Kind='PetsSold',Count=count,Total=total,Mode=mode,UID=heldSale and expectedUID or nil}
+  end)
+ end
+ function Pets:Flag(player,uid,flag,value)
+--- before/src/ServerScriptService/ServerSource/Server/PlotService.lua
++++ after/src/ServerScriptService/ServerSource/Server/PlotService.lua
+@@ -3,7 +3,8 @@
+ local Knit=require(RS.Packages.Knit)
+ local Locator=require(SSS.PlotLocator)
+ local Guard=require(script.Parent.Parent.Utilities.GameplayGuard)
+-local Service=Knit.CreateService({Name="PlotService",Client={}})
++local Signal=require(RS.Packages.Signal)
++local Service=Knit.CreateService({Name="PlotService",Client={},Collected=Signal.new()})
+ local Data,Economy
+ local collecting=setmetatable({},{__mode="k"})
+ local touchedAt=setmetatable({},{__mode="k"})
+@@ -58,6 +59,7 @@
+   local creditedOK,credited=Economy:Add(player,"Coins",amount,"Idle")
+   if not creditedOK or credited<=0 then return false,"Coin capacity reached" end
+   data.UncollectedSanctuaryCoins-=credited;Data:Publish(player,"UncollectedSanctuaryCoins")
++  self.Collected:Fire(player,credited)
+   return true,{Kind="IncomeCollected",Amount=credited}
+  end,debug.traceback)
+  collecting[player]=nil
+--- before/src/ServerScriptService/ServerSource/Server/TutorialService.lua
++++ after/src/ServerScriptService/ServerSource/Server/TutorialService.lua
+@@ -1,36 +1,175 @@
+-local RS=game:GetService("ReplicatedStorage")
++-- Guidance state only. Existing services own travel, pets, placement and money.
++local RS=game:GetService('ReplicatedStorage')
++local Players=game:GetService('Players')
++local Paths=game:GetService('PathfindingService')
++local Http=game:GetService('HttpService')
+ local Knit=require(RS.Packages.Knit)
+-local Definitions=require(RS.Shared.Gameplay.Definitions.TutorialDefinitions)
+-local Service=Knit.CreateService({Name="TutorialService",Client={}})
++local Locations=require(RS.Shared.Gameplay.PetLocations)
++local Trees=require(RS.Shared.Gameplay.Definitions.MeadowTreeDefinitions)
++local Models=require(RS.Shared.Gameplay.PetModelResolver)
++local Readiness=require(script.Parent.Parent.Utilities.MeadowPoolReadiness)
++local Pools=require(script.Parent.Parent.Utilities.RewardPoolValidation)
++local Display=require(script.Parent.Parent.Utilities.MeadowSanctuaryDisplay)
++local Guard=require(script.Parent.Parent.Utilities.GameplayGuard)
++local Service=Knit.CreateService({Name='TutorialService',Client={}})
+ local Data
+-function Service:Advance(player)
+- local data=Data:Get(player);if not data or data.TutorialCompleted then return false,"Tutorial finished" end
+- local step=data.TutorialProgress.Step
+- if not Definitions[step].Continue then return false,"Complete the current objective" end
+- if step==2 and player:GetAttribute("HasPlot")~=true then return false,"Waiting for your assigned plot" end
+- data.TutorialProgress.Step=math.min(#Definitions,step+1)
+- if step==#Definitions then data.TutorialCompleted=true end
+- self:Reconcile(player);Data:Publish(player,"TutorialProgress","TutorialCompleted");return true
++local sessions={}
++local rng=Random.new()
++local function state(player)
++ local s=sessions[player]
++ if not s then
++  local target=player:FindFirstChild('TutorialTreeTarget') or Instance.new('ObjectValue')
++  target.Name='TutorialTreeTarget';target.Parent=player
++  s={Target=target,Resuming=true};sessions[player]=s
++ end
++ return s
+ end
+-function Service:Reconcile(player)
+- local data=Data:Get(player);if not data or data.TutorialCompleted then return end
+- local progress=data.TutorialProgress
+- if progress.Step==3 and progress.Gathered then progress.Step=4 end
+- if progress.Step==9 and #data.Pets>0 then progress.Step=10 end
+- if progress.Step==10 and #data.EquippedPets>0 then progress.Step=11 end
+- if progress.Step==12 and progress.Assisted then progress.Step=13 end
+- Data:Publish(player,"TutorialProgress")
++function Service:Publish(player)
++ Data:Publish(player,'TutorialProgress','TutorialCompleted')
++ Knit.GetService('PetService'):RequestSave(player)
+ end
+-function Service:KnitInit() Data=Knit.GetService("PlayerDataService") end
++function Service:Normalize(data)
++ local p=data.TutorialProgress
++ if p.FlowVersion~=2 then
++  p.LegacyStep=p.LegacyStep or p.Step
++  p.Step=1;p.FlowVersion=2;p.PetUID=nil;p.SlotId=nil;p.RevealReadyAt=nil
++ end
++ p.Step=math.clamp(math.floor(tonumber(p.Step) or 1),1,6)
++ return p
++end
++function Service:ValidTree(player,object)
++ local record=Knit.GetService('ResourceService'):GetRecords()[object]
++ if not record or record.Biome~='Meadow' or not record.IsTree or record.State~='AVAILABLE' or not object:IsDescendantOf(workspace) or not record.Prompt.Parent or not record.Prompt.Enabled then return false end
++ local def=Trees.Get(object,'Meadow')
++ if not def or not Pools.Check(def) or not Readiness.Check(def,player) then return false end
++ local floor=Knit.GetService('BiomeService'):GetFloor('Meadow');if not floor then return false end
++ local p=floor.CFrame:PointToObjectSpace(record.InteractionPosition)
++ return math.abs(p.X)<floor.Size.X/2 and math.abs(p.Z)<floor.Size.Z/2 and math.abs(p.Y)<18,record
++end
++function Service:ChooseTree(player)
++ local s=state(player)
++ if s.Target.Value and self:ValidTree(player,s.Target.Value) then return end
++ s.Target.Value=nil
++ if s.Choosing or os.clock()<(s.RetryAt or 0) then return end
++ local root=Guard.Alive(player);if not root then return end
++ s.Choosing=true;s.RetryAt=os.clock()+3
++ task.spawn(function()
++  local candidates={}
++  for object in pairs(Knit.GetService('ResourceService'):GetRecords())do if self:ValidTree(player,object) then candidates[#candidates+1]=object end end
++  for i=#candidates,2,-1 do local j=rng:NextInteger(1,i);candidates[i],candidates[j]=candidates[j],candidates[i]end
++  for _,object in ipairs(candidates)do
++   local data=Data:Get(player);root=Guard.Alive(player)
++   if not data or data.TutorialCompleted or data.TutorialProgress.Step~=2 or data.TutorialProgress.PetUID or not root then break end
++   local valid,record=self:ValidTree(player,object)
++   if valid then
++    -- A supported approach within the real prompt radius must have a navigation path.
++    local delta=Vector3.new(root.Position.X-record.InteractionPosition.X,0,root.Position.Z-record.InteractionPosition.Z)
++    local approach=record.InteractionPosition+(delta.Magnitude>.1 and delta.Unit or Vector3.zAxis)*6
++    local ray=workspace:Raycast(approach+Vector3.new(0,8,0),Vector3.new(0,-30,0))
++    if ray then
++     local path=Paths:CreatePath({AgentRadius=2,AgentHeight=5,AgentCanJump=true})
++     local ok=pcall(function()path:ComputeAsync(root.Position,ray.Position+Vector3.new(0,2,0))end)
++     local reachable=ok and path.Status==Enum.PathStatus.Success;path:Destroy()
++     data=Data:Get(player)
++     if reachable and sessions[player]==s and data and data.TutorialProgress.Step==2 and not data.TutorialProgress.PetUID and self:ValidTree(player,object) then s.Target.Value=object;break end
++    end
++   end
++  end
++  s.Choosing=false
++ end)
++end
++local function usable(pet)return pet and pet.Location~='Garden' and Models.Resolve(pet.PetId)~=nil end
++function Service:Reconcile(player,resuming)
++ local data=Data:Get(player);if not data then return end
++ local s=state(player)
++ if resuming then s.Resuming=true end
++ if data.TutorialCompleted then s.Target.Value=nil;return end
++ local before=Http:JSONEncode(data.TutorialProgress)
++ local p=self:Normalize(data);local root=Guard.Alive(player)
++ if not root or not Knit.GetService('PlotService'):GetPlot(player) then
++  if Http:JSONEncode(p)~=before then self:Publish(player)end
++  return
++ end
++ resuming=s.Resuming;s.Resuming=nil
++ local inMeadow=Knit.GetService('BiomeService'):AtPosition(root.Position)=='Meadow' and Knit.GetService('BiomeService'):IsUnlocked(player,'Meadow') and not player:GetAttribute('InGarden')
++ if p.Step==1 and inMeadow then p.Step=2 end
++ local pet=Locations.Find(data,p.PetUID)
++ if p.Step==2 then
++  if pet and resuming then p.Step=3;p.RevealReadyAt=nil
++  elseif not pet then
++   p.PetUID=nil
++   -- Replay/recovery can reuse an owned companion when another paid search is unaffordable.
++   -- No free reward or currency; the normal first 250-coin search is unchanged.
++   if inMeadow and data.Currencies.Coins<Trees.Ordered[1].Cost then
++    for _,owned in ipairs(data.Pets)do if usable(owned)then pet=owned;p.PetUID=pet.UID;p.Step=3;break end end
++   end
++   if p.Step==2 and inMeadow then self:ChooseTree(player)end
++  end
++ end
++ if p.Step>=3 and p.Step<=5 then
++  if not usable(pet) then
++   pet=Locations.Find(data,data.ActiveHeldPetUID)
++   if not usable(pet) then pet=nil;for _,owned in ipairs(data.Pets)do if usable(owned)then pet=owned;break end end end
++   p.PetUID=pet and pet.UID or nil;p.SlotId=nil;p.Step=pet and 3 or 2
++  end
++  if pet then
++   local actual=pet.Location=='Sanctuary' and Display.GetSlot(player,pet.LocationSlot)
++   if actual and (p.Step~=4 or p.SlotId==pet.LocationSlot or resuming) then p.SlotId=pet.LocationSlot;p.Step=5
++   elseif p.Step==5 then p.Step=3;p.SlotId=nil end
++   if p.Step==3 and pet.Location=='Held' and data.ActiveHeldPetUID==pet.UID and Knit.GetService('PlotService'):IsNearOwnPlot(player) then p.Step=4 end
++   if p.Step==4 then
++    local slot=p.SlotId and Display.GetSlot(player,p.SlotId)
++    if not slot or Locations.At(data,'Sanctuary',p.SlotId) then
++     p.SlotId=nil
++     for i=1,Locations.MaxSanctuarySlots do if Display.GetSlot(player,i) and not Locations.At(data,'Sanctuary',i)then p.SlotId=i;break end end
++    end
++    if not p.SlotId then
++     -- A full existing Sanctuary already demonstrates placement; guide its real income.
++     for _,owned in ipairs(data.Pets)do if owned.Location=='Sanctuary' and Display.GetSlot(player,owned.LocationSlot)then p.PetUID=owned.UID;p.SlotId=owned.LocationSlot;p.Step=5;break end end
++    end
++   end
++  end
++ end
++ if p.Step~=2 or p.PetUID then s.Target.Value=nil end
++ if Http:JSONEncode(p)~=before then self:Publish(player)end
++end
++function Service:Awarded(player,biome,result)
++ local data=Data:Get(player);if not data or data.TutorialCompleted or biome~='Meadow' then return end
++ -- Do not run the low-balance replay fallback between commit and attaching this reward UID.
++ local p=self:Normalize(data);local entry=result and result.Results and result.Results[1]
++ local pet=entry and entry.Pet and Locations.Find(data,entry.Pet.UID)
++ if p.Step~=2 or p.PetUID or not pet then return end
++ p.PetUID=pet.UID;p.RevealReadyAt=workspace:GetServerTimeNow()+(data.Settings.ReducedMotion and .45 or math.max(.6,result.Duration or 1.3))
++ state(player).Target.Value=nil;self:Publish(player)
++end
++function Service:RevealDone(player,uid)
++ local data=Data:Get(player);local p=data and data.TutorialProgress
++ if not p or data.TutorialCompleted or p.Step~=2 or p.PetUID~=uid or not Locations.Find(data,uid) or workspace:GetServerTimeNow()<(p.RevealReadyAt or math.huge) then return false,'Companion reveal is still in progress.' end
++ p.Step=3;p.RevealReadyAt=nil;self:Publish(player);self:Reconcile(player);return true
++end
++function Service:Collected(player,amount)
++ local data=Data:Get(player);if not data or data.TutorialCompleted or amount<=0 then return end
++ self:Reconcile(player)
++ local p=data.TutorialProgress;local pet=Locations.Find(data,p.PetUID)
++ if p.Step==5 and pet and pet.Location=='Sanctuary' and pet.LocationSlot==p.SlotId and Display.GetSlot(player,p.SlotId) then p.Step=6;self:Publish(player)end
++end
++function Service:Complete(player)
++ local data=Data:Get(player)
++ if not data or data.TutorialCompleted or (data.TutorialProgress.FlowVersion~=2 or data.TutorialProgress.Step~=6) then return false,'Finish your first Sanctuary collection first.' end
++ data.TutorialCompleted=true;self:Publish(player);state(player).Target.Value=nil;return true
++end
++function Service:Restart(player)
++ local data=Data:Get(player)
++ if not data or data.TutorialCompleted or (data.TutorialProgress.FlowVersion~=2 or data.TutorialProgress.Step~=6) then return false,'Finish the guided steps first.' end
++ local p=data.TutorialProgress;p.Step=1;p.FlowVersion=2;p.PetUID=nil;p.SlotId=nil;p.RevealReadyAt=nil
++ data.TutorialCompleted=false;state(player).Target.Value=nil;self:Publish(player);return true
++end
++function Service:KnitInit()Data=Knit.GetService('PlayerDataService')end
+ function Service:KnitStart()
+- Knit.GetService("ResourceService").Harvested:Connect(function(player,_,assisted)
+-  local data=Data:Get(player);if not data then return end
+-  data.TutorialProgress.Gathered=true
+-  if assisted and data.TutorialProgress.Step>=11 then data.TutorialProgress.Assisted=true end
+-  self:Reconcile(player)
+- end)
+- Knit.GetService("EggService").Hatched:Connect(function(player) self:Reconcile(player) end)
+- Knit.GetService("PetService").Equipped:Connect(function(player) self:Reconcile(player) end)
+- Knit.GetService("ProfileService").Loaded:Connect(function(player) self:Reconcile(player) end)
++ Knit.GetService('EggService').Hatched:Connect(function(player,_,biome,result)self:Awarded(player,biome,result)end)
++ Knit.GetService('PlotService').Collected:Connect(function(player,amount)self:Collected(player,amount)end)
++ Knit.GetService('ProfileService').Loaded:Connect(function(player)self:Reconcile(player,true)end)
++ Players.PlayerRemoving:Connect(function(player)sessions[player]=nil end)
++ task.spawn(function()while true do task.wait(.5);for _,p in ipairs(Players:GetPlayers())do self:Reconcile(p)end end end)
+ end
+ return Service
+--- before/src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua
++++ after/src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua
+@@ -8,14 +8,14 @@
+ Policy.Actions={
+  MovePet={.2,{UID=id,Location=function(v)return v=='Inventory' or v=='Held' or v=='Sanctuary'end,Slot=number}},
+  SwapSanctuary={.3,{HeldSlot=number,SanctuarySlot=number,HeldUID=function(v)return v=='' or id(v)end,SanctuaryUID=function(v)return v=='' or id(v)end}},
+- SellPets={.5,{Mode=function(v)return v=='Inventory'end,UID=function(v)return v=='' or id(v)end}},
++ SellPets={.5,{Mode=function(v)return v=='Inventory' or v=='Held'end,UID=function(v)return v=='' or id(v)end}},
+  PetAssetsLoaded={.15,{Id=id,Signature=function(v)return type(v)=="string" and #v<=1024 end,Loaded=boolean}},
+  DisplayMeadowPet={.2,{UID=id,Displayed=boolean}},
+  Equip={.15,{UID=id,Equipped=boolean}},Favorite={.15,{UID=id,Value=boolean}},Lock={.15,{UID=id,Value=boolean}},
+  RequestDelete={.3,{UID=id}},Delete={.3,{UID=id,Token=id}},
+  Gather={.3,{Target=target}},Upgrade={.4,{Id=id}},UnlockBiome={.5,{Id=id}},ClaimChallenge={.4,{Period=function(v) return v=="Daily" or v=="Weekly" end,Id=id}},
+  ClaimIndex={.5,{Percent=number}},ClaimSeasonal={.5,{Season=id,RewardId=id}},Setting={.2,{Id=id,Value=boolean}},AutoDelete={.2,{Rarity=id,Value=boolean}},
+-  TutorialNext={.3,{}},ShopBuy={.5,{Id=id}},StartExpedition={.5,{UID=id,DurationId=id,RequestId=id}},ClaimExpedition={.5,{UID=id,RequestId=id}},CancelExpedition={.5,{UID=id,RequestId=id}},
++  TutorialNext={.3,{}},TutorialRevealDone={.3,{UID=id}},TutorialComplete={.5,{}},TutorialRestart={1,{}},ShopBuy={.5,{Id=id}},StartExpedition={.5,{UID=id,DurationId=id,RequestId=id}},ClaimExpedition={.5,{UID=id,RequestId=id}},CancelExpedition={.5,{UID=id,RequestId=id}},
+   ClaimAllExpeditions={1.5,{RequestId=id}},VisitGarden={1.5,{}},ReturnGarden={1.5,{}},
+   BuyGardenSupply={.5,{Id=id,RequestId=id}},UpgradeGarden={.5,{Id=id,RequestId=id}},
+   BuyGardenCosmetic={.5,{Id=id,RequestId=id}},EquipGardenCosmetic={.5,{UID=id,CosmeticId=id,RequestId=id}},Place={.4,{Id=id,Offset=offset,Rotation=number}},RemovePlacement={.4,{UID=id}},
+--- before/src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/MenuManager.lua
++++ after/src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/MenuManager.lua
+@@ -23,7 +23,7 @@
+  self.input=Input.InputBegan:Connect(function(key,processed)
+   if not processed and key.KeyCode==Enum.KeyCode.Escape then back('',Enum.UserInputState.Begin) end
+  end)
+- self.last=Input.LastInputTypeChanged:Connect(function(kind)if kind.Name:find('Gamepad') then self:Focus(self.Modal or (self.Active and panel or nav)) end end)
++ self.last=Input.LastInputTypeChanged:Connect(function(kind)if kind.Name:find('Gamepad') then self:Focus(self.Modal or self.Popover or (self.Active and panel or nav)) end end)
+  self.selection=Gui:GetPropertyChangedSignal('SelectedObject'):Connect(function()
+   local chosen=Gui.SelectedObject;if not chosen or not chosen:IsDescendantOf(screen) then return end
+   local ancestor=chosen.Parent
+@@ -80,6 +80,11 @@
+   if not self.Active then self.OnClose(previous);self:Focus(self.Nav,'Nav_'..previous)end
+  end)
+ end
++function M:SetPopover(root) self.Popover=root;if root then self:Focus(root)end end
+ function M:SetModal(root) self.Modal=root;self.Screen:SetAttribute('ModalActive',root~=nil);self:Focus(root or (self.Active and self.Panel or self.Nav)) end
+-function M:Destroy() self.input:Disconnect();self.last:Disconnect();self.selection:Disconnect();Actions:UnbindAction('AnimalKingdomBack');Actions:UnbindAction('AnimalKingdomMenuInteraction') end
++function M:Destroy()
++ self.input:Disconnect();self.last:Disconnect();self.selection:Disconnect()
++ local replacement=game.Players.LocalPlayer.PlayerGui:FindFirstChild(self.Screen.Name)
++ if not replacement or replacement==self.Screen then Actions:UnbindAction('AnimalKingdomBack');Actions:UnbindAction('AnimalKingdomMenuInteraction')end
++end
+ return M
+--- before/src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/TutorialPointer.lua
++++ after/src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/TutorialPointer.lua
+@@ -0,0 +1,67 @@
++-- Reusable local presentation. No input capture and no gameplay authority.
++local Run=game:GetService('RunService')
++local Players=game:GetService('Players')
++local W=require(script.Parent.Components)
++local M={};M.__index=M
++local function visible(o)
++ local n=o
++ while n and n:IsA('GuiObject')do if not n.Visible then return false end;n=n.Parent end
++ return o.Parent~=nil and o.AbsoluteSize.X>0
++end
++function M.new(root)
++ local self=setmetatable({Root=root},M)
++ self.Paw=W.New('Frame',{Name='TutorialPaw',Size=UDim2.fromOffset(52,52),AnchorPoint=Vector2.new(.5,.5),BackgroundTransparency=1,Visible=false,ZIndex=55},root)
++ W.Icon(self.Paw,'Pets',UDim2.fromScale(1,1))
++ self.Connection=Run.RenderStepped:Connect(function(dt)self:Render(dt)end)
++ return self
++end
++function M:Target(target)
++ if target==self.TargetObject then return end
++ if self.Scale and self.Scale.Parent then self.Scale.Scale=1 end
++ self.TargetObject=target;self.Scale=target and W.Motion.Scale(target) or nil
++ self.Paw:SetAttribute('TargetName',target and target.Name or '')
++end
++function M:World(position,near,highlight)
++ self.Position=position;self.Near=near or 10
++ if highlight~=self.HighlightTarget then
++  if self.Highlight then self.Highlight:Destroy();self.Highlight=nil end
++  self.HighlightTarget=highlight
++  if highlight then self.Highlight=Instance.new('Highlight');self.Highlight.Name='TutorialEmphasis';self.Highlight.Adornee=highlight;self.Highlight.FillColor=W.Color.Gold;self.Highlight.OutlineColor=W.Color.Gold;self.Highlight.FillTransparency=.9;self.Highlight.OutlineTransparency=.2;self.Highlight.DepthMode=Enum.HighlightDepthMode.Occluded;self.Highlight.Parent=highlight end
++ end
++ if not position and self.Arrow then self.Arrow:Destroy();self.Arrow=nil end
++end
++function M:Render(dt)
++ local t=os.clock();local reduced=W.Motion.Reduced();local pulse=reduced and .15 or (math.sin(t*3)+1)/2
++ local target=self.TargetObject
++ self.Paw.Visible=target~=nil and target:IsDescendantOf(self.Root.Parent) and visible(target)
++ if self.Paw.Visible then
++  if self.Scale and self.Scale.Parent then self.Scale.Scale=1+pulse*(reduced and .008 or .055)end
++  local p=target.AbsolutePosition-self.Root.AbsolutePosition;local size=target.AbsoluteSize;local safe=self.Root.AbsoluteSize
++  local x,y=p.X+size.X*.78,p.Y-25
++  if y<28 then y=p.Y+size.Y+27 end
++  if y>safe.Y-28 then x=p.X-28;y=p.Y+size.Y/2 end
++  local goal=Vector2.new(math.clamp(x,28,math.max(28,safe.X-28)),math.clamp(y+(reduced and 0 or math.sin(t*3)*3),28,math.max(28,safe.Y-28)))
++  self.Point=self.Point and self.Point:Lerp(goal,1-math.exp(-dt*(reduced and 30 or 12))) or goal
++  self.Point=Vector2.new(math.clamp(self.Point.X,28,math.max(28,safe.X-28)),math.clamp(self.Point.Y,28,math.max(28,safe.Y-28)))
++  self.Paw.Position=UDim2.fromOffset(self.Point.X,self.Point.Y);self.Paw.Rotation=reduced and 0 or -12+math.sin(t*3)*3
++ end
++ if self.Highlight then self.Highlight.FillTransparency=.94-pulse*.07 end
++ local player=Players.LocalPlayer;local char=player.Character;local r=char and char:FindFirstChild('HumanoidRootPart');local h=char and char:FindFirstChildOfClass('Humanoid')
++ local delta=r and self.Position and Vector3.new(self.Position.X-r.Position.X,0,self.Position.Z-r.Position.Z)
++ if not delta or not h or h.Health<=0 or delta.Magnitude<=self.Near then if self.Arrow then self.Arrow:Destroy();self.Arrow=nil end;return end
++ if not self.Arrow then
++  local model=Instance.new('Model');model.Name='TutorialGroundArrow'
++  for _,v in ipairs({{Vector3.new(.5,.045,2.2),CFrame.new(0,0,-1.9)},{Vector3.new(.45,.045,1.5),CFrame.new(-.42,0,-2.65)*CFrame.Angles(0,-math.pi/4,0)},{Vector3.new(.45,.045,1.5),CFrame.new(.42,0,-2.65)*CFrame.Angles(0,math.pi/4,0)}})do
++   local part=Instance.new('Part');part.Name='Arrow';part.Size=v[1];part.CFrame=v[2];part.Anchored=true;part.CanCollide=false;part.CanTouch=false;part.CanQuery=false;part.CastShadow=false;part.Color=W.Color.Gold;part.Material=Enum.Material.Neon;part.Parent=model
++  end
++  model:PivotTo(CFrame.identity);model.Parent=workspace;self.Arrow=model
++ end
++ local params=RaycastParams.new();params.FilterType=Enum.RaycastFilterType.Exclude;params.FilterDescendantsInstances={char,self.Arrow,workspace:FindFirstChild('LocalPetFollowers') or self.Arrow};params.RespectCanCollide=true
++ local hit=workspace:Raycast(r.Position,Vector3.new(0,-18,0),params)
++ local foot=hit and hit.Position+Vector3.new(0,.06,0) or r.Position-Vector3.new(0,3,0)
++ self.Arrow:PivotTo(CFrame.lookAt(foot,foot+delta.Unit))
++ for _,part in ipairs(self.Arrow:GetChildren())do part.Transparency=.13+pulse*.12 end
++end
++function M:Clear()self:Target(nil);self:World(nil);self.Paw.Visible=false end
++function M:Destroy()self:Clear();self.Connection:Disconnect();self.Paw:Destroy()end
++return M
+--- before/src/StarterGui/AnimalKingdomUI/HatchPresentation.lua
++++ after/src/StarterGui/AnimalKingdomUI/HatchPresentation.lua
+@@ -57,6 +57,7 @@
+   if closed then return end;closed=true
+   Actions:UnbindAction('CompanionSearchLock');Prompts.Enabled=previousPrompts;Camera.RestorePlayer()
+   if ctx and not immediate then ctx.Notify(destinationText)end
++  screen:SetAttribute('LastFinishedRevealUID',entry.Pet.UID)
+   H.Busy=false;screen:SetAttribute('RewardRevealActive',false);activeClose=nil;if ctx then ctx.RevealBack=nil;ctx.Manager:SetModal(nil)end
+   local function dispose()if shade.Parent then shade:Destroy()end end
+   if immediate then dispose()else W.Motion.ModalClose(panel,dispose)end
+--- before/src/StarterGui/AnimalKingdomUI/HeldPetActions.lua
++++ after/src/StarterGui/AnimalKingdomUI/HeldPetActions.lua
+@@ -0,0 +1,64 @@
++-- Small actions on the existing five Held slots; the canonical server still decides every change.
++local Input=game:GetService('UserInputService')
++local Run=game:GetService('RunService')
++local W=require(script.Parent.GameplayWidgets)
++local L=require(game.ReplicatedStorage.Shared.Gameplay.PetLocations)
++local Sell=require(game.ReplicatedStorage.Shared.Gameplay.SellValueCalculator)
++local Bridge=require(script.Parent.RemoteBridge)
++local M={};M.__index=M
++function M.new(root,screen,bar,manager)
++ local self=setmetatable({Root=root,Screen=screen,Bar=bar,Manager=manager,Connections={}},M)
++ self.Card=W.Surface(root,'HeldPetActions',UDim2.fromOffset(190,116),nil,'Wood');self.Card.ZIndex=45;self.Card.Visible=false
++ self.Sell=W.Button(self.Card,'SELL HELD PET',UDim2.new(1,-16,0,44),UDim2.fromOffset(8,8),function()self:Action('SellPets',{Mode='Held',UID=self.UID})end,W.Color.Red);self.Sell.Name='SellHeldPet';self.Sell.TextSize=13
++ self.Store=W.Button(self.Card,'STORE PET',UDim2.new(1,-16,0,44),UDim2.fromOffset(8,62),function()self:Action('MovePet',{UID=self.UID,Location='Inventory',Slot=0})end);self.Store.Name='StoreHeldPet'
++ self.Connections[#self.Connections+1]=Bridge.Completed:Connect(function(r)
++  if r.Action=='Equip' and self.PendingUID then
++   if r.Success then self.SelectionAccepted=true else self:Close()end
++   self:Update(self.Data)
++  elseif r.Success and self.ActionPending==r.Action then self:Close()end
++  if self.ActionPending==r.Action then self.ActionPending=nil end
++ end)
++ self.Connections[#self.Connections+1]=Input.InputBegan:Connect(function(input)
++  if not self.Card.Visible or (input.UserInputType~=Enum.UserInputType.MouseButton1 and input.UserInputType~=Enum.UserInputType.Touch)then return end
++  local point=Vector2.new(input.Position.X,input.Position.Y)
++  local function inside(o)local p=o.AbsolutePosition;local s=o.AbsoluteSize;return point.X>=p.X and point.Y>=p.Y and point.X<=p.X+s.X and point.Y<=p.Y+s.Y end
++  if not inside(self.Card) and not inside(self.Bar.Root)then self:Close()end
++ end)
++ self.Connections[#self.Connections+1]=Run.RenderStepped:Connect(function()self:Position()end)
++ self.Connections[#self.Connections+1]=screen:GetAttributeChangedSignal('RewardRevealActive'):Connect(function()if screen:GetAttribute('RewardRevealActive')then self:Close()end end)
++ return self
++end
++function M:Select(pet)
++ self:Close();self.PendingUID=pet.UID
++ if self.Data and self.Data.ActiveHeldPetUID==pet.UID then self.UID=pet.UID;self.PendingUID=nil;self:Update(self.Data);return end
++ if not Bridge.Request('Equip',{UID=pet.UID,Equipped=true})then self.PendingUID=nil end
++end
++function M:Action(action,payload)
++ if not self.UID or self.Data.ActiveHeldPetUID~=self.UID then self:Close();return end
++ if Bridge.Request(action,payload) then self.ActionPending=action end
++end
++function M:Update(data)
++ self.Data=data
++ if data and self.PendingUID and self.SelectionAccepted and data.ActiveHeldPetUID==self.PendingUID then self.UID=self.PendingUID;self.PendingUID=nil;self.SelectionAccepted=nil end
++ local pet=data and self.UID and L.Find(data,self.UID)
++ if self.UID and (not pet or pet.Location~='Held' or data.ActiveHeldPetUID~=self.UID)then self:Close();return end
++ if not pet or self.Manager.Active or self.Screen:GetAttribute('RewardRevealActive')then return end
++ self.Slot=pet.LocationSlot;W.Disabled(self.Sell,not Sell.Eligible(pet,'Held',data))
++ if not self.Card.Visible then W.Motion.WindowOpen(self.Card);self.Manager:SetPopover(self.Card)end
++ self:Position()
++end
++function M:Position()
++ if not self.Card.Visible then return end
++ local slot=self.Bar.Root:FindFirstChild('HeldSlot_'..tostring(self.Slot))
++ if not slot or not self.Bar.Root.Visible then self:Close();return end
++ local p=slot.AbsolutePosition-self.Root.AbsolutePosition
++ self.Card.Position=UDim2.fromOffset(math.clamp(p.X+slot.AbsoluteSize.X/2-95,8,math.max(8,self.Root.AbsoluteSize.X-198)),math.max(8,p.Y-124))
++end
++function M:Close()
++ local was=self.Card.Visible or self.PendingUID~=nil
++ self.Card.Visible=false;self.UID=nil;self.PendingUID=nil;self.SelectionAccepted=nil;self.ActionPending=nil
++ if self.Manager.Popover==self.Card then self.Manager:SetPopover(nil);self.Manager:Focus(self.Manager.Nav,'HeldSlot_'..tostring(self.Slot))end
++ return was
++end
++function M:Destroy()self:Close();for _,c in ipairs(self.Connections)do c:Disconnect()end;self.Card:Destroy()end
++return M
+--- before/src/StarterGui/AnimalKingdomUI/HeldPetsBar.lua
++++ after/src/StarterGui/AnimalKingdomUI/HeldPetsBar.lua
+@@ -16,7 +16,7 @@
+  for i=1,5 do
+   local pet=Locations.At(data,'Held',i)
+   local b=Cards.Card(self.Root,pet,'Slot '..i,UDim2.new(.2,-6,1,0),UDim2.new((i-1)*.2,3,0,0),function()if pet then self.SelectPet(pet)end end,pet~=nil and pet.UID==data.ActiveHeldPetUID,self.Large and 'heldLarge' or true)
+-  b.Name='HeldSlot_'..i
++  b.Name='HeldSlot_'..i;b:SetAttribute('PetUID',pet and pet.UID or '')
+  end
+  return true
+ end
+--- before/src/StarterGui/AnimalKingdomUI/Main.client.lua
++++ after/src/StarterGui/AnimalKingdomUI/Main.client.lua
+@@ -1,7 +1,6 @@
+ local Players=game:GetService('Players')
+ local RS=game:GetService('ReplicatedStorage')
+ local Input=game:GetService('UserInputService')
+-local Collection=game:GetService('CollectionService')
+ local Gui=game:GetService('GuiService')
+ local Knit=require(RS.Packages.Knit)
+ local V2=script.Parent.AnimalKingdomUIV2
+@@ -13,13 +12,12 @@
+ local Garden=require(script.Parent.GardenMenus)
+ local Plot=require(script.Parent.PlotMenu)
+ local Hatch=require(script.Parent.HatchPresentation)
+-local Tutorial=require(RS.Shared.Gameplay.Definitions.TutorialDefinitions)
+ local Sounds=require(RS.Shared.Gameplay.PresentationSounds)
+ local screen=script.Parent;local player=Players.LocalPlayer
+ screen:SetAttribute('ProductionUI',true);screen:SetAttribute('Version','2.2.0');screen:SetAttribute('ActiveMenu','')
+ screen.IgnoreGuiInset=false;screen.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;screen.ClipToDeviceSafeArea=true;screen.DisplayOrder=40
+ local connections={};local function connect(signal,fn)local c=signal:Connect(fn);table.insert(connections,c);return c end
+-local data,controller;local ctx={Request=Bridge.Request};local manager,hud,overlays,heldBar;local resize
++local data,controller;local ctx={Request=Bridge.Request};local manager,hud,overlays,heldBar,quick,tutorial;local resize
+ local root=W.New('Frame',{Name='Interface',Size=UDim2.fromScale(1,1),BackgroundTransparency=1},screen)
+ local panel=W.Surface(root,'Screens',UDim2.fromOffset(1150,650),UDim2.fromScale(.5,.47),'Wood');panel.AnchorPoint=Vector2.new(.5,.5);panel.ZIndex=W.Theme.Layers.Menu;panel.Visible=false;W.Decorate(panel)
+ local parchment=W.Surface(panel,'Parchment',UDim2.new(1,-26,1,-26),UDim2.fromOffset(13,13),'Paper')
+@@ -53,31 +51,19 @@
+ function ctx.Refresh()
+  if queued then return end;queued=true;task.defer(function()queued=false;if screen.Parent then render()end end)
+ end
+-local tutorial=W.Surface(root,'Tutorial',UDim2.fromOffset(278,162),UDim2.new(0,16,1,-275),'Paper');tutorial.Visible=false;tutorial.ZIndex=2
+-local tutorialTitle=W.Heading(tutorial,'',UDim2.new(1,-28,0,37),UDim2.fromOffset(14,10),18)
+-local tutorialBody=W.Text(tutorial,'',UDim2.new(1,-28,0,58),UDim2.fromOffset(14,48),13,W.Color.Muted)
+-local nextButton=W.Button(tutorial,'Continue',UDim2.new(1,-28,0,42),UDim2.fromOffset(14,110),function()ctx.Request('TutorialNext',{})end)
+-local marker=W.New('BillboardGui',{Name='TutorialMarker',Size=UDim2.fromOffset(180,46),StudsOffsetWorldSpace=Vector3.new(0,6,0),AlwaysOnTop=true,Enabled=false},screen)
+-local markerText=W.Text(marker,'',UDim2.fromScale(1,1),nil,16,W.Color.White);markerText.TextStrokeColor3=W.Color.WoodDark;markerText.TextStrokeTransparency=.1
+-local function tutorialUpdate()
+- tutorial.Visible=data~=nil and not data.TutorialCompleted and manager.Active==nil
+- if not data then return end
+- local step=data.TutorialProgress.Step;local def=Tutorial[step]
+- if not def then tutorial.Visible=false;return end
+- tutorialTitle.Text=step..' / '..#Tutorial..' • '..def.Title;tutorialBody.Text=def.Text;nextButton.Visible=def.Continue==true
+-end
+ hud=require(V2.HUD).new(root,function(name)
+  if name=='Updates'then ctx.ShowUpdates()elseif name=='Profile'then ctx.ShowProfile()elseif name=='Friends'then ctx.InviteFriends()elseif name=='WeatherDetails'then ctx.ShowWeather()else ctx.Open(name)end
+ end)
+-heldBar=require(script.Parent.HeldPetsBar).new(root,function(pet)ctx.Request('Equip',{UID=pet.UID,Equipped=true})end)
++heldBar=require(script.Parent.HeldPetsBar).new(root,function(pet)if quick then quick:Select(pet)end end)
+ function ctx.ViewPet(pet)if pet then ctx.Request('Equip',{UID=pet.UID,Equipped=true})end end
+ -- Include the sibling Held bar in the normal HUD's controller navigation graph.
+ manager=require(V2.MenuManager).new(screen,panel,root,function(name)
+- ctx.ActiveName=name;if name=='Pets' or name=='Index'then PetMenus.DetailMode=false end;hud:Select(name);if resize then resize()end;tutorial.Visible=false;content.CanvasPosition=Vector2.zero;render();Sounds.Play('UIOpen',screen)
++ ctx.ActiveName=name;if name=='Pets' or name=='Index'then PetMenus.DetailMode=false end;hud:Select(name);if resize then resize()end;if quick then quick:Close()end;content.CanvasPosition=Vector2.zero;render();Sounds.Play('UIOpen',screen)
+ end,function()
+- ctx.ActiveName=nil;Garden.Close();content:ClearAllChildren();hud:Select(nil);if resize then resize()end;tutorialUpdate();Sounds.Play('UIClose',screen)
++ ctx.ActiveName=nil;Garden.Close();content:ClearAllChildren();hud:Select(nil);if resize then resize()end;Sounds.Play('UIClose',screen)
+ end)
+ ctx.Manager=manager
++quick=require(script.Parent.HeldPetActions).new(root,screen,heldBar,manager)
+ function ctx.Open(name)if menus[name] then manager:Open(name)end end
+ function ctx.Close()manager:Close()end
+ manager.BackScreen=function(name)if name=='Pets' or name=='Index' then return PetMenus.Back(ctx)end;return name=='Garden' and Garden.Back(ctx)end
+@@ -86,7 +72,7 @@
+ ctx.Notify=function(message)overlays:Notify(message)end
+ local presentationNotice=W.New('BindableEvent',{Name='PresentationNotice'},screen);connect(presentationNotice.Event,ctx.Notify)
+ function ctx.CloseOverlay()return overlays:Close()end
+-manager.BackOverlay=function()if ctx.RevealBack then ctx.RevealBack();return true end;return overlays:Close()end
++manager.BackOverlay=function()if ctx.RevealBack then ctx.RevealBack();return true end;if quick:Close()then return true end;return overlays:Close()end
+ function ctx.Confirm(titleText,body,callback)
+  overlays:Modal(titleText,body,{{Text='Cancel',Color=W.Color.Wood,Callback=function()overlays:Close()end},{Text='Confirm',Callback=function()overlays:Close();callback()end}})
+ end
+@@ -128,6 +114,7 @@
+  elseif type(request)=='function'then Hatch.Cleanup();overlays:Travel(key,destination,request)end
+ end)
+ connect(travelFinished.Event,function(key,success)overlays:FinishTravel(key,success)end)
++tutorial=require(script.Parent.TutorialGuidance).new(root,screen,ctx,heldBar,quick)
+ resize=function()
+  local size=screen.AbsoluteSize;hud:Resize(size,Input.TouchEnabled);ctx.Compact=hud.Compact;ctx.Narrow=size.X<600;ctx.Short=size.Y<520
+  screen:SetAttribute('CompactLayout',ctx.Compact)
+@@ -137,7 +124,6 @@
+   header.Position=UDim2.fromOffset(12,6);header.Size=UDim2.new(1,-24,0,44);title.TextSize=21
+   close.Position=UDim2.new(1,-47,0,1);headerIcon.Size=UDim2.fromOffset(34,34)
+   content.Position=UDim2.fromOffset(16,56);content.Size=UDim2.new(1,-32,1,-66)
+-  tutorial.Position=UDim2.fromOffset(16,124);tutorial.Size=UDim2.fromOffset(250,162)
+   overlays.Toast.Position=UDim2.new(.5,0,0,115)
+  else
+   local available=size.Y-214;local height=math.min(730,available)
+@@ -145,11 +131,14 @@
+   header.Position=UDim2.fromOffset(27,15);header.Size=UDim2.new(1,-54,0,61);title.TextSize=27
+   close.Position=UDim2.new(1,-54,0,9);headerIcon.Size=UDim2.fromOffset(47,47)
+   content.Position=UDim2.fromOffset(31,88);content.Size=UDim2.new(1,-62,1,-110)
+-  tutorial.Position=UDim2.new(0,16,1,-282);tutorial.Size=UDim2.fromOffset(278,162)
+   overlays.Toast.Position=UDim2.new(.5,0,0,78)
+  end
++ local inset=screen:GetAttribute('OnboardingActive') and 70 or 0
++ hud.Root.Position=UDim2.fromOffset(0,ctx.Compact and inset or 0);hud.Root.Size=UDim2.new(1,0,1,ctx.Compact and -inset or 0)
++ panel.Position+=UDim2.fromOffset(0,inset);panel.Size-=UDim2.fromOffset(0,inset)
+  if manager.Active then ctx.Refresh()end
+ end
++connect(screen:GetAttributeChangedSignal('OnboardingActive'),resize)
+ connect(screen:GetPropertyChangedSignal('AbsoluteSize'),resize);connect(screen:GetAttributeChangedSignal('RewardRevealActive'),resize);resize()
+ local weather=RS:WaitForChild('WeatherState')
+ local function contextUpdate()
+@@ -162,18 +151,20 @@
+ local relevant={Pets={Pets=true,ActiveHeldPetUID=true,EquippedPets=true,DisplayedPetIds=true,PetStorageCapacity=true,MaxEquippedPets=true},Index={PetIndex=true,IndexRewards=true},Garden={GardenExpeditions=true,GardenCosmetics=true,GardenCrops=true,GardenUpgrades=true,GardenBoosts=true,Pets=true,EquippedPets=true},Biomes={UnlockedBiomes=true,Currencies=true},Upgrades={Upgrades=true,PlotProgression=true},Challenges={DailyChallenges=true,WeeklyChallenges=true},Settings={Settings=true},Shop={Items=true,PlotProgression=true}}
+ local heldQueued=false
+ local function updateData(key,snapshot)
++ if not screen.Parent or not root.Parent then return end
+  data=snapshot;ctx.Data=data;if not data then return end
++ quick:Update(data);tutorial:Update(data)
+  if (not key or key=='Pets' or key=='HeldPetSlots' or key=='ActiveHeldPetUID') and not heldQueued then
+   heldQueued=true
+   task.defer(function()
+    heldQueued=false
++   if not screen.Parent or not heldBar.Root.Parent then return end
+    local selected=Gui.SelectedObject;local preferred=selected and selected.Name
+-   if heldBar:Update(data) and not manager.Active and not manager.Modal and not screen:GetAttribute('RewardRevealActive') then manager:Focus(manager.Nav,preferred)end
++   if heldBar:Update(data) and not manager.Active and not manager.Modal and not manager.Popover and not screen:GetAttribute('RewardRevealActive') then manager:Focus(manager.Nav,preferred)end
+   end)
+  end
+  if not key or key=='Currencies' or key=='DailyChallenges' or key=='WeeklyChallenges' then hud:Update(data)end
+  if not key or key=='Settings' then player:SetAttribute('AKReducedMotion',data.Settings.ReducedMotion);player:SetAttribute('AKShowOtherPets',data.Settings.ShowOtherPets)end
+- if not key or key=='TutorialProgress' or key=='TutorialCompleted' then tutorialUpdate()end
+  local active=manager.Active
+  if active and (not key or relevant[active] and relevant[active][key])then ctx.Refresh()end
+ end
+@@ -202,22 +193,12 @@
+  elseif successText[payload.Action] then ctx.Notify(successText[payload.Action])end
+  if payload.Action=='UnlockBiome' then Sounds.Play('UIUnlock',screen)elseif payload.Action=='Upgrade' or payload.Action=='ShopBuy' then Sounds.Play('UIPurchase',screen)end
+ end)
+--- Tutorial guidance follows actual world targets; menu references are names, never screen coordinates.
+-local alive=true
+-task.spawn(function()
+- while alive and screen.Parent do
+-  task.wait(1);marker.Enabled=false
+-  if not data or data.TutorialCompleted or manager.Active then continue end
+-  local step=Tutorial[data.TutorialProgress.Step];local char=player.Character;local playerRoot=char and char:FindFirstChild('HumanoidRootPart')
+-  if not step or not step.Target or not playerRoot then continue end
+-  local nearest,distance=nil,math.huge
+-  for _,object in ipairs(Collection:GetTagged('GatherableTree'))do
+-   if object:IsDescendantOf(workspace) and object:GetAttribute('BiomeId')=='Meadow' and object:GetAttribute('ResourceState')=='AVAILABLE' then
+-    local part=object:FindFirstChild('AKTreeInteraction',true) or (object:IsA('BasePart')and object or object:FindFirstChildWhichIsA('BasePart',true))
+-    if part then local position=part:IsA('Attachment')and part.WorldPosition or part.Position;local d=(position-playerRoot.Position).Magnitude;if d<distance then nearest=part;distance=d end end
+-   end
+-  end
+-  if nearest then marker.Adornee=nearest;marker.Enabled=true;markerText.Text='Tree • '..math.floor(distance)..' studs'end
+- end
+-end)
+-script.Destroying:Once(function()alive=false;Hatch.Cleanup();Garden.Close();manager:Destroy();for _,c in ipairs(connections)do c:Disconnect()end end)
++local disposed=false
++local function dispose()
++ if disposed then return end;disposed=true
++ tutorial:Destroy();quick:Destroy();Hatch.Cleanup();Garden.Close();manager:Destroy();for _,c in ipairs(connections)do c:Disconnect()end
++end
++script.Destroying:Once(dispose)
++-- A deferred Destroying callback on a destroyed LocalScript may never run.
++-- Retire its observers before a rebuilt ScreenGui receives later profile updates.
++connect(game:GetService('RunService').Heartbeat,function()if not screen.Parent then dispose()end end)
+--- before/src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua
++++ after/src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua
+@@ -0,0 +1,173 @@
++-- Client guidance observes canonical state; it never awards pets, moves pets or credits money.
++local Players=game:GetService('Players')
++local Run=game:GetService('RunService')
++local W=require(script.Parent.GameplayWidgets)
++local Definitions=require(game.ReplicatedStorage.Shared.Gameplay.Definitions.TutorialDefinitions)
++local L=require(game.ReplicatedStorage.Shared.Gameplay.PetLocations)
++local M={};M.__index=M
++function M.new(root,screen,ctx,bar,quick)
++ local self=setmetatable({Root=root,Screen=screen,Ctx=ctx,Bar=bar,Quick=quick,Started=workspace:GetServerTimeNow(),Elapsed=0},M)
++ self.Pointer=require(script.Parent.AnimalKingdomUIV2.TutorialPointer).new(root)
++ self.Card=W.Surface(root,'TutorialMessage',UDim2.fromOffset(420,66),UDim2.new(.5,0,0,72),'Wood');self.Card.AnchorPoint=Vector2.new(.5,0);self.Card.ZIndex=40;self.Card.Visible=false
++ local paper=W.Surface(self.Card,'Parchment',UDim2.new(1,-8,1,-8),UDim2.fromOffset(4,4),'Paper')
++ W.Icon(paper,'Pets',UDim2.fromOffset(38,38),UDim2.fromOffset(6,8))
++ self.Title=W.Heading(paper,'',UDim2.new(1,-62,0,23),UDim2.fromOffset(48,4),16)
++ self.Body=W.Text(paper,'',UDim2.new(1,-62,1,-27),UDim2.fromOffset(48,26),13,W.Color.Ink)
++ self.Connection=Run.Heartbeat:Connect(function(dt)self.Elapsed+=dt;if self.Elapsed>=.15 then self.Elapsed=0;self:Tick()end end)
++ return self
++end
++function M:Update(data)self.Data=data end
++function M:Point(target)
++ if target and target~=self.LastTarget then
++  local ancestor=target.Parent
++  while ancestor and ancestor~=self.Screen do
++   if ancestor:IsA('ScrollingFrame')then
++    local d=target.AbsolutePosition.Y-ancestor.AbsolutePosition.Y
++    if d<4 then ancestor.CanvasPosition=Vector2.new(ancestor.CanvasPosition.X,math.max(0,ancestor.CanvasPosition.Y+d-4))
++    elseif d+target.AbsoluteSize.Y>ancestor.AbsoluteSize.Y-4 then ancestor.CanvasPosition+=Vector2.new(0,d+target.AbsoluteSize.Y-ancestor.AbsoluteSize.Y+4)end
++   end
++   ancestor=ancestor.Parent
++  end
++  if self.Ctx.Manager.Active then self.Ctx.Manager:Focus(self.Ctx.Manager.Panel,target.Name)end
++ end
++ self.LastTarget=target;self.Pointer:Target(target)
++end
++function M:Find(name)return self.Root:FindFirstChild(name,true)end
++function M:Message(body,title)self.Title.Text=title or self.Title.Text;self.Body.Text=body end
++function M:Prompt(prompt)
++ for _,gui in ipairs(self.Screen:GetChildren())do
++  local ref=gui:FindFirstChild('PromptTarget')
++  if ref and ref.Value==prompt and gui.Visible then return gui:FindFirstChild('Interact',true)end
++ end
++end
++function M:CloseMenuGuidance()
++ if self.Ctx.Manager.Active then self:Point(self:Find('CloseMenu'));self:Message('Close this menu to follow the arrow.');return true end
++ return false
++end
++function M:Travel(destination)
++ self.Pointer:World(nil)
++ if self.Ctx.Manager.Active=='Biomes' then self:Point(self:Find(destination=='Meadow' and 'Travel_Meadow' or 'Travel_Plot'))
++ elseif self.Ctx.Manager.Active then self:Point(self:Find('Nav_Biomes'))
++ else self:Point(self:Find('Nav_Biomes'))end
++ self:Message(destination=='Meadow' and 'Open Biomes and travel to the Meadow.' or 'Travel to your Sanctuary.')
++end
++function M:World(position,prompt,highlight,near)
++ if self:CloseMenuGuidance()then self.Pointer:World(nil);return end
++ local root=Players.LocalPlayer.Character and Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart')
++ local close=root and (root.Position-position).Magnitude<=(near or 9) and (not prompt or prompt.Enabled)
++ self.Pointer:World(close and nil or position,prompt and not prompt.Enabled and .6 or near,close and highlight or nil)
++ self:Point(close and prompt and self:Prompt(prompt) or nil)
++ if close and prompt and not self.LastTarget then self:Message('Face the highlighted spot to use its '..(prompt.Name=='GatherPrompt' and 'Search' or prompt.ActionText)..' prompt.')end
++end
++function M:Hold(pet)
++ if not pet then return false end
++ if pet.Location=='Held' and self.Data.ActiveHeldPetUID~=pet.UID then
++  self.Pointer:World(nil)
++  self.WaitingHeldUID=pet.UID
++  if not self:CloseMenuGuidance()then self:Point(self.Bar.Root:FindFirstChild('HeldSlot_'..pet.LocationSlot));self:Message('Tap your new pet to hold it.')end
++  return true
++ elseif pet.Location=='Inventory' then
++  self.Pointer:World(nil)
++  self:Message(L.FirstFree(self.Data,'Held',5) and 'Hold your pet from All Pets to continue.' or 'Store a Held pet to make room, then hold this pet.')
++  if self.Ctx.Manager.Active=='Pets'then self:Point(self:Find('Select_'..pet.UID))else self:Point(self:Find('Nav_Pets'))end
++  return true
++ end
++ if pet.Location=='Held' and self.WaitingHeldUID==pet.UID then
++  self.WaitingHeldUID=nil;self.Quick:Close()
++  if self.Data.TutorialProgress.Step==3 then self.Ctx.Manager:Focus(self.Ctx.Manager.Nav,'Nav_Biomes')end
++ end
++ return false
++end
++function M:HideCompletion()
++ if self.Completion then
++  if self.Ctx.Manager.Modal==self.Completion then self.Ctx.Manager:SetModal(nil)end
++  self.Completion:Destroy();self.Completion=nil
++ end
++end
++function M:Finish()
++ self.Pointer:Clear();self.Card.Visible=false
++ if self.Completion then return end
++ if self.Ctx.Manager.Modal then return end
++ self.Quick:Close();self.Ctx.Close()
++ local frame=W.Surface(self.Root,'TutorialCompletion',UDim2.new(1,-24,0,310),UDim2.fromScale(.5,.48),'Wood');frame.AnchorPoint=Vector2.new(.5,.5);frame.ZIndex=55
++ W.New('UISizeConstraint',{MaxSize=Vector2.new(490,310)},frame)
++ local paper=W.Surface(frame,'Parchment',UDim2.new(1,-14,1,-14),UDim2.fromOffset(7,7),'Paper')
++ W.Icon(paper,'Pets',UDim2.fromOffset(46,46),UDim2.new(.5,-23,0,8))
++ local title=W.Heading(paper,'Congratulations!',UDim2.new(1,-24,0,38),UDim2.fromOffset(12,54),28);title.TextXAlignment=Enum.TextXAlignment.Center
++ local body=W.Text(paper,Definitions[6].Text,UDim2.new(1,-30,0,88),UDim2.fromOffset(15,96),15);body.TextXAlignment=Enum.TextXAlignment.Center
++ local done=W.Button(paper,'COMPLETE TUTORIAL',UDim2.new(1,-28,0,44),UDim2.fromOffset(14,191),function()self.Ctx.Request('TutorialComplete',{})end);done.Name='CompleteTutorial'
++ local restart=W.Button(paper,'RESTART TUTORIAL',UDim2.new(1,-28,0,44),UDim2.fromOffset(14,244),function()self.Ctx.Request('TutorialRestart',{})end,W.Color.Wood);restart.Name='RestartTutorial'
++ self.Completion=frame;self.Ctx.Manager:SetModal(frame);W.Motion.WindowOpen(frame)
++end
++function M:Tick()
++ local d=self.Data;local p=d and d.TutorialProgress;local player=Players.LocalPlayer
++ local char=player.Character;local root=char and char:FindFirstChild('HumanoidRootPart');local hum=char and char:FindFirstChildOfClass('Humanoid')
++ local enabled=d and not d.TutorialCompleted and p and p.FlowVersion==2 and player:GetAttribute('ProfileReady') and player:GetAttribute('HasPlot') and root and hum and hum.Health>0
++ local active=enabled and p.Step~=6 and not self.Screen:GetAttribute('RewardRevealActive')
++ if self.Screen:GetAttribute('OnboardingActive')~=(active==true)then self.Screen:SetAttribute('OnboardingActive',active==true)end
++ self.Card.Visible=active==true and not self.Ctx.Manager.Modal
++ if not enabled then self.Pointer:Clear();self:HideCompletion();return end
++ if p.Step~=self.LastStep then
++  if self.LastStep==1 and p.Step==2 and self.Ctx.Manager.Active=='Biomes' then self.Ctx.Close()end
++  if p.Step==1 then self.OpenedWelcome=false end
++  self.LastStep=p.Step;self.Pointer:Clear();self.LastTarget=nil
++ end
++ if p.Step==6 then self:Finish();return else self:HideCompletion()end
++ if not self.Card.Visible then self.Pointer:Clear();return end
++ local compact=self.Root.AbsoluteSize.X<900 or self.Root.AbsoluteSize.Y<580
++ self.Card.Size=UDim2.fromOffset(math.min(420,self.Root.AbsoluteSize.X-16),66)
++ self.Card.Position=UDim2.new(.5,0,0,compact and 0 or 72)
++ self.Title.Text=Definitions[p.Step].Title;self.Body.Text=Definitions[p.Step].Text
++ local pet=L.Find(d,p.PetUID)
++ if p.Step==1 then
++  self.Pointer:World(nil)
++  if not self.OpenedWelcome then self.OpenedWelcome=true;if self.Ctx.Manager.Active~='Biomes'then self.Ctx.Open('Biomes')end end
++  self:Point(self:Find(self.Ctx.Manager.Active=='Biomes' and 'Travel_Meadow' or 'Nav_Biomes'))
++  if #d.Pets>0 then self:Message('Travel to the Meadow and search for a pet.')end
++ elseif p.Step==2 then
++  if pet then
++   self.Pointer:World(nil);self:Point(nil);self:Message('Meet your new companion, then continue!')
++   local now=workspace:GetServerTimeNow()
++   local closed=self.Screen:GetAttribute('LastFinishedRevealUID')==pet.UID or (p.RevealReadyAt or now)<self.Started or now>(p.RevealReadyAt or now)+15
++   if closed and now>=(p.RevealReadyAt or math.huge) and os.clock()>(self.AckAt or 0)then self.AckAt=os.clock()+1.5;self.Ctx.Request('TutorialRevealDone',{UID=pet.UID})end
++  elseif player:GetAttribute('CurrentBiome')~='Meadow' or player:GetAttribute('InGarden') then self:Travel('Meadow')
++  else
++   local ref=player:FindFirstChild('TutorialTreeTarget');local tree=ref and ref.Value
++   local prompt=tree and tree:FindFirstChild('GatherPrompt',true)
++   local anchor=prompt and prompt.Parent
++   if tree and anchor and tree:GetAttribute('ResourceState')=='AVAILABLE' then
++    local position=anchor:IsA('Attachment')and anchor.WorldPosition or anchor.Position
++    self:World(position,prompt,tree,11)
++   else self.Pointer:World(nil);self:Point(nil);self:Message('Finding an available Meadow tree…')end
++  end
++ elseif p.Step==3 then
++  if not self:Hold(pet)then self:Travel('Plot')end
++ elseif p.Step==4 then
++  if self:Hold(pet)then return end
++  local sanctuaries=workspace:FindFirstChild('Sanctuaries');local own=sanctuaries and sanctuaries:FindFirstChild(tostring(player.UserId));local interactions=own and own:FindFirstChild('SlotInteractions')
++  local slot=interactions and interactions:FindFirstChild('Slot_'..tostring(p.SlotId))
++  if pet and pet.Location=='Sanctuary' and pet.LocationSlot~=p.SlotId and interactions then
++   slot=interactions:FindFirstChild('Slot_'..pet.LocationSlot)
++   self:Message('Pick up your pet so you can place it in the marked slot.')
++  end
++  if slot then
++   if (root.Position-slot.Position).Magnitude>180 or player:GetAttribute('InGarden')then self:Travel('Plot')else self:World(slot.Position,slot:FindFirstChild('SanctuaryPetSlotPrompt'),slot,8)end
++  else self:Point(nil);self:Message('Your Sanctuary is getting ready…')end
++ elseif p.Step==5 then
++  local plots=workspace:FindFirstChild('PlayerPlots');local pad
++  if plots then for _,plot in ipairs(plots:GetChildren())do if plot:GetAttribute('OwnerUserId')==player.UserId then pad=plot:FindFirstChild('IncomeCollector');break end end end
++  if pad then
++   if (root.Position-pad.Position).Magnitude>180 or player:GetAttribute('InGarden')then self:Travel('Plot')
++   else
++    self:World(pad.Position,nil,pad,8)
++    if not self.Ctx.Manager.Active and (root.Position-pad.Position).Magnitude<=12 then
++     self:Message((pad:GetAttribute('CollectibleCoins')or 0)>=1 and 'Step onto the collection pad to claim your coins!' or (d.Currencies.Coins>=9000000000000000 and 'Your coin wallet is full. Spend coins, then return to collect.' or 'Your pet is still earning — give it a moment!'))
++    end
++   end
++  else self:Point(nil);self:Message('Your collection pad is getting ready…')end
++ end
++end
++function M:Destroy()
++ self.Connection:Disconnect();self.Pointer:Destroy();self:HideCompletion();self.Card:Destroy();self.Screen:SetAttribute('OnboardingActive',false)
++end
++return M
+--- before/src/StarterPlayer/StarterPlayerScripts/KingdomPrompts.client.lua
++++ after/src/StarterPlayer/StarterPlayerScripts/KingdomPrompts.client.lua
+@@ -8,8 +8,9 @@
+ local screen=player.PlayerGui:WaitForChild('AnimalKingdomUI')
+ local W=require(screen.AnimalKingdomUIV2.Components)
+ local views={}
++local shown,screenConnections={},{}
+ local projection
+-local function permitted()return screen:GetAttribute('ActiveMenu')==''and not screen:GetAttribute('RewardRevealActive')and not screen:GetAttribute('ModalActive')end
++local function permitted()return screen and screen.Parent and screen:GetAttribute('ActiveMenu')==''and not screen:GetAttribute('RewardRevealActive')and not screen:GetAttribute('ModalActive')end
+ local function project()
+  local camera=workspace.CurrentCamera;if not camera then return end
+  for _,view in pairs(views)do
+@@ -35,15 +36,17 @@
+  view.Gui:Destroy();views[prompt]=nil
+  if not next(views)and projection then projection:Disconnect();projection=nil end
+ end
+-PromptService.PromptShown:Connect(function(prompt,kind)
++local function show(prompt,kind)
+  if not supported(prompt)then return end
+  remove(prompt)
++ if not screen or not screen.Parent then return end
+  local anchor=prompt.Parent
+  if anchor:IsA('Model')then anchor=anchor.PrimaryPart or anchor:FindFirstChildWhichIsA('BasePart',true)end
+  if not anchor then return end
+  -- Screen-space cards keep the tap target in the same safe-area coordinate
+  -- space as the rest of the HUD. One connection projects only shown prompts.
+  local gui=W.New('Frame',{Name='KingdomPrompt',Size=UDim2.fromOffset(252,88),AnchorPoint=Vector2.new(.5,.5),BackgroundTransparency=1,ZIndex=4,Visible=false},screen)
++ local ref=Instance.new('ObjectValue');ref.Name='PromptTarget';ref.Value=prompt;ref.Parent=gui
+  local card=W.Surface(gui,'PromptCard',UDim2.new(1,-4,1,-4),UDim2.fromOffset(2,2),'Wood')
+  local key=kind==Enum.ProximityPromptInputType.Touch and 'Tap' or kind==Enum.ProximityPromptInputType.Gamepad and 'X' or 'E'
+  local button=W.Button(card,key,UDim2.fromOffset(48,48),UDim2.fromOffset(12,16),nil,W.Color.Green);button.Name='Interact';button.TextSize=22;button.Selectable=false
+@@ -71,13 +74,24 @@
+  end)
+  connect(prompt.PromptButtonHoldEnded,function()if entry.Tween then entry.Tween:Cancel()end;fill.Size=UDim2.fromScale(0,1)end)
+  connect(prompt.Triggered,function()W.Motion.ButtonPress(card)end)
+- connect(prompt.Destroying,function()remove(prompt)end)
+-end)
+-PromptService.PromptHidden:Connect(remove)
+-local function visibility()project()end
+-screen:GetAttributeChangedSignal('ActiveMenu'):Connect(visibility)
+-screen:GetAttributeChangedSignal('RewardRevealActive'):Connect(visibility)
+-screen:GetAttributeChangedSignal('ModalActive'):Connect(visibility)
++ connect(prompt.Destroying,function()shown[prompt]=nil;remove(prompt)end)
++end
++PromptService.PromptShown:Connect(function(prompt,kind)if supported(prompt)then shown[prompt]=kind;show(prompt,kind)end end)
++PromptService.PromptHidden:Connect(function(prompt)shown[prompt]=nil;remove(prompt)end)
++local function bindScreen(nextScreen)
++ for _,c in ipairs(screenConnections)do c:Disconnect()end;table.clear(screenConnections)
++ for prompt in pairs(views)do remove(prompt)end
++ screen=nextScreen;W=require(screen:WaitForChild('AnimalKingdomUIV2'):WaitForChild('Components'))
++ for _,attribute in ipairs({'ActiveMenu','RewardRevealActive','ModalActive'})do
++  screenConnections[#screenConnections+1]=screen:GetAttributeChangedSignal(attribute):Connect(project)
++ end
++ screenConnections[#screenConnections+1]=screen.Destroying:Connect(function()
++  for prompt in pairs(views)do remove(prompt)end;screen=nil
++ end)
++ for prompt,kind in pairs(shown)do if prompt.Parent then show(prompt,kind)else shown[prompt]=nil end end
++end
++bindScreen(screen)
++local added=player.PlayerGui.ChildAdded:Connect(function(child)if child.Name=='AnimalKingdomUI' and child:IsA('ScreenGui')then bindScreen(child)end end)
+ for _,object in ipairs(workspace:GetDescendants())do style(object)end
+ workspace.DescendantAdded:Connect(style)
+-script.Destroying:Once(function()for prompt in pairs(views)do remove(prompt)end end)
++script.Destroying:Once(function()added:Disconnect();for _,c in ipairs(screenConnections)do c:Disconnect()end;for prompt in pairs(views)do remove(prompt)end end)
+--- before/src/StarterPlayer/StarterPlayerScripts/SanctuaryInteraction.client.lua
++++ after/src/StarterPlayer/StarterPlayerScripts/SanctuaryInteraction.client.lua
+@@ -36,9 +36,11 @@
+ local elapsed=0
+ connections[#connections+1]=Run.Heartbeat:Connect(function(dt)
+  elapsed+=dt;if elapsed<.1 then return end;elapsed=0
++ local current=player.PlayerGui:FindFirstChild('AnimalKingdomUI')
++ if current and current~=screen and current:FindFirstChild('RemoteBridge')then screen=current;Bridge=require(screen.RemoteBridge)end
+  local root=player.Character and player.Character:FindFirstChild('HumanoidRootPart')
+  local held=data and Locations.Find(data,data.ActiveHeldPetUID)
+- local allowed=root and data and screen:GetAttribute('ActiveMenu')==''
++ local allowed=root and data and screen.Parent and screen:GetAttribute('ActiveMenu')==''
+   and not screen:GetAttribute('RewardRevealActive') and not screen:GetAttribute('ModalActive')
+  local nearest,distance=nil,9
+  if allowed then

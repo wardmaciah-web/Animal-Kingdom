@@ -1,0 +1,49 @@
+--- before/HUD.lua
++++ src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/HUD.lua
+@@ -20,15 +20,17 @@
+  for i,name in ipairs({'Pets','Index','Garden','Biomes','Challenges','Upgrades','Plot','Settings'}) do
+   local b=W.WoodButton(self.Navigation,name,name,UDim2.fromOffset(108,80),nil,function()open(name)end);b.LayoutOrder=i;self.Buttons[name]=b
+  end
+- self.Utilities=W.New('Frame',{Name='Utilities',Position=UDim2.new(0,16,.34,0),Size=UDim2.fromOffset(76,100),BackgroundTransparency=1},self.Root)
+- self.Shop=W.WoodButton(self.Utilities,'Shop','Shop',UDim2.fromOffset(76,88),nil,function()open('Shop')end)
+- self.Daily=W.WoodButton(self.Utilities,'Daily','Daily',UDim2.fromOffset(76,78),UDim2.fromOffset(0,90),function()open('Daily')end)
++ self.Utilities=W.New('Frame',{Name='Utilities',Position=UDim2.new(0,16,.34,0),Size=UDim2.fromOffset(76,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},self.Root)
++ self.UtilityLayout=W.New('UIListLayout',{Padding=UDim.new(0,T.SideAction.Gap),SortOrder=Enum.SortOrder.LayoutOrder},self.Utilities)
++ self.Shop=W.SideActionButton(self.Utilities,'Shop','Shop',UDim2.fromOffset(76,78),nil,function()open('Shop')end);self.Shop.LayoutOrder=1
++ self.Daily=W.SideActionButton(self.Utilities,'Daily','Daily',UDim2.fromOffset(76,78),nil,function()open('Daily')end);self.Daily.LayoutOrder=2
+  self.SetDailyBadge=W.NotificationBadge(self.Daily)
+  self.SetChallengeBadge=W.NotificationBadge(self.Buttons.Challenges)
+- self.Teleport=W.WoodButton(self.Utilities,'Teleport','Teleport',UDim2.fromOffset(76,78),UDim2.fromOffset(0,171),function()open('Teleport')end)
+- self.HeaderActions=W.New('Frame',{Name='HeaderActions',Position=UDim2.new(1,-214,0,218),Size=UDim2.fromOffset(200,64),BackgroundTransparency=1},self.Root)
++ self.Teleport=W.SideActionButton(self.Utilities,'Teleport','Teleport',UDim2.fromOffset(76,78),nil,function()open('Teleport')end);self.Teleport.LayoutOrder=3
++ self.HeaderActions=W.New('Frame',{Name='HeaderActions',Position=UDim2.new(1,-216,0,218),Size=UDim2.fromOffset(202,64),BackgroundTransparency=1},self.Root)
++ W.New('UIListLayout',{FillDirection=Enum.FillDirection.Horizontal,Padding=UDim.new(0,T.SideAction.Gap),SortOrder=Enum.SortOrder.LayoutOrder},self.HeaderActions)
+  for i,item in ipairs({{'Friends','FriendshipTokens'},{'Updates','Leaf'},{'Profile','Crown'}})do
+-  local b=W.WoodButton(self.HeaderActions,item[1],item[2],UDim2.fromOffset(62,62),UDim2.fromOffset((i-1)*67,0),function()open(item[1])end);b:FindFirstChild('Label').TextSize=11
++  local b=W.SideActionButton(self.HeaderActions,item[1],item[2],UDim2.fromOffset(62,62),nil,function()open(item[1])end);b.LayoutOrder=i
+  end
+  self.Hint=W.Surface(self.Root,'Kindness',UDim2.fromOffset(190,52),UDim2.new(1,-208,1,-74),'Paper')
+  local text=W.Text(self.Hint,'Small steps.\nA brighter kingdom.',UDim2.new(1,-16,1,-8),UDim2.fromOffset(8,4),14);text.TextXAlignment=Enum.TextXAlignment.Center
+@@ -69,10 +71,11 @@
+   self.Navigation.AnchorPoint=Vector2.new(.5,0);self.Navigation.Position=UDim2.new(.5,-28,0,82);self.Navigation.Size=UDim2.new(1,-104,0,57);self.Navigation.ClipsDescendants=true
+   if not portrait then self.NavLayout.Padding=UDim.new(0,5)end
+   for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(72,48);local l=b:FindFirstChild('Label');if l then l.TextSize=11 end end
+-  self.Utilities.Position=UDim2.new(1,-68,0,3);self.Shop.Size=UDim2.fromOffset(56,49);self.Daily.Size=UDim2.fromOffset(56,49);self.Daily.Position=UDim2.fromOffset(0,52);self.Teleport.Size=UDim2.fromOffset(56,49);self.Teleport.Position=UDim2.fromOffset(0,104)
++  self.Utilities.Position=UDim2.new(1,-68,0,3);self.Utilities.Size=UDim2.fromOffset(56,0);self.Shop.Size=UDim2.fromOffset(56,49);self.Daily.Size=UDim2.fromOffset(56,49);self.Teleport.Size=UDim2.fromOffset(56,49)
+   if size.X<500 then
+    self.Currencies.AnchorPoint=Vector2.zero;self.Currencies.Position=UDim2.fromOffset(12,82);self.Currencies.Size=UDim2.fromOffset(size.X-92,54)
+-   self.Navigation.Position=UDim2.new(.5,0,0,148);self.Navigation.Size=UDim2.new(1,-24,0,112)
++   local navTop=3+3*49+2*T.SideAction.Gap+T.Spacing.Small
++   self.Navigation.Position=UDim2.new(.5,0,0,navTop);self.Navigation.Size=UDim2.new(1,-24,0,112)
+    for _,pill in ipairs(self.Currencies:GetChildren())do
+     local icon=pill:FindFirstChild('Icon_'..pill.Name);if icon then icon.Size=UDim2.fromOffset(30,30);icon.Position=UDim2.fromOffset(4,12)end
+     for _,label in ipairs(pill:GetChildren())do if label:IsA('TextLabel')then label.Position=UDim2.fromOffset(37,label.Name=='Value'and 24 or 8);label.Size=UDim2.new(1,-42,0,label.Name=='Value'and 22 or 17);label.TextSize=label.Name=='Value'and 16 or 8 end end
+@@ -83,7 +86,7 @@
+   self.Navigation.AnchorPoint=Vector2.new(.5,1);self.Navigation.Position=UDim2.new(.5,0,1,-10);self.Navigation.Size=UDim2.fromOffset(width,92);self.Navigation.ClipsDescendants=false
+   self.NavLayout.Padding=UDim.new(0,7)
+   for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(math.floor((width-68)/8),80);local l=b:FindFirstChild('Label');if l then l.TextSize=15 end end
+-  self.Utilities.Position=UDim2.new(0,16,.3,0);self.Shop.Size=UDim2.fromOffset(76,78);self.Daily.Size=UDim2.fromOffset(76,78);self.Daily.Position=UDim2.fromOffset(0,81);self.Teleport.Size=UDim2.fromOffset(76,78);self.Teleport.Position=UDim2.fromOffset(0,162)
++  self.Utilities.Position=UDim2.new(0,16,.3,0);self.Utilities.Size=UDim2.fromOffset(76,0);self.Shop.Size=UDim2.fromOffset(76,78);self.Daily.Size=UDim2.fromOffset(76,78);self.Teleport.Size=UDim2.fromOffset(76,78)
+  end
+  self.HeaderActions.Visible=not compact and self.ActiveName==nil
+  local inMenu=compact and self.ActiveName~=nil

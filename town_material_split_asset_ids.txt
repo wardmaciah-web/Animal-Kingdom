@@ -1,0 +1,53 @@
+ANIMAL KINGDOM MATERIAL-SPLIT ASSET IDS
+Status: UPLOAD_BLOCKED
+Reason: ROBLOX_API_KEY, ROBLOX_CREATOR_ID, and ROBLOX_CREATOR_TYPE are not available to the configured uploader process.
+Invented IDs: 0
+
+Inn.fbx
+Inn_Gold.fbx=NOT_UPLOADED
+Inn_Roof.fbx=NOT_UPLOADED
+Inn_Stone.fbx=NOT_UPLOADED
+Inn_Timber.fbx=NOT_UPLOADED
+Inn_Walls.fbx=NOT_UPLOADED
+
+House_4.fbx
+House_4_Roof.fbx=NOT_UPLOADED
+House_4_Stone.fbx=NOT_UPLOADED
+House_4_Terracotta.fbx=NOT_UPLOADED
+House_4_Timber.fbx=NOT_UPLOADED
+House_4_Walls.fbx=NOT_UPLOADED
+
+House_2.fbx
+House_2_Roof.fbx=NOT_UPLOADED
+House_2_Sage.fbx=NOT_UPLOADED
+House_2_Stone.fbx=NOT_UPLOADED
+House_2_Timber.fbx=NOT_UPLOADED
+House_2_Walls.fbx=NOT_UPLOADED
+
+Blacksmith.fbx
+Blacksmith_ForgeAccent.fbx=NOT_UPLOADED
+Blacksmith_Roof.fbx=NOT_UPLOADED
+Blacksmith_Stone.fbx=NOT_UPLOADED
+Blacksmith_Timber.fbx=NOT_UPLOADED
+Blacksmith_Walls.fbx=NOT_UPLOADED
+
+Well.fbx
+Well_Roof.fbx=NOT_UPLOADED
+Well_Stone.fbx=NOT_UPLOADED
+Well_Wood.fbx=NOT_UPLOADED
+
+MarketStand_1.fbx
+MarketStand_1_Canopy.fbx=NOT_UPLOADED
+MarketStand_1_Cream.fbx=NOT_UPLOADED
+MarketStand_1_Wood.fbx=NOT_UPLOADED
+
+MarketStand_2.fbx
+MarketStand_2_Canopy.fbx=NOT_UPLOADED
+MarketStand_2_Cream.fbx=NOT_UPLOADED
+MarketStand_2_Wood.fbx=NOT_UPLOADED
+
+Cart.fbx
+Cart_Accent.fbx=NOT_UPLOADED
+Cart_DarkWood.fbx=NOT_UPLOADED
+Cart_MainWood.fbx=NOT_UPLOADED
+Cart_WheelFrame.fbx=NOT_UPLOADED

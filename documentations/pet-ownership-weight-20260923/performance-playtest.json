@@ -1,0 +1,19 @@
+{
+  "Ok": true,
+  "Result": {
+    "LocalFollowerChildren": 5,
+    "MeanFrameMs": 66.67347053686778,
+    "MemoryMb": 5417.6875,
+    "Frames": 60,
+    "Previews": {
+      "Live": 5,
+      "Budget": 24,
+      "Registered": 5
+    },
+    "Camera": "Custom",
+    "P95FrameMs": 68.40287148952484,
+    "WorkspaceInstances": 14392,
+    "Mouse": "Default",
+    "SubjectCurrent": true
+  }
+}

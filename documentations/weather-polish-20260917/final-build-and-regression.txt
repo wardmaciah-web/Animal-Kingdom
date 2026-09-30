@@ -1,0 +1,29 @@
+$ rojo build default.project.json -o /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/weather-polish-20260917/AnimalKingdom-weather-source.rbxlx
+Building project 'Real_Animal_K'
+Built project to AnimalKingdom-weather-source.rbxlx
+exit=0
+
+$ rojo sourcemap default.project.json -o /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/weather-polish-20260917/AnimalKingdom-weather.sourcemap.json
+Created sourcemap at /Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/weather-polish-20260917/AnimalKingdom-weather.sourcemap.json
+exit=0
+
+$ python3 tests/run_admin_command_tests.py --luau /private/tmp/ak-phase2-luau-build/luau
+PASS request security: all 14 actions, non-admin denial, malformed inputs, Unicode length, extra arguments, rate limits
+PASS activity log: bounded to 20 entries; independent snapshots
+PASS authoritative weather: production 300/420 timing, TEST_MODE off, admin duration, queue transition, queue clear, pause/resume, reset, cycle continuation, stale timer cancellation
+PASS plot integration: authoritative owner lookup, accurate counts, missing data unavailable
+[Admin] "Admin": "[filtered] Welcome to Animal Kingdom!"
+[Admin] "Admin": "[filtered] concurrency check"
+PASS admin concurrency: authorization resumes into an already busy player without executing a second action
+PASS actual server dispatcher: non-admin denial, bound/expiring/single-use confirmations, queue revision race, target departure, room boundary, filtered broadcast, fail-closed filtering, post-filter reauthorization
+PASS spectate handoff: restores own humanoid; late stop preserves Phase 1 map camera
+exit=0
+
+$ python3 tests/run_system_audit_tests.py --luau /private/tmp/ak-phase2-luau-build/luau
+PASS plot lookup: numeric ordering, one scan across 100 polls, container replacement/priority, unrelated content ignored
+PASS profiles: one load per player, non-finite currency normalization, normal leave ends session without a false kick
+PASS profiles: departure cancellation, retained 120-second timeout, storage exceptions, external session loss
+PASS profiles: failed preparation and departure during load both release acquired sessions
+exit=0
+
+After rain visibility adjustment: rojo build PASS; rojo sourcemap PASS; all eight native Luau compile PASS. Source hashes refreshed in source-verification.json.

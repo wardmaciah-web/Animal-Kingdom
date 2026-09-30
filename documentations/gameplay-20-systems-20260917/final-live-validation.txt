@@ -1,0 +1,93 @@
+2026-09-18T02:01:18.145Z,15873.145508,23af000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_TESTS_INSTALLED
+2026-09-18T02:01:35.693Z,15890.693359,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Meadow has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.694Z,15890.694336,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Forest has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.694Z,15890.694336,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Jungle has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.694Z,15890.694336,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Desert has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.694Z,15890.694336,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Snow has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.694Z,15890.694336,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Volcano has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.694Z,15890.694336,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Ocean has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.695Z,15890.695312,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS AncientRuins has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.695Z,15890.695312,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS MagicalForest has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.695Z,15890.695312,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Sky has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.695Z,15890.695312,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Prehistoric has accessible resource/egg stations: 6/1
+2026-09-18T02:01:35.695Z,15890.695312,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Mythical has accessible resource/egg stations: 6/1
+2026-09-18T02:01:36.653Z,15891.653320,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_GATHER_DIAGNOSTIC true nil distance 5 health 100 profile true biome Meadow
+2026-09-18T02:01:36.653Z,15891.653320,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS first tree interaction accepted
+2026-09-18T02:01:36.653Z,15891.653320,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS same-frame duplicate denied
+2026-09-18T02:01:37.475Z,15892.475586,454d000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS locked tree denies second request after player throttle
+2026-09-18T02:01:38.577Z,15893.577148,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS shake completes and tree enters respawn
+2026-09-18T02:01:38.577Z,15893.577148,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS server respawn deadline replicated
+2026-09-18T02:01:38.577Z,15893.577148,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS all geometry hidden and collision/touch/query disabled
+2026-09-18T02:01:38.578Z,15893.578125,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS one harvest issued its configured reward
+2026-09-18T02:01:57.908Z,15912.908203,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS unavailable before twenty-second deadline
+2026-09-18T02:01:58.075Z,15913.075195,23af000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS exact original pivot, rotation and part properties restored
+2026-09-18T02:01:58.075Z,15913.075195,23af000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS no duplicate reward during respawn
+2026-09-18T02:01:58.075Z,15913.075195,23af000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS tree did not respawn early
+2026-09-18T02:01:58.592Z,15913.592773,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS triple hatch creates three independent owned pets
+2026-09-18T02:01:58.592Z,15913.592773,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS triple hatch debits server-defined price
+2026-09-18T02:01:58.592Z,15913.592773,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS hatch records Index discovery
+2026-09-18T02:01:58.592Z,15913.592773,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS owned pet equips
+2026-09-18T02:01:58.592Z,15913.592773,2db2000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS authoritative equipped list replicated for followers
+2026-09-18T02:01:59.692Z,15914.692383,4f50000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT PASS live HUD instantiated
+2026-09-18T02:01:59.692Z,15914.692383,4f50000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT PASS client received real hatch reveal
+2026-09-18T02:01:59.692Z,15914.692383,4f50000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT PASS equipped pet follower rendered
+2026-09-18T02:01:59.692Z,15914.692383,4f50000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT PASS pet interpolation recovers after test teleport
+2026-09-18T02:01:59.692Z,15914.692383,4f50000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT PASS pet models are cosmetic and noncolliding
+2026-09-18T02:02:02.208Z,15917.208008,23af000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT PASS triple hatch displays three pet viewports
+2026-09-18T02:02:02.208Z,15917.208008,23af000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_CLIENT_DONE assertions=6 failures=0
+2026-09-18T02:02:03.608Z,15918.608398,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS capacity rejection never spends currency
+2026-09-18T02:02:03.609Z,15918.609375,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS foreign UID rejected
+2026-09-18T02:02:03.609Z,15918.609375,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS progression cannot skip Forest
+2026-09-18T02:02:03.609Z,15918.609375,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Forest purchase succeeds
+2026-09-18T02:02:03.609Z,15918.609375,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS Forest cannot be purchased twice
+2026-09-18T02:02:03.609Z,15918.609375,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Nightmare
+2026-09-18T02:02:03.610Z,15918.610352,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Nightmare
+2026-09-18T02:02:03.610Z,15918.610352,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Snowfall
+2026-09-18T02:02:03.611Z,15918.611328,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Snowfall
+2026-09-18T02:02:03.611Z,15918.611328,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Foggy
+2026-09-18T02:02:03.611Z,15918.611328,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Foggy
+2026-09-18T02:02:03.612Z,15918.612305,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for AdminAbuse
+2026-09-18T02:02:03.613Z,15918.613281,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for AdminAbuse
+2026-09-18T02:02:03.613Z,15918.613281,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Chaos
+2026-09-18T02:02:03.613Z,15918.613281,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Chaos
+2026-09-18T02:02:03.614Z,15918.614258,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Thunderstorm
+2026-09-18T02:02:03.614Z,15918.614258,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Thunderstorm
+2026-09-18T02:02:03.614Z,15918.614258,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for BloodMoon
+2026-09-18T02:02:03.615Z,15918.615234,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for BloodMoon
+2026-09-18T02:02:03.615Z,15918.615234,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Aurora
+2026-09-18T02:02:03.615Z,15918.615234,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Aurora
+2026-09-18T02:02:03.616Z,15918.616211,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Rainbow
+2026-09-18T02:02:03.616Z,15918.616211,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Rainbow
+2026-09-18T02:02:03.617Z,15918.617188,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for MeteorShower
+2026-09-18T02:02:03.617Z,15918.617188,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for MeteorShower
+2026-09-18T02:02:03.617Z,15918.617188,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for SpiritNight
+2026-09-18T02:02:03.617Z,15918.617188,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for SpiritNight
+2026-09-18T02:02:03.618Z,15918.618164,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Golden
+2026-09-18T02:02:03.618Z,15918.618164,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Golden
+2026-09-18T02:02:03.618Z,15918.618164,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Heatwave
+2026-09-18T02:02:03.619Z,15918.619141,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Heatwave
+2026-09-18T02:02:03.619Z,15918.619141,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Void
+2026-09-18T02:02:03.619Z,15918.619141,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Void
+2026-09-18T02:02:03.620Z,15918.620117,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for RainyDay
+2026-09-18T02:02:03.620Z,15918.620117,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for RainyDay
+2026-09-18T02:02:03.620Z,15918.620117,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Inverted
+2026-09-18T02:02:03.621Z,15918.621094,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Inverted
+2026-09-18T02:02:03.621Z,15918.621094,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for SunnySkies
+2026-09-18T02:02:03.621Z,15918.621094,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for SunnySkies
+2026-09-18T02:02:03.622Z,15918.622070,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS finite weather modifiers for Windy
+2026-09-18T02:02:03.622Z,15918.622070,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS immediate weather cleanup for Windy
+2026-09-18T02:02:03.622Z,15918.622070,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Pets
+2026-09-18T02:02:03.623Z,15918.623047,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Pets
+2026-09-18T02:02:03.623Z,15918.623047,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Eggs
+2026-09-18T02:02:03.623Z,15918.623047,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Eggs
+2026-09-18T02:02:03.623Z,15918.623047,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Trees
+2026-09-18T02:02:03.624Z,15918.624023,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Trees
+2026-09-18T02:02:03.624Z,15918.624023,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Resources
+2026-09-18T02:02:03.624Z,15918.624023,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Resources
+2026-09-18T02:02:03.624Z,15918.624023,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Furniture
+2026-09-18T02:02:03.624Z,15918.624023,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Furniture
+2026-09-18T02:02:03.625Z,15918.625000,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Decorations
+2026-09-18T02:02:03.625Z,15918.625000,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Decorations
+2026-09-18T02:02:03.625Z,15918.625000,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS placeholder fallback Seasonal
+2026-09-18T02:02:03.625Z,15918.625000,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE PASS automatic asset replacement Seasonal
+2026-09-18T02:02:03.625Z,15918.625977,3b4a000,6,Info [FLog::CreatorOutput] AK_GAMEPLAY_LIVE_DONE assertions=83 failures=0 savedProfileUnchanged=true

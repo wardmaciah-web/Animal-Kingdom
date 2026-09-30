@@ -1,0 +1,35 @@
+Final verification after Blood Moon fog/density visual repair
+{
+  "completed_at_utc": "2026-09-17T22:46:32.247022+00:00",
+  "completed_at_local": "2026-09-17T15:46:32.247022-07:00",
+  "rojo_build": {
+    "exit": 0,
+    "output": "AnimalKingdom-source-audited.rbxlx"
+  },
+  "rojo_sourcemap": {
+    "exit": 0,
+    "output": "AnimalKingdom-source-audited.sourcemap.json"
+  },
+  "compiled_first_party_scripts": 64,
+  "compile_failures": 0,
+  "artifacts": {
+    "AnimalKingdom-source-audited.rbxlx": {
+      "bytes": 956650,
+      "sha256": "71b73c1c07b4607d5a65a9937addc75a153076893d362553209381dcc797c013"
+    },
+    "AnimalKingdom-source-audited.sourcemap.json": {
+      "bytes": 19563,
+      "sha256": "fac42ba443c4c70457fbfd16df7ba491d9eedec2d35ec177870e93333ec0a501"
+    },
+    "final-script-sha256.json": {
+      "bytes": 8964,
+      "sha256": "6c7b8b1faed790cc2f4ba72aa02bc9bb619e8b8b3a1c02ba9dc415642fd6721f"
+    }
+  }
+}
+
+Commands:
+rojo build default.project.json --output documentations/full-audit-20260917/AnimalKingdom-source-audited.rbxlx
+rojo sourcemap default.project.json --output documentations/full-audit-20260917/AnimalKingdom-source-audited.sourcemap.json
+
+Native luau-compile completed for all 64 first-party runtime scripts; zero failures.

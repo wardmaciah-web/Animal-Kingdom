@@ -1,0 +1,17 @@
+{
+  "New": [],
+  "Changed": [
+    "src/ServerScriptService/ServerSource/Utilities/ActivityRoutes.lua",
+    "src/StarterGui/AnimalKingdomUI/ActivityPresentation.lua",
+    "src/StarterGui/AnimalKingdomUI/AdventureStatus.lua",
+    "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Overlays.lua",
+    "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/TutorialPointer.lua",
+    "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua",
+    "src/StarterPlayer/StarterPlayerScripts/TreePresentation.client.lua"
+  ],
+  "Deleted": [],
+  "GameplayDefinitionChanges": [],
+  "UnchangedFiles": 655,
+  "TotalFiles": 663
+}

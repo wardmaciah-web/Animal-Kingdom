@@ -1,0 +1,8 @@
+2026-09-18T00:51:05.402Z,11660.402344,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.WeatherVFXQuality bytes=657
+2026-09-18T00:51:05.403Z,11660.403320,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.WeatherSoundDefinitions bytes=14768
+2026-09-18T00:51:05.403Z,11660.403320,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.WeatherAudioController bytes=13721
+2026-09-18T00:51:05.404Z,11660.404297,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.WeatherCelestialEffects bytes=19518
+2026-09-18T00:51:05.405Z,11660.405273,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.WeatherEnvironmentEffects bytes=23506
+2026-09-18T00:51:05.407Z,11660.407227,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.MeteorShowerEffects bytes=14656
+2026-09-18T00:51:05.408Z,11660.408203,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] ReplicatedStorage.Shared.SpiritNightEffects bytes=10570
+2026-09-18T00:51:05.410Z,11660.410156,23af000,6,Info [FLog::CreatorOutput] [WeatherPolishInstall] StarterPlayer.StarterPlayerScripts.WeatherVisualController bytes=24046

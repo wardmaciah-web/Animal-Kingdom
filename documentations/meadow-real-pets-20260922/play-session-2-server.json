@@ -1,0 +1,10 @@
+{
+  "FinalPaidCheck": "{\"secondReason\":\"Please wait\",\"charges\":1,\"pool\":\"Meadow_Shakeable_02\",\"duplicateBlocked\":true,\"oneOwned\":true,\"pet\":\"MeadowRedSquirrel\",\"accepted\":true}",
+  "Done": true,
+  "Mock": true,
+  "Readiness": "{\"Meadow_Shakeable_02\":{\"ok\":true},\"Meadow_Shakeable_05\":{\"ok\":true},\"Meadow_Shakeable_01\":{\"ok\":false,\"why\":\"Honey Lop Bunny: imported model unavailable\"},\"Meadow_Shakeable_04\":{\"ok\":true},\"Meadow_Shakeable_03\":{\"ok\":true}}",
+  "RunPhase": "Complete",
+  "Static": "{\"pools\":[{\"id\":\"Meadow_Shakeable_01\",\"total\":100,\"cost\":250},{\"id\":\"Meadow_Shakeable_02\",\"total\":100,\"cost\":250},{\"id\":\"Meadow_Shakeable_03\",\"total\":100,\"cost\":250},{\"id\":\"Meadow_Shakeable_04\",\"total\":100,\"cost\":250},{\"id\":\"Meadow_Shakeable_05\",\"total\":100,\"cost\":250}],\"ready\":14,\"ids\":{\"MeadowDaisyHedgehog\":{\"income\":4,\"rarity\":\"Epic\",\"ready\":true},\"MeadowFawn\":{\"income\":2.5,\"rarity\":\"Rare\",\"ready\":true},\"MeadowChick\":{\"income\":1.25,\"rarity\":\"Common\",\"ready\":true},\"MeadowHoneyLop\":{\"income\":1.5,\"issue\":\"Honey Lop Bunny: imported model unavailable\",\"rarity\":\"Uncommon\",\"ready\":false},\"MeadowRedSquirrel\":{\"income\":1.75,\"rarity\":\"Uncommon\",\"ready\":true},\"MeadowFluffyLop\":{\"income\":3,\"rarity\":\"Rare\",\"ready\":true},\"MeadowCelestialLamb\":{\"income\":9,\"rarity\":\"Secret\",\"ready\":true},\"MeadowFieldMouse\":{\"income\":1,\"rarity\":\"Common\",\"ready\":true},\"MeadowPatchworkLop\":{\"income\":3.5,\"rarity\":\"Rare\",\"ready\":true},\"MeadowCloudtailFox\":{\"income\":8,\"rarity\":\"Legendary\",\"ready\":true},\"MeadowPrismAntlerDeer\":{\"income\":7,\"rarity\":\"Legendary\",\"ready\":true},\"MeadowBlossomBunny\":{\"income\":6,\"rarity\":\"Legendary\",\"ready\":true},\"MeadowBuck\":{\"income\":4.5,\"rarity\":\"Epic\",\"ready\":true},\"MeadowGoat\":{\"income\":2,\"rarity\":\"Uncommon\",\"ready\":true},\"MeadowDaisyCrownBunny\":{\"income\":5,\"rarity\":\"Epic\",\"ready\":true}}}",
+  "Session": "Final sources",
+  "CurrentPet": "MeadowCelestialLamb"
+}

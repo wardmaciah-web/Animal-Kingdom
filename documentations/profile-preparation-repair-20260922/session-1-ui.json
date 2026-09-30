@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"ready\":true,\"menuVisible\":true,\"texts\":{\"23\":\"×\",\"22\":\"Crops (Carrot · Tomato · Pumpkin · Starberry · Moonmelon) are expedition results — only Harvest is saved.\",\"21\":\"➕ Send a pet here\",\"20\":\"A cozy bed ready for a forager.\",\"19\":\"Garden Plot 3 — EMPTY PLOT ➕\",\"18\":\"➕ Send a pet here\",\"9\":\"✨ Style\",\"1\":\"Garden\",\"15\":\"➕ Send a pet here\",\"3\":\"Harvest: 223\",\"2\":\"🌱 PET GARDEN\",\"5\":\"🌿 VISIT GARDEN\",\"4\":\"Expeditions: 0 / 3\",\"7\":\"➕ Send\",\"6\":\"🌱 Plots\",\"14\":\"A cozy bed ready for a forager.\",\"8\":\"🎨 Shop\",\"16\":\"Garden Plot 2 — EMPTY PLOT ➕\",\"17\":\"A cozy bed ready for a forager.\",\"13\":\"Garden Plot 1 — EMPTY PLOT ➕\",\"12\":\"➕ SEND PET\",\"11\":\"Your garden is quiet... Send a pet to start gathering crops!\",\"10\":\"Expedition plots\"},\"errors\":{\"1\":\"PetModelValidation is not a valid member of Folder \\\"ReplicatedStorage.Shared.Gameplay\\\"\"}}"
+    }
+  ],
+  "isError": false
+}

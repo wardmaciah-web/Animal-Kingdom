@@ -1,0 +1,44 @@
+--- before/EggService
++++ src/ServerScriptService/ServerSource/Server/EggService.lua
+@@ -7,6 +7,7 @@
+ local Variants=require(RS.Shared.Gameplay.Definitions.VariantDefinitions)
+ local PetMath=require(RS.Shared.Gameplay.PetMath)
+ local Odds=require(RS.Shared.Gameplay.NormalTreeOdds)
++local Format=require(RS.Shared.Gameplay.PetNumberFormat)
+ local Guard=require(script.Parent.Parent.Utilities.GameplayGuard)
+ local Egg=Knit.CreateService({Name="EggService",Client={},Hatched=Signal.new()})
+ local MeadowTrees=require(RS.Shared.Gameplay.Definitions.MeadowTreeDefinitions)
+@@ -16,6 +17,10 @@
+ local studioReward=setmetatable({},{__mode="k"})
+ local lastHatch=setmetatable({},{__mode="k"});local rng=Random.new()
+ local Data,Biomes,Pets,Modifiers,Loot
++local function insufficient(def,data)
++ local missing=math.max(0,def.Cost-data.Currencies.Coins)
++ return def.DisplayName.." costs "..Format.Number(def.Cost).." Forest Coins. You need "..Format.Number(missing).." more; collect income from your Sanctuary."
++end
+ -- Called only by server resource flow. No client-supplied egg ID, pet ID or price.
+ function Egg:CheckTreeHatch(player,tree)
+  local record=Knit.GetService("ResourceService"):GetRecords()[tree]
+@@ -48,7 +53,7 @@
+  if def.Season and not Knit.GetService("SeasonalService"):IsActive(def.Season) then return false,"Season is inactive" end
+  if not Pets:HasSpace(player,1) then return false,"PET STORAGE FULL — manage or sell pets before searching." end
+  if lastHatch[player] and os.clock()<lastHatch[player] then return false,"Your companion reveal is still in progress." end
+- if def.CanonicalPool and not Knit.GetService("EconomyService"):CanAfford(player,"Coins",def.Cost) then return false,"Not enough Forest Coins" end
++ if def.CanonicalPool and not Knit.GetService("EconomyService"):CanAfford(player,"Coins",def.Cost) then return false,insufficient(def,data) end
+  return true,def,id,data
+ end
+ -- Deliberately server-only and absent outside Studio. QA cannot be requested over a Remote.
+@@ -108,7 +113,7 @@
+    candidate.PetIndex[result.Pet.PetId].Variants=table.clone(previous.Variants)
+   end
+   result.NewDiscovery=Pets:Discover(candidate,result.Pet)
+-  if not Knit.GetService("EconomyService"):Spend(player,"Coins",def.Cost,def.Biome.."TreeSearch") then return false,"Not enough Forest Coins" end
++  if not Knit.GetService("EconomyService"):Spend(player,"Coins",def.Cost,def.Biome.."TreeSearch") then return false,insufficient(def,data) end
+   result.Destination=Pets:Adopt(data,result.Pet)
+   data.PetIndex=candidate.PetIndex
+  else
+@@ -138,4 +143,3 @@
+ end
+ function Egg:KnitStart() MeadowReady.Start() end
+ return Egg
+-

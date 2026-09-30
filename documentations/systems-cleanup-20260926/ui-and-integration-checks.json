@@ -1,0 +1,36 @@
+{
+  "desktop": [
+    "All seven primary screens opened through navigation",
+    "Held slot click selects exact UID; one real overhead model with name, weight, income",
+    "Pets LOCK and STORE clicked; authoritative state updated",
+    "Inventory card clicked; exact record moved into first free Held slot",
+    "Menu open suppresses physical Sanctuary prompts and E interaction",
+    "Physical E PICK UP, PLACE and SWAP complete through existing prompt and request pipeline",
+    "Shop bought WoodenChair for 500 Forest Coins",
+    "My Decorations placed and removed WoodenChair; Items.WoodenChair stayed 1",
+    "Decoration Capacity rejected insufficient balance, then bought level 6 → 7 for 160000 Forest Coins and displayed 60 limit",
+    "Highest/Lowest control clicked; retired location/rarity/six-way sort controls absent"
+  ],
+  "mobile": [
+    "iPhone 17 Pro portrait and landscape Pets layout inspected",
+    "Five existing Held slots retained; desktop 540x96",
+    "Portrait seven-button navigation fits two rows",
+    "Garden portrait rendering inspected; 44px Send controls and scrollable slots",
+    "Device simulation stopped after testing"
+  ],
+  "controller": [
+    "Live focus graph inspected: no dead links",
+    "B/back handler remains bound at priority 2100; menu E/X suppression at 2200"
+  ],
+  "limitations": [
+    "Studio synthetic ButtonB rejected by CoreGUI; no physical-controller B test",
+    "Mobile synthetic clicks were unreliable in simulator; mobile layout inspected, full touch-device playthrough not claimed",
+    "Saved-state persistence tested by JSON and existing ProfileMigrations restore, not a real datastore rejoin"
+  ],
+  "other": [
+    "Same-request UIRequest sale replay tested separately: cached reply did not sell a newly inserted eligible mock pet or credit again",
+    "Real Garden supply/upgrade/cosmetic purchases and 60-second claim tested",
+    "Hatch result duration 2s versus .8s produced measured showcase transitions approximately 2.198s versus .787s",
+    "Garden → Meadow authoritative travel cleared InGarden and updated CurrentBiome"
+  ]
+}

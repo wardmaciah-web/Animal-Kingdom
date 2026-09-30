@@ -1,0 +1,19 @@
+{
+  "created": [
+    "src/ReplicatedStorage/Shared/AdminCommandDefinitions.lua",
+    "src/ServerScriptService/AdminCommandCenter/ActivityLog.lua",
+    "src/ServerScriptService/AdminCommandCenter/PlotStatus.lua",
+    "src/ServerScriptService/AdminCommandCenter/RequestPolicy.lua",
+    "src/ServerScriptService/AdminCommandCenter/RoomPanels.lua",
+    "src/ServerScriptService/AdminCommandCenter/Teleports.lua",
+    "src/ServerScriptService/ServerSource/Server/AdminCommandService.lua",
+    "src/StarterPlayer/StarterPlayerScripts/AdminCommandController.client.lua",
+    "src/StarterPlayer/StarterPlayerScripts/AdminCommandUI.lua",
+    "src/StarterPlayer/StarterPlayerScripts/AdminSpectate.lua",
+    "src/StarterPlayer/StarterPlayerScripts/AnimalKingdomAnnouncements.client.lua"
+  ],
+  "modified": [
+    "src/ServerScriptService/ServerSource/Server/WeatherAdminService.lua",
+    "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua"
+  ]
+}

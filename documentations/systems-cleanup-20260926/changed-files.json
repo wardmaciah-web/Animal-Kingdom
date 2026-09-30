@@ -1,0 +1,142 @@
+[
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua",
+    "status": "modified",
+    "sha256": "4ad9a66fc9a120def19be161b5d0f09bcd726d1c22c1b8ef2ac061dffece050a"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+    "status": "modified",
+    "sha256": "668c46c2724e7e003b406613b07d11ac9f89096db322c1880b83d414be8a9c36"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/IndexCatalog.lua",
+    "status": "added",
+    "sha256": "1724d8a188867c6f52419aafa88f4e449951657703ce36701503e20df128f21b"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/PetLocations.lua",
+    "status": "modified",
+    "sha256": "f2537b51311b641f56efc18ad43a2ffbe2b78c94b36d18d7bb5c91659c32a678"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/SellValueCalculator.lua",
+    "status": "modified",
+    "sha256": "f62e4780524691fb2f85e8e417f0dd71ce0bac34fed7cbbac8b3dabffd501c7d"
+  },
+  {
+    "path": "src/ServerScriptService/BiomeTeleport/RequestHandler.lua",
+    "status": "modified",
+    "sha256": "8852121a95c2df7353a51ccc51e1b1657b4c957760750b8d6f6ae236b4799e13"
+  },
+  {
+    "path": "src/ServerScriptService/BiomeTeleport/init.server.lua",
+    "status": "modified",
+    "sha256": "24e5d66e703c5d99c103291e7b72953db654831245032b8f6f39769b9ffdba99"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+    "status": "modified",
+    "sha256": "8214e6dec40b74e67e0997d04788c121f288e4a5cbec523d9508b327c0f549f7"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+    "status": "modified",
+    "sha256": "09549c5c9beb1fa137f8be5593dcc158869f3224562d320f076639d1ef2726fd"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/PlotService.lua",
+    "status": "modified",
+    "sha256": "33c15af71c9686c7be149af79f132f749affa6381d6768e75ffcc20d27fa9b0a"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/SanctuaryService.lua",
+    "status": "modified",
+    "sha256": "2b29441fffa0779d829346c38621ff7de2848aa0facd3398812bac55a03c2080"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+    "status": "modified",
+    "sha256": "a7f37d64ff038c37c6361d051e13c86f2c78c078d1bc51949615e5c49bf94f75"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua",
+    "status": "modified",
+    "sha256": "b32d2d43257d58632fd8fcf6cb555f8f69ac8756e298ab8e468f7bd775916fae"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Utilities/PlotCollector.lua",
+    "status": "added",
+    "sha256": "4fe627285e7ace670a8bd77746cd6a8e951d5dea17d7f782cc7347f52240c255"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/HUD.lua",
+    "status": "modified",
+    "sha256": "160b27e44facfc86ac8dc2f20c14f7efb11c1dd905dcab1fdf5fc5d619548483"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/GardenMenus.lua",
+    "status": "modified",
+    "sha256": "b44bedf61ec5c957d5d506f0efbaa7343e53627e3f1e74b77e9546d9697e1b17"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/HatchPresentation.lua",
+    "status": "modified",
+    "sha256": "9ad220374f9e89d206543d58109d1e83c24bbd47b01b05b7b937c71782df0750"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/HeldPetsBar.lua",
+    "status": "modified",
+    "sha256": "f3eef470371010162e5b81e828557841561a0b1ef56d23be6f5c16f872c60d93"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "status": "modified",
+    "sha256": "abfc4b35d5aaac94aedccd9b7c0f28f6a76b61d99fb690600ff250124d8547d6"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/OwnedPetCards.lua",
+    "status": "modified",
+    "sha256": "cb47176e9c7e3a115c4da4e22a537476b1f7f0e05ef702b9658bb2fc9452a8d9"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/PetMenus.lua",
+    "status": "modified",
+    "sha256": "761ef9a1d6cd318d7992aaa6d00355118b31465130fed357ea9dd34ded46f9f0"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/PetOwnershipMenus.lua",
+    "status": "modified",
+    "sha256": "2bfb98d9c7f73d2ae67b801a7ff8c7126dd34d41ae2fdd26ecde697cdb42a291"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/PlotMenu.lua",
+    "status": "modified",
+    "sha256": "8d1ff85bb00e2217e6bb8f9de7e830fa00eab99291f27cdcd570cffd24979b71"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/ProgressionMenus.lua",
+    "status": "modified",
+    "sha256": "ecf49e0f3bd0a8a1ff7ca9c5c30336fca03bbc21e5270a8b99c4b59bdc94d091"
+  },
+  {
+    "path": "src/StarterPlayer/StarterPlayerScripts/SanctuaryInteraction.client.lua",
+    "status": "modified",
+    "sha256": "672e8f12b7714e812bf9969893bd3ce04cff004e37ee1243e1d6a63acdb9033c"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/Components.lua",
+    "status": "archived",
+    "sha256_before": "e0da1b5f4b18ffae0a1709721000662ce907da4119f0c7d74bd96b7ceb5c575e"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/ExampleData.lua",
+    "status": "archived",
+    "sha256_before": "476da1e9a2152e5b92796d8d91d86220ad7df64457b4236e9f576e367252492b"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/SanctuaryMenus.lua",
+    "status": "archived",
+    "sha256_before": "182dad3f8babe39c0f3d89143b755c6290934302f40bec337ea468a4a25f0439"
+  }
+]

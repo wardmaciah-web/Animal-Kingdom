@@ -1,0 +1,1 @@
+PASS Settings UX: absent/wrong-type endpoint disables settings, graphics and codes; blocked clicks preserve text/state; Hide UI works; real RemoteEvent enables requests; removal disables again

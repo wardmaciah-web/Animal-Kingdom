@@ -1,0 +1,1402 @@
+[
+  {
+    "local": "src/StarterGui/WeatherEventUI/WeatherEventController.client.lua",
+    "studio": "StarterGui.WeatherEventUI.WeatherEventController",
+    "class": "LocalScript",
+    "sha256": "04303c22683024be6ac67f3a0210f1cb3aa4f7645d12a882abb7247b435dd57c",
+    "hash": 4255380671,
+    "length": 15545,
+    "liveHash": 4255380671,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/ExampleData.lua",
+    "studio": "StarterGui.AnimalKingdomUI.ExampleData",
+    "class": "ModuleScript",
+    "sha256": "476da1e9a2152e5b92796d8d91d86220ad7df64457b4236e9f576e367252492b",
+    "hash": 2190830158,
+    "length": 2372,
+    "liveHash": 2190830158,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/PetMenus.lua",
+    "studio": "StarterGui.AnimalKingdomUI.PetMenus",
+    "class": "ModuleScript",
+    "sha256": "7c433a8f038fd3c60f159b43a752a53266d8ca4749bd71525bc7559815a60972",
+    "hash": 1912633575,
+    "length": 7908,
+    "liveHash": 1912633575,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/RemoteBridge.lua",
+    "studio": "StarterGui.AnimalKingdomUI.RemoteBridge",
+    "class": "ModuleScript",
+    "sha256": "6b22e5d2f8177884aff7344c555d3679c28061e296c4dd1698e5acd50ac6bb83",
+    "hash": 1537669460,
+    "length": 405,
+    "liveHash": 1537669460,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/Theme.lua",
+    "studio": "StarterGui.AnimalKingdomUI.Theme",
+    "class": "ModuleScript",
+    "sha256": "c5d0e545c86d67ce5b4bb9476c403e54fbe32074f91082bc35c0b3c60b6e9adb",
+    "hash": 75972107,
+    "length": 925,
+    "liveHash": 75972107,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/Components.lua",
+    "studio": "StarterGui.AnimalKingdomUI.Components",
+    "class": "ModuleScript",
+    "sha256": "e0da1b5f4b18ffae0a1709721000662ce907da4119f0c7d74bd96b7ceb5c575e",
+    "hash": 2010744616,
+    "length": 5588,
+    "liveHash": 2010744616,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/ProgressionMenus.lua",
+    "studio": "StarterGui.AnimalKingdomUI.ProgressionMenus",
+    "class": "ModuleScript",
+    "sha256": "6bb035d253513349f2e37fd5512d29b2257a9764ac5152c1d6389243e1030378",
+    "hash": 2246397238,
+    "length": 4849,
+    "liveHash": 2246397238,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/GameplayWidgets.lua",
+    "studio": "StarterGui.AnimalKingdomUI.GameplayWidgets",
+    "class": "ModuleScript",
+    "sha256": "f93e7dec2bde9b239f2410ef8edc8b86d63b71fa09f26cc04bcad5e4ff67e259",
+    "hash": 345694345,
+    "length": 4155,
+    "liveHash": 345694345,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/HatchPresentation.lua",
+    "studio": "StarterGui.AnimalKingdomUI.HatchPresentation",
+    "class": "ModuleScript",
+    "sha256": "3195824a4822b6c82867eec19d9ff4cbd342857fe2bc893234e5205f2ec4cc63",
+    "hash": 550243367,
+    "length": 3934,
+    "liveHash": 550243367,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "studio": "StarterGui.AnimalKingdomUI.Main",
+    "class": "LocalScript",
+    "sha256": "da153dfb9c7ba33015999a970a902cdf21095bace2d1674c8422af2eeb72f981",
+    "hash": 3335818800,
+    "length": 16754,
+    "liveHash": 3335818800,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/BiomeImages.lua",
+    "studio": "StarterGui.AnimalKingdomUI.BiomeImages",
+    "class": "ModuleScript",
+    "sha256": "a792d4b694e39c026d0385ff41130d077c45851694182ab19c2433db936f88d8",
+    "hash": 1612259458,
+    "length": 534,
+    "liveHash": 1612259458,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/GardenMenus.lua",
+    "studio": "StarterGui.AnimalKingdomUI.GardenMenus",
+    "class": "ModuleScript",
+    "sha256": "7e16a971bb14ae9e244ffd6b0f81e451849f550743e27a65f9858d96362a2402",
+    "hash": 1875906588,
+    "length": 15429,
+    "liveHash": 1875906588,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterGui/AnimalKingdomUI/PlotMenu.lua",
+    "studio": "StarterGui.AnimalKingdomUI.PlotMenu",
+    "class": "ModuleScript",
+    "sha256": "c3fb14e40abe0411e48449a94cd8a4c56340a53b7dddcf55ab3511a949c64361",
+    "hash": 4134502035,
+    "length": 2551,
+    "liveHash": 4134502035,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/PlotLocator.lua",
+    "studio": "ServerScriptService.PlotLocator",
+    "class": "ModuleScript",
+    "sha256": "33fd0b2b8856cb0b30165e9e3efbe7569797c0b63b4b72652f7710ab04cbb288",
+    "hash": 1211789348,
+    "length": 3803,
+    "liveHash": 1211789348,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AK_PlotAssignment.server.lua",
+    "studio": "ServerScriptService.AK_PlotAssignment",
+    "class": "Script",
+    "sha256": "5383671d94bd558d29b6135b4fb3939f434f7a7f0c97d49fe8ec6fe780996b7d",
+    "hash": 3273170536,
+    "length": 11860,
+    "liveHash": 3273170536,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AK_BiomeLabelRemover.server.lua",
+    "studio": "ServerScriptService.AK_BiomeLabelRemover",
+    "class": "Script",
+    "sha256": "fd7364acd5f90638018edf04fecb0f6bd917a2f3f1d78174fe0437fbbae88241",
+    "hash": 1284630411,
+    "length": 6169,
+    "liveHash": 1284630411,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/SuperbulletServer.server.lua",
+    "studio": "ServerScriptService.SuperbulletServer",
+    "class": "Script",
+    "sha256": "bc1f60f865f5a4695334017e60f586a2a74a319f3339f97d86401a90f3b558d0",
+    "hash": 948018668,
+    "length": 832,
+    "liveHash": 948018668,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AK_TownVisualRuntime.server.lua",
+    "studio": "ServerScriptService.AK_TownVisualRuntime",
+    "class": "Script",
+    "sha256": "eb1e8684f3752fb98aa6a0101a1622da57e0d3a770d0b0d0cdeba5e79a0f3361",
+    "hash": 3596430707,
+    "length": 9455,
+    "liveHash": 3596430707,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Externals/ProfileStore.lua",
+    "studio": "ServerScriptService.ServerSource.Externals.ProfileStore",
+    "class": "ModuleScript",
+    "sha256": "36a0bafea10a03d6de24835989fe560169f9aca3f641be741a77914dd51c8cef",
+    "hash": 175154212,
+    "length": 64515,
+    "liveHash": 175154212,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Externals/ProfileService.lua",
+    "studio": "ServerScriptService.ServerSource.Externals.ProfileService",
+    "class": "ModuleScript",
+    "sha256": "a7d3caeb6f4b46b09d1f54efdd976422839ed9a0b5494d8a06c3339a7451b983",
+    "hash": 3716949314,
+    "length": 1440,
+    "liveHash": 3716949314,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/NotificationService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.NotificationService",
+    "class": "ModuleScript",
+    "sha256": "dd8a49483c50dd4103726d28488e85a9303ddd2a99f06ecef0a8ff890c0fa02e",
+    "hash": 3628522985,
+    "length": 1371,
+    "liveHash": 3628522985,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/HarvestService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.HarvestService",
+    "class": "ModuleScript",
+    "sha256": "05aff322f3ed6c5e12bde4f349f2e80942df3091b4547bea3c50577bfadef458",
+    "hash": 1272681984,
+    "length": 409,
+    "liveHash": 1272681984,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/WeatherAdminService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.WeatherAdminService",
+    "class": "ModuleScript",
+    "sha256": "bfa0ba0900bf409926c9ea5a8897f44f1225f08875a03f980c893ebfe3695cd7",
+    "hash": 2513977105,
+    "length": 40384,
+    "liveHash": 2513977105,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/TutorialService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.TutorialService",
+    "class": "ModuleScript",
+    "sha256": "dc0f8aaf4da80831319f7cb42ab0f0c02c35dd8881dad76302898453b18acf23",
+    "hash": 4097305585,
+    "length": 2019,
+    "liveHash": 4097305585,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/IndexService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.IndexService",
+    "class": "ModuleScript",
+    "sha256": "7bff8e655e2c9d0429b29e25171d3671f7cb4cee96d437d7524b2523eb442681",
+    "hash": 396366639,
+    "length": 1336,
+    "liveHash": 396366639,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/NumNomService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.NumNomService",
+    "class": "ModuleScript",
+    "sha256": "f342171a8061c2fe041d521a232838e63e2e4d56a2f05de9a07c742b62b70983",
+    "hash": 1624457537,
+    "length": 4748,
+    "liveHash": 1624457537,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/LootService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.LootService",
+    "class": "ModuleScript",
+    "sha256": "ee48ad0649b790f9729a90676eaff319489e48f7d345611aa3d1e8c44cba181b",
+    "hash": 1846066146,
+    "length": 1482,
+    "liveHash": 1846066146,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/SeasonalService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.SeasonalService",
+    "class": "ModuleScript",
+    "sha256": "792c83572e4bf1956b1961f863959220387e321ffc00909b2d8d92bcb19020d7",
+    "hash": 2931472781,
+    "length": 2168,
+    "liveHash": 2931472781,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/EconomyService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.EconomyService",
+    "class": "ModuleScript",
+    "sha256": "15d3ab8bc1beed30ce0792ba1548f2d0137e07180b15922b03a44ee8b483232a",
+    "hash": 1080930442,
+    "length": 2137,
+    "liveHash": 1080930442,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/PlayerDataService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.PlayerDataService",
+    "class": "ModuleScript",
+    "sha256": "801d23d626f62609bb187224575fb18f98de2c65ad3785fa2f72166b87f2721e",
+    "hash": 2399424664,
+    "length": 1335,
+    "liveHash": 2399424664,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/WeatherGameplayService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.WeatherGameplayService",
+    "class": "ModuleScript",
+    "sha256": "da9133b7519f4d0987b1da1f96a53a9818b2707ad8834f695aff6ced5974f24c",
+    "hash": 1214535562,
+    "length": 1602,
+    "liveHash": 1214535562,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/ChallengeService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.ChallengeService",
+    "class": "ModuleScript",
+    "sha256": "92787ba6532b068090ae7c5c0845b1033893b01663335ddc83d52451d4d2d62a",
+    "hash": 145000552,
+    "length": 4893,
+    "liveHash": 145000552,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/PlacementService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.PlacementService",
+    "class": "ModuleScript",
+    "sha256": "000ea9fc83af898222d93a5752d92aa44789b31e46529c00b929ca62646e134d",
+    "hash": 2035821284,
+    "length": 5386,
+    "liveHash": 2035821284,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.PetService",
+    "class": "ModuleScript",
+    "sha256": "814d376c20f676d49de1d3b9c9f552e7843414d3df1e8e80f4a5b6dcd91706eb",
+    "hash": 1359418531,
+    "length": 6772,
+    "liveHash": 1359418531,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/BiomeService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.BiomeService",
+    "class": "ModuleScript",
+    "sha256": "00746e04f1713ee4f7b73b49edb7c1c865f81f2951034896d496b9c12059b01f",
+    "hash": 1346575946,
+    "length": 3201,
+    "liveHash": 1346575946,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/AdminCommandService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.AdminCommandService",
+    "class": "ModuleScript",
+    "sha256": "697fb9620f1785ff9621c6bc62b411d95e799fc9299de86d49a1bddf3622eb7d",
+    "hash": 1426935902,
+    "length": 13598,
+    "liveHash": 1426935902,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.WeatherEventService",
+    "class": "ModuleScript",
+    "sha256": "0c502f55bbb6b93f4d88c39bf602bc0e6aa2dfbd0e2d76b4197f1b077d6c9a65",
+    "hash": 452930004,
+    "length": 8335,
+    "liveHash": 452930004,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/WorldService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.WorldService",
+    "class": "ModuleScript",
+    "sha256": "adedc8dacb525eaa61591eede0cd091acfe02cd6dcba72f60c2f25bbfd72a077",
+    "hash": 4004739242,
+    "length": 353,
+    "liveHash": 4004739242,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/ModifierService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.ModifierService",
+    "class": "ModuleScript",
+    "sha256": "f83c910b32f7d790448e64673a5c92dce920886796820ea8b3aa8fa216a8d6c8",
+    "hash": 1060220067,
+    "length": 2082,
+    "liveHash": 1060220067,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/ProfileService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.ProfileService",
+    "class": "ModuleScript",
+    "sha256": "02d4353a752ba8f3f8e122998d279674cee7c8c60132fde5c65effdfaa71ce8d",
+    "hash": 1797610813,
+    "length": 13303,
+    "liveHash": 1797610813,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/EventModifierService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.EventModifierService",
+    "class": "ModuleScript",
+    "sha256": "6c79c7f621f87674b593f7a60d2edd38038815a3ad85f00fdc7b18b6622c72bf",
+    "hash": 1710730014,
+    "length": 7271,
+    "liveHash": 1710730014,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/ProgressionService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.ProgressionService",
+    "class": "ModuleScript",
+    "sha256": "de3a715defead2179b2fd26622ed008b0759ae405e87ef8b81d3e450bd70794d",
+    "hash": 3407290281,
+    "length": 424,
+    "liveHash": 3407290281,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/CurrencyService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.CurrencyService",
+    "class": "ModuleScript",
+    "sha256": "75b60fd047873a4b1acd9e213bd0f484ec8edc520609585b0eb3b83697c866bd",
+    "hash": 3222864313,
+    "length": 481,
+    "liveHash": 3222864313,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/WorldContentService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.WorldContentService",
+    "class": "ModuleScript",
+    "sha256": "57e328a3be70c564b090c1ac6021c9415ea80ff3c484eaca439bce97b322d065",
+    "hash": 422461128,
+    "length": 2658,
+    "liveHash": 422461128,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/PlotService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.PlotService",
+    "class": "ModuleScript",
+    "sha256": "2e96678cb394fe601e74a5cb37da0b4e08ba40592865650352ab74324f52ad98",
+    "hash": 803132668,
+    "length": 2534,
+    "liveHash": 803132668,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/EggService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.EggService",
+    "class": "ModuleScript",
+    "sha256": "ac6ede2798a354458fb700dbd79585639a8f02822e438049800581a7ea7f66ec",
+    "hash": 1696876642,
+    "length": 6128,
+    "liveHash": 1696876642,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/ShopService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.ShopService",
+    "class": "ModuleScript",
+    "sha256": "fd7a5b68bb3fd95e645cc2b1855dc68f05b530cd67ee9848ee5a8ade598ca314",
+    "hash": 2643794685,
+    "length": 1008,
+    "liveHash": 2643794685,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/SanctuaryService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.SanctuaryService",
+    "class": "ModuleScript",
+    "sha256": "c5a6b6b110a6f8a0f3c903e111860b512eccfbc649d4ce7370eed7d2f0681ef8",
+    "hash": 196848310,
+    "length": 5164,
+    "liveHash": 196848310,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/ResourceService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.ResourceService",
+    "class": "ModuleScript",
+    "sha256": "5bc458dc40fb67fcc7b2c458b15c23d456a75fd67100ca6d914790f8fa235e81",
+    "hash": 434172782,
+    "length": 10043,
+    "liveHash": 434172782,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/UpgradeService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.UpgradeService",
+    "class": "ModuleScript",
+    "sha256": "54403c0239e3008107842917cce9ae91b7a158d7c10b34766e8fbc9336f1311f",
+    "hash": 2257582811,
+    "length": 1417,
+    "liveHash": 2257582811,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.GameplayService",
+    "class": "ModuleScript",
+    "sha256": "7611618af5c6f7c084f89a97aeabe0d4d162bf846b5199534032d5f5c0c7286c",
+    "hash": 1233529787,
+    "length": 5361,
+    "liveHash": 1233529787,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+    "studio": "ServerScriptService.ServerSource.Server.GardenExpeditionService",
+    "class": "ModuleScript",
+    "sha256": "18c58644ccbcbe1249f09cfc1bffb20e1f094a811519f9220f1e617012758369",
+    "hash": 359333925,
+    "length": 16341,
+    "liveHash": 359333925,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/TemplateService/init.lua",
+    "studio": "ServerScriptService.ServerSource.Server.TemplateService",
+    "class": "ModuleScript",
+    "sha256": "e45caa20060db606368e9aedea8e758820d4d13cff5866aa107506e0b732ff23",
+    "hash": 605966719,
+    "length": 482,
+    "liveHash": 605966719,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Accessor.lua",
+    "studio": "ServerScriptService.ServerSource.Server.TemplateService.Components.Accessor",
+    "class": "ModuleScript",
+    "sha256": "8c9e3cbbf952cee184e3a68d9e76ae985de14755745faa696dd1de7017de85b1",
+    "hash": 1129048243,
+    "length": 3271,
+    "liveHash": 1129048243,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Mutator.lua",
+    "studio": "ServerScriptService.ServerSource.Server.TemplateService.Components.Mutator",
+    "class": "ModuleScript",
+    "sha256": "f20c65b95b4b6cecbf7a399bfb1a20ecd8e2ff0c1a17976a79c49765b0388fb9",
+    "hash": 4058193315,
+    "length": 3264,
+    "liveHash": 4058193315,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Others/Template.lua",
+    "studio": "ServerScriptService.ServerSource.Server.TemplateService.Components.Others.Template",
+    "class": "ModuleScript",
+    "sha256": "8f589352f62311c3d686192f819ed7c6cd9aac06e31f45ec4fbe640f453c2b79",
+    "hash": 1234343616,
+    "length": 3299,
+    "liveHash": 1234343616,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+    "studio": "ServerScriptService.ServerSource.Utilities.GameplayRequestPolicy",
+    "class": "ModuleScript",
+    "sha256": "021a850379b3624e93dfaa569dadc032ef66edfa94e3fcb0c94bc5eb17686649",
+    "hash": 3065682729,
+    "length": 2220,
+    "liveHash": 3065682729,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Utilities/GardenPlotRuntime.lua",
+    "studio": "ServerScriptService.ServerSource.Utilities.GardenPlotRuntime",
+    "class": "ModuleScript",
+    "sha256": "12707264d7e4cb8d2642bd43367e079241854024270a0c57a4b74dd28417926b",
+    "hash": 858935288,
+    "length": 9712,
+    "liveHash": 858935288,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Utilities/GameplayGuard.lua",
+    "studio": "ServerScriptService.ServerSource.Utilities.GameplayGuard",
+    "class": "ModuleScript",
+    "sha256": "8f81eff178045d9b14d5066c584dc55f486b69c8e1a64b979af20cf64446c754",
+    "hash": 88891642,
+    "length": 1853,
+    "liveHash": 88891642,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Utilities/MeadowPoolReadiness.lua",
+    "studio": "ServerScriptService.ServerSource.Utilities.MeadowPoolReadiness",
+    "class": "ModuleScript",
+    "sha256": "31829905126ef63b1af6ac628a98697d2b04781b1b27a8971a53d71c75e47036",
+    "hash": 374325584,
+    "length": 2351,
+    "liveHash": 374325584,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Utilities/AuthoredTreeDiscovery.lua",
+    "studio": "ServerScriptService.ServerSource.Utilities.AuthoredTreeDiscovery",
+    "class": "ModuleScript",
+    "sha256": "eb66964c7c9b724b03372b296141d8422e917b56701b88a26efb936e3501ebf4",
+    "hash": 1182402855,
+    "length": 3781,
+    "liveHash": 1182402855,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua",
+    "studio": "ServerScriptService.ServerSource.Utilities.MeadowSanctuaryDisplay",
+    "class": "ModuleScript",
+    "sha256": "9b1bd7318e0c848fd44668c4133d70afa2cffb927a8f133b0d585a1956383656",
+    "hash": 215440895,
+    "length": 3250,
+    "liveHash": 215440895,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/SuperbulletServerLogger/CodeExecutor.lua",
+    "studio": "ServerScriptService.SuperbulletServerLogger.CodeExecutor",
+    "class": "ModuleScript",
+    "sha256": "9820bc453fc1defa19f86ffff9f29698c586ed1e4b768d0ff92d629fc02f96cd",
+    "hash": 1482897641,
+    "length": 3884,
+    "liveHash": 1482897641,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/SuperbulletServerLogger/init.server.lua",
+    "studio": "ServerScriptService.SuperbulletServerLogger",
+    "class": "Script",
+    "sha256": "fdc854e85cf38b6a679f96bd2ff9dfaddec868b6da89117b4cf5a4cc7b081026",
+    "hash": 1939432425,
+    "length": 12708,
+    "liveHash": 1939432425,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/SuperbulletServerLogger/ClientQueryRouter.lua",
+    "studio": "ServerScriptService.SuperbulletServerLogger.ClientQueryRouter",
+    "class": "ModuleScript",
+    "sha256": "779d46b1fc23943abb209264079f112008625e76621a0cba494b573e81e3647c",
+    "hash": 2011104666,
+    "length": 2940,
+    "liveHash": 2011104666,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/SuperbulletServerLogger/WebSocketClient.lua",
+    "studio": "ServerScriptService.SuperbulletServerLogger.WebSocketClient",
+    "class": "ModuleScript",
+    "sha256": "ff8eea70bf839f1fd5fb1ac39737ae25ddcf1fbeb22ad811c0bc5d38ad2e8075",
+    "hash": 3202927082,
+    "length": 4077,
+    "liveHash": 3202927082,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AdminCommandCenter/RoomPanels.lua",
+    "studio": "ServerScriptService.AdminCommandCenter.RoomPanels",
+    "class": "ModuleScript",
+    "sha256": "3b07aa3bf1df0e696d47decebc71a2ac04bac40920802afe6b4ed11de290dc6d",
+    "hash": 3450740555,
+    "length": 3793,
+    "liveHash": 3450740555,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AdminCommandCenter/PlotStatus.lua",
+    "studio": "ServerScriptService.AdminCommandCenter.PlotStatus",
+    "class": "ModuleScript",
+    "sha256": "18c98884dbc6857b2d0d294f90a4de6a793b19399eda8a6d4d1ed97cfa0ed671",
+    "hash": 4188000279,
+    "length": 1173,
+    "liveHash": 4188000279,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AdminCommandCenter/RequestPolicy.lua",
+    "studio": "ServerScriptService.AdminCommandCenter.RequestPolicy",
+    "class": "ModuleScript",
+    "sha256": "16a927655566a2c79b059a6ef99573fb5f35a4dbf3fbf502ae74096e1e3c4cc9",
+    "hash": 1486351205,
+    "length": 2941,
+    "liveHash": 1486351205,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AdminCommandCenter/ActivityLog.lua",
+    "studio": "ServerScriptService.AdminCommandCenter.ActivityLog",
+    "class": "ModuleScript",
+    "sha256": "cd76334894d24111019ed96f077a8b9fbb712e8b8c594871b04a28bf1927d1bc",
+    "hash": 1120864460,
+    "length": 581,
+    "liveHash": 1120864460,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/AdminCommandCenter/Teleports.lua",
+    "studio": "ServerScriptService.AdminCommandCenter.Teleports",
+    "class": "ModuleScript",
+    "sha256": "34b83d09f65e13ce7166543a63bf966dcb24e598515973e4d2b7f23ae2eef854",
+    "hash": 2239804600,
+    "length": 5887,
+    "liveHash": 2239804600,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/BiomeTeleport/init.server.lua",
+    "studio": "ServerScriptService.BiomeTeleport",
+    "class": "Script",
+    "sha256": "ad9130fa4a1d4d2303fbe905bb31950377b918cbb7466123ca13dc45d13dd638",
+    "hash": 3605324660,
+    "length": 1348,
+    "liveHash": 3605324660,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/BiomeTeleport/Landing.lua",
+    "studio": "ServerScriptService.BiomeTeleport.Landing",
+    "class": "ModuleScript",
+    "sha256": "78bba9786c36c5bebd29935ea9de6e6b9019c3e35b2f5e5c418fcc1d0aaf880a",
+    "hash": 2789806673,
+    "length": 5523,
+    "liveHash": 2789806673,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/BiomeTeleport/Destinations.lua",
+    "studio": "ServerScriptService.BiomeTeleport.Destinations",
+    "class": "ModuleScript",
+    "sha256": "f91958ec326ab800bf3126cc369c54e7c4c8382e19e516f3e318d96978207835",
+    "hash": 2409816060,
+    "length": 372,
+    "liveHash": 2409816060,
+    "status": "matched"
+  },
+  {
+    "local": "src/ServerScriptService/BiomeTeleport/RequestHandler.lua",
+    "studio": "ServerScriptService.BiomeTeleport.RequestHandler",
+    "class": "ModuleScript",
+    "sha256": "3c665f8acfac1791fc8241984ff8218832d83c0481ed03ab056dea293c1f2cf9",
+    "hash": 2029089160,
+    "length": 1047,
+    "liveHash": 2029089160,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/EventDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.EventDefinitions",
+    "class": "ModuleScript",
+    "sha256": "a25725c6bfafb98ddf5e01b40e72aadfc68b8423c3e811d066aba0dce4ee1f7e",
+    "hash": 469242932,
+    "length": 5859,
+    "liveHash": 469242932,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/SpiritNightEffects.lua",
+    "studio": "ReplicatedStorage.Shared.SpiritNightEffects",
+    "class": "ModuleScript",
+    "sha256": "dcc26352e435f7dbbfbbee0e740da5e1d5b2bc317c8f9144cbf7dde66446dda7",
+    "hash": 4049114516,
+    "length": 10570,
+    "liveHash": 4049114516,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/WeatherAudioController.lua",
+    "studio": "ReplicatedStorage.Shared.WeatherAudioController",
+    "class": "ModuleScript",
+    "sha256": "654fc173d917c60d8dec6d58ba20cf090f3b35eb2fbfdaec997d1f76a3516b55",
+    "hash": 869391231,
+    "length": 13721,
+    "liveHash": 869391231,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/WeatherSoundDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.WeatherSoundDefinitions",
+    "class": "ModuleScript",
+    "sha256": "9f0961ad2d346bdf6306b54a934ea5ae5136ff02cdd8f5650427b82902085786",
+    "hash": 1526155951,
+    "length": 14768,
+    "liveHash": 1526155951,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/WeatherEnvironmentEffects.lua",
+    "studio": "ReplicatedStorage.Shared.WeatherEnvironmentEffects",
+    "class": "ModuleScript",
+    "sha256": "1a2b9330ed9ff0802e6023a157622d89228150d4e088e28063206705dc8cc302",
+    "hash": 2739562261,
+    "length": 23506,
+    "liveHash": 2739562261,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/AdminCommandDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.AdminCommandDefinitions",
+    "class": "ModuleScript",
+    "sha256": "f66dcc34c7b8777385f106cb5afb47f52aee154625331d1717a9c0ea9e22d7e2",
+    "hash": 2779015202,
+    "length": 567,
+    "liveHash": 2779015202,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/MeteorShowerEffects.lua",
+    "studio": "ReplicatedStorage.Shared.MeteorShowerEffects",
+    "class": "ModuleScript",
+    "sha256": "25e365fd5d5c447fe7c4bc3c7f1e4f7a7b9e09f1b6699a467c2c0b41582533c2",
+    "hash": 48417482,
+    "length": 14656,
+    "liveHash": 48417482,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/WeatherVFXQuality.lua",
+    "studio": "ReplicatedStorage.Shared.WeatherVFXQuality",
+    "class": "ModuleScript",
+    "sha256": "097ece0594f08ffd39704eaa0b6a5f8544e41832816061cef4de52d74358169d",
+    "hash": 802690162,
+    "length": 657,
+    "liveHash": 802690162,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/AdminCameraDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.AdminCameraDefinitions",
+    "class": "ModuleScript",
+    "sha256": "9017516c835c7e533121737c4b3364f73dd578edc3792d7a388ab1e40ea65466",
+    "hash": 2897314554,
+    "length": 1838,
+    "liveHash": 2897314554,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/WeatherCelestialEffects.lua",
+    "studio": "ReplicatedStorage.Shared.WeatherCelestialEffects",
+    "class": "ModuleScript",
+    "sha256": "628dc357ef513183cb326325b366526ae076c948a5f44cd12c542cdf45ac8f93",
+    "hash": 2310894359,
+    "length": 19518,
+    "liveHash": 2310894359,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Config/BiomeEnvironmentDatabase.lua",
+    "studio": "ReplicatedStorage.Shared.Config.BiomeEnvironmentDatabase",
+    "class": "ModuleScript",
+    "sha256": "c7b2c740a7274cac6085bb6837be3373eac7fdd7fcff7b0f68dae11a5e257c3b",
+    "hash": 436796365,
+    "length": 26066,
+    "liveHash": 436796365,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/PresentationSounds.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.PresentationSounds",
+    "class": "ModuleScript",
+    "sha256": "d0bbee9c5e796fc08589fece31f971d46d44dbbe9399819f7887ca2f17d2f501",
+    "hash": 2642575716,
+    "length": 445,
+    "liveHash": 2642575716,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.PetAppearance",
+    "class": "ModuleScript",
+    "sha256": "7fd693230c11cf6f43dac30850cf0b58abac3a54afd228dd11b624c2f3c5717e",
+    "hash": 3254877551,
+    "length": 4843,
+    "liveHash": 3254877551,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/GardenProgress.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.GardenProgress",
+    "class": "ModuleScript",
+    "sha256": "d247a39a3fc0134dfc37f40b31cbafc8e2b1b7ec28bdb953aa9893c53477bb29",
+    "hash": 1965783727,
+    "length": 6013,
+    "liveHash": 1965783727,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/ProfileMigrations.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.ProfileMigrations",
+    "class": "ModuleScript",
+    "sha256": "c867c5f56551d01f2a5b7981cd2623dc8509c9faa2a2ee2c9d32a16ca080db91",
+    "hash": 3281503699,
+    "length": 9634,
+    "liveHash": 3281503699,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/WeightedRandom.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.WeightedRandom",
+    "class": "ModuleScript",
+    "sha256": "8ff7c0c07aac1e1aba5006fc1177d3a928baf67864372243a69f3490e27ff934",
+    "hash": 1342231911,
+    "length": 686,
+    "liveHash": 1342231911,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/PetMath.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.PetMath",
+    "class": "ModuleScript",
+    "sha256": "73695312f6e088c981914b1cd85cdb5e92fd8e0f552a06653f8da73e5a82b989",
+    "hash": 3405748698,
+    "length": 652,
+    "liveHash": 3405748698,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/PetModelValidation.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.PetModelValidation",
+    "class": "ModuleScript",
+    "sha256": "7beb8ae7c52b9a48f4f94f336848ac62708c2814206ab09b546a199271fd179d",
+    "hash": 3845971098,
+    "length": 4082,
+    "liveHash": 3845971098,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/AssetResolver.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.AssetResolver",
+    "class": "ModuleScript",
+    "sha256": "b864127fdb4589cc67444d04817527fdf85149c06352aab9ad485daf1a1021e4",
+    "hash": 3740338421,
+    "length": 4016,
+    "liveHash": 3740338421,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/DropTables.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.DropTables",
+    "class": "ModuleScript",
+    "sha256": "bc421cffba1c5ab7cc75073499593d75d4fe021d2048e1844fd316e96afa8699",
+    "hash": 565940436,
+    "length": 721,
+    "liveHash": 565940436,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.PetDefinitions",
+    "class": "ModuleScript",
+    "sha256": "1e4c4066e04abd1276cd39a244fcbe328eb0e6b43931c4560f084b3c2ba9a514",
+    "hash": 3129198973,
+    "length": 5090,
+    "liveHash": 3129198973,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/VariantDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.VariantDefinitions",
+    "class": "ModuleScript",
+    "sha256": "ea6cd917646a395a6e07b91e4f3789f9858d615bad283b5978db463a7c2ac6ac",
+    "hash": 1766416667,
+    "length": 686,
+    "liveHash": 1766416667,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/WeatherGameplayDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.WeatherGameplayDefinitions",
+    "class": "ModuleScript",
+    "sha256": "0511b8ade2db6c356e481364c0c9a128f9775637a227a281a0935cec33ddfc61",
+    "hash": 3734977298,
+    "length": 739,
+    "liveHash": 3734977298,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ShopDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.ShopDefinitions",
+    "class": "ModuleScript",
+    "sha256": "7c910fbff2ecf92cc478a86f7d7420d37dcee12b1b8b6883d633b05acb034c3b",
+    "hash": 1505195963,
+    "length": 478,
+    "liveHash": 1505195963,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/UpgradeDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.UpgradeDefinitions",
+    "class": "ModuleScript",
+    "sha256": "19b3ddf16f96df80f74d5331a8f38ba16466e0cb0ad1547df6d6733d14077387",
+    "hash": 2783553154,
+    "length": 917,
+    "liveHash": 2783553154,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.GardenDefinitions",
+    "class": "ModuleScript",
+    "sha256": "f231a250d69f3416eb5267f9e9cccc1eecf2c2133fb1eb024413e0adf521db38",
+    "hash": 1782324858,
+    "length": 5057,
+    "liveHash": 1782324858,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/MeadowTreeDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.MeadowTreeDefinitions",
+    "class": "ModuleScript",
+    "sha256": "d397242403c27f5a932a43ebf764afee858c97abeb268beb24fc1245730ac1de",
+    "hash": 27509631,
+    "length": 658,
+    "liveHash": 27509631,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/CurrencyDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.CurrencyDefinitions",
+    "class": "ModuleScript",
+    "sha256": "3688b534c3a889e6209188d8f3ac7f411056ba5434bf124856d19127707b9d95",
+    "hash": 4161115402,
+    "length": 382,
+    "liveHash": 4161115402,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.EggDefinitions",
+    "class": "ModuleScript",
+    "sha256": "117e01150b3807ecc410e2657f775fb6f23863098ad69a8f2a5f602887091e18",
+    "hash": 2329975484,
+    "length": 1267,
+    "liveHash": 2329975484,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/IndexRewardDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.IndexRewardDefinitions",
+    "class": "ModuleScript",
+    "sha256": "73e283118ff3b1cc16ea957f45ab96e85dbc27d40ac6e2c818a147e75aa59559",
+    "hash": 3484630097,
+    "length": 202,
+    "liveHash": 3484630097,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/TutorialDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.TutorialDefinitions",
+    "class": "ModuleScript",
+    "sha256": "266b14bc45e484cf0fe786baa4e2f77727683f572bfafc3625055fdaecc3113b",
+    "hash": 4275942472,
+    "length": 1699,
+    "liveHash": 4275942472,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GameplayEffectsDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.GameplayEffectsDefinitions",
+    "class": "ModuleScript",
+    "sha256": "9a0c851f4cf9b278be191558809edd50b64004082ce57319093cd7f75e6c56ed",
+    "hash": 526426727,
+    "length": 277,
+    "liveHash": 526426727,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/AuthoredTreeDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.AuthoredTreeDefinitions",
+    "class": "ModuleScript",
+    "sha256": "af481cc8dad05e92a46e127faf3d5ad23e6dbeee2bfe26f7f38e857237a3e3bc",
+    "hash": 2280584773,
+    "length": 2341,
+    "liveHash": 2280584773,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/BiomeDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.BiomeDefinitions",
+    "class": "ModuleScript",
+    "sha256": "bcf040545054e127c32ca0ee6da006d7c17d553e43692c613e1b726dd927e878",
+    "hash": 1757951039,
+    "length": 557,
+    "liveHash": 1757951039,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ChallengeDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.ChallengeDefinitions",
+    "class": "ModuleScript",
+    "sha256": "3e69cdfa917c32cd38af49cfb420c0d43cfc30ff3273f78693ea30e25068c66d",
+    "hash": 2532417635,
+    "length": 1135,
+    "liveHash": 2532417635,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/RarityDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.RarityDefinitions",
+    "class": "ModuleScript",
+    "sha256": "a72ee96621a1f7344484ab5751cdbdeaa11ee7e84b9ebd17f56c6608b8772ca8",
+    "hash": 588406302,
+    "length": 528,
+    "liveHash": 588406302,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/SeasonalDefinitions.lua",
+    "studio": "ReplicatedStorage.Shared.Gameplay.Definitions.SeasonalDefinitions",
+    "class": "ModuleScript",
+    "sha256": "7db7a99d5851e669f673ba67db5952ce33ea709ed1218e235f6c777758b4badf",
+    "hash": 4224664799,
+    "length": 742,
+    "liveHash": 4224664799,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/PetDatabase.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.PetDatabase",
+    "class": "ModuleScript",
+    "sha256": "81c98ae5e35ce5c24a854f5b64e76d759e0c2b67ff819997ebfe94933fab512f",
+    "hash": 2324222004,
+    "length": 1105,
+    "liveHash": 2324222004,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/NumNomDatabase.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.NumNomDatabase",
+    "class": "ModuleScript",
+    "sha256": "3042e6febd4b8e1d6e4857aff6c4ebf13af7c5e0e7015b5937ad4fbefa93900d",
+    "hash": 2107106903,
+    "length": 703,
+    "liveHash": 2107106903,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/MutationDatabase.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.MutationDatabase",
+    "class": "ModuleScript",
+    "sha256": "7b92b202ce2faad60ffdc12524acd72d14d39fd439154941873418806e9c0d04",
+    "hash": 1063772071,
+    "length": 680,
+    "liveHash": 1063772071,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/ProfileTemplate.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.ProfileTemplate",
+    "class": "ModuleScript",
+    "sha256": "bc993ab91a4dd8f20789d712961c09fcf1bdcb431e53f8cab19fcd9dc58d25d8",
+    "hash": 229877729,
+    "length": 889,
+    "liveHash": 229877729,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/ShakeableDatabase.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.ShakeableDatabase",
+    "class": "ModuleScript",
+    "sha256": "94ba8d0201c5b3b5083342c6e33d70e7dc3d1518b216322a8c588878e4bafcc5",
+    "hash": 3585393182,
+    "length": 750,
+    "liveHash": 3585393182,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/AnimalKingdomConfig.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.AnimalKingdomConfig",
+    "class": "ModuleScript",
+    "sha256": "bdd0a10a09d174e394b89ab67d79d0350067fb1ea3803cb829004cd7e1775f91",
+    "hash": 865323464,
+    "length": 2108,
+    "liveHash": 865323464,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Datas/BiomeDatabase.lua",
+    "studio": "ReplicatedStorage.SharedSource.Datas.BiomeDatabase",
+    "class": "ModuleScript",
+    "sha256": "cf4cb6ae6ba231ab1299c39e5ac60a6614109f9d369f811427a643666852909e",
+    "hash": 3364856517,
+    "length": 356,
+    "liveHash": 3364856517,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/SharedSource/Utilities/ScriptsLoader/ComponentsInitializer.lua",
+    "studio": "ReplicatedStorage.SharedSource.Utilities.ScriptsLoader.ComponentsInitializer",
+    "class": "ModuleScript",
+    "sha256": "766b65ea6ce504af91a4310b47761a11068b99acca07dfe1b8fb0fda4a9787d8",
+    "hash": 1769866355,
+    "length": 1528,
+    "liveHash": 1769866355,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/ClientSource/Client/DataController.lua",
+    "studio": "ReplicatedStorage.ClientSource.Client.DataController",
+    "class": "ModuleScript",
+    "sha256": "92b55b69a38c4d35d79fc5eeb173c19ace75468780e909165c87b4f101e77d6c",
+    "hash": 1998481651,
+    "length": 1054,
+    "liveHash": 1998481651,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/ClientSource/Client/AnimalKingdomController.lua",
+    "studio": "ReplicatedStorage.ClientSource.Client.AnimalKingdomController",
+    "class": "ModuleScript",
+    "sha256": "e9fb6107b80a5dda0b3a8d7b4b417c06b6858d1326e4cdc90ec96c40f80ef8b2",
+    "hash": 3214789623,
+    "length": 6201,
+    "liveHash": 3214789623,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/init.lua",
+    "studio": "ReplicatedStorage.ClientSource.Client.TemplateController",
+    "class": "ModuleScript",
+    "sha256": "a00f916894752c2488b9bcac3d82deadfdff41184ae1cf5e554db8ea31960ade",
+    "hash": 4122406765,
+    "length": 528,
+    "liveHash": 4122406765,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Accessor.lua",
+    "studio": "ReplicatedStorage.ClientSource.Client.TemplateController.Components.Accessor",
+    "class": "ModuleScript",
+    "sha256": "d51da2551e5538e8b106fbb9146880064a7c57252c7104d9667a6e4a36516380",
+    "hash": 1764197907,
+    "length": 3248,
+    "liveHash": 1764197907,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Mutator.lua",
+    "studio": "ReplicatedStorage.ClientSource.Client.TemplateController.Components.Mutator",
+    "class": "ModuleScript",
+    "sha256": "c5adc680b9c8402f5c7b32ecbfecf4fc4c05ff57623bc922453d6880d08fb41f",
+    "hash": 4054484085,
+    "length": 3239,
+    "liveHash": 4054484085,
+    "status": "matched"
+  },
+  {
+    "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Others/Template.lua",
+    "studio": "ReplicatedStorage.ClientSource.Client.TemplateController.Components.Others.Template",
+    "class": "ModuleScript",
+    "sha256": "6773fc347ba34a0269bb15e133af5c5656260f03c4e5dc2c8a30da5110e280b4",
+    "hash": 3378648605,
+    "length": 3708,
+    "liveHash": 3378648605,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/AdminCommandUI.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.AdminCommandUI",
+    "class": "ModuleScript",
+    "sha256": "735d30f8e549f7235551b3027a9ffbf945b7550e2517ea4acf7e7d6f7893e399",
+    "hash": 2226144935,
+    "length": 13190,
+    "liveHash": 2226144935,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/AdminSpectate.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.AdminSpectate",
+    "class": "ModuleScript",
+    "sha256": "d6549592932eee913c83b07584cd8732bae4186005a5973ee20496a48c230c12",
+    "hash": 3066476994,
+    "length": 2671,
+    "liveHash": 3066476994,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/PlotAssignedNotification.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.PlotAssignedNotification",
+    "class": "LocalScript",
+    "sha256": "c856df5acc00b7bdacad682b26c9e0cee75e28e8e32d3ca2537192a3bcf55b6f",
+    "hash": 2786010997,
+    "length": 3364,
+    "liveHash": 2786010997,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/AnimalKingdomAnnouncements.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.AnimalKingdomAnnouncements",
+    "class": "LocalScript",
+    "sha256": "8b5ae1b7cc0da32738d167cd86f06645022890b896ff661cf663e9ba5e01f0a8",
+    "hash": 422694953,
+    "length": 3251,
+    "liveHash": 422694953,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/TreePresentation.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.TreePresentation",
+    "class": "LocalScript",
+    "sha256": "7be38b8ab88c21ead4e4d59af09c5d2ae9b3faf5408623f595e80f9ed1d6d21a",
+    "hash": 2181555227,
+    "length": 1710,
+    "liveHash": 2181555227,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/MeadowPetPreloader.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.MeadowPetPreloader",
+    "class": "LocalScript",
+    "sha256": "7aa1dba4933c94e8a167db9c833e6a54c9f1d146b151cfd54c366131ce1b8ff9",
+    "hash": 1791181664,
+    "length": 949,
+    "liveHash": 1791181664,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClient.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.SuperbulletClient",
+    "class": "LocalScript",
+    "sha256": "5377c732faa7e3c5bd9a5cad3ea01332facd26c0e21788b00abc0ed4a205bbf6",
+    "hash": 366708227,
+    "length": 754,
+    "liveHash": 366708227,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/AdminCommandController.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.AdminCommandController",
+    "class": "LocalScript",
+    "sha256": "f04351235cd6d174c2aa264fd3937256ab1f0fee7ae246502dba26cf3e61af92",
+    "hash": 927858557,
+    "length": 5920,
+    "liveHash": 927858557,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.GardenPlotVisuals",
+    "class": "LocalScript",
+    "sha256": "daf054ec21dee09e56b97846ac96eed01920b78a4b65a39248e2f8e2103da792",
+    "hash": 893514801,
+    "length": 7884,
+    "liveHash": 893514801,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/WeatherVisualController.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.WeatherVisualController",
+    "class": "LocalScript",
+    "sha256": "4a259375445937d3b7a9f2feb0b650f11c94528ea6c03adab218eb24ef196d96",
+    "hash": 4003931718,
+    "length": 24339,
+    "liveHash": 4003931718,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/AdminCameraController.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.AdminCameraController",
+    "class": "LocalScript",
+    "sha256": "50d38b201c789cbc61f5384819a7014dd516defcc01ecb17ef11db9312b61c56",
+    "hash": 2101361109,
+    "length": 5189,
+    "liveHash": 2101361109,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/PetFollowing.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.PetFollowing",
+    "class": "LocalScript",
+    "sha256": "ea64bd372749185349d6f95f5932fbaebfc500ffbda2554d8c5079e939292278",
+    "hash": 2741285437,
+    "length": 4692,
+    "liveHash": 2741285437,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/ClientCodeExecutor.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.SuperbulletClientLogger.ClientCodeExecutor",
+    "class": "ModuleScript",
+    "sha256": "aadf5fedf738c402bb0882d37db0d382f1fdac932f094357a044e7b0b5ba948f",
+    "hash": 3738618513,
+    "length": 2079,
+    "liveHash": 3738618513,
+    "status": "matched"
+  },
+  {
+    "local": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/init.client.lua",
+    "studio": "StarterPlayer.StarterPlayerScripts.SuperbulletClientLogger",
+    "class": "LocalScript",
+    "sha256": "21a5c2bda17895b6109ca483c062d595c2d73f056f8fd542f43777214474ffba",
+    "hash": 669754079,
+    "length": 9913,
+    "liveHash": 669754079,
+    "status": "matched"
+  }
+]

@@ -1,0 +1,70 @@
+# ============================================
+# ANIMAL KINGDOM - LOCAL / GENERATED FILES
+# ============================================
+
+# Roblox Studio place snapshots
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Local tool/runtime folders
+.tools/
+
+# Unrelated local optimizer
+mac_gaming_optimizer/
+
+# Generated Rojo sourcemap
+sourcemap.json
+
+# Local Superbullet configuration
+superbulletai.json
+
+# Temporary/editor files
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Logs
+*.log
+
+# Local Roblox upload/authentication utilities - review before publishing
+verify_concrete_image.py
+upload_concrete_texture.py
+upload_grass_tile.py
+upload_selected_town_models.py
+
+# Local/generated upload responses
+concrete_texture_upload.json
+concrete_upload_result.json
+
+# ============================================
+# HISTORICAL DEVELOPMENT SNAPSHOTS
+# Keep these locally; Git itself now handles history.
+# Prevent Codex/GitHub from confusing old source with live source.
+# ============================================
+
+documentations/**/checkpoints/
+documentations/**/checkpoint-before/
+documentations/**/before/
+documentations/**/baseline/
+documentations/**/live-scripts/
+documentations/**/before-source/
+documentations/**/retired-ui/
+
+# Old pre-Git backup copies
+*.before-*
+documentations/**/checkpoint-after/
+documentations/player-reset-*/
+documentations/**/source-before.tgz
+*.before
+*.before.*

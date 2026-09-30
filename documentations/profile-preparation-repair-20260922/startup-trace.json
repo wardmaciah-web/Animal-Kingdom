@@ -1,0 +1,118 @@
+{
+  "usage": {
+    "ServerScriptService.ServerSource.Server.PetService": [
+      {
+        "text": " profiles.Loaded:Connect(function(player) self:Publish(player) end)",
+        "line": 120
+      }
+    ],
+    "ServerScriptService.ServerSource.Server.PlacementService": [
+      {
+        "text": " profiles.Releasing:Connect(function(player) if visuals[player] then visuals[player]:Destroy();visuals[player]=nil end;renderedPlot[player]=nil end)",
+        "line": 82
+      }
+    ],
+    "ReplicatedStorage.Packages._Index.superbullet_knit@0.0.1.knit.KnitServer": [
+      {
+        "text": "\tSuperbullet.AddServices(somewhere.Services)",
+        "line": 106
+      },
+      {
+        "text": "\tSuperbullet.AddServices(somewhere.Services)",
+        "line": 239
+      },
+      {
+        "text": "function KnitServer.AddServices(parent: Instance): { Service }",
+        "line": 242
+      },
+      {
+        "text": "function KnitServer.AddServicesDeep(parent: Instance): { Service }",
+        "line": 260
+      }
+    ],
+    "ServerScriptService.ServerSource.Server.TutorialService": [
+      {
+        "text": " Knit.GetService(\"ProfileService\").Loaded:Connect(function(player) self:Reconcile(player) end)",
+        "line": 34
+      }
+    ],
+    "ServerScriptService.ServerSource.Server.ChallengeService": [
+      {
+        "text": " Profiles.Loaded:Connect(ready);for player in pairs(Profiles.Profiles) do ready(player) end",
+        "line": 66
+      }
+    ],
+    "ReplicatedStorage.Packages._Index.superbullet_knit@0.0.1.knit.Components.ClientExtension": [
+      {
+        "text": "\tMust be called BEFORE Knit.Start().",
+        "line": 92
+      },
+      {
+        "text": "\tMust be called BEFORE Knit.Start().",
+        "line": 124
+      },
+      {
+        "text": "\tMust be called BEFORE Knit.Start().",
+        "line": 151
+      }
+    ],
+    "ServerScriptService.ServerSource.Server.UpgradeService": [
+      {
+        "text": " Knit.GetService(\"ProfileService\").Loaded:Connect(function(player) Knit.GetService(\"EventModifierService\"):RefreshMovement(player) end)",
+        "line": 21
+      }
+    ]
+  },
+  "sources": {
+    "ServerScriptService.SuperbulletServer": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal ServerScriptService = game:GetService(\"ServerScriptService\")\nlocal ServerSource = ServerScriptService:WaitForChild(\"ServerSource\")\n\nlocal SuperbulletModule = ReplicatedStorage:WaitForChild(\"Packages\"):WaitForChild(\"Superbullet\")\nlocal Superbullet = require(SuperbulletModule)\n\nfor _, module in pairs(ServerSource.Server:GetDescendants()) do\n\tif module:IsA(\"ModuleScript\") and module.Name:match(\"Service$\") then\n\t\tlocal ok, err = pcall(require, module)\n\t\tif not ok then\n\t\t\ttask.spawn(error, \"[Superbullet] Failed to load \" .. module:GetFullName() .. \": \" .. tostring(err))\n\t\tend\n\tend\nend\n\nSuperbullet.Start():andThen(\n\tfunction()\n\t\tprint(\"Superbullet Server initiated.\")\n\t\tSuperbulletModule:SetAttribute(\"SuperbulletServer_Initialized\",true)\n\tend\n\t)\n\t:catch(warn)\n",
+    "ReplicatedStorage.ClientSource.Client.DataController": "local RS=game:GetService(\"ReplicatedStorage\")\nlocal Knit=require(RS.Packages.Knit)\nlocal Signal=require(RS.Packages.Signal)\nlocal Controller=Knit.CreateController({Name=\"DataController\",Data=nil,Changed=Signal.new()})\nlocal Profiles\nfunction Controller:GetPlayerData() return self.Data end\nfunction Controller:WaitUntilProfileLoaded() while not self.Data do task.wait(.05) end end\nfunction Controller:RequestToUpdateData() Profiles.GetData:Fire() end\nfunction Controller:KnitInit() Profiles=Knit.GetService(\"ProfileService\") end\nfunction Controller:KnitStart()\n -- Subscribe before requesting a snapshot, so updates cannot fall into the old startup gap.\n Profiles.UpdateSpecificData:Connect(function(path,value)\n  local data=self.Data;if not data then return end\n  for i=1,#path-1 do data=data[path[i]];if type(data)~=\"table\" then return end end\n  data[path[#path]]=value;self.Changed:Fire(path[1],self.Data)\n end)\n Profiles.GetData:Connect(function(data) self.Data=data;self.Changed:Fire(nil,data) end)\n self:RequestToUpdateData()\nend\nreturn Controller\n",
+    "StarterGui.AnimalKingdomUI.Main": "local Players=game:GetService(\"Players\")\nlocal RS=game:GetService(\"ReplicatedStorage\")\nlocal Collection=game:GetService(\"CollectionService\")\nlocal Knit=require(RS.Packages.Knit)\nlocal W=require(script.Parent.GameplayWidgets)\nlocal Bridge=require(script.Parent.RemoteBridge)\nlocal PetMenus=require(script.Parent.PetMenus)\nlocal ProgressionMenus=require(script.Parent.ProgressionMenus)\nlocal Hatch=require(script.Parent.HatchPresentation)\nlocal Tutorial=require(RS.Shared.Gameplay.Definitions.TutorialDefinitions)\nlocal screen=script.Parent;local player=Players.LocalPlayer\nscreen:SetAttribute(\"ProductionUI\",true);screen:SetAttribute(\"Version\",\"2.0.0\")\nlocal connections={};local function connect(signal,fn) local c=signal:Connect(fn);table.insert(connections,c);return c end\nlocal data,controller,active,dialog=nil,nil,nil,nil\nlocal ctx={Request=Bridge.Request};local refreshQueued=false\nlocal hud=W.New(\"Frame\",{Name=\"HUD\",Size=UDim2.fromScale(1,1),BackgroundTransparency=1},screen)\nlocal counters=W.New(\"Frame\",{Name=\"Currencies\",Size=UDim2.new(.55,0,0,64),Position=UDim2.fromOffset(12,8),BackgroundColor3=W.Color.Panel,BorderSizePixel=0},hud);W.Round(counters,16)\nW.New(\"UISizeConstraint\",{MinSize=Vector2.new(225,64),MaxSize=Vector2.new(410,64)},counters)\nlocal coins=W.Text(counters,\"Coins\\nLoading…\",UDim2.new(.5,-12,1,0),UDim2.fromOffset(12,0),18)\nlocal tokens=W.Text(counters,\"Friendship Tokens\\nLoading…\",UDim2.new(.5,-12,1,0),UDim2.fromScale(.5,0),15)\nlocal context=W.Text(hud,\"Meadow · Clear skies\",UDim2.new(.55,0,0,24),UDim2.fromOffset(16,77),13,Color3.new(1,1,1));context.TextStrokeTransparency=.25\nlocal nav=W.New(\"Frame\",{Name=\"Navigation\",AnchorPoint=Vector2.new(.5,1),Position=UDim2.new(.5,0,1,-12),Size=UDim2.new(.96,0,0,52),BackgroundColor3=W.Color.Panel,BorderSizePixel=0},hud);W.Round(nav,14)\nW.New(\"UISizeConstraint\",{MaxSize=Vector2.new(800,52)},nav)\nlocal panel=W.New(\"Frame\",{Name=\"GameplayMenu\",AnchorPoint=Vector2.new(.5,.5),Position=UDim2.fromScale(.5,.49),Size=UDim2.fromScale(.94,.75),BackgroundColor3=W.Color.Panel,BorderSizePixel=0,Visible=false,ZIndex=10},screen);W.Round(panel,18)\nW.New(\"UISizeConstraint\",{MaxSize=Vector2.new(800,740)},panel)\nlocal title=W.Text(panel,\"\",UDim2.new(1,-88,0,52),UDim2.fromOffset(18,6),24)\nlocal content=W.New(\"ScrollingFrame\",{Name=\"Content\",Position=UDim2.fromOffset(14,68),Size=UDim2.new(1,-28,1,-82),BackgroundTransparency=1,BorderSizePixel=0,AutomaticCanvasSize=Enum.AutomaticSize.Y,CanvasSize=UDim2.new(),ScrollBarThickness=5,ScrollingDirection=Enum.ScrollingDirection.Y},panel);ctx.Content=content\nlocal tutorial=W.New(\"Frame\",{Name=\"Tutorial\",AnchorPoint=Vector2.new(0,1),Position=UDim2.new(0,12,1,-78),Size=UDim2.new(.9,0,0,170),BackgroundColor3=W.Color.Panel,BorderSizePixel=0,Visible=false},hud);W.Round(tutorial,14)\nW.New(\"UISizeConstraint\",{MaxSize=Vector2.new(380,170)},tutorial)\nlocal tutorialTitle=W.Text(tutorial,\"\",UDim2.new(1,-24,0,28),UDim2.fromOffset(12,10),17)\nlocal tutorialBody=W.Text(tutorial,\"\",UDim2.new(1,-24,0,65),UDim2.fromOffset(12,42),14,W.Color.Muted)\nlocal nextButton=W.Button(tutorial,\"CONTINUE\",UDim2.new(1,-24,0,38),UDim2.fromOffset(12,118),function() Bridge.Request(\"TutorialNext\",{}) end)\nlocal marker=W.New(\"BillboardGui\",{Name=\"TutorialMarker\",Size=UDim2.fromOffset(180,46),StudsOffsetWorldSpace=Vector3.new(0,6,0),AlwaysOnTop=true,Enabled=false},screen)\nlocal markerText=W.Text(marker,\"\",UDim2.fromScale(1,1),nil,16,Color3.new(1,1,1));markerText.TextStrokeTransparency=.1\nfunction ctx.Close() active=nil;panel.Visible=false;screen.DisplayOrder=20;tutorial.Visible=data and not data.TutorialCompleted or false end\nW.Button(panel,\"×\",UDim2.fromOffset(42,42),UDim2.new(1,-54,0,12),ctx.Close,W.Color.Muted)\nlocal menus={Pets=PetMenus.Pets,Index=PetMenus.Index,Biomes=ProgressionMenus.Biomes,Challenges=ProgressionMenus.Challenges,Upgrades=ProgressionMenus.Upgrades,Settings=ProgressionMenus.Settings}\nlocal function render()\n if not data then return end\n ctx.Data=data\n coins.Text=\"Coins\\n\"..W.Format(data.Currencies.Coins or 0);tokens.Text=\"Friendship Tokens\\n\"..W.Format(data.Currencies.FriendshipTokens or 0)\n player:SetAttribute(\"AKReducedMotion\",data.Settings.ReducedMotion);player:SetAttribute(\"AKShowOtherPets\",data.Settings.ShowOtherPets)\n tutorial.Visible=not data.TutorialCompleted and active==nil\n local step=data.TutorialProgress.Step;local def=Tutorial[step]\n tutorialTitle.Text=step..\" / 14 · \"..def.Title;tutorialBody.Text=def.Text\n nextButton.Visible=def.Continue==true\n if active then\n  local old=content.CanvasPosition;content:ClearAllChildren();title.Text=active\n  local menu=menus[active]\n  if not menu and active==\"Plot\" then menu=require(script.Parent.PlotMenu).Render end\n  if menu then menu(ctx) end\n  content.CanvasPosition=old\n end\nend\nfunction ctx.Refresh()\n if refreshQueued then return end;refreshQueued=true\n task.defer(function() refreshQueued=false;if screen.Parent then render() end end)\nend\nlocal tabs={\"Pets\",\"Index\",\"Biomes\",\"Challenges\",\"Upgrades\",\"Plot\",\"Settings\"}\nfor i,name in ipairs(tabs) do\n local button=W.Button(nav,name,UDim2.new(1/#tabs,-6,1,-12),UDim2.new((i-1)/#tabs,3,0,6),function()\n  if not data then return end\n  if active==name then ctx.Close() else active=name;panel.Visible=true;screen.DisplayOrder=40;content.CanvasPosition=Vector2.zero;ctx.Refresh() end\n end);button.TextSize=12\nend\nlocal notice=W.New(\"Frame\",{Name=\"Notifications\",AnchorPoint=Vector2.new(.5,0),Position=UDim2.fromScale(.5,.19),Size=UDim2.new(.85,0,0,48),BackgroundColor3=W.Color.Ink,BackgroundTransparency=.1,BorderSizePixel=0,Visible=false,ZIndex=80},screen);W.Round(notice)\nW.New(\"UISizeConstraint\",{MaxSize=Vector2.new(460,48)},notice)\nlocal noticeText=W.Text(notice,\"\",UDim2.new(1,-20,1,0),UDim2.fromOffset(10,0),16,Color3.new(1,1,1));noticeText.TextXAlignment=Enum.TextXAlignment.Center\nlocal queue,showing={},false\nlocal function advanceNotice()\n if #queue==0 then showing=false;notice.Visible=false;return end\n showing=true;notice.Visible=true;noticeText.Text=table.remove(queue,1)\n task.delay(2.2,function() if screen.Parent then advanceNotice() end end)\nend\nlocal function notify(text)\n if type(text)~=\"string\" or text==\"\" then return end\n if #queue<20 and queue[#queue]~=text then table.insert(queue,text) end\n if not showing then advanceNotice() end\nend\nctx.Notify=notify\nlocal function closeDialog() if dialog then dialog:Destroy();dialog=nil end end\nlocal function modal(text)\n closeDialog()\n dialog=W.New(\"Frame\",{Name=\"ActionDialog\",Size=UDim2.fromScale(.9,.35),Position=UDim2.fromScale(.5,.45),AnchorPoint=Vector2.new(.5,.5),BackgroundColor3=W.Color.Panel,BorderSizePixel=0,ZIndex=90},screen);W.Round(dialog,16)\n W.New(\"UISizeConstraint\",{MaxSize=Vector2.new(550,260),MinSize=Vector2.new(260,190)},dialog)\n W.Text(dialog,text,UDim2.new(1,-24,.55,-12),UDim2.fromOffset(12,10),18)\n W.Button(dialog,\"Cancel\",UDim2.new(1,-24,0,32),UDim2.new(0,12,1,-42),closeDialog,W.Color.Muted)\n return dialog\nend\n\nlocal remotes=RS:WaitForChild(\"AnimalKingdomRemotes\")\nconnect(remotes:WaitForChild(\"GameplayNotice\").OnClientEvent,function(payload) notify(payload.Message) end)\nconnect(remotes:WaitForChild(\"GameplayFeedback\").OnClientEvent,function(payload)\n local result=payload.Result\n if not payload.Success then notify(type(result)==\"string\" and result or \"Action unavailable\");return end\n if type(result)==\"string\" then notify(result)\n elseif type(result)==\"table\" and result.Kind==\"Hatch\" then ctx.Close();Hatch.Play(screen,result,data and data.Settings.ReducedMotion)\n elseif type(result)==\"table\" and result.Kind==\"DeleteConfirmation\" then\n  local root=modal(\"Delete this pet permanently?\\nThis cannot be undone.\")\n  W.Button(root,\"DELETE PET\",UDim2.new(1,-24,0,40),UDim2.new(0,12,.55,0),function() closeDialog();Bridge.Request(\"Delete\",{UID=result.UID,Token=result.Token}) end,W.Color.Red)\n end\nend)\nKnit.OnStart():andThen(function()\n controller=Knit.GetController(\"DataController\");data=controller:GetPlayerData()\n connect(controller.Changed,function(key,snapshot)\n  data=snapshot\n  local relevant={Pets={Pets=true,EquippedPets=true,PetStorageCapacity=true,MaxEquippedPets=true},Index={PetIndex=true,IndexRewards=true},Biomes={UnlockedBiomes=true},Upgrades={Upgrades=true},Challenges={DailyChallenges=true,WeeklyChallenges=true},Settings={Settings=true},Plot={PlotProgression=true,Items=true,UncollectedSanctuaryCoins=true}}\n  if not key or key==\"Currencies\" or key==\"Settings\" or key==\"TutorialProgress\" or key==\"TutorialCompleted\" or (active and relevant[active] and relevant[active][key]) then ctx.Refresh() end\n end)\n ctx.Refresh()\nend):catch(function(err) warn(\"[AnimalKingdomUI] \"..tostring(err)) end)\nlocal weather=RS:WaitForChild(\"WeatherState\")\nlocal function resizeHUD()\n local size=screen.AbsoluteSize\n local narrow=size.X<600\n local width=math.clamp(narrow and size.X-28 or size.X*.55,225,410)\n local y=8\n if narrow and weather:GetAttribute(\"Phase\")==\"Event\" then\n  if size.Y>380 then y=165 else width=math.max(225,size.X-255) end\n end\n counters.Size=UDim2.fromOffset(width,64);counters.Position=UDim2.fromOffset(12,y)\n context.Position=UDim2.fromOffset(16,y+69)\n local short=size.Y<420;local height=short and 126 or 170\n tutorial.Size=UDim2.new(.9,0,0,height)\n tutorialTitle.Position=UDim2.fromOffset(12,6);tutorialTitle.TextSize=short and 14 or 17\n tutorialBody.Position=UDim2.fromOffset(12,short and 30 or 42)\n tutorialBody.Size=UDim2.new(1,-24,0,short and 45 or 65);tutorialBody.TextSize=short and 12 or 14\n nextButton.Position=UDim2.fromOffset(12,height-46)\nend\nconnect(screen:GetPropertyChangedSignal(\"AbsoluteSize\"),resizeHUD)\nlocal function updateContext()\n local id=weather:GetAttribute(\"Phase\")==\"Event\" and weather:GetAttribute(\"EventId\") or \"Clear skies\"\n local def=require(RS.Shared.EventDefinitions)[id]\n resizeHUD()\n context.Text=(player:GetAttribute(\"CurrentBiome\") or \"Town\")..\" · \"..(def and def.DisplayName or id)\nend\nconnect(weather.AttributeChanged,updateContext);connect(player:GetAttributeChangedSignal(\"CurrentBiome\"),updateContext);updateContext()\ntask.spawn(function()\n while screen.Parent do\n  task.wait(1)\n  marker.Enabled=false\n  if not data or data.TutorialCompleted or active then continue end\n  local step=Tutorial[data.TutorialProgress.Step];local root=player.Character and player.Character:FindFirstChild(\"HumanoidRootPart\")\n  if not step.Target or not root then continue end\n  local nearest,distance=nil,math.huge\n  for _,object in ipairs(Collection:GetTagged(\"GatherableTree\")) do\n   if object:IsDescendantOf(workspace) and object:GetAttribute(\"BiomeId\")==\"Meadow\" and (step.Target~=\"Tree\" or object:GetAttribute(\"ResourceState\")==\"AVAILABLE\") then\n    local part=object:FindFirstChild(\"AKTreeInteraction\",true) or (object:IsA(\"BasePart\") and object or object:FindFirstChildWhichIsA(\"BasePart\",true))\n    if part then local position=part:IsA(\"Attachment\") and part.WorldPosition or part.Position;local d=(position-root.Position).Magnitude;if d<distance then distance=d;nearest=part end end\n   end\n  end\n  if nearest then marker.Adornee=nearest;marker.Enabled=true;markerText.Text=step.Target..\" · \"..math.floor(distance)..\" studs\" end\n end\nend)\nscript.Destroying:Connect(function() Hatch.Cleanup(); for _,c in ipairs(connections) do c:Disconnect() end end)\n",
+    "ServerScriptService.ServerSource.Server.GameplayService": "local RS=game:GetService(\"ReplicatedStorage\")\nlocal Players=game:GetService(\"Players\")\nlocal Knit=require(RS.Packages.Knit)\nlocal Policy=require(script.Parent.Parent.Utilities.GameplayRequestPolicy)\nlocal Rarities=require(RS.Shared.Gameplay.Definitions.RarityDefinitions)\nlocal Service=Knit.CreateService({Name=\"GameplayService\",Client={}})\nlocal Data;local busy=setmetatable({},{__mode=\"k\"})\nlocal function remote(folder,name)\n local r=folder:FindFirstChild(name)\n if r then assert(r:IsA(\"RemoteEvent\"),name..\" must be a RemoteEvent\");return r end\n r=Instance.new(\"RemoteEvent\");r.Name=name;r.Parent=folder;return r\nend\nfunction Service:Dispatch(player,action,p)\n local pets=Knit.GetService(\"PetService\")\n if action==\"Equip\" then return pets:Equip(player,p.UID,p.Equipped)\n elseif action==\"Favorite\" then return pets:Flag(player,p.UID,\"Favorite\",p.Value)\n elseif action==\"Lock\" then return pets:Flag(player,p.UID,\"Locked\",p.Value)\n elseif action==\"RequestDelete\" then return pets:RequestDelete(player,p.UID)\n elseif action==\"Delete\" then return pets:Delete(player,p.UID,p.Token)\n elseif action==\"Gather\" then return Knit.GetService(\"ResourceService\"):Gather(player,p.Target)\n elseif action==\"Upgrade\" then return Knit.GetService(\"UpgradeService\"):Purchase(player,p.Id)\n elseif action==\"UnlockBiome\" then return Knit.GetService(\"BiomeService\"):Unlock(player,p.Id)\n elseif action==\"ClaimChallenge\" then return Knit.GetService(\"ChallengeService\"):Claim(player,p.Period,p.Id)\n elseif action==\"ClaimIndex\" then return Knit.GetService(\"IndexService\"):Claim(player,p.Percent)\n elseif action==\"ClaimSeasonal\" then return Knit.GetService(\"SeasonalService\"):Claim(player,p.Season,p.RewardId)\n elseif action==\"TutorialNext\" then return Knit.GetService(\"TutorialService\"):Advance(player)\n elseif action==\"ShopBuy\" then return Knit.GetService(\"ShopService\"):Buy(player,p.Id)\n elseif action==\"Place\" then return Knit.GetService(\"PlacementService\"):Place(player,p.Id,p.Offset,p.Rotation)\n elseif action==\"RemovePlacement\" then return Knit.GetService(\"PlacementService\"):Remove(player,p.UID)\n elseif action==\"PlotVisitors\" then return Knit.GetService(\"PlotService\"):SetVisitors(player,p.Allowed)\n elseif action==\"PlotUpgrade\" then return Knit.GetService(\"PlotService\"):Upgrade(player)\n elseif action==\"CollectIdle\" then return Knit.GetService(\"PlotService\"):Collect(player)\n elseif action==\"Setting\" or action==\"AutoDelete\" then\n  local data=Data:Get(player)\n  if action==\"AutoDelete\" then\n   if not Rarities[p.Rarity] or p.Rarity==\"Secret\" then return false,\"Protected rarity\" end\n   data.Settings.AutoDelete[p.Rarity]=p.Value\n  else\n   if p.Id~=\"ReducedMotion\" and p.Id~=\"ShowOtherPets\" then return false,\"Invalid setting\" end\n   data.Settings[p.Id]=p.Value\n  end\n  Data:Publish(player,\"Settings\");return true\n end\n return false,\"Invalid action\"\nend\nfunction Service:KnitInit()\n Data=Knit.GetService(\"PlayerDataService\")\n local folder=RS:FindFirstChild(\"AnimalKingdomRemotes\") or Instance.new(\"Folder\");folder.Name=\"AnimalKingdomRemotes\";folder.Parent=RS\n self.Request=remote(folder,\"UIRequest\");self.Feedback=remote(folder,\"GameplayFeedback\")\n remote(folder,\"GameplayNotice\");remote(folder,\"GatherVisual\")\nend\nfunction Service:KnitStart()\n self.Request.OnServerEvent:Connect(function(player,action,payload,...)\n  if select(\"#\",...)~=0 or not Policy.Check(player,action,payload) or busy[player] or not Data:Get(player) then return end\n  busy[player]=true\n  local ok,success,result=pcall(self.Dispatch,self,player,action,payload)\n  busy[player]=nil\n  if not ok then warn(\"[GameplayService] \"..tostring(action)..\": \"..tostring(success));success=false;result=\"Action unavailable; please try again\" end\n  if player.Parent==Players then self.Feedback:FireClient(player,{Action=action,Success=success==true,Result=result}) end\n end)\nend\nreturn Service\n"
+  },
+  "changes": [
+    {
+      "before": 4543,
+      "path": "ReplicatedStorage.Shared.Gameplay.PetAppearance",
+      "now": 1543
+    },
+    {
+      "before": 382,
+      "path": "ReplicatedStorage.Shared.Gameplay.Definitions.CurrencyDefinitions",
+      "now": 317
+    },
+    {
+      "before": 1897,
+      "path": "ServerScriptService.ServerSource.Utilities.GameplayRequestPolicy",
+      "now": 1634
+    },
+    {
+      "before": 4759,
+      "path": "ServerScriptService.ServerSource.Server.GameplayService",
+      "now": 3833
+    },
+    {
+      "before": 837,
+      "path": "ReplicatedStorage.SharedSource.Datas.ProfileTemplate",
+      "now": 778
+    },
+    {
+      "before": 6309,
+      "path": "ServerScriptService.ServerSource.Server.PetService",
+      "now": 6286
+    },
+    {
+      "before": 15897,
+      "path": "StarterGui.AnimalKingdomUI.Main",
+      "now": 11251
+    },
+    {
+      "before": 7478,
+      "path": "ReplicatedStorage.Shared.Gameplay.ProfileMigrations",
+      "now": 5894
+    }
+  ],
+  "loaderAttrs": {
+    "AKUseMockProfiles": true,
+    "RebirthUniqueId": "e6c200f0-572b-4e37-9cce-20d8ab61286c"
+  }
+}

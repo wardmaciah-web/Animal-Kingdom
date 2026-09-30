@@ -1,0 +1,5 @@
+{
+  "ClaimExpedition": "{\"Success\":true,\"Result\":{\"Crops\":[{\"Name\":\"Carrot\",\"Amount\":3},{\"Name\":\"Tomato\",\"Amount\":3},{\"Name\":\"Pumpkin\",\"Amount\":2},{\"Name\":\"Starberry\",\"Amount\":1},{\"Name\":\"Moonmelon\",\"Amount\":1}],\"Amount\":8,\"Kind\":\"GardenClaim\",\"PetId\":\"MeadowFieldMouse\",\"XP\":10,\"TripId\":\"d81fb3a0-180a-4a18-a9b0-cf3aa4369570\"},\"Action\":\"ClaimExpedition\"}",
+  "BuyGardenSupply": "{\"Success\":true,\"Result\":\"Lucky Sprout Potion active! Reusing it extends the timer.\",\"Action\":\"BuyGardenSupply\"}",
+  "UpgradeGarden": "{\"Success\":true,\"Result\":\"Keen Nose upgraded to level 1!\",\"Action\":\"UpgradeGarden\"}"
+}

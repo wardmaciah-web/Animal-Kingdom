@@ -1,0 +1,55 @@
+{
+  "HeldFocus": {
+    "Ok": true,
+    "Result": {
+      "Selectable": true,
+      "Size": "620, 116",
+      "FocusVisible": true,
+      "HeldButtons": 5
+    }
+  },
+  "HeldOpensDetail": {
+    "Ok": true,
+    "Result": {
+      "Detail": true,
+      "Selected": "fc04cac2-d3c4-4252-84f1-d83f93bd0340"
+    }
+  },
+  "InventoryFocus": {
+    "Ok": true,
+    "Result": {
+      "Missing": [],
+      "SellAllSelectable": true,
+      "Focus": true,
+      "Buttons": 9
+    }
+  },
+  "SaleModal": {
+    "Ok": true,
+    "Result": {
+      "Text": "1 pet\nYou will receive 40 Forest Coins.\n\nFavorites, locked, Held, Sanctuary and Garden pets are excluded.",
+      "FocusInsideModal": true
+    }
+  },
+  "SanctuaryFocus": {
+    "Ok": true,
+    "Result": {
+      "HeldSelectable": true,
+      "FocusVisible": true,
+      "DisplaySelectable": true,
+      "Buttons": 23
+    }
+  },
+  "ButtonAInjection": "Success",
+  "ButtonBInjection": "VirtualInput::SendKey: key is permanently bound to a CoreGUI core action. VirtualInput cannot process this key.",
+  "PhysicalController": "Not available. Xbox emulator, directional graph, focus, production activation callbacks and B binding inspected; hardware A/B presses are unverified.",
+  "BackBinding": {
+    "Ok": true,
+    "Result": {
+      "Priority": 2100,
+      "Inputs": [
+        "Enum.KeyCode.ButtonB"
+      ]
+    }
+  }
+}

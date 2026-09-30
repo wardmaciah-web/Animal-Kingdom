@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"logs\":[{\"text\":\"[ProfileStore]: Roblox API services available - data will be saved\",\"time\":1790128143.18,\"type\":\"Enum.MessageType.MessageOutput\"},{\"text\":\"[ProfileService] Data preparation failed for Maciahxcx1: ReplicatedStorage.Shared.Gameplay.ProfileMigrations:12: Profile version is newer than this server\",\"time\":1790128144.099,\"type\":\"Enum.MessageType.MessageWarning\"}],\"storeState\":\"NotReady\",\"players\":[]}"
+    }
+  ],
+  "isError": false
+}

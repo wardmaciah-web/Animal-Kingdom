@@ -1,0 +1,82 @@
+{
+  "Ok": true,
+  "Result": [
+    {
+      "Name": "Entrance",
+      "Position": "-238.00363159179688, 12.468940734863281, 271.004150390625",
+      "Distance": 1.0041569471359253,
+      "Pass": true,
+      "BlockedExpected": false
+    },
+    {
+      "Name": "WestFence",
+      "Position": "-342.9505310058594, 12.468940734863281, 215.00328063964844",
+      "Distance": 9.049469947814941,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "EastFence",
+      "Position": "-133.75985717773438, 12.468491554260254, 194.9829864501953",
+      "Distance": 10.759870529174805,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "BackFence",
+      "Position": "-238.03097534179688, 12.468941688537598, 107.81414794921875",
+      "Distance": 9.814196586608887,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "Well",
+      "Position": "-237.91769409179688, 13.035354614257812, 204.38592529296875",
+      "Distance": 9.386286735534668,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "Market1",
+      "Position": "-219.1088104248047, 12.465033531188965, 124.61518096923828",
+      "Distance": 16.615537643432617,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "Market2",
+      "Position": "-261.1055603027344, 12.429877281188965, 124.74408721923828",
+      "Distance": 16.744421005249023,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "TradingHall",
+      "Position": "-302.46417236328125, 14.345348358154297, 157.6295623779297",
+      "Distance": 25.213970184326172,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "Blacksmith",
+      "Position": "-178.39724731445312, 19.16826057434082, 162.85797119140625",
+      "Distance": 30.63551139831543,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "GeneralStore",
+      "Position": "-305.9344787597656, 12.469012260437012, 247.1757049560547",
+      "Distance": 21.447864532470703,
+      "Pass": true,
+      "BlockedExpected": true
+    },
+    {
+      "Name": "DailyRewards",
+      "Position": "-190.23727416992188, 12.465033531188965, 237.24581909179688",
+      "Distance": 31.466062545776367,
+      "Pass": true,
+      "BlockedExpected": true
+    }
+  ]
+}

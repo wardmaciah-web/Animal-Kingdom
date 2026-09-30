@@ -1,0 +1,7 @@
+2026-09-18T03:40:37.495Z,172.495117,4c5b000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION PASS Model interaction accepted
+2026-09-18T03:40:37.846Z,172.846954,62f0000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION PASS Model actual original asset visibly rotates during shake
+2026-09-18T03:40:38.963Z,173.963593,8b7f000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION PASS Model cancelled hatch restores exact tree without consuming cooldown
+2026-09-18T03:40:38.970Z,173.970917,8b7f000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION PASS MeshPart interaction accepted
+2026-09-18T03:40:39.331Z,174.331436,565e000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION PASS MeshPart actual original asset visibly rotates during shake
+2026-09-18T03:40:40.463Z,175.463074,565e000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION PASS MeshPart cancelled hatch restores exact tree without consuming cooldown
+2026-09-18T03:40:40.463Z,175.463776,565e000,6,Info [FLog::CreatorOutput] AK_TREE_MOTION_DONE assertions=6 failures=0 savedProfileUnchanged=true

@@ -1,0 +1,87 @@
+{
+  "Ok": true,
+  "Result": [
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": false,
+      "Position": "35, 182",
+      "Species": "MeadowCelestialLamb",
+      "Children": 6,
+      "Ready": true
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": false,
+      "Position": "168, 182",
+      "Species": "ForestEmeraldWing",
+      "Children": 5,
+      "Ready": true
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": false,
+      "Position": "301, 182",
+      "Species": "ForestEmeraldWing",
+      "Children": 6,
+      "Ready": true
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": false,
+      "Position": "434, 182",
+      "Species": "MeadowPrismAntlerDeer",
+      "Children": 6,
+      "Ready": true
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": false,
+      "Position": "567, 182",
+      "Species": "MeadowPrismAntlerDeer",
+      "Children": 6,
+      "Ready": true
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": true,
+      "Position": "35, 292",
+      "Species": "MeadowPrismAntlerDeer",
+      "Children": 2
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": true,
+      "Position": "168, 292",
+      "Species": "ForestCrestedOwl",
+      "Children": 2
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": true,
+      "Position": "301, 292",
+      "Species": "ForestCrestedOwl",
+      "Children": 2
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": true,
+      "Position": "434, 292",
+      "Species": "MeadowPrismAntlerDeer",
+      "Children": 2
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": true,
+      "Position": "567, 292",
+      "Species": "ForestLeafAntler",
+      "Children": 2
+    },
+    {
+      "State": "Loading companion\u2026",
+      "StateVisible": true,
+      "Position": "34.0000076, 176",
+      "Species": "MeadowCelestialLamb",
+      "Children": 2
+    }
+  ]
+}

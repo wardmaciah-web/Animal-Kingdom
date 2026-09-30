@@ -1,0 +1,9 @@
+{
+  "GameplaySources": [
+    "src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua",
+    "src/ServerScriptService/ServerSource/Server/TutorialService.lua"
+  ],
+  "RegressionTests": [
+    "tests/tutorial-held/Backend.server.lua"
+  ]
+}

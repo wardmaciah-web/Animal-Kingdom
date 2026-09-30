@@ -1,0 +1,29 @@
+--- baseline/src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua
++++ src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua
+@@ -10,13 +10,17 @@
+  eggs[biome.EggId]={Id=biome.EggId,DisplayName=biome.DisplayName.." Egg",ModelName=biome.EggId,Currency="Coins",
+   Cost=biome.Order==1 and 250 or math.max(750,math.floor(biome.Cost/10)),Biome=biome.Id,Pets=pool,AllowTriple=true,HatchSeconds=2}
+ end
+--- Named introductory pets coexist with the preserved 300-pet collection.
+-eggs.MeadowEgg.Pets={{PetId="Bunny",Weight=55},{PetId="Dog",Weight=30},{PetId="Deer",Weight=12},{PetId="GoldenFox",Weight=3}}
+--- The legacy Meadow collection remains obtainable from its collection egg.
+-eggs.MeadowCollectionEgg={Id="MeadowCollectionEgg",DisplayName="Meadow Collection Egg",ModelName="MeadowCollectionEgg",Currency="Coins",Cost=500,Biome="Meadow",Pets={},AllowTriple=true,HatchSeconds=2}
+-for _,pet in ipairs(Pets.Ordered) do if pet.Biome=="Meadow" and pet.PetId:match("^Meadow_") then table.insert(eggs.MeadowCollectionEgg.Pets,{PetId=pet.PetId,Weight=weights[pet.Rarity]}) end end
+--- Preserve access to legacy Meadow Index entries after retiring its separate world stand.
+--- Introductory pets retain 80% total weight; the legacy collection shares the remaining 20%.
+-local total=0;for _,entry in ipairs(eggs.MeadowCollectionEgg.Pets) do total+=entry.Weight end
+-for _,entry in ipairs(eggs.MeadowCollectionEgg.Pets) do table.insert(eggs.MeadowEgg.Pets,{PetId=entry.PetId,Weight=entry.Weight/total*25}) end
++-- New Meadow rewards use one of five complete pools; no legacy fallback.
++local meadowCost=eggs.MeadowEgg.Cost
++eggs.MeadowEgg.Pets={};eggs.MeadowEgg.Retired=true
++for tier=1,5 do
++ local id=string.format("Meadow_Shakeable_%02d",tier)
++ local pool={}
++ for slot=1,3 do
++  local pet=Pets.MeadowOrdered[(tier-1)*3+slot]
++  table.insert(pool,{PetId=pet.PetId,Weight=(tier==5 and {70,25,5} or {65,25,10})[slot]})
++ end
++ eggs[id]={Id=id,DisplayName="Meadow Tree "..tier,ModelName="MeadowEgg",Currency="Coins",
++  Cost=meadowCost,Biome="Meadow",Tier=tier,Pets=pool,AllowTriple=false,HatchSeconds=2,MeadowPool=true}
++end
+ return eggs

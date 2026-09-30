@@ -1,0 +1,1717 @@
+{
+  "97905390781453": {
+    "assetId": 97905390781453,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:49:04.666Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:49:04.606Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 97905390781453,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 97905390781453,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.8050121068954468,
+        0.9787358641624451,
+        0.8894680738449097
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.00009563565254211426,
+        0.00007392466068267822,
+        -0.0007416009902954102,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_1ff9d927-b5da-4e5f-9ac1-e49ab126a5bb",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://102063994556417",
+              "color": "rbxassetid://104848496835588",
+              "attrs": [],
+              "rough": "rbxassetid://110363759590435",
+              "metal": "rbxassetid://106228697606258"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://112434751758874",
+          "size": [
+            0.8050263524055481,
+            0.978759765625,
+            0.8895550966262817
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_1ff9d927-b5da-4e5f-9ac1-e49ab126a5bb"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_1ff9d927-b5da-4e5f-9ac1-e49ab126a5bb"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "138223719551625": {
+    "assetId": 138223719551625,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:48:19.446Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:48:19.383Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 138223719551625,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 138223719551625,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.6049363613128662,
+        0.8677788376808167,
+        0.9767798185348511
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.0003955960273742676,
+        0.0005284249782562256,
+        -0.0008298754692077637,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_a3815d15-d927-4476-9027-4fc48f3e255f",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://116518881029932",
+              "color": "rbxassetid://110600438861044",
+              "attrs": [],
+              "rough": "rbxassetid://122149791379322",
+              "metal": "rbxassetid://119040525148593"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://81163303277235",
+          "size": [
+            0.6049506068229675,
+            0.8678094148635864,
+            0.9767798781394958
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_a3815d15-d927-4476-9027-4fc48f3e255f"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_a3815d15-d927-4476-9027-4fc48f3e255f"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "88997960887832": {
+    "assetId": 88997960887832,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:49:15.567Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:49:15.507Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 88997960887832,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 88997960887832,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.7262682914733887,
+        0.9772095084190369,
+        0.7673746347427368
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.00023320317268371582,
+        -0.0007216930389404297,
+        -0.0005647540092468262,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://115349930864646",
+              "color": "rbxassetid://77213563483513",
+              "attrs": [],
+              "rough": "rbxassetid://131516093008909",
+              "metal": "rbxassetid://131516093008909"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://122845755829690",
+          "size": [
+            0.7262683510780334,
+            0.9772312045097351,
+            0.7673857808113098
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "110305591746768": {
+    "assetId": 110305591746768,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:48:40.569Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:48:40.51Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 110305591746768,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 110305591746768,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.7240384817123413,
+        0.9795609712600708,
+        0.9144695997238159
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.0003500133752822876,
+        0.00048376619815826416,
+        0.00014540553092956543,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_30a6be52-f783-4d1e-b47d-5aa9b77ac5f9",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://137574484960331",
+              "color": "rbxassetid://100873128150834",
+              "attrs": [],
+              "rough": "rbxassetid://140611944152897",
+              "metal": "rbxassetid://81175225099490"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://99272790538349",
+          "size": [
+            0.7240810394287109,
+            0.9795849323272705,
+            0.914490818977356
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_30a6be52-f783-4d1e-b47d-5aa9b77ac5f9"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_30a6be52-f783-4d1e-b47d-5aa9b77ac5f9"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "112116752525943": {
+    "assetId": 112116752525943,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:46:53.573Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:46:53.508Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 112116752525943,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 112116752525943,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.6165929436683655,
+        0.9797587394714355,
+        0.9337677955627441
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        -0.00045177340507507324,
+        0.00014898180961608887,
+        -0.000426366925239563,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_fd7d8868-902a-4473-8a3c-feb6512014ec",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://128041311526858",
+              "color": "rbxassetid://116242731028580",
+              "attrs": [],
+              "rough": "rbxassetid://72971033504395",
+              "metal": "rbxassetid://73864039726135"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://74693569451680",
+          "size": [
+            0.6165929436683655,
+            0.97978276014328,
+            0.9337677955627441
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_fd7d8868-902a-4473-8a3c-feb6512014ec"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_fd7d8868-902a-4473-8a3c-feb6512014ec"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "105166919366910": {
+    "assetId": 105166919366910,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:48:00.355Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:48:00.292Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 105166919366910,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 105166919366910,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.7401573657989502,
+        0.9796265959739685,
+        0.7546952962875366
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        -0.0006758123636245728,
+        0.00019305944442749023,
+        0.0004329979419708252,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_c9ed4ede-d440-4cf2-8811-fd42a6ba3325",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://113832268002902",
+              "color": "rbxassetid://70473479723436",
+              "attrs": [],
+              "rough": "rbxassetid://101532226048659",
+              "metal": "rbxassetid://88319662713940"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://125325309083944",
+          "size": [
+            0.7401573657989502,
+            0.9796386361122131,
+            0.7547137141227722
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_c9ed4ede-d440-4cf2-8811-fd42a6ba3325"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_c9ed4ede-d440-4cf2-8811-fd42a6ba3325"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "133237199904570": {
+    "assetId": 133237199904570,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:47:41.469Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:47:41.406Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 133237199904570,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 133237199904570,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.6344610452651978,
+        0.7705296874046326,
+        0.9805618524551392
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.00004972517490386963,
+        -0.0008627921342849731,
+        0.0000800788402557373,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_73cbea41-f239-4fd1-b2cb-0d8ea6d5edd9",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://132840718932667",
+              "color": "rbxassetid://120392697720099",
+              "attrs": [],
+              "rough": "rbxassetid://94880270353711",
+              "metal": "rbxassetid://135222764389571"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://70876461319097",
+          "size": [
+            0.6344610452651978,
+            0.7705458402633667,
+            0.9805973172187805
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_73cbea41-f239-4fd1-b2cb-0d8ea6d5edd9"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_73cbea41-f239-4fd1-b2cb-0d8ea6d5edd9"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "95703383291167": {
+    "assetId": 95703383291167,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:47:18.44Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:47:18.377Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 95703383291167,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 95703383291167,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.8974553346633911,
+        0.9765011668205261,
+        0.9433602690696716
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        -0.0007459968328475952,
+        -0.0006538033485412598,
+        0.00006686151027679443,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_d8835cc4-e843-4e37-82c8-65f80a338425",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://131533535435586",
+              "color": "rbxassetid://83789055307274",
+              "attrs": [],
+              "rough": "rbxassetid://77242246500235",
+              "metal": "rbxassetid://102478534355936"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://82581654748495",
+          "size": [
+            0.8974553346633911,
+            0.9765384793281555,
+            0.9433929920196533
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_d8835cc4-e843-4e37-82c8-65f80a338425"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_d8835cc4-e843-4e37-82c8-65f80a338425"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "72284151375691": {
+    "assetId": 72284151375691,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:46:08.2Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:46:08.141Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 72284151375691,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 72284151375691,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.6182949542999268,
+        0.8422922492027283,
+        0.9783227443695068
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        -0.00035253167152404785,
+        0.0007228255271911621,
+        -0.00025328993797302246,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_d217bfb4-d96a-40d7-b908-73e4a2bf75ba",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://90499505870975",
+              "color": "rbxassetid://77371096825073",
+              "attrs": [],
+              "rough": "rbxassetid://91625036019127",
+              "metal": "rbxassetid://76445437935068"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://99771514014908",
+          "size": [
+            0.6183099746704102,
+            0.8422922492027283,
+            0.9783705472946167
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_d217bfb4-d96a-40d7-b908-73e4a2bf75ba"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_d217bfb4-d96a-40d7-b908-73e4a2bf75ba"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "84570662269866": {
+    "assetId": 84570662269866,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:45:22.147Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:45:22.08Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 84570662269866,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 84570662269866,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.808300256729126,
+        0.869905948638916,
+        0.9763687252998352
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.0007832646369934082,
+        0.0002632737159729004,
+        -0.00020423531532287598,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://125176441379752",
+              "color": "rbxassetid://79773020130638",
+              "attrs": [],
+              "rough": "rbxassetid://134672877643564",
+              "metal": "rbxassetid://134593766738006"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://89904570166738",
+          "size": [
+            0.8083165884017944,
+            0.869905948638916,
+            0.9764164090156555
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_92488a83-44b7-4ca6-8173-b6cb5f88c5a1"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "131817571953129": {
+    "assetId": 131817571953129,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:45:45.943Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:45:45.881Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 131817571953129,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 131817571953129,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.8002046942710876,
+        0.974736750125885,
+        0.761475682258606
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        -0.0002985447645187378,
+        -0.0023645609617233276,
+        0.0003026723861694336,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_5540feee-a628-4492-bf85-4b08a32157c8",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://75047215073772",
+              "color": "rbxassetid://76132821896289",
+              "attrs": [],
+              "rough": "rbxassetid://70797534053995",
+              "metal": "rbxassetid://74949285323504"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://107263251366206",
+          "size": [
+            0.8002438545227051,
+            0.9747399091720581,
+            0.7615129351615906
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_5540feee-a628-4492-bf85-4b08a32157c8"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_5540feee-a628-4492-bf85-4b08a32157c8"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "100554319678383": {
+    "assetId": 100554319678383,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:46:33.371Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:46:33.309Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 100554319678383,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 100554319678383,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.6216316819190979,
+        0.785178542137146,
+        0.9765220880508423
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.00022807717323303223,
+        0.00008715689182281494,
+        -0.00028617680072784424,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_3d194778-8a6d-43bc-ab92-3cf87bba28a1",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://87653626714147",
+              "color": "rbxassetid://129853249692809",
+              "attrs": [],
+              "rough": "rbxassetid://133854510456521",
+              "metal": "rbxassetid://140170357182395"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://129971024677390",
+          "size": [
+            0.6216316819190979,
+            0.7852169275283813,
+            0.9765220880508423
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_3d194778-8a6d-43bc-ab92-3cf87bba28a1"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_3d194778-8a6d-43bc-ab92-3cf87bba28a1"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "113989055590248": {
+    "assetId": 113989055590248,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:35:50.051Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:35:49.986Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 113989055590248,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 113989055590248,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.8486510515213013,
+        0.9552114605903625,
+        0.9763309955596924
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.0007847845554351807,
+        -0.000026553869247436523,
+        -0.00032435357570648193,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_cd03c553-9892-4855-8f09-33b781092721",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://107513294671066",
+              "color": "rbxassetid://73748377999416",
+              "attrs": [],
+              "rough": "rbxassetid://125785402534996",
+              "metal": "rbxassetid://128877854788095"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://127414738965477",
+          "size": [
+            0.8486558794975281,
+            0.9552464485168457,
+            0.9763309955596924
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_cd03c553-9892-4855-8f09-33b781092721"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_cd03c553-9892-4855-8f09-33b781092721"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "110005101968034": {
+    "assetId": 110005101968034,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:44:46.91Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:44:46.848Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 110005101968034,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 110005101968034,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.8746224641799927,
+        0.97642982006073,
+        0.9008661508560181
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.0006228089332580566,
+        -0.00030185282230377197,
+        0.0009382814168930054,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_992d05af-6f28-4df5-9eaa-ab753bad8c84",
+          "surfaces": [],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://73672924650229",
+          "size": [
+            0.8746402859687805,
+            0.9764536619186401,
+            0.9008661508560181
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_992d05af-6f28-4df5-9eaa-ab753bad8c84"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_992d05af-6f28-4df5-9eaa-ab753bad8c84"
+      }
+    ]
+  },
+  "98876995093333": {
+    "assetId": 98876995093333,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:43:53.291Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:43:53.229Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 98876995093333,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 98876995093333,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.7262682914733887,
+        0.9772095084190369,
+        0.7673746347427368
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.00023320317268371582,
+        -0.0007216930389404297,
+        -0.0005647540092468262,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://115349930864646",
+              "color": "rbxassetid://77213563483513",
+              "attrs": [],
+              "rough": "rbxassetid://131516093008909",
+              "metal": "rbxassetid://80616376937051"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://122845755829690",
+          "size": [
+            0.7262683510780334,
+            0.9772312045097351,
+            0.7673857808113098
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  },
+  "137387722906572": {
+    "assetId": 137387722906572,
+    "info": {
+      "AssetTypeId": 10,
+      "Description": "",
+      "IsNew": false,
+      "Updated": "2026-09-21T09:36:02.676Z",
+      "IsLimitedUnique": false,
+      "ProductId": 0,
+      "MinimumMembershipLevel": 0,
+      "ContentRatingTypeId": 0,
+      "Created": "2026-09-21T09:36:02.609Z",
+      "Creator": {
+        "Name": "Maciahxcx1",
+        "CreatorTargetId": 3009757271,
+        "Id": 3009757271,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      },
+      "IsLimited": false,
+      "TargetId": 137387722906572,
+      "Sales": 0,
+      "PriceDiscountDetails": [],
+      "IsPublicDomain": false,
+      "Name": "model",
+      "IsForSale": false,
+      "AssetId": 137387722906572,
+      "IconImageAssetId": 0
+    },
+    "model": {
+      "attrs": [],
+      "path": "Model",
+      "name": "Model",
+      "bounds": [
+        0.8486510515213013,
+        0.9552114605903625,
+        0.9763309955596924
+      ],
+      "sourceAssetId": "<restricted>",
+      "class": "Model",
+      "pivot": [
+        0.0007847845554351807,
+        -0.000026553869247436523,
+        -0.00032435357570648193,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parts": [
+        {
+          "color": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ],
+          "class": "MeshPart",
+          "transparency": 0,
+          "name": "tripo_mesh_cd03c553-9892-4855-8f09-33b781092721",
+          "surfaces": [
+            {
+              "normal": "rbxassetid://107513294671066",
+              "color": "rbxassetid://73748377999416",
+              "attrs": [],
+              "rough": "rbxassetid://128877854788095",
+              "metal": "rbxassetid://128877854788095"
+            }
+          ],
+          "texture": "",
+          "material": "Plastic",
+          "mesh": "rbxassetid://127414738965477",
+          "size": [
+            0.8486558794975281,
+            0.9552464485168457,
+            0.9763309955596924
+          ]
+        }
+      ]
+    },
+    "usable": true,
+    "names": [
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "model"
+      },
+      {
+        "attrs": [],
+        "class": "Model",
+        "name": "tripo_node_cd03c553-9892-4855-8f09-33b781092721"
+      },
+      {
+        "attrs": [],
+        "class": "MeshPart",
+        "name": "tripo_mesh_cd03c553-9892-4855-8f09-33b781092721"
+      },
+      {
+        "attrs": [],
+        "class": "SurfaceAppearance",
+        "name": "SurfaceAppearance"
+      }
+    ]
+  }
+}

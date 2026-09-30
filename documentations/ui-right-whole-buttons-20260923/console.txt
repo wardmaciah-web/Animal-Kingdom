@@ -1,0 +1,113 @@
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+
+================================
+ANIMAL KINGDOM MAP PROTECTED
+STATIC PARTS: 5455
+DYNAMIC PARTS: 24
+================================
+[PlotAssignment] Found 4 plots at Workspace.PlayerPlots
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot1Floor
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot2Floor
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot3Floor
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot4Floor
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeEnvironments.MeadowEnvironment.Presentation.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.AK_MagicalForest_RestoredTrees.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Biome labels removed: 11
+[AK] Global biome label remover active
+Hello world!
+[ProfileService] Mode: Studio mock with read-only saved snapshot
+[AuthoredTrees] Meadow: 28
+[AuthoredTrees] Forest: 29
+[AuthoredTrees] Jungle: 35
+[AuthoredTrees] Desert: 19
+[AuthoredTrees] Snow: 31
+[AuthoredTrees] Volcano: 26
+[AuthoredTrees] Ocean: 27
+[AuthoredTrees] AncientRuins: 22
+[AuthoredTrees] MagicalForest: 55
+[AuthoredTrees] Sky: 19
+[AuthoredTrees] Prehistoric: 27
+[AuthoredTrees] Mythical: 4
+[Garden] Ready: 4 matching plots; 3 forage slots each
+[WeatherEventService] Break started - 300 seconds
+[NumNomService] Prototype world spawns disabled for authored map
+[WeatherAdminCamera] Old physical camera panels removed: 0
+[AdminCamera] Camera point created: Meadow target 183.3482666015625, 8.478930473327637, -88.61429595947266
+[AdminCamera] Camera point created: Forest target 182.99996948242188, 8.478930473327637, 187.50001525878906
+[AdminCamera] Camera point created: Jungle target 180.49996948242188, 8.478946685791016, 418.4999694824219
+[AdminCamera] Camera point created: Desert target 186.4999542236328, 8.478930473327637, 704.5
+[AdminCamera] Camera point created: Snow target -78.92684936523438, 8.478937149047852, 694.30908203125
+[AdminCamera] Camera point created: Volcano target -348.00006103515625, 8.478930473327637, 704.3399658203125
+[AdminCamera] Camera point created: Ocean target -657.0001220703125, 8.478930473327637, 720.3399658203125
+[AdminCamera] Camera point created: AncientRuins target -654.0001220703125, 8.478930473327637, 431.3399353027344
+[AdminCamera] Camera point created: MagicalForest target -653.5000610351562, 8.478930473327637, 160.49998474121094
+[AdminCamera] Camera point created: Sky target -646.5000610351562, 8.478930473327637, -96.50001525878906
+[AdminCamera] Camera point created: Prehistoric target -360.4997863769531, 8.478928565979004, -85.50027465820312
+[AdminCamera] Camera point created: Mythical target -82.5, 8.478930473327637, -88.5
+[AdminCamera] Camera point created: PlayerPlots target -245.82044982910156, 8.328930854797363, 472.706298828125
+[AdminCamera] Camera point created: Town target -237.3525390625, 8.175239562988281, 192.42086791992188
+[AdminCamera] Camera point created: HighOverview target -235.2500762939453, 8.478936195373535, 311.91998291015625
+[WeatherAdmin] White and blue control center created
+Superbullet Server initiated.
+[PetAssets] 25/330 models available; 250 errors, 68 warnings
+[PetAssets] Jungle_Common_01: Jungle Common 01: imported model unavailable
+[PetAssets] Jungle_Common_02: Jungle Common 02: imported model unavailable
+[PetAssets] Jungle_Uncommon_01: Jungle Uncommon 01: imported model unavailable
+[PetAssets] Jungle_Uncommon_02: Jungle Uncommon 02: imported model unavailable
+[PetAssets] Jungle_Uncommon_03: Jungle Uncommon 03: imported model unavailable
+[PetAssets] Jungle_Uncommon_04: Jungle Uncommon 04: imported model unavailable
+[PetAssets] Jungle_Uncommon_05: Jungle Uncommon 05: imported model unavailable
+[PetAssets] Jungle_Rare_01: Jungle Rare 01: imported model unavailable
+[SuperbulletCodeExecutor] Backend not reachable at localhost:13528
+[SuperbulletCodeExecutor] Code execution features will not be available until the backend is running
+[SuperbulletCodeExecutor] Skipping WebSocket connection - backend not reachable
+[SuperbulletLogger] Server logger initialized (Studio only)
+[PlotAssignment] Assigned Plot1Floor to Maciahxcx1
+[ProfileStore]: Roblox API services available - data will be saved
+[CameraTitles] Waiting for WeatherAdminRoom...
+[ProfileService] Studio read-only snapshot: OriginalData1/Player_3009757271; saved version=3
+[ProfileService] Ready: Maciahxcx1; version=3; mock=true; 0.22s
+[CameraTitles] Found room: Workspace.WeatherAdminRoom
+[CameraTitles] Found CameraWallPanels: Workspace.WeatherAdminRoom.CameraWallPanels
+[CameraTitles] Clickable panels found: 15
+[CameraTitles] 01 | PLAYER PLOTS | Workspace.WeatherAdminRoom.CameraWallPanels.CameraPlayerPlots
+[CameraTitles] 02 | TOWN | Workspace.WeatherAdminRoom.CameraWallPanels.CameraTown
+[CameraTitles] 03 | MEADOW | Workspace.WeatherAdminRoom.CameraWallPanels.CameraMeadow
+[CameraTitles] 04 | FOREST | Workspace.WeatherAdminRoom.CameraWallPanels.CameraForest
+[CameraTitles] 05 | JUNGLE | Workspace.WeatherAdminRoom.CameraWallPanels.CameraJungle
+[CameraTitles] 06 | DESERT | Workspace.WeatherAdminRoom.CameraWallPanels.CameraDesert
+[CameraTitles] 07 | SNOW | Workspace.WeatherAdminRoom.CameraWallPanels.CameraSnow
+[CameraTitles] 08 | VOLCANO | Workspace.WeatherAdminRoom.CameraWallPanels.CameraVolcano
+[CameraTitles] 09 | OCEAN | Workspace.WeatherAdminRoom.CameraWallPanels.CameraOcean
+[CameraTitles] 10 | ANCIENT RUINS | Workspace.WeatherAdminRoom.CameraWallPanels.CameraAncientRuins
+[CameraTitles] 11 | MAGICAL FOREST | Workspace.WeatherAdminRoom.CameraWallPanels.CameraMagicalForest
+[CameraTitles] 12 | SKY | Workspace.WeatherAdminRoom.CameraWallPanels.CameraSky
+[CameraTitles] 13 | PREHISTORIC | Workspace.WeatherAdminRoom.CameraWallPanels.CameraPrehistoric
+[CameraTitles] 14 | MYTHICAL | Workspace.WeatherAdminRoom.CameraWallPanels.CameraMythical
+[CameraTitles] 15 | HIGH OVERVIEW | Workspace.WeatherAdminRoom.CameraWallPanels.CameraHighOverview
+[CameraTitles] ALL 15 CAMERA TITLES CREATED
+[PlotAssignment] Spawned Maciahxcx1 at Plot1Floor
+[CameraTitles] FINAL LABEL PASS COMPLETE
+Superbullet Client initiated.
+[WeatherVisuals] Script starting
+[WeatherVisuals] Initialized
+[SuperbulletLogger] Client logger initialized (Studio only)

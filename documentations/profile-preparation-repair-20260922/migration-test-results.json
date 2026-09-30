@@ -1,0 +1,38 @@
+{
+  "1": {
+    "pass": true,
+    "name": "Existing v3 save: all protected fields unchanged"
+  },
+  "2": {
+    "pass": true,
+    "name": "Migration is idempotent for existing v3 save"
+  },
+  "3": {
+    "pass": true,
+    "name": "Old v2 profile with no Garden fields defaults safely"
+  },
+  "4": {
+    "pass": true,
+    "name": "Legacy v0 currency, pets and sanctuary preserved"
+  },
+  "5": {
+    "pass": true,
+    "name": "Valid Garden trips, cosmetics and extra fields survive"
+  },
+  "6": {
+    "pass": true,
+    "name": "Malformed optional Garden fields archived without blocking"
+  },
+  "7": {
+    "pass": true,
+    "name": "Malformed trip entries recovered; missing trip IDs default stably"
+  },
+  "8": {
+    "pass": true,
+    "name": "Unsafe optional Garden recovery values are serialized"
+  },
+  "9": {
+    "pass": true,
+    "name": "Future profile is rejected before any mutation"
+  }
+}

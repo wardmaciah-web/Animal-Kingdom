@@ -1,0 +1,913 @@
+{
+  "Ok": true,
+  "Result": {
+    "Removed": true,
+    "Slots": 64,
+    "UnequippedIncome": 929,
+    "Pets": [
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://100873128150834",
+        "Mesh": "rbxassetid://99272790538349",
+        "Slot": 30,
+        "Size": [
+          4.777283191680908,
+          5.11733341217041,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowCloudtailFox",
+        "Gap": 0.04000043869018555,
+        "UID": "d7fb19bd-940e-466c-8720-0a9b83ac35e7"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 34,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.04000067710876465,
+        "UID": "1991c901-3eb0-4a2d-a522-052fa950817d"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://120392697720099",
+        "Mesh": "rbxassetid://70876461319097",
+        "Slot": 26,
+        "Size": [
+          5.4036946296691895,
+          4.246181964874268,
+          3.4962706565856934
+        ],
+        "PetTypeId": "MeadowDaisyCrownBunny",
+        "Gap": 0.04000067710876465,
+        "UID": "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://83789055307274",
+        "Mesh": "rbxassetid://82581654748495",
+        "Slot": 31,
+        "Size": [
+          3.976203203201294,
+          4.115904331207275,
+          3.782585620880127
+        ],
+        "PetTypeId": "MeadowDaisyHedgehog",
+        "Gap": 0.03999972343444824,
+        "UID": "ac6fa95a-34c0-47ee-8d06-88c252e0d78c"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://77371096825073",
+        "Mesh": "rbxassetid://99771514014908",
+        "Slot": 29,
+        "Size": [
+          5.4036946296691895,
+          4.65211296081543,
+          3.4150233268737793
+        ],
+        "PetTypeId": "MeadowFluffyLop",
+        "Gap": 0.039999961853027344,
+        "UID": "8d1308cb-f442-41c8-bfe6-9aca33659a35"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://76132821896289",
+        "Mesh": "rbxassetid://107263251366206",
+        "Slot": 33,
+        "Size": [
+          3.599512815475464,
+          4.607392311096191,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowFawn",
+        "Gap": 0.04000043869018555,
+        "UID": "bdb82687-90e7-4409-beeb-fada2009ae8e"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://73748377999416",
+        "Mesh": "rbxassetid://127414738965477",
+        "Slot": 28,
+        "Size": [
+          4.351653099060059,
+          4.257676124572754,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowFieldMouse",
+        "Gap": 0.04000043869018555,
+        "UID": "eec05b51-55c3-44cb-846d-78a30db33ab3"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://129022509074285",
+        "Mesh": "rbxassetid://97924899190875",
+        "Slot": 1,
+        "Size": [
+          3.782586097717285,
+          3.9365925788879395,
+          3.914175510406494
+        ],
+        "PetTypeId": "ForestRaccoon",
+        "Gap": 0.04000067710876465,
+        "UID": "09c74160-d67d-4e93-8451-ac9189e800ef"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://95294656364429",
+        "Mesh": "rbxassetid://131926612358052",
+        "Slot": 2,
+        "Size": [
+          3.782585859298706,
+          5.214411735534668,
+          4.123458385467529
+        ],
+        "PetTypeId": "ForestBlackBearCub",
+        "Gap": 0.03999948501586914,
+        "UID": "09c4dbb7-8141-4773-bd08-9302073b557b"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://119398526295183",
+        "Mesh": "rbxassetid://94866246199758",
+        "Slot": 3,
+        "Size": [
+          3.782586097717285,
+          5.326746940612793,
+          5.205501556396484
+        ],
+        "PetTypeId": "ForestSkunk",
+        "Gap": 0.03999948501586914,
+        "UID": "fe391cb6-13c2-4b79-990d-6427bf892a5d"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://135911004193278",
+        "Mesh": "rbxassetid://130215170262976",
+        "Slot": 4,
+        "Size": [
+          3.7825863361358643,
+          4.385236740112305,
+          3.3922269344329834
+        ],
+        "PetTypeId": "ForestBadger",
+        "Gap": 0.039999961853027344,
+        "UID": "82ef0a14-c126-402f-b4cb-2555db8b006b"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://133597800956686",
+        "Mesh": "rbxassetid://126806763850171",
+        "Slot": 5,
+        "Size": [
+          3.782586097717285,
+          4.502463340759277,
+          4.46142578125
+        ],
+        "PetTypeId": "ForestTreeFrog",
+        "Gap": 0.03999948501586914,
+        "UID": "3de165cd-d078-4eda-99a6-c54a4ebd965e"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://131616920065617",
+        "Mesh": "rbxassetid://125023493018070",
+        "Slot": 6,
+        "Size": [
+          3.7825863361358643,
+          4.040675640106201,
+          3.8209681510925293
+        ],
+        "PetTypeId": "ForestRiverOtter",
+        "Gap": 0.03999924659729004,
+        "UID": "2cf8dcf7-4e62-4895-8b1e-c257908804c9"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://84452625990128",
+        "Mesh": "rbxassetid://106744044776841",
+        "Slot": 7,
+        "Size": [
+          3.782585859298706,
+          5.9431233406066895,
+          5.170853137969971
+        ],
+        "PetTypeId": "ForestBrownBat",
+        "Gap": 0.04000067710876465,
+        "UID": "f0ba9b0b-bf11-4d47-ab7d-9aa724299453"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://102420541096782",
+        "Mesh": "rbxassetid://95294648810339",
+        "Slot": 8,
+        "Size": [
+          3.782585859298706,
+          4.47275447845459,
+          3.5403330326080322
+        ],
+        "PetTypeId": "ForestWoodlandOwl",
+        "Gap": 0.03999948501586914,
+        "UID": "8409ac28-9cd0-44ff-b9a6-38614ec31d8c"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://126502584357511",
+        "Mesh": "rbxassetid://82138478193574",
+        "Slot": 9,
+        "Size": [
+          3.782585859298706,
+          5.51153039932251,
+          3.6341354846954346
+        ],
+        "PetTypeId": "ForestCrestedOwl",
+        "Gap": 0.03999972343444824,
+        "UID": "efaed398-0b8d-4c04-9cd7-fccf889a489a"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://123865829385359",
+        "Mesh": "rbxassetid://111837749719637",
+        "Slot": 10,
+        "Size": [
+          3.6618170738220215,
+          6.0132575035095215,
+          4.982152462005615
+        ],
+        "PetTypeId": "ForestLeafAntler",
+        "Gap": 0.040000200271606445,
+        "UID": "25d245ba-dc6d-4ba9-bc7f-14363c3c8ad8"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://73081746031370",
+        "Mesh": "rbxassetid://89750756176673",
+        "Slot": 11,
+        "Size": [
+          3.322038173675537,
+          5.120121479034424,
+          5.4036946296691895
+        ],
+        "PetTypeId": "ForestEmeraldWing",
+        "Gap": 0.04000067710876465,
+        "UID": "a4df750d-14e1-41bb-b961-87073b6ab7f2"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://73748377999416",
+        "Mesh": "rbxassetid://127414738965477",
+        "Slot": 12,
+        "Size": [
+          4.3516526222229,
+          4.257675647735596,
+          3.782585620880127
+        ],
+        "PetTypeId": "MeadowFieldMouse",
+        "Gap": 0.04000067710876465,
+        "UID": "59980199-c5ff-4519-b88a-e8089f0e1b6a"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://77213563483513",
+        "Mesh": "rbxassetid://122845755829690",
+        "Slot": 13,
+        "Size": [
+          3.9967358112335205,
+          5.089663028717041,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowChick",
+        "Gap": 0.03999972343444824,
+        "UID": "7a224473-b8cf-4232-9c9e-b1d80721f769"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://83064824068183",
+        "Mesh": "rbxassetid://73672924650229",
+        "Slot": 14,
+        "Size": [
+          3.896005868911743,
+          4.222901821136475,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowRedSquirrel",
+        "Gap": 0.040000200271606445,
+        "UID": "b89e655a-c988-432a-9475-43597bdcbe3b"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://79773020130638",
+        "Mesh": "rbxassetid://89904570166738",
+        "Slot": 15,
+        "Size": [
+          4.569222927093506,
+          4.070798397064209,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowGoat",
+        "Gap": 0.040000200271606445,
+        "UID": "eaa5420b-cbbf-4731-a377-c887fa924a1a"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://76132821896289",
+        "Mesh": "rbxassetid://107263251366206",
+        "Slot": 16,
+        "Size": [
+          3.599513053894043,
+          4.60739278793335,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowFawn",
+        "Gap": 0.040000200271606445,
+        "UID": "16513d5b-7367-465c-9602-3e05bb1512c5"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://77371096825073",
+        "Mesh": "rbxassetid://99771514014908",
+        "Slot": 17,
+        "Size": [
+          5.4036946296691895,
+          4.65211296081543,
+          3.4150233268737793
+        ],
+        "PetTypeId": "MeadowFluffyLop",
+        "Gap": 0.039999961853027344,
+        "UID": "ed7cc643-05be-45d1-8ae6-e77c826b3d3b"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://129853249692809",
+        "Mesh": "rbxassetid://129971024677390",
+        "Slot": 18,
+        "Size": [
+          5.4036946296691895,
+          4.345086097717285,
+          3.439868688583374
+        ],
+        "PetTypeId": "MeadowPatchworkLop",
+        "Gap": 0.04000043869018555,
+        "UID": "c414f30f-cc30-4996-8c46-03c62d2e263e"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://83789055307274",
+        "Mesh": "rbxassetid://82581654748495",
+        "Slot": 19,
+        "Size": [
+          3.976203680038452,
+          4.115904808044434,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowDaisyHedgehog",
+        "Gap": 0.03999948501586914,
+        "UID": "d6d5c919-4f8c-4df4-955d-28310949ff61"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://116242731028580",
+        "Mesh": "rbxassetid://74693569451680",
+        "Slot": 20,
+        "Size": [
+          5.4036946296691895,
+          5.669982433319092,
+          3.5682106018066406
+        ],
+        "PetTypeId": "MeadowBuck",
+        "Gap": 0.03999924659729004,
+        "UID": "01c5d66d-4cac-40a0-941f-4a1f61eb4538"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://120392697720099",
+        "Mesh": "rbxassetid://70876461319097",
+        "Slot": 21,
+        "Size": [
+          5.4036946296691895,
+          4.246181964874268,
+          3.4962706565856934
+        ],
+        "PetTypeId": "MeadowDaisyCrownBunny",
+        "Gap": 0.04000067710876465,
+        "UID": "2ce1cbfc-aa50-4526-84d4-4519a9e012dd"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://110600438861044",
+        "Mesh": "rbxassetid://81163303277235",
+        "Slot": 22,
+        "Size": [
+          5.4036946296691895,
+          4.800853252410889,
+          3.3466784954071045
+        ],
+        "PetTypeId": "MeadowBlossomBunny",
+        "Gap": 0.03999924659729004,
+        "UID": "6c2714f1-57b6-4ffc-919b-5af6d018cde1"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 23,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.04000067710876465,
+        "UID": "0823a800-5249-47b5-9b2d-12b86b6ba8e3"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://100873128150834",
+        "Mesh": "rbxassetid://99272790538349",
+        "Slot": 24,
+        "Size": [
+          4.777283668518066,
+          5.117333889007568,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowCloudtailFox",
+        "Gap": 0.040000200271606445,
+        "UID": "c4aef335-30bc-4745-a8d8-01a92a4c88a6"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://104848496835588",
+        "Mesh": "rbxassetid://112434751758874",
+        "Slot": 25,
+        "Size": [
+          4.179762363433838,
+          4.598909378051758,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowCelestialLamb",
+        "Gap": 0.039999961853027344,
+        "UID": "26737830-fd76-46ae-a1e7-cd2062f97831"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://73748377999416",
+        "Mesh": "rbxassetid://127414738965477",
+        "Slot": 27,
+        "Size": [
+          4.3516526222229,
+          4.257675647735596,
+          3.782585620880127
+        ],
+        "PetTypeId": "MeadowFieldMouse",
+        "Gap": 0.04000067710876465,
+        "UID": "5f85b960-0e0b-40fb-8364-947d929300db"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://110600438861044",
+        "Mesh": "rbxassetid://81163303277235",
+        "Slot": 32,
+        "Size": [
+          5.4036946296691895,
+          4.800853252410889,
+          3.3466784954071045
+        ],
+        "PetTypeId": "MeadowBlossomBunny",
+        "Gap": 0.03999924659729004,
+        "UID": "6c3f3a15-5ddf-4e53-9997-3d59c2ada327"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://77371096825073",
+        "Mesh": "rbxassetid://99771514014908",
+        "Slot": 35,
+        "Size": [
+          5.4036946296691895,
+          4.65211296081543,
+          3.4150233268737793
+        ],
+        "PetTypeId": "MeadowFluffyLop",
+        "Gap": 0.039999961853027344,
+        "UID": "ba8599a4-7696-46ac-aa90-ab3b03eac7f7"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://116242731028580",
+        "Mesh": "rbxassetid://74693569451680",
+        "Slot": 36,
+        "Size": [
+          5.4036946296691895,
+          5.669982433319092,
+          3.5682106018066406
+        ],
+        "PetTypeId": "MeadowBuck",
+        "Gap": 0.03999924659729004,
+        "UID": "782ed850-9d6d-492e-9dba-5041bdffe98a"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://129853249692809",
+        "Mesh": "rbxassetid://129971024677390",
+        "Slot": 37,
+        "Size": [
+          5.4036946296691895,
+          4.345086097717285,
+          3.439868688583374
+        ],
+        "PetTypeId": "MeadowPatchworkLop",
+        "Gap": 0.04000043869018555,
+        "UID": "f5ca0bbb-4c0c-472f-97f2-05dc5006033f"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 38,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.04000067710876465,
+        "UID": "a5a0aca3-8d4b-4c6f-9575-f622d36990c9"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://83064824068183",
+        "Mesh": "rbxassetid://73672924650229",
+        "Slot": 39,
+        "Size": [
+          3.896005868911743,
+          4.222901821136475,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowRedSquirrel",
+        "Gap": 0.040000200271606445,
+        "UID": "fed40769-87d1-43ed-8fe2-160edf8d3ac0"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://100873128150834",
+        "Mesh": "rbxassetid://99272790538349",
+        "Slot": 40,
+        "Size": [
+          4.777283668518066,
+          5.117333889007568,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowCloudtailFox",
+        "Gap": 0.040000200271606445,
+        "UID": "45db3368-76bd-449f-a781-b3956c679cb3"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://83789055307274",
+        "Mesh": "rbxassetid://82581654748495",
+        "Slot": 41,
+        "Size": [
+          3.976203680038452,
+          4.115904808044434,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowDaisyHedgehog",
+        "Gap": 0.04000139236450195,
+        "UID": "3e1eb211-ba7b-4429-ad09-dfd50cb692ae"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://116242731028580",
+        "Mesh": "rbxassetid://74693569451680",
+        "Slot": 42,
+        "Size": [
+          5.4036946296691895,
+          5.669982433319092,
+          3.5682106018066406
+        ],
+        "PetTypeId": "MeadowBuck",
+        "Gap": 0.04000115394592285,
+        "UID": "d8d4a2c9-a721-4a28-9b60-f3c0fccadf59"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 43,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.039998769760131836,
+        "UID": "5ff9562f-f2b5-4d46-9a58-85c5e3da7949"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://120392697720099",
+        "Mesh": "rbxassetid://70876461319097",
+        "Slot": 44,
+        "Size": [
+          5.4036946296691895,
+          4.246181964874268,
+          3.4962706565856934
+        ],
+        "PetTypeId": "MeadowDaisyCrownBunny",
+        "Gap": 0.039998769760131836,
+        "UID": "ccd940bc-11e2-439e-a427-06f08e8ac2ea"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://129853249692809",
+        "Mesh": "rbxassetid://129971024677390",
+        "Slot": 45,
+        "Size": [
+          5.4036946296691895,
+          4.345086097717285,
+          3.439868688583374
+        ],
+        "PetTypeId": "MeadowPatchworkLop",
+        "Gap": 0.04000043869018555,
+        "UID": "b5a1e664-6428-4b57-89b8-2941044ff3e8"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 46,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.039998769760131836,
+        "UID": "0ab48756-50c2-4609-952d-5b077f9f14d8"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://120392697720099",
+        "Mesh": "rbxassetid://70876461319097",
+        "Slot": 47,
+        "Size": [
+          5.4036946296691895,
+          4.246181964874268,
+          3.4962706565856934
+        ],
+        "PetTypeId": "MeadowDaisyCrownBunny",
+        "Gap": 0.039998769760131836,
+        "UID": "466f555c-660a-49e7-8b49-19d39063ded1"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 48,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.039998769760131836,
+        "UID": "4f0b1f22-241f-4496-8966-66f49ba93230"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://83064824068183",
+        "Mesh": "rbxassetid://73672924650229",
+        "Slot": 49,
+        "Size": [
+          3.896005868911743,
+          4.222901821136475,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowRedSquirrel",
+        "Gap": 0.040000200271606445,
+        "UID": "2df04a37-454a-46ea-9f9a-06d522ec46ec"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 50,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.039998769760131836,
+        "UID": "b9a31974-eae0-4c0b-baeb-8da0d8e4f3b3"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://129853249692809",
+        "Mesh": "rbxassetid://129971024677390",
+        "Slot": 51,
+        "Size": [
+          5.4036946296691895,
+          4.345086097717285,
+          3.439868688583374
+        ],
+        "PetTypeId": "MeadowPatchworkLop",
+        "Gap": 0.04000043869018555,
+        "UID": "e71d2251-0d42-44b8-945d-0bc511ad9d74"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://70473479723436",
+        "Mesh": "rbxassetid://125325309083944",
+        "Slot": 52,
+        "Size": [
+          3.856976270675659,
+          5.006458759307861,
+          3.782585859298706
+        ],
+        "PetTypeId": "MeadowPrismAntlerDeer",
+        "Gap": 0.039998769760131836,
+        "UID": "0fa3ca2d-de23-49ae-814e-7b1f9e8a49a1"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://100873128150834",
+        "Mesh": "rbxassetid://99272790538349",
+        "Slot": 53,
+        "Size": [
+          4.777283668518066,
+          5.117333889007568,
+          3.782586097717285
+        ],
+        "PetTypeId": "MeadowCloudtailFox",
+        "Gap": 0.040000200271606445,
+        "UID": "cb3fdb89-1044-49b8-a5bf-f2f539d10654"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://77371096825073",
+        "Mesh": "rbxassetid://99771514014908",
+        "Slot": 54,
+        "Size": [
+          5.4036946296691895,
+          4.65211296081543,
+          3.4150233268737793
+        ],
+        "PetTypeId": "MeadowFluffyLop",
+        "Gap": 0.040001869201660156,
+        "UID": "cd925426-6dfe-44c2-a09c-186741c3df0c"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://73081746031370",
+        "Mesh": "rbxassetid://89750756176673",
+        "Slot": 55,
+        "Size": [
+          3.322038173675537,
+          5.120121479034424,
+          5.4036946296691895
+        ],
+        "PetTypeId": "ForestEmeraldWing",
+        "Gap": 0.039998769760131836,
+        "UID": "51d08f4a-8dd9-4dbc-92c2-b918f583407b"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://129022509074285",
+        "Mesh": "rbxassetid://97924899190875",
+        "Slot": 56,
+        "Size": [
+          3.782586097717285,
+          3.9365925788879395,
+          3.914175510406494
+        ],
+        "PetTypeId": "ForestRaccoon",
+        "Gap": 0.04000067710876465,
+        "UID": "6fbda586-d66e-4bba-b0b9-2329129d9abf"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://95294656364429",
+        "Mesh": "rbxassetid://131926612358052",
+        "Slot": 57,
+        "Size": [
+          3.782585859298706,
+          5.214411735534668,
+          4.123458385467529
+        ],
+        "PetTypeId": "ForestBlackBearCub",
+        "Gap": 0.03999948501586914,
+        "UID": "07162d04-4634-4dcf-ab41-f08d3105351c"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://119398526295183",
+        "Mesh": "rbxassetid://94866246199758",
+        "Slot": 58,
+        "Size": [
+          3.782586097717285,
+          5.326746940612793,
+          5.205501556396484
+        ],
+        "PetTypeId": "ForestSkunk",
+        "Gap": 0.03999948501586914,
+        "UID": "0fff7ded-1848-4c47-8088-d5ea3b453c9d"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://135911004193278",
+        "Mesh": "rbxassetid://130215170262976",
+        "Slot": 59,
+        "Size": [
+          3.7825863361358643,
+          4.385236740112305,
+          3.3922269344329834
+        ],
+        "PetTypeId": "ForestBadger",
+        "Gap": 0.040001869201660156,
+        "UID": "44fdc224-a664-4b71-947d-5d4d969df63f"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://133597800956686",
+        "Mesh": "rbxassetid://126806763850171",
+        "Slot": 60,
+        "Size": [
+          3.782586097717285,
+          4.502463340759277,
+          4.46142578125
+        ],
+        "PetTypeId": "ForestTreeFrog",
+        "Gap": 0.04000139236450195,
+        "UID": "ab36e841-4ec4-4af4-b072-84764a3a2c78"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://131616920065617",
+        "Mesh": "rbxassetid://125023493018070",
+        "Slot": 61,
+        "Size": [
+          3.7825863361358643,
+          4.040675640106201,
+          3.8209681510925293
+        ],
+        "PetTypeId": "ForestRiverOtter",
+        "Gap": 0.03999924659729004,
+        "UID": "a6dafeb2-eabf-47c5-b603-eb8a14152efb"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://84452625990128",
+        "Mesh": "rbxassetid://106744044776841",
+        "Slot": 62,
+        "Size": [
+          3.782585859298706,
+          5.9431233406066895,
+          5.170853137969971
+        ],
+        "PetTypeId": "ForestBrownBat",
+        "Gap": 0.04000067710876465,
+        "UID": "2beb7ac3-e8c9-4e06-bd16-ba440dd6f593"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://102420541096782",
+        "Mesh": "rbxassetid://95294648810339",
+        "Slot": 63,
+        "Size": [
+          3.782585859298706,
+          4.47275447845459,
+          3.5403330326080322
+        ],
+        "PetTypeId": "ForestWoodlandOwl",
+        "Gap": 0.04000139236450195,
+        "UID": "e63afbe8-29b7-4121-a06d-ae274818496c"
+      },
+      {
+        "Collisions": 0,
+        "Texture": "rbxassetid://126502584357511",
+        "Mesh": "rbxassetid://82138478193574",
+        "Slot": 64,
+        "Size": [
+          3.782585859298706,
+          5.51153039932251,
+          3.6341354846954346
+        ],
+        "PetTypeId": "ForestCrestedOwl",
+        "Gap": 0.03999972343444824,
+        "UID": "1341a70f-1a0b-465b-b481-9dc970760c44"
+      }
+    ],
+    "InvalidOwnerRejected": true,
+    "Count": 64,
+    "Added": true,
+    "MaximumGap": 0.040001869201660156,
+    "ExpectedIncome": 929,
+    "Income": 929,
+    "MinimumGap": 0.039998769760131836
+  }
+}

@@ -1,0 +1,143 @@
+--- before/src/ServerScriptService/ServerSource/Server/TutorialService.lua
++++ after/src/ServerScriptService/ServerSource/Server/TutorialService.lua
+@@ -114,8 +114,10 @@
+   end
+   if pet then
+    local actual=pet.Location=='Sanctuary' and Display.GetSlot(player,pet.LocationSlot)
+-   if actual and (p.Step~=4 or p.SlotId==pet.LocationSlot or resuming) then p.SlotId=pet.LocationSlot;p.Step=5
+-   elseif p.Step==5 then p.Step=3;p.SlotId=nil end
++   -- The suggested empty slot is guidance, not a requirement to move an already placed pet.
++   -- Any real owned Sanctuary slot completes PLACE; normal prompt text never selects objectives.
++   if actual then p.SlotId=pet.LocationSlot;p.Step=5
++   elseif p.Step==5 then p.Step=4;p.SlotId=nil end
+    if p.Step==3 and pet.Location=='Held' and data.ActiveHeldPetUID==pet.UID and Knit.GetService('PlotService'):IsNearOwnPlot(player) then p.Step=4 end
+    if p.Step==4 then
+     local slot=p.SlotId and Display.GetSlot(player,p.SlotId)
+@@ -169,6 +171,11 @@
+  Knit.GetService('EggService').Hatched:Connect(function(player,_,biome,result)self:Awarded(player,biome,result)end)
+  Knit.GetService('PlotService').Collected:Connect(function(player,amount)self:Collected(player,amount)end)
+  Knit.GetService('ProfileService').Loaded:Connect(function(player)self:Reconcile(player,true)end)
++ Knit.GetService('ProfileService').UpdateSpecificData:Connect(function(player,path)
++  if path[1]~='Pets' and path[1]~='ActiveHeldPetUID' then return end
++  local data=Data:Get(player);local p=data and data.TutorialProgress
++  if p and p.Step>=3 and p.Step<=5 then self:Reconcile(player)end
++ end)
+  Players.PlayerRemoving:Connect(function(player)sessions[player]=nil end)
+  task.spawn(function()while true do task.wait(.5);for _,p in ipairs(Players:GetPlayers())do self:Reconcile(p)end end end)
+ end
+--- before/src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua
++++ after/src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua
+@@ -16,7 +16,11 @@
+  self.Connection=Run.Heartbeat:Connect(function(dt)self.Elapsed+=dt;if self.Elapsed>=.15 then self.Elapsed=0;self:Tick()end end)
+  return self
+ end
+-function M:Update(data)self.Data=data end
++function M:Update(data)
++ self.Data=data
++ local p=data and data.TutorialProgress
++ if p and p.Step>=3 and p.Step<=5 then self:Tick()end
++end
+ function M:Point(target)
+  if target and target~=self.LastTarget then
+   local ancestor=target.Parent
+@@ -57,7 +61,7 @@
+  local close=root and (root.Position-position).Magnitude<=(near or 9) and (not prompt or prompt.Enabled)
+  self.Pointer:World(close and nil or position,prompt and not prompt.Enabled and .6 or near,close and highlight or nil)
+  self:Point(close and prompt and self:Prompt(prompt) or nil)
+- if close and prompt and not self.LastTarget then self:Message('Face the highlighted spot to use its '..(prompt.Name=='GatherPrompt' and 'Search' or prompt.ActionText)..' prompt.')end
++ if close and prompt and not self.LastTarget then self:Message('Face the highlighted spot to use its '..(prompt.Name=='GatherPrompt' and 'Search' or 'PLACE')..' prompt.')end
+ end
+ function M:Hold(pet)
+  if not pet then return false end
+@@ -107,24 +111,36 @@
+  if self.Screen:GetAttribute('OnboardingActive')~=(active==true)then self.Screen:SetAttribute('OnboardingActive',active==true)end
+  self.Card.Visible=active==true and not self.Ctx.Manager.Modal
+  if not enabled then self.Pointer:Clear();self:HideCompletion();return end
+- if p.Step~=self.LastStep then
+-  if self.LastStep==1 and p.Step==2 and self.Ctx.Manager.Active=='Biomes' then self.Ctx.Close()end
+-  if p.Step==1 then self.OpenedWelcome=false end
+-  self.LastStep=p.Step;self.Pointer:Clear();self.LastTarget=nil
++ local pet=L.Find(d,p.PetUID)
++ local step=p.Step
++ -- Pets and TutorialProgress can arrive in separate profile updates. Clear the old
++ -- PLACE target as soon as canonical placement arrives, before its prompt changes to PICK UP.
++ if step>=3 and step<=5 and pet then
++  if pet.Location=='Sanctuary' then
++   local sanctuaries=workspace:FindFirstChild('Sanctuaries');local own=sanctuaries and sanctuaries:FindFirstChild(tostring(player.UserId))
++   local interactions=own and own:FindFirstChild('SlotInteractions')
++   local slot=interactions and interactions:FindFirstChild('Slot_'..tostring(pet.LocationSlot))
++   if not slot then self.Pointer:Clear();self:Message('Your Sanctuary is getting ready…');return end
++   step=5
++  elseif step==5 then step=4 end
+  end
+- if p.Step==6 then self:Finish();return else self:HideCompletion()end
++ if step~=self.LastStep then
++  if self.LastStep==1 and step==2 and self.Ctx.Manager.Active=='Biomes' then self.Ctx.Close()end
++  if step==1 then self.OpenedWelcome=false end
++  self.LastStep=step;self.Pointer:Clear();self.LastTarget=nil
++ end
++ if step==6 then self:Finish();return else self:HideCompletion()end
+  if not self.Card.Visible then self.Pointer:Clear();return end
+  local compact=self.Root.AbsoluteSize.X<900 or self.Root.AbsoluteSize.Y<580
+  self.Card.Size=UDim2.fromOffset(math.min(420,self.Root.AbsoluteSize.X-16),66)
+  self.Card.Position=UDim2.new(.5,0,0,compact and 0 or 72)
+- self.Title.Text=Definitions[p.Step].Title;self.Body.Text=Definitions[p.Step].Text
+- local pet=L.Find(d,p.PetUID)
+- if p.Step==1 then
++ self.Title.Text=Definitions[step].Title;self.Body.Text=Definitions[step].Text
++ if step==1 then
+   self.Pointer:World(nil)
+   if not self.OpenedWelcome then self.OpenedWelcome=true;if self.Ctx.Manager.Active~='Biomes'then self.Ctx.Open('Biomes')end end
+   self:Point(self:Find(self.Ctx.Manager.Active=='Biomes' and 'Travel_Meadow' or 'Nav_Biomes'))
+   if #d.Pets>0 then self:Message('Travel to the Meadow and search for a pet.')end
+- elseif p.Step==2 then
++ elseif step==2 then
+   if pet then
+    self.Pointer:World(nil);self:Point(nil);self:Message('Meet your new companion, then continue!')
+    local now=workspace:GetServerTimeNow()
+@@ -140,20 +156,19 @@
+     self:World(position,prompt,tree,11)
+    else self.Pointer:World(nil);self:Point(nil);self:Message('Finding an available Meadow tree…')end
+   end
+- elseif p.Step==3 then
++ elseif step==3 then
+   if not self:Hold(pet)then self:Travel('Plot')end
+- elseif p.Step==4 then
++ elseif step==4 then
+   if self:Hold(pet)then return end
+   local sanctuaries=workspace:FindFirstChild('Sanctuaries');local own=sanctuaries and sanctuaries:FindFirstChild(tostring(player.UserId));local interactions=own and own:FindFirstChild('SlotInteractions')
+   local slot=interactions and interactions:FindFirstChild('Slot_'..tostring(p.SlotId))
+-  if pet and pet.Location=='Sanctuary' and pet.LocationSlot~=p.SlotId and interactions then
+-   slot=interactions:FindFirstChild('Slot_'..pet.LocationSlot)
+-   self:Message('Pick up your pet so you can place it in the marked slot.')
+-  end
+-  if slot then
+-   if (root.Position-slot.Position).Magnitude>180 or player:GetAttribute('InGarden')then self:Travel('Plot')else self:World(slot.Position,slot:FindFirstChild('SanctuaryPetSlotPrompt'),slot,8)end
+-  else self:Point(nil);self:Message('Your Sanctuary is getting ready…')end
+- elseif p.Step==5 then
++  if slot and not L.At(d,'Sanctuary',p.SlotId) then
++   local prompt=slot:FindFirstChild('SanctuaryPetSlotPrompt')
++   -- Prompt state may lag the pet snapshot. Never emphasize normal PICK UP/SWAP UI.
++   if prompt and prompt.ActionText~='PLACE' then self.Pointer:Clear();self.LastTarget=nil;return end
++   if (root.Position-slot.Position).Magnitude>180 or player:GetAttribute('InGarden')then self:Travel('Plot')else self:World(slot.Position,prompt,slot,8)end
++  else self.Pointer:Clear();self.LastTarget=nil;self:Message('Finding an empty Sanctuary slot…')end
++ elseif step==5 then
+   local plots=workspace:FindFirstChild('PlayerPlots');local pad
+   if plots then for _,plot in ipairs(plots:GetChildren())do if plot:GetAttribute('OwnerUserId')==player.UserId then pad=plot:FindFirstChild('IncomeCollector');break end end end
+   if pad then
+--- before/tests/tutorial-held/Backend.server.lua
++++ after/tests/tutorial-held/Backend.server.lua
+@@ -42,8 +42,11 @@
+  local selected=d.TutorialProgress.SlotId;local wrong=selected==1 and 2 or 1;local wrongSlot=Display.GetSlot(p,wrong)
+  p.Character:PivotTo(CFrame.new(wrongSlot.Surface+Vector3.new(0,3,0)))
+  check(P:SwapSanctuary(p,a.LocationSlot,wrong,a.UID,''),'normal placement in another slot still works')
+- T:Reconcile(p);check(d.TutorialProgress.Step==4 and d.TutorialProgress.SlotId==selected,'wrong live slot does not satisfy selected-slot objective')
+- check(P:SwapSanctuary(p,0,wrong,'',a.UID),'recover same pet through normal pickup')
++ task.wait();check(d.TutorialProgress.Step==5 and d.TutorialProgress.SlotId==wrong,'another valid slot immediately completes PLACE through canonical profile update')
++ for _=1,5 do T:Reconcile(p);check(d.TutorialProgress.Step==5,'placed pet stays on collection objective')end
++ check(P:SwapSanctuary(p,0,wrong,'',a.UID),'normal manual pickup remains available')
++ task.wait();check(d.TutorialProgress.Step==4 and not L.At(d,'Sanctuary',d.TutorialProgress.SlotId),'manual pickup returns to PLACE with an empty slot')
++ selected=d.TutorialProgress.SlotId
+  local target=Display.GetSlot(p,selected);p.Character:PivotTo(CFrame.new(target.Surface+Vector3.new(0,3,0)));local stats=fingerprint(a)
+  check(P:SwapSanctuary(p,a.LocationSlot,selected,a.UID,''),'place at selected physical slot')
+  T:Reconcile(p);check(d.TutorialProgress.Step==5 and a.LocationSlot==selected and fingerprint(a)==stats,'exact selected placement advances without changing stats')

@@ -1,0 +1,42 @@
+--- baseline/src/ServerScriptService/ServerSource/Server/SanctuaryService.lua
++++ src/ServerScriptService/ServerSource/Server/SanctuaryService.lua
+@@ -21,11 +21,11 @@
+ 	for _, uniqueId in ipairs(data.DisplayedPetIds) do
+ 		local owned = ownedById[uniqueId]
+ 		local definition = owned and Pets[owned.PetId]
+-		if definition then income += definition.CoinsPerSecond end
++		if definition then income += definition.BaseIncomePerSecond or definition.CoinsPerSecond end
+ 	end
+ 	for _, uid in ipairs(data.EquippedPets) do
+   local pet = ownedById[uid]
+-  if pet then income += PetMath.Power(pet) * .02 * (1 + data.PlotProgression.Level * .1) end
++  if pet and not (Pets[pet.PetId] and Pets[pet.PetId].IsMeadowPet) then income += PetMath.Power(pet) * .02 * (1 + data.PlotProgression.Level * .1) end
+  end
+  return math.min(income, 1e12)
+ end
+@@ -55,7 +55,16 @@
+ 	if type(uniquePetId) ~= "string" or type(displayed) ~= "boolean" or not Guard.RateLimit(player, "Display", 0.15) then return false end
+ 	SanctuaryService:Accrue(player)
+ 	local data = DataService:Get(player)
+-	if not data or not PetService:FindOwned(data, uniquePetId) then return false end
++	local owned=data and PetService:FindOwned(data,uniquePetId)
++ if not owned then return false end
++ local definition=Pets[owned.PetId]
++ if definition and definition.IsMeadowPet then
++  if not Knit.GetService("PlotService"):IsNearOwnPlot(player) then return false,"Visit your plot to display this pet" end
++  if displayed then
++   local model,issue=require(ReplicatedStorage.Shared.Gameplay.PetModelValidation).Resolve(owned.PetId)
++   if not model then return false,issue end
++  end
++ end
+ 	local list = table.clone(data.DisplayedPetIds)
+ 	local found
+ 	for index, id in ipairs(list) do if id == uniquePetId then found = index break end end
+@@ -83,6 +92,7 @@
+ end
+ 
+ function SanctuaryService:KnitStart()
++ require(script.Parent.Parent.Utilities.MeadowSanctuaryDisplay).Start()
+ 	Players.PlayerAdded:Connect(function(player) joinedAt[player] = workspace:GetServerTimeNow() end)
+ 	Players.PlayerRemoving:Connect(function(player)
+ 		lastOnlineAccrual[player] = nil

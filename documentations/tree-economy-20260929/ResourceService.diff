@@ -1,0 +1,56 @@
+--- before/ResourceService
++++ src/ServerScriptService/ServerSource/Server/ResourceService.lua
+@@ -8,6 +8,7 @@
+ local BiomeDefinitions=require(RS.Shared.Gameplay.Definitions.BiomeDefinitions)
+ local TreeShake=require(RS.Shared.Gameplay.TreeShakeMotion)
+ local Eggs=require(RS.Shared.Gameplay.Definitions.EggDefinitions)
++local Format=require(RS.Shared.Gameplay.PetNumberFormat)
+ local Resource=Knit.CreateService({Name="ResourceService",Client={},Harvested=Signal.new()})
+ local records,shaking={},{}
+ local busy=setmetatable({},{__mode="k"})
+@@ -61,12 +62,12 @@
+   local treeDefinitions=biome=="Meadow" and RS.Shared.Gameplay.Definitions.MeadowTreeDefinitions or RS.Shared.Gameplay.Definitions.ForestTreeDefinitions
+   local def=require(treeDefinitions).Get(object,biome)
+   if def and biome=="Forest" then object:SetAttribute("TreeTier",def.Tier);object:SetAttribute("RewardPoolId",def.Id);object:SetAttribute("ShakeableId",def.Id) end
+-  prompt.ActionText=def and ("SEARCH · "..def.Cost.." Forest Coins") or "UNAVAILABLE"
++  prompt.ActionText=def and ("SEARCH · "..Format.Number(def.Cost).." Forest Coins") or "UNAVAILABLE"
+   prompt.ObjectText=def and def.DisplayName or biome.." Tree"
+  elseif isTree and BiomeDefinitions.IsContentReady(biome) then
+   local def=Eggs[object:GetAttribute("RewardPoolId") or BiomeDefinitions[biome].EggId]
+   if def and def.Biome==biome then
+-   prompt.ActionText=def.CanonicalPool and ("SEARCH · "..def.Cost.." Forest Coins") or "SHAKE TREE"
++   prompt.ActionText=def.CanonicalPool and ("SEARCH · "..Format.Number(def.Cost).." Forest Coins") or "SHAKE TREE"
+    prompt.ObjectText=def.DisplayName or biome.." Tree"
+   end
+  end
+@@ -124,14 +125,18 @@
+   local remotes=RS:FindFirstChild("AnimalKingdomRemotes")
+   if remotes and remotes:FindFirstChild("GameplayFeedback") and Guard.IsPlayer(player) then remotes.GameplayFeedback:FireClient(player,{Action="TreeHatch",Success=true,Result=result}) end
+  end
+- -- Secondary economy/XP drops preserve existing progression; an egg is the primary reward.
++ -- Paid normal searches purchase one companion. The legacy resource coin roll
++ -- scales with gathering upgrades and can refund more than the canonical price.
++ -- Keep that loot on resource gathering; keep search XP/progression unchanged.
+  local ok,err=pcall(function()
+-  local power=Pets:GetGatheringPower(player)
+-  local multiplier=Modifiers:Get(player,"ResourceRewards",record.Biome)*(1+math.min(power,5000)/50)
+-  Loot:Reward(player,record.Table,multiplier,"Gather")
+-  local weather=Knit.GetService("WeatherGameplayService"):GetEventId()
+-  if weather=="MeteorShower" then Loot:Reward(player,"MeteorLoot",1,"Weather")
+-  elseif weather=="Thunderstorm" then Loot:Reward(player,"StormLoot",1,"Weather") end
++  if not (record.IsTree and result and result.PoolId) then
++   local power=Pets:GetGatheringPower(player)
++   local multiplier=Modifiers:Get(player,"ResourceRewards",record.Biome)*(1+math.min(power,5000)/50)
++   Loot:Reward(player,record.Table,multiplier,"Gather")
++   local weather=Knit.GetService("WeatherGameplayService"):GetEventId()
++   if weather=="MeteorShower" then Loot:Reward(player,"MeteorLoot",1,"Weather")
++   elseif weather=="Thunderstorm" then Loot:Reward(player,"StormLoot",1,"Weather") end
++  end
+   Pets:AddEquippedXP(player,10)
+  end)
+  if not ok then warn("[ResourceService] Secondary reward failed: "..tostring(err)) end
+@@ -166,4 +171,3 @@
+  end)
+ end
+ return Resource
+-

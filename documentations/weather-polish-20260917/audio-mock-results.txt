@@ -1,0 +1,1 @@
+[WeatherAudioMock] PASS 3559 assertions;18 event lifecycles plus full420s Chaos/Admin audio-visual phase alignment, positional cues, thunder synchronization, caps, missing slots, fades, replacement, cleanup

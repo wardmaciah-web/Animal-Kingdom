@@ -1,0 +1,15 @@
+--- baseline/src/ServerScriptService/ServerSource/Server/WorldContentService.lua
++++ src/ServerScriptService/ServerSource/Server/WorldContentService.lua
+@@ -31,7 +31,11 @@
+   object:SetAttribute("BiomeId",entry.Biome);object:SetAttribute("ResourceType","Tree")
+   object:SetAttribute("AuthoredGatherableTree",true);object:SetAttribute("RespawnTime",20)
+   object:SetAttribute("InteractionPosition",entry.InteractionPosition)
+-  object:SetAttribute("EggId",Biomes[entry.Biome].EggId)
++  if entry.Biome=="Meadow" then
++   local def,issue=require(RS.Shared.Gameplay.Definitions.MeadowTreeDefinitions).Get(object,entry.Biome)
++   object:SetAttribute("EggId",def and def.Id or nil)
++   if not def then warn("[MeadowTrees] "..issue) end
++  else object:SetAttribute("EggId",Biomes[entry.Biome].EggId) end
+   Collection:AddTag(object,"GatherableTree");counts[entry.Biome]+=1
+  end
+  self.Counts=counts

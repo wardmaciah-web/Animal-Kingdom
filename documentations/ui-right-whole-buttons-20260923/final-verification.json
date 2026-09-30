@@ -1,0 +1,11 @@
+{
+  "Device": "default",
+  "Mode": "Edit",
+  "CameraRestored": true,
+  "PlaceId": 132313449035787,
+  "SourcesMatch": {
+    "HUD": true,
+    "RightHudButton": true
+  },
+  "Published": false
+}

@@ -1,0 +1,13 @@
+--- baseline/src/ServerScriptService/ServerSource/Server/GameplayService.lua
++++ src/ServerScriptService/ServerSource/Server/GameplayService.lua
+@@ -12,7 +12,9 @@
+ end
+ function Service:Dispatch(player,action,p)
+  local pets=Knit.GetService("PetService")
+- if action=="Equip" then return pets:Equip(player,p.UID,p.Equipped)
++ if action=="PetAssetsLoaded" then return require(script.Parent.Parent.Utilities.MeadowPoolReadiness).Acknowledge(player,p.Id,p.Signature,p.Loaded)
++ elseif action=="DisplayMeadowPet" then return Knit.GetService("SanctuaryService").Client:SetPetDisplayed(player,p.UID,p.Displayed)
++ elseif action=="Equip" then return pets:Equip(player,p.UID,p.Equipped)
+  elseif action=="Favorite" then return pets:Flag(player,p.UID,"Favorite",p.Value)
+  elseif action=="Lock" then return pets:Flag(player,p.UID,"Locked",p.Value)
+  elseif action=="RequestDelete" then return pets:RequestDelete(player,p.UID)

@@ -1,0 +1,562 @@
+[
+  {
+    "path": "Workspace.Prehistoric_Decor_Root_5_40",
+    "position": [
+      -534.6265,
+      104.059,
+      -187.785
+    ],
+    "bottom": 103.0904,
+    "supportY": 7.8289,
+    "support": "Workspace.AnimalKingdomConcreteGround",
+    "gap": 95.2614,
+    "parts": 1,
+    "nearbySupportY": 7.8289,
+    "nearbySupport": "Workspace.AnimalKingdomConcreteGround",
+    "conservativeGap": 95.2615
+  },
+  {
+    "path": "Workspace.Prehistoric_Decor_log_large_79",
+    "position": [
+      -541.6841,
+      104.676,
+      -183.0373
+    ],
+    "bottom": 103.0904,
+    "supportY": 7.8289,
+    "support": "Workspace.AnimalKingdomConcreteGround",
+    "gap": 95.2614,
+    "parts": 1,
+    "nearbySupportY": 7.8289,
+    "nearbySupport": "Workspace.AnimalKingdomConcreteGround",
+    "conservativeGap": 95.2615
+  },
+  {
+    "path": "Workspace.Mythical_Decor_Root_6_71",
+    "position": [
+      140.3931,
+      102.3895,
+      -254.2545
+    ],
+    "bottom": 100.3252,
+    "supportY": 7.8289,
+    "support": "Workspace.AnimalKingdomConcreteGround",
+    "gap": 92.4963,
+    "parts": 1,
+    "nearbySupportY": 7.8289,
+    "nearbySupport": "Workspace.AnimalKingdomConcreteGround",
+    "conservativeGap": 92.4963
+  },
+  {
+    "path": "Workspace.Forest_Decor_plant_bushDetailed_11",
+    "position": [
+      136.4401,
+      46.4707,
+      209.7041
+    ],
+    "bottom": 44.1785,
+    "supportY": 10.129,
+    "support": "Workspace.Forest.ForestFloor",
+    "gap": 34.0496,
+    "parts": 1,
+    "nearbySupportY": 10.129,
+    "nearbySupport": "Workspace.Forest.ForestFloor",
+    "conservativeGap": 34.0495
+  },
+  {
+    "path": "Workspace.Volcano_Decor_stone_largeD_5",
+    "position": [
+      -378.7874,
+      23.4931,
+      755.7157
+    ],
+    "bottom": 19.0181,
+    "supportY": 10.55,
+    "support": "Workspace.Volcano.VolcanoFloor",
+    "gap": 8.4681,
+    "parts": 1,
+    "nearbySupportY": 10.55,
+    "nearbySupport": "Workspace.Volcano.VolcanoFloor",
+    "conservativeGap": 8.4681
+  },
+  {
+    "path": "Workspace.tree_fat_V5_020",
+    "position": [
+      -556.527,
+      38.7602,
+      -142.4922
+    ],
+    "bottom": 23.1098,
+    "supportY": 10.85,
+    "support": "Workspace.Sky.SkyFloor",
+    "gap": 12.2598,
+    "parts": 1,
+    "nearbySupportY": 18.1101,
+    "nearbySupport": "Workspace.Sky_Decor_rock_smallFlatB_47.rock_smallFlatB",
+    "conservativeGap": 4.9997
+  },
+  {
+    "path": "Workspace.MagicalForestTree_003_AK_OldMagicalTree_1",
+    "position": [
+      -651.9264,
+      26.1723,
+      259.894
+    ],
+    "bottom": 10.2645,
+    "supportY": 7.8289,
+    "support": "Workspace.AnimalKingdomConcreteGround",
+    "gap": 2.4355,
+    "parts": 2,
+    "nearbySupportY": 7.8289,
+    "nearbySupport": "Workspace.AnimalKingdomConcreteGround",
+    "conservativeGap": 2.4356
+  },
+  {
+    "path": "Workspace.Desert_Decor_Rock_6_28",
+    "position": [
+      105.8097,
+      18.5517,
+      777.5697
+    ],
+    "bottom": 15.1309,
+    "supportY": 10.1289,
+    "support": "Workspace.Desert.DesertFloor",
+    "gap": 5.002,
+    "parts": 1,
+    "nearbySupportY": 15.1309,
+    "nearbySupport": "Workspace.Desert_Decor_rock_smallFlatA_22.rock_smallFlatA",
+    "conservativeGap": -0.0
+  },
+  {
+    "path": "Workspace.Desert_Decor_Rock_3_11",
+    "position": [
+      112.9928,
+      16.1389,
+      612.8173
+    ],
+    "bottom": 13.022,
+    "supportY": 10.1289,
+    "support": "Workspace.Desert.DesertFloor",
+    "gap": 2.8931,
+    "parts": 1,
+    "nearbySupportY": 13.022,
+    "nearbySupport": "Workspace.Desert_Decor_rock_smallFlatA_30.rock_smallFlatA",
+    "conservativeGap": -0.0
+  },
+  {
+    "path": "Workspace.Desert_Decor_Rock_6_36",
+    "position": [
+      104.618,
+      16.5294,
+      614.2114
+    ],
+    "bottom": 13.022,
+    "supportY": 10.1289,
+    "support": "Workspace.Desert.DesertFloor",
+    "gap": 2.8931,
+    "parts": 1,
+    "nearbySupportY": 13.022,
+    "nearbySupport": "Workspace.Desert_Decor_rock_smallFlatA_30.rock_smallFlatA",
+    "conservativeGap": -0.0
+  },
+  {
+    "path": "Workspace.Cactus_5_V5_001",
+    "position": [
+      265.0378,
+      27.095,
+      619.0569
+    ],
+    "bottom": 14.2076,
+    "supportY": 10.1289,
+    "support": "Workspace.Desert.DesertFloor",
+    "gap": 4.0786,
+    "parts": 1,
+    "nearbySupportY": 14.2077,
+    "nearbySupport": "Workspace.Desert_Decor_rock_smallFlatA_14.rock_smallFlatA",
+    "conservativeGap": -0.0001
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_3_52",
+    "position": [
+      -170.0735,
+      14.6029,
+      638.2946
+    ],
+    "bottom": 12.3726,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 3.2437,
+    "parts": 1,
+    "nearbySupportY": 12.3729,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_47.stone_smallFlatC",
+    "conservativeGap": -0.0003
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_3_20",
+    "position": [
+      -160.2152,
+      16.406,
+      602.97
+    ],
+    "bottom": 14.3861,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 5.2572,
+    "parts": 1,
+    "nearbySupportY": 14.3866,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_31.stone_smallFlatC",
+    "conservativeGap": -0.0005
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_5_21",
+    "position": [
+      -168.1053,
+      16.0303,
+      604.85
+    ],
+    "bottom": 14.3861,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 5.2572,
+    "parts": 1,
+    "nearbySupportY": 14.3866,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_31.stone_smallFlatC",
+    "conservativeGap": -0.0005
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_3_60",
+    "position": [
+      11.2203,
+      19.2305,
+      741.5352
+    ],
+    "bottom": 15.948,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.8191,
+    "parts": 1,
+    "nearbySupportY": 15.9486,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_23.stone_smallFlatC",
+    "conservativeGap": -0.0006
+  },
+  {
+    "path": "Workspace.Snow_Decor_WoodLog_Snow_46",
+    "position": [
+      -0.6574,
+      17.7538,
+      732.1487
+    ],
+    "bottom": 15.948,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.8191,
+    "parts": 1,
+    "nearbySupportY": 15.9486,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_23.stone_smallFlatC",
+    "conservativeGap": -0.0006
+  },
+  {
+    "path": "Workspace.Snow_Decor_WoodLog_Snow_38",
+    "position": [
+      -7.1628,
+      17.1554,
+      723.6409
+    ],
+    "bottom": 15.948,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.8191,
+    "parts": 1,
+    "nearbySupportY": 15.9486,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_23.stone_smallFlatC",
+    "conservativeGap": -0.0006
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_1_11",
+    "position": [
+      7.2717,
+      19.1918,
+      746.7209
+    ],
+    "bottom": 15.948,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.819,
+    "parts": 1,
+    "nearbySupportY": 15.9486,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_23.stone_smallFlatC",
+    "conservativeGap": -0.0006
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_3_28",
+    "position": [
+      -57.7955,
+      17.824,
+      784.0201
+    ],
+    "bottom": 15.9386,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.8097,
+    "parts": 1,
+    "nearbySupportY": 15.9393,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_15.stone_smallFlatC",
+    "conservativeGap": -0.0007
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_5_13",
+    "position": [
+      -67.9183,
+      18.2998,
+      781.5431
+    ],
+    "bottom": 15.9385,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.8096,
+    "parts": 1,
+    "nearbySupportY": 15.9393,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_15.stone_smallFlatC",
+    "conservativeGap": -0.0008
+  },
+  {
+    "path": "Workspace.Prehistoric_Decor_Root_5_58",
+    "position": [
+      -548.5406,
+      104.902,
+      -217.1271
+    ],
+    "bottom": 103.0904,
+    "supportY": 7.8289,
+    "support": "Workspace.AnimalKingdomConcreteGround",
+    "gap": 95.2614,
+    "parts": 1,
+    "nearbySupportY": 103.1404,
+    "nearbySupport": "Workspace.CommonTree_Snow_5_V5_014.CommonTree_Snow_5.CommonTree_Snow_5",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Tree_Oak_7_V5_025",
+    "position": [
+      117.9915,
+      52.0381,
+      419.5182
+    ],
+    "bottom": 35.618,
+    "supportY": 9.1289,
+    "support": "Workspace.Jungle.JungleFloor",
+    "gap": 26.4891,
+    "parts": 6,
+    "nearbySupportY": 35.668,
+    "nearbySupport": "Workspace.CommonTree_5_V5_042.CommonTree_5.CommonTree_5",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Tree_Cedar_2_V5_004",
+    "position": [
+      -663.6218,
+      40.4863,
+      470.6855
+    ],
+    "bottom": 23.0418,
+    "supportY": 11.55,
+    "support": "Workspace.AncientRuins.AncientRuinsFloor",
+    "gap": 11.4918,
+    "parts": 2,
+    "nearbySupportY": 23.0918,
+    "nearbySupport": "Workspace.AK_AncientRuins_AltarRuins.Sketchfab_model.root.GLTF_SceneRootNode.UnityGlTF_correctionMatrix_0.node_Platform_-3306_4.Object_11.Object_3",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Volcano_Decor_Rock_9_11",
+    "position": [
+      -339.5509,
+      21.1906,
+      788.0559
+    ],
+    "bottom": 19.3311,
+    "supportY": 10.55,
+    "support": "Workspace.Volcano.VolcanoFloor",
+    "gap": 8.7811,
+    "parts": 1,
+    "nearbySupportY": 19.3811,
+    "nearbySupport": "Workspace.Volcano island lowpoly.Volcano_Base",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Volcano_Decor_stone_tallF_46",
+    "position": [
+      -334.2152,
+      20.7464,
+      790.7264
+    ],
+    "bottom": 18.5332,
+    "supportY": 10.55,
+    "support": "Workspace.Volcano.VolcanoFloor",
+    "gap": 7.9832,
+    "parts": 1,
+    "nearbySupportY": 18.5832,
+    "nearbySupport": "Workspace.Volcano island lowpoly.Volcano_Base",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.MagicalForestTree_006_AK_LowpolyWillow",
+    "position": [
+      -602.9066,
+      32.2617,
+      196.4734
+    ],
+    "bottom": 18.3187,
+    "supportY": 10.5367,
+    "support": "Workspace.MagicalForest.MagicalForestFloor",
+    "gap": 7.782,
+    "parts": 4,
+    "nearbySupportY": 18.3687,
+    "nearbySupport": "Workspace.MagicalForestTree_021_AK_MagicTree.TRUNK_LP_TRUNK_LP_0",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.tree_fat_V5_019",
+    "position": [
+      -575.4758,
+      47.5637,
+      -164.5239
+    ],
+    "bottom": 18.1094,
+    "supportY": 10.85,
+    "support": "Workspace.Sky.SkyFloor",
+    "gap": 7.2594,
+    "parts": 1,
+    "nearbySupportY": 18.1594,
+    "nearbySupport": "Workspace.CommonTree_Snow_5_V5_014.CommonTree_Snow_5.CommonTree_Snow_5",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.MagicalForestTree_007_AK_LowpolyWillow",
+    "position": [
+      -583.8896,
+      29.3279,
+      222.4016
+    ],
+    "bottom": 17.2445,
+    "supportY": 10.5367,
+    "support": "Workspace.MagicalForest.MagicalForestFloor",
+    "gap": 6.7078,
+    "parts": 4,
+    "nearbySupportY": 17.2945,
+    "nearbySupport": "Workspace.MagicalForest_Decor_Rock_Moss_6_40.Rock_Moss_6",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_5_29",
+    "position": [
+      -30.566,
+      18.656,
+      771.7953
+    ],
+    "bottom": 15.3158,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.1869,
+    "parts": 1,
+    "nearbySupportY": 15.3658,
+    "nearbySupport": "Workspace.Willow_Snow_5_V5_008.Willow_Snow_5.Willow_Snow_5",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_1_43",
+    "position": [
+      -39.5265,
+      17.6275,
+      772.8684
+    ],
+    "bottom": 15.3159,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.1869,
+    "parts": 1,
+    "nearbySupportY": 15.3659,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_15.stone_smallFlatC",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_3_4",
+    "position": [
+      -36.2267,
+      16.946,
+      773.7179
+    ],
+    "bottom": 15.3159,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 6.1869,
+    "parts": 1,
+    "nearbySupportY": 15.3659,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_15.stone_smallFlatC",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Tree_Bare_5_V5_023",
+    "position": [
+      -644.2137,
+      29.9994,
+      488.0968
+    ],
+    "bottom": 15.8547,
+    "supportY": 11.55,
+    "support": "Workspace.AncientRuins.AncientRuinsFloor",
+    "gap": 4.3047,
+    "parts": 1,
+    "nearbySupportY": 15.9047,
+    "nearbySupport": "Workspace.AK_AncientRuins_CleanDecor.AncientRuins_Decor_statue_columnDamaged_20.statue_columnDamaged",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Snow_Decor_Rock_Snow_5_53",
+    "position": [
+      -63.6271,
+      18.4231,
+      787.392
+    ],
+    "bottom": 13.2166,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 4.0877,
+    "parts": 1,
+    "nearbySupportY": 13.2666,
+    "nearbySupport": "Workspace.Snow_Decor_stone_smallFlatC_15.stone_smallFlatC",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Desert_Decor_Rock_3_3",
+    "position": [
+      275.4597,
+      17.8873,
+      626.1683
+    ],
+    "bottom": 14.2077,
+    "supportY": 10.1289,
+    "support": "Workspace.Desert.DesertFloor",
+    "gap": 4.0788,
+    "parts": 1,
+    "nearbySupportY": 14.2577,
+    "nearbySupport": "Workspace.Cactus_1_V5_008.Cactus_1",
+    "conservativeGap": -0.05
+  },
+  {
+    "path": "Workspace.Snow_Decor_WoodLog_Snow_22",
+    "position": [
+      -104.9133,
+      13.5245,
+      609.377
+    ],
+    "bottom": 12.2963,
+    "supportY": 9.1289,
+    "support": "Workspace.Snow.SnowFloor",
+    "gap": 3.1674,
+    "parts": 1,
+    "nearbySupportY": 12.3463,
+    "nearbySupport": "Workspace.PineTree_Snow_1_V5_018.PineTree_Snow_1.PineTree_Snow_1",
+    "conservativeGap": -0.05
+  }
+]

@@ -1,0 +1,940 @@
+{
+  "UserIds": [
+    3009757271
+  ],
+  "RobloxMetaData": [],
+  "GlobalUpdates": [
+    0,
+    []
+  ],
+  "WasOverwritten": false,
+  "Data": {
+    "PlotProgression": {
+      "Level": 0,
+      "VisitorsAllowed": true,
+      "Placements": []
+    },
+    "RecoveryData": [],
+    "MaxEquippedPets": 3,
+    "GardenCosmetics": {
+      "FlowerCrown": true
+    },
+    "ForestCoins": 671917,
+    "Boosts": [],
+    "SchemaVersion": 3,
+    "EquippedPets": [
+      "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8",
+      "1991c901-3eb0-4a2d-a522-052fa950817d",
+      "6c3f3a15-5ddf-4e53-9997-3d59c2ada327"
+    ],
+    "Pets": [
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "88b9b356-b590-443e-8bb6-be9caf44a0e1",
+        "UID": "88b9b356-b590-443e-8bb6-be9caf44a0e1",
+        "AcquiredAt": 1789700317,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Meadow_Common_01"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "65e4b5d8-f321-47b0-9af0-e5c486d5c68d",
+        "UID": "65e4b5d8-f321-47b0-9af0-e5c486d5c68d",
+        "AcquiredAt": 1789705177,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Golden",
+        "XP": 0,
+        "PetId": "Dog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "cece494b-8261-45c4-8adf-d4c79704b371",
+        "UID": "cece494b-8261-45c4-8adf-d4c79704b371",
+        "AcquiredAt": 1789722072,
+        "Favorite": false,
+        "Level": 2,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 25,
+        "PetId": "Deer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "aad0ddb2-b1ed-4a8a-a000-b4db9e7de154",
+        "UID": "aad0ddb2-b1ed-4a8a-a000-b4db9e7de154",
+        "AcquiredAt": 1789722080,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Cosmetic": "FlowerCrown",
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "167788bf-9be5-467a-8600-4cccd98abb89",
+        "UID": "167788bf-9be5-467a-8600-4cccd98abb89",
+        "AcquiredAt": 1789757429,
+        "Favorite": false,
+        "Level": 2,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 15,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "a2221a4b-5511-406c-b630-1451b3c6fda8",
+        "UID": "a2221a4b-5511-406c-b630-1451b3c6fda8",
+        "AcquiredAt": 1789954846,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Deer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8",
+        "UID": "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8",
+        "AcquiredAt": 1789982370,
+        "Favorite": false,
+        "Level": 3,
+        "Locked": false,
+        "Mutation": "Leafy",
+        "XP": 82,
+        "PetId": "MeadowDaisyCrownBunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "5f85b960-0e0b-40fb-8364-947d929300db",
+        "UID": "5f85b960-0e0b-40fb-8364-947d929300db",
+        "AcquiredAt": 1789982382,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFieldMouse"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "f0953331-4e34-413f-9d87-e5b2990a3c55",
+        "UID": "f0953331-4e34-413f-9d87-e5b2990a3c55",
+        "AcquiredAt": 1789982394,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Dog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "6e04d47c-0747-4f27-8afb-4def8e7ffb41",
+        "UID": "6e04d47c-0747-4f27-8afb-4def8e7ffb41",
+        "AcquiredAt": 1789982400,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "eec05b51-55c3-44cb-846d-78a30db33ab3",
+        "UID": "eec05b51-55c3-44cb-846d-78a30db33ab3",
+        "AcquiredAt": 1789982413,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFieldMouse"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "49a8b957-56cc-4d6f-95e4-18dd54d929ae",
+        "UID": "49a8b957-56cc-4d6f-95e4-18dd54d929ae",
+        "AcquiredAt": 1789985455,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "4daba899-9b8c-4dae-8230-e7301610dd24",
+        "UID": "4daba899-9b8c-4dae-8230-e7301610dd24",
+        "AcquiredAt": 1789985463,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "84912b61-ae62-4796-8219-5870bf0a2abf",
+        "UID": "84912b61-ae62-4796-8219-5870bf0a2abf",
+        "AcquiredAt": 1789985474,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Dog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "8ea2c2a8-9b6f-4686-977b-ce927f42a149",
+        "UID": "8ea2c2a8-9b6f-4686-977b-ce927f42a149",
+        "AcquiredAt": 1789985487,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Deer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "8d1308cb-f442-41c8-bfe6-9aca33659a35",
+        "UID": "8d1308cb-f442-41c8-bfe6-9aca33659a35",
+        "AcquiredAt": 1789986555,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFluffyLop"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "d7fb19bd-940e-466c-8720-0a9b83ac35e7",
+        "UID": "d7fb19bd-940e-466c-8720-0a9b83ac35e7",
+        "AcquiredAt": 1789986561,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowCloudtailFox"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "ac6fa95a-34c0-47ee-8d06-88c252e0d78c",
+        "UID": "ac6fa95a-34c0-47ee-8d06-88c252e0d78c",
+        "AcquiredAt": 1789986586,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Frosted",
+        "XP": 0,
+        "PetId": "MeadowDaisyHedgehog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "6c3f3a15-5ddf-4e53-9997-3d59c2ada327",
+        "UID": "6c3f3a15-5ddf-4e53-9997-3d59c2ada327",
+        "AcquiredAt": 1789986594,
+        "Favorite": false,
+        "Level": 3,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 22,
+        "PetId": "MeadowBlossomBunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "bdb82687-90e7-4409-beeb-fada2009ae8e",
+        "UID": "bdb82687-90e7-4409-beeb-fada2009ae8e",
+        "AcquiredAt": 1789986604,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFawn"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "1991c901-3eb0-4a2d-a522-052fa950817d",
+        "UID": "1991c901-3eb0-4a2d-a522-052fa950817d",
+        "AcquiredAt": 1789986622,
+        "Favorite": false,
+        "Level": 3,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 22,
+        "PetId": "MeadowPrismAntlerDeer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "ed4f09c3-a312-48e7-b735-6080ad11262b",
+        "UID": "ed4f09c3-a312-48e7-b735-6080ad11262b",
+        "AcquiredAt": 1789986721,
+        "Favorite": false,
+        "Level": 2,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 25,
+        "PetId": "Forest_Legendary_03"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "ba8599a4-7696-46ac-aa90-ab3b03eac7f7",
+        "UID": "ba8599a4-7696-46ac-aa90-ab3b03eac7f7",
+        "AcquiredAt": 1790008733,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFluffyLop"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "782ed850-9d6d-492e-9dba-5041bdffe98a",
+        "UID": "782ed850-9d6d-492e-9dba-5041bdffe98a",
+        "AcquiredAt": 1790008740,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowBuck"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "4d518b74-ea19-49a8-b186-125db34eb260",
+        "UID": "4d518b74-ea19-49a8-b186-125db34eb260",
+        "AcquiredAt": 1790101870,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "d7c21aaa-6de6-43b7-a611-f093156224a1",
+        "UID": "d7c21aaa-6de6-43b7-a611-f093156224a1",
+        "AcquiredAt": 1790101882,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Meadow_Uncommon_03"
+      }
+    ],
+    "TutorialCompleted": true,
+    "UnlockedBiomes": {
+      "Forest": true,
+      "Meadow": true
+    },
+    "Stats": {
+      "UnlockBiome": 1,
+      "EarnTokens": 9,
+      "Hatch": 27,
+      "EarnCoins": 671927,
+      "Weather": 46,
+      "Gather": 31,
+      "LastWeatherKey": "Thunderstorm:1790127180.694364"
+    },
+    "SeasonalData": [],
+    "IndexRewards": [],
+    "PetIndex": {
+      "MeadowDaisyCrownBunny": {
+        "Variants": {
+          "Leafy": true
+        },
+        "Count": 1
+      },
+      "MeadowPrismAntlerDeer": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "Bunny": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 6
+      },
+      "MeadowCloudtailFox": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "Meadow_Common_01": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "MeadowFluffyLop": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 2
+      },
+      "MeadowFawn": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "MeadowFieldMouse": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 2
+      },
+      "Dog": {
+        "Variants": {
+          "Normal": true,
+          "Golden": true
+        },
+        "Count": 3
+      },
+      "Meadow_Uncommon_03": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "Forest_Legendary_03": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "MeadowBlossomBunny": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "MeadowBuck": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 1
+      },
+      "Deer": {
+        "Variants": {
+          "Normal": true
+        },
+        "Count": 4
+      },
+      "MeadowDaisyHedgehog": {
+        "Variants": {
+          "Frosted": true
+        },
+        "Count": 1
+      }
+    },
+    "WeeklyChallenges": {
+      "PeriodStart": 1789948800,
+      "Entries": {
+        "Unlock2": {
+          "Target": 2,
+          "Type": "UnlockBiome",
+          "Claimed": false,
+          "Progress": 1
+        },
+        "Hatch100": {
+          "Target": 100,
+          "Type": "Hatch",
+          "Claimed": false,
+          "Progress": 22
+        },
+        "Coins250000": {
+          "Target": 250000,
+          "Type": "EarnCoins",
+          "Claimed": false,
+          "Progress": 250000
+        },
+        "Trees500": {
+          "Target": 500,
+          "Type": "Gather",
+          "Claimed": false,
+          "Progress": 22
+        },
+        "Weather10": {
+          "Target": 10,
+          "Type": "Weather",
+          "Claimed": false,
+          "Progress": 10
+        }
+      },
+      "ResetAt": 1790553600
+    },
+    "Currencies": {
+      "Coins": 671917,
+      "FriendshipTokens": 34,
+      "GardenHarvest": 223
+    },
+    "DataVersion": 3,
+    "DailyChallenges": {
+      "PeriodStart": 1790121600,
+      "Entries": {
+        "Weather1": {
+          "Target": 1,
+          "Type": "Weather",
+          "Claimed": false,
+          "Progress": 1
+        },
+        "Trees50": {
+          "Target": 50,
+          "Type": "Gather",
+          "Claimed": false,
+          "Progress": 0
+        },
+        "Tokens20": {
+          "Target": 20,
+          "Type": "EarnTokens",
+          "Claimed": false,
+          "Progress": 0
+        },
+        "Coins5000": {
+          "Target": 5000,
+          "Type": "EarnCoins",
+          "Claimed": false,
+          "Progress": 0
+        },
+        "Trees20": {
+          "Target": 20,
+          "Type": "Gather",
+          "Claimed": false,
+          "Progress": 0
+        },
+        "Hatch5": {
+          "Target": 5,
+          "Type": "Hatch",
+          "Claimed": false,
+          "Progress": 0
+        }
+      },
+      "ResetAt": 1790208000
+    },
+    "Upgrades": [],
+    "TutorialProgress": {
+      "Assisted": true,
+      "Step": 14,
+      "Gathered": true
+    },
+    "FriendshipTokens": 34,
+    "NumNomIndex": [],
+    "PetStorageCapacity": 50,
+    "UncollectedSanctuaryCoins": 66109,
+    "UnlockedDecorations": [],
+    "GardenExpeditions": [],
+    "OwnedPets": [
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "88b9b356-b590-443e-8bb6-be9caf44a0e1",
+        "UID": "88b9b356-b590-443e-8bb6-be9caf44a0e1",
+        "AcquiredAt": 1789700317,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Meadow_Common_01"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "65e4b5d8-f321-47b0-9af0-e5c486d5c68d",
+        "UID": "65e4b5d8-f321-47b0-9af0-e5c486d5c68d",
+        "AcquiredAt": 1789705177,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Golden",
+        "XP": 0,
+        "PetId": "Dog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "cece494b-8261-45c4-8adf-d4c79704b371",
+        "UID": "cece494b-8261-45c4-8adf-d4c79704b371",
+        "AcquiredAt": 1789722072,
+        "Favorite": false,
+        "Level": 2,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 25,
+        "PetId": "Deer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "aad0ddb2-b1ed-4a8a-a000-b4db9e7de154",
+        "UID": "aad0ddb2-b1ed-4a8a-a000-b4db9e7de154",
+        "AcquiredAt": 1789722080,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Cosmetic": "FlowerCrown",
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "167788bf-9be5-467a-8600-4cccd98abb89",
+        "UID": "167788bf-9be5-467a-8600-4cccd98abb89",
+        "AcquiredAt": 1789757429,
+        "Favorite": false,
+        "Level": 2,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 15,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "a2221a4b-5511-406c-b630-1451b3c6fda8",
+        "UID": "a2221a4b-5511-406c-b630-1451b3c6fda8",
+        "AcquiredAt": 1789954846,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Deer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8",
+        "UID": "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8",
+        "AcquiredAt": 1789982370,
+        "Favorite": false,
+        "Level": 3,
+        "Locked": false,
+        "Mutation": "Leafy",
+        "XP": 82,
+        "PetId": "MeadowDaisyCrownBunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "5f85b960-0e0b-40fb-8364-947d929300db",
+        "UID": "5f85b960-0e0b-40fb-8364-947d929300db",
+        "AcquiredAt": 1789982382,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFieldMouse"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "f0953331-4e34-413f-9d87-e5b2990a3c55",
+        "UID": "f0953331-4e34-413f-9d87-e5b2990a3c55",
+        "AcquiredAt": 1789982394,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Dog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "6e04d47c-0747-4f27-8afb-4def8e7ffb41",
+        "UID": "6e04d47c-0747-4f27-8afb-4def8e7ffb41",
+        "AcquiredAt": 1789982400,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "eec05b51-55c3-44cb-846d-78a30db33ab3",
+        "UID": "eec05b51-55c3-44cb-846d-78a30db33ab3",
+        "AcquiredAt": 1789982413,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFieldMouse"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "49a8b957-56cc-4d6f-95e4-18dd54d929ae",
+        "UID": "49a8b957-56cc-4d6f-95e4-18dd54d929ae",
+        "AcquiredAt": 1789985455,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "4daba899-9b8c-4dae-8230-e7301610dd24",
+        "UID": "4daba899-9b8c-4dae-8230-e7301610dd24",
+        "AcquiredAt": 1789985463,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "84912b61-ae62-4796-8219-5870bf0a2abf",
+        "UID": "84912b61-ae62-4796-8219-5870bf0a2abf",
+        "AcquiredAt": 1789985474,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Dog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "8ea2c2a8-9b6f-4686-977b-ce927f42a149",
+        "UID": "8ea2c2a8-9b6f-4686-977b-ce927f42a149",
+        "AcquiredAt": 1789985487,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Deer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "8d1308cb-f442-41c8-bfe6-9aca33659a35",
+        "UID": "8d1308cb-f442-41c8-bfe6-9aca33659a35",
+        "AcquiredAt": 1789986555,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFluffyLop"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "d7fb19bd-940e-466c-8720-0a9b83ac35e7",
+        "UID": "d7fb19bd-940e-466c-8720-0a9b83ac35e7",
+        "AcquiredAt": 1789986561,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowCloudtailFox"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "ac6fa95a-34c0-47ee-8d06-88c252e0d78c",
+        "UID": "ac6fa95a-34c0-47ee-8d06-88c252e0d78c",
+        "AcquiredAt": 1789986586,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Frosted",
+        "XP": 0,
+        "PetId": "MeadowDaisyHedgehog"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "6c3f3a15-5ddf-4e53-9997-3d59c2ada327",
+        "UID": "6c3f3a15-5ddf-4e53-9997-3d59c2ada327",
+        "AcquiredAt": 1789986594,
+        "Favorite": false,
+        "Level": 3,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 22,
+        "PetId": "MeadowBlossomBunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "bdb82687-90e7-4409-beeb-fada2009ae8e",
+        "UID": "bdb82687-90e7-4409-beeb-fada2009ae8e",
+        "AcquiredAt": 1789986604,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFawn"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "1991c901-3eb0-4a2d-a522-052fa950817d",
+        "UID": "1991c901-3eb0-4a2d-a522-052fa950817d",
+        "AcquiredAt": 1789986622,
+        "Favorite": false,
+        "Level": 3,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 22,
+        "PetId": "MeadowPrismAntlerDeer"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "ed4f09c3-a312-48e7-b735-6080ad11262b",
+        "UID": "ed4f09c3-a312-48e7-b735-6080ad11262b",
+        "AcquiredAt": 1789986721,
+        "Favorite": false,
+        "Level": 2,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 25,
+        "PetId": "Forest_Legendary_03"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "ba8599a4-7696-46ac-aa90-ab3b03eac7f7",
+        "UID": "ba8599a4-7696-46ac-aa90-ab3b03eac7f7",
+        "AcquiredAt": 1790008733,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowFluffyLop"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "782ed850-9d6d-492e-9dba-5041bdffe98a",
+        "UID": "782ed850-9d6d-492e-9dba-5041bdffe98a",
+        "AcquiredAt": 1790008740,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "MeadowBuck"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "4d518b74-ea19-49a8-b186-125db34eb260",
+        "UID": "4d518b74-ea19-49a8-b186-125db34eb260",
+        "AcquiredAt": 1790101870,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Bunny"
+      },
+      {
+        "Shiny": false,
+        "Prismatic": false,
+        "UniquePetId": "d7c21aaa-6de6-43b7-a611-f093156224a1",
+        "UID": "d7c21aaa-6de6-43b7-a611-f093156224a1",
+        "AcquiredAt": 1790101882,
+        "Favorite": false,
+        "Level": 1,
+        "Locked": false,
+        "Mutation": "Normal",
+        "XP": 0,
+        "PetId": "Meadow_Uncommon_03"
+      }
+    ],
+    "SanctuaryIncomeUpdatedAt": 1790127807.331646,
+    "Items": [],
+    "DisplayedPetIds": [
+      "d7fb19bd-940e-466c-8720-0a9b83ac35e7",
+      "1991c901-3eb0-4a2d-a522-052fa950817d",
+      "e78e0f51-54fc-462f-a9cd-6b6ddd0f2ce8",
+      "ac6fa95a-34c0-47ee-8d06-88c252e0d78c",
+      "8d1308cb-f442-41c8-bfe6-9aca33659a35",
+      "bdb82687-90e7-4409-beeb-fada2009ae8e",
+      "eec05b51-55c3-44cb-846d-78a30db33ab3"
+    ],
+    "Settings": {
+      "AutoDelete": [],
+      "ShowOtherPets": true,
+      "ReducedMotion": false
+    }
+  },
+  "MetaData": {
+    "MetaTags": [],
+    "LastUpdate": 1790128144,
+    "ProfileCreateTime": 1787973929,
+    "SessionLoadCount": 120
+  }
+}

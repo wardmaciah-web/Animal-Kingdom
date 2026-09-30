@@ -1,0 +1,19 @@
+{
+  "Before": 250,
+  "After": 1014,
+  "PetCount": 2,
+  "Transactions": [
+    {
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -250
+    },
+    {
+      "Currency": "Coins",
+      "Reason": "Gather",
+      "Amount": 1014
+    }
+  ],
+  "MinimumLegacyRebate": 322,
+  "Accepted": true
+}

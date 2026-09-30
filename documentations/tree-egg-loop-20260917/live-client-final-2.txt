@@ -1,0 +1,4 @@
+2026-09-18T03:40:33.438Z,44.438339,dc1f000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS actual tree result shows one biome egg/pet
+2026-09-18T03:40:33.777Z,44.777493,dc1f000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS immediate hatch view appears without world egg
+2026-09-18T03:40:35.881Z,46.881557,dc1f000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS pet name/rarity reveal rendered
+2026-09-18T03:40:37.507Z,48.507175,e82e000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT_DONE player=Player2 hatches=1 assertions=3 failures=0

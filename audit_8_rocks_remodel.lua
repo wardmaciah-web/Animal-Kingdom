@@ -1,0 +1,2 @@
+local assets={{"rock_largeA",115110110046351},{"rock_largeB",121065190627318},{"rock_largeC",89119127613670},{"rock_largeD",126471202328604},{"rock_smallA",137755717466537},{"rock_smallB",132169542043215},{"rock_smallC",125751487395046},{"rock_tallA",134271141178542}}
+for _,r in ipairs(assets)do local roots=remodel.readModelAsset(r[2]);remodel.writeModelFile("/private/tmp/ak_rock_"..r[1]..".rbxmx",roots[1]);print("ROCK|"..r[1].."|"..r[2])end

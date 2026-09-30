@@ -1,0 +1,38 @@
+ANIMAL KINGDOM TOWN BAKED TEXTURE IDS
+Status: BLOCKED_BY_SOURCE_UV_LAYOUT
+
+Inn.fbx
+texture=NOT_CREATED_OVERLAPPING_UVS
+imageId=NONE
+
+House_4.fbx
+texture=NOT_CREATED_SINGLE_SHARED_UV_COORDINATE
+imageId=NONE
+
+House_2.fbx
+texture=NOT_CREATED_OVERLAPPING_UVS
+imageId=NONE
+
+Blacksmith.fbx
+texture=NOT_CREATED_OVERLAPPING_UVS
+imageId=NONE
+
+Well.fbx
+texture=NOT_CREATED_OVERLAPPING_UVS
+imageId=NONE
+
+MarketStand_1.fbx
+texture=NOT_CREATED_NO_UV_LAYER
+imageId=NONE
+
+MarketStand_2.fbx
+texture=NOT_CREATED_NO_UV_LAYER
+imageId=NONE
+
+Cart.fbx
+texture=NOT_CREATED_NO_UV_LAYER
+imageId=NONE
+
+Uploads performed: 0
+Invented image IDs: 0
+Reason: a multicolor texture cannot encode FBX polygon material boundaries on the existing combined Roblox MeshParts without a replacement non-overlapping UV-atlased mesh.

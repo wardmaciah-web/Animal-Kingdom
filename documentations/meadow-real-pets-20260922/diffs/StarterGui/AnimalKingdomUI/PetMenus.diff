@@ -1,0 +1,57 @@
+--- baseline/src/StarterGui/AnimalKingdomUI/PetMenus.lua
++++ src/StarterGui/AnimalKingdomUI/PetMenus.lua
+@@ -45,16 +45,22 @@
+  end)
+  local total=math.ceil(#filtered/12);M.Page=math.clamp(M.Page,1,math.max(1,total))
+  for i=(M.Page-1)*12+1,math.min(#filtered,M.Page*12) do
+-  local pet=filtered[i];local def=Pets[pet.PetId];local card=W.Card(content,208)
++  local pet=filtered[i];local def=Pets[pet.PetId];local meadow=def and def.IsMeadowPet;local offset=meadow and 26 or 0;local card=W.Card(content,meadow and 264 or 208)
++  card:SetAttribute("OwnedPetUID",pet.UID);card:SetAttribute("PetTypeId",pet.PetId)
+   local model=Appearance.Create(pet);if model then W.Viewport(card,model,UDim2.fromOffset(86,86),UDim2.fromOffset(4,8)) end
+   W.Text(card,def and def.DisplayName or pet.PetId,UDim2.new(1,-106,0,28),UDim2.fromOffset(96,10),18)
+   W.Text(card,(def and def.Rarity or "Archived").." · Lv "..pet.Level.." · Power "..W.Format(PetMath.Power(pet)),UDim2.new(1,-106,0,40),UDim2.fromOffset(96,38),14,W.Color.Ink)
+   W.Text(card,(pet.Prismatic and "Prismatic · " or pet.Shiny and "Shiny · " or "")..pet.Mutation.." · XP "..pet.XP.."/"..PetMath.RequiredXP(pet.Level),UDim2.new(1,-24,0,24),UDim2.fromOffset(12,88),13,W.Color.Muted)
++  if meadow then
++   W.Text(card,string.format("%.2f Forest Coins/sec · when displayed",def.BaseIncomePerSecond),UDim2.new(1,-24,0,24),UDim2.fromOffset(12,112),13,W.Color.Ink)
++   local displayed=table.find(data.DisplayedPetIds,pet.UID)~=nil
++   W.Button(card,displayed and "Return to inventory" or "Display in Sanctuary",UDim2.new(1,-20,0,28),UDim2.fromOffset(10,230),function()ctx.Request("DisplayMeadowPet",{UID=pet.UID,Displayed=not displayed})end)
++  end
+   local equipped=table.find(data.EquippedPets,pet.UID)~=nil
+-  W.Button(card,equipped and "Unequip" or "Equip",UDim2.new(.48,-10,0,36),UDim2.new(0,10,0,120),function() ctx.Request("Equip",{UID=pet.UID,Equipped=not equipped}) end)
+-  W.Button(card,pet.Favorite and "Unfavorite ★" or "Favorite ☆",UDim2.new(.48,-10,0,36),UDim2.new(.5,0,0,120),function() ctx.Request("Favorite",{UID=pet.UID,Value=not pet.Favorite}) end)
+-  W.Button(card,pet.Locked and "Unlock" or "Lock",UDim2.new(.48,-10,0,36),UDim2.new(0,10,0,162),function() ctx.Request("Lock",{UID=pet.UID,Value=not pet.Locked}) end,W.Color.Muted)
+-  W.Button(card,PetMath.Protected(pet) and "Protected" or "Delete",UDim2.new(.48,-10,0,36),UDim2.new(.5,0,0,162),function() ctx.Request("RequestDelete",{UID=pet.UID}) end,W.Color.Red)
++  W.Button(card,equipped and "Unequip" or "Equip",UDim2.new(.48,-10,0,36),UDim2.new(0,10,0,120+offset),function() ctx.Request("Equip",{UID=pet.UID,Equipped=not equipped}) end)
++  W.Button(card,pet.Favorite and "Unfavorite ★" or "Favorite ☆",UDim2.new(.48,-10,0,36),UDim2.new(.5,0,0,120+offset),function() ctx.Request("Favorite",{UID=pet.UID,Value=not pet.Favorite}) end)
++  W.Button(card,pet.Locked and "Unlock" or "Lock",UDim2.new(.48,-10,0,36),UDim2.new(0,10,0,162+offset),function() ctx.Request("Lock",{UID=pet.UID,Value=not pet.Locked}) end,W.Color.Muted)
++  W.Button(card,PetMath.Protected(pet) and "Protected" or "Delete",UDim2.new(.48,-10,0,36),UDim2.new(.5,0,0,162+offset),function() ctx.Request("RequestDelete",{UID=pet.UID}) end,W.Color.Red)
+  end
+  if #filtered==0 then W.Text(content,"No pets match this filter. Hatch an egg to begin!",UDim2.new(1,-8,0,60)) end
+  pages(ctx,content,M.Page,total,function(v) M.Page=v end)
+@@ -70,16 +76,22 @@
+  controls(ctx,content,true)
+  local list={}
+  for _,def in ipairs(Pets.Ordered) do
+-  if (M.Biome=="All" or M.Biome==def.Biome) and (M.Filter=="All" or M.Filter==def.Rarity or M.Filter=="Equipped" or M.Filter=="Favorite" or M.Filter=="Locked") then table.insert(list,def) end
++  if (not def.LegacyOnly or data.PetIndex[def.PetId]) and (M.Biome=="All" or M.Biome==def.Biome) and (M.Filter=="All" or M.Filter==def.Rarity or M.Filter=="Equipped" or M.Filter=="Favorite" or M.Filter=="Locked") then table.insert(list,def) end
+  end
+  table.sort(list,function(a,b) if a.Biome~=b.Biome then return a.Biome<b.Biome end;if a.Rarity~=b.Rarity then return Rarities[a.Rarity].Order<Rarities[b.Rarity].Order end;return a.PetId<b.PetId end)
+  local total=math.ceil(#list/24);M.IndexPage=math.clamp(M.IndexPage,1,math.max(1,total))
+  for i=(M.IndexPage-1)*24+1,math.min(#list,M.IndexPage*24) do
+-  local def=list[i];local entry=data.PetIndex[def.PetId];local card=W.Card(content,74)
+-  W.Text(card,entry and def.DisplayName or "???",UDim2.new(.6,-18,0,28),UDim2.fromOffset(12,8),17)
++  local def=list[i];local entry=data.PetIndex[def.PetId];local meadow=entry and def.IsMeadowPet;local card=W.Card(content,meadow and 100 or 74)
++  card:SetAttribute("PetTypeId",def.PetId);card:SetAttribute("Discovered",entry~=nil)
++  local inset=meadow and 96 or 0
++  if meadow then
++   local model=Appearance.Create({PetId=def.PetId,Mutation="Normal",Level=1})
++   if model then W.Viewport(card,model,UDim2.fromOffset(86,86),UDim2.fromOffset(4,6)) end
++  end
++  W.Text(card,entry and def.DisplayName or "???",UDim2.new(.6,-18-inset,0,40),UDim2.fromOffset(12+inset,5),17)
+   W.Text(card,def.Biome.." · "..def.Rarity,UDim2.new(.4,-12,0,48),UDim2.new(.6,0,0,10),13,W.Color.Ink)
+   local variants={};if entry then for name in pairs(entry.Variants or {}) do table.insert(variants,name) end;table.sort(variants) end
+-  W.Text(card,entry and table.concat(variants,", ") or "Undiscovered",UDim2.new(.6,-18,0,28),UDim2.fromOffset(12,35),12,W.Color.Muted)
++  W.Text(card,entry and table.concat(variants,", ") or "Undiscovered",UDim2.new(.6,-18-inset,0,28),UDim2.fromOffset(12+inset,48),12,W.Color.Muted)
+  end
+  pages(ctx,content,M.IndexPage,total,function(v) M.IndexPage=v end)
+ end

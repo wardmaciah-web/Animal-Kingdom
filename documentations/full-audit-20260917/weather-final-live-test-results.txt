@@ -1,0 +1,135 @@
+2026-09-17T22:57:42.107Z,4857.107422,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse applies
+2026-09-17T22:57:42.107Z,4857.107910,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse metadata duration 420
+2026-09-17T22:57:42.107Z,4857.107910,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse authoritative countdown visible
+2026-09-17T22:57:42.107Z,4857.107910,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse effects anchored and noncolliding
+2026-09-17T22:57:44.316Z,4859.316895,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse runtime destroyed
+2026-09-17T22:57:44.316Z,4859.316895,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse weather sounds destroyed
+2026-09-17T22:57:44.317Z,4859.317383,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS AdminAbuse Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:57:44.670Z,4859.670410,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora applies
+2026-09-17T22:57:44.670Z,4859.670410,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora metadata duration 420
+2026-09-17T22:57:44.670Z,4859.670410,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora authoritative countdown visible
+2026-09-17T22:57:44.670Z,4859.670410,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora effects anchored and noncolliding
+2026-09-17T22:57:44.984Z,4859.984375,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora fixed world position across camera rotation/translation -500, 850, -1700
+2026-09-17T22:57:47.200Z,4862.200195,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora runtime destroyed
+2026-09-17T22:57:47.200Z,4862.200195,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora weather sounds destroyed
+2026-09-17T22:57:47.200Z,4862.200195,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Aurora Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:57:47.566Z,4862.566895,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon applies
+2026-09-17T22:57:47.566Z,4862.566895,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon metadata duration 420
+2026-09-17T22:57:47.566Z,4862.566895,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon authoritative countdown visible
+2026-09-17T22:57:47.566Z,4862.566895,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon effects anchored and noncolliding
+2026-09-17T22:57:47.916Z,4862.916504,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon fixed world position across camera rotation/translation -6338, 8008, -23752
+2026-09-17T22:57:50.133Z,4865.133789,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon runtime destroyed
+2026-09-17T22:57:50.133Z,4865.133789,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon weather sounds destroyed
+2026-09-17T22:57:50.133Z,4865.133789,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS BloodMoon Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:57:50.500Z,4865.500000,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos applies
+2026-09-17T22:57:50.500Z,4865.500000,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos metadata duration 420
+2026-09-17T22:57:50.500Z,4865.500000,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos authoritative countdown visible
+2026-09-17T22:57:50.500Z,4865.500000,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos effects anchored and noncolliding
+2026-09-17T22:57:52.700Z,4867.700684,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos runtime destroyed
+2026-09-17T22:57:52.700Z,4867.700684,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos weather sounds destroyed
+2026-09-17T22:57:52.700Z,4867.700684,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Chaos Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:57:53.066Z,4868.066895,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy applies
+2026-09-17T22:57:53.066Z,4868.066895,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy metadata duration 420
+2026-09-17T22:57:53.066Z,4868.066895,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy authoritative countdown visible
+2026-09-17T22:57:53.066Z,4868.066895,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy effects anchored and noncolliding
+2026-09-17T22:57:55.283Z,4870.283691,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy runtime destroyed
+2026-09-17T22:57:55.283Z,4870.283691,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy weather sounds destroyed
+2026-09-17T22:57:55.283Z,4870.283691,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Foggy Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:57:55.649Z,4870.649414,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden applies
+2026-09-17T22:57:55.649Z,4870.649902,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden metadata duration 420
+2026-09-17T22:57:55.649Z,4870.649902,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden authoritative countdown visible
+2026-09-17T22:57:55.649Z,4870.649902,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden effects anchored and noncolliding
+2026-09-17T22:57:57.866Z,4872.866211,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden runtime destroyed
+2026-09-17T22:57:57.866Z,4872.866211,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden weather sounds destroyed
+2026-09-17T22:57:57.866Z,4872.866211,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Golden Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:57:58.232Z,4873.232910,5953000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave applies
+2026-09-17T22:57:58.232Z,4873.232910,5953000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave metadata duration 420
+2026-09-17T22:57:58.232Z,4873.232910,5953000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave authoritative countdown visible
+2026-09-17T22:57:58.232Z,4873.232910,5953000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave effects anchored and noncolliding
+2026-09-17T22:58:00.449Z,4875.449707,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave runtime destroyed
+2026-09-17T22:58:00.449Z,4875.449707,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave weather sounds destroyed
+2026-09-17T22:58:00.450Z,4875.450195,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Heatwave Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:00.816Z,4875.816406,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted applies
+2026-09-17T22:58:00.816Z,4875.816895,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted metadata duration 420
+2026-09-17T22:58:00.816Z,4875.816895,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted authoritative countdown visible
+2026-09-17T22:58:00.816Z,4875.816895,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted effects anchored and noncolliding
+2026-09-17T22:58:03.033Z,4878.033203,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted runtime destroyed
+2026-09-17T22:58:03.033Z,4878.033203,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted weather sounds destroyed
+2026-09-17T22:58:03.033Z,4878.033691,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Inverted Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:03.399Z,4878.399414,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower applies
+2026-09-17T22:58:03.399Z,4878.399902,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower metadata duration 420
+2026-09-17T22:58:03.399Z,4878.399902,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower authoritative countdown visible
+2026-09-17T22:58:03.399Z,4878.399902,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower effects anchored and noncolliding
+2026-09-17T22:58:05.616Z,4880.616211,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower runtime destroyed
+2026-09-17T22:58:05.616Z,4880.616211,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower weather sounds destroyed
+2026-09-17T22:58:05.616Z,4880.616699,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS MeteorShower Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:05.983Z,4880.983398,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare applies
+2026-09-17T22:58:05.983Z,4880.983398,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare metadata duration 420
+2026-09-17T22:58:05.983Z,4880.983887,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare authoritative countdown visible
+2026-09-17T22:58:05.983Z,4880.983887,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare effects anchored and noncolliding
+2026-09-17T22:58:08.199Z,4883.199707,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare runtime destroyed
+2026-09-17T22:58:08.199Z,4883.199707,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare weather sounds destroyed
+2026-09-17T22:58:08.199Z,4883.199707,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Nightmare Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:08.565Z,4883.565918,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow applies
+2026-09-17T22:58:08.565Z,4883.565918,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow metadata duration 420
+2026-09-17T22:58:08.565Z,4883.565918,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow authoritative countdown visible
+2026-09-17T22:58:08.565Z,4883.565918,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow effects anchored and noncolliding
+2026-09-17T22:58:08.899Z,4883.899414,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow fixed world position across camera rotation/translation -500, 60, -2200
+2026-09-17T22:58:08.899Z,4883.899414,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow smooth seven-color arch / 14 Beams
+2026-09-17T22:58:11.100Z,4886.100098,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow runtime destroyed
+2026-09-17T22:58:11.100Z,4886.100098,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow weather sounds destroyed
+2026-09-17T22:58:11.100Z,4886.100098,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Rainbow Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:11.465Z,4886.465820,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay applies
+2026-09-17T22:58:11.465Z,4886.465820,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay metadata duration 420
+2026-09-17T22:58:11.465Z,4886.465820,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay authoritative countdown visible
+2026-09-17T22:58:11.465Z,4886.465820,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay effects anchored and noncolliding
+2026-09-17T22:58:13.682Z,4888.682129,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay runtime destroyed
+2026-09-17T22:58:13.682Z,4888.682617,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay weather sounds destroyed
+2026-09-17T22:58:13.682Z,4888.682617,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS RainyDay Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:14.048Z,4889.048828,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall applies
+2026-09-17T22:58:14.048Z,4889.048828,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall metadata duration 420
+2026-09-17T22:58:14.049Z,4889.049316,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall authoritative countdown visible
+2026-09-17T22:58:14.049Z,4889.049316,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall effects anchored and noncolliding
+2026-09-17T22:58:16.266Z,4891.266113,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall runtime destroyed
+2026-09-17T22:58:16.266Z,4891.266113,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall weather sounds destroyed
+2026-09-17T22:58:16.266Z,4891.266113,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Snowfall Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:16.632Z,4891.632324,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight applies
+2026-09-17T22:58:16.632Z,4891.632324,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight metadata duration 420
+2026-09-17T22:58:16.632Z,4891.632324,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight authoritative countdown visible
+2026-09-17T22:58:16.632Z,4891.632812,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight effects anchored and noncolliding
+2026-09-17T22:58:18.849Z,4893.849121,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight runtime destroyed
+2026-09-17T22:58:18.849Z,4893.849121,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight weather sounds destroyed
+2026-09-17T22:58:18.849Z,4893.849121,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SpiritNight Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:19.215Z,4894.215820,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies applies
+2026-09-17T22:58:19.215Z,4894.215820,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies metadata duration 420
+2026-09-17T22:58:19.215Z,4894.215820,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies authoritative countdown visible
+2026-09-17T22:58:19.215Z,4894.215820,2db2000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies effects anchored and noncolliding
+2026-09-17T22:58:21.432Z,4896.432617,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies runtime destroyed
+2026-09-17T22:58:21.433Z,4896.433105,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies weather sounds destroyed
+2026-09-17T22:58:21.433Z,4896.433105,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS SunnySkies Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:21.798Z,4896.798340,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm applies
+2026-09-17T22:58:21.798Z,4896.798340,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm metadata duration 420
+2026-09-17T22:58:21.798Z,4896.798340,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm authoritative countdown visible
+2026-09-17T22:58:21.798Z,4896.798828,454d000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm effects anchored and noncolliding
+2026-09-17T22:58:23.999Z,4898.999023,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm runtime destroyed
+2026-09-17T22:58:23.999Z,4898.999023,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm weather sounds destroyed
+2026-09-17T22:58:23.999Z,4898.999023,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Thunderstorm Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:24.364Z,4899.364746,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void applies
+2026-09-17T22:58:24.365Z,4899.365234,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void metadata duration 420
+2026-09-17T22:58:24.365Z,4899.365234,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void authoritative countdown visible
+2026-09-17T22:58:24.365Z,4899.365234,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void effects anchored and noncolliding
+2026-09-17T22:58:24.698Z,4899.698730,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void fixed world position across camera rotation/translation -338, 108, 18
+2026-09-17T22:58:26.915Z,4901.915039,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void runtime destroyed
+2026-09-17T22:58:26.915Z,4901.915527,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void weather sounds destroyed
+2026-09-17T22:58:26.915Z,4901.915527,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Void Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:27.282Z,4902.282227,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy applies
+2026-09-17T22:58:27.282Z,4902.282227,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy metadata duration 420
+2026-09-17T22:58:27.282Z,4902.282227,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy authoritative countdown visible
+2026-09-17T22:58:27.282Z,4902.282227,4f50000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy effects anchored and noncolliding
+2026-09-17T22:58:29.500Z,4904.500000,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy runtime destroyed
+2026-09-17T22:58:29.500Z,4904.500000,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy weather sounds destroyed
+2026-09-17T22:58:29.500Z,4904.500488,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS Windy Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:32.466Z,4907.466309,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS rapid replacement runtime destroyed
+2026-09-17T22:58:32.466Z,4907.466797,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS rapid replacement weather sounds destroyed
+2026-09-17T22:58:32.466Z,4907.466797,3b4a000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT PASS rapid replacement Lighting/Atmosphere/Clouds/Sky restored
+2026-09-17T22:58:34.681Z,4909.681641,23af000,6,Info [FLog::CreatorOutput] AK_WEATHER_AUDIT_DONE events=18 failures=0

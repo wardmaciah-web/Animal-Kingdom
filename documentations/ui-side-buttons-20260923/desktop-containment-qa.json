@@ -1,0 +1,130 @@
+{
+  "Camera": "Custom",
+  "Menu": "",
+  "Buttons": {
+    "1": {
+      "RootX": 16,
+      "RootImage": "",
+      "RootClip": true,
+      "RootY": 201.60000610351562,
+      "Scale": 1,
+      "Selected": false,
+      "Hovered": false,
+      "Width": 76,
+      "FocusCorner": 14,
+      "Overflow": [],
+      "Name": "Nav_Shop",
+      "RootBackground": 1,
+      "Height": 78,
+      "GrainCorner": 14,
+      "BodyCorner": 14,
+      "Pressed": false
+    },
+    "3": {
+      "RootX": 16,
+      "RootImage": "",
+      "RootClip": true,
+      "RootY": 373.6000061035156,
+      "Scale": 1,
+      "Selected": false,
+      "Hovered": false,
+      "Width": 76,
+      "FocusCorner": 14,
+      "Overflow": [],
+      "Name": "Nav_Teleport",
+      "RootBackground": 1,
+      "Height": 78,
+      "GrainCorner": 14,
+      "BodyCorner": 14,
+      "Pressed": false
+    },
+    "2": {
+      "RootX": 16,
+      "RootImage": "",
+      "RootClip": true,
+      "RootY": 287.6000061035156,
+      "Scale": 1,
+      "Selected": false,
+      "Hovered": false,
+      "Width": 76,
+      "FocusCorner": 14,
+      "Overflow": [],
+      "Name": "Nav_Daily",
+      "RootBackground": 1,
+      "Height": 78,
+      "GrainCorner": 14,
+      "BodyCorner": 14,
+      "Pressed": false
+    },
+    "5": {
+      "RootClip": true,
+      "RootX": 1576,
+      "RootY": 218,
+      "Scale": 1,
+      "RootImage": "",
+      "Hovered": false,
+      "Width": 62,
+      "FocusCorner": 14,
+      "Overflow": [],
+      "Name": "Nav_Updates",
+      "RootBackground": 1,
+      "Height": 62,
+      "GrainCorner": 14,
+      "BodyCorner": 14,
+      "Pressed": false
+    },
+    "4": {
+      "RootClip": true,
+      "RootX": 1506,
+      "RootY": 218,
+      "Scale": 1,
+      "RootImage": "",
+      "Hovered": false,
+      "Width": 62,
+      "FocusCorner": 14,
+      "Overflow": [],
+      "Name": "Nav_Friends",
+      "RootBackground": 1,
+      "Height": 62,
+      "GrainCorner": 14,
+      "BodyCorner": 14,
+      "Pressed": false
+    },
+    "6": {
+      "RootClip": true,
+      "RootX": 1646,
+      "RootY": 218,
+      "Scale": 1,
+      "RootImage": "",
+      "Hovered": false,
+      "Width": 62,
+      "FocusCorner": 14,
+      "Overflow": [],
+      "Name": "Nav_Profile",
+      "RootBackground": 1,
+      "Height": 62,
+      "GrainCorner": 14,
+      "BodyCorner": 14,
+      "Pressed": false
+    }
+  },
+  "StackGap": 8,
+  "HeaderGap": 8,
+  "NativeMenuChecks": [
+    {
+      "Name": "Shop",
+      "Opened": "Shop",
+      "Closed": ""
+    },
+    {
+      "Name": "Teleport",
+      "Opened": "Teleport",
+      "Closed": ""
+    },
+    {
+      "Name": "Daily",
+      "Opened": "Daily",
+      "Closed": ""
+    }
+  ]
+}

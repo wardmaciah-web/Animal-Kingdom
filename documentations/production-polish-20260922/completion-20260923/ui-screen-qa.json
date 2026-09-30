@@ -1,0 +1,145 @@
+{
+  "Pets": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 5,
+        "Budget": 24,
+        "Registered": 13
+      },
+      "Menu": "Pets",
+      "Buttons": 21
+    }
+  },
+  "Index": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 4,
+        "Budget": 24,
+        "Registered": 13
+      },
+      "Menu": "Index",
+      "Buttons": 25
+    }
+  },
+  "Garden": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Garden",
+      "Buttons": 8
+    }
+  },
+  "Biomes": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Biomes",
+      "Buttons": 12
+    }
+  },
+  "Challenges": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Challenges",
+      "Buttons": 4
+    }
+  },
+  "Shop": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 2,
+        "Budget": 24,
+        "Registered": 2
+      },
+      "Menu": "Shop",
+      "Buttons": 5
+    }
+  },
+  "Upgrades": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Upgrades",
+      "Buttons": 8
+    }
+  },
+  "Plot": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Plot",
+      "Buttons": 7
+    }
+  },
+  "Settings": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Settings",
+      "Buttons": 11
+    }
+  },
+  "Daily": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Daily",
+      "Buttons": 4
+    }
+  },
+  "Teleport": {
+    "Ok": true,
+    "Result": {
+      "Unselectable": [],
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Menu": "Teleport",
+      "Buttons": 4
+    }
+  }
+}

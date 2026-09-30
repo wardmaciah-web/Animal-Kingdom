@@ -1,0 +1,8 @@
+{
+  "RestoredUIDs": 7,
+  "Passed": true,
+  "Acquisitions": 3,
+  "Failures": [],
+  "Assertions": 34,
+  "Kind": "Mock Studio Play edge transactions and mock ProfileStore session restoration"
+}

@@ -1,0 +1,16 @@
+{
+  "Passed": true,
+  "Variants": [
+    {
+      "Pets": 1,
+      "Seconds": 4.883277756991447,
+      "Id": "Heavy",
+      "PriceBudget": 3000,
+      "WalkingDistance": 5.378931045532227
+    }
+  ],
+  "Acquisitions": 1,
+  "Failures": [],
+  "Assertions": 13,
+  "Kind": "Studio Play transactions with mock/copy profile and scripted movement"
+}

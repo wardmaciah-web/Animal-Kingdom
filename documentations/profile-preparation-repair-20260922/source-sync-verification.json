@@ -1,0 +1,80 @@
+[
+  {
+    "studioPath": "ServerScriptService.ServerSource.Server.PetService",
+    "file": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+    "match": true,
+    "sha256": "ffb8813b3c07c30883fd132f84d4d0fc7d1bf266bac03fc010ee7748c7746bac"
+  },
+  {
+    "studioPath": "ReplicatedStorage.Shared.Gameplay.Definitions.CurrencyDefinitions",
+    "file": "src/ReplicatedStorage/Shared/Gameplay/Definitions/CurrencyDefinitions.lua",
+    "match": true,
+    "sha256": "3688b534c3a889e6209188d8f3ac7f411056ba5434bf124856d19127707b9d95"
+  },
+  {
+    "studioPath": "ServerScriptService.ServerSource.Utilities.GameplayRequestPolicy",
+    "file": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+    "match": true,
+    "sha256": "2796e3a7d5f8b490f0e144aeac49e034b1706dd50eab9fa9d3b0c59059224830"
+  },
+  {
+    "studioPath": "StarterGui.AnimalKingdomUI.Main",
+    "file": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "match": true,
+    "sha256": "ad16a41406d3b63fec2ae132276e7e2490ccf3f3828833c4e599dc666dd35702"
+  },
+  {
+    "studioPath": "ServerScriptService.ServerSource.Server.GameplayService",
+    "file": "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+    "match": true,
+    "sha256": "09a17e6791eddbfc067184e68edb4a4f29582832d694157fd44e5152ad20fec6"
+  },
+  {
+    "studioPath": "ReplicatedStorage.SharedSource.Datas.ProfileTemplate",
+    "file": "src/ReplicatedStorage/SharedSource/Datas/ProfileTemplate.lua",
+    "match": true,
+    "sha256": "4bf1c48196877d8c8b56e61de3f37a919bd1a64051c1c3b09f3e9187e50e839a"
+  },
+  {
+    "studioPath": "StarterGui.AnimalKingdomUI.GardenMenus",
+    "file": "src/StarterGui/AnimalKingdomUI/GardenMenus.lua",
+    "match": true,
+    "sha256": "dfa4b91e9ca154c37bb0c7aa0d7bfb285fb0e805f82d7f4a716da79ba289d82b"
+  },
+  {
+    "studioPath": "ReplicatedStorage.Shared.Gameplay.PetAppearance",
+    "file": "src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua",
+    "match": true,
+    "sha256": "f41e572129181bfa3a4e4c63e69bdd8a6aa012daf9e2745c2884fce83d056c2e"
+  },
+  {
+    "studioPath": "ReplicatedStorage.Shared.Gameplay.ProfileMigrations",
+    "file": "src/ReplicatedStorage/Shared/Gameplay/ProfileMigrations.lua",
+    "match": true,
+    "sha256": "787409318a0b87cc2fad427fe242c1d945e5165f01503a8f0ccfda7770b8084a"
+  },
+  {
+    "studioPath": "ServerScriptService.ServerSource.Server.GardenExpeditionService",
+    "file": "src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+    "match": true,
+    "sha256": "196c0cbf9b47b5ea976545023e17aaa4bf3f6d36febd9602460be3d321c342c2"
+  },
+  {
+    "studioPath": "ReplicatedStorage.Shared.Gameplay.Definitions.GardenDefinitions",
+    "file": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua",
+    "match": true,
+    "sha256": "e5deed937e56e1e5ea51a7ead7fda873e3a46958dc97bf91cdc7d9900224d319"
+  },
+  {
+    "studioPath": "StarterPlayer.StarterPlayerScripts.GardenPlotVisuals",
+    "file": "src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua",
+    "match": true,
+    "sha256": "53d37adf56621d44e45ae3c7eb699c50132dd649bb068e869ae0730ed99a9c41"
+  },
+  {
+    "studioPath": "ServerScriptService.ServerSource.Server.ProfileService",
+    "file": "src/ServerScriptService/ServerSource/Server/ProfileService.lua",
+    "match": true,
+    "sha256": "02d4353a752ba8f3f8e122998d279674cee7c8c60132fde5c65effdfaa71ce8d"
+  }
+]

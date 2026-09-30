@@ -1,0 +1,318 @@
+[TRUNCATED DUE TO LENGTH LIMIT]
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Removing biome label: Workspace.BiomeLabelAnchor.BiomeNameBillboardV2
+[AK] Biome labels removed: 11
+[AK] Global biome label remover active
+Hello world!
+[PlotAssignment] Found 4 plots at Workspace.PlayerPlots
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot1Floor
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot2Floor
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot3Floor
+[PlotAssignment] Plot: Workspace.PlayerPlots.Plot4Floor
+Hello world!
+[SuperbulletCodeExecutor] Backend not reachable at localhost:13528
+[SuperbulletCodeExecutor] Code execution features will not be available until the backend is running
+[SuperbulletCodeExecutor] Skipping WebSocket connection - backend not reachable
+[SuperbulletLogger] Server logger initialized (Studio only)
+[CameraTitles] Waiting for WeatherAdminRoom...
+[ProfileStore]: Roblox API services available - data will be saved
+[PlotAssignment] Assigned Plot1Floor to Maciahxcx1
+[CameraTitles] Found room: Workspace.WeatherAdminRoom
+[ProfileService] Studio read-only snapshot: OriginalData1/Player_3009757271; saved version=3
+[ProfileService] Ready: Maciahxcx1; version=3; mock=true; 0.17s
+[CameraTitles] Found CameraWallPanels: Workspace.WeatherAdminRoom.CameraWallPanels
+[CameraTitles] Clickable panels found: 15
+[CameraTitles] 01 | PLAYER PLOTS | Workspace.WeatherAdminRoom.CameraWallPanels.CameraPlayerPlots
+[CameraTitles] 02 | TOWN | Workspace.WeatherAdminRoom.CameraWallPanels.CameraTown
+[CameraTitles] 03 | MEADOW | Workspace.WeatherAdminRoom.CameraWallPanels.CameraMeadow
+[CameraTitles] 04 | FOREST | Workspace.WeatherAdminRoom.CameraWallPanels.CameraForest
+[CameraTitles] 05 | JUNGLE | Workspace.WeatherAdminRoom.CameraWallPanels.CameraJungle
+[CameraTitles] 06 | DESERT | Workspace.WeatherAdminRoom.CameraWallPanels.CameraDesert
+[CameraTitles] 07 | SNOW | Workspace.WeatherAdminRoom.CameraWallPanels.CameraSnow
+[CameraTitles] 08 | VOLCANO | Workspace.WeatherAdminRoom.CameraWallPanels.CameraVolcano
+[CameraTitles] 09 | OCEAN | Workspace.WeatherAdminRoom.CameraWallPanels.CameraOcean
+[CameraTitles] 10 | ANCIENT RUINS | Workspace.WeatherAdminRoom.CameraWallPanels.CameraAncientRuins
+[CameraTitles] 11 | MAGICAL FOREST | Workspace.WeatherAdminRoom.CameraWallPanels.CameraMagicalForest
+[CameraTitles] 12 | SKY | Workspace.WeatherAdminRoom.CameraWallPanels.CameraSky
+[CameraTitles] 13 | PREHISTORIC | Workspace.WeatherAdminRoom.CameraWallPanels.CameraPrehistoric
+[CameraTitles] 14 | MYTHICAL | Workspace.WeatherAdminRoom.CameraWallPanels.CameraMythical
+[CameraTitles] 15 | HIGH OVERVIEW | Workspace.WeatherAdminRoom.CameraWallPanels.CameraHighOverview
+[CameraTitles] ALL 15 CAMERA TITLES CREATED
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[PlotAssignment] Spawned Maciahxcx1 at Plot1Floor
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[CameraTitles] FINAL LABEL PASS COMPLETE
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Client logger initialized (Studio only)
+[WeatherVisuals] Script starting
+[WeatherVisuals] Initialized
+Superbullet Client initiated.
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[MeadowAssets] Honey Lop Bunny: imported model unavailable
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[Garden] Visit Maciahxcx1
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[PlotAssignment] Released Plot1Floor
+[ProfileService] Session released: Maciahxcx1; mock=true
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+[SuperbulletLogger] Failed to send logs: HttpError: ConnectFail
+Downloading place file… this may take some time.
+Place file downloaded to 'Final.rbxl'

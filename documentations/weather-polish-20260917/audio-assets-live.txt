@@ -1,0 +1,13 @@
+2026-09-18T00:30:44.926Z,10439.926758,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_LOAD rbxasset://sounds/impact_water.mp3 Success
+2026-09-18T00:30:45.204Z,10440.204102,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_LOAD rbxassetid://9114228918 Success
+2026-09-18T00:30:45.205Z,10440.205078,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_LOAD rbxassetid://1516791621 Success
+2026-09-18T00:30:45.212Z,10440.212891,2db2000,6,Info [FLog::CreatorOutput] AK_AUDIO_LOAD rbxassetid://12222030 Success
+2026-09-18T00:30:45.212Z,10440.212891,2db2000,6,Info [FLog::CreatorOutput] AK_AUDIO_LOAD rbxassetid://8202539690 Success
+2026-09-18T00:30:45.229Z,10440.229492,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_LOAD rbxassetid://9120705982 Success
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET ExistingThunder loaded=true duration=3.710294784580499
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET ExistingWaterSplash loaded=true duration=2.3771428571428572
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET ExistingMeteor loaded=true duration=1.754125
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET ExistingRain loaded=true duration=59.41986394557823
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET ExistingEerieWind loaded=true duration=36.010666666666665
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET ExistingWind loaded=true duration=54.55299319727891
+2026-09-18T00:30:45.247Z,10440.247070,23af000,6,Info [FLog::CreatorOutput] AK_AUDIO_ASSET_DONE true 

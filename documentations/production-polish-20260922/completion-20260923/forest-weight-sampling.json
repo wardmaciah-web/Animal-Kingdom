@@ -1,0 +1,110 @@
+{
+  "Ok": true,
+  "Result": [
+    {
+      "Counts": {
+        "ForestBlackBearCub": 2489,
+        "ForestSkunk": 1012,
+        "ForestRaccoon": 6499
+      },
+      "Entries": [
+        {
+          "Weight": 65,
+          "PetId": "ForestRaccoon"
+        },
+        {
+          "Weight": 25,
+          "PetId": "ForestBlackBearCub"
+        },
+        {
+          "Weight": 10,
+          "PetId": "ForestSkunk"
+        }
+      ]
+    },
+    {
+      "Counts": {
+        "ForestTreeFrog": 954,
+        "ForestSkunk": 6521,
+        "ForestBadger": 2525
+      },
+      "Entries": [
+        {
+          "Weight": 65,
+          "PetId": "ForestSkunk"
+        },
+        {
+          "Weight": 25,
+          "PetId": "ForestBadger"
+        },
+        {
+          "Weight": 10,
+          "PetId": "ForestTreeFrog"
+        }
+      ]
+    },
+    {
+      "Counts": {
+        "ForestTreeFrog": 6533,
+        "ForestBrownBat": 950,
+        "ForestRiverOtter": 2517
+      },
+      "Entries": [
+        {
+          "Weight": 65,
+          "PetId": "ForestTreeFrog"
+        },
+        {
+          "Weight": 25,
+          "PetId": "ForestRiverOtter"
+        },
+        {
+          "Weight": 10,
+          "PetId": "ForestBrownBat"
+        }
+      ]
+    },
+    {
+      "Counts": {
+        "ForestWoodlandOwl": 2535,
+        "ForestBrownBat": 6482,
+        "ForestCrestedOwl": 983
+      },
+      "Entries": [
+        {
+          "Weight": 65,
+          "PetId": "ForestBrownBat"
+        },
+        {
+          "Weight": 25,
+          "PetId": "ForestWoodlandOwl"
+        },
+        {
+          "Weight": 10,
+          "PetId": "ForestCrestedOwl"
+        }
+      ]
+    },
+    {
+      "Counts": {
+        "ForestLeafAntler": 2390,
+        "ForestCrestedOwl": 7095,
+        "ForestEmeraldWing": 515
+      },
+      "Entries": [
+        {
+          "Weight": 70,
+          "PetId": "ForestCrestedOwl"
+        },
+        {
+          "Weight": 25,
+          "PetId": "ForestLeafAntler"
+        },
+        {
+          "Weight": 5,
+          "PetId": "ForestEmeraldWing"
+        }
+      ]
+    }
+  ]
+}

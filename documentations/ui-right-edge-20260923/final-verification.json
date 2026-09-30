@@ -1,0 +1,26 @@
+{
+  "FinalState": {
+    "Device": "default",
+    "Running": false,
+    "CameraRestored": true,
+    "PlaceId": 132313449035787
+  },
+  "Published": false,
+  "Files": [
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/Components.lua",
+      "LiveMatches": true,
+      "SHA256": "9e3bde4b2572b6b80e3e086fafd06ffa61fbd81ab8dbdd9c982f6c75afae7ec6"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/SideActionButton.lua",
+      "LiveMatches": true,
+      "SHA256": "c88783b30c83c0ef20454d138175e8e1edcc898350da9e221949d433ac49cea2"
+    },
+    {
+      "File": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/HUD.lua",
+      "LiveMatches": true,
+      "SHA256": "3c5020c7ec5bd58c73bf2c9fe0fedf3bab130fc3ae08100aa76878432a7b6431"
+    }
+  ]
+}

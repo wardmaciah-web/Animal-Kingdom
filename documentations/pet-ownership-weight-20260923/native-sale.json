@@ -1,0 +1,11 @@
+{
+  "Ok": true,
+  "Result": {
+    "Removed": 1,
+    "Payout": 15,
+    "AfterCoins": 1000390,
+    "AfterCount": 9,
+    "BeforeCoins": 1000375,
+    "BeforeCount": 10
+  }
+}

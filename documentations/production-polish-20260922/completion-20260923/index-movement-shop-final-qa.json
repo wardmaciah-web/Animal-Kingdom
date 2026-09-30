@@ -1,0 +1,40 @@
+{
+  "Ok": true,
+  "Result": {
+    "Shop": {
+      "FlowerPot": {
+        "Parts": 29,
+        "Up": "0, 1, 0",
+        "Bottom": 0.5,
+        "Size": [
+          2.1875884532928467,
+          4,
+          2.1875884532928467
+        ]
+      },
+      "WoodenChair": {
+        "Parts": 16,
+        "Up": "0, 1, 0",
+        "Bottom": 0.5,
+        "Size": [
+          2.9052069187164307,
+          3.999999523162842,
+          2.6168224811553955
+        ]
+      }
+    },
+    "Index": {
+      "AllActivePercent": 100,
+      "Active": 275,
+      "LegacyCount": 276,
+      "ServerCount": 33,
+      "ServerTotal": 283
+    },
+    "Movement": {
+      "After100Refreshes": 16.959999084472656,
+      "Expected": 16.96,
+      "ExternalBase20": 21.200000762939453,
+      "Observed": 16.959999084472656
+    }
+  }
+}

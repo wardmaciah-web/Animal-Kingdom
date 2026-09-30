@@ -1,0 +1,26 @@
+--- baseline/src/StarterGui/AnimalKingdomUI/HatchPresentation.lua
++++ src/StarterGui/AnimalKingdomUI/HatchPresentation.lua
+@@ -16,9 +16,15 @@
+  local overlay=W.New("Frame",{Name="HatchReveal",Size=UDim2.fromScale(1,1),BackgroundColor3=Color3.fromRGB(18,38,30),BackgroundTransparency=.12,ZIndex=100},screen)
+  local title=W.Text(overlay,(Eggs[result.EggId] and Eggs[result.EggId].DisplayName or "Biome Egg").." · A new friend is waiting…",UDim2.fromScale(.9,.1),UDim2.fromScale(.05,.07),26,Color3.new(1,1,1));title.TextXAlignment=Enum.TextXAlignment.Center
+  local models,views={},{}
+- for i,_ in ipairs(result.Results) do
+-  local egg=Resolver.Create("Eggs",Eggs[result.EggId] and Eggs[result.EggId].ModelName or result.EggId);local width=.9/#result.Results
+-  local view=W.Viewport(overlay,egg,UDim2.fromScale(width,.55),UDim2.fromScale(.05+(i-1)*width,.2));views[i]=view;models[i]={Model=egg,Pivot=egg:GetPivot()}
++ for i,entry in ipairs(result.Results) do
++  local meadow=Eggs[result.EggId] and Eggs[result.EggId].MeadowPool
++  local model
++  if meadow then model=Appearance.Create(entry.Pet)
++  else model=Resolver.Create("Eggs",Eggs[result.EggId] and Eggs[result.EggId].ModelName or result.EggId) end
++  local width=.9/#result.Results
++  if model then
++   local view=W.Viewport(overlay,model,UDim2.fromScale(width,.55),UDim2.fromScale(.05+(i-1)*width,.2));views[i]=view;models[i]={Model=model,Pivot=model:GetPivot()}
++  end
+  end
+  Sounds.Play("EggWiggle",screen)
+  local connection;local started=os.clock();local duration=reduced and .15 or result.Duration
+@@ -57,4 +63,3 @@
+ end
+ function H.Cleanup() table.clear(queue);if activeClose then activeClose() end end
+ return H
+-

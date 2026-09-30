@@ -1,0 +1,18 @@
+--- before/TutorialService
++++ src/ServerScriptService/ServerSource/Server/TutorialService.lua
+@@ -41,7 +41,9 @@
+  local record=Knit.GetService('ResourceService'):GetRecords()[object]
+  if not record or record.Biome~='Meadow' or not record.IsTree or record.State~='AVAILABLE' or not object:IsDescendantOf(workspace) or not record.Prompt.Parent or not record.Prompt.Enabled then return false end
+  local def=Trees.Get(object,'Meadow')
+- if not def or not Pools.Check(def) or not Readiness.Check(def,player) then return false end
++ -- The first search must be the canonical starter family, even when other
++ -- Meadow trees are reachable. New profiles can afford exactly this price.
++ if not def or def.Id~=Trees.Ordered[1].Id or not Pools.Check(def) or not Readiness.Check(def,player) then return false end
+  local floor=Knit.GetService('BiomeService'):GetFloor('Meadow');if not floor then return false end
+  local p=floor.CFrame:PointToObjectSpace(record.InteractionPosition)
+  return math.abs(p.X)<floor.Size.X/2 and math.abs(p.Z)<floor.Size.Z/2 and math.abs(p.Y)<18,record
+@@ -180,4 +182,3 @@
+  task.spawn(function()while true do task.wait(.5);for _,p in ipairs(Players:GetPlayers())do self:Reconcile(p)end end end)
+ end
+ return Service
+-

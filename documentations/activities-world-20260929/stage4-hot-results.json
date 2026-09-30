@@ -1,0 +1,45 @@
+{
+  "Passed": false,
+  "Failures": [
+    "ServerScriptService.AKWorldExpansionTests:8: actual mission pet placement\nServerScriptService.AKWorldExpansionTests:8\nServerScriptService.AKWorldExpansionTests:11\n"
+  ],
+  "Kind": "Studio Play: Hot searches; simulated missions and two-contributor cooperation",
+  "Assertions": 77,
+  "Hot": [
+    {
+      "WeightBias": 0.15,
+      "Luck": 1,
+      "Variant": "Heavy",
+      "Cooldown": 20,
+      "Bonus": 0
+    },
+    {
+      "WeightBias": 0,
+      "Luck": 1.15,
+      "Variant": "Lucky",
+      "Cooldown": 20,
+      "Bonus": 0
+    },
+    {
+      "WeightBias": 0,
+      "Luck": 1,
+      "Variant": "Rich",
+      "Cooldown": 20,
+      "Bonus": 25
+    },
+    {
+      "WeightBias": 0,
+      "Luck": 1,
+      "Variant": "Fast",
+      "Cooldown": 12,
+      "Bonus": 0
+    },
+    {
+      "WeightBias": 0,
+      "Luck": 1,
+      "Variant": "Mastery",
+      "Cooldown": 20,
+      "Bonus": 0
+    }
+  ]
+}

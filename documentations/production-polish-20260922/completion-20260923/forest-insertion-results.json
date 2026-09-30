@@ -1,0 +1,189 @@
+[
+  {
+    "assetId": "85734355315305",
+    "name": "ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 217,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"33d10de2-cba3-4465-aa43-127647628021\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"85734355315305\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:33d10de2-cba3-4465-aa43-127647628021\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "134079974891290",
+    "name": "ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 218,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"8316216e-b916-4ceb-b7ea-da53d9f1c989\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"134079974891290\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:8316216e-b916-4ceb-b7ea-da53d9f1c989\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "103074281827139",
+    "name": "ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 219,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"d8efceb3-f2d8-42bc-b82e-778b0ed003a1\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"103074281827139\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:d8efceb3-f2d8-42bc-b82e-778b0ed003a1\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "114016759553112",
+    "name": "ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 220,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"1c847da7-077e-417d-b658-b80e3e9204a2\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"114016759553112\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:1c847da7-077e-417d-b658-b80e3e9204a2\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "127911896145490",
+    "name": "ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 221,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"25dd567e-1952-410a-907b-2e576d4d1d62\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"127911896145490\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:25dd567e-1952-410a-907b-2e576d4d1d62\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "76913333675834",
+    "name": "ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 222,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"e958a39b-ece3-4e0f-b0f2-3c5ad31795bd\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"76913333675834\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:e958a39b-ece3-4e0f-b0f2-3c5ad31795bd\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "122381922150314",
+    "name": "ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 223,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"05d99168-1d3c-48f0-86b6-ce121e9b88a2\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"122381922150314\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:05d99168-1d3c-48f0-86b6-ce121e9b88a2\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "120411588642627",
+    "name": "ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 224,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"77658e67-f07a-469e-ada5-7a2b87b7d7ba\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"120411588642627\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:77658e67-f07a-469e-ada5-7a2b87b7d7ba\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "90100153950093",
+    "name": "ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 225,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"ca966271-50da-404f-8340-89235e48a8e6\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"90100153950093\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:ca966271-50da-404f-8340-89235e48a8e6\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "112384650584330",
+    "name": "ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 226,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"8a22786c-7eb3-4faf-9e23-7d0d694f6593\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"112384650584330\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:8a22786c-7eb3-4faf-9e23-7d0d694f6593\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  },
+  {
+    "assetId": "80671057535524",
+    "name": "ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY",
+    "result": {
+      "jsonrpc": "2.0",
+      "id": 227,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"insertGuid\":\"755f2849-1784-425f-8e18-9a82375e21f8\",\"insertedInstances\":[{\"fullPath\":\"game.ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY\",\"name\":\"ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY\",\"className\":\"Model\"}],\"sandboxed\":false,\"assetType\":\"Model\",\"assetId\":\"80671057535524\",\"assetName\":\"ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY\",\"status\":\"success\",\"isPackage\":false,\"tag\":\"Assistant:755f2849-1784-425f-8e18-9a82375e21f8\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  }
+]

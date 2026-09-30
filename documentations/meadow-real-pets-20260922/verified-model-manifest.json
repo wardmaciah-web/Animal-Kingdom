@@ -1,0 +1,698 @@
+[
+  {
+    "PetTypeId": "MeadowFieldMouse",
+    "DisplayName": "Field Mouse",
+    "Rarity": "Common",
+    "BaseIncomePerSecond": 1,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 113989055590248,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowFieldMouse",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowFieldMouse",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_cd03c553-9892-4855-8f09-33b781092721",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://107513294671066",
+            "color": "rbxassetid://73748377999416",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://73748377999416",
+              "VerifiedRoughnessMap": "rbxassetid://125785402534996",
+              "VerifiedMetalnessMap": "rbxassetid://128877854788095",
+              "VerifiedNormalMap": "rbxassetid://107513294671066"
+            },
+            "rough": "rbxassetid://125785402534996",
+            "metal": "rbxassetid://128877854788095"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://127414738965477",
+        "size": [
+          0.8486558794975281,
+          0.9552464485168457,
+          0.9763309955596924
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 1,
+    "Weight": 65
+  },
+  {
+    "PetTypeId": "MeadowChick",
+    "DisplayName": "Meadow Chick",
+    "Rarity": "Common",
+    "BaseIncomePerSecond": 1.25,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 98876995093333,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowChick",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowChick",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://115349930864646",
+            "color": "rbxassetid://77213563483513",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://77213563483513",
+              "VerifiedRoughnessMap": "rbxassetid://131516093008909",
+              "VerifiedMetalnessMap": "rbxassetid://80616376937051",
+              "VerifiedNormalMap": "rbxassetid://115349930864646"
+            },
+            "rough": "rbxassetid://131516093008909",
+            "metal": "rbxassetid://80616376937051"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://122845755829690",
+        "size": [
+          0.7262683510780334,
+          0.9772312045097351,
+          0.7673857808113098
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 1,
+    "Weight": 25
+  },
+  {
+    "PetTypeId": "MeadowHoneyLop",
+    "DisplayName": "Honey Lop Bunny",
+    "Rarity": "Uncommon",
+    "BaseIncomePerSecond": 1.5,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": null,
+    "ImportedTemplatePath": null,
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowHoneyLop",
+    "MeshPartCount": 0,
+    "Parts": [],
+    "Ready": false,
+    "Issue": "No matching uploaded/imported model found",
+    "TreeTier": 1,
+    "Weight": 10
+  },
+  {
+    "PetTypeId": "MeadowRedSquirrel",
+    "DisplayName": "Red Squirrel",
+    "Rarity": "Uncommon",
+    "BaseIncomePerSecond": 1.75,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 110005101968034,
+    "ImportedTemplatePath": "Workspace.model.tripo_node_992d05af-6f28-4df5-9eaa-ab753bad8c84",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowRedSquirrel",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_992d05af-6f28-4df5-9eaa-ab753bad8c84",
+        "surfaces": [
+          {
+            "ColorMap": "rbxassetid://83064824068183",
+            "NormalMap": "rbxassetid://91452865932667",
+            "RoughnessMap": "rbxassetid://91604476939489",
+            "MetalnessMap": "rbxassetid://84855289193392"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://73672924650229",
+        "size": [
+          0.8746402859687805,
+          0.9764536619186401,
+          0.9008661508560181
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": "Original upload untextured; repaired locally with exact source GLB textures",
+    "TreeTier": 2,
+    "Weight": 65
+  },
+  {
+    "PetTypeId": "MeadowGoat",
+    "DisplayName": "Meadow Goat",
+    "Rarity": "Uncommon",
+    "BaseIncomePerSecond": 2,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 84570662269866,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowGoat",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowGoat",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://125176441379752",
+            "color": "rbxassetid://79773020130638",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://79773020130638",
+              "VerifiedRoughnessMap": "rbxassetid://134672877643564",
+              "VerifiedMetalnessMap": "rbxassetid://134593766738006",
+              "VerifiedNormalMap": "rbxassetid://125176441379752"
+            },
+            "rough": "rbxassetid://134672877643564",
+            "metal": "rbxassetid://134593766738006"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://89904570166738",
+        "size": [
+          0.8083165884017944,
+          0.869905948638916,
+          0.9764164090156555
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 2,
+    "Weight": 25
+  },
+  {
+    "PetTypeId": "MeadowFawn",
+    "DisplayName": "Meadow Fawn",
+    "Rarity": "Rare",
+    "BaseIncomePerSecond": 2.5,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 131817571953129,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowFawn",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowFawn",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_5540feee-a628-4492-bf85-4b08a32157c8",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://75047215073772",
+            "color": "rbxassetid://76132821896289",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://76132821896289",
+              "VerifiedRoughnessMap": "rbxassetid://70797534053995",
+              "VerifiedMetalnessMap": "rbxassetid://74949285323504",
+              "VerifiedNormalMap": "rbxassetid://75047215073772"
+            },
+            "rough": "rbxassetid://70797534053995",
+            "metal": "rbxassetid://74949285323504"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://107263251366206",
+        "size": [
+          0.8002438545227051,
+          0.9747399091720581,
+          0.7615129351615906
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 2,
+    "Weight": 10
+  },
+  {
+    "PetTypeId": "MeadowFluffyLop",
+    "DisplayName": "Fluffy Lop Bunny",
+    "Rarity": "Rare",
+    "BaseIncomePerSecond": 3,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 72284151375691,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowFluffyLop",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowFluffyLop",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_d217bfb4-d96a-40d7-b908-73e4a2bf75ba",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://90499505870975",
+            "color": "rbxassetid://77371096825073",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://77371096825073",
+              "VerifiedRoughnessMap": "rbxassetid://91625036019127",
+              "VerifiedMetalnessMap": "rbxassetid://76445437935068",
+              "VerifiedNormalMap": "rbxassetid://90499505870975"
+            },
+            "rough": "rbxassetid://91625036019127",
+            "metal": "rbxassetid://76445437935068"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://99771514014908",
+        "size": [
+          0.6183099746704102,
+          0.8422922492027283,
+          0.9783705472946167
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 3,
+    "Weight": 65
+  },
+  {
+    "PetTypeId": "MeadowPatchworkLop",
+    "DisplayName": "Patchwork Lop Bunny",
+    "Rarity": "Rare",
+    "BaseIncomePerSecond": 3.5,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 100554319678383,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowPatchworkLop",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowPatchworkLop",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_3d194778-8a6d-43bc-ab92-3cf87bba28a1",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://87653626714147",
+            "color": "rbxassetid://129853249692809",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://129853249692809",
+              "VerifiedRoughnessMap": "rbxassetid://133854510456521",
+              "VerifiedMetalnessMap": "rbxassetid://140170357182395",
+              "VerifiedNormalMap": "rbxassetid://87653626714147"
+            },
+            "rough": "rbxassetid://133854510456521",
+            "metal": "rbxassetid://140170357182395"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://129971024677390",
+        "size": [
+          0.6216316819190979,
+          0.7852169275283813,
+          0.9765220880508423
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 3,
+    "Weight": 25
+  },
+  {
+    "PetTypeId": "MeadowDaisyHedgehog",
+    "DisplayName": "Daisy Hedgehog",
+    "Rarity": "Epic",
+    "BaseIncomePerSecond": 4,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 95703383291167,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowDaisyHedgehog",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyHedgehog",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_d8835cc4-e843-4e37-82c8-65f80a338425",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://131533535435586",
+            "color": "rbxassetid://83789055307274",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://83789055307274",
+              "VerifiedRoughnessMap": "rbxassetid://77242246500235",
+              "VerifiedMetalnessMap": "rbxassetid://102478534355936",
+              "VerifiedNormalMap": "rbxassetid://131533535435586"
+            },
+            "rough": "rbxassetid://77242246500235",
+            "metal": "rbxassetid://102478534355936"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://82581654748495",
+        "size": [
+          0.8974553346633911,
+          0.9765384793281555,
+          0.9433929920196533
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 3,
+    "Weight": 10
+  },
+  {
+    "PetTypeId": "MeadowBuck",
+    "DisplayName": "Meadow Buck",
+    "Rarity": "Epic",
+    "BaseIncomePerSecond": 4.5,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 112116752525943,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowBuck",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowBuck",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_fd7d8868-902a-4473-8a3c-feb6512014ec",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://128041311526858",
+            "color": "rbxassetid://116242731028580",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://116242731028580",
+              "VerifiedRoughnessMap": "rbxassetid://72971033504395",
+              "VerifiedMetalnessMap": "rbxassetid://73864039726135",
+              "VerifiedNormalMap": "rbxassetid://128041311526858"
+            },
+            "rough": "rbxassetid://72971033504395",
+            "metal": "rbxassetid://73864039726135"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://74693569451680",
+        "size": [
+          0.6165929436683655,
+          0.97978276014328,
+          0.9337677955627441
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 4,
+    "Weight": 65
+  },
+  {
+    "PetTypeId": "MeadowDaisyCrownBunny",
+    "DisplayName": "Daisy-Crown Bunny",
+    "Rarity": "Epic",
+    "BaseIncomePerSecond": 5,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 133237199904570,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowDaisyCrownBunny",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyCrownBunny",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_73cbea41-f239-4fd1-b2cb-0d8ea6d5edd9",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://132840718932667",
+            "color": "rbxassetid://120392697720099",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://120392697720099",
+              "VerifiedRoughnessMap": "rbxassetid://94880270353711",
+              "VerifiedMetalnessMap": "rbxassetid://135222764389571",
+              "VerifiedNormalMap": "rbxassetid://132840718932667"
+            },
+            "rough": "rbxassetid://94880270353711",
+            "metal": "rbxassetid://135222764389571"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://70876461319097",
+        "size": [
+          0.6344610452651978,
+          0.7705458402633667,
+          0.9805973172187805
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 4,
+    "Weight": 25
+  },
+  {
+    "PetTypeId": "MeadowBlossomBunny",
+    "DisplayName": "Blossom Bunny",
+    "Rarity": "Legendary",
+    "BaseIncomePerSecond": 6,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 138223719551625,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowBlossomBunny",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowBlossomBunny",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_a3815d15-d927-4476-9027-4fc48f3e255f",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://116518881029932",
+            "color": "rbxassetid://110600438861044",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://110600438861044",
+              "VerifiedRoughnessMap": "rbxassetid://122149791379322",
+              "VerifiedMetalnessMap": "rbxassetid://119040525148593",
+              "VerifiedNormalMap": "rbxassetid://116518881029932"
+            },
+            "rough": "rbxassetid://122149791379322",
+            "metal": "rbxassetid://119040525148593"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://81163303277235",
+        "size": [
+          0.6049506068229675,
+          0.8678094148635864,
+          0.9767798781394958
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 4,
+    "Weight": 10
+  },
+  {
+    "PetTypeId": "MeadowPrismAntlerDeer",
+    "DisplayName": "Prism-Antler Deer",
+    "Rarity": "Legendary",
+    "BaseIncomePerSecond": 7,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 105166919366910,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowPrismAntlerDeer",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowPrismAntlerDeer",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_c9ed4ede-d440-4cf2-8811-fd42a6ba3325",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://113832268002902",
+            "color": "rbxassetid://70473479723436",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://70473479723436",
+              "VerifiedRoughnessMap": "rbxassetid://101532226048659",
+              "VerifiedMetalnessMap": "rbxassetid://88319662713940",
+              "VerifiedNormalMap": "rbxassetid://113832268002902"
+            },
+            "rough": "rbxassetid://101532226048659",
+            "metal": "rbxassetid://88319662713940"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://125325309083944",
+        "size": [
+          0.7401573657989502,
+          0.9796386361122131,
+          0.7547137141227722
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 5,
+    "Weight": 70
+  },
+  {
+    "PetTypeId": "MeadowCloudtailFox",
+    "DisplayName": "Cloudtail Fox",
+    "Rarity": "Legendary",
+    "BaseIncomePerSecond": 8,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 110305591746768,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowCloudtailFox",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowCloudtailFox",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_30a6be52-f783-4d1e-b47d-5aa9b77ac5f9",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://137574484960331",
+            "color": "rbxassetid://100873128150834",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://100873128150834",
+              "VerifiedRoughnessMap": "rbxassetid://140611944152897",
+              "VerifiedMetalnessMap": "rbxassetid://81175225099490",
+              "VerifiedNormalMap": "rbxassetid://137574484960331"
+            },
+            "rough": "rbxassetid://140611944152897",
+            "metal": "rbxassetid://81175225099490"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://99272790538349",
+        "size": [
+          0.7240810394287109,
+          0.9795849323272705,
+          0.914490818977356
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 5,
+    "Weight": 25
+  },
+  {
+    "PetTypeId": "MeadowCelestialLamb",
+    "DisplayName": "Celestial Lamb",
+    "Rarity": "Secret",
+    "BaseIncomePerSecond": 9,
+    "Biome": "Meadow",
+    "RobloxModelAssetId": 97905390781453,
+    "ImportedTemplatePath": "ReplicatedStorage.Assets.Pets.MeadowCelestialLamb",
+    "CanonicalTemplatePath": "ReplicatedStorage.MeadowPetTemplates.MeadowCelestialLamb",
+    "MeshPartCount": 1,
+    "Parts": [
+      {
+        "color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "class": "MeshPart",
+        "transparency": 0,
+        "name": "tripo_mesh_1ff9d927-b5da-4e5f-9ac1-e49ab126a5bb",
+        "surfaces": [
+          {
+            "normal": "rbxassetid://102063994556417",
+            "color": "rbxassetid://104848496835588",
+            "attrs": {
+              "VerifiedColorMap": "rbxassetid://104848496835588",
+              "VerifiedRoughnessMap": "rbxassetid://110363759590435",
+              "VerifiedMetalnessMap": "rbxassetid://106228697606258",
+              "VerifiedNormalMap": "rbxassetid://102063994556417"
+            },
+            "rough": "rbxassetid://110363759590435",
+            "metal": "rbxassetid://106228697606258"
+          }
+        ],
+        "texture": "",
+        "material": "Plastic",
+        "mesh": "rbxassetid://112434751758874",
+        "size": [
+          0.8050263524055481,
+          0.978759765625,
+          0.8895550966262817
+        ]
+      }
+    ],
+    "Ready": true,
+    "Issue": null,
+    "TreeTier": 5,
+    "Weight": 5
+  }
+]

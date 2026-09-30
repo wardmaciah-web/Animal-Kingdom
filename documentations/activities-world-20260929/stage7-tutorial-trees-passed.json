@@ -1,0 +1,1825 @@
+{
+  "OriginalCoins": 2220,
+  "Checks": [
+    "Saved identity/stat/location preserved d959c3af-e258-4ddf-8c55-3cc5d8a7470d",
+    "Derived income refreshed d959c3af-e258-4ddf-8c55-3cc5d8a7470d",
+    "Saved identity/stat/location preserved 0f3ed6da-5103-4dd9-8a4a-302d25ad9f5f",
+    "Derived income refreshed 0f3ed6da-5103-4dd9-8a4a-302d25ad9f5f",
+    "Saved identity/stat/location preserved 0da7bc6c-0059-4028-9ae5-30c23920c0ac",
+    "Derived income refreshed 0da7bc6c-0059-4028-9ae5-30c23920c0ac",
+    "Saved identity/stat/location preserved c9032b0d-6bbd-4e7c-a17e-4bcc25abd8d0",
+    "Derived income refreshed c9032b0d-6bbd-4e7c-a17e-4bcc25abd8d0",
+    "Saved identity/stat/location preserved 7d06ab25-6c6c-4434-8aac-b1747e56b010",
+    "Derived income refreshed 7d06ab25-6c6c-4434-8aac-b1747e56b010",
+    "Saved identity/stat/location preserved economy-preserve-1",
+    "Derived income refreshed economy-preserve-1",
+    "Saved identity/stat/location preserved economy-preserve-2",
+    "Derived income refreshed economy-preserve-2",
+    "Saved identity/stat/location preserved economy-preserve-3",
+    "Derived income refreshed economy-preserve-3",
+    "Saved identity/stat/location preserved economy-preserve-4",
+    "Derived income refreshed economy-preserve-4",
+    "Balances survive refresh without starter reset",
+    "Existing contracts and records survive refresh",
+    "Published total equals authoritative total",
+    "Clean profile starts with exactly 250 and no pets",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_13_Type3",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_13_Type3",
+    "Physical copy shares exact definition Forest_Shakeable_03",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_03",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_12_Type5",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_12_Type5",
+    "Physical copy shares exact definition Forest_Shakeable_05",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_03",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_03_Type3",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_03_Type3",
+    "Physical copy shares exact definition Forest_Shakeable_03",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_05",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_30_Type1",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_30_Type1",
+    "Physical copy shares exact definition Forest_Shakeable_01",
+    "Prompt price matches Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1",
+    "Family name and no local price Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1",
+    "Physical copy shares exact definition Meadow_Shakeable_01",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_05_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_05_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_18_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_18_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_03",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_24_Type5",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_24_Type5",
+    "Physical copy shares exact definition Forest_Shakeable_05",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_19_Type5",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_19_Type5",
+    "Physical copy shares exact definition Forest_Shakeable_05",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_03",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_01",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_04",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_29_Type5",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_29_Type5",
+    "Physical copy shares exact definition Forest_Shakeable_05",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_08_Type3",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_08_Type3",
+    "Physical copy shares exact definition Forest_Shakeable_03",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_05",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_04_Type2",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_04_Type2",
+    "Physical copy shares exact definition Forest_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_16_Type5",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_16_Type5",
+    "Physical copy shares exact definition Forest_Shakeable_05",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_23_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_23_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_04",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_01",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_20_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_20_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_14_Type2",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_14_Type2",
+    "Physical copy shares exact definition Forest_Shakeable_02",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_01",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_06_Type5",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_06_Type5",
+    "Physical copy shares exact definition Forest_Shakeable_05",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_27_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_27_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_22_Type3",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_22_Type3",
+    "Physical copy shares exact definition Forest_Shakeable_03",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_15_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_15_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_02_Type2",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_02_Type2",
+    "Physical copy shares exact definition Forest_Shakeable_02",
+    "Prompt price matches Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3",
+    "Family name and no local price Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3",
+    "Physical copy shares exact definition Meadow_Shakeable_03",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_01",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_10_Type4",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_10_Type4",
+    "Physical copy shares exact definition Forest_Shakeable_04",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_09_Type2",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_09_Type2",
+    "Physical copy shares exact definition Forest_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_21_Type2",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_21_Type2",
+    "Physical copy shares exact definition Forest_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_07_Type1",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_07_Type1",
+    "Physical copy shares exact definition Forest_Shakeable_01",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_28_Type3",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_28_Type3",
+    "Physical copy shares exact definition Forest_Shakeable_03",
+    "Prompt price matches Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2",
+    "Family name and no local price Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2",
+    "Physical copy shares exact definition Meadow_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_25_Type2",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_25_Type2",
+    "Physical copy shares exact definition Forest_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_17_Type1",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_17_Type1",
+    "Physical copy shares exact definition Forest_Shakeable_01",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_03",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_01_Type1",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_01_Type1",
+    "Physical copy shares exact definition Forest_Shakeable_01",
+    "Prompt price matches Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2",
+    "Family name and no local price Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2",
+    "Physical copy shares exact definition Meadow_Shakeable_02",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_11_Type1",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_11_Type1",
+    "Physical copy shares exact definition Forest_Shakeable_01",
+    "Prompt price matches Workspace.Forest.SearchableTrees.ForestTree_26_Type1",
+    "Family name and no local price Workspace.Forest.SearchableTrees.ForestTree_26_Type1",
+    "Physical copy shares exact definition Forest_Shakeable_01",
+    "Prompt price matches Workspace.Scene",
+    "Family name and no local price Workspace.Scene",
+    "Physical copy shares exact definition Meadow_Shakeable_02",
+    "Free Meadow arrival advances tutorial",
+    "Tutorial excludes unaffordable family Meadow_Shakeable_05",
+    "Tutorial excludes unaffordable family Meadow_Shakeable_04",
+    "Tutorial excludes unaffordable family Meadow_Shakeable_02",
+    "Tutorial excludes unaffordable family Meadow_Shakeable_03",
+    "Missing model cannot consume starter coins",
+    "Starter awarded one valid usable positive-income pet",
+    "Starter charged exactly 250 once",
+    "Paid starter search has no legacy gathering refund",
+    "Repeated commit cannot charge or grant twice",
+    "Single commit records weight, streak and mastery once",
+    "Tutorial uses first committed UID without another search",
+    "Hold actual starter",
+    "Free Sanctuary travel",
+    "Sanctuary travel costs no coins",
+    "Place first pet at physical Sanctuary slot",
+    "Placement is free",
+    "Placement advances tutorial",
+    "Collect actual accrued income",
+    "Tutorial completes from first pet collection only",
+    "Tutorial required exactly one paid search",
+    "Starter rebuilds enough for another search through Sanctuary",
+    "Holding, displaying and collecting do not add searches",
+    "Starter naturally restores after cooldown",
+    "Displayed pet income equals server stats",
+    "Sanctuary label agrees with published income",
+    "Recovered balance buys another normal search",
+    "Recovered search charges exactly once",
+    "Fund isolated family tests",
+    "Existing Forest unlock works",
+    "Insufficient funds leaves coins/pets unchanged Meadow_Shakeable_02",
+    "Useful current-price feedback Meadow_Shakeable_02",
+    "Real Play search Meadow_Shakeable_02",
+    "Concurrent search rejected Meadow_Shakeable_02",
+    "Exactly one pet Meadow_Shakeable_02",
+    "Correct pool and server price Meadow_Shakeable_02",
+    "One actual charge Meadow_Shakeable_02",
+    "Normal search has no secondary loot subsidy Meadow_Shakeable_02",
+    "One streak increment Meadow_Shakeable_02",
+    "Accumulated income preserved during search Meadow_Shakeable_02",
+    "Insufficient funds leaves coins/pets unchanged Meadow_Shakeable_03",
+    "Useful current-price feedback Meadow_Shakeable_03",
+    "Real Play search Meadow_Shakeable_03",
+    "Concurrent search rejected Meadow_Shakeable_03",
+    "Exactly one pet Meadow_Shakeable_03",
+    "Correct pool and server price Meadow_Shakeable_03",
+    "One actual charge Meadow_Shakeable_03",
+    "Normal search has no secondary loot subsidy Meadow_Shakeable_03",
+    "One streak increment Meadow_Shakeable_03",
+    "Accumulated income preserved during search Meadow_Shakeable_03",
+    "Insufficient funds leaves coins/pets unchanged Meadow_Shakeable_04",
+    "Useful current-price feedback Meadow_Shakeable_04",
+    "Real Play search Meadow_Shakeable_04",
+    "Concurrent search rejected Meadow_Shakeable_04",
+    "Exactly one pet Meadow_Shakeable_04",
+    "Correct pool and server price Meadow_Shakeable_04",
+    "One actual charge Meadow_Shakeable_04",
+    "Normal search has no secondary loot subsidy Meadow_Shakeable_04",
+    "One streak increment Meadow_Shakeable_04",
+    "Accumulated income preserved during search Meadow_Shakeable_04",
+    "Insufficient funds leaves coins/pets unchanged Meadow_Shakeable_05",
+    "Useful current-price feedback Meadow_Shakeable_05",
+    "Real Play search Meadow_Shakeable_05",
+    "Concurrent search rejected Meadow_Shakeable_05",
+    "Exactly one pet Meadow_Shakeable_05",
+    "Correct pool and server price Meadow_Shakeable_05",
+    "One actual charge Meadow_Shakeable_05",
+    "Normal search has no secondary loot subsidy Meadow_Shakeable_05",
+    "One streak increment Meadow_Shakeable_05",
+    "Accumulated income preserved during search Meadow_Shakeable_05",
+    "Insufficient funds leaves coins/pets unchanged Forest_Shakeable_01",
+    "Useful current-price feedback Forest_Shakeable_01",
+    "Real Play search Forest_Shakeable_01",
+    "Concurrent search rejected Forest_Shakeable_01",
+    "Exactly one pet Forest_Shakeable_01",
+    "Correct pool and server price Forest_Shakeable_01",
+    "One actual charge Forest_Shakeable_01",
+    "Normal search has no secondary loot subsidy Forest_Shakeable_01",
+    "One streak increment Forest_Shakeable_01",
+    "Accumulated income preserved during search Forest_Shakeable_01",
+    "Insufficient funds leaves coins/pets unchanged Forest_Shakeable_02",
+    "Useful current-price feedback Forest_Shakeable_02",
+    "Real Play search Forest_Shakeable_02",
+    "Concurrent search rejected Forest_Shakeable_02",
+    "Exactly one pet Forest_Shakeable_02",
+    "Correct pool and server price Forest_Shakeable_02",
+    "One actual charge Forest_Shakeable_02",
+    "Normal search has no secondary loot subsidy Forest_Shakeable_02",
+    "One streak increment Forest_Shakeable_02",
+    "Accumulated income preserved during search Forest_Shakeable_02",
+    "Insufficient funds leaves coins/pets unchanged Forest_Shakeable_03",
+    "Useful current-price feedback Forest_Shakeable_03",
+    "Real Play search Forest_Shakeable_03",
+    "Concurrent search rejected Forest_Shakeable_03",
+    "Exactly one pet Forest_Shakeable_03",
+    "Correct pool and server price Forest_Shakeable_03",
+    "One actual charge Forest_Shakeable_03",
+    "Normal search has no secondary loot subsidy Forest_Shakeable_03",
+    "One streak increment Forest_Shakeable_03",
+    "Accumulated income preserved during search Forest_Shakeable_03",
+    "Insufficient funds leaves coins/pets unchanged Forest_Shakeable_04",
+    "Useful current-price feedback Forest_Shakeable_04",
+    "Real Play search Forest_Shakeable_04",
+    "Concurrent search rejected Forest_Shakeable_04",
+    "Exactly one pet Forest_Shakeable_04",
+    "Correct pool and server price Forest_Shakeable_04",
+    "One actual charge Forest_Shakeable_04",
+    "Normal search has no secondary loot subsidy Forest_Shakeable_04",
+    "One streak increment Forest_Shakeable_04",
+    "Accumulated income preserved during search Forest_Shakeable_04",
+    "Insufficient funds leaves coins/pets unchanged Forest_Shakeable_05",
+    "Useful current-price feedback Forest_Shakeable_05",
+    "Real Play search Forest_Shakeable_05",
+    "Concurrent search rejected Forest_Shakeable_05",
+    "Exactly one pet Forest_Shakeable_05",
+    "Correct pool and server price Forest_Shakeable_05",
+    "One actual charge Forest_Shakeable_05",
+    "Normal search has no secondary loot subsidy Forest_Shakeable_05",
+    "One streak increment Forest_Shakeable_05",
+    "Accumulated income preserved during search Forest_Shakeable_05",
+    "Index receives current server Luck Meadow",
+    "Actual selection matches Index MeadowFieldMouse",
+    "Actual selection matches Index MeadowPatchworkLop",
+    "Actual selection matches Index MeadowBlossomBunny",
+    "Actual selection matches Index MeadowChick",
+    "Actual selection matches Index MeadowFawn",
+    "Actual selection matches Index MeadowCloudtailFox",
+    "Actual selection matches Index MeadowRedSquirrel",
+    "Actual selection matches Index MeadowFluffyLop",
+    "Actual selection matches Index MeadowPrismAntlerDeer",
+    "Actual selection matches Index MeadowGoat",
+    "Actual selection matches Index MeadowBuck",
+    "Actual selection matches Index MeadowDaisyCrownBunny",
+    "Actual selection matches Index MeadowDaisyHedgehog",
+    "Actual selection matches Index MeadowCelestialLamb",
+    "Index receives current server Luck Forest",
+    "Actual selection matches Index ForestRaccoon",
+    "Actual selection matches Index ForestTreeFrog",
+    "Actual selection matches Index ForestEmeraldWing",
+    "Actual selection matches Index ForestBlackBearCub",
+    "Actual selection matches Index ForestBrownBat",
+    "Actual selection matches Index ForestSkunk",
+    "Actual selection matches Index ForestWoodlandOwl",
+    "Actual selection matches Index ForestBadger",
+    "Actual selection matches Index ForestLeafAntler",
+    "Actual selection matches Index ForestRiverOtter",
+    "Actual selection matches Index ForestCrestedOwl",
+    "Prompt restored Meadow_Shakeable_01",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Enabled",
+    "Prompt restored Meadow_Shakeable_02",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Enabled",
+    "Prompt restored Meadow_Shakeable_03",
+    "Tree property restored Enabled",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Prompt restored Meadow_Shakeable_04",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Enabled",
+    "Prompt restored Meadow_Shakeable_05",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Enabled",
+    "Prompt restored Forest_Shakeable_01",
+    "Tree property restored Enabled",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Prompt restored Forest_Shakeable_02",
+    "Tree property restored Enabled",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Prompt restored Forest_Shakeable_03",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Enabled",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Prompt restored Forest_Shakeable_04",
+    "Tree property restored Enabled",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Prompt restored Forest_Shakeable_05",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Tree property restored Enabled",
+    "Tree property restored Transparency",
+    "Tree property restored CanQuery",
+    "Tree property restored CanCollide",
+    "Tree position restored",
+    "Tree property restored CanTouch",
+    "Mock restoration preserves 65a443b8-4e76-4bf8-afc9-786125f0c61a",
+    "Mock restoration preserves da7ad2d1-6d8b-4e75-b4e1-3a7993be31a2",
+    "Mock restoration preserves 91ef1baf-8490-49b1-a668-c16cb4d0acd7",
+    "Mock restoration preserves d26d807f-7ada-475c-9a30-c523837f0283",
+    "Mock restoration preserves 3c06440f-7e77-4750-baae-1ac3062efe74",
+    "Mock restoration preserves f1e30170-8e10-4634-a5dd-8280acafa9e2",
+    "Mock restoration preserves b26308b7-f114-4caf-a429-159e3d232041",
+    "Mock restoration preserves f2c809b4-8854-4622-ad74-bfb424260f89",
+    "Mock restoration preserves 0a87bc8c-47eb-4ff2-bd90-7decc01369a8",
+    "Mock restoration preserves 6320b651-f7ce-4459-a527-fd178925ec12",
+    "Mock restoration preserves 057d7197-1168-422d-88ba-b838ab936a53",
+    "Uncollected balance survives copy restoration",
+    "Lucky Secret is free Meadow",
+    "Lucky coin amount unchanged Meadow",
+    "Lucky boost is free and unchanged Meadow",
+    "Three tries and five-minute boost Meadow",
+    "Fourth Lucky try rejected Meadow",
+    "Lucky did not add normal streak Meadow",
+    "Lucky Secret is free Forest",
+    "Lucky coin amount unchanged Forest",
+    "Lucky boost is free and unchanged Forest",
+    "Three tries and five-minute boost Forest",
+    "Fourth Lucky try rejected Forest",
+    "Lucky did not add normal streak Forest",
+    "Unreleased Jungle unavailable"
+  ],
+  "Families": [
+    {
+      "Id": "Meadow_Shakeable_01",
+      "Count": 1,
+      "ClientInput": true,
+      "Price": 250
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 4.87,
+      "Weight": 0.52,
+      "Id": "Meadow_Shakeable_02",
+      "Price": 500,
+      "Pet": "MeadowChick",
+      "UID": "91ef1baf-8490-49b1-a668-c16cb4d0acd7"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 8.17,
+      "Weight": 2.88,
+      "Id": "Meadow_Shakeable_03",
+      "Price": 1000,
+      "Pet": "MeadowFluffyLop",
+      "UID": "d26d807f-7ada-475c-9a30-c523837f0283"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 9,
+      "Weight": 18.01,
+      "Id": "Meadow_Shakeable_04",
+      "Price": 2000,
+      "Pet": "MeadowGoat",
+      "UID": "3c06440f-7e77-4750-baae-1ac3062efe74"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 14.26,
+      "Weight": 1.23,
+      "Id": "Meadow_Shakeable_05",
+      "Price": 4000,
+      "Pet": "MeadowDaisyHedgehog",
+      "UID": "f1e30170-8e10-4634-a5dd-8280acafa9e2"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 23.52,
+      "Weight": 6.56,
+      "Id": "Forest_Shakeable_01",
+      "Price": 6000,
+      "Pet": "ForestRaccoon",
+      "UID": "b26308b7-f114-4caf-a429-159e3d232041"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 53.29,
+      "Weight": 0.31,
+      "Id": "Forest_Shakeable_02",
+      "Price": 10000,
+      "Pet": "ForestBrownBat",
+      "UID": "f2c809b4-8854-4622-ad74-bfb424260f89"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 50.3,
+      "Weight": 3.38,
+      "Id": "Forest_Shakeable_03",
+      "Price": 17500,
+      "Pet": "ForestSkunk",
+      "UID": "0a87bc8c-47eb-4ff2-bd90-7decc01369a8"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 100,
+      "Weight": 70,
+      "Id": "Forest_Shakeable_04",
+      "Price": 30000,
+      "Pet": "ForestLeafAntler",
+      "UID": "6320b651-f7ce-4459-a527-fd178925ec12"
+    },
+    {
+      "State": "RESPAWNING",
+      "ClientInput": false,
+      "Income": 96.89,
+      "Weight": 9.24,
+      "Id": "Forest_Shakeable_05",
+      "Price": 50000,
+      "Pet": "ForestRiverOtter",
+      "UID": "057d7197-1168-422d-88ba-b838ab936a53"
+    }
+  ],
+  "FinalPetCount": 13,
+  "FinalSanctuaryRate": 2.5,
+  "Passed": true,
+  "Copies": {
+    "Forest_Shakeable_04": 7,
+    "Meadow_Shakeable_05": 2,
+    "Meadow_Shakeable_04": 2,
+    "Meadow_Shakeable_02": 4,
+    "Forest_Shakeable_05": 6,
+    "Forest_Shakeable_02": 6,
+    "Forest_Shakeable_03": 5,
+    "Meadow_Shakeable_01": 5,
+    "Forest_Shakeable_01": 6,
+    "Meadow_Shakeable_03": 6
+  },
+  "RestoredOriginalMock": true,
+  "Starter": {
+    "ZeroBalanceWait": 100,
+    "UID": "65a443b8-4e76-4bf8-afc9-786125f0c61a",
+    "CollectedCoins": 250,
+    "MeasuredSecondsTo250": 100.17947856899991,
+    "WeakestZeroBalanceWait": 100,
+    "Weight": 0.1,
+    "Income": 2.5,
+    "AfterSearchCoins": 0,
+    "StartedAt": 6292.575712418999,
+    "PlacementCoins": 0
+  },
+  "Transactions": [
+    {
+      "At": 6292.460492605009,
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -250
+    },
+    {
+      "At": 6311.942305049,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 5
+    },
+    {
+      "At": 6312.458841882006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6312.975797002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6313.492403892,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6314.008961766012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6314.5247645010095,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6315.0417403320025,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6315.559397314006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6316.076042687011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6316.592012841007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6317.1086987040035,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6317.626247056003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6318.142177302012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6318.658151446012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6319.174383464007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6319.691677074006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6320.208028041001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6320.724723648003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6321.242296551005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6321.758886828,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6322.275515690999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6322.791984138006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6323.308797733,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6323.825218185011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6324.341884316003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6324.857788173002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6325.374691075005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6325.892105674007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6326.408608130005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6326.925057970002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6327.441388419,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6327.958340233003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6328.474940878004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6328.992191656012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6329.507832912001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6330.024129226003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6330.541683678006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6331.059034226011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6331.574468428007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6332.091933447009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6332.608920087005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6333.12431429101,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6333.64152111001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6334.157716850008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6334.675588760001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6335.190675932012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6335.707760960999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6336.224964314009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6336.740470354998,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6337.257694657004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6337.7739818400005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6338.291355257999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6338.808136576001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6339.324416240008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6339.840682524999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6340.357593168999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6340.874167537011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6341.391301569005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6341.907370077999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6342.425230986002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6342.941183651012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6343.457578884001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6343.974304068004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6344.49094376601,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6345.007774195008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6345.524167180003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6346.041026415012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6346.558798205006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6347.074284895003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6347.590792097006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6348.10707471901,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6348.624277043011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6349.140396684001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6349.658866514001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6350.1736496230005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6350.6901742810005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6351.207156263001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6351.723635595001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6352.240919226999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6352.756725937012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6353.273507536011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6353.790555783009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6354.307568205011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6354.82401628801,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6355.340625028999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6355.856819840003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6356.373113360998,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6356.890136539005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6357.4068585750065,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6357.923349207005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6358.440208666012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6358.956599668003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6359.473169722012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6359.990225627,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6360.506970535003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6361.024275902004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6361.540465457001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6362.056756866004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6362.573924822005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6363.090304124009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6363.60640093901,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6364.123206192002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6364.639442111002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6365.156660320004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6365.674886443012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6366.190300610004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6366.706557210011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6367.223081755001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6367.739574805004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6368.256340613007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6368.773230038001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6369.289557412005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6369.806481520005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6370.3232253310125,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6370.839591820011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6371.356992111003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6371.872317886009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6372.389923986004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6372.90727462701,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6373.422717984999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6373.940019924004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6374.456490719007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6374.972866167998,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6375.4898955310055,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6376.00854481601,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6376.523120307,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6377.039776470003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6377.5560592730035,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6378.07306450601,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6378.58980096101,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6379.105652921004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6379.62268202001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6380.139756692006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6380.655628942011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6381.172361638004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6381.689852978001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6382.205353285011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6382.722637324012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6383.239390192,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6383.75617377201,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6384.272275540003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6384.789300199001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6385.305540166009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6385.8229976990115,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6386.339059788006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6386.856755858011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6387.372637036009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6387.889025087003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6388.405562737011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6388.922457902008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6389.439278388003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6389.957357386011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6390.471804782006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6390.989234231005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6391.505898407006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6392.022330617008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6392.5389690209995,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6393.056014262998,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6393.571892050008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6394.088344656004,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6394.605405854003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6395.122512253001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6395.6388101620105,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6396.155408049002,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6396.672022821003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6397.188963690001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6397.705537016009,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6398.221866988999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6398.738606781,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6399.255452814003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6399.771814796011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6400.288537764005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6400.805559012006,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6401.321787206005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6401.8384676490095,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6402.355067579003,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6402.871346952001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6403.389090697005,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6403.905946862011,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6404.4234861590085,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6404.938379331012,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6405.455091471013,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6405.972251599,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6406.4887088000105,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6407.0051501140115,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6407.521563458999,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6408.037928744001,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6408.556067901998,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6409.071114799008,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6409.587797080007,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 2
+    },
+    {
+      "At": 6410.104870488998,
+      "Currency": "Coins",
+      "Reason": "Idle",
+      "Amount": 1
+    },
+    {
+      "At": 6410.93787835601,
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -250
+    },
+    {
+      "At": 6415.071316558999,
+      "Currency": "Coins",
+      "Reason": "QA_MOCK_ONLY",
+      "Amount": 1000000
+    },
+    {
+      "At": 6415.072422763013,
+      "Currency": "Coins",
+      "Reason": "Biome",
+      "Amount": -2500
+    },
+    {
+      "At": 6415.887857574999,
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -500
+    },
+    {
+      "At": 6420.820972317,
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -1000
+    },
+    {
+      "At": 6425.738124136013,
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -2000
+    },
+    {
+      "At": 6430.670258194004,
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -4000
+    },
+    {
+      "At": 6435.571435386999,
+      "Currency": "Coins",
+      "Reason": "ForestTreeSearch",
+      "Amount": -6000
+    },
+    {
+      "At": 6440.486758421001,
+      "Currency": "Coins",
+      "Reason": "ForestTreeSearch",
+      "Amount": -10000
+    },
+    {
+      "At": 6445.403292752002,
+      "Currency": "Coins",
+      "Reason": "ForestTreeSearch",
+      "Amount": -17500
+    },
+    {
+      "At": 6450.336307910999,
+      "Currency": "Coins",
+      "Reason": "ForestTreeSearch",
+      "Amount": -30000
+    },
+    {
+      "At": 6455.2202126850025,
+      "Currency": "Coins",
+      "Reason": "ForestTreeSearch",
+      "Amount": -50000
+    },
+    {
+      "At": 6478.418461393012,
+      "Currency": "Coins",
+      "Reason": "LuckyTree",
+      "Amount": 5000
+    },
+    {
+      "At": 6487.76919829,
+      "Currency": "Coins",
+      "Reason": "LuckyTree",
+      "Amount": 20000
+    }
+  ]
+}

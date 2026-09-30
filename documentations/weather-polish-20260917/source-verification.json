@@ -1,0 +1,37 @@
+{
+  "luau_compile": "PASS",
+  "files": {
+    "src/StarterPlayer/StarterPlayerScripts/WeatherVisualController.client.lua": {
+      "bytes": 24339,
+      "sha256": "4a259375445937d3b7a9f2feb0b650f11c94528ea6c03adab218eb24ef196d96"
+    },
+    "src/ReplicatedStorage/Shared/WeatherVFXQuality.lua": {
+      "bytes": 657,
+      "sha256": "097ece0594f08ffd39704eaa0b6a5f8544e41832816061cef4de52d74358169d"
+    },
+    "src/ReplicatedStorage/Shared/WeatherSoundDefinitions.lua": {
+      "bytes": 14768,
+      "sha256": "9f0961ad2d346bdf6306b54a934ea5ae5136ff02cdd8f5650427b82902085786"
+    },
+    "src/ReplicatedStorage/Shared/WeatherAudioController.lua": {
+      "bytes": 13721,
+      "sha256": "654fc173d917c60d8dec6d58ba20cf090f3b35eb2fbfdaec997d1f76a3516b55"
+    },
+    "src/ReplicatedStorage/Shared/WeatherCelestialEffects.lua": {
+      "bytes": 19518,
+      "sha256": "628dc357ef513183cb326325b366526ae076c948a5f44cd12c542cdf45ac8f93"
+    },
+    "src/ReplicatedStorage/Shared/WeatherEnvironmentEffects.lua": {
+      "bytes": 23506,
+      "sha256": "1a2b9330ed9ff0802e6023a157622d89228150d4e088e28063206705dc8cc302"
+    },
+    "src/ReplicatedStorage/Shared/MeteorShowerEffects.lua": {
+      "bytes": 14656,
+      "sha256": "25e365fd5d5c447fe7c4bc3c7f1e4f7a7b9e09f1b6699a467c2c0b41582533c2"
+    },
+    "src/ReplicatedStorage/Shared/SpiritNightEffects.lua": {
+      "bytes": 10570,
+      "sha256": "dcc26352e435f7dbbfbbee0e740da5e1d5b2bc317c8f9144cbf7dde66446dda7"
+    }
+  }
+}

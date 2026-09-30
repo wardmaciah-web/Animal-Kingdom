@@ -1,0 +1,184 @@
+[
+  {
+    "id": "MeadowBlossomBunny",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowBlossomBunny",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://81163303277235",
+    "maps": {
+      "ColorMap": "rbxassetid://110600438861044",
+      "NormalMap": "rbxassetid://116518881029932",
+      "RoughnessMap": "rbxassetid://122149791379322",
+      "MetalnessMap": "rbxassetid://119040525148593"
+    },
+    "texture": "rbxassetid://110600438861044"
+  },
+  {
+    "id": "MeadowBuck",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowBuck",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://74693569451680",
+    "maps": {
+      "ColorMap": "rbxassetid://116242731028580",
+      "NormalMap": "rbxassetid://128041311526858",
+      "RoughnessMap": "rbxassetid://72971033504395",
+      "MetalnessMap": "rbxassetid://73864039726135"
+    },
+    "texture": "rbxassetid://116242731028580"
+  },
+  {
+    "id": "MeadowCelestialLamb",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowCelestialLamb",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://112434751758874",
+    "maps": {
+      "ColorMap": "rbxassetid://104848496835588",
+      "NormalMap": "rbxassetid://102063994556417",
+      "RoughnessMap": "rbxassetid://110363759590435",
+      "MetalnessMap": "rbxassetid://106228697606258"
+    },
+    "texture": "rbxassetid://104848496835588"
+  },
+  {
+    "id": "MeadowChick",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowChick",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://122845755829690",
+    "maps": {
+      "ColorMap": "rbxassetid://77213563483513",
+      "NormalMap": "rbxassetid://115349930864646",
+      "RoughnessMap": "rbxassetid://131516093008909",
+      "MetalnessMap": "rbxassetid://80616376937051"
+    },
+    "texture": "rbxassetid://77213563483513"
+  },
+  {
+    "id": "MeadowCloudtailFox",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowCloudtailFox",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://99272790538349",
+    "maps": {
+      "ColorMap": "rbxassetid://100873128150834",
+      "NormalMap": "rbxassetid://137574484960331",
+      "RoughnessMap": "rbxassetid://140611944152897",
+      "MetalnessMap": "rbxassetid://81175225099490"
+    },
+    "texture": "rbxassetid://100873128150834"
+  },
+  {
+    "id": "MeadowDaisyCrownBunny",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyCrownBunny",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://70876461319097",
+    "maps": {
+      "ColorMap": "rbxassetid://120392697720099",
+      "NormalMap": "rbxassetid://132840718932667",
+      "RoughnessMap": "rbxassetid://94880270353711",
+      "MetalnessMap": "rbxassetid://135222764389571"
+    },
+    "texture": "rbxassetid://120392697720099"
+  },
+  {
+    "id": "MeadowDaisyHedgehog",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyHedgehog",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://82581654748495",
+    "maps": {
+      "ColorMap": "rbxassetid://83789055307274",
+      "NormalMap": "rbxassetid://131533535435586",
+      "RoughnessMap": "rbxassetid://77242246500235",
+      "MetalnessMap": "rbxassetid://102478534355936"
+    },
+    "texture": "rbxassetid://83789055307274"
+  },
+  {
+    "id": "MeadowFawn",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowFawn",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://107263251366206",
+    "maps": {
+      "ColorMap": "rbxassetid://76132821896289",
+      "NormalMap": "rbxassetid://75047215073772",
+      "RoughnessMap": "rbxassetid://70797534053995",
+      "MetalnessMap": "rbxassetid://74949285323504"
+    },
+    "texture": "rbxassetid://76132821896289"
+  },
+  {
+    "id": "MeadowFieldMouse",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowFieldMouse",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://127414738965477",
+    "maps": {
+      "ColorMap": "rbxassetid://73748377999416",
+      "NormalMap": "rbxassetid://107513294671066",
+      "RoughnessMap": "rbxassetid://125785402534996",
+      "MetalnessMap": "rbxassetid://128877854788095"
+    },
+    "texture": "rbxassetid://73748377999416"
+  },
+  {
+    "id": "MeadowFluffyLop",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowFluffyLop",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://99771514014908",
+    "maps": {
+      "ColorMap": "rbxassetid://77371096825073",
+      "NormalMap": "rbxassetid://90499505870975",
+      "RoughnessMap": "rbxassetid://91625036019127",
+      "MetalnessMap": "rbxassetid://76445437935068"
+    },
+    "texture": "rbxassetid://77371096825073"
+  },
+  {
+    "id": "MeadowGoat",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowGoat",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://89904570166738",
+    "maps": {
+      "ColorMap": "rbxassetid://79773020130638",
+      "NormalMap": "rbxassetid://125176441379752",
+      "RoughnessMap": "rbxassetid://134672877643564",
+      "MetalnessMap": "rbxassetid://134593766738006"
+    },
+    "texture": "rbxassetid://79773020130638"
+  },
+  {
+    "id": "MeadowPatchworkLop",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowPatchworkLop",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://129971024677390",
+    "maps": {
+      "ColorMap": "rbxassetid://129853249692809",
+      "NormalMap": "rbxassetid://87653626714147",
+      "RoughnessMap": "rbxassetid://133854510456521",
+      "MetalnessMap": "rbxassetid://140170357182395"
+    },
+    "texture": "rbxassetid://129853249692809"
+  },
+  {
+    "id": "MeadowPrismAntlerDeer",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowPrismAntlerDeer",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://125325309083944",
+    "maps": {
+      "ColorMap": "rbxassetid://70473479723436",
+      "NormalMap": "rbxassetid://113832268002902",
+      "RoughnessMap": "rbxassetid://101532226048659",
+      "MetalnessMap": "rbxassetid://88319662713940"
+    },
+    "texture": "rbxassetid://70473479723436"
+  },
+  {
+    "id": "MeadowRedSquirrel",
+    "template": "ReplicatedStorage.MeadowPetTemplates.MeadowRedSquirrel",
+    "meshPartCount": 1,
+    "mesh": "rbxassetid://73672924650229",
+    "maps": {
+      "ColorMap": "rbxassetid://83064824068183",
+      "NormalMap": "rbxassetid://91452865932667",
+      "RoughnessMap": "rbxassetid://91604476939489",
+      "MetalnessMap": "rbxassetid://84855289193392"
+    },
+    "texture": "rbxassetid://83064824068183"
+  }
+]

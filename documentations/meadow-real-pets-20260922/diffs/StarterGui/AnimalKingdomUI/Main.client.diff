@@ -1,0 +1,16 @@
+--- baseline/src/StarterGui/AnimalKingdomUI/Main.client.lua
++++ src/StarterGui/AnimalKingdomUI/Main.client.lua
+@@ -183,7 +183,7 @@
+  controller=Knit.GetController("DataController");data=controller:GetPlayerData()
+  connect(controller.Changed,function(key,snapshot)
+   data=snapshot
+-   local relevant={Pets={Pets=true,EquippedPets=true,PetStorageCapacity=true,MaxEquippedPets=true},Index={PetIndex=true,IndexRewards=true},Garden={GardenExpeditions=true,GardenCosmetics=true,Pets=true,EquippedPets=true},Biomes={UnlockedBiomes=true},Upgrades={Upgrades=true},Challenges={DailyChallenges=true,WeeklyChallenges=true},Settings={Settings=true},Plot={PlotProgression=true,Items=true,UncollectedSanctuaryCoins=true}}
++   local relevant={Pets={Pets=true,EquippedPets=true,DisplayedPetIds=true,PetStorageCapacity=true,MaxEquippedPets=true},Index={PetIndex=true,IndexRewards=true},Garden={GardenExpeditions=true,GardenCosmetics=true,Pets=true,EquippedPets=true},Biomes={UnlockedBiomes=true},Upgrades={Upgrades=true},Challenges={DailyChallenges=true,WeeklyChallenges=true},Settings={Settings=true},Plot={PlotProgression=true,Items=true,UncollectedSanctuaryCoins=true}}
+   if not key or key=="Currencies" or key=="Settings" or key=="TutorialProgress" or key=="TutorialCompleted" or (active and relevant[active] and relevant[active][key]) then ctx.Refresh() end
+  end)
+  ctx.Refresh()
+@@ -232,4 +232,3 @@
+  end
+ end)
+ script.Destroying:Connect(function() Hatch.Cleanup(); for _,c in ipairs(connections) do c:Disconnect() end end)
+-

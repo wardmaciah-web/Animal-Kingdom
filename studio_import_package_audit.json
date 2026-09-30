@@ -1,0 +1,968 @@
+[
+  {
+    "asset": "TradingHall_MaterialSplit.fbx",
+    "source": "Inn.fbx",
+    "meshObjects": 5,
+    "sourceFaces": 3865,
+    "packagedFaces": 3865,
+    "boundsDifference": 4.4659422826498485e-09,
+    "status": "PASS",
+    "dimensions": [
+      4.0291125774383545,
+      3.491201900603664,
+      4.021362304687447
+    ],
+    "pieces": [
+      {
+        "role": "Gold",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Inn/Inn_Gold.fbx",
+        "materials": [
+          "Windows"
+        ],
+        "color": [
+          220,
+          177,
+          81
+        ],
+        "robloxMaterial": "Metal",
+        "faces": 14,
+        "vertices": 60,
+        "boundsMin": [
+          -1.550713300704956,
+          1.8825168610521814,
+          -1.122681021520362
+        ],
+        "boundsMax": [
+          1.532956838607788,
+          2.2354490757891416,
+          1.1226805928725603
+        ]
+      },
+      {
+        "role": "Roof",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Inn/Inn_Roof.fbx",
+        "materials": [
+          "RoofTiles_Red"
+        ],
+        "color": [
+          83,
+          82,
+          78
+        ],
+        "robloxMaterial": "Slate",
+        "faces": 1336,
+        "vertices": 3812,
+        "boundsMin": [
+          -1.8121540546417236,
+          0.9307864318779665,
+          -2.010681318824898
+        ],
+        "boundsMax": [
+          1.8325904607772827,
+          3.321825505348209,
+          2.0106809858625487
+        ]
+      },
+      {
+        "role": "Stone",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Inn/Inn_Stone.fbx",
+        "materials": [
+          "Stone_Dark",
+          "Stone_Light"
+        ],
+        "color": [
+          145,
+          139,
+          126
+        ],
+        "robloxMaterial": "Cobblestone",
+        "faces": 1240,
+        "vertices": 1762,
+        "boundsMin": [
+          -1.4060126543045044,
+          0.004796881831961364,
+          -1.4711327560610719
+        ],
+        "boundsMax": [
+          1.3590601682662964,
+          1.897643633627341,
+          1.471132754497971
+        ]
+      },
+      {
+        "role": "Timber",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Inn/Inn_Timber.fbx",
+        "materials": [
+          "Wood",
+          "Wood_Light"
+        ],
+        "color": [
+          79,
+          55,
+          42
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 1225,
+        "vertices": 1868,
+        "boundsMin": [
+          -2.0182368755340576,
+          -0.005676523225473348,
+          -1.9404545340844728
+        ],
+        "boundsMax": [
+          2.010875701904297,
+          3.4855253773781905,
+          1.9404541935613497
+        ]
+      },
+      {
+        "role": "Walls",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Inn/Inn_Walls.fbx",
+        "materials": [
+          "Plaster"
+        ],
+        "color": [
+          238,
+          218,
+          179
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 50,
+        "vertices": 80,
+        "boundsMin": [
+          -1.5183229446411133,
+          0.018551990066120422,
+          -1.227535734399134
+        ],
+        "boundsMax": [
+          1.4713704586029053,
+          3.221448903609724,
+          1.240366687552127
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "Rewards_MaterialSplit.fbx",
+    "source": "House_4.fbx",
+    "meshObjects": 5,
+    "sourceFaces": 1508,
+    "packagedFaces": 1508,
+    "boundsDifference": 3.923339875200327e-09,
+    "status": "PASS",
+    "dimensions": [
+      1.9369354248046875,
+      1.0733024920069512,
+      2.1235672601644935
+    ],
+    "pieces": [
+      {
+        "role": "Roof",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_4/House_4_Roof.fbx",
+        "materials": [
+          "Stone_Dark"
+        ],
+        "color": [
+          91,
+          78,
+          72
+        ],
+        "robloxMaterial": "Slate",
+        "faces": 719,
+        "vertices": 1166,
+        "boundsMin": [
+          -0.7627061605453491,
+          0.0002674690449271995,
+          -0.8349534362774108
+        ],
+        "boundsMax": [
+          0.7627061605453491,
+          0.94397757780213,
+          1.042064659055852
+        ]
+      },
+      {
+        "role": "Stone",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_4/House_4_Stone.fbx",
+        "materials": [
+          "Stone"
+        ],
+        "color": [
+          145,
+          139,
+          126
+        ],
+        "robloxMaterial": "Cobblestone",
+        "faces": 98,
+        "vertices": 120,
+        "boundsMin": [
+          -0.7365467548370361,
+          0.00026747385706159976,
+          -0.7939124621622512
+        ],
+        "boundsMax": [
+          0.7365466952323914,
+          1.0473531585958245,
+          0.8733955419701561
+        ]
+      },
+      {
+        "role": "Terracotta",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_4/House_4_Terracotta.fbx",
+        "materials": [
+          "Wood_Side"
+        ],
+        "color": [
+          170,
+          73,
+          70
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 20,
+        "vertices": 80,
+        "boundsMin": [
+          -0.9684677124023438,
+          0.8651678814872156,
+          -1.0574423441314456
+        ],
+        "boundsMax": [
+          0.9684677124023438,
+          1.0731979959251015,
+          1.0574420463695318
+        ]
+      },
+      {
+        "role": "Timber",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_4/House_4_Timber.fbx",
+        "materials": [
+          "Wood"
+        ],
+        "color": [
+          117,
+          78,
+          52
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 358,
+        "vertices": 576,
+        "boundsMin": [
+          -0.9684677124023438,
+          -0.00010449608184959749,
+          -1.0574423441314456
+        ],
+        "boundsMax": [
+          0.9684677124023438,
+          1.0731979959251015,
+          1.0574420463695318
+        ]
+      },
+      {
+        "role": "Walls",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_4/House_4_Walls.fbx",
+        "materials": [
+          "Stone_Light"
+        ],
+        "color": [
+          246,
+          232,
+          199
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 313,
+        "vertices": 509,
+        "boundsMin": [
+          -0.7598920464515686,
+          0.0002674690449271995,
+          -0.8230916951223721
+        ],
+        "boundsMax": [
+          0.7598920464515686,
+          0.7762252237245806,
+          1.066124916033048
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "GeneralStore_MaterialSplit.fbx",
+    "source": "House_2.fbx",
+    "meshObjects": 5,
+    "sourceFaces": 3569,
+    "packagedFaces": 3569,
+    "boundsDifference": 4.5166013151742845e-09,
+    "status": "PASS",
+    "dimensions": [
+      2.220160722732544,
+      3.2503521494986636,
+      3.420024515165922
+    ],
+    "pieces": [
+      {
+        "role": "Roof",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_2/House_2_Roof.fbx",
+        "materials": [
+          "RoofTiles"
+        ],
+        "color": [
+          144,
+          82,
+          61
+        ],
+        "robloxMaterial": "Slate",
+        "faces": 608,
+        "vertices": 1490,
+        "boundsMin": [
+          -0.9642186760902405,
+          1.8173955047277415,
+          -1.876846976780665
+        ],
+        "boundsMax": [
+          1.022843360900879,
+          3.156372744763515,
+          1.2129451651818173
+        ]
+      },
+      {
+        "role": "Sage",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_2/House_2_Sage.fbx",
+        "materials": [
+          "Windows"
+        ],
+        "color": [
+          105,
+          145,
+          96
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 16,
+        "vertices": 66,
+        "boundsMin": [
+          -0.5652545690536499,
+          1.2756622903441543,
+          -1.8926032063193374
+        ],
+        "boundsMax": [
+          0.8320105671882629,
+          2.6752391766671058,
+          1.0443023435144572
+        ]
+      },
+      {
+        "role": "Stone",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_2/House_2_Stone.fbx",
+        "materials": [
+          "Stone",
+          "Stone_Dark",
+          "Stone_Light"
+        ],
+        "color": [
+          145,
+          139,
+          126
+        ],
+        "robloxMaterial": "Cobblestone",
+        "faces": 1734,
+        "vertices": 2595,
+        "boundsMin": [
+          -1.1188867092132568,
+          -0.0017009824045604912,
+          -1.0494362998123985
+        ],
+        "boundsMax": [
+          0.8528432250022888,
+          2.982637855521716,
+          0.8675438084925272
+        ]
+      },
+      {
+        "role": "Timber",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_2/House_2_Timber.fbx",
+        "materials": [
+          "Wood",
+          "Wood_Light",
+          "Wood_Side"
+        ],
+        "color": [
+          117,
+          78,
+          52
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 1199,
+        "vertices": 1836,
+        "boundsMin": [
+          -1.0426490306854248,
+          0.0001202598202411664,
+          -2.071084790213035
+        ],
+        "boundsMax": [
+          1.101274013519287,
+          3.248651167094103,
+          1.3489397249528874
+        ]
+      },
+      {
+        "role": "Walls",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/House_2/House_2_Walls.fbx",
+        "materials": [
+          "Beige"
+        ],
+        "color": [
+          238,
+          218,
+          179
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 12,
+        "vertices": 16,
+        "boundsMin": [
+          -0.7849763631820679,
+          0.9607835565591324,
+          -1.8697277547950468
+        ],
+        "boundsMax": [
+          0.8436011075973511,
+          3.0743870011217873,
+          1.01904515383465
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "Blacksmith_MaterialSplit.fbx",
+    "source": "Blacksmith.fbx",
+    "meshObjects": 5,
+    "sourceFaces": 3792,
+    "packagedFaces": 3792,
+    "boundsDifference": 4.9795532142127286e-09,
+    "status": "PASS",
+    "dimensions": [
+      3.8900245428085327,
+      3.003413919299571,
+      3.2834970963029644
+    ],
+    "pieces": [
+      {
+        "role": "ForgeAccent",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Blacksmith/Blacksmith_ForgeAccent.fbx",
+        "materials": [
+          "Windows"
+        ],
+        "color": [
+          177,
+          91,
+          64
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 4,
+        "vertices": 30,
+        "boundsMin": [
+          -1.0057672262191772,
+          0.4918649835842413,
+          -1.2494066445779282
+        ],
+        "boundsMax": [
+          0.17646610736846924,
+          1.8833701261920635,
+          1.2494062076073587
+        ]
+      },
+      {
+        "role": "Roof",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Blacksmith/Blacksmith_Roof.fbx",
+        "materials": [
+          "RoofTiles_Red"
+        ],
+        "color": [
+          68,
+          67,
+          64
+        ],
+        "robloxMaterial": "Slate",
+        "faces": 488,
+        "vertices": 1416,
+        "boundsMin": [
+          -2.154813528060913,
+          1.0461400924530666,
+          -1.4576708887897054
+        ],
+        "boundsMax": [
+          1.2370517253875732,
+          2.696156733071837,
+          1.4576703970715006
+        ]
+      },
+      {
+        "role": "Stone",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Blacksmith/Blacksmith_Stone.fbx",
+        "materials": [
+          "Stone_Dark",
+          "Stone_Light"
+        ],
+        "color": [
+          145,
+          139,
+          126
+        ],
+        "robloxMaterial": "Cobblestone",
+        "faces": 2047,
+        "vertices": 2695,
+        "boundsMin": [
+          -2.566213607788086,
+          -0.003947209711864047,
+          -1.1874746782021934
+        ],
+        "boundsMax": [
+          1.0542361736297607,
+          2.999466709587707,
+          1.562081681437565
+        ]
+      },
+      {
+        "role": "Timber",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Blacksmith/Blacksmith_Timber.fbx",
+        "materials": [
+          "Wood",
+          "Wood_Light",
+          "Wood_Side"
+        ],
+        "color": [
+          79,
+          55,
+          42
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 1238,
+        "vertices": 1714,
+        "boundsMin": [
+          -2.3319098949432373,
+          -0.00394720556598088,
+          -1.6578813626040594
+        ],
+        "boundsMax": [
+          1.3238109350204468,
+          2.8253853004230023,
+          1.6256157336989048
+        ]
+      },
+      {
+        "role": "Walls",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Blacksmith/Blacksmith_Walls.fbx",
+        "materials": [
+          "Plaster"
+        ],
+        "color": [
+          213,
+          187,
+          147
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 15,
+        "vertices": 20,
+        "boundsMin": [
+          -1.005599856376648,
+          -1.713646534240865e-07,
+          -1.2182152947512406
+        ],
+        "boundsMax": [
+          1.005599856376648,
+          2.610178669083932,
+          1.2182146697116
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "Well_MaterialSplit.fbx",
+    "source": "Well.fbx",
+    "meshObjects": 3,
+    "sourceFaces": 899,
+    "packagedFaces": 899,
+    "boundsDifference": 4.9238585431155e-10,
+    "status": "PASS",
+    "dimensions": [
+      0.66636723279953,
+      1.2504478522556637,
+      1.0035562750512248
+    ],
+    "pieces": [
+      {
+        "role": "Roof",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Well/Well_Roof.fbx",
+        "materials": [
+          "RoofTiles_Red"
+        ],
+        "color": [
+          83,
+          82,
+          78
+        ],
+        "robloxMaterial": "Slate",
+        "faces": 70,
+        "vertices": 177,
+        "boundsMin": [
+          -0.29683831334114075,
+          0.5789585809770305,
+          -0.30434939986550424
+        ],
+        "boundsMax": [
+          0.2849644720554352,
+          0.9614822080713881,
+          0.40539708012258446
+        ]
+      },
+      {
+        "role": "Stone",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Well/Well_Stone.fbx",
+        "materials": [
+          "Stone_Dark",
+          "Stone_Light"
+        ],
+        "color": [
+          161,
+          154,
+          139
+        ],
+        "robloxMaterial": "Cobblestone",
+        "faces": 504,
+        "vertices": 624,
+        "boundsMin": [
+          -0.3374452292919159,
+          -0.2500942791678624,
+          -0.28224218456725225
+        ],
+        "boundsMax": [
+          0.3250589668750763,
+          0.1291184070382505,
+          0.38024371297378506
+        ]
+      },
+      {
+        "role": "Wood",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Well/Well_Wood.fbx",
+        "materials": [
+          "Bag",
+          "Wood"
+        ],
+        "color": [
+          117,
+          78,
+          52
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 325,
+        "vertices": 396,
+        "boundsMin": [
+          -0.3290743827819824,
+          -0.25230863142868,
+          -0.3650501502740325
+        ],
+        "boundsMax": [
+          0.32892200350761414,
+          0.9981392208269836,
+          0.6385061247771923
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "MarketStand1_MaterialSplit.fbx",
+    "source": "MarketStand_1.fbx",
+    "meshObjects": 3,
+    "sourceFaces": 774,
+    "packagedFaces": 774,
+    "boundsDifference": 1.4117431668125846e-09,
+    "status": "PASS",
+    "dimensions": [
+      0.950941264629364,
+      1.0491734790784848,
+      1.1898322137930748
+    ],
+    "pieces": [
+      {
+        "role": "Canopy",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/MarketStand_1/MarketStand_1_Canopy.fbx",
+        "materials": [
+          "RoofTiles_Red"
+        ],
+        "color": [
+          105,
+          145,
+          96
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 152,
+        "vertices": 210,
+        "boundsMin": [
+          -0.475470632314682,
+          0.7351761271088726,
+          -0.5427932805306095
+        ],
+        "boundsMax": [
+          0.475470632314682,
+          1.0444239081444815,
+          0.5498078399413303
+        ]
+      },
+      {
+        "role": "Cream",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/MarketStand_1/MarketStand_1_Cream.fbx",
+        "materials": [
+          "Beige"
+        ],
+        "color": [
+          238,
+          218,
+          179
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 112,
+        "vertices": 168,
+        "boundsMin": [
+          -0.475470632314682,
+          0.7351761468832769,
+          -0.4213032366082773
+        ],
+        "boundsMax": [
+          0.475470632314682,
+          1.044423888370082,
+          0.4283177190535756
+        ]
+      },
+      {
+        "role": "Wood",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/MarketStand_1/MarketStand_1_Wood.fbx",
+        "materials": [
+          "Wood",
+          "Wood_Side"
+        ],
+        "color": [
+          117,
+          78,
+          52
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 510,
+        "vertices": 596,
+        "boundsMin": [
+          -0.4568367302417755,
+          -0.004749570934003397,
+          -0.5965244589936884
+        ],
+        "boundsMax": [
+          0.4568367302417755,
+          1.0302680478969843,
+          0.5933077547993865
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "MarketStand2_MaterialSplit.fbx",
+    "source": "MarketStand_2.fbx",
+    "meshObjects": 3,
+    "sourceFaces": 566,
+    "packagedFaces": 566,
+    "boundsDifference": 2.4411010990377235e-09,
+    "status": "PASS",
+    "dimensions": [
+      0.5171720087528229,
+      1.0421495150012217,
+      1.1542346953446034
+    ],
+    "pieces": [
+      {
+        "role": "Canopy",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/MarketStand_2/MarketStand_2_Canopy.fbx",
+        "materials": [
+          "RoofTiles_Red"
+        ],
+        "color": [
+          170,
+          73,
+          70
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 130,
+        "vertices": 180,
+        "boundsMin": [
+          -0.30137813091278076,
+          0.1116734628408689,
+          -0.5427932790129913
+        ],
+        "boundsMax": [
+          0.21579387784004211,
+          1.0392725171151238,
+          0.5498077818543037
+        ]
+      },
+      {
+        "role": "Cream",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/MarketStand_2/MarketStand_2_Cream.fbx",
+        "materials": [
+          "Beige"
+        ],
+        "color": [
+          238,
+          218,
+          179
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 96,
+        "vertices": 144,
+        "boundsMin": [
+          -0.30137813091278076,
+          0.1116734826152781,
+          -0.42130323295002226
+        ],
+        "boundsMax": [
+          0.21579387784004211,
+          1.0392724973407292,
+          0.4283178799717339
+        ]
+      },
+      {
+        "role": "Wood",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/MarketStand_2/MarketStand_2_Wood.fbx",
+        "materials": [
+          "Wood"
+        ],
+        "color": [
+          117,
+          78,
+          52
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 340,
+        "vertices": 412,
+        "boundsMin": [
+          -0.28274425864219666,
+          -0.0028769978860979316,
+          -0.5771174306051216
+        ],
+        "boundsMax": [
+          0.2000693678855896,
+          1.020953034011506,
+          0.577117264739482
+        ]
+      }
+    ]
+  },
+  {
+    "asset": "Cart_MaterialSplit.fbx",
+    "source": "Cart.fbx",
+    "meshObjects": 4,
+    "sourceFaces": 1324,
+    "packagedFaces": 1324,
+    "boundsDifference": 3.9981842836489534e-10,
+    "status": "PASS",
+    "dimensions": [
+      0.46199747920036316,
+      0.7960560128239125,
+      0.9273888518526426
+    ],
+    "pieces": [
+      {
+        "role": "Accent",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Cart/Cart_Accent.fbx",
+        "materials": [
+          "Red"
+        ],
+        "color": [
+          177,
+          91,
+          64
+        ],
+        "robloxMaterial": "SmoothPlastic",
+        "faces": 124,
+        "vertices": 168,
+        "boundsMin": [
+          -0.18380053341388702,
+          0.6385746769421632,
+          -0.30100860074034225
+        ],
+        "boundsMax": [
+          0.18380053341388702,
+          0.7955329247623134,
+          0.26116212242090153
+        ]
+      },
+      {
+        "role": "DarkWood",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Cart/Cart_DarkWood.fbx",
+        "materials": [
+          "DarkWood"
+        ],
+        "color": [
+          117,
+          78,
+          52
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 158,
+        "vertices": 304,
+        "boundsMin": [
+          -0.1970769613981247,
+          0.027894132785087736,
+          -0.3081794056606161
+        ],
+        "boundsMax": [
+          0.1970769613981247,
+          0.349577616833537,
+          0.2511131470667662
+        ]
+      },
+      {
+        "role": "MainWood",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Cart/Cart_MainWood.fbx",
+        "materials": [
+          "Beige",
+          "Wood"
+        ],
+        "color": [
+          177,
+          123,
+          77
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 910,
+        "vertices": 1056,
+        "boundsMin": [
+          -0.23099873960018158,
+          -0.000523088061599075,
+          -0.31512626611702405
+        ],
+        "boundsMax": [
+          0.23099873960018158,
+          0.7955329116799207,
+          0.6049606293204423
+        ]
+      },
+      {
+        "role": "WheelFrame",
+        "file": "/Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/MaterialSplitTownAssets/Cart/Cart_WheelFrame.fbx",
+        "materials": [
+          "Stone_Dark"
+        ],
+        "color": [
+          79,
+          55,
+          42
+        ],
+        "robloxMaterial": "WoodPlanks",
+        "faces": 132,
+        "vertices": 176,
+        "boundsMin": [
+          -0.1971510648727417,
+          0.0005230830450089712,
+          -0.3224282225322004
+        ],
+        "boundsMax": [
+          0.1971510648727417,
+          0.31697592100163263,
+          -0.0027212330799569386
+        ]
+      }
+    ]
+  }
+]

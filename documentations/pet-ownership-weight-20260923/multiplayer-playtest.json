@@ -1,0 +1,8 @@
+{
+  "Passed": false,
+  "Blocked": true,
+  "Method": "StudioTestService:ExecuteMultiplayerTestAsync(2, AK_PetWeight_20260923)",
+  "Error": "Child Studio server could not open place StartServer: cannot open place file for reading, unspecified iostream_category error. No two clients joined.",
+  "Cleanup": "Only the failed child test process was terminated; edit harness scripts removed.",
+  "EarlierSinglePlayerChecks": "Foreign/unowned UID, stale slot IDs, double sale tokens and protected locations rejected."
+}

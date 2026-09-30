@@ -1,0 +1,168 @@
+{
+  "Reveals": [
+    {
+      "Id": "Meadow_Shakeable_01",
+      "UID": "46e5c62a-309c-4260-bf4c-28ed22874ea3",
+      "Cost": 250
+    },
+    {
+      "Id": "Meadow_Shakeable_01",
+      "UID": "9be9cf10-06db-4bb3-9da1-b8ea3d4e53a4",
+      "Cost": 250
+    },
+    {
+      "Id": "Meadow_Shakeable_02",
+      "UID": "e2c41d06-b152-4e4c-b779-3b46234b4e07",
+      "Cost": 500
+    },
+    {
+      "Id": "Meadow_Shakeable_03",
+      "UID": "08ad5bb2-a6e7-4bbc-a5e4-98d70c0a3fa7",
+      "Cost": 1000
+    },
+    {
+      "Id": "Meadow_Shakeable_04",
+      "UID": "0b376fc6-0684-48ce-b0ef-2bf9603a4cff",
+      "Cost": 2000
+    },
+    {
+      "Id": "Meadow_Shakeable_05",
+      "UID": "a740e705-b113-47d3-aefa-7641bd22fd71",
+      "Cost": 4000
+    },
+    {
+      "Id": "Forest_Shakeable_01",
+      "UID": "f24b2168-8257-4929-a1da-dba61255457a",
+      "Cost": 6000
+    },
+    {
+      "Id": "Forest_Shakeable_02",
+      "UID": "20bf58eb-ee61-4a1c-814a-b71b7b0b9727",
+      "Cost": 10000
+    },
+    {
+      "Id": "Forest_Shakeable_03",
+      "UID": "9a367416-f2e5-4ca0-a806-7155c459608c",
+      "Cost": 17500
+    },
+    {
+      "Id": "Forest_Shakeable_04",
+      "UID": "f714de50-5e07-4a0c-801a-299843512557",
+      "Cost": 30000
+    },
+    {
+      "Id": "Forest_Shakeable_05",
+      "UID": "0a67187b-4768-4e14-b6e5-74931b7fed71",
+      "Cost": 50000
+    },
+    {
+      "Id": "Meadow_Shakeable_01",
+      "UID": "ea048260-428b-4ec5-91d6-f43b947f39d0",
+      "Cost": 250
+    }
+  ],
+  "Labels": [
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-1.tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1.PetInformation.Frame.PetIncome",
+      "Text": "+4.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-2.tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1.PetInformation.Frame.PetIncome",
+      "Text": "+4.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-3.tripo_mesh_992d05af-6f28-4df5-9eaa-ab753bad8c84.PetInformation.Frame.PetIncome",
+      "Text": "+6.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-4.tripo_mesh_992d05af-6f28-4df5-9eaa-ab753bad8c84.PetInformation.Frame.PetIncome",
+      "Text": "+6.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-5.tripo_mesh_992d05af-6f28-4df5-9eaa-ab753bad8c84.PetInformation.Frame.PetIncome",
+      "Text": "+6.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-6.tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1.PetInformation.Frame.PetIncome",
+      "Text": "+9.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-7.tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1.PetInformation.Frame.PetIncome",
+      "Text": "+9.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-8.tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1.PetInformation.Frame.PetIncome",
+      "Text": "+9.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-9.tripo_mesh_d8835cc4-e843-4e37-82c8-65f80a338425.PetInformation.Frame.PetIncome",
+      "Text": "+14.0/sec"
+    },
+    {
+      "Path": "Workspace.Sanctuaries.3009757271.DisplayedPets.pacing-fixture-3-10.tripo_mesh_d8835cc4-e843-4e37-82c8-65f80a338425.PetInformation.Frame.PetIncome",
+      "Text": "+14.0/sec"
+    }
+  ],
+  "Showcases": [
+    {
+      "PetId": "MeadowFieldMouse",
+      "ViewportPresent": true,
+      "UID": "46e5c62a-309c-4260-bf4c-28ed22874ea3"
+    },
+    {
+      "PetId": "MeadowFieldMouse",
+      "ViewportPresent": true,
+      "UID": "9be9cf10-06db-4bb3-9da1-b8ea3d4e53a4"
+    },
+    {
+      "PetId": "MeadowFawn",
+      "ViewportPresent": true,
+      "UID": "e2c41d06-b152-4e4c-b779-3b46234b4e07"
+    },
+    {
+      "PetId": "MeadowFluffyLop",
+      "ViewportPresent": true,
+      "UID": "08ad5bb2-a6e7-4bbc-a5e4-98d70c0a3fa7"
+    },
+    {
+      "PetId": "MeadowGoat",
+      "ViewportPresent": true,
+      "UID": "0b376fc6-0684-48ce-b0ef-2bf9603a4cff"
+    },
+    {
+      "PetId": "MeadowDaisyHedgehog",
+      "ViewportPresent": true,
+      "UID": "a740e705-b113-47d3-aefa-7641bd22fd71"
+    },
+    {
+      "PetId": "ForestRaccoon",
+      "ViewportPresent": true,
+      "UID": "f24b2168-8257-4929-a1da-dba61255457a"
+    },
+    {
+      "PetId": "ForestBrownBat",
+      "ViewportPresent": true,
+      "UID": "20bf58eb-ee61-4a1c-814a-b71b7b0b9727"
+    },
+    {
+      "PetId": "ForestSkunk",
+      "ViewportPresent": true,
+      "UID": "9a367416-f2e5-4ca0-a806-7155c459608c"
+    },
+    {
+      "PetId": "ForestBadger",
+      "ViewportPresent": true,
+      "UID": "f714de50-5e07-4a0c-801a-299843512557"
+    },
+    {
+      "PetId": "ForestRiverOtter",
+      "ViewportPresent": true,
+      "UID": "0a67187b-4768-4e14-b6e5-74931b7fed71"
+    },
+    {
+      "PetId": "MeadowFieldMouse",
+      "ViewportPresent": true,
+      "UID": "ea048260-428b-4ec5-91d6-f43b947f39d0"
+    }
+  ]
+}

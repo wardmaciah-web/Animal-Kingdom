@@ -1,0 +1,133 @@
+{
+  "page1": {
+    "MeadowFieldMouse": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://73748377999416",
+      "correctMesh": true,
+      "texture": "rbxassetid://73748377999416"
+    },
+    "MeadowFawn": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://76132821896289",
+      "correctMesh": true,
+      "texture": "rbxassetid://76132821896289"
+    },
+    "MeadowChick": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://77213563483513",
+      "correctMesh": true,
+      "texture": "rbxassetid://77213563483513"
+    },
+    "MeadowDaisyHedgehog": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://83789055307274",
+      "correctMesh": true,
+      "texture": "rbxassetid://83789055307274"
+    },
+    "MeadowPatchworkLop": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://129853249692809",
+      "correctMesh": true,
+      "texture": "rbxassetid://129853249692809"
+    },
+    "MeadowRedSquirrel": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": false,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://83064824068183",
+      "correctMesh": true,
+      "texture": "rbxassetid://83064824068183"
+    },
+    "MeadowGoat": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://79773020130638",
+      "correctMesh": true,
+      "texture": "rbxassetid://79773020130638"
+    },
+    "MeadowFluffyLop": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "459.359985, 311.76001",
+      "expected": "rbxassetid://77371096825073",
+      "correctMesh": true,
+      "texture": "rbxassetid://77371096825073"
+    }
+  },
+  "page2": {
+    "MeadowBlossomBunny": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "618.859985, 311.76001",
+      "expected": "rbxassetid://110600438861044",
+      "correctMesh": true,
+      "texture": "rbxassetid://110600438861044"
+    },
+    "MeadowPrismAntlerDeer": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "618.859985, 311.76001",
+      "expected": "rbxassetid://70473479723436",
+      "correctMesh": true,
+      "texture": "rbxassetid://70473479723436"
+    },
+    "MeadowCloudtailFox": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "618.859985, 311.76001",
+      "expected": "rbxassetid://100873128150834",
+      "correctMesh": true,
+      "texture": "rbxassetid://100873128150834"
+    },
+    "MeadowBuck": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "618.859985, 311.76001",
+      "expected": "rbxassetid://116242731028580",
+      "correctMesh": true,
+      "texture": "rbxassetid://116242731028580"
+    },
+    "MeadowCelestialLamb": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "618.859985, 311.76001",
+      "expected": "rbxassetid://104848496835588",
+      "correctMesh": true,
+      "texture": "rbxassetid://104848496835588"
+    },
+    "MeadowDaisyCrownBunny": {
+      "correctTexture": true,
+      "meshLoaded": true,
+      "albedoLoaded": true,
+      "viewSize": "618.859985, 311.76001",
+      "expected": "rbxassetid://120392697720099",
+      "correctMesh": true,
+      "texture": "rbxassetid://120392697720099"
+    }
+  },
+  "note": "All 14 final rendered pets were also visually inspected in the two final-review screenshots. GetAssetFetchStatus snapshots can report false after unused proxy textures are released; all 70 explicit PreloadAsync asset callbacks succeeded for the 14 available models."
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "Cost": 250,
+    "Id": "Meadow_Shakeable_01",
+    "Biome": "Meadow",
+    "Pets": [
+      {
+        "Name": "Field Mouse",
+        "Rarity": "Common",
+        "Id": "MeadowFieldMouse",
+        "Income": 1.0,
+        "BaseWeight": 0.1,
+        "Probability": 0.8100147275405006
+      },
+      {
+        "Name": "Patchwork Lop Bunny",
+        "Rarity": "Rare",
+        "Id": "MeadowPatchworkLop",
+        "Income": 3.5,
+        "BaseWeight": 3,
+        "Probability": 0.1767304860088365
+      },
+      {
+        "Name": "Blossom Bunny",
+        "Rarity": "Legendary",
+        "Id": "MeadowBlossomBunny",
+        "Income": 6.0,
+        "BaseWeight": 3.5,
+        "Probability": 0.013254786450662739
+      }
+    ],
+    "Name": "Blossombark",
+    "Tier": 1,
+    "Expected": 1.5081001472754048
+  },
+  {
+    "Cost": 250,
+    "Id": "Meadow_Shakeable_02",
+    "Biome": "Meadow",
+    "Pets": [
+      {
+        "Name": "Meadow Chick",
+        "Rarity": "Common",
+        "Id": "MeadowChick",
+        "Income": 1.25,
+        "BaseWeight": 0.4,
+        "Probability": 0.8100147275405006
+      },
+      {
+        "Name": "Meadow Fawn",
+        "Rarity": "Rare",
+        "Id": "MeadowFawn",
+        "Income": 2.5,
+        "BaseWeight": 14,
+        "Probability": 0.1767304860088365
+      },
+      {
+        "Name": "Cloudtail Fox",
+        "Rarity": "Legendary",
+        "Id": "MeadowCloudtailFox",
+        "Income": 8.0,
+        "BaseWeight": 7,
+        "Probability": 0.013254786450662739
+      }
+    ],
+    "Name": "Honeybloom",
+    "Tier": 2,
+    "Expected": 1.5603829160530192
+  },
+  {
+    "Cost": 250,
+    "Id": "Meadow_Shakeable_03",
+    "Biome": "Meadow",
+    "Pets": [
+      {
+        "Name": "Red Squirrel",
+        "Rarity": "Uncommon",
+        "Id": "MeadowRedSquirrel",
+        "Income": 1.75,
+        "BaseWeight": 0.5,
+        "Probability": 0.684596577017115
+      },
+      {
+        "Name": "Fluffy Lop Bunny",
+        "Rarity": "Rare",
+        "Id": "MeadowFluffyLop",
+        "Income": 3.0,
+        "BaseWeight": 2.8,
+        "Probability": 0.293398533007335
+      },
+      {
+        "Name": "Prism-Antler Deer",
+        "Rarity": "Legendary",
+        "Id": "MeadowPrismAntlerDeer",
+        "Income": 7.0,
+        "BaseWeight": 70,
+        "Probability": 0.022004889975550123
+      }
+    ],
+    "Name": "Clover Crown",
+    "Tier": 3,
+    "Expected": 2.232273838630807
+  },
+  {
+    "Cost": 250,
+    "Id": "Meadow_Shakeable_04",
+    "Biome": "Meadow",
+    "Pets": [
+      {
+        "Name": "Meadow Goat",
+        "Rarity": "Uncommon",
+        "Id": "MeadowGoat",
+        "Income": 2.0,
+        "BaseWeight": 18,
+        "Probability": 0.7777777777777778
+      },
+      {
+        "Name": "Meadow Buck",
+        "Rarity": "Epic",
+        "Id": "MeadowBuck",
+        "Income": 4.5,
+        "BaseWeight": 55,
+        "Probability": 0.1111111111111111
+      },
+      {
+        "Name": "Daisy-Crown Bunny",
+        "Rarity": "Epic",
+        "Id": "MeadowDaisyCrownBunny",
+        "Income": 5.0,
+        "BaseWeight": 3.2,
+        "Probability": 0.1111111111111111
+      }
+    ],
+    "Name": "Sunpetal",
+    "Tier": 4,
+    "Expected": 2.6111111111111107
+  },
+  {
+    "Cost": 250,
+    "Id": "Meadow_Shakeable_05",
+    "Biome": "Meadow",
+    "Pets": [
+      {
+        "Name": "Daisy Hedgehog",
+        "Rarity": "Epic",
+        "Id": "MeadowDaisyHedgehog",
+        "Income": 4.0,
+        "BaseWeight": 1.2,
+        "Probability": 0.9997500624843788
+      },
+      {
+        "Name": "Celestial Lamb",
+        "Rarity": "Secret",
+        "Id": "MeadowCelestialLamb",
+        "Income": 9.0,
+        "BaseWeight": 12,
+        "Probability": 0.0002499375156210947
+      }
+    ],
+    "Name": "Whisper Willow",
+    "Tier": 5,
+    "Expected": 4.001249687578105
+  },
+  {
+    "Cost": 750,
+    "Id": "Forest_Shakeable_01",
+    "Biome": "Forest",
+    "Pets": [
+      {
+        "Name": "Raccoon",
+        "Rarity": "Common",
+        "Id": "ForestRaccoon",
+        "Income": 10.0,
+        "BaseWeight": 6,
+        "Probability": 0.8208832703989493
+      },
+      {
+        "Name": "Tree Frog",
+        "Rarity": "Rare",
+        "Id": "ForestTreeFrog",
+        "Income": 22.0,
+        "BaseWeight": 0.2,
+        "Probability": 0.17910180445067983
+      },
+      {
+        "Name": "Emerald-Wing Guardian",
+        "Rarity": "Secret",
+        "Id": "ForestEmeraldWing",
+        "Income": 90.0,
+        "BaseWeight": 40,
+        "Probability": 1.4925150370889985e-05
+      }
+    ],
+    "Name": "Mossheart",
+    "Tier": 1,
+    "Expected": 12.15041566543783
+  },
+  {
+    "Cost": 750,
+    "Id": "Forest_Shakeable_02",
+    "Biome": "Forest",
+    "Pets": [
+      {
+        "Name": "Black Bear Cub",
+        "Rarity": "Common",
+        "Id": "ForestBlackBearCub",
+        "Income": 12.0,
+        "BaseWeight": 18,
+        "Probability": 0.9322033898305084
+      },
+      {
+        "Name": "Brown Bat",
+        "Rarity": "Epic",
+        "Id": "ForestBrownBat",
+        "Income": 36.0,
+        "BaseWeight": 0.3,
+        "Probability": 0.06779661016949153
+      }
+    ],
+    "Name": "Fernwood",
+    "Tier": 2,
+    "Expected": 13.627118644067796
+  },
+  {
+    "Cost": 750,
+    "Id": "Forest_Shakeable_03",
+    "Biome": "Forest",
+    "Pets": [
+      {
+        "Name": "Skunk",
+        "Rarity": "Uncommon",
+        "Id": "ForestSkunk",
+        "Income": 15.0,
+        "BaseWeight": 3,
+        "Probability": 0.875
+      },
+      {
+        "Name": "Woodland Owl",
+        "Rarity": "Epic",
+        "Id": "ForestWoodlandOwl",
+        "Income": 45.0,
+        "BaseWeight": 1.5,
+        "Probability": 0.125
+      }
+    ],
+    "Name": "Duskleaf",
+    "Tier": 3,
+    "Expected": 18.75
+  },
+  {
+    "Cost": 750,
+    "Id": "Forest_Shakeable_04",
+    "Biome": "Forest",
+    "Pets": [
+      {
+        "Name": "Badger",
+        "Rarity": "Uncommon",
+        "Id": "ForestBadger",
+        "Income": 18.0,
+        "BaseWeight": 12,
+        "Probability": 0.9688581314878894
+      },
+      {
+        "Name": "Leaf-Antler Guardian",
+        "Rarity": "Legendary",
+        "Id": "ForestLeafAntler",
+        "Income": 70.0,
+        "BaseWeight": 70,
+        "Probability": 0.03114186851211073
+      }
+    ],
+    "Name": "Elderbark",
+    "Tier": 4,
+    "Expected": 19.61937716262976
+  },
+  {
+    "Cost": 750,
+    "Id": "Forest_Shakeable_05",
+    "Biome": "Forest",
+    "Pets": [
+      {
+        "Name": "River Otter",
+        "Rarity": "Rare",
+        "Id": "ForestRiverOtter",
+        "Income": 28.0,
+        "BaseWeight": 9,
+        "Probability": 0.9302325581395349
+      },
+      {
+        "Name": "Crested Owl",
+        "Rarity": "Legendary",
+        "Id": "ForestCrestedOwl",
+        "Income": 55.0,
+        "BaseWeight": 2.4,
+        "Probability": 0.06976744186046512
+      }
+    ],
+    "Name": "Mooncap",
+    "Tier": 5,
+    "Expected": 29.88372093023256
+  }
+]

@@ -1,0 +1,95 @@
+ANIMAL KINGDOM PREBUILT TOWN MATERIAL AUDIT
+SOURCE ROOT: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip
+METHOD: Binary FBX 7.4 node/property/connection inspection. Diffuse RGB is the literal FBX normalized value converted directly to 0-255. No texture, video, or external image references were found. Material IDs connect to each asset's single Model; polygon material indices are contained in its single Geometry. Roblox may preserve those polygon materials within one MeshPart rather than expose independently colorable Parts, so the Studio pass detects the actual imported structure before coloring.
+
+Inn.fbx
+Path: Fantasy Inn/Inn.fbx
+Objects: Inn
+Geometry: Cube.393 (1 geometry; Roblox import split must be audited live)
+Material groups: 7
+UVs: yes
+Materials: Wood (39,17,6); Stone_Dark (39,47,58); RoofTiles_Red (38,7,4); Plaster (109,103,59); Stone_Light (56,67,74); Windows (9,9,9); Wood_Light (68,29,10)
+Animal Kingdom treatment: warm cream walls, dark warm timber, sage/gold accents, medium-dark roof.
+
+House_4.fbx
+Path: Fantasy House/House_4.fbx
+Objects: House_4
+Geometry: Cube.037 (1 geometry; Roblox import split must be audited live)
+Material groups: 6
+UVs: yes
+Materials: Stone_Light (56,67,74); Stone_Dark (39,47,58); Wood (39,17,6); Wood_Side (98,72,32); Windows (9,9,9); Stone (25,26,30)
+Animal Kingdom treatment: light cream, warm wood, terracotta/red accents, dark roof, restrained gold.
+
+House_1.fbx
+Path: Fantasy House-BH2XHWUNmF/House_1.fbx
+Objects: House_1
+Geometry: Cube.145 (1 geometry; Roblox import split must be audited live)
+Material groups: 9
+UVs: yes
+Materials: Plaster (109,103,59); Wood (39,17,6); Wood_Side (98,72,32); Windows (9,9,9); Wood_Light (68,29,10); Stone_Dark (39,47,58); Stone (25,26,30); RoofTiles (5,31,38); Stone_Light (56,67,74)
+Animal Kingdom treatment: cream walls, pastel-blue accents, warm timber, medium-dark roof.
+
+House_2.fbx
+Path: Fantasy House-dcPho4SUA3/House_2.fbx
+Objects: House_2
+Geometry: Cylinder.021 (1 geometry; Roblox import split must be audited live)
+Material groups: 9
+UVs: yes
+Materials: Beige (109,103,59); Wood (39,17,6); Stone_Dark (39,47,58); Windows (9,9,9); Wood_Light (68,29,10); RoofTiles (5,31,38); Stone_Light (56,67,74); Wood_Side (98,72,32); Stone (25,26,30)
+Animal Kingdom treatment: cream walls, sage accents, warm timber, terracotta/muted-brown roof.
+
+Blacksmith.fbx
+Path: Blacksmith/Blacksmith.fbx
+Objects: Blacksmith
+Geometry: Cube.000 (1 geometry; Roblox import split must be audited live)
+Material groups: 9
+UVs: yes
+Materials: Plaster (109,103,59); Wood_Light (68,29,10); Wood_Side (98,72,32); Stone_Light (56,67,74); Stone_Dark (39,47,58); Wood (39,17,6); Windows (9,9,9); RoofTiles_Red (38,7,4); Stone (25,26,30)
+Animal Kingdom treatment: warm tan/stone walls, dark timber, charcoal roof, muted ember only on identified forge details.
+
+Well.fbx
+Path: Well/Well.fbx
+Objects: Well
+Geometry: Cube.274 (1 geometry; Roblox import split must be audited live)
+Material groups: 5
+UVs: yes
+Materials: Wood (39,17,6); Bag (74,58,33); RoofTiles_Red (38,7,4); Stone_Dark (39,47,58); Stone_Light (56,67,74)
+Animal Kingdom treatment: warm stone, medium timber, dark-neutral roof, teal water only when water is independently identifiable.
+
+MarketStand_1.fbx
+Path: Market Stand/MarketStand_1.fbx
+Objects: MarketStand_1
+Geometry: Cube.331 (1 geometry; Roblox import split must be audited live)
+Material groups: 4
+UVs: no LayerElementUV node
+Materials: Wood (39,17,6); RoofTiles_Red (38,7,4); Beige (109,103,59); Wood_Side (98,72,32)
+Animal Kingdom treatment: sage canopy, cream and warm wood.
+
+MarketStand_2.fbx
+Path: Market Stand/MarketStand_2.fbx
+Objects: MarketStand_2
+Geometry: Cube.334 (1 geometry; Roblox import split must be audited live)
+Material groups: 3
+UVs: no LayerElementUV node
+Materials: Wood (39,17,6); RoofTiles_Red (38,7,4); Beige (109,103,59)
+Animal Kingdom treatment: muted-red/terracotta canopy, cream and warm wood.
+
+Cart.fbx
+Path: Cart/Cart.fbx
+Objects: Cart
+Geometry: Cube.350 (1 geometry; Roblox import split must be audited live)
+Material groups: 5
+UVs: no LayerElementUV node
+Materials: Wood (39,17,6); Red (38,7,4); Beige (109,103,59); DarkWood (22,10,4); Stone_Dark (39,47,58)
+Animal Kingdom treatment: natural medium wood, darker wheels/frame when separately identifiable.
+
+SUMMARY
+Assets audited: 9/9
+FBX object nodes: 9
+FBX geometry nodes: 9
+FBX material groups: 67
+Texture image files referenced: 0
+Missing texture references: 0
+Invented texture files: 0
+Meaningful original material separation: yes
+Roblox live part/material-group detection required: yes

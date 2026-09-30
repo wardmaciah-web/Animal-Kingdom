@@ -1,0 +1,20 @@
+{
+  "Menu": "",
+  "BadgeSize": "16, 16",
+  "Viewport": "401, 777",
+  "ButtonSize": "56, 49",
+  "StackToNavigationGap": 8,
+  "Method": "Temporary client-only Sensor orientation for portrait stress; production LandscapeSensor unchanged",
+  "NativePointerChecks": [
+    {
+      "Button": "Daily",
+      "Opened": "Daily",
+      "Closed": ""
+    },
+    {
+      "Button": "Teleport",
+      "Opened": "Teleport",
+      "Closed": ""
+    }
+  ]
+}

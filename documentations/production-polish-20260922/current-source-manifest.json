@@ -1,0 +1,3540 @@
+{
+  "created_utc": "2026-09-23T07:27:52Z",
+  "project_path": "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K",
+  "initial_manifest": "documentations/production-polish-20260922/local-source-manifest.json",
+  "initial_manifest_sha256": "2c570fc160ccf6fb144d8408db4cd51c9cb998061d1b5e8cf61da12e320e9e90",
+  "scope": "All .lua/.luau files under src; initial comparison covers 140 source files, all initially matched to Studio. Package sources were not part of that initial comparison.",
+  "counts": {
+    "initial_source_files": 140,
+    "unchanged_initial_files": 129,
+    "changed_initial_files": 11,
+    "new_non_package_files": 7,
+    "removed_initial_files": 0,
+    "current_source_files": 453,
+    "unchanged_starter_gui_files": 13
+  },
+  "compiler": {
+    "compiler": "/private/tmp/ak-production-luau-build/luau-compile",
+    "file_count": 453,
+    "non_package_count": 147,
+    "failures": [],
+    "completed_utc": "2026-09-23T07:27:52Z",
+    "full_scan_completed_utc": "2026-09-23T07:20:44Z",
+    "final_incremental_compilation_count": 2,
+    "reused_unchanged_hash_passes": 451,
+    "final_incremental_files": [
+      "src/ServerScriptService/ServerSource/Utilities/GardenPlotRuntime.lua",
+      "src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua"
+    ]
+  },
+  "checks": {
+    "all_changed_files_have_exact_initial_backups": true,
+    "starter_gui_source_unchanged": true,
+    "garden_transaction_reward_cosmetic_block_unchanged": true,
+    "garden_profile_lifecycle_block_unchanged": true,
+    "unexpected_changed_or_new_non_package_sources": []
+  },
+  "project_configuration_current_hashes": [
+    {
+      "local": "default.project.json",
+      "sha256": "1c8ae421327bb99bbf99742a2bb335fbd8bc524099545ae9b313cf65ed2ef0a9",
+      "comparison": "not_in_initial_source_manifest"
+    },
+    {
+      "local": "wally.toml",
+      "sha256": "6674aac9a6ab8ac02df7daa40dba921ffe2395d8020c0611d90f243031ff4eb3",
+      "comparison": "not_in_initial_source_manifest"
+    },
+    {
+      "local": "wally.lock",
+      "sha256": "7f17f4b6f2182920bc752b9bd6c9997d034f28372711696f6f857bd7140cd562",
+      "comparison": "not_in_initial_source_manifest"
+    }
+  ],
+  "files": [
+    {
+      "local": "src/ReplicatedStorage/ClientSource/Client/AnimalKingdomController.lua",
+      "sha256": "e9fb6107b80a5dda0b3a8d7b4b417c06b6858d1326e4cdc90ec96c40f80ef8b2",
+      "bytes": 6201,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "e9fb6107b80a5dda0b3a8d7b4b417c06b6858d1326e4cdc90ec96c40f80ef8b2",
+      "studio_path_at_baseline": "ReplicatedStorage.ClientSource.Client.AnimalKingdomController"
+    },
+    {
+      "local": "src/ReplicatedStorage/ClientSource/Client/DataController.lua",
+      "sha256": "92b55b69a38c4d35d79fc5eeb173c19ace75468780e909165c87b4f101e77d6c",
+      "bytes": 1054,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "92b55b69a38c4d35d79fc5eeb173c19ace75468780e909165c87b4f101e77d6c",
+      "studio_path_at_baseline": "ReplicatedStorage.ClientSource.Client.DataController"
+    },
+    {
+      "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Accessor.lua",
+      "sha256": "d51da2551e5538e8b106fbb9146880064a7c57252c7104d9667a6e4a36516380",
+      "bytes": 3248,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "d51da2551e5538e8b106fbb9146880064a7c57252c7104d9667a6e4a36516380",
+      "studio_path_at_baseline": "ReplicatedStorage.ClientSource.Client.TemplateController.Components.Accessor"
+    },
+    {
+      "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Mutator.lua",
+      "sha256": "c5adc680b9c8402f5c7b32ecbfecf4fc4c05ff57623bc922453d6880d08fb41f",
+      "bytes": 3239,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c5adc680b9c8402f5c7b32ecbfecf4fc4c05ff57623bc922453d6880d08fb41f",
+      "studio_path_at_baseline": "ReplicatedStorage.ClientSource.Client.TemplateController.Components.Mutator"
+    },
+    {
+      "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/Components/Others/Template.lua",
+      "sha256": "6773fc347ba34a0269bb15e133af5c5656260f03c4e5dc2c8a30da5110e280b4",
+      "bytes": 3708,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "6773fc347ba34a0269bb15e133af5c5656260f03c4e5dc2c8a30da5110e280b4",
+      "studio_path_at_baseline": "ReplicatedStorage.ClientSource.Client.TemplateController.Components.Others.Template"
+    },
+    {
+      "local": "src/ReplicatedStorage/ClientSource/Client/TemplateController/init.lua",
+      "sha256": "a00f916894752c2488b9bcac3d82deadfdff41184ae1cf5e554db8ea31960ade",
+      "bytes": 528,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "a00f916894752c2488b9bcac3d82deadfdff41184ae1cf5e554db8ea31960ade",
+      "studio_path_at_baseline": "ReplicatedStorage.ClientSource.Client.TemplateController"
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Knit.lua",
+      "sha256": "10395915a15810a62da6901f01eb9e96c3e92421ae205050a34585d167e3cb03",
+      "bytes": 71,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/LuaK.lua",
+      "sha256": "e0271b9cd81e30efaf128b4988a16d199d49e5c16dbf8c1ae39d64049fa23e6f",
+      "bytes": 39686,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/LuaP.lua",
+      "sha256": "ce2215670f3998b43c348f4dd528b8842606c58059262e59d2284665a613059d",
+      "bytes": 16859,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/LuaU.lua",
+      "sha256": "2e3e7e551f14455538d7b114a2aee93daae1ad1de5ec7f88612723cffb089608",
+      "bytes": 13568,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/LuaX.lua",
+      "sha256": "c22020605b083f9a1b50e4f557e0bb14547a4b54744b42b9cedcfc400e1b5f48",
+      "bytes": 24976,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/LuaY.lua",
+      "sha256": "82ad95639ce4ade91373c23909e840736d541fdb70cf3a4898dbb8f8d4027e7e",
+      "bytes": 64560,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/LuaZ.lua",
+      "sha256": "90a781a32e7c810d2e1be27ae2308bc71fc8a7e05ef4034ccb2992412b37a0cf",
+      "bytes": 4611,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/Rerubi.lua",
+      "sha256": "0d5bdcec883f43fbb44e9b3b194c65651cdee2e8d6c67298c587479267dc9c69",
+      "bytes": 18140,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Loadstring/init.lua",
+      "sha256": "e4a049de79d6a0c44c13f5505c0fb29d2d4e74b42531632a1eb0d03a3ae3fdbc",
+      "bytes": 1147,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Promise.lua",
+      "sha256": "3b3869a322539e82b3c71008dd0f0fa1c9eae76406972e95e38ca339d3ac3a4f",
+      "bytes": 72,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Signal.lua",
+      "sha256": "be583538c080136cda4c8adde0b182f522f7c8d975850a888497ae386a6b751e",
+      "bytes": 73,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/Superbullet.lua",
+      "sha256": "b80a740dbedbda0526864baf9083efa4675c34460a633105711bd58deb867ac0",
+      "bytes": 78,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/lib/init.lua",
+      "sha256": "5d69cf99a9741048855decb1d8cb5d7668f362f40c769d1500ce8f9c20dd319f",
+      "bytes": 60896,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/lib/init.spec.lua",
+      "sha256": "bf0dab70e82a5f48676403cc5b1fe9022eb04e6956839d97ae077f91362ada4f",
+      "bytes": 48295,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/init.lua",
+      "sha256": "d5b8190a7b11f48c53ae50762f8055fac5778dca137ff579408dc1cd053a9b1b",
+      "bytes": 31,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ConnectionState.lua",
+      "sha256": "f213392e6e4163e0e2153eb3c73c31581ec1d74df7d7d11be6533a6ffc440e62",
+      "bytes": 120,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/CreatorType.lua",
+      "sha256": "b93d8f59fe06add196dc884a1adc5d43b9b73c98ad4bef4d11bfba44a5a4c085",
+      "bytes": 104,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/DataStoreRequestType.lua",
+      "sha256": "94736a82bd06107fb196c4fdea79190db77b79133b38c6b5dfd1a5b07447c954",
+      "bytes": 212,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/EasingDirection.lua",
+      "sha256": "b642e78a09c855ffb1b0dcaae32f91535d5f0392d271e658e97beb4deb12cb37",
+      "bytes": 116,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/EasingStyle.lua",
+      "sha256": "1b6f8add545ef5d205e3bb6b6b1d018e61124cc2e9b0b39363d2990eb258e92b",
+      "bytes": 178,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/FillDirection.lua",
+      "sha256": "6c7c55caec8876032043491e75f305fc1fe405a2103e183223bfbbd756aefeb3",
+      "bytes": 115,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/Font.lua",
+      "sha256": "a7fcd735140178bc5c2b9a01d1c9b88da341428257f18571df2f61a02c4d3c10",
+      "bytes": 379,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/HorizontalAlignment.lua",
+      "sha256": "81f92daa9728a3d38f14047b83de885818385c2ba8941bc0242c7f541754c420",
+      "bytes": 125,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/HttpContentType.lua",
+      "sha256": "b8233e812beba5bb484d76835d1fa5606305b6f8041055a31e315b2846a802fd",
+      "bytes": 197,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/InfoType.lua",
+      "sha256": "6d6efd6b8638be363c4d4c9b4d711ea716848a77f0b9ad42e3ceae7728b19e8b",
+      "bytes": 119,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/KeyCode.lua",
+      "sha256": "89f2475044f78123d8eeedf7873d18c5b0d08a78c4c0ec124cd83c22b9db4936",
+      "bytes": 3928,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/MouseBehavior.lua",
+      "sha256": "0223a2b2ef0136132328c897d6cab8ba707cb1e127759ded71897d55cb3bcf84",
+      "bytes": 140,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/Platform.lua",
+      "sha256": "d79040719ab48ed3f2c026b8200fd80a04f925937dd6384167384edbee2ae687",
+      "bytes": 328,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/PlaybackState.lua",
+      "sha256": "4881b056713ccabd485ef96cad5e5c018d59de6b539035116fffb5673c9aa1d9",
+      "bytes": 168,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ScaleType.lua",
+      "sha256": "2d0b7912cd0419b0e39264dc060e7ba8d40482126807c1517cada52ff78aef7a",
+      "bytes": 137,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ScrollBarInset.lua",
+      "sha256": "7980d90f370c85fe7ee6f0e76a5224c6dd14c49a811d26547db7a5ad0b5dacc4",
+      "bytes": 124,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ScrollingDirection.lua",
+      "sha256": "0a4fa71a03bcb0eab2e4125e6c63bbe5e0a15800604ca032b75dd472000a063a",
+      "bytes": 113,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/SizeConstraint.lua",
+      "sha256": "3466cf69ac870d3cc37a2de7611b0a1ed0294d12f3e31775a864e55554badcfd",
+      "bytes": 135,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/SortOrder.lua",
+      "sha256": "d2d3bf79952150dcb5cdd501af2a51a0240c55eb527f3e0333f366b37465b594",
+      "bytes": 121,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/TextTruncate.lua",
+      "sha256": "419ee548882529ebf4010e098f01c34fc58b62802d4d7367f20c95605aef3a84",
+      "bytes": 105,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/TextXAlignment.lua",
+      "sha256": "b36ba9ededf527d9296ad76af5e4bddae0e640b5e3f835c4f5cf1dd573f0dc6b",
+      "bytes": 120,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/TextYAlignment.lua",
+      "sha256": "bef7a8a1de13a740dbada347123ef1d6286fca441de2d4481b9e8820ad67957c",
+      "bytes": 120,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ThumbnailSize.lua",
+      "sha256": "1ee370d9450dbf454f42557297496193f778608fb701a6fa04976d87421a28ba",
+      "bytes": 205,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ThumbnailType.lua",
+      "sha256": "592398f58940ae4a57e967e4d417fa0187881cf4775c77178e9de0b8e207bd7f",
+      "bytes": 137,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/UserInputType.lua",
+      "sha256": "bf6cc40690df7f1462aa7b218dadb778dcc6644e89f83c619220377a2af25157",
+      "bytes": 406,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/VerticalAlignment.lua",
+      "sha256": "7a4040b9f61f4f0e05dc2c4509d998dbeec6a31c37954744e6d9f8c8e6d1e4d7",
+      "bytes": 123,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/VerticalScrollBarPosition.lua",
+      "sha256": "bbbe401f638b46369b76623c364e6fca4e160be2ebc555da13622ef4e9a9b6e2",
+      "bytes": 118,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/VirtualInputMode.lua",
+      "sha256": "9e00e5db26edaccf8922da44bf207928d04e0b9e9c5198bb1ee43189eec8b0db",
+      "bytes": 127,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/ZIndexBehavior.lua",
+      "sha256": "1f835d194490a054fe380aa737e848c1b72c4006dfb45ecf373eb26ebd8738ad",
+      "bytes": 111,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Enum/init.lua",
+      "sha256": "a9c8c92bbcb6e3913095cf00e66dd24bf8170bb634cc6d30be75f72b2b5a667f",
+      "bytes": 726,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Habitat.lua",
+      "sha256": "d46889ba494da737958cc0b4aa60b5b30a32e78a37cef94d42528e779f65d462",
+      "bytes": 3094,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Instance.lua",
+      "sha256": "48afd2c7dea9877190fa628e64a741c3aa8bce048d3b2c029a32caadf77ee3b0",
+      "bytes": 377,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/InstanceProperty.lua",
+      "sha256": "fe11b2fd401e522f09d2e53534a90de8acb5a49c5e919cee58bdadf0bfb8a386",
+      "bytes": 1743,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Instance_spec.lua",
+      "sha256": "492fad26a456fbffbeed43ae47c2326af8faf295f274d6f8f69e3fc4dffd2b1b",
+      "bytes": 785,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Signal.lua",
+      "sha256": "951fe6a4e67df8979384caa7f6912af5389679cd012448ec34e681582f819a63",
+      "bytes": 2018,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/Signal_spec.lua",
+      "sha256": "5d50c589809d34f2c674c5037720787b53aa4f406f2c53c8f55be60dedf3634c",
+      "bytes": 2007,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/TaskScheduler.lua",
+      "sha256": "82d43e0535ada98858a0ab3d1803e3f0dc92e46301965c73d88ad492eb2929ab",
+      "bytes": 824,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/assign.lua",
+      "sha256": "c512bde09f82c54361bb5dc0668dcced35616d6ba35bab3143b3359feed8d6ff",
+      "bytes": 275,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/baste.lua",
+      "sha256": "a37c8903e3a1f9df3529a5969193330fac758449747ff59ff86f1103d2b67b9f",
+      "bytes": 7524,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createEnum.lua",
+      "sha256": "3e46de72203f7259a5634c9b838b1cae630342063aa0f82070f687cf458a483a",
+      "bytes": 1200,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createEnumGroup.lua",
+      "sha256": "a30b745ab2996cd19b3cbbd78755f2967a5373fd2b81aa140c40bdcffb6002d4",
+      "bytes": 766,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createEnumGroup_spec.lua",
+      "sha256": "bf7b5a35556c9a6946651a685acdc52601ee3800d97ee4d6bf93bfa111994cc7",
+      "bytes": 944,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createEnum_spec.lua",
+      "sha256": "c902af4f05390dd0edeaa75c04b9b57aefcff2e8efbfc7900525a2a973d83f09",
+      "bytes": 1272,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createEnvironment.lua",
+      "sha256": "f7aabf9c5a195c6b2f4d5cc706f2024719d0e0e369924f041449c7fa6eee569c",
+      "bytes": 1211,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createSettings.lua",
+      "sha256": "2f2a87ab77b08a6db77fa75273211b910629a1b4e5eb0e063267fa9fe0886c9a",
+      "bytes": 1456,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/createSettings_spec.lua",
+      "sha256": "9f077bc0d450797e5c7b5ebffc058e289203c28314cb57a95dacbff5c52152bc",
+      "bytes": 2270,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/fs.lua",
+      "sha256": "0366a63f05ab27f914ca8a6395c9d71909c7445939f949f30877595b087e2b36",
+      "bytes": 524,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/fs_spec.lua",
+      "sha256": "bff699724517fb7aa2a8cfb879f6b2a5b31beb6541cef450379178cd8c80b435",
+      "bytes": 434,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/init.lua",
+      "sha256": "20c6418a381a7389538507bb1d21dcd047ff198252166b443ce771deaafe75bd",
+      "bytes": 163,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/settings/RenderSettings.lua",
+      "sha256": "6b1ec985d0f5a18f5026a135c2296dbf338c56d034fa3f7247d54a8720330f97",
+      "bytes": 1075,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/settings/RenderSettings_spec.lua",
+      "sha256": "6bfe4f7f2d1c7e5daf150396e2c05b5899d4f0abd20ff527faf5eee4c9612d42",
+      "bytes": 1182,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/tick.lua",
+      "sha256": "0ea780e45ac7fc6a86cf5038bdf06722474034066e5c26e5649911fc5f927cf0",
+      "bytes": 138,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/tick_spec.lua",
+      "sha256": "5dbb3f4790708a1bb7d19ab2e1e0a1522f19f055446b52ec2a784ff07ac98162",
+      "bytes": 141,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/typeof.lua",
+      "sha256": "df2aea83c83d99be69a1ffe9b716ca906c99c08f05ee04a6ef776f459669abf8",
+      "bytes": 341,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/typeof_spec.lua",
+      "sha256": "9cb8bd080c0d7ad1a7ca78b4da35e2e2cc68ab68ce17239cab4c589259c6499e",
+      "bytes": 506,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/warn.lua",
+      "sha256": "6bf1eb9545cd86fb74b1a6b2ef7173e4ed6d84dbdad6274bf79d79e60feca8a0",
+      "bytes": 241,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/functions/warn_spec.lua",
+      "sha256": "459545b15066a51dee8f4aa72f35cba8a6313077040d5c9ea0816d90304c804f",
+      "bytes": 1254,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/init.lua",
+      "sha256": "c8521497b874160d1334d3b6ddbd896636f9ad16a4411b82244186e8f15ab872",
+      "bytes": 181,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/init_spec.lua",
+      "sha256": "ebf99b6da4eb3e3701b105796f400b14fc08fd9854ee9f376424d59fb03eebd9",
+      "bytes": 122,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/AnalyticsService.lua",
+      "sha256": "636d22d9e5ff6b79dbba6262284435737f5d94b9c6df67575f16cd008d868e6b",
+      "bytes": 135,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/AnalyticsService_spec.lua",
+      "sha256": "3a8d28abe7ebaf405df9c41507f1cd02ca7376ae5fd5343ba954b5b7127bd5ee",
+      "bytes": 222,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/BaseInstance.lua",
+      "sha256": "0570a0b82d2ec3ad471bac6ca6dd14d8b4865e456afa1a660095a1ac33d3bd33",
+      "bytes": 8797,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/BaseInstance_spec.lua",
+      "sha256": "e8bc3291d4502f6ccaca8950aa46da79dd826cd51577b4723608864ec855992c",
+      "bytes": 18756,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/BindableEvent.lua",
+      "sha256": "8f9117f1dd13b0fb16f12177bb95afdd7031333e8cf8df182f7acb23dd0fd177",
+      "bytes": 402,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/BindableEvent_spec.lua",
+      "sha256": "f80125cfa456b2ba99a8658b3ce9561eea0b7acc861e53e8757a8879245bf19e",
+      "bytes": 480,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/BoolValue.lua",
+      "sha256": "fc98f2d2495da3f134f38df84adfc5543bdcbe3df5204192707faff71ee2d6ef",
+      "bytes": 363,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/BoolValue_spec.lua",
+      "sha256": "6e425d8b8ea8527560a51826a94e642f3314a42798614f0cd68ee004f153908f",
+      "bytes": 280,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Camera.lua",
+      "sha256": "68809299b7553f74e1cbccc5296a29a87d2aa2f4cf3842f268920ac3cf01a945",
+      "bytes": 353,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Camera_spec.lua",
+      "sha256": "6eb0350a7b942a572d0be3aebe25ec2e9a5d773d54846a4dd3294520899599c2",
+      "bytes": 397,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Configuration.lua",
+      "sha256": "64c2ef6103e16ab563c7afcdf75ca43a7049a2c9d861230157dfa1d204b45743",
+      "bytes": 114,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Configuration_spec.lua",
+      "sha256": "c2e74577e5dc744c6d6735b21fe51ceb5d1550bc0a398b088dab0ffed473f057",
+      "bytes": 211,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ContentProvider.lua",
+      "sha256": "86d609ce966bd820c51f377f13d211e185e5f32e1ead22ba9daba5dc702583c0",
+      "bytes": 320,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ContentProvider_spec.lua",
+      "sha256": "1a0ba1af75ae3da417809543e7b48bf4bd362be60bf7d69edd5ebe0744bad0dd",
+      "bytes": 373,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ContextActionService.lua",
+      "sha256": "779c3acd7e75ed00bc3d0cb9b826ecf8fd1ca2e891310613bd7ed82f9c476a55",
+      "bytes": 1046,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ContextActionService_spec.lua",
+      "sha256": "138c8483c0d572b19c2a2d224f4740378290e16fce78803ee85765b2eb98eb6f",
+      "bytes": 449,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/CoreGui.lua",
+      "sha256": "4f8316efc5c193713fbfef5770b2479a3884f263bfd3a2207a077cab0d1bc3a5",
+      "bytes": 279,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/CoreGui_spec.lua",
+      "sha256": "fa2dbdd679a9dd80f438de3b2210ef9b655c3ff62898e06e4b3d9553ae2027be",
+      "bytes": 426,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/CorePackages.lua",
+      "sha256": "a6efc3fcc328dc72d247caa348a4392dd9cce814e442b4d023753cc92433dcf9",
+      "bytes": 123,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/CorePackages_spec.lua",
+      "sha256": "b728c429fd2cc689fd856e7da2294e87bc81365ea931b83c3292fea0ff9896da",
+      "bytes": 206,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Folder.lua",
+      "sha256": "9964f382c4a4a72f112b6c9bb384900dda90c78afe1caf52e1ee21e84481e69a",
+      "bytes": 107,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Folder_spec.lua",
+      "sha256": "607d1d4cabe67819e8bc73c51eba1a40d156b5977058eeab242b9ffaab1472d6",
+      "bytes": 197,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Frame.lua",
+      "sha256": "2f7ffb60b0d596940be33bfc661e0032f9b7a3c2caea0133b97a60c618837c50",
+      "bytes": 97,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Frame_spec.lua",
+      "sha256": "b61834f61118bc34b38626ef57a4393d3fc8bf90a12cc8b24753cdcee51e7069",
+      "bytes": 195,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Game.lua",
+      "sha256": "921c65461e5a69577570bb3861f40c3633186dea38367e13427c5460be324698",
+      "bytes": 3658,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Game_spec.lua",
+      "sha256": "144f157bf9074c962d3ea883366fc505354bfd3d34fa413d332daf8b66147e9a",
+      "bytes": 1235,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/GuiButton.lua",
+      "sha256": "ba4fde994963b8c16481757f4934d447b92e815dfb14a4d39cca012e180d660c",
+      "bytes": 679,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/GuiButton_spec.lua",
+      "sha256": "cac134c123437fbcc8147b042e74889008cc64999d7dfc587725628681dc8fdd",
+      "bytes": 574,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/GuiObject.lua",
+      "sha256": "8da19cde605986f8cccbf97927b27d9952504a7e94065aac202ec249b66a143f",
+      "bytes": 3701,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/GuiObject_spec.lua",
+      "sha256": "b0f409bcfb31b22170002be01dfbc0bda66a362c7adfff3a939abaa4c2e4c192",
+      "bytes": 4240,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/GuiService.lua",
+      "sha256": "6a16674a572e3759259b47c2f03bed187389e01eade277c20b3d61a478d1c711",
+      "bytes": 999,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/GuiService_spec.lua",
+      "sha256": "96ab487e1f52b84569928974a36521d1fbf85c3cbeacce58e74e37a5a5463c2f",
+      "bytes": 1227,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/HttpRbxApiService.lua",
+      "sha256": "37f88e12cd96c10a3fd88c785bed2393a76a0419c350e4846b0469ac3e561328",
+      "bytes": 138,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/HttpRbxApiService_spec.lua",
+      "sha256": "720cc8b5c3a0c8818a3c10bca638e988cd50de958ac07fc8bb1caa19da740eb0",
+      "bytes": 226,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/HttpService.lua",
+      "sha256": "30ba4930207530bf1915d8c3e99b6a5882d63e3ca6d008f5991df5140396e7c5",
+      "bytes": 1079,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/HttpService_spec.lua",
+      "sha256": "1dc8453f87b7e197af7f4dca654fa41d4160f57a31b292d957f5d7361b5ebb77",
+      "bytes": 1710,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Humanoid.lua",
+      "sha256": "5304585c41281d615ecb953e7452333cf7daa05df6b3c1af3fdb0aa07f66c6bc",
+      "bytes": 1308,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Humanoid_spec.lua",
+      "sha256": "017221ec385579d3c1078367367aae6bdac76be3f59c5aa229962ec9cb10c70b",
+      "bytes": 1354,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ImageButton.lua",
+      "sha256": "7c29b8944d1b720a5ba9809bfec9517ed2b6a19e5f9a1ff8337ad967c519dc8f",
+      "bytes": 1143,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ImageButton_spec.lua",
+      "sha256": "c2bd743e752206be74dea2a70265045f44e558811e2cb9312baf1e848e951ee4",
+      "bytes": 793,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ImageLabel.lua",
+      "sha256": "d5ef35810136c3f5a3e54ba06deaefc6776dd8f46dfa82dfd451fce778a573c7",
+      "bytes": 1134,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ImageLabel_spec.lua",
+      "sha256": "6079910ba6750689f621471bd16e86bff602706416adbed75ccf02ed52b87b77",
+      "bytes": 791,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/InsertService.lua",
+      "sha256": "09aee99b1f1f8ab7b35496b4a5592bf3162fa4a76657d585affc55e112fa7d1f",
+      "bytes": 126,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/InsertService_spec.lua",
+      "sha256": "44d34babd039d3c088889ec3679eb82e13d91a71f18cf3592a532eceae4e7094",
+      "bytes": 210,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/IntValue.lua",
+      "sha256": "e5fb98303f8970e0b9ae713b0d63add7fd12f6432dd791e3298198d6c236f610",
+      "bytes": 354,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/IntValue_spec.lua",
+      "sha256": "d7fcddd5c9f0589f87f5b882068a9c2990ba97fe486cb872354a033d04673703",
+      "bytes": 274,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/LocalScript.lua",
+      "sha256": "4de035259d4e46b713879a9bcb22fa7508172950e141204c2d477dd9d1a13d7a",
+      "bytes": 360,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/LocalScript_spec.lua",
+      "sha256": "c439966d8bcf6f03828b106ae5f3f6b4111d4dc6c5b55a23d926cba893ca1ade",
+      "bytes": 243,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/LocalizationService.lua",
+      "sha256": "2639a7639b395d662baae1d0f5cba9454e6ea431da079a742b99fd3e7762eced",
+      "bytes": 455,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/LocalizationService_spec.lua",
+      "sha256": "55bdbcd42104eeefc893d2310488d9b34fcb977e570f077208364e214214a40a",
+      "bytes": 1068,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/LocalizationTable.lua",
+      "sha256": "ddeb5f6725cc4c687c3b8240349d97afe35fd1c13e40a5dfebe6a6061f6fea29",
+      "bytes": 849,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/LocalizationTable_spec.lua",
+      "sha256": "7a757af4b6669b4af9f62f7abe6f6a89592aa09926796626752f9a84b73ae634",
+      "bytes": 1290,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/MarketplaceService.lua",
+      "sha256": "1831890c733304a19cb0bb1bf62111a0828d7854509cc33da329c29d03b8a048",
+      "bytes": 813,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/MarketplaceService_spec.lua",
+      "sha256": "5716c01c566a3819c5b2c22171ee9ac064595340031c0666f254e3460ceb064f",
+      "bytes": 230,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Model.lua",
+      "sha256": "bbd54ef75fe104740dd23668a28031fcebd198e6bdedf5df924852db77665ef5",
+      "bytes": 106,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Model_spec.lua",
+      "sha256": "642b0a75936af071795d584c9c74e07b3bce7d28fb31d1c8b04b516cbd77fe5c",
+      "bytes": 195,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ModuleScript.lua",
+      "sha256": "d05858b2dc84f474920f1e3b1740a1cc0dd1bb5f2acb5af3ccbc1eee04f2d104",
+      "bytes": 309,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ModuleScript_spec.lua",
+      "sha256": "31b5739d8f506ffb691d90401c478ff5402d8fe3e204a348a786227ea5f805dc",
+      "bytes": 245,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/NotificationService.lua",
+      "sha256": "a18e82f5abda1a7706e721f2955c17ea8e1260d292e48ca114ebb407de671a6b",
+      "bytes": 120,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/NotificationService_spec.lua",
+      "sha256": "293447a8f4265a97e69b19e5ca76c553d1529d338a2faf8ee079fb52df132dd0",
+      "bytes": 223,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/NumberValue.lua",
+      "sha256": "35f868662af17ea9f69972ee48bdc220b1e6253a94296d34c1ccc62f307830cc",
+      "bytes": 369,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/NumberValue_spec.lua",
+      "sha256": "c18d6c611da3fd6dd792dea7a57e2231a78c6eb036c006ed0959e8ab98deb710",
+      "bytes": 437,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ObjectValue.lua",
+      "sha256": "b9b66abd633d65abb28f466a9e597c49a49899145194542dd65c12e9d47ef9b8",
+      "bytes": 326,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ObjectValue_spec.lua",
+      "sha256": "c06d683c0d8795afcca3b3e81d409abbafead847d6ccdcf67677c24303672903",
+      "bytes": 443,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ParticleEffect.lua",
+      "sha256": "1a73d4b1dc7794a2e0374c1512a17140b5b3890235e4afde834f3d592ce8f11d",
+      "bytes": 320,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ParticleEffect_spec.lua",
+      "sha256": "e61aa19b9285cbf68c152e50966ce52e237ce61aad43c3bbf0ce05f02763a52c",
+      "bytes": 252,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Player.lua",
+      "sha256": "a256a6fc4a8e77724b5ed653586bd20f6d3b6efbac7804538e994b30f0003cab",
+      "bytes": 475,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Player_spec.lua",
+      "sha256": "d930b36235d07056e1928dcb0f8934b2e1c7fed4ead11407402e8df9515a8c57",
+      "bytes": 466,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Players.lua",
+      "sha256": "a92f729fd36e5e77cafaaaa5c89172d843d6a043f23818a9a439ae1680ac18f2",
+      "bytes": 383,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Players_spec.lua",
+      "sha256": "1e23fff24f393da7c128f8297c73e937517953f3871cb9c6b4e03e3047613775",
+      "bytes": 589,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ReplicatedFirst.lua",
+      "sha256": "7e1fc8b80e6cefd49c3cca19c916851ea6e348a824c3023f0373d8cccac311eb",
+      "bytes": 132,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ReplicatedFirst_spec.lua",
+      "sha256": "436116e963de13e86b65d594183beb0fb52a039539ab47d2b6a7e90b70c41876",
+      "bytes": 218,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ReplicatedStorage.lua",
+      "sha256": "e2142b7461126a244c1b1b328ef8b6a25a8ad726e631115c71a18ebb2ec7f8f3",
+      "bytes": 94,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ReplicatedStorage_spec.lua",
+      "sha256": "03cb0ed631117a6768423cb45f70f4f4f0e575b6001122f0aaf97f0c77938d70",
+      "bytes": 226,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/RunService.lua",
+      "sha256": "1e3a79b8132a56abba3b05dcca1d3e7e21e329ae3b47b5805a8e4105c1514dc2",
+      "bytes": 648,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/RunService_spec.lua",
+      "sha256": "b5d766fff6b13c0d1a90ca673fb72dd6d79e1214a77417295c3de97bd64dc527",
+      "bytes": 932,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ScreenGui.lua",
+      "sha256": "cbaa22772e864520608258ed93875b2a4ee38fce3aebb3f27dc74a5f3bed2444",
+      "bytes": 1295,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ScreenGui_spec.lua",
+      "sha256": "0668566cf2cebbaa58283489d11ad255f61bbea7586c4d5d4802f26a16ef78d6",
+      "bytes": 943,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Script.lua",
+      "sha256": "391a0828edb90fd232dd5ccfdae40c2c4d18da0bb5057d7faf72c61ace38567c",
+      "bytes": 340,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Script_spec.lua",
+      "sha256": "57bb32115bf5343f31a45f2464b6569cfaae9a4f62d121d35f53a7cf56be804a",
+      "bytes": 233,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ScrollingFrame.lua",
+      "sha256": "95415bdd79411e65d976d0886a5051aa779cfa2f943222d271d4eb76899a5785",
+      "bytes": 2383,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ScrollingFrame_spec.lua",
+      "sha256": "c39e9dcde6e70e02cf859efc5f0306956ebdacf6ac6bbf7206d0e70376358fb2",
+      "bytes": 2561,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ServerScriptService.lua",
+      "sha256": "f71725d021f3cef9c7d9d924cceff6a3d4b031c51473a1e47de8b22cdedf9ed8",
+      "bytes": 144,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ServerScriptService_spec.lua",
+      "sha256": "2e8209a95d24c1fe6bc9b91e9fd7fb7da939c9ead59f7c6e89145676c3f22fe2",
+      "bytes": 235,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ServerStorage.lua",
+      "sha256": "1a500656fad490d335e0fbb7052f5c7afb7e4f0d13916ef5bc3248f102be7f7b",
+      "bytes": 126,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/ServerStorage_spec.lua",
+      "sha256": "ad33029d2c6af7ffcb7e89069d1fb6e270dea31be12ec6d25af3088c8364a717",
+      "bytes": 211,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StarterCharacterScripts.lua",
+      "sha256": "0df8a8e77e5979647bf60e2dab7441dab06b69acfa8a090b21e2b00bd6af8fc2",
+      "bytes": 180,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StarterCharacterScripts_spec.lua",
+      "sha256": "f9c9cb1385268f6afddd122b254fd35750f37fa3daf7f7bcac6aabf291840bfa",
+      "bytes": 385,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StarterPlayer.lua",
+      "sha256": "f5ca02dcd89ad90c9f1d793aa57dfaff50b8abbc21201a28c4b3cc6b5abb1cd7",
+      "bytes": 396,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StarterPlayerScripts.lua",
+      "sha256": "d6818229eb9238abb5fc19f27db25309e0577af1935d4398f5650c1d9f974da4",
+      "bytes": 147,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StarterPlayerScripts_spec.lua",
+      "sha256": "7f86e2dd607a40ef2a9aba3b71f6cc5ec2d62953bb31960abc3a8c21a50badc9",
+      "bytes": 239,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StarterPlayer_spec.lua",
+      "sha256": "72c0869b202322a90a1a7a7136374ec6dc7d32871eb5d16414e106660bfcc4ea",
+      "bytes": 475,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Stats.lua",
+      "sha256": "246c9d443fdca293ef6bd4afc9bdbc915f86708b674d8b54c9808e552438df2a",
+      "bytes": 102,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Stats_spec.lua",
+      "sha256": "95d060c59592b475f55cb3ba713be7bd4983369c325c73f24552adc59b1feb8b",
+      "bytes": 178,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StringValue.lua",
+      "sha256": "6dccbe120acba12e89b48f92d69e6f613ac88c9e9d873dba26e9398fb7bbcb09",
+      "bytes": 370,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/StringValue_spec.lua",
+      "sha256": "7aff3222f95f61a35f5ca5faba1c3f9e693537e9131dc87a60ee01fe462d3e24",
+      "bytes": 281,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TestService.lua",
+      "sha256": "53f8db00f1fc5a93da2473a1b6aa859c55beb706fb574e3efcdc98a642a65b37",
+      "bytes": 221,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TestService_spec.lua",
+      "sha256": "afbbd530692e9f905cacf1c599bafb5f9278c5a8a8ca85f83d219014448cd46c",
+      "bytes": 656,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TextButton.lua",
+      "sha256": "f9262f51c0a5d2991bbd12746962de52879e7c8aa695ddd6027ae373f5480df6",
+      "bytes": 1273,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TextButton_spec.lua",
+      "sha256": "e495d3b1ec991ea481bfe0ab08b84d383b3bfd5bd2fe815af4b3852dd6b206bd",
+      "bytes": 1056,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TextLabel.lua",
+      "sha256": "56c59b12c3437de017e4d6a3d7f413169f7363c17e83da37170e540329848bff",
+      "bytes": 1691,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TextLabel_spec.lua",
+      "sha256": "978a2d078aa13307dedb59a6b415683effa7f625e09fdde98d16f528266851dc",
+      "bytes": 1278,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TextService.lua",
+      "sha256": "4ce4c2bad5e8f959c25f33a517fcacd76c5ac0c7c9192b740f1e0452e0b8dfc3",
+      "bytes": 884,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TextService_spec.lua",
+      "sha256": "93ee1d7860fdb11ad42474b3018b1ddcf8fc5bf3f2239798cde05b2939d9a57f",
+      "bytes": 1330,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TweenService.lua",
+      "sha256": "a1c11d90a346e594982ab18e535372532ce45985356fffe1592f3e3b66be6e9a",
+      "bytes": 89,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/TweenService_spec.lua",
+      "sha256": "7eff4c2b63083b70f7d6f525b201938fb09d1938bf82c27aed26ff876ad4d607",
+      "bytes": 206,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UIGridStyleLayout.lua",
+      "sha256": "9e328d8086662ef90d4e1bcf9fe0897a7432b4aa8cd2f67f3d9787c60bb74fbc",
+      "bytes": 1219,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UIGridStyleLayout_spec.lua",
+      "sha256": "a4eabf6006a0bdcf49624639f693fa60a5731da31e18d8968d3d0b0db53c487a",
+      "bytes": 1178,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UIListLayout.lua",
+      "sha256": "98045a2fa45cd508b2e28aba69a0e1b84123160dac3342050580259f55ad3b43",
+      "bytes": 377,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UIListLayout_spec.lua",
+      "sha256": "f12e4f852b82bd480a12c4dd53bcfb59d7e2023e43537d202d52d2e822935c28",
+      "bytes": 570,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UIPadding.lua",
+      "sha256": "6853dd838a9be0e03e9e4301e2de3a22079f04466dc6d6515835d4ba4f5b0671",
+      "bytes": 725,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UIPadding_spec.lua",
+      "sha256": "a31556e3f277c29cdf6c9e16e8e15d984cb7af1c5ba26b1e69a08dac6cf5e1fc",
+      "bytes": 563,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UITextSizeConstraint.lua",
+      "sha256": "c1a3a4bca831f92434753a00711fc38a1c97e50d412c097993879c1ec3987730",
+      "bytes": 356,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UITextSizeContstraint_spec.lua",
+      "sha256": "3d50c0c81895dd36ce4962b1bb7aac238c76e1d1db2ccf0bec719d6b43670c68",
+      "bytes": 437,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UserInputService.lua",
+      "sha256": "6d9d949c03137998558a2bb165416283252832467a50c99c40192d7a7d9768e0",
+      "bytes": 793,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/UserInputService_spec.lua",
+      "sha256": "b2a7d5a1a3e2e4dbedc24f9c5076364095dc06f61ff59f09566aee51ab34837c",
+      "bytes": 222,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/VirtualInputManager.lua",
+      "sha256": "720eac97fb0ebbe09786e02c8fe522a7f3c7accc56813d0ee8cae4a9cd3520cf",
+      "bytes": 96,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/VirtualInputManager_spec.lua",
+      "sha256": "257a76442f0e3dca38d8a3fa14b77302a4945230a822ea77c930968cce2cf575",
+      "bytes": 234,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Workspace.lua",
+      "sha256": "680b6455e67084420da336159826287f90ff2300fa49861ff15fa828623a167c",
+      "bytes": 783,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/Workspace_spec.lua",
+      "sha256": "481a2c58a91d33563a98873f65e9e9efab031fd9d903d7130d374821cd8a18fb",
+      "bytes": 778,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/instances/init.lua",
+      "sha256": "082fda17dedbc635929ef233d5f159d6157c8598954156a06f1438ae59b69bb6",
+      "bytes": 982,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/json.lua",
+      "sha256": "14da1cf690237332b8c0fc7e78983268062c3a3546fbce741ef96e4b2c7ec24b",
+      "bytes": 339,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/bit32.lua",
+      "sha256": "856e2b2a8ca99cd16bdb4afb42ac99a6fb71598973054405d09b8927a428a6f2",
+      "bytes": 333,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/bit32_spec.lua",
+      "sha256": "ef0913ea749c8545b63ade3bf3ce27b28bb9140196df03ba663d8db90d084248",
+      "bytes": 606,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/init.lua",
+      "sha256": "87b4207578ae5540595f484c1e0697ad6d42db48171c7f4452f29247930f0a31",
+      "bytes": 150,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/math.lua",
+      "sha256": "8df25f19b4fe0a03ca8e5402030102afd21616efb9f2b2fa243dcd5605114019",
+      "bytes": 177,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/math_spec.lua",
+      "sha256": "93374df57e6779136defc413a0313a9bd45e75ac9aee7f4578fbf8103e8a576b",
+      "bytes": 499,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/string.lua",
+      "sha256": "3ad80d29c95dc33276d5936200c005ec829434b34a88d514f2de07996914b790",
+      "bytes": 544,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/libs/string_spec.lua",
+      "sha256": "f6c3f7966a8021b2bd127390029e9bd1274cd741804fac55687dc3fad6ff844c",
+      "bytes": 4083,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/delay.lua",
+      "sha256": "f9f1ad1629ef66557fe1a4c8b46b9c22ee259d47c15327fe1d26357149ffbf37",
+      "bytes": 264,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/delay_spec.lua",
+      "sha256": "1d24be76882ce9c4ce5935948c5d9928471abc273510368a44b91b21ea405182",
+      "bytes": 917,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/init.lua",
+      "sha256": "ce6d20445eadb4c13378549704e9c1a49a6e9b4c674e422f0c80b0f5f10f3607",
+      "bytes": 175,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/spawn.lua",
+      "sha256": "6ccd91c1d63ba6f0391e3cd9702423ad5bba1716aef31b1a59945e3692a59359",
+      "bytes": 113,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/spawn_spec.lua",
+      "sha256": "d401e08a5291f69f82c42ea5b5a1a0f394fa9155716974ecc3aab9d8e5d8c02d",
+      "bytes": 405,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/wait.lua",
+      "sha256": "dbcd19a483dd82751cd209594d44989b00930d8dc960f32eaabab6a49b2879bf",
+      "bytes": 182,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/taskFunctions/wait_spec.lua",
+      "sha256": "abbaeeb28f5cca55e714eb3e0c92ffd8f4c5bd7acf9c86fa124cb5c220a92711",
+      "bytes": 2048,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/typeKey.lua",
+      "sha256": "871c7e3a7cb2567ab76ce1b297c83685e19379f20ad26f0d4e04b8805116ab8e",
+      "bytes": 325,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Color3.lua",
+      "sha256": "073598772301dbdcf058255cc15982616be6a91ea99b13ce5f196b320e3532c2",
+      "bytes": 2859,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Color3_spec.lua",
+      "sha256": "b797bc4f9f1e72c4f734801c04d8cefc16571c6ec6458536f9a163eeee7eea7b",
+      "bytes": 2166,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Rect.lua",
+      "sha256": "363101255eb2cbeea58250ff3a14e663e5db8cbb0be51ef113cac5bd3635d3d8",
+      "bytes": 1466,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Rect_spec.lua",
+      "sha256": "8465819a9cc8e57099ded4d465c8e02a9c6da53ab9ae5dbc3cc90ce6cf75d201",
+      "bytes": 2168,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/UDim.lua",
+      "sha256": "8c9e861b2da1c8311d7667baaac8839fb473d4e30785fa6992b210795492bb3f",
+      "bytes": 1180,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/UDim2.lua",
+      "sha256": "95ccb00b95c9eb7bb11b67dc2a15a11c88ae39e0abcd831e49607d9777bea63c",
+      "bytes": 2005,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/UDim2_spec.lua",
+      "sha256": "a76b9e8912a0d1a0b451d71644c5543ca67f44eaa11427d2128a02c07ffa9856",
+      "bytes": 3194,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/UDim_spec.lua",
+      "sha256": "55b90dac93ee61cfddf5e73584eef4becc88307ae9b076d495a893a0e047d79c",
+      "bytes": 1412,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Vector2.lua",
+      "sha256": "545636ac6b53a38339d548c1fd1ebb4b6d4c661c44621126a340c68599eb6e6a",
+      "bytes": 2260,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Vector2_spec.lua",
+      "sha256": "131dabeb028c30c6eb5edac37fbcb883e941384db1fb22b5a0edecece7e1402e",
+      "bytes": 3202,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Vector3.lua",
+      "sha256": "883c2afd04e59779abcd5404ba05df41a7be4be56e99fcfd9f50bd915523c6e8",
+      "bytes": 2456,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/Vector3_spec.lua",
+      "sha256": "51b69d9fa06a634de78a5340486cd9636994668b66e5b409c9a0c36a9177d8b2",
+      "bytes": 3717,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/types/init.lua",
+      "sha256": "dc94666aede58aafb0d69698bf11acbfb6b26aa53cf6d86697fa5bcfd9bcb6aa",
+      "bytes": 185,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/validateType.lua",
+      "sha256": "3d5c7c182f2d4503cbb75a1ea6db109b9b31f2fa5cf93fbdac0b106d37cf4734",
+      "bytes": 288,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/lib/validateType_spec.lua",
+      "sha256": "d42229715a6e9fe5d653f8c3a583d7a627859e9eac0796358980a25d647d01bb",
+      "bytes": 503,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/load_spec.lua",
+      "sha256": "e8379e3c9ef63600c51bf2264e184329d54c09f1e1c4e41ef0c32c1741b2e5ff",
+      "bytes": 1608,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/require/a.lua",
+      "sha256": "43bf6038bac5f0417a8654e74994f2911b35b0fbdcf45d2abec4fd947b7b0a4c",
+      "bytes": 31,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/require/b.lua",
+      "sha256": "0eddf047c9750c0fd2e6d3d045c110cd95610686f50f4386fca2936fc2876c0b",
+      "bytes": 12,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/require/bar/baz.lua",
+      "sha256": "ee465afe1d71b80d2f6c9ad6ce07ea8e603f12709dc1f67a7c46dd71e60fb10d",
+      "bytes": 12,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/require/cacheme.lua",
+      "sha256": "7df8f0cd9e1cd0b204a760783671c0ccca4a3258dc7c51f59e9e2295c6c25315",
+      "bytes": 9,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/require/foo.lua",
+      "sha256": "845624ca4f229cfaed1946d5e9b7533f12f40a57b61b5741bc1ff87a65bd23d8",
+      "bytes": 37,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/require_spec.lua",
+      "sha256": "5eadffa652dcdccab1c0936208788110457521921886fff08247e58197a503c1",
+      "bytes": 1468,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/test-project/bar.lua",
+      "sha256": "015e03153d145cf69dd7674cc7bd366ef64e7a5ef38fbe6c5a42e93bfb67bf5a",
+      "bytes": 10,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/test-project/normal-folder/ack.lua",
+      "sha256": "f4e7960e9208f2197e194ebce07c1a3f03fae8bf9f1b5b73e99c1d6a4fe4933a",
+      "bytes": 10,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/test-project/usurp/foo.lua",
+      "sha256": "f2ec6b6f191e75f1b94cce2147fbf740297b1e31428176c4197ea54e6e7c0f03",
+      "bytes": 10,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/modules/lemur/spec/test-project/usurp/init.lua",
+      "sha256": "c0cd5e2646a1e958d85515732f3186c3fcb8572e7754bfa4ad979e87ae838fd5",
+      "bytes": 11,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/Context.lua",
+      "sha256": "333abe72ea8f2847999e608ee55372577a46c79b33d0e76197637cc1fa232115",
+      "bytes": 584,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/Expectation.lua",
+      "sha256": "3740dc904e3fb4ed86bbd5c75590b7358ae30c401fe389e1c6919b7250ff1d91",
+      "bytes": 5435,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/LifecycleHooks.lua",
+      "sha256": "0acf9eae4f492c4440808fb617e791983a8a54b47e1a0646d817267b1f84572a",
+      "bytes": 2081,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/Reporters/TeamCityReporter.lua",
+      "sha256": "9f36169fe44ebdead319727f4e588df7e105897d3a180a3019efa78176a70e00",
+      "bytes": 2677,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/Reporters/TextReporter.lua",
+      "sha256": "718569ebb4aecbf1d35cab8074fedccbaeafdf36a307fded4fe41246e0076883",
+      "bytes": 2110,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/Reporters/TextReporterQuiet.lua",
+      "sha256": "032eff53d5efac0275015819de6b2a19aaa842f42c89c80d7f86c3d5dad16a2d",
+      "bytes": 1943,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestBootstrap.lua",
+      "sha256": "3a55c338bdb3427af11b42e53ff5f5af4152bab1fef4305098038cd73193ce62",
+      "bytes": 3680,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestEnum.lua",
+      "sha256": "e8a07795dbe46924231184a56badf4a09cbf31fcc56f6e97755a7f0e44b715d5",
+      "bytes": 429,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestPlan.lua",
+      "sha256": "54633ca65ee620b4162b61c5bf05d25e0271e5a558ab788f93137176e9b5f0c9",
+      "bytes": 7491,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestPlanner.lua",
+      "sha256": "de047c33344d8e870aeb123e8d419dd55d9eff152b6a8bfc07d107b8891aee51",
+      "bytes": 1374,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestResults.lua",
+      "sha256": "4fbe5e6ebbf2986f67b529de7db337d53aa80c15991da8d4335509f4e16df717",
+      "bytes": 2267,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestRunner.lua",
+      "sha256": "ca600cbf13a58cd9f36d5b9e200588ce14251fd629b40df1882b4c8e0cf811d9",
+      "bytes": 4608,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/TestSession.lua",
+      "sha256": "24e72d29b93f07414066d2051d1b01625d3ab0541e66f43c87ff1ce00afeb3f7",
+      "bytes": 6017,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/src/init.lua",
+      "sha256": "c05dc3e27dded6d9531e6faa8439d104054fdb91c1227fe6650ec8151cc77dec",
+      "bytes": 1168,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/test/lemur.lua",
+      "sha256": "ae23816b9e583eb40e88f13eff7ce4674cdaaef6fde1e870604074839bc50d3c",
+      "bytes": 1046,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/test/runner.server.lua",
+      "sha256": "593abf777afc1eeb46728fc209650b398a9c4a229ba356a26ccd35a98f9a75ad",
+      "bytes": 2223,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/testez-cli/src/lemur-entry.lua",
+      "sha256": "8fc5b77a8e58a1af699b721ae7628fe539e3ebfd1b7ff28f80896435d0797e15",
+      "bytes": 1366,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/testez-cli/src/test-runner.lua",
+      "sha256": "ab1588a1a70c7f947938e5e950ea91bf7071230352cc42a9a6a527539a008db3",
+      "bytes": 1774,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/Context.lua",
+      "sha256": "af92cd5c1e905db4fb6eef8ec88d3dbb0d48d21ab8d48968faae87fac366e0a3",
+      "bytes": 2022,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/Expectation.lua",
+      "sha256": "a3eba7fbec54383d0c52685a84ae87a210dfaada2f587adae909a9aa58a74708",
+      "bytes": 5429,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/api.lua",
+      "sha256": "20735cd546750d94dae5b0cb027a6431251ca0aa1c2824323fe9711fb1ffccc6",
+      "bytes": 160,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/failing/duplicateDescribe.spec.lua",
+      "sha256": "711d7149e85d86c01374030b2c447106bc7ecf8926c144dac99894957c582d20",
+      "bytes": 296,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/failing/duplicateIt.spec.lua",
+      "sha256": "fde564c6780b4cb79f2157c7fc2b401b79b7194a0fdb7fe25b9841be3d561f41",
+      "bytes": 226,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/failing/error.spec.lua",
+      "sha256": "3b511a5e32a1d8c11a1f1b6692be2250c1f783b65945fb51958a55d00950b6e4",
+      "bytes": 150,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/failing/fail.spec.lua",
+      "sha256": "e671fc8fbec5118bb501d46af4baff315d45e50ecb1154a89836e4c8d0fc2330",
+      "bytes": 154,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/failing/planning.spec.lua",
+      "sha256": "5bc5ea48d637aea59b740f64f4114b6e4b642cfbb21905ee58c8d1a386479098",
+      "bytes": 112,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/lifecycleHooks.lua",
+      "sha256": "fa07d8fa07d677ce565e869b38dba6a93cc1fc8486862e5468ae4849c57b8129",
+      "bytes": 5810,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/context.spec.lua",
+      "sha256": "d7876cfb1853d93034b9afa81116eda20f33c4ef684e4f49ff2e69a0dfbcaa8d",
+      "bytes": 607,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/describeAndContext.spec.lua",
+      "sha256": "d7931013ae3ed69554166bb2332ee1f8b880e90d6856e54e0a2930229707b9ad",
+      "bytes": 173,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/empty.spec.lua",
+      "sha256": "e5f05ee9b04d22367245f70d691e28c47318f276266b5e12e1bd62a908297c72",
+      "bytes": 174,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/expect.spec.lua",
+      "sha256": "19d91a0ae90a08b5bab7b8cdb01114a6d2445f486df410b48aa704dd0bf65e10",
+      "bytes": 259,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/focus.spec.lua",
+      "sha256": "c2cfa4f970dc46a47937151b76b923f718f66c335c53248271073370e8cb81c8",
+      "bytes": 162,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/focusAndSkip.spec.lua",
+      "sha256": "d9846d439d9559907eeca2f2989ece06184bfefb63b97466a19a8d35f2b68028",
+      "bytes": 256,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/nestedContext.spec.lua",
+      "sha256": "df87143b8cf6ba1a7a5b2a93b40c8db3199fc3025e7c502eead06ebbdaf6baf1",
+      "bytes": 547,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/passing/skip.spec.lua",
+      "sha256": "8c61fddd9859c4265085e7bd59f875eff4393e9303775c31acb820b5bda45ff6",
+      "bytes": 278,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/planner.lua",
+      "sha256": "4c9b107aacce3f2d0dd10e4777b156bc6bebfe0c3d6f7e4b2a229cca5c667bb2",
+      "bytes": 2626,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/planning/a.spec.lua",
+      "sha256": "fdee881592236f2b37a82635d69e02074a1396fd4aff10a65613544528e3eb7e",
+      "bytes": 137,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/planning/b.spec.lua",
+      "sha256": "567b9736d43717ff48cce5b509641c2ef866bab7f8ce669c172dab44418b29ff",
+      "bytes": 175,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/planning/d.spec.lua",
+      "sha256": "a877a9aa12579c0f07b663c4c47bc206015c7b2beca1ddc765d43c3af4dcda7b",
+      "bytes": 355,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/modules/testez/tests/specTests.lua",
+      "sha256": "79c4cbda5ae13384b3c8696ecacc0a05a68f00986503f15a22f272548a6b524e",
+      "bytes": 765,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/evaera_promise@4.0.0/promise/runTests.server.lua",
+      "sha256": "fb8716838ff0a07621305e949efaa62aaeb1f2921c82ce34a1a517267a9a89de",
+      "bytes": 82,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/Option.lua",
+      "sha256": "2b7807acb6526f1743e9e28c0883e795e45bc85b3835015407992f4090187aa2",
+      "bytes": 73,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/Promise.lua",
+      "sha256": "ebc96d0843da53fe29cc8ee9cbedef98fcc41fff5bc79d198a068a2be9119fbf",
+      "bytes": 72,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/Signal.lua",
+      "sha256": "761276a71f6e44d1b1c4f8aa55e2db49074bd2ee09dccb6e22fc247c2c4ecfb1",
+      "bytes": 73,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Client/ClientComm.lua",
+      "sha256": "063347b877d2f89ec140deef3c15e5ff8b73a6c3e5f23dcdd63da181d57852af",
+      "bytes": 6990,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Client/ClientRemoteProperty.lua",
+      "sha256": "420dfaa236e69229c79dad9aa9179cdaff9f4b00ea7e70b1b88915f6c27368c4",
+      "bytes": 3647,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Client/ClientRemoteSignal.lua",
+      "sha256": "f5fc0fe166264f5294d3485700042fc82e0c4299f12e8d7ddbd9ad4ec030b7f5",
+      "bytes": 2691,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Client/init.lua",
+      "sha256": "c5ca25d7896ed1aa60352a1a32e2a39d7e6d4e704fa1e4b14331ea6a14f6c366",
+      "bytes": 4323,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Server/RemoteProperty.lua",
+      "sha256": "59db709f5bb7018a5d9a64be476bbcedc3d3458c8e2887bf31416b34d0932188",
+      "bytes": 8965,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Server/RemoteSignal.lua",
+      "sha256": "79b531edd8fae69fe9537e5ffa63353f4099920814d6b6b47d1a34a1278d69d9",
+      "bytes": 5586,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Server/ServerComm.lua",
+      "sha256": "2230adad782b21ebdbdffaecd4f3c034a2a6e0cda54923386d442542c1f903d4",
+      "bytes": 5951,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Server/init.lua",
+      "sha256": "68162221cb3c0d0b2637a42d78c2bf5049653eeea5414744c2d8549365b00fd0",
+      "bytes": 5069,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Types.lua",
+      "sha256": "1f1b2009a65242578e71691b38557c6e6ec36c6a5749b09edc0c4d6ede636c72",
+      "bytes": 404,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/Util.lua",
+      "sha256": "34c4310d928a02ccef70ba4947dafe44f2bc155af43d3d2c143676b3559d0468",
+      "bytes": 711,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_comm@1.0.1/comm/init.lua",
+      "sha256": "c45dfff552db1e0800663915b9c6891e392bd20fed231e82fabacc18001e8372",
+      "bytes": 943,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_option@1.0.5/option/init.lua",
+      "sha256": "1b19a64799eeda813aa67fcc1703889edbf1880b471f793a83fb44596ad9607d",
+      "bytes": 10735,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_option@1.0.5/option/init.spec.lua",
+      "sha256": "86695df1c17d29a125ab0829c6961eee29a0fd29f1db1f1970384f0fe24fef1d",
+      "bytes": 9034,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_signal@2.0.3/signal/init.luau",
+      "sha256": "a2c3a044ad291f1b8ea7d9ab38147d0ca8807c22532a45f31f33c79b89b74124",
+      "bytes": 11336,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/sleitnick_signal@2.0.3/signal/init.test.luau",
+      "sha256": "124fb877609ce603dffc799c9d7a8d37601abd4d267a8eeb4a1c91cf921994a2",
+      "bytes": 4366,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/Comm.lua",
+      "sha256": "02e8f35725716d398322c8ec75228ee5eb20a7da471c74cd36b5a0ec85959011",
+      "bytes": 69,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/Promise.lua",
+      "sha256": "ebc96d0843da53fe29cc8ee9cbedef98fcc41fff5bc79d198a068a2be9119fbf",
+      "bytes": 72,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/Superbullet.lua",
+      "sha256": "d4a4b85ce11175ad68ce257ae503e7ba2626d67764d467f1d43cde75340c4aca",
+      "bytes": 175,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/Components/ClientExtension.lua",
+      "sha256": "1ddea2ec1b19b10fa55ea8fcf14b3cef1bfc2f801d9fefcb1a433ff52b0216f0",
+      "bytes": 5375,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/Components/ComponentInitializer.lua",
+      "sha256": "7a572147f4043f83c16790429644baa365cefe08bbc016702bbab122d2297b3e",
+      "bytes": 4306,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/Components/init.lua",
+      "sha256": "bd616bf5e7a6ac73e69bc040b9f4af32e9d6005a7c506c4e4e7163314a63e5a8",
+      "bytes": 284,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/KnitClient.lua",
+      "sha256": "de0f52b82d97895fb932e37bac48e6d846a4dec471fd9ed68b4523c4007de50a",
+      "bytes": 16702,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/KnitErrorHelper.lua",
+      "sha256": "59740286c85fd01d29f30c7a14914cf695b6a2129f01ecf785f401b05b71a2d6",
+      "bytes": 8000,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/KnitServer.lua",
+      "sha256": "573020644019fd5148ab2b7f0165325a3dea303380f88f500e3341c618c52442",
+      "bytes": 21639,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Packages/_Index/superbullet_knit@0.0.1/knit/init.lua",
+      "sha256": "560dcadaa28f4302f87d4df4fc4d1f72415e063179d46d709b1729a1040fd0cb",
+      "bytes": 291,
+      "status": "dependency_not_in_initial_manifest",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/AdminCameraDefinitions.lua",
+      "sha256": "9017516c835c7e533121737c4b3364f73dd578edc3792d7a388ab1e40ea65466",
+      "bytes": 1838,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "9017516c835c7e533121737c4b3364f73dd578edc3792d7a388ab1e40ea65466",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.AdminCameraDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/AdminCommandDefinitions.lua",
+      "sha256": "f66dcc34c7b8777385f106cb5afb47f52aee154625331d1717a9c0ea9e22d7e2",
+      "bytes": 567,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f66dcc34c7b8777385f106cb5afb47f52aee154625331d1717a9c0ea9e22d7e2",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.AdminCommandDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Config/BiomeEnvironmentDatabase.lua",
+      "sha256": "c7b2c740a7274cac6085bb6837be3373eac7fdd7fcff7b0f68dae11a5e257c3b",
+      "bytes": 26066,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c7b2c740a7274cac6085bb6837be3373eac7fdd7fcff7b0f68dae11a5e257c3b",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Config.BiomeEnvironmentDatabase"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/EventDefinitions.lua",
+      "sha256": "a25725c6bfafb98ddf5e01b40e72aadfc68b8423c3e811d066aba0dce4ee1f7e",
+      "bytes": 5859,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "a25725c6bfafb98ddf5e01b40e72aadfc68b8423c3e811d066aba0dce4ee1f7e",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.EventDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/AssetResolver.lua",
+      "sha256": "b864127fdb4589cc67444d04817527fdf85149c06352aab9ad485daf1a1021e4",
+      "bytes": 4016,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "b864127fdb4589cc67444d04817527fdf85149c06352aab9ad485daf1a1021e4",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.AssetResolver"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/AuthoredTreeDefinitions.lua",
+      "sha256": "af481cc8dad05e92a46e127faf3d5ad23e6dbeee2bfe26f7f38e857237a3e3bc",
+      "bytes": 2341,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "af481cc8dad05e92a46e127faf3d5ad23e6dbeee2bfe26f7f38e857237a3e3bc",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.AuthoredTreeDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/BiomeDefinitions.lua",
+      "sha256": "bcf040545054e127c32ca0ee6da006d7c17d553e43692c613e1b726dd927e878",
+      "bytes": 557,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "bcf040545054e127c32ca0ee6da006d7c17d553e43692c613e1b726dd927e878",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.BiomeDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ChallengeDefinitions.lua",
+      "sha256": "3e69cdfa917c32cd38af49cfb420c0d43cfc30ff3273f78693ea30e25068c66d",
+      "bytes": 1135,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "3e69cdfa917c32cd38af49cfb420c0d43cfc30ff3273f78693ea30e25068c66d",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.ChallengeDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/CurrencyDefinitions.lua",
+      "sha256": "3688b534c3a889e6209188d8f3ac7f411056ba5434bf124856d19127707b9d95",
+      "bytes": 382,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "3688b534c3a889e6209188d8f3ac7f411056ba5434bf124856d19127707b9d95",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.CurrencyDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/DropTables.lua",
+      "sha256": "bc421cffba1c5ab7cc75073499593d75d4fe021d2048e1844fd316e96afa8699",
+      "bytes": 721,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "bc421cffba1c5ab7cc75073499593d75d4fe021d2048e1844fd316e96afa8699",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.DropTables"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua",
+      "sha256": "117e01150b3807ecc410e2657f775fb6f23863098ad69a8f2a5f602887091e18",
+      "bytes": 1267,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "117e01150b3807ecc410e2657f775fb6f23863098ad69a8f2a5f602887091e18",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.EggDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GameplayEffectsDefinitions.lua",
+      "sha256": "9a0c851f4cf9b278be191558809edd50b64004082ce57319093cd7f75e6c56ed",
+      "bytes": 277,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "9a0c851f4cf9b278be191558809edd50b64004082ce57319093cd7f75e6c56ed",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.GameplayEffectsDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua",
+      "sha256": "f231a250d69f3416eb5267f9e9cccc1eecf2c2133fb1eb024413e0adf521db38",
+      "bytes": 5057,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f231a250d69f3416eb5267f9e9cccc1eecf2c2133fb1eb024413e0adf521db38",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.GardenDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/IndexRewardDefinitions.lua",
+      "sha256": "73e283118ff3b1cc16ea957f45ab96e85dbc27d40ac6e2c818a147e75aa59559",
+      "bytes": 202,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "73e283118ff3b1cc16ea957f45ab96e85dbc27d40ac6e2c818a147e75aa59559",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.IndexRewardDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/MeadowTreeDefinitions.lua",
+      "sha256": "d397242403c27f5a932a43ebf764afee858c97abeb268beb24fc1245730ac1de",
+      "bytes": 658,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "d397242403c27f5a932a43ebf764afee858c97abeb268beb24fc1245730ac1de",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.MeadowTreeDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+      "sha256": "a937ac8a5fe775fc7c7b52f91b6e8f19248d2cebf41c0ad6f7d4634dd1cd5f61",
+      "bytes": 6255,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "1e4c4066e04abd1276cd39a244fcbe328eb0e6b43931c4560f084b3c2ba9a514",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.PetDefinitions",
+      "backup": "documentations/production-polish-20260922/before/src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+      "backup_sha256": "1e4c4066e04abd1276cd39a244fcbe328eb0e6b43931c4560f084b3c2ba9a514",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/RarityDefinitions.lua",
+      "sha256": "a72ee96621a1f7344484ab5751cdbdeaa11ee7e84b9ebd17f56c6608b8772ca8",
+      "bytes": 528,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "a72ee96621a1f7344484ab5751cdbdeaa11ee7e84b9ebd17f56c6608b8772ca8",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.RarityDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/SeasonalDefinitions.lua",
+      "sha256": "7db7a99d5851e669f673ba67db5952ce33ea709ed1218e235f6c777758b4badf",
+      "bytes": 742,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7db7a99d5851e669f673ba67db5952ce33ea709ed1218e235f6c777758b4badf",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.SeasonalDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ShopDefinitions.lua",
+      "sha256": "7c910fbff2ecf92cc478a86f7d7420d37dcee12b1b8b6883d633b05acb034c3b",
+      "bytes": 478,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7c910fbff2ecf92cc478a86f7d7420d37dcee12b1b8b6883d633b05acb034c3b",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.ShopDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/TutorialDefinitions.lua",
+      "sha256": "266b14bc45e484cf0fe786baa4e2f77727683f572bfafc3625055fdaecc3113b",
+      "bytes": 1699,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "266b14bc45e484cf0fe786baa4e2f77727683f572bfafc3625055fdaecc3113b",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.TutorialDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/UpgradeDefinitions.lua",
+      "sha256": "19b3ddf16f96df80f74d5331a8f38ba16466e0cb0ad1547df6d6733d14077387",
+      "bytes": 917,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "19b3ddf16f96df80f74d5331a8f38ba16466e0cb0ad1547df6d6733d14077387",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.UpgradeDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/VariantDefinitions.lua",
+      "sha256": "ea6cd917646a395a6e07b91e4f3789f9858d615bad283b5978db463a7c2ac6ac",
+      "bytes": 686,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "ea6cd917646a395a6e07b91e4f3789f9858d615bad283b5978db463a7c2ac6ac",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.VariantDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/Definitions/WeatherGameplayDefinitions.lua",
+      "sha256": "0511b8ade2db6c356e481364c0c9a128f9775637a227a281a0935cec33ddfc61",
+      "bytes": 739,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "0511b8ade2db6c356e481364c0c9a128f9775637a227a281a0935cec33ddfc61",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.Definitions.WeatherGameplayDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/FollowerFormation.lua",
+      "sha256": "2449f5f78e6c14174229b09e32cc2b4a479d29ebdeeb3be8a57c09ddc2593310",
+      "bytes": 861,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/GardenProgress.lua",
+      "sha256": "d247a39a3fc0134dfc37f40b31cbafc8e2b1b7ec28bdb953aa9893c53477bb29",
+      "bytes": 6013,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "d247a39a3fc0134dfc37f40b31cbafc8e2b1b7ec28bdb953aa9893c53477bb29",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.GardenProgress"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua",
+      "sha256": "58fd6a319a88a7af88f7b29a1d864ca49a0e86ee39e947683ed3e272f99e2cad",
+      "bytes": 4977,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7fd693230c11cf6f43dac30850cf0b58abac3a54afd228dd11b624c2f3c5717e",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.PetAppearance",
+      "backup": "documentations/production-polish-20260922/before/src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua",
+      "backup_sha256": "7fd693230c11cf6f43dac30850cf0b58abac3a54afd228dd11b624c2f3c5717e",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PetAssetValidator.lua",
+      "sha256": "481079c63063d344b79295bff9d4f7979366ba37e6a994f70a41f7ac178d7118",
+      "bytes": 3001,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PetMath.lua",
+      "sha256": "73695312f6e088c981914b1cd85cdb5e92fd8e0f552a06653f8da73e5a82b989",
+      "bytes": 652,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "73695312f6e088c981914b1cd85cdb5e92fd8e0f552a06653f8da73e5a82b989",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.PetMath"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PetModelResolver.lua",
+      "sha256": "89d09bddcc089d9668a379b28786af829ab6f70e8dbbfc1742e7192bdc124a9d",
+      "bytes": 3187,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PetModelValidation.lua",
+      "sha256": "7beb8ae7c52b9a48f4f94f336848ac62708c2814206ab09b546a199271fd179d",
+      "bytes": 4082,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7beb8ae7c52b9a48f4f94f336848ac62708c2814206ab09b546a199271fd179d",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.PetModelValidation"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PetVisualGeometry.lua",
+      "sha256": "743a2c8e19c1ca7e9b134f46922f595de97df11fef54daf3a5d2637814ba6703",
+      "bytes": 5396,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/PresentationSounds.lua",
+      "sha256": "d0bbee9c5e796fc08589fece31f971d46d44dbbe9399819f7887ca2f17d2f501",
+      "bytes": 445,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "d0bbee9c5e796fc08589fece31f971d46d44dbbe9399819f7887ca2f17d2f501",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.PresentationSounds"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/ProfileMigrations.lua",
+      "sha256": "c867c5f56551d01f2a5b7981cd2623dc8509c9faa2a2ee2c9d32a16ca080db91",
+      "bytes": 9634,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c867c5f56551d01f2a5b7981cd2623dc8509c9faa2a2ee2c9d32a16ca080db91",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.ProfileMigrations"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/Gameplay/WeightedRandom.lua",
+      "sha256": "8ff7c0c07aac1e1aba5006fc1177d3a928baf67864372243a69f3490e27ff934",
+      "bytes": 686,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "8ff7c0c07aac1e1aba5006fc1177d3a928baf67864372243a69f3490e27ff934",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.Gameplay.WeightedRandom"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/MeteorShowerEffects.lua",
+      "sha256": "25e365fd5d5c447fe7c4bc3c7f1e4f7a7b9e09f1b6699a467c2c0b41582533c2",
+      "bytes": 14656,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "25e365fd5d5c447fe7c4bc3c7f1e4f7a7b9e09f1b6699a467c2c0b41582533c2",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.MeteorShowerEffects"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/SpiritNightEffects.lua",
+      "sha256": "dcc26352e435f7dbbfbbee0e740da5e1d5b2bc317c8f9144cbf7dde66446dda7",
+      "bytes": 10570,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "dcc26352e435f7dbbfbbee0e740da5e1d5b2bc317c8f9144cbf7dde66446dda7",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.SpiritNightEffects"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/WeatherAudioController.lua",
+      "sha256": "654fc173d917c60d8dec6d58ba20cf090f3b35eb2fbfdaec997d1f76a3516b55",
+      "bytes": 13721,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "654fc173d917c60d8dec6d58ba20cf090f3b35eb2fbfdaec997d1f76a3516b55",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.WeatherAudioController"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/WeatherCelestialEffects.lua",
+      "sha256": "628dc357ef513183cb326325b366526ae076c948a5f44cd12c542cdf45ac8f93",
+      "bytes": 19518,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "628dc357ef513183cb326325b366526ae076c948a5f44cd12c542cdf45ac8f93",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.WeatherCelestialEffects"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/WeatherEnvironmentEffects.lua",
+      "sha256": "1a2b9330ed9ff0802e6023a157622d89228150d4e088e28063206705dc8cc302",
+      "bytes": 23506,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "1a2b9330ed9ff0802e6023a157622d89228150d4e088e28063206705dc8cc302",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.WeatherEnvironmentEffects"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/WeatherSoundDefinitions.lua",
+      "sha256": "9f0961ad2d346bdf6306b54a934ea5ae5136ff02cdd8f5650427b82902085786",
+      "bytes": 14768,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "9f0961ad2d346bdf6306b54a934ea5ae5136ff02cdd8f5650427b82902085786",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.WeatherSoundDefinitions"
+    },
+    {
+      "local": "src/ReplicatedStorage/Shared/WeatherVFXQuality.lua",
+      "sha256": "097ece0594f08ffd39704eaa0b6a5f8544e41832816061cef4de52d74358169d",
+      "bytes": 657,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "097ece0594f08ffd39704eaa0b6a5f8544e41832816061cef4de52d74358169d",
+      "studio_path_at_baseline": "ReplicatedStorage.Shared.WeatherVFXQuality"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/AnimalKingdomConfig.lua",
+      "sha256": "bdd0a10a09d174e394b89ab67d79d0350067fb1ea3803cb829004cd7e1775f91",
+      "bytes": 2108,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "bdd0a10a09d174e394b89ab67d79d0350067fb1ea3803cb829004cd7e1775f91",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.AnimalKingdomConfig"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/BiomeDatabase.lua",
+      "sha256": "cf4cb6ae6ba231ab1299c39e5ac60a6614109f9d369f811427a643666852909e",
+      "bytes": 356,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "cf4cb6ae6ba231ab1299c39e5ac60a6614109f9d369f811427a643666852909e",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.BiomeDatabase"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/MutationDatabase.lua",
+      "sha256": "7b92b202ce2faad60ffdc12524acd72d14d39fd439154941873418806e9c0d04",
+      "bytes": 680,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7b92b202ce2faad60ffdc12524acd72d14d39fd439154941873418806e9c0d04",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.MutationDatabase"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/NumNomDatabase.lua",
+      "sha256": "3042e6febd4b8e1d6e4857aff6c4ebf13af7c5e0e7015b5937ad4fbefa93900d",
+      "bytes": 703,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "3042e6febd4b8e1d6e4857aff6c4ebf13af7c5e0e7015b5937ad4fbefa93900d",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.NumNomDatabase"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/PetDatabase.lua",
+      "sha256": "39bfe1e5696510254f32156ebd73ee222561edfa0fd66acf65f38c699fe10ab2",
+      "bytes": 1878,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "81c98ae5e35ce5c24a854f5b64e76d759e0c2b67ff819997ebfe94933fab512f",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.PetDatabase",
+      "backup": "documentations/production-polish-20260922/before/src/ReplicatedStorage/SharedSource/Datas/PetDatabase.lua",
+      "backup_sha256": "81c98ae5e35ce5c24a854f5b64e76d759e0c2b67ff819997ebfe94933fab512f",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/ProfileTemplate.lua",
+      "sha256": "bc993ab91a4dd8f20789d712961c09fcf1bdcb431e53f8cab19fcd9dc58d25d8",
+      "bytes": 889,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "bc993ab91a4dd8f20789d712961c09fcf1bdcb431e53f8cab19fcd9dc58d25d8",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.ProfileTemplate"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Datas/ShakeableDatabase.lua",
+      "sha256": "94ba8d0201c5b3b5083342c6e33d70e7dc3d1518b216322a8c588878e4bafcc5",
+      "bytes": 750,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "94ba8d0201c5b3b5083342c6e33d70e7dc3d1518b216322a8c588878e4bafcc5",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Datas.ShakeableDatabase"
+    },
+    {
+      "local": "src/ReplicatedStorage/SharedSource/Utilities/ScriptsLoader/ComponentsInitializer.lua",
+      "sha256": "766b65ea6ce504af91a4310b47761a11068b99acca07dfe1b8fb0fda4a9787d8",
+      "bytes": 1528,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "766b65ea6ce504af91a4310b47761a11068b99acca07dfe1b8fb0fda4a9787d8",
+      "studio_path_at_baseline": "ReplicatedStorage.SharedSource.Utilities.ScriptsLoader.ComponentsInitializer"
+    },
+    {
+      "local": "src/ServerScriptService/AK_BiomeLabelRemover.server.lua",
+      "sha256": "fd7364acd5f90638018edf04fecb0f6bd917a2f3f1d78174fe0437fbbae88241",
+      "bytes": 6169,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "fd7364acd5f90638018edf04fecb0f6bd917a2f3f1d78174fe0437fbbae88241",
+      "studio_path_at_baseline": "ServerScriptService.AK_BiomeLabelRemover"
+    },
+    {
+      "local": "src/ServerScriptService/AK_PlotAssignment.server.lua",
+      "sha256": "5383671d94bd558d29b6135b4fb3939f434f7a7f0c97d49fe8ec6fe780996b7d",
+      "bytes": 11860,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "5383671d94bd558d29b6135b4fb3939f434f7a7f0c97d49fe8ec6fe780996b7d",
+      "studio_path_at_baseline": "ServerScriptService.AK_PlotAssignment"
+    },
+    {
+      "local": "src/ServerScriptService/AK_TownCollision.server.lua",
+      "sha256": "00113600225ea68200ad24830dc3ed61efab55ac731a9b678e077d1045832eac",
+      "bytes": 301,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ServerScriptService/AK_TownVisualRuntime.server.lua",
+      "sha256": "eb1e8684f3752fb98aa6a0101a1622da57e0d3a770d0b0d0cdeba5e79a0f3361",
+      "bytes": 9455,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "eb1e8684f3752fb98aa6a0101a1622da57e0d3a770d0b0d0cdeba5e79a0f3361",
+      "studio_path_at_baseline": "ServerScriptService.AK_TownVisualRuntime"
+    },
+    {
+      "local": "src/ServerScriptService/AdminCommandCenter/ActivityLog.lua",
+      "sha256": "cd76334894d24111019ed96f077a8b9fbb712e8b8c594871b04a28bf1927d1bc",
+      "bytes": 581,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "cd76334894d24111019ed96f077a8b9fbb712e8b8c594871b04a28bf1927d1bc",
+      "studio_path_at_baseline": "ServerScriptService.AdminCommandCenter.ActivityLog"
+    },
+    {
+      "local": "src/ServerScriptService/AdminCommandCenter/PlotStatus.lua",
+      "sha256": "18c98884dbc6857b2d0d294f90a4de6a793b19399eda8a6d4d1ed97cfa0ed671",
+      "bytes": 1173,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "18c98884dbc6857b2d0d294f90a4de6a793b19399eda8a6d4d1ed97cfa0ed671",
+      "studio_path_at_baseline": "ServerScriptService.AdminCommandCenter.PlotStatus"
+    },
+    {
+      "local": "src/ServerScriptService/AdminCommandCenter/RequestPolicy.lua",
+      "sha256": "16a927655566a2c79b059a6ef99573fb5f35a4dbf3fbf502ae74096e1e3c4cc9",
+      "bytes": 2941,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "16a927655566a2c79b059a6ef99573fb5f35a4dbf3fbf502ae74096e1e3c4cc9",
+      "studio_path_at_baseline": "ServerScriptService.AdminCommandCenter.RequestPolicy"
+    },
+    {
+      "local": "src/ServerScriptService/AdminCommandCenter/RoomPanels.lua",
+      "sha256": "3b07aa3bf1df0e696d47decebc71a2ac04bac40920802afe6b4ed11de290dc6d",
+      "bytes": 3793,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "3b07aa3bf1df0e696d47decebc71a2ac04bac40920802afe6b4ed11de290dc6d",
+      "studio_path_at_baseline": "ServerScriptService.AdminCommandCenter.RoomPanels"
+    },
+    {
+      "local": "src/ServerScriptService/AdminCommandCenter/Teleports.lua",
+      "sha256": "34b83d09f65e13ce7166543a63bf966dcb24e598515973e4d2b7f23ae2eef854",
+      "bytes": 5887,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "34b83d09f65e13ce7166543a63bf966dcb24e598515973e4d2b7f23ae2eef854",
+      "studio_path_at_baseline": "ServerScriptService.AdminCommandCenter.Teleports"
+    },
+    {
+      "local": "src/ServerScriptService/BiomeTeleport/Destinations.lua",
+      "sha256": "f91958ec326ab800bf3126cc369c54e7c4c8382e19e516f3e318d96978207835",
+      "bytes": 372,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f91958ec326ab800bf3126cc369c54e7c4c8382e19e516f3e318d96978207835",
+      "studio_path_at_baseline": "ServerScriptService.BiomeTeleport.Destinations"
+    },
+    {
+      "local": "src/ServerScriptService/BiomeTeleport/Landing.lua",
+      "sha256": "78bba9786c36c5bebd29935ea9de6e6b9019c3e35b2f5e5c418fcc1d0aaf880a",
+      "bytes": 5523,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "78bba9786c36c5bebd29935ea9de6e6b9019c3e35b2f5e5c418fcc1d0aaf880a",
+      "studio_path_at_baseline": "ServerScriptService.BiomeTeleport.Landing"
+    },
+    {
+      "local": "src/ServerScriptService/BiomeTeleport/RequestHandler.lua",
+      "sha256": "3c665f8acfac1791fc8241984ff8218832d83c0481ed03ab056dea293c1f2cf9",
+      "bytes": 1047,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "3c665f8acfac1791fc8241984ff8218832d83c0481ed03ab056dea293c1f2cf9",
+      "studio_path_at_baseline": "ServerScriptService.BiomeTeleport.RequestHandler"
+    },
+    {
+      "local": "src/ServerScriptService/BiomeTeleport/init.server.lua",
+      "sha256": "b66e007c0586895f2c73b31b1ff32b895799bf720bad4703c6ecc43da44575fc",
+      "bytes": 1517,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "ad9130fa4a1d4d2303fbe905bb31950377b918cbb7466123ca13dc45d13dd638",
+      "studio_path_at_baseline": "ServerScriptService.BiomeTeleport",
+      "backup": "documentations/production-polish-20260922/before/src/ServerScriptService/BiomeTeleport/init.server.lua",
+      "backup_sha256": "ad9130fa4a1d4d2303fbe905bb31950377b918cbb7466123ca13dc45d13dd638",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ServerScriptService/PetAssetDiagnostics.server.lua",
+      "sha256": "57ed6d0d4df81cdb03fdd7562e60a0cd14a680fdd317d074c096497c9e9887c2",
+      "bytes": 721,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ServerScriptService/PlotLocator.lua",
+      "sha256": "33fd0b2b8856cb0b30165e9e3efbe7569797c0b63b4b72652f7710ab04cbb288",
+      "bytes": 3803,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "33fd0b2b8856cb0b30165e9e3efbe7569797c0b63b4b72652f7710ab04cbb288",
+      "studio_path_at_baseline": "ServerScriptService.PlotLocator"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Externals/ProfileService.lua",
+      "sha256": "a7d3caeb6f4b46b09d1f54efdd976422839ed9a0b5494d8a06c3339a7451b983",
+      "bytes": 1440,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "a7d3caeb6f4b46b09d1f54efdd976422839ed9a0b5494d8a06c3339a7451b983",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Externals.ProfileService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Externals/ProfileStore.lua",
+      "sha256": "36a0bafea10a03d6de24835989fe560169f9aca3f641be741a77914dd51c8cef",
+      "bytes": 64515,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "36a0bafea10a03d6de24835989fe560169f9aca3f641be741a77914dd51c8cef",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Externals.ProfileStore"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/AdminCommandService.lua",
+      "sha256": "697fb9620f1785ff9621c6bc62b411d95e799fc9299de86d49a1bddf3622eb7d",
+      "bytes": 13598,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "697fb9620f1785ff9621c6bc62b411d95e799fc9299de86d49a1bddf3622eb7d",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.AdminCommandService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/BiomeService.lua",
+      "sha256": "00746e04f1713ee4f7b73b49edb7c1c865f81f2951034896d496b9c12059b01f",
+      "bytes": 3201,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "00746e04f1713ee4f7b73b49edb7c1c865f81f2951034896d496b9c12059b01f",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.BiomeService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/ChallengeService.lua",
+      "sha256": "92787ba6532b068090ae7c5c0845b1033893b01663335ddc83d52451d4d2d62a",
+      "bytes": 4893,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "92787ba6532b068090ae7c5c0845b1033893b01663335ddc83d52451d4d2d62a",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.ChallengeService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/CurrencyService.lua",
+      "sha256": "75b60fd047873a4b1acd9e213bd0f484ec8edc520609585b0eb3b83697c866bd",
+      "bytes": 481,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "75b60fd047873a4b1acd9e213bd0f484ec8edc520609585b0eb3b83697c866bd",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.CurrencyService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/EconomyService.lua",
+      "sha256": "15d3ab8bc1beed30ce0792ba1548f2d0137e07180b15922b03a44ee8b483232a",
+      "bytes": 2137,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "15d3ab8bc1beed30ce0792ba1548f2d0137e07180b15922b03a44ee8b483232a",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.EconomyService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/EggService.lua",
+      "sha256": "ac6ede2798a354458fb700dbd79585639a8f02822e438049800581a7ea7f66ec",
+      "bytes": 6128,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "ac6ede2798a354458fb700dbd79585639a8f02822e438049800581a7ea7f66ec",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.EggService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/EventModifierService.lua",
+      "sha256": "6c79c7f621f87674b593f7a60d2edd38038815a3ad85f00fdc7b18b6622c72bf",
+      "bytes": 7271,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "6c79c7f621f87674b593f7a60d2edd38038815a3ad85f00fdc7b18b6622c72bf",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.EventModifierService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+      "sha256": "7611618af5c6f7c084f89a97aeabe0d4d162bf846b5199534032d5f5c0c7286c",
+      "bytes": 5361,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7611618af5c6f7c084f89a97aeabe0d4d162bf846b5199534032d5f5c0c7286c",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.GameplayService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+      "sha256": "a00ddc0e9ca0ec51b9f6f1800b9367031ee3e92b379a407a2852a61e617f49ea",
+      "bytes": 15820,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "18c58644ccbcbe1249f09cfc1bffb20e1f094a811519f9220f1e617012758369",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.GardenExpeditionService",
+      "backup": "documentations/production-polish-20260922/before/src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+      "backup_sha256": "18c58644ccbcbe1249f09cfc1bffb20e1f094a811519f9220f1e617012758369",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/HarvestService.lua",
+      "sha256": "05aff322f3ed6c5e12bde4f349f2e80942df3091b4547bea3c50577bfadef458",
+      "bytes": 409,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "05aff322f3ed6c5e12bde4f349f2e80942df3091b4547bea3c50577bfadef458",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.HarvestService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/IndexService.lua",
+      "sha256": "7bff8e655e2c9d0429b29e25171d3671f7cb4cee96d437d7524b2523eb442681",
+      "bytes": 1336,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7bff8e655e2c9d0429b29e25171d3671f7cb4cee96d437d7524b2523eb442681",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.IndexService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/LootService.lua",
+      "sha256": "ee48ad0649b790f9729a90676eaff319489e48f7d345611aa3d1e8c44cba181b",
+      "bytes": 1482,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "ee48ad0649b790f9729a90676eaff319489e48f7d345611aa3d1e8c44cba181b",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.LootService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/ModifierService.lua",
+      "sha256": "f83c910b32f7d790448e64673a5c92dce920886796820ea8b3aa8fa216a8d6c8",
+      "bytes": 2082,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f83c910b32f7d790448e64673a5c92dce920886796820ea8b3aa8fa216a8d6c8",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.ModifierService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/NotificationService.lua",
+      "sha256": "dd8a49483c50dd4103726d28488e85a9303ddd2a99f06ecef0a8ff890c0fa02e",
+      "bytes": 1371,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "dd8a49483c50dd4103726d28488e85a9303ddd2a99f06ecef0a8ff890c0fa02e",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.NotificationService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/NumNomService.lua",
+      "sha256": "f342171a8061c2fe041d521a232838e63e2e4d56a2f05de9a07c742b62b70983",
+      "bytes": 4748,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f342171a8061c2fe041d521a232838e63e2e4d56a2f05de9a07c742b62b70983",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.NumNomService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+      "sha256": "814d376c20f676d49de1d3b9c9f552e7843414d3df1e8e80f4a5b6dcd91706eb",
+      "bytes": 6772,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "814d376c20f676d49de1d3b9c9f552e7843414d3df1e8e80f4a5b6dcd91706eb",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.PetService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/PlacementService.lua",
+      "sha256": "000ea9fc83af898222d93a5752d92aa44789b31e46529c00b929ca62646e134d",
+      "bytes": 5386,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "000ea9fc83af898222d93a5752d92aa44789b31e46529c00b929ca62646e134d",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.PlacementService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/PlayerDataService.lua",
+      "sha256": "801d23d626f62609bb187224575fb18f98de2c65ad3785fa2f72166b87f2721e",
+      "bytes": 1335,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "801d23d626f62609bb187224575fb18f98de2c65ad3785fa2f72166b87f2721e",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.PlayerDataService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/PlotService.lua",
+      "sha256": "2e96678cb394fe601e74a5cb37da0b4e08ba40592865650352ab74324f52ad98",
+      "bytes": 2534,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "2e96678cb394fe601e74a5cb37da0b4e08ba40592865650352ab74324f52ad98",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.PlotService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/ProfileService.lua",
+      "sha256": "02d4353a752ba8f3f8e122998d279674cee7c8c60132fde5c65effdfaa71ce8d",
+      "bytes": 13303,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "02d4353a752ba8f3f8e122998d279674cee7c8c60132fde5c65effdfaa71ce8d",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.ProfileService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/ProgressionService.lua",
+      "sha256": "de3a715defead2179b2fd26622ed008b0759ae405e87ef8b81d3e450bd70794d",
+      "bytes": 424,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "de3a715defead2179b2fd26622ed008b0759ae405e87ef8b81d3e450bd70794d",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.ProgressionService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/ResourceService.lua",
+      "sha256": "5bc458dc40fb67fcc7b2c458b15c23d456a75fd67100ca6d914790f8fa235e81",
+      "bytes": 10043,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "5bc458dc40fb67fcc7b2c458b15c23d456a75fd67100ca6d914790f8fa235e81",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.ResourceService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/SanctuaryService.lua",
+      "sha256": "c5a6b6b110a6f8a0f3c903e111860b512eccfbc649d4ce7370eed7d2f0681ef8",
+      "bytes": 5164,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c5a6b6b110a6f8a0f3c903e111860b512eccfbc649d4ce7370eed7d2f0681ef8",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.SanctuaryService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/SeasonalService.lua",
+      "sha256": "792c83572e4bf1956b1961f863959220387e321ffc00909b2d8d92bcb19020d7",
+      "bytes": 2168,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "792c83572e4bf1956b1961f863959220387e321ffc00909b2d8d92bcb19020d7",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.SeasonalService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/ShopService.lua",
+      "sha256": "fd7a5b68bb3fd95e645cc2b1855dc68f05b530cd67ee9848ee5a8ade598ca314",
+      "bytes": 1008,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "fd7a5b68bb3fd95e645cc2b1855dc68f05b530cd67ee9848ee5a8ade598ca314",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.ShopService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Accessor.lua",
+      "sha256": "8c9e3cbbf952cee184e3a68d9e76ae985de14755745faa696dd1de7017de85b1",
+      "bytes": 3271,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "8c9e3cbbf952cee184e3a68d9e76ae985de14755745faa696dd1de7017de85b1",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.TemplateService.Components.Accessor"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Mutator.lua",
+      "sha256": "f20c65b95b4b6cecbf7a399bfb1a20ecd8e2ff0c1a17976a79c49765b0388fb9",
+      "bytes": 3264,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f20c65b95b4b6cecbf7a399bfb1a20ecd8e2ff0c1a17976a79c49765b0388fb9",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.TemplateService.Components.Mutator"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/TemplateService/Components/Others/Template.lua",
+      "sha256": "8f589352f62311c3d686192f819ed7c6cd9aac06e31f45ec4fbe640f453c2b79",
+      "bytes": 3299,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "8f589352f62311c3d686192f819ed7c6cd9aac06e31f45ec4fbe640f453c2b79",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.TemplateService.Components.Others.Template"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/TemplateService/init.lua",
+      "sha256": "e45caa20060db606368e9aedea8e758820d4d13cff5866aa107506e0b732ff23",
+      "bytes": 482,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "e45caa20060db606368e9aedea8e758820d4d13cff5866aa107506e0b732ff23",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.TemplateService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/TutorialService.lua",
+      "sha256": "dc0f8aaf4da80831319f7cb42ab0f0c02c35dd8881dad76302898453b18acf23",
+      "bytes": 2019,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "dc0f8aaf4da80831319f7cb42ab0f0c02c35dd8881dad76302898453b18acf23",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.TutorialService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/UpgradeService.lua",
+      "sha256": "54403c0239e3008107842917cce9ae91b7a158d7c10b34766e8fbc9336f1311f",
+      "bytes": 1417,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "54403c0239e3008107842917cce9ae91b7a158d7c10b34766e8fbc9336f1311f",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.UpgradeService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/WeatherAdminService.lua",
+      "sha256": "bfa0ba0900bf409926c9ea5a8897f44f1225f08875a03f980c893ebfe3695cd7",
+      "bytes": 40384,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "bfa0ba0900bf409926c9ea5a8897f44f1225f08875a03f980c893ebfe3695cd7",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.WeatherAdminService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua",
+      "sha256": "0c502f55bbb6b93f4d88c39bf602bc0e6aa2dfbd0e2d76b4197f1b077d6c9a65",
+      "bytes": 8335,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "0c502f55bbb6b93f4d88c39bf602bc0e6aa2dfbd0e2d76b4197f1b077d6c9a65",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.WeatherEventService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/WeatherGameplayService.lua",
+      "sha256": "da9133b7519f4d0987b1da1f96a53a9818b2707ad8834f695aff6ced5974f24c",
+      "bytes": 1602,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "da9133b7519f4d0987b1da1f96a53a9818b2707ad8834f695aff6ced5974f24c",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.WeatherGameplayService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/WorldContentService.lua",
+      "sha256": "57e328a3be70c564b090c1ac6021c9415ea80ff3c484eaca439bce97b322d065",
+      "bytes": 2658,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "57e328a3be70c564b090c1ac6021c9415ea80ff3c484eaca439bce97b322d065",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.WorldContentService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Server/WorldService.lua",
+      "sha256": "adedc8dacb525eaa61591eede0cd091acfe02cd6dcba72f60c2f25bbfd72a077",
+      "bytes": 353,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "adedc8dacb525eaa61591eede0cd091acfe02cd6dcba72f60c2f25bbfd72a077",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Server.WorldService"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/AuthoredTreeDiscovery.lua",
+      "sha256": "eb66964c7c9b724b03372b296141d8422e917b56701b88a26efb936e3501ebf4",
+      "bytes": 3781,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "eb66964c7c9b724b03372b296141d8422e917b56701b88a26efb936e3501ebf4",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Utilities.AuthoredTreeDiscovery"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/GameplayGuard.lua",
+      "sha256": "8f81eff178045d9b14d5066c584dc55f486b69c8e1a64b979af20cf64446c754",
+      "bytes": 1853,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "8f81eff178045d9b14d5066c584dc55f486b69c8e1a64b979af20cf64446c754",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Utilities.GameplayGuard"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+      "sha256": "021a850379b3624e93dfaa569dadc032ef66edfa94e3fcb0c94bc5eb17686649",
+      "bytes": 2220,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "021a850379b3624e93dfaa569dadc032ef66edfa94e3fcb0c94bc5eb17686649",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Utilities.GameplayRequestPolicy"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/GardenPlotRuntime.lua",
+      "sha256": "374040db645875c687e47e04b0c588791cf07e0decdcbe2230269943f7d4b26b",
+      "bytes": 11887,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "12707264d7e4cb8d2642bd43367e079241854024270a0c57a4b74dd28417926b",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Utilities.GardenPlotRuntime",
+      "backup": "documentations/production-polish-20260922/before/src/ServerScriptService/ServerSource/Utilities/GardenPlotRuntime.lua",
+      "backup_sha256": "12707264d7e4cb8d2642bd43367e079241854024270a0c57a4b74dd28417926b",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/MeadowPoolReadiness.lua",
+      "sha256": "31829905126ef63b1af6ac628a98697d2b04781b1b27a8971a53d71c75e47036",
+      "bytes": 2351,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "31829905126ef63b1af6ac628a98697d2b04781b1b27a8971a53d71c75e47036",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Utilities.MeadowPoolReadiness"
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua",
+      "sha256": "9e67985df02cbbc297418767b72fc97a38816e5e262e5d0e91b66ac1f5e50133",
+      "bytes": 6921,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "9b1bd7318e0c848fd44668c4133d70afa2cffb927a8f133b0d585a1956383656",
+      "studio_path_at_baseline": "ServerScriptService.ServerSource.Utilities.MeadowSanctuaryDisplay",
+      "backup": "documentations/production-polish-20260922/before/src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua",
+      "backup_sha256": "9b1bd7318e0c848fd44668c4133d70afa2cffb927a8f133b0d585a1956383656",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/ServerScriptService/ServerSource/Utilities/TownCollisionPolicy.lua",
+      "sha256": "bd8054ef61c3f1b61713f1bf983d9e80a0433d6c3d158f0ca41a0fea2731945d",
+      "bytes": 2689,
+      "status": "added",
+      "compile_exit_code": 0
+    },
+    {
+      "local": "src/ServerScriptService/SuperbulletServer.server.lua",
+      "sha256": "bc1f60f865f5a4695334017e60f586a2a74a319f3339f97d86401a90f3b558d0",
+      "bytes": 832,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "bc1f60f865f5a4695334017e60f586a2a74a319f3339f97d86401a90f3b558d0",
+      "studio_path_at_baseline": "ServerScriptService.SuperbulletServer"
+    },
+    {
+      "local": "src/ServerScriptService/SuperbulletServerLogger/ClientQueryRouter.lua",
+      "sha256": "779d46b1fc23943abb209264079f112008625e76621a0cba494b573e81e3647c",
+      "bytes": 2940,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "779d46b1fc23943abb209264079f112008625e76621a0cba494b573e81e3647c",
+      "studio_path_at_baseline": "ServerScriptService.SuperbulletServerLogger.ClientQueryRouter"
+    },
+    {
+      "local": "src/ServerScriptService/SuperbulletServerLogger/CodeExecutor.lua",
+      "sha256": "9820bc453fc1defa19f86ffff9f29698c586ed1e4b768d0ff92d629fc02f96cd",
+      "bytes": 3884,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "9820bc453fc1defa19f86ffff9f29698c586ed1e4b768d0ff92d629fc02f96cd",
+      "studio_path_at_baseline": "ServerScriptService.SuperbulletServerLogger.CodeExecutor"
+    },
+    {
+      "local": "src/ServerScriptService/SuperbulletServerLogger/WebSocketClient.lua",
+      "sha256": "ff8eea70bf839f1fd5fb1ac39737ae25ddcf1fbeb22ad811c0bc5d38ad2e8075",
+      "bytes": 4077,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "ff8eea70bf839f1fd5fb1ac39737ae25ddcf1fbeb22ad811c0bc5d38ad2e8075",
+      "studio_path_at_baseline": "ServerScriptService.SuperbulletServerLogger.WebSocketClient"
+    },
+    {
+      "local": "src/ServerScriptService/SuperbulletServerLogger/init.server.lua",
+      "sha256": "cb40fa82b0a6747fa711534124f09158e9b4617d327584b1a0ace65b0791eba1",
+      "bytes": 14737,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "fdc854e85cf38b6a679f96bd2ff9dfaddec868b6da89117b4cf5a4cc7b081026",
+      "studio_path_at_baseline": "ServerScriptService.SuperbulletServerLogger",
+      "backup": "documentations/production-polish-20260922/before/src/ServerScriptService/SuperbulletServerLogger/init.server.lua",
+      "backup_sha256": "fdc854e85cf38b6a679f96bd2ff9dfaddec868b6da89117b4cf5a4cc7b081026",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/BiomeImages.lua",
+      "sha256": "a792d4b694e39c026d0385ff41130d077c45851694182ab19c2433db936f88d8",
+      "bytes": 534,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "a792d4b694e39c026d0385ff41130d077c45851694182ab19c2433db936f88d8",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.BiomeImages"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/Components.lua",
+      "sha256": "e0da1b5f4b18ffae0a1709721000662ce907da4119f0c7d74bd96b7ceb5c575e",
+      "bytes": 5588,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "e0da1b5f4b18ffae0a1709721000662ce907da4119f0c7d74bd96b7ceb5c575e",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.Components"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/ExampleData.lua",
+      "sha256": "476da1e9a2152e5b92796d8d91d86220ad7df64457b4236e9f576e367252492b",
+      "bytes": 2372,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "476da1e9a2152e5b92796d8d91d86220ad7df64457b4236e9f576e367252492b",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.ExampleData"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/GameplayWidgets.lua",
+      "sha256": "f93e7dec2bde9b239f2410ef8edc8b86d63b71fa09f26cc04bcad5e4ff67e259",
+      "bytes": 4155,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f93e7dec2bde9b239f2410ef8edc8b86d63b71fa09f26cc04bcad5e4ff67e259",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.GameplayWidgets"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/GardenMenus.lua",
+      "sha256": "7e16a971bb14ae9e244ffd6b0f81e451849f550743e27a65f9858d96362a2402",
+      "bytes": 15429,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7e16a971bb14ae9e244ffd6b0f81e451849f550743e27a65f9858d96362a2402",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.GardenMenus"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/HatchPresentation.lua",
+      "sha256": "3195824a4822b6c82867eec19d9ff4cbd342857fe2bc893234e5205f2ec4cc63",
+      "bytes": 3934,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "3195824a4822b6c82867eec19d9ff4cbd342857fe2bc893234e5205f2ec4cc63",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.HatchPresentation"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+      "sha256": "da153dfb9c7ba33015999a970a902cdf21095bace2d1674c8422af2eeb72f981",
+      "bytes": 16754,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "da153dfb9c7ba33015999a970a902cdf21095bace2d1674c8422af2eeb72f981",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.Main"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/PetMenus.lua",
+      "sha256": "7c433a8f038fd3c60f159b43a752a53266d8ca4749bd71525bc7559815a60972",
+      "bytes": 7908,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7c433a8f038fd3c60f159b43a752a53266d8ca4749bd71525bc7559815a60972",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.PetMenus"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/PlotMenu.lua",
+      "sha256": "c3fb14e40abe0411e48449a94cd8a4c56340a53b7dddcf55ab3511a949c64361",
+      "bytes": 2551,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c3fb14e40abe0411e48449a94cd8a4c56340a53b7dddcf55ab3511a949c64361",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.PlotMenu"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/ProgressionMenus.lua",
+      "sha256": "6bb035d253513349f2e37fd5512d29b2257a9764ac5152c1d6389243e1030378",
+      "bytes": 4849,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "6bb035d253513349f2e37fd5512d29b2257a9764ac5152c1d6389243e1030378",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.ProgressionMenus"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/RemoteBridge.lua",
+      "sha256": "6b22e5d2f8177884aff7344c555d3679c28061e296c4dd1698e5acd50ac6bb83",
+      "bytes": 405,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "6b22e5d2f8177884aff7344c555d3679c28061e296c4dd1698e5acd50ac6bb83",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.RemoteBridge"
+    },
+    {
+      "local": "src/StarterGui/AnimalKingdomUI/Theme.lua",
+      "sha256": "c5d0e545c86d67ce5b4bb9476c403e54fbe32074f91082bc35c0b3c60b6e9adb",
+      "bytes": 925,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c5d0e545c86d67ce5b4bb9476c403e54fbe32074f91082bc35c0b3c60b6e9adb",
+      "studio_path_at_baseline": "StarterGui.AnimalKingdomUI.Theme"
+    },
+    {
+      "local": "src/StarterGui/WeatherEventUI/WeatherEventController.client.lua",
+      "sha256": "04303c22683024be6ac67f3a0210f1cb3aa4f7645d12a882abb7247b435dd57c",
+      "bytes": 15545,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "04303c22683024be6ac67f3a0210f1cb3aa4f7645d12a882abb7247b435dd57c",
+      "studio_path_at_baseline": "StarterGui.WeatherEventUI.WeatherEventController"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/AdminCameraController.client.lua",
+      "sha256": "50d38b201c789cbc61f5384819a7014dd516defcc01ecb17ef11db9312b61c56",
+      "bytes": 5189,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "50d38b201c789cbc61f5384819a7014dd516defcc01ecb17ef11db9312b61c56",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.AdminCameraController"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/AdminCommandController.client.lua",
+      "sha256": "f04351235cd6d174c2aa264fd3937256ab1f0fee7ae246502dba26cf3e61af92",
+      "bytes": 5920,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "f04351235cd6d174c2aa264fd3937256ab1f0fee7ae246502dba26cf3e61af92",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.AdminCommandController"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/AdminCommandUI.lua",
+      "sha256": "735d30f8e549f7235551b3027a9ffbf945b7550e2517ea4acf7e7d6f7893e399",
+      "bytes": 13190,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "735d30f8e549f7235551b3027a9ffbf945b7550e2517ea4acf7e7d6f7893e399",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.AdminCommandUI"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/AdminSpectate.lua",
+      "sha256": "d6549592932eee913c83b07584cd8732bae4186005a5973ee20496a48c230c12",
+      "bytes": 2671,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "d6549592932eee913c83b07584cd8732bae4186005a5973ee20496a48c230c12",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.AdminSpectate"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/AnimalKingdomAnnouncements.client.lua",
+      "sha256": "8b5ae1b7cc0da32738d167cd86f06645022890b896ff661cf663e9ba5e01f0a8",
+      "bytes": 3251,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "8b5ae1b7cc0da32738d167cd86f06645022890b896ff661cf663e9ba5e01f0a8",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.AnimalKingdomAnnouncements"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua",
+      "sha256": "95751fa4a1aea2c6dbdb4751a3fcd25cb7d00ad48c1d52a538377c98d015792c",
+      "bytes": 15524,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "daf054ec21dee09e56b97846ac96eed01920b78a4b65a39248e2f8e2103da792",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.GardenPlotVisuals",
+      "backup": "documentations/production-polish-20260922/before/src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua",
+      "backup_sha256": "daf054ec21dee09e56b97846ac96eed01920b78a4b65a39248e2f8e2103da792",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/MeadowPetPreloader.client.lua",
+      "sha256": "7aa1dba4933c94e8a167db9c833e6a54c9f1d146b151cfd54c366131ce1b8ff9",
+      "bytes": 949,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7aa1dba4933c94e8a167db9c833e6a54c9f1d146b151cfd54c366131ce1b8ff9",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.MeadowPetPreloader"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/PetFollowing.client.lua",
+      "sha256": "7a3ab5193750971bada2839667ca1a2e391025187213b2b7934e26bb22f83da7",
+      "bytes": 10193,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "ea64bd372749185349d6f95f5932fbaebfc500ffbda2554d8c5079e939292278",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.PetFollowing",
+      "backup": "documentations/production-polish-20260922/before/src/StarterPlayer/StarterPlayerScripts/PetFollowing.client.lua",
+      "backup_sha256": "ea64bd372749185349d6f95f5932fbaebfc500ffbda2554d8c5079e939292278",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/PlotAssignedNotification.client.lua",
+      "sha256": "c856df5acc00b7bdacad682b26c9e0cee75e28e8e32d3ca2537192a3bcf55b6f",
+      "bytes": 3364,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "c856df5acc00b7bdacad682b26c9e0cee75e28e8e32d3ca2537192a3bcf55b6f",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.PlotAssignedNotification"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClient.client.lua",
+      "sha256": "5377c732faa7e3c5bd9a5cad3ea01332facd26c0e21788b00abc0ed4a205bbf6",
+      "bytes": 754,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "5377c732faa7e3c5bd9a5cad3ea01332facd26c0e21788b00abc0ed4a205bbf6",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.SuperbulletClient"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/ClientCodeExecutor.lua",
+      "sha256": "aadf5fedf738c402bb0882d37db0d382f1fdac932f094357a044e7b0b5ba948f",
+      "bytes": 2079,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "aadf5fedf738c402bb0882d37db0d382f1fdac932f094357a044e7b0b5ba948f",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.SuperbulletClientLogger.ClientCodeExecutor"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/init.client.lua",
+      "sha256": "3dfc382e131467c732c56d9f0153eef0dcd8fedcce59a6e56dcb562fce441c82",
+      "bytes": 10195,
+      "status": "changed",
+      "compile_exit_code": 0,
+      "baseline_sha256": "21a5c2bda17895b6109ca483c062d595c2d73f056f8fd542f43777214474ffba",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.SuperbulletClientLogger",
+      "backup": "documentations/production-polish-20260922/before/src/StarterPlayer/StarterPlayerScripts/SuperbulletClientLogger/init.client.lua",
+      "backup_sha256": "21a5c2bda17895b6109ca483c062d595c2d73f056f8fd542f43777214474ffba",
+      "backup_matches_initial": true
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/TreePresentation.client.lua",
+      "sha256": "7be38b8ab88c21ead4e4d59af09c5d2ae9b3faf5408623f595e80f9ed1d6d21a",
+      "bytes": 1710,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "7be38b8ab88c21ead4e4d59af09c5d2ae9b3faf5408623f595e80f9ed1d6d21a",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.TreePresentation"
+    },
+    {
+      "local": "src/StarterPlayer/StarterPlayerScripts/WeatherVisualController.client.lua",
+      "sha256": "4a259375445937d3b7a9f2feb0b650f11c94528ea6c03adab218eb24ef196d96",
+      "bytes": 24339,
+      "status": "unchanged",
+      "compile_exit_code": 0,
+      "baseline_sha256": "4a259375445937d3b7a9f2feb0b650f11c94528ea6c03adab218eb24ef196d96",
+      "studio_path_at_baseline": "StarterPlayer.StarterPlayerScripts.WeatherVisualController"
+    }
+  ]
+}

@@ -1,0 +1,1469 @@
+--- before/src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua
++++ src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua
+@@ -70,8 +70,8 @@
+ Garden.UpgradePrices={150,300,600,1000,1600}
+ Garden.UpgradeOrder={"KeenNose","QuickForager","BountifulBeds","RareCropAlmanac","HarvestSatchel"}
+ Garden.Upgrades={
+- KeenNose={DisplayName="Keen Nose",Description="+4 studs of forage range per level",Unit="studs",Base=24,Step=4},
+- QuickForager={DisplayName="Quick Forager",Description="+5% forage speed per level",Unit="%",Base=0,Step=5},
++ KeenNose={DisplayName="Keen Nose",Description="+4 studs of visual forage range. Current beds are already in range; no extra rewards.",Unit="studs",Base=24,Step=4},
++ QuickForager={DisplayName="Quick Forager",Description="+5% crop cycle speed per level; Harvest/minute is unchanged.",Unit="%",Base=0,Step=5},
+  BountifulBeds={DisplayName="Bountiful Beds",Description="+5% crop quantity per level",Unit="%",Base=0,Step=5},
+  RareCropAlmanac={DisplayName="Rare Crop Almanac",Description="+4% rare crop weighting per level",Unit="%",Base=0,Step=4},
+  HarvestSatchel={DisplayName="Harvest Satchel",Description="+5% Harvest per level",Unit="%",Base=0,Step=5},
+--- before/src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua
++++ src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua
+@@ -75,13 +75,11 @@
+  -- stay useful without making ordinary tree searches a guaranteed resale profit.
+  def.BaseSellValue=def.BaseSellValue or math.max(1,math.floor(def.BaseIncome*4))
+ end
+--- Retired species remain readable when discovered, but cannot make completion impossible.
++-- Historical discoveries remain saved/visible; only currently obtainable species count toward milestones.
+ function result.IndexProgress(discoveries)
++ local eligible=require(script.Parent.Parent.IndexCatalog).Current()
+  local found,total=0,0
+- for _,def in ipairs(result.Ordered)do
+-  local discovered=discoveries and discoveries[def.PetId]~=nil
+-  if not def.LegacyOnly or discovered then total+=1;if discovered then found+=1 end end
+- end
++ for id in pairs(eligible)do total+=1;if discoveries and discoveries[id]~=nil then found+=1 end end
+  return found,total,total>0 and found/total*100 or 0
+ end
+ return result
+--- before/src/ReplicatedStorage/Shared/Gameplay/IndexCatalog.lua
++++ src/ReplicatedStorage/Shared/Gameplay/IndexCatalog.lua
+@@ -0,0 +1,27 @@
++-- One collection rule shared by Index presentation and the authoritative claim service.
++-- A species is eligible only through a complete, non-retired reward pool with real models.
++local Eggs=require(script.Parent.Definitions.EggDefinitions)
++local Pets=require(script.Parent.Definitions.PetDefinitions)
++local Models=require(script.Parent.PetModelResolver)
++local M={}
++function M.Current()
++ local eligible,sources={},{}
++ for _,pool in pairs(Eggs)do
++  if not pool.Retired and #pool.Pets>0 then
++   local available=true
++   for _,entry in ipairs(pool.Pets)do
++    local def=Pets[entry.PetId]
++    if not def or def.RetiredFromRewards or def.LegacyOnly or not Models.Resolve(entry.PetId) then available=false;break end
++   end
++   if available then
++    for _,entry in ipairs(pool.Pets)do if (entry.DropWeight or 0)>0 then
++     eligible[entry.PetId]=true;sources[entry.PetId]=sources[entry.PetId] or {}
++     table.insert(sources[entry.PetId],pool.Tier and (pool.Biome..' tree • Tier '..pool.Tier) or (pool.Biome..' tree'))
++    end end
++   end
++  end
++ end
++ for _,list in pairs(sources)do table.sort(list)end
++ return eligible,sources
++end
++return M
+--- before/src/ReplicatedStorage/Shared/Gameplay/PetLocations.lua
++++ src/ReplicatedStorage/Shared/Gameplay/PetLocations.lua
+@@ -36,6 +36,28 @@
+  if not active or active.Location~='Held' then data.ActiveHeldPetUID='' end
+  data.MaxEquippedPets=M.HeldSlots;data.OwnedPets=data.Pets
+ end
++-- Run only after the actual assigned display anchors are resolved. Never infer zero capacity while loading.
++function M.ReconcileSanctuary(data,validSlots)
++ if next(validSlots)==nil then return false end
++ local occupied,repairs={},{}
++ for _,pet in ipairs(data.Pets or {})do
++  if pet.Location=='Sanctuary' and validSlots[pet.LocationSlot] and not occupied[pet.LocationSlot] then occupied[pet.LocationSlot]=pet.UID end
++ end
++ for _,pet in ipairs(data.Pets or {})do
++  if pet.Location=='Sanctuary' and (not validSlots[pet.LocationSlot] or occupied[pet.LocationSlot]~=pet.UID) then
++   local old=pet.LocationSlot;local free
++   for i=1,M.MaxSanctuarySlots do if validSlots[i] and not occupied[i] then free=i;break end end
++   M.Set(pet,free and 'Sanctuary' or 'Inventory',free)
++   if free then occupied[free]=pet.UID end
++   table.insert(repairs,{UID=pet.UID,PreviousSlot=old,Location=pet.Location,Slot=free,Reason='PhysicalSlotUnavailable'})
++  end
++ end
++ if #repairs==0 then return false end
++ data.RecoveryData=data.RecoveryData or {};data.RecoveryData.SanctuarySlotRepairs=data.RecoveryData.SanctuarySlotRepairs or {}
++ for _,repair in ipairs(repairs)do table.insert(data.RecoveryData.SanctuarySlotRepairs,repair)end
++ data.PetStorageCapacity=math.max(data.PetStorageCapacity,M.Count(data,'Inventory')+M.Count(data,'Garden'))
++ M.Rebuild(data);return true
++end
+ function M.Migrate(data)
+  if (data.PetDataVersion or 0)>M.Version then error('Pet profile version is newer than this server')end
+  if (data.PetDataVersion or 0)>=M.Version then M.Rebuild(data);return end
+--- before/src/ReplicatedStorage/Shared/Gameplay/SellValueCalculator.lua
++++ src/ReplicatedStorage/Shared/Gameplay/SellValueCalculator.lua
+@@ -1,6 +1,7 @@
+ local Definitions=require(script.Parent.Definitions.PetDefinitions)
+ local Variants=require(script.Parent.Definitions.VariantDefinitions)
+ local Weight=require(script.Parent.PetWeight)
++local PetMath=require(script.Parent.PetMath)
+ local M={RarityMultiplier={Common=1,Uncommon=1.1,Rare=1.25,Epic=1.45,Legendary=1.75,Mythical=2,Secret=2.2}}
+ function M.Calculate(pet)
+  local def=Definitions[pet.PetId];if not def then return 0 end
+@@ -11,6 +12,6 @@
+  return math.clamp(math.floor(value+.5),1,1e12)
+ end
+ function M.Eligible(pet)
+- return Definitions[pet.PetId]~=nil and pet.Location=='Inventory' and not pet.Favorite and not pet.Locked
++ return Definitions[pet.PetId]~=nil and pet.Location=='Inventory' and not PetMath.Protected(pet)
+ end
+ return M
+--- before/src/ServerScriptService/BiomeTeleport/RequestHandler.lua
++++ src/ServerScriptService/BiomeTeleport/RequestHandler.lua
+@@ -1,7 +1,7 @@
+ local Handler={}
+ 
+ -- Dependencies let Studio tests exercise the real request policy without editing saved profiles.
+-function Handler.new(profiles, markers, landing, destinations, send, clock)
++function Handler.new(profiles, markers, landing, destinations, send, clock, onLanded)
+ 	local lastRequest={}
+ 	clock=clock or os.clock
+ 	local function handle(player,name,...)
+@@ -15,7 +15,9 @@
+ 		local marker=markers:FindFirstChild(name)
+ 		local floor=landing.FindFloor(destinations[name])
+ 		if not marker or not marker:IsA("BasePart") or not floor then send(player,name,false); return end
+-		send(player,name,landing.Move(player.Character,marker,floor))
++		local success=landing.Move(player.Character,marker,floor)
++		if success and onLanded then onLanded(player,destinations[name]) end
++		send(player,name,success)
+ 	end
+ 	return handle,function(player) lastRequest[player]=nil end
+ end
+--- before/src/ServerScriptService/BiomeTeleport/init.server.lua
++++ src/ServerScriptService/BiomeTeleport/init.server.lua
+@@ -12,6 +12,10 @@
+ local markers=Landing.EnsureMarkers(destinations)
+ local handle,forget=require(script.RequestHandler).new(profiles,markers,Landing,destinations,function(player,name,success)
+ 	remote:FireClient(player,name,success)
++end,nil,function(player,biome)
++ local Knit=require(ReplicatedStorage.Packages.Knit)
++ Knit.GetService('GardenExpeditionService'):LeaveGarden(player)
++ player:SetAttribute('CurrentBiome',biome)
+ end)
+ remote.OnServerEvent:Connect(handle)
+ Players.PlayerRemoving:Connect(forget)
+--- before/src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua
++++ src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua
+@@ -208,6 +208,11 @@
+  return true, { Kind = "GardenVisit" }
+ end
+ 
++-- Called only after a different authoritative travel path successfully lands outside Garden.
++function Service:LeaveGarden(player)
++ returnSpots[player]=nil;player:SetAttribute('InGarden',false)
++end
++
+ function Service:ReturnToKingdom(player: Player): (boolean, any)
+  if not Guard.IsPlayer(player) then return false, "Invalid request" end
+  local root = Guard.Alive(player)
+@@ -240,8 +245,7 @@
+  end
+  if not moved then return false,"There is no clear return landing spot. Stand up and try again." end
+  -- A failed attempt retains the original return location and Garden state.
+- returnSpots[player] = nil
+- player:SetAttribute("InGarden",false)
++ self:LeaveGarden(player)
+  print("[Garden] Return", player.Name)
+  return true, { Kind = "GardenReturn" }
+ end
+--- before/src/ServerScriptService/ServerSource/Server/PetService.lua
++++ src/ServerScriptService/ServerSource/Server/PetService.lua
+@@ -114,9 +114,10 @@
+   if not pet then return false,"Pet unavailable" end
+   if location~='Inventory' or pet.Location=='Sanctuary' then return false,"Walk to a Sanctuary slot while holding a pet to place or swap." end
+   if pet.Location=='Garden' then return false,"Recall or claim this pet from Garden first." end
+-  if pet.Location=='Inventory' then return true end
++  if pet.Location~='Held' then return false,"Only Held pets can be stored." end
+   if not Locations.InventorySpace(data) then return false,"PET STORAGE FULL" end
+-  Locations.Set(pet,'Inventory');self:Publish(player);return true
++  Locations.Set(pet,'Inventory');if data.ActiveHeldPetUID==uid then data.ActiveHeldPetUID='' end
++  self:Publish(player);return true
+  end)
+ end
+ function Pets:Equip(player,uid,equip)
+@@ -138,12 +139,21 @@
+ function Pets:SwapSanctuary(player,heldSlot,sanctuarySlot,expectedHeld,expectedSanctuary)
+  return self:Transaction(player,function()
+   local data=Data:Get(player)
+-  if not Guard.Finite(heldSlot) or heldSlot%1~=0 or heldSlot<1 or heldSlot>Locations.HeldSlots
++  if not Guard.Finite(heldSlot) or heldSlot%1~=0 or heldSlot<0 or heldSlot>Locations.HeldSlots
+    or not Guard.Finite(sanctuarySlot) or sanctuarySlot%1~=0 or sanctuarySlot<1 or sanctuarySlot>Locations.MaxSanctuarySlots then return false,"Invalid display slot" end
+   local slot=require(script.Parent.Parent.Utilities.MeadowSanctuaryDisplay).GetSlot(player,sanctuarySlot)
+   local root=Guard.Alive(player)
+   if not slot or not root or (root.Position-slot.Surface).Magnitude>10 then return false,"Walk closer to that slot in your own Sanctuary." end
+   local held=Locations.At(data,'Held',heldSlot);local displayed=Locations.At(data,'Sanctuary',sanctuarySlot)
++  if heldSlot==0 then
++   if data.ActiveHeldPetUID~='' or expectedHeld~='' or not displayed or displayed.UID~=expectedSanctuary then return false,"Those pets changed. Try again." end
++   local free=Locations.FirstFree(data,'Held',Locations.HeldSlots)
++   if not free then return false,"Held slots full" end
++   if not Definitions[displayed.PetId] or not require(RS.Shared.Gameplay.PetModelResolver).Resolve(displayed.PetId) then return false,"This companion's model is temporarily unavailable." end
++   Knit.GetService('SanctuaryService'):Accrue(player)
++   Locations.Set(displayed,'Held',free);data.ActiveHeldPetUID=displayed.UID
++   self:Publish(player);self.Equipped:Fire(player,displayed.UID);return true
++  end
+   if not held or held.UID~=data.ActiveHeldPetUID then return false,"Hold a pet first." end
+   -- Client UIDs only guard stale/replayed clicks. Ownership, active pet and distance are server-owned.
+   if held.UID~=expectedHeld or (displayed and displayed.UID or '')~=expectedSanctuary then return false,"Those pets changed. Try again." end
+@@ -157,22 +167,32 @@
+   self:Publish(player);return true
+  end)
+ end
++function Pets:ReconcileSanctuary(player,slots)
++ return self:Transaction(player,function()
++  local data=Data:Get(player)
++  local needsRepair=false
++  for _,pet in ipairs(data.Pets)do if pet.Location=='Sanctuary' and not slots[pet.LocationSlot] then needsRepair=true;break end end
++  if not needsRepair or next(slots)==nil then return true end
++  Knit.GetService('SanctuaryService'):Accrue(player)
++  if Locations.ReconcileSanctuary(data,slots) then
++   Data:Publish(player,'RecoveryData','PetStorageCapacity');self:Publish(player)
++  end
++  return true
++ end)
++end
+ function Pets:Sell(player,mode,expectedUID)
+  return self:Transaction(player,function()
+   local data=Data:Get(player)
+-  if mode~='Held' and mode~='Inventory' then return false,'Invalid sale' end
+-  local active=self:FindOwned(data,data.ActiveHeldPetUID)
+-  if mode=='Held' and (not active or active.Location~='Held' or active.UID~=expectedUID) then return false,'No matching held pet.' end
+-  if mode=='Inventory' and expectedUID~='' then return false,'Invalid sale' end
++  if mode~='Inventory' or expectedUID~='' then return false,'Only eligible Inventory pets can be sold.' end
+   local sold,total,count={},0,0
+   for _,pet in ipairs(data.Pets)do
+-   local eligible=mode=='Held' and pet==active or mode=='Inventory' and pet.Location=='Inventory' and pet.UID~=data.ActiveHeldPetUID
++   local eligible=SellValue.Eligible(pet) and pet.UID~=data.ActiveHeldPetUID
+    if eligible and Definitions[pet.PetId] then
+     local garden=false;for _,trip in ipairs(data.GardenExpeditions or {})do if trip.UID==pet.UID then garden=true;break end end
+     if not garden then sold[pet.UID]=true;total+=SellValue.Calculate(pet);count+=1 end
+    end
+   end
+-  if count==0 then return false,'No pets to sell.' end
++  if count==0 then return false,'No eligible Inventory pets to sell. Locked and protected pets are kept.' end
+   if data.Currencies.Coins+total>CurrencyDefs.Coins.MaxBalance then return false,'Your coin balance is full.' end
+   local remaining={};for _,pet in ipairs(data.Pets)do if not sold[pet.UID] then table.insert(remaining,pet) end end
+   -- Commit ownership and the existing coin balance together, without yielding.
+@@ -183,10 +203,12 @@
+  end)
+ end
+ function Pets:Flag(player,uid,flag,value)
+- local data=Data:Get(player);local pet=data and self:FindOwned(data,uid)
+- if not pet or (flag~="Favorite" and flag~="Locked") or type(value)~="boolean" then return false,"Invalid pet" end
+- pet[flag]=value
+- local _,index=self:FindOwned(data,uid);Data:PublishPath(player,{"Pets",index});return true
++ return self:Transaction(player,function()
++  local data=Data:Get(player);local pet,index=self:FindOwned(data,uid)
++  if not pet or (flag~="Favorite" and flag~="Locked") or type(value)~="boolean" then return false,"Invalid pet" end
++  pet[flag]=value
++  Data:PublishPath(player,{"Pets",index});self:RequestSave(player);return true
++ end)
+ end
+ function Pets:RequestDelete(player,uid)
+  local data=Data:Get(player);local pet=data and self:FindOwned(data,uid)
+--- before/src/ServerScriptService/ServerSource/Server/PlotService.lua
++++ src/ServerScriptService/ServerSource/Server/PlotService.lua
+@@ -5,6 +5,8 @@
+ local Guard=require(script.Parent.Parent.Utilities.GameplayGuard)
+ local Service=Knit.CreateService({Name="PlotService",Client={}})
+ local Data,Economy
++local collecting=setmetatable({},{__mode="k"})
++local touchedAt=setmetatable({},{__mode="k"})
+ function Service:GetPlot(player)
+  for _,plot in ipairs(Locator.getPlots()) do if plot:GetAttribute("OwnerUserId")==player.UserId and plot:GetAttribute("Claimed")==true then return plot end end
+ end
+@@ -46,13 +48,34 @@
+  data.PlotProgression.Level=level+1;Data:Publish(player,"PlotProgression");return true,"Plot upgraded!"
+ end
+ function Service:Collect(player)
+- if not self:IsNearOwnPlot(player) then return false,"Visit your plot to collect income" end
+- Knit.GetService("SanctuaryService"):Accrue(player)
+- local data=Data:Get(player);local amount=data and math.floor(data.UncollectedSanctuaryCoins) or 0
+- if amount<=0 then return false,"No income to collect yet" end
+- local ok,credited=Economy:Add(player,"Coins",amount,"Idle")
+- if not ok then return false,"Coin capacity reached" end
+- data.UncollectedSanctuaryCoins-=credited;Data:Publish(player,"UncollectedSanctuaryCoins");return true,"Plot income collected!"
++ if collecting[player] then return false,"Collection in progress" end
++ collecting[player]=true
++ local ok,accepted,result=xpcall(function()
++  if not self:IsNearOwnPlot(player) then return false,"Visit your plot to collect income" end
++  Knit.GetService("SanctuaryService"):Accrue(player)
++  local data=Data:Get(player);local amount=data and math.floor(data.UncollectedSanctuaryCoins) or 0
++  if amount<=0 then return false,"No income to collect yet" end
++  local creditedOK,credited=Economy:Add(player,"Coins",amount,"Idle")
++  if not creditedOK or credited<=0 then return false,"Coin capacity reached" end
++  data.UncollectedSanctuaryCoins-=credited;Data:Publish(player,"UncollectedSanctuaryCoins")
++  return true,{Kind="IncomeCollected",Amount=credited}
++ end,debug.traceback)
++ collecting[player]=nil
++ if not ok then warn(result or accepted);return false,"Collection unavailable" end
++ return accepted,result
++end
++function Service:TouchCollector(player,plot,pad)
++ if self:GetPlot(player)~=plot or not pad or pad.Parent~=plot or pad.Name~='IncomeCollector' then return false end
++ local root=Guard.Alive(player)
++ if not root then return false end
++ local point=pad.CFrame:PointToObjectSpace(root.Position)
++ if math.abs(point.X)>pad.Size.X/2+3 or math.abs(point.Z)>pad.Size.Z/2+3 or math.abs(point.Y)>8 then return false end
++ if touchedAt[player] and os.clock()-touchedAt[player]<1 then return false end
++ touchedAt[player]=os.clock()
++ return self:Collect(player)
++end
++function Service:KnitStart()
++ require(script.Parent.Parent.Utilities.PlotCollector).Start(self,Data)
+ end
+ function Service:KnitInit() Data=Knit.GetService("PlayerDataService");Economy=Knit.GetService("EconomyService") end
+ return Service
+--- before/src/ServerScriptService/ServerSource/Server/SanctuaryService.lua
++++ src/ServerScriptService/ServerSource/Server/SanctuaryService.lua
+@@ -53,19 +53,9 @@
+ end
+ 
+ function SanctuaryService.Client:Collect(player)
+-	if not Guard.RateLimit(player, "Collect", 0.5) then return 0 end
+-	local sanctuaries = workspace:FindFirstChild("Sanctuaries")
+-	local sanctuary = sanctuaries and sanctuaries:FindFirstChild(tostring(player.UserId))
+-	local collectionPad = sanctuary and sanctuary:FindFirstChild("CollectionPad")
+-	if not collectionPad or not Guard.IsNear(player, collectionPad, 16) then return 0 end
+-	SanctuaryService:Accrue(player)
+-	local data = DataService:Get(player)
+-	local amount = data and math.floor(data.UncollectedSanctuaryCoins) or 0
+-	if amount <= 0 then return 0 end
+-	local ok, credited = CurrencyService:Add(player, "ForestCoins", amount, "Idle")
+-	if not ok then return 0 end
+-	DataService:Set(player, "UncollectedSanctuaryCoins", data.UncollectedSanctuaryCoins - credited)
+-	return credited
++ if not Guard.RateLimit(player,"Collect",.5) then return 0 end
++ local ok,result=Knit.GetService("PlotService"):Collect(player)
++ return ok and result.Amount or 0
+ end
+ 
+ function SanctuaryService:KnitStart()
+--- before/src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua
++++ src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua
+@@ -8,7 +8,7 @@
+ Policy.Actions={
+  MovePet={.2,{UID=id,Location=function(v)return v=='Inventory' or v=='Held' or v=='Sanctuary'end,Slot=number}},
+  SwapSanctuary={.3,{HeldSlot=number,SanctuarySlot=number,HeldUID=function(v)return v=='' or id(v)end,SanctuaryUID=function(v)return v=='' or id(v)end}},
+- SellPets={.5,{Mode=function(v)return v=='Held' or v=='Inventory'end,UID=function(v)return v=='' or id(v)end}},
++ SellPets={.5,{Mode=function(v)return v=='Inventory'end,UID=function(v)return v=='' or id(v)end}},
+  PetAssetsLoaded={.15,{Id=id,Signature=function(v)return type(v)=="string" and #v<=1024 end,Loaded=boolean}},
+  DisplayMeadowPet={.2,{UID=id,Displayed=boolean}},
+  Equip={.15,{UID=id,Equipped=boolean}},Favorite={.15,{UID=id,Value=boolean}},Lock={.15,{UID=id,Value=boolean}},
+--- before/src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua
++++ src/ServerScriptService/ServerSource/Utilities/MeadowSanctuaryDisplay.lua
+@@ -99,7 +99,8 @@
+ 	for _, pet in ipairs(data.Pets) do owned[pet.UID] = pet end
+ 	local slots = layoutFor(display)
+  -- Plot assignment and profile loading can complete in either order.
+- local capacity=math.min(70,#slots)
++ local capacity=0;for _ in pairs(slots)do capacity+=1 end;capacity=math.min(70,capacity)
++ Knit.GetService('PetService'):ReconcileSanctuary(player,slots)
+  if data.SanctuaryCapacity~=capacity then
+   data.SanctuaryCapacity=capacity
+   Knit.GetService('PlayerDataService'):Publish(player,'SanctuaryCapacity')
+--- before/src/ServerScriptService/ServerSource/Utilities/PlotCollector.lua
++++ src/ServerScriptService/ServerSource/Utilities/PlotCollector.lua
+@@ -0,0 +1,64 @@
++-- Presentation/physical entry for PlotService's existing accumulator collection.
++local Players=game:GetService('Players')
++local RS=game:GetService('ReplicatedStorage')
++local Locator=require(game:GetService('ServerScriptService').PlotLocator)
++local Format=require(RS.Shared.Gameplay.PetNumberFormat)
++local CurrencyDefs=require(RS.Shared.Gameplay.Definitions.CurrencyDefinitions)
++local Sounds=require(RS.Shared.Gameplay.PresentationSounds)
++local Tween=game:GetService('TweenService')
++local M={}
++function M.Start(service,dataService)
++ local collectors={}
++ local function refresh(plot,entry)
++  local owner=Players:GetPlayerByUserId(plot:GetAttribute('OwnerUserId') or 0)
++  local data=owner and dataService:Get(owner)
++  local stored=data and math.floor(data.UncollectedSanctuaryCoins or 0) or 0
++  local room=data and math.max(0,CurrencyDefs.Coins.MaxBalance-data.Currencies.Coins) or 0
++  local amount=math.min(stored,room)
++  entry.Pad:SetAttribute('CollectibleCoins',amount)
++  entry.Pad:SetAttribute('OwnerUserId',owner and owner.UserId or 0)
++  entry.Label.Text=(amount>=1 and 'READY' or 'EMPTY')..' • '..Format.Number(amount)..' Forest Coins'
++  if stored>=1 and room<1 then entry.Label.Text..='\nCoin capacity reached' end
++  entry.Pad.Color=amount>=1 and Color3.fromRGB(96,137,69) or Color3.fromRGB(116,86,54)
++ end
++ local function bind(plot)
++  if collectors[plot] then return end
++  local cf,size=Locator.getBounds(plot);if not cf then return end
++  local pad=plot:FindFirstChild('IncomeCollector')
++  if pad then return end -- Never overwrite an authored object of uncertain provenance.
++  pad=Instance.new('Part');pad.Name='IncomeCollector';pad.Size=Vector3.new(10,.35,7)
++  pad.CFrame=cf*CFrame.new(0,size.Y/2+.175,-size.Z*.30)
++  pad.Anchored=true;pad.CanCollide=false;pad.CanTouch=true;pad.Material=Enum.Material.Wood;pad.Parent=plot
++  local gui=Instance.new('BillboardGui');gui.Name='IncomeStatus';gui.Size=UDim2.fromOffset(260,58);gui.StudsOffsetWorldSpace=Vector3.new(0,3,0);gui.MaxDistance=70;gui.Parent=pad
++  local label=Instance.new('TextLabel');label.Name='Balance';label.Size=UDim2.fromScale(1,1);label.BackgroundColor3=Color3.fromRGB(243,225,182);label.TextColor3=Color3.fromRGB(72,48,30);label.Font=Enum.Font.GothamBold;label.TextSize=15;label.TextWrapped=true;label.Parent=gui
++  local corner=Instance.new('UICorner');corner.CornerRadius=UDim.new(0,10);corner.Parent=label
++  local stroke=Instance.new('UIStroke');stroke.Color=Color3.fromRGB(112,76,41);stroke.Thickness=3;stroke.Parent=label
++  local feedback=Instance.new('TextLabel');feedback.Name='Collected';feedback.Size=UDim2.new(1,0,0,28);feedback.Position=UDim2.fromScale(0,-.5);feedback.BackgroundTransparency=1;feedback.TextColor3=Color3.fromRGB(255,218,104);feedback.Font=Enum.Font.GothamBold;feedback.TextSize=22;feedback.Text='';feedback.Parent=gui
++  local entry={Pad=pad,Label=label,Feedback=feedback,Sequence=0};collectors[plot]=entry
++  pad.Touched:Connect(function(hit)
++   local character=hit:FindFirstAncestorOfClass('Model');local player=character and Players:GetPlayerFromCharacter(character)
++   if not player then return end
++   local ok,result=service:TouchCollector(player,plot,pad)
++   if not ok then return end
++   refresh(plot,entry);entry.Sequence+=1;local sequence=entry.Sequence
++   feedback.Text='+'..Format.Number(result.Amount);feedback.TextTransparency=0
++   Sounds.Play('UIClaim',pad)
++   Tween:Create(feedback,TweenInfo.new(1.2),{TextTransparency=1}):Play()
++   task.delay(1.3,function()if entry.Sequence==sequence then feedback.Text='' end end)
++  end)
++  plot:GetAttributeChangedSignal('OwnerUserId'):Connect(function()refresh(plot,entry)end)
++  refresh(plot,entry)
++ end
++ local profiles=require(RS.Packages.Knit).GetService('ProfileService')
++ profiles.UpdateSpecificData:Connect(function(player,path)
++  local key=type(path)=='table' and path[1] or path
++  if key=='UncollectedSanctuaryCoins' or key=='Currencies' then local plot=service:GetPlot(player);if collectors[plot] then refresh(plot,collectors[plot]) end end
++ end)
++ task.spawn(function()
++  while true do
++   for _,plot in ipairs(Locator.getPlots())do bind(plot);if collectors[plot] then refresh(plot,collectors[plot])end end
++   task.wait(2)
++  end
++ end)
++end
++return M
+--- before/src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/HUD.lua
++++ src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/HUD.lua
+@@ -18,16 +18,13 @@
+  self.Navigation=W.Scroll(self.Root,'Navigation',UDim2.fromOffset(936,92),UDim2.new(.5,0,1,-10));self.Navigation.AnchorPoint=Vector2.new(.5,1);self.Navigation.ScrollingDirection=Enum.ScrollingDirection.X;self.Navigation.AutomaticCanvasSize=Enum.AutomaticSize.X;self.Navigation.ScrollBarThickness=0;self.Navigation.ClipsDescendants=false
+  self.NavLayout=W.New('UIListLayout',{FillDirection=Enum.FillDirection.Horizontal,Padding=UDim.new(0,7),SortOrder=Enum.SortOrder.LayoutOrder},self.Navigation)
+  self.Buttons={}
+- for i,name in ipairs({'Pets','Index','Garden','Biomes','Challenges','Upgrades','Plot','Settings'}) do
++ for i,name in ipairs({'Pets','Index','Garden','Biomes','Challenges','Upgrades','Settings'}) do
+   local b=W.WoodButton(self.Navigation,name,name,UDim2.fromOffset(108,80),nil,function()open(name)end);b.LayoutOrder=i;self.Buttons[name]=b
+  end
+  self.Utilities=W.New('Frame',{Name='Utilities',Position=UDim2.new(0,16,.34,0),Size=UDim2.fromOffset(76,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},self.Root)
+  self.UtilityLayout=W.New('UIListLayout',{Padding=UDim.new(0,T.SideAction.Gap),SortOrder=Enum.SortOrder.LayoutOrder},self.Utilities)
+  self.Shop=W.SideActionButton(self.Utilities,'Shop','Shop',UDim2.fromOffset(76,78),nil,function()open('Shop')end);self.Shop.LayoutOrder=1
+- self.Daily=W.SideActionButton(self.Utilities,'Daily','Daily',UDim2.fromOffset(76,78),nil,function()open('Daily')end);self.Daily.LayoutOrder=2
+- self.SetDailyBadge=W.NotificationBadge(self.Daily)
+  self.SetChallengeBadge=W.NotificationBadge(self.Buttons.Challenges)
+- self.Teleport=W.SideActionButton(self.Utilities,'Teleport','Teleport',UDim2.fromOffset(76,78),nil,function()open('Teleport')end);self.Teleport.LayoutOrder=3
+  self.HeaderActions=W.New('Frame',{Name='HeaderActions',Position=UDim2.new(1,-216,0,218),Size=UDim2.fromOffset(202,64),BackgroundTransparency=1},self.Root)
+  W.New('UIListLayout',{FillDirection=Enum.FillDirection.Horizontal,Padding=UDim.new(0,T.SideAction.Gap),SortOrder=Enum.SortOrder.LayoutOrder},self.HeaderActions)
+  for i,item in ipairs({{'Friends','FriendshipTokens'},{'Updates','Leaf'},{'Profile','Crown'}})do
+@@ -72,10 +69,10 @@
+   self.Navigation.AnchorPoint=Vector2.new(.5,0);self.Navigation.Position=UDim2.new(.5,-28,0,82);self.Navigation.Size=UDim2.new(1,-104,0,57);self.Navigation.ClipsDescendants=true
+   if not portrait then self.NavLayout.Padding=UDim.new(0,5)end
+   for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(72,48);local l=b:FindFirstChild('Label');if l then l.TextSize=11 end end
+-  self.Utilities.Position=UDim2.new(1,-68,0,3);self.Utilities.Size=UDim2.fromOffset(56,0);self.Shop.Size=UDim2.fromOffset(56,49);self.Daily.Size=UDim2.fromOffset(56,49);self.Teleport.Size=UDim2.fromOffset(56,49)
++  self.Utilities.Position=UDim2.new(1,-68,0,3);self.Utilities.Size=UDim2.fromOffset(56,0);self.Shop.Size=UDim2.fromOffset(56,49)
+   if size.X<500 then
+    self.Currencies.AnchorPoint=Vector2.zero;self.Currencies.Position=UDim2.fromOffset(12,82);self.Currencies.Size=UDim2.fromOffset(size.X-92,54)
+-   local navTop=3+3*49+2*T.SideAction.Gap+T.Spacing.Small
++   local navTop=144
+    self.Navigation.Position=UDim2.new(.5,0,0,navTop);self.Navigation.Size=UDim2.new(1,-24,0,112)
+    for _,pill in ipairs(self.Currencies:GetChildren())do
+     local icon=pill:FindFirstChild('Icon_'..pill.Name);if icon then icon.Size=UDim2.fromOffset(30,30);icon.Position=UDim2.fromOffset(4,12)end
+@@ -86,8 +83,8 @@
+   local width=math.min(936,size.X-(touch and 340 or 340))
+   self.Navigation.AnchorPoint=Vector2.new(.5,1);self.Navigation.Position=UDim2.new(.5,0,1,-10);self.Navigation.Size=UDim2.fromOffset(width,92);self.Navigation.ClipsDescendants=false
+   self.NavLayout.Padding=UDim.new(0,7)
+-  for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(math.floor((width-68)/8),80);local l=b:FindFirstChild('Label');if l then l.TextSize=15 end end
+-  self.Utilities.Position=UDim2.new(0,16,.3,0);self.Utilities.Size=UDim2.fromOffset(76,0);self.Shop.Size=UDim2.fromOffset(76,78);self.Daily.Size=UDim2.fromOffset(76,78);self.Teleport.Size=UDim2.fromOffset(76,78)
++  for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(math.floor((width-61)/7),80);local l=b:FindFirstChild('Label');if l then l.TextSize=15 end end
++  self.Utilities.Position=UDim2.new(0,16,.3,0);self.Utilities.Size=UDim2.fromOffset(76,0);self.Shop.Size=UDim2.fromOffset(76,78)
+  end
+  -- On landscape phones, leave the existing utility stack and jump control clear.
+  local actionsTop=compact and (portrait and self.Navigation.Position.Y.Offset+self.Navigation.Size.Y.Offset+12 or 144) or 218
+@@ -100,11 +97,11 @@
+  end
+  self.Hint.Visible=not compact and size.X>1500
+ end
+-function H:Select(name) self.ActiveName=name;if self.LastSize then self:Resize(self.LastSize,self.Touch)end;for id,b in pairs(self.Buttons) do W.Selected(b,id==name) end;W.Selected(self.Shop,name=='Shop');W.Selected(self.Daily,name=='Daily');W.Selected(self.Teleport,name=='Teleport') end
++function H:Select(name) self.ActiveName=name;if self.LastSize then self:Resize(self.LastSize,self.Touch)end;for id,b in pairs(self.Buttons) do W.Selected(b,id==name) end;W.Selected(self.Shop,name=='Shop') end
+ function H:Update(data)
+  for id,label in pairs(self.Counters) do W.Motion.CounterChange(label,(data.Currencies or {})[id] or 0,W.Format) end
+  local counts={Daily=0,Weekly=0};local defs=require(game.ReplicatedStorage.Shared.Gameplay.Definitions.ChallengeDefinitions)
+  for kind,list in pairs(defs)do local state=data[kind..'Challenges'];for _,def in ipairs(list)do local entry=state and state.Entries and state.Entries[def.Id];if entry and not entry.Claimed and entry.Progress>=def.Target then counts[kind]+=1 end end end
+- self.SetDailyBadge(counts.Daily);self.SetChallengeBadge(counts.Daily+counts.Weekly)
++ self.SetChallengeBadge(counts.Daily+counts.Weekly)
+ end
+ return H
+--- before/src/StarterGui/AnimalKingdomUI/GardenMenus.lua
++++ src/StarterGui/AnimalKingdomUI/GardenMenus.lua
+@@ -45,9 +45,10 @@
+ local function reason(data,p)
+  if p.Location=="Held" then return "HELD" end
+  if p.Location=="Sanctuary" then return "SANCTUARY" end
++ if p.Location~="Inventory" then return "FORAGING" end
+  for _,trip in ipairs(data.GardenExpeditions or {}) do if trip.UID==p.UID then return "FORAGING" end end
+  if p.Locked then return "LOCKED" end
+- if not Pets[p.PetId] then return "UNAVAILABLE" end
++ if not Pets[p.PetId] or not require(RS.Shared.Gameplay.PetModelResolver).Resolve(p.PetId) then return "UNAVAILABLE" end
+ end
+ local function back(ctx)
+  if M.Flow then if M.Flow=="Confirm" then M.Flow="Trips" elseif M.Flow=="Trips" then M.Flow="Pets" else M.Flow=nil end;redraw(ctx) else ctx.Close() end
+@@ -64,7 +65,7 @@
+   text(c,"Harvest "..tostring(data.Currencies.GardenHarvest or 0).."   •   Pets "..#(data.GardenExpeditions or {}).." / 3",8,38,15,green,12,.55)
+   local inGarden=player:GetAttribute("InGarden")==true
+   local visit=button(c,inGarden and "RETURN TO KINGDOM"or "VISIT GARDEN",8,function()ctx.GardenTravel(inGarden and "ReturnGarden"or "VisitGarden")end,green,"VisitGarden");visit.Size=UDim2.new(.42,-18,0,44);visit.Position=UDim2.new(.58,6,0,8)
+-  tabs(c,{"EXPEDITIONS","CROPS","SHOP","BOOSTS"},M.Tab,50,function(name)M.Tab=name;M.Flow=nil;redraw(ctx)end)
++  tabs(c,{"EXPEDITIONS","CROPS","SHOP"},M.Tab,50,function(name)M.Tab=name;M.Flow=nil;redraw(ctx)end)
+   return
+  end
+  local c=card(ctx,156,"GardenHeader")
+@@ -73,7 +74,7 @@
+  text(c,"Garden Plot "..tostring(player:GetAttribute("GardenPlotId") or "…").."   •   Active pets "..#(data.GardenExpeditions or {}).." / 3",70,28,13)
+  local inGarden=player:GetAttribute("InGarden")==true
+  local visit=button(c,inGarden and "RETURN TO KINGDOM" or "VISIT GARDEN",18,function() ctx.GardenTravel(inGarden and "ReturnGarden" or "VisitGarden") end,green,"VisitGarden");visit.Size=UDim2.new(.42,-18,0,48);visit.Position=UDim2.new(.58,6,0,20)
+- tabs(c,{"EXPEDITIONS","CROPS","SHOP","BOOSTS"},M.Tab,104,function(name) M.Tab=name;M.Flow=nil;ctx.Content.CanvasPosition=Vector2.zero;redraw(ctx) end)
++ tabs(c,{"EXPEDITIONS","CROPS","SHOP"},M.Tab,104,function(name) M.Tab=name;M.Flow=nil;ctx.Content.CanvasPosition=Vector2.zero;redraw(ctx) end)
+ end
+ local function baskets(c,trip,y)
+  local values={}
+@@ -83,7 +84,10 @@
+ local function expeditions(ctx)
+  local data=ctx.Data;local assigned={};local count=0
+  for _,trip in ipairs(data.GardenExpeditions or {}) do if trip.SlotId then assigned[trip.SlotId]=trip end;if trip.ReadyAt<=os.time() then count+=1 end end
+- if count>0 then local c=card(ctx,64,"ClaimAllCard");button(c,"CLAIM ALL  •  "..count.." ready",10,function()act(ctx,"ClaimAllExpeditions",{})end,nil,"ClaimAll") end
++ if #(data.GardenExpeditions or {})>0 then
++  local c=card(ctx,64,'ClaimAllCard');local claim=button(c,'CLAIM ALL',10,function()act(ctx,'ClaimAllExpeditions',{})end,nil,'ClaimAll')
++  timers[#timers+1]=function(now)local ready=0;for _,trip in ipairs(data.GardenExpeditions or {})do if trip.ReadyAt<=now then ready+=1 end end;if claim.Parent then claim.Text='CLAIM ALL • '..ready..' ready';W.Disabled(claim,ready==0)end end
++ end
+  local grid=W.New("Frame",{Name="ExpeditionCards",Size=UDim2.new(1,-8,0,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},ctx.Content)
+  if ctx.Short then W.List(grid)else W.Grid(grid,math.max(260,math.floor(ctx.Content.AbsoluteSize.X/3)-20),#(data.GardenExpeditions or {})>0 and 278 or 142,12)end;ctx.GardenBody=grid
+  for i=1,3 do
+@@ -135,8 +139,9 @@
+  ctx.GardenBody=nil
+ end
+ local function selectPets(ctx,style)
+- local data=ctx.Data;local all=data.Pets or {};local pages=math.max(1,math.ceil(#all/10));M.Page=math.clamp(M.Page,1,pages)
++ local data=ctx.Data;local all={};for _,p in ipairs(data.Pets or {})do if style or not reason(data,p) then table.insert(all,p)end end;local pages=math.max(1,math.ceil(#all/10));M.Page=math.clamp(M.Page,1,pages)
+  local top=card(ctx,116,"SelectPetTitle");text(top,style and "CHOOSE A PET TO STYLE" or "1  •  SELECT PET",10,30,18,green);button(top,"BACK",57,function()M.Flow=nil;redraw(ctx)end,W.Color.Muted,"Back")
++ if #all==0 then W.Empty(ctx.Content,'No eligible Inventory pets','Use STORE on a Held pet in Pets, and unlock it before sending it here.');return end
+  for i=(M.Page-1)*10+1,math.min(M.Page*10,#all) do
+   local p=all[i];local def=Pets[p.PetId];local why=not style and reason(data,p)
+   local c=card(ctx,150,"PetChoice_"..p.UID)
+@@ -149,7 +154,7 @@
+    if style then act(ctx,"EquipGardenCosmetic",{UID=p.UID,CosmeticId=M.Cosmetic});M.Flow=nil else M.UID=p.UID;M.Flow="Trips" end;redraw(ctx)
+   end,why and W.Color.Muted or green,"Choose_"..p.UID)
+  end
+- local pager=card(ctx,108,"PetPages");text(pager,"All owned pets • Page "..M.Page.." / "..pages,6,30,14)
++ local pager=card(ctx,108,"PetPages");text(pager,(style and "All owned pets • Page " or "Eligible Inventory pets • Page ")..M.Page.." / "..pages,6,30,14)
+  tabs(pager,{"PREVIOUS","NEXT"},"",48,function(name)M.Page=math.clamp(M.Page+(name=="NEXT" and 1 or -1),1,pages);ctx.Content.CanvasPosition=Vector2.zero;redraw(ctx)end)
+ end
+ local function trips(ctx)
+@@ -196,19 +201,17 @@
+  if M.Shop=="COSMETICS" then local c=card(ctx,66,"RemoveCosmetic");button(c,"REMOVE A PET'S COSMETIC",10,function()M.Cosmetic="None";M.Flow="Style";M.Page=1;redraw(ctx)end,W.Color.Muted) end
+ end
+ local function boosts(ctx)
+- local found=false
+- for _,id in ipairs(G.SupplyOrder) do
+-  local expiration=ctx.Data.GardenBoosts[id] or 0
+-  if expiration>os.time() then
+-   found=true;local d=G.Supplies[id];local c=card(ctx,116,"Boost_"..id);text(c,d.DisplayName,10,30,19,green);text(c,d.Description,43,25,14)
+-   local timer=text(c,"",76,28,18);timers[#timers+1]=function(now)if timer.Parent then timer.Text=now>=expiration and "Expired" or clock(expiration-now).." remaining" end end
+-  end
+- end
+- if not found then local c=card(ctx,100,"NoBoosts");text(c,"No Garden boosts are active.",12,35,18,green);text(c,"Visit Supplies to give your pets a little help.",48,40,14) end
+- local c=card(ctx,112,"BoostRules");text(c,"A little help for your garden",10,30,17,green);text(c,"The same potion extends its timer. Different supplies combine within Garden caps. Timers continue while offline.",43,60,13)
++ local active={};for _,id in ipairs(G.SupplyOrder)do if (ctx.Data.GardenBoosts[id] or 0)>os.time() then table.insert(active,id)end end
++ if #active==0 then return end
++ local c=card(ctx,44+22*#active,'ActiveBoosts')
++ text(c,'ACTIVE SUPPLIES',6,26,14,green)
++ for i,id in ipairs(active)do
++  local label=text(c,'',28+(i-1)*22,22,12)
++  timers[#timers+1]=function(now)if label.Parent then label.Text=G.Supplies[id].DisplayName..' • '..clock((ctx.Data.GardenBoosts[id] or 0)-now)end end
++ end
+ end
+ function M.Render(ctx)
+- ctxNow=ctx;ctx.GardenBody=nil;timers={};selection={};W.List(ctx.Content);header(ctx)
++ ctxNow=ctx;ctx.GardenBody=nil;timers={};selection={};W.List(ctx.Content);header(ctx);if not M.Flow then boosts(ctx)end
+  if M.Flow=="Pets" then selectPets(ctx)
+  elseif M.Flow=="Trips" then trips(ctx)
+  elseif M.Flow=="Confirm" then confirm(ctx)
+@@ -219,7 +222,7 @@
+  elseif M.Tab=="EXPEDITIONS" then expeditions(ctx)
+  elseif M.Tab=="CROPS" then crops(ctx)
+  elseif M.Tab=="SHOP" then shop(ctx)
+- else boosts(ctx) end
++ end
+  for i,b in ipairs(selection) do b.NextSelectionUp=selection[i-1] or selection[#selection];b.NextSelectionDown=selection[i+1] or selection[1] end
+  local now=workspace:GetServerTimeNow();for _,update in ipairs(timers) do update(now) end
+  if not ctx.GardenConfirmOverlay and (Input:GetLastInputType().Name:find("Gamepad") or ctx.SelectedName) then task.defer(function() if ctx.ActiveName=="Garden" then local chosen=M.Flow and selection[6] or selection[1];for _,b in ipairs(selection) do if b.Name==ctx.SelectedName then chosen=b;break end end;Gui.SelectedObject=chosen end end) end
+--- before/src/StarterGui/AnimalKingdomUI/HatchPresentation.lua
++++ src/StarterGui/AnimalKingdomUI/HatchPresentation.lua
+@@ -50,6 +50,8 @@
+  local destinationText=entry.Destination=='Held' and 'ADDED TO HELD PETS' or 'SENT TO PET INVENTORY'
+  local destination=W.Text(details,destinationText,UDim2.new(1,0,0,22),UDim2.fromOffset(0,55),12,W.Color.White);destination.TextXAlignment=Enum.TextXAlignment.Center
+  local closed,ready=false,false;local born=os.clock()
++ local duration=reduced and .45 or math.clamp(tonumber(result.Duration) or 1.3,.6,30)
++ shade:SetAttribute('HatchDuration',duration)
+  local continueButton,equipButton,skipButton
+  local function close(immediate)
+   if closed then return end;closed=true
+@@ -76,9 +78,9 @@
+   shade:SetAttribute('Phase','Showcase')
+  end
+  continueButton=W.Button(stage,'CONTINUE',UDim2.new(.46,0,0,44),UDim2.new(.03,0,1,-51),function()close(false)end);continueButton.Name='ContinueReward';continueButton.Visible=false
+- equipButton=W.Button(stage,'VIEW PET',UDim2.new(.46,0,0,44),UDim2.new(.51,0,1,-51),function()
++ equipButton=W.Button(stage,entry.Destination=='Held' and 'HOLD PET' or 'OPEN PETS',UDim2.new(.46,0,0,44),UDim2.new(.51,0,1,-51),function()
+   if closed or not ctx then return end
+-  close(false);task.delay(.22,function()ctx.ViewPet(entry.Pet)end)
++  close(false);task.delay(.22,function()if entry.Destination=='Held' then ctx.ViewPet(entry.Pet) else ctx.Open('Pets') end end)
+  end,W.Color.Wood);equipButton.Name='EquipReward';equipButton.Visible=false
+  skipButton=W.CreamSecondaryButton(stage,'Skip animation',UDim2.fromOffset(158,44),UDim2.new(.5,-79,1,-53),function()if os.clock()-born>.35 then showcase()end end);skipButton.Name='SkipHatch'
+  if ctx and ctx.Short then
+@@ -96,8 +98,8 @@
+  shade:SetAttribute('PetTypeId',entry.Pet.PetId);shade:SetAttribute('OwnedPetInstanceId',entry.Pet.UID);shade:SetAttribute('Phase','Egg')
+  Viewport.Animate(eggView,function(model,base,t)
+   if closed or ready then return false end
+-  local duration=reduced and .45 or 1.3
+   if t>=duration then task.defer(showcase);return false end
++  t=t/duration*1.3 -- Normalize animation beats to the authoritative duration.
+   local wobble=not reduced and math.sin(t*(t<.55 and 15 or 28))*math.rad(t<.55 and 8 or 17) or 0
+   local lift=not reduced and (t>.98 and math.sin(math.min(1,(t-.98)/.28)*math.pi)*.32 or math.sin(t*math.pi)*.06) or 0
+   model:PivotTo(CFrame.new(0,lift,0)*base*CFrame.Angles(0,0,wobble))
+@@ -105,7 +107,7 @@
+  end)
+  W.Motion.ModalOpen(panel)
+  -- A failed viewport must never trap input or gate ownership of the server reward.
+- task.delay(2.3,showcase)
++ task.delay(duration+1,showcase)
+ end
+ function H.Cleanup()table.clear(queue);if activeClose then activeClose()end end
+ Players.LocalPlayer.CharacterRemoving:Connect(H.Cleanup)
+--- before/src/StarterGui/AnimalKingdomUI/HeldPetsBar.lua
++++ src/StarterGui/AnimalKingdomUI/HeldPetsBar.lua
+@@ -4,13 +4,13 @@
+ local M={};M.__index=M
+ function M.new(parent,selectPet)
+  local self=setmetatable({SelectPet=selectPet},M)
+- self.Root=W.New('Frame',{Name='HeldPets',BackgroundTransparency=1,AnchorPoint=Vector2.new(.5,1),Size=UDim2.fromOffset(530,118),Position=UDim2.new(.5,0,1,-108)},parent)
++ self.Root=W.New('Frame',{Name='HeldPets',BackgroundTransparency=1,AnchorPoint=Vector2.new(.5,1),Size=UDim2.fromOffset(540,96),Position=UDim2.new(.5,0,1,-108)},parent)
+  return self
+ end
+ function M:Update(data)
+  self.Data=data;if not data then return end
+  local signature={self.Large and 'large' or 'compact',data.ActiveHeldPetUID or ''}
+- for i=1,5 do local pet=Locations.At(data,'Held',i);table.insert(signature,pet and (pet.UID..':'..tostring(pet.Weight)..':'..tostring(pet.CoinsPerSecond)..':'..tostring(pet.Favorite)) or '-')end
++ for i=1,5 do local pet=Locations.At(data,'Held',i);table.insert(signature,pet and (pet.UID..':'..tostring(pet.Weight)..':'..tostring(pet.CoinsPerSecond)..':'..tostring(pet.Favorite)..':'..tostring(pet.Locked)) or '-')end
+  signature=table.concat(signature,'|');if signature==self.Signature then return end;self.Signature=signature
+  self.Root:ClearAllChildren()
+  for i=1,5 do
+@@ -26,7 +26,7 @@
+  local portrait=compact and size.X<500
+  local wasLarge=self.Large;self.Large=not compact
+  -- Keep the new bar below the existing right-side row and between touch controls.
+- self.Root.Size=UDim2.fromOffset(portrait and size.X-24 or compact and math.max(310,math.min(430,size.X-300)) or 620,compact and 86 or 116)
++ self.Root.Size=UDim2.fromOffset(portrait and size.X-24 or compact and math.max(310,math.min(430,size.X-300)) or 540,compact and 86 or 96)
+  self.Root.Position=UDim2.new(.5,0,1,portrait and -150 or compact and -4 or -108)
+  if self.Large~=wasLarge and self.Data then self:Update(self.Data)end
+ end
+--- before/src/StarterGui/AnimalKingdomUI/Main.client.lua
++++ src/StarterGui/AnimalKingdomUI/Main.client.lua
+@@ -28,7 +28,7 @@
+ local title=W.Heading(header,'',UDim2.new(1,-140,1,0),UDim2.fromOffset(70,0),27,W.Color.White)
+ local close=W.Button(header,'×',UDim2.fromOffset(43,43),UDim2.new(1,-54,0,9),function()ctx.Close()end,W.Color.Red);close.Name='CloseMenu';close.TextSize=31
+ local content=W.Scroll(panel,'Content',UDim2.new(1,-62,1,-110),UDim2.fromOffset(31,88));ctx.Content=content
+-local menus={Pets=PetMenus.Pets,Index=PetMenus.Index,Garden=Garden.Render,Biomes=Progression.Biomes,Challenges=Progression.Challenges,Shop=Plot.Shop,Upgrades=Progression.Upgrades,Plot=Plot.Render,Settings=Progression.Settings,Daily=function(c)Progression.Period="Daily";Progression.Challenges(c)end,Teleport=Progression.Teleport}
++local menus={Pets=PetMenus.Pets,Index=PetMenus.Index,Garden=Garden.Render,Biomes=Progression.Biomes,Challenges=Progression.Challenges,Shop=Plot.Shop,Upgrades=Progression.Upgrades,Settings=Progression.Settings}
+ local rendering=false;local queued=false
+ local function render()
+  if not manager.Active or not panel.Parent then return end
+@@ -94,7 +94,7 @@
+ function ctx.ShowProfile()
+  if not data then ctx.Notify('Your profile is still loading.');return end
+  local count=0;for _ in pairs(data.PetIndex)do count+=1 end
+- overlays:Modal(player.DisplayName.."'s kingdom",#data.Pets..' companions • '..count..' discoveries\nSanctuary level '..data.PlotProgression.Level..' • '..#data.DisplayedPetIds..' pets displayed',{{Text='Continue',Callback=function()overlays:Close()end}})
++ overlays:Modal(player.DisplayName.."'s kingdom",#data.Pets..' companions • '..count..' discoveries\nDecoration capacity '..(25+data.PlotProgression.Level*5)..' • '..#data.DisplayedPetIds..' pets displayed',{{Text='Continue',Callback=function()overlays:Close()end}})
+ end
+ function ctx.InviteFriends()
+  task.spawn(function()
+@@ -158,7 +158,8 @@
+  hud.ContextText.Text=(player:GetAttribute('InGarden') and 'Garden' or player:GetAttribute('CurrentBiome') or 'Town')..' • '..(def and def.DisplayName or id)
+ end
+ connect(weather.AttributeChanged,contextUpdate);connect(player:GetAttributeChangedSignal('CurrentBiome'),contextUpdate);connect(player:GetAttributeChangedSignal('InGarden'),contextUpdate);contextUpdate()
+-local relevant={Sanctuary={Pets=true,HeldPetSlots=true,SanctuaryPetSlots=true,SanctuaryIncomePerSecond=true,SanctuaryCapacity=true},Daily={DailyChallenges=true,WeeklyChallenges=true},Teleport={UnlockedBiomes=true},Pets={Pets=true,ActiveHeldPetUID=true,EquippedPets=true,DisplayedPetIds=true,PetStorageCapacity=true,MaxEquippedPets=true},Index={PetIndex=true,IndexRewards=true},Garden={GardenExpeditions=true,GardenCosmetics=true,GardenCrops=true,GardenUpgrades=true,GardenBoosts=true,Pets=true,EquippedPets=true},Biomes={UnlockedBiomes=true},Upgrades={Upgrades=true},Challenges={DailyChallenges=true,WeeklyChallenges=true},Settings={Settings=true},Plot={PlotProgression=true,Items=true,SanctuaryIncomePerSecond=true,DisplayedPetIds=true},Shop={Items=true}}
++connect(player:GetAttributeChangedSignal('CurrentBiome'),function()if ctx.ActiveName=='Biomes' then ctx.Refresh()end end)
++local relevant={Pets={Pets=true,ActiveHeldPetUID=true,EquippedPets=true,DisplayedPetIds=true,PetStorageCapacity=true,MaxEquippedPets=true},Index={PetIndex=true,IndexRewards=true},Garden={GardenExpeditions=true,GardenCosmetics=true,GardenCrops=true,GardenUpgrades=true,GardenBoosts=true,Pets=true,EquippedPets=true},Biomes={UnlockedBiomes=true,Currencies=true},Upgrades={Upgrades=true,PlotProgression=true},Challenges={DailyChallenges=true,WeeklyChallenges=true},Settings={Settings=true},Shop={Items=true,PlotProgression=true}}
+ local heldQueued=false
+ local function updateData(key,snapshot)
+  data=snapshot;ctx.Data=data;if not data then return end
+@@ -182,7 +183,7 @@
+ local remotes=RS:WaitForChild('AnimalKingdomRemotes')
+ connect(remotes:WaitForChild('TeleportToBiome').OnClientEvent,function(name,success)overlays:FinishTravel(name,success);if not success then ctx.Notify('This destination is not available yet.')end end)
+ connect(remotes:WaitForChild('GameplayNotice').OnClientEvent,function(payload)ctx.Notify(payload.Message)end)
+-local successText={Favorite='Favorites updated!',Lock='Companion protection updated.',Upgrade='Upgrade purchased!',UnlockBiome='Biome unlocked!',ShopBuy='Purchase complete!',ClaimChallenge='Challenge reward claimed!',ClaimIndex='Discovery reward claimed!',DisplayMeadowPet='Sanctuary updated!',BuyGardenSupply='Garden supply activated!',UpgradeGarden='Garden upgraded!'}
++local successText={Favorite='Favorites updated!',Lock='Companion protection updated.',Upgrade='Upgrade purchased!',UnlockBiome='Biome unlocked!',ShopBuy='Purchase complete!',ClaimChallenge='Challenge reward claimed!',ClaimIndex='Discovery reward claimed!',BuyGardenSupply='Garden supply activated!',UpgradeGarden='Garden upgraded!'}
+ connect(Bridge.Completed,function(payload)
+  if payload.Action=='PetAssetsLoaded'then return end
+  local result=payload.Result
+--- before/src/StarterGui/AnimalKingdomUI/OwnedPetCards.lua
++++ src/StarterGui/AnimalKingdomUI/OwnedPetCards.lua
+@@ -10,7 +10,7 @@
+  W.Round(button,12);W.Stroke(button,selected and W.Color.Gold or W.Color.Line,selected and 3 or 1.5)
+  local wide=compact=='wide'
+  local large=compact=='heldLarge'
+- local h=wide and 74 or large and 56 or compact and 28 or 64
++ local h=wide and 74 or large and 40 or compact and 28 or 64
+  if pet and def then W.PetPreview(button,pet,UDim2.new(1,-12,0,h),UDim2.fromOffset(6,compact and 2 or 5))
+  else W.Icon(button,'Leaf',UDim2.fromOffset(24,24),UDim2.new(.5,-12,0,compact and 4 or 20))end
+  local y=wide and 5 or compact and 30 or 72
+@@ -29,10 +29,10 @@
+    weight.Position=UDim2.fromOffset(3,61);weight.Size=UDim2.new(.5,-3,0,21);weight.TextSize=9
+    income.Position=UDim2.new(.5,0,0,61);income.Size=UDim2.new(.5,-3,0,21);income.TextSize=8
+    if large then
+-    name.Position=UDim2.fromOffset(4,58);name:FindFirstChildWhichIsA('UITextSizeConstraint').MaxTextSize=13
+-    rarity.Position=UDim2.fromOffset(3,81);rarity.TextSize=10
+-    weight.Position=UDim2.fromOffset(3,94);weight.TextSize=11
+-    income.Position=UDim2.new(.5,0,0,94);income.TextSize=10
++    name.Position=UDim2.fromOffset(4,40);name:FindFirstChildWhichIsA('UITextSizeConstraint').MaxTextSize=13
++    rarity.Position=UDim2.fromOffset(3,63);rarity.TextSize=10
++    weight.Position=UDim2.fromOffset(3,75);weight.TextSize=11
++    income.Position=UDim2.new(.5,0,0,75);income.TextSize=10
+    end
+   elseif wide then
+    local preview=button:FindFirstChildWhichIsA('ViewportFrame')
+@@ -43,6 +43,7 @@
+    name.TextSize=14;name:FindFirstChildWhichIsA('UITextSizeConstraint').MaxTextSize=14
+    rarity.TextSize=10;weight.TextSize=12;income.TextSize=12
+   end
++  if pet.Locked then local state=W.Text(button,'LOCKED',UDim2.fromOffset(52,16),UDim2.fromOffset(3,2),9,W.Color.Ink);state.Name='LockState' end
+   if pet.Favorite then W.Heading(button,'★',UDim2.fromOffset(20,20),UDim2.new(1,-23,0,3),15,W.Color.Gold)end
+   button:SetAttribute('OwnedPetInstanceId',pet.UID);button:SetAttribute('PetWeight',pet.Weight);button:SetAttribute('PetLocation',pet.Location)
+  else
+--- before/src/StarterGui/AnimalKingdomUI/PetMenus.lua
++++ src/StarterGui/AnimalKingdomUI/PetMenus.lua
+@@ -5,8 +5,8 @@
+ local Rewards=require(RS.Shared.Gameplay.Definitions.IndexRewardDefinitions)
+ local Biomes=require(RS.Shared.Gameplay.Definitions.BiomeDefinitions)
+ local Models=require(RS.Shared.Gameplay.PetModelResolver)
+-local PetMath=require(RS.Shared.Gameplay.PetMath)
+-local M={Page=1,Sort='Rarity',Filter='All',Biome='Meadow',IndexPage=1,Selected=nil,SelectedIndex=nil,Search='',Rarity='All',DetailMode=false}
++local Catalog=require(RS.Shared.Gameplay.IndexCatalog)
++local M={Biome='Meadow',IndexPage=1,SelectedIndex=nil,DetailMode=false}
+ local function name(def)
+  if not def then return 'Archived companion' end
+  if def.DisplayName:match('%d%d$') then return (Biomes[def.Biome] and Biomes[def.Biome].DisplayName or def.Biome)..' companion' end
+@@ -21,78 +21,43 @@
+  local next=W.Button(bar,'Next ›',UDim2.fromScale(.3,1),UDim2.fromScale(.7,0),function()set(page+1);ctx.Refresh()end)
+  W.Disabled(next,page>=total)
+ end
+-local function selection(ctx,p,pet,entry,def,index)
+- local scroll=W.Scroll(p,'SelectedCompanionScroll',UDim2.fromScale(1,1));local card=W.Surface(scroll,'SelectedCompanion',UDim2.new(1,-8,0,index and 352 or 500),nil,'Paper')
+- if not def then W.Empty(card,'Choose a companion','Select a card to learn more.');return end
++local function collectionInfo(def,entry)
++ local eligible,sources=Catalog.Current()
++ local variants={};if entry then for v in pairs(entry.Variants or {})do table.insert(variants,v)end;table.sort(variants)end
++ return (eligible[def.PetId] and (entry and 'Discovered' or 'Undiscovered') or (entry and 'Archived discovery' or 'Coming Soon'))..' • '..W.Rate(def.BaseIncome)..' base coins/sec\n'..(sources[def.PetId] and table.concat(sources[def.PetId],'; ') or 'Not in current reward pools')..(#variants>0 and ('\n'..table.concat(variants,' • ')) or '')
++end
++local function selection(ctx,parent,entry,def)
++ local scroll=W.Scroll(parent,'SelectedCompanionScroll',UDim2.fromScale(1,1))
++ local card=W.Surface(scroll,'SelectedCompanion',UDim2.new(1,-8,0,ctx.Short and 168 or 362),nil,'Paper')
++ if not def then W.Empty(card,'Coming Soon','Companions for this biome are not available yet.');return end
++ local preview={PetId=def.PetId,Mutation='Normal',Level=1}
+  if ctx.Short then
+-  card.Size=UDim2.new(1,-8,0,index and 145 or 216)
+-  W.PetPreview(card,pet or {PetId=def.PetId,Mutation='Normal',Level=1},UDim2.new(.32,-10,0,86),UDim2.fromOffset(5,0),index and not entry)
+-  local label=W.Heading(card,index and not entry and '???' or name(def),UDim2.new(.32,-8,0,28),UDim2.fromOffset(4,87),15);label.TextXAlignment=Enum.TextXAlignment.Center
+-  if index then
+-   W.Heading(card,def.Rarity,UDim2.new(.64,-18,0,32),UDim2.fromScale(.34,.08),20)
+-   W.Text(card,entry and 'Discovered in '..def.Biome..'!' or "This companion hasn't been discovered yet.",UDim2.new(.64,-18,0,60),UDim2.fromScale(.34,.36),15)
+-  else
+-   W.Text(card,def.Rarity..' • Level '..pet.Level..' • '..(pet.Mutation or 'Normal')..' • '..W.Rate(def.BaseIncome)..' Coins / sec',UDim2.new(.64,-8,0,28),UDim2.fromScale(.34,0),12)
+-   local equipped=table.find(ctx.Data.EquippedPets,pet.UID)~=nil;local displayed=table.find(ctx.Data.DisplayedPetIds or {},pet.UID)~=nil
+-   local equip=W.Button(card,equipped and 'Unequip' or 'Equip',UDim2.new(.31,-10,0,44),UDim2.new(.34,0,0,32),function()ctx.Request('Equip',{UID=pet.UID,Equipped=not equipped})end);equip.Name='Equip_'..pet.UID
+-   W.Button(card,pet.Favorite and '★ Favorite' or 'Favorite',UDim2.new(.31,-10,0,44),UDim2.new(.67,0,0,32),function()ctx.Request('Favorite',{UID=pet.UID,Value=not pet.Favorite})end,W.Color.Wood)
+-   local display=W.Button(card,displayed and 'Return to inventory' or 'Display in Sanctuary',UDim2.new(.64,-10,0,44),UDim2.new(.34,0,0,81),function()ctx.Request('DisplayMeadowPet',{UID=pet.UID,Displayed=not displayed})end);display.Name='Display_'..pet.UID;W.Tooltip(display,'Only companions displayed in your Sanctuary earn passive Forest Coins.')
+-   W.Button(card,pet.Locked and 'Unlock' or 'Lock',UDim2.new(.31,-10,0,44),UDim2.new(.34,0,0,132),function()ctx.Request('Lock',{UID=pet.UID,Value=not pet.Locked})end,W.Color.Wood)
+-   local del=W.Button(card,PetMath.Protected(pet) and 'Protected' or 'Delete',UDim2.new(.31,-10,0,44),UDim2.new(.67,0,0,132),function()ctx.Request('RequestDelete',{UID=pet.UID})end,W.Color.Red);W.Disabled(del,PetMath.Protected(pet))
+-   W.Text(card,'XP '..pet.XP..' / '..PetMath.RequiredXP(pet.Level)..'',UDim2.new(.64,-10,0,26),UDim2.new(.34,0,0,183),11,W.Color.Muted)
+-  end
++  W.PetPreview(card,preview,UDim2.new(.32,-10,0,100),UDim2.fromOffset(5,0),not entry)
++  local label=W.Heading(card,entry and name(def) or '???',UDim2.new(.32,-8,0,40),UDim2.fromOffset(4,103),14);label.TextXAlignment=Enum.TextXAlignment.Center
++  W.Heading(card,def.Rarity,UDim2.new(.64,-18,0,30),UDim2.new(.34,0,0,6),18)
++  W.Text(card,collectionInfo(def,entry),UDim2.new(.64,-18,0,120),UDim2.new(.34,0,0,40),12)
+   return
+  end
+- if not index then
+-  card.Size=UDim2.new(1,-8,0,374)
+-  W.PetPreview(card,pet,UDim2.new(.48,-12,0,178),UDim2.fromOffset(8,4))
+-  W.Heading(card,name(def),UDim2.new(.52,-16,0,65),UDim2.new(.48,0,0,12),21)
+-  W.Text(card,def.Rarity..' • Level '..pet.Level,UDim2.new(.52,-16,0,32),UDim2.new(.48,0,0,79),13)
+-  W.Text(card,(pet.Prismatic and 'Prismatic • 'or pet.Shiny and 'Shiny • 'or '')..(pet.Mutation or 'Normal')..'\n'..W.Rate(def.BaseIncome)..' Coins / sec',UDim2.new(.52,-16,0,63),UDim2.new(.48,0,0,116),13,W.Color.Muted)
+-  local equipped=table.find(ctx.Data.EquippedPets,pet.UID)~=nil
+-  local displayed=table.find(ctx.Data.DisplayedPetIds or {},pet.UID)~=nil
+-  local equip=W.Button(card,equipped and 'Unequip' or 'Equip',UDim2.new(.5,-18,0,44),UDim2.fromOffset(12,185),function()ctx.Request('Equip',{UID=pet.UID,Equipped=not equipped})end);equip.Name='Equip_'..pet.UID
+-  W.Button(card,pet.Favorite and '★ Favorite' or 'Favorite',UDim2.new(.5,-18,0,44),UDim2.new(.5,6,0,185),function()ctx.Request('Favorite',{UID=pet.UID,Value=not pet.Favorite})end,W.Color.Wood)
+-  local display=W.Button(card,displayed and 'Return to inventory' or 'Display in Sanctuary',UDim2.new(1,-24,0,44),UDim2.fromOffset(12,238),function()ctx.Request('DisplayMeadowPet',{UID=pet.UID,Displayed=not displayed})end);display.Name='Display_'..pet.UID;W.Tooltip(display,'Only companions displayed in your Sanctuary earn passive Forest Coins.');W.Disabled(display,not displayed and Models.Resolve(def.PetId)==nil)
+-  W.Button(card,pet.Locked and 'Unlock' or 'Lock',UDim2.new(.5,-18,0,44),UDim2.fromOffset(12,291),function()ctx.Request('Lock',{UID=pet.UID,Value=not pet.Locked})end,W.Color.Wood)
+-  local del=W.Button(card,PetMath.Protected(pet)and 'Protected' or 'Delete',UDim2.new(.5,-18,0,44),UDim2.new(.5,6,0,291),function()ctx.Request('RequestDelete',{UID=pet.UID})end,W.Color.Red);W.Disabled(del,PetMath.Protected(pet))
+-  W.Text(card,'XP '..pet.XP..' / '..PetMath.RequiredXP(pet.Level),UDim2.new(1,-24,0,24),UDim2.fromOffset(12,341),12,W.Color.Muted)
+-  return
+- end
+- W.PetPreview(card,pet or {PetId=def.PetId,Mutation='Normal',Level=1},UDim2.new(1,-24,0,156),UDim2.fromOffset(12,12),index and not entry)
+- local title=W.Heading(card,index and not entry and '???' or name(def),UDim2.new(1,-24,0,35),UDim2.fromOffset(12,170),22);title.TextXAlignment=Enum.TextXAlignment.Center
+- local rarity=Rarities[def.Rarity]
+- local r=W.Text(card,def.Rarity..(pet and (' • Level '..pet.Level) or (' • '..(Biomes[def.Biome] and Biomes[def.Biome].DisplayName or def.Biome))),UDim2.new(1,-24,0,27),UDim2.fromOffset(12,207),14);r.TextXAlignment=Enum.TextXAlignment.Center
+- W.New('Frame',{BackgroundColor3=rarity.Color,Size=UDim2.new(1,-40,0,3),Position=UDim2.fromOffset(20,239),BorderSizePixel=0},card)
+- if index then
+-  local variants={};if entry then for v in pairs(entry.Variants or {}) do table.insert(variants,v) end;table.sort(variants) end
+-  W.Text(card,entry and ('Discovered!\n'..table.concat(variants,' • ')) or 'An undiscovered companion.\nExplore its biome to find it.',UDim2.new(1,-32,0,78),UDim2.fromOffset(16,251),15)
+-  W.Icon(card,'Index',UDim2.fromOffset(45,45),UDim2.new(.5,-22,1,-60));return
+- end
+-
++ W.PetPreview(card,preview,UDim2.new(1,-24,0,156),UDim2.fromOffset(12,12),not entry)
++ local title=W.Heading(card,entry and name(def) or '???',UDim2.new(1,-24,0,35),UDim2.fromOffset(12,170),22);title.TextXAlignment=Enum.TextXAlignment.Center
++ local rarity=W.Text(card,def.Rarity..' • '..(Biomes[def.Biome] and Biomes[def.Biome].DisplayName or def.Biome),UDim2.new(1,-24,0,27),UDim2.fromOffset(12,207),14);rarity.TextXAlignment=Enum.TextXAlignment.Center
++ W.Text(card,collectionInfo(def,entry),UDim2.new(1,-32,0,112),UDim2.fromOffset(16,245),13)
+ end
+-local function petCard(ctx,grid,pet,def,entry,index)
+- local c=W.Card(grid,190);c.Name='Companion_'..(pet and pet.UID or def.PetId);c:SetAttribute('PetTypeId',def.PetId)
+- local discovered=not index or entry~=nil
+- local view=W.PetPreview(c,pet or {PetId=def.PetId,Mutation='Normal',Level=1},UDim2.new(1,-12,0,ctx.Compact and 54 or 121),UDim2.fromOffset(6,6),not discovered)
+- local chosen=index and M.SelectedIndex==def.PetId or pet and M.Selected==pet.UID
+- local button=W.New('TextButton',{Name='Select_'..(pet and pet.UID or def.PetId),Text='',Size=UDim2.fromScale(1,1),BackgroundTransparency=1,BorderSizePixel=0},c)
+- W.Bind(button,function()if index then M.SelectedIndex=def.PetId else M.Selected=pet.UID end;if ctx.Compact then M.DetailMode=true end;ctx.Refresh()end)
+- if chosen then W.Round(button,12);W.Stroke(button,W.Color.Gold,3) end
+- local l=W.Heading(c,discovered and name(def) or '???',UDim2.new(1,-14,0,ctx.Compact and 23 or 33),UDim2.fromOffset(7,ctx.Compact and 60 or 126),ctx.Compact and 12 or 16);l.TextXAlignment=Enum.TextXAlignment.Center
+- local r=W.Text(c,def.Rarity,UDim2.new(1,-12,0,ctx.Compact and 15 or 22),UDim2.fromOffset(6,ctx.Compact and 82 or 162),ctx.Compact and 10 or 12,W.Color.Muted);r.TextXAlignment=Enum.TextXAlignment.Center
+- if pet then
+-  c:SetAttribute('OwnedPetUID',pet.UID)
+-  if table.find(ctx.Data.EquippedPets,pet.UID) then W.Heading(c,'✓',UDim2.fromOffset(28,28),UDim2.fromOffset(8,4),23,W.Color.Green) end
+-  if pet.Favorite then W.Heading(c,'★',UDim2.fromOffset(28,28),UDim2.new(1,-30,0,4),21,W.Color.Gold) end
+- end
++local function petCard(ctx,grid,def,entry,eligible)
++ local c=W.Card(grid,190);c.Name='Companion_'..def.PetId;c:SetAttribute('PetTypeId',def.PetId)
++ W.PetPreview(c,{PetId=def.PetId,Mutation='Normal',Level=1},UDim2.new(1,-12,0,ctx.Compact and 54 or 121),UDim2.fromOffset(6,6),not entry)
++ local button=W.New('TextButton',{Name='Select_'..def.PetId,Text='',Size=UDim2.fromScale(1,1),BackgroundTransparency=1,BorderSizePixel=0},c)
++ W.Bind(button,function()M.SelectedIndex=def.PetId;if ctx.Compact then M.DetailMode=true end;ctx.Refresh()end)
++ if M.SelectedIndex==def.PetId then W.Round(button,12);W.Stroke(button,W.Color.Gold,3)end
++ local title=W.Heading(c,entry and name(def) or '???',UDim2.new(1,-14,0,ctx.Compact and 23 or 33),UDim2.fromOffset(7,ctx.Compact and 60 or 126),ctx.Compact and 12 or 16);title.TextXAlignment=Enum.TextXAlignment.Center
++ local rarity=W.Text(c,def.Rarity..(not eligible[def.PetId] and (entry and ' • Archived' or ' • Coming Soon') or ''),UDim2.new(1,-12,0,ctx.Compact and 15 or 22),UDim2.fromOffset(6,ctx.Compact and 82 or 162),ctx.Compact and 10 or 12,W.Color.Muted);rarity.TextXAlignment=Enum.TextXAlignment.Center
+ end
+-local function regions(ctx,index)
++local function regions(ctx)
+  local content=ctx.Content;W.List(content)
+  local narrow=ctx.Compact
+  local body=W.New('Frame',{Name='FieldGuide',Size=UDim2.new(1,-8,0,math.max(70,content.AbsoluteSize.Y-(ctx.CollectionToolsHeight or 80)-12)),BackgroundTransparency=1},content)
+- local leftWidth=index and not narrow and .16 or 0
+- local gridWidth=narrow and 1 or (index and .47 or .6)
++ local leftWidth=not narrow and .16 or 0
++ local gridWidth=narrow and 1 or .47
+  local grid=W.Scroll(body,'PetGrid',UDim2.new(gridWidth,-10,1,ctx.Compact and 0 or -54),UDim2.fromScale(leftWidth,0))
+  W.Grid(grid,ctx.Compact and 122 or 135,ctx.Compact and 100 or 190,10)
+  local details=W.New('Frame',{Name='CompanionDetails',Size=narrow and UDim2.new(1,-8,1,0) or UDim2.new(1-leftWidth-gridWidth,-8,1,0),Position=narrow and UDim2.new() or UDim2.fromScale(leftWidth+gridWidth,0),BackgroundTransparency=1},body)
+@@ -113,31 +78,33 @@
+ function M.Pets(ctx)return require(script.Parent.PetOwnershipMenus).Render(ctx)end
+ function M.Index(ctx)
+  local content=ctx.Content;local data=ctx.Data
+- ctx.CollectionToolsHeight=ctx.Compact and 46 or 58
++ ctx.CollectionToolsHeight=ctx.Compact and 76 or 58
+  local count,catalogTotal,completion=Pets.IndexProgress(data.PetIndex)
+  local top=W.New('Frame',{Name='DiscoveryProgress',Size=UDim2.new(1,-8,0,58),BackgroundTransparency=1,LayoutOrder=-1},content)
+- W.Heading(top,string.format('%d / %d discovered',count,catalogTotal),UDim2.new(.35,0,1,0),nil,ctx.Compact and 15 or 19)
++ local progress=W.Heading(top,string.format('%d / %d discovered',count,catalogTotal),UDim2.new(.35,0,1,0),nil,ctx.Compact and 11 or 19)
++ if ctx.Compact then progress.Size=UDim2.new(.35,-8,0,24) end
+  for i,r in ipairs(Rewards) do
+   local claimed=data.IndexRewards[tostring(r.Percent)];local b=W.Button(top,claimed and '✓' or r.Percent..'%',UDim2.new(.16,-6,0,44),UDim2.new(.36+(i-1)*.16,0,0,6),function()ctx.Request('ClaimIndex',{Percent=r.Percent})end)
+   W.Disabled(b,claimed or completion<r.Percent)
+  end
+- local body,grid,details=regions(ctx,true)
++ local body,grid,details=regions(ctx)
+  if not ctx.Compact then
+   local nav=W.Scroll(body,'BiomeNavigation',UDim2.new(.16,-10,1,0));W.List(nav)
+   for _,d in ipairs(Biomes.Ordered) do local b=W.Button(nav,d.DisplayName,UDim2.new(1,-5,0,44),nil,function()M.Biome=d.Id;M.IndexPage=1;M.SelectedIndex=nil;ctx.Refresh()end,M.Biome==d.Id and W.Color.Green or W.Color.Wood);b.TextSize=13 end
+  else
+   local filter=W.Button(top,'Biome',UDim2.new(.35,-8,0,44),UDim2.new(0,0,0,58),function()local i=1;for n,d in ipairs(Biomes.Ordered)do if d.Id==M.Biome then i=n end end;M.Biome=Biomes.Ordered[i%#Biomes.Ordered+1].Id;M.IndexPage=1;M.SelectedIndex=nil;ctx.Refresh()end,W.Color.Wood)
+-  filter.Text=M.Biome;top.Size=UDim2.new(1,-8,0,46);filter.Position=UDim2.new(0,0,0,0);filter.Size=UDim2.new(.35,-8,0,44);top:FindFirstChild('Label').Visible=false
++  filter.Text=M.Biome;top.Size=UDim2.new(1,-8,0,76);filter.Position=UDim2.new(0,0,0,26);filter.Size=UDim2.new(.35,-8,0,44)
+  end
+  detailBack(ctx,top)
+  if ctx.Compact and M.DetailMode then body.Size=UDim2.new(1,-8,0,math.max(70,content.AbsoluteSize.Y-58))end
++ local eligible=Catalog.Current()
+  local list={}
+  for _,d in ipairs(Pets.Ordered)do if d.Biome==M.Biome and (not d.LegacyOnly or data.PetIndex[d.PetId]) then table.insert(list,d)end end
+  table.sort(list,function(a,b)local aa,bb=Models.Resolve(a.PetId)~=nil,Models.Resolve(b.PetId)~=nil;if aa~=bb then return aa end;local ra,rb=Rarities[a.Rarity].Order,Rarities[b.Rarity].Order;return ra==rb and a.PetId<b.PetId or ra<rb end)
+  local total=math.max(1,math.ceil(#list/12));M.IndexPage=math.clamp(M.IndexPage,1,total)
+  local selected;for _,d in ipairs(list)do if d.PetId==M.SelectedIndex then selected=d end end;selected=selected or list[(M.IndexPage-1)*12+1];M.SelectedIndex=selected and selected.PetId
+- selection(ctx,details,nil,selected and data.PetIndex[selected.PetId],selected,true)
+- for i=ctx.Compact and 1 or (M.IndexPage-1)*12+1,ctx.Compact and #list or math.min(#list,M.IndexPage*12)do local d=list[i];petCard(ctx,grid,nil,d,data.PetIndex[d.PetId],true)end
++ selection(ctx,details,selected and data.PetIndex[selected.PetId],selected)
++ for i=ctx.Compact and 1 or (M.IndexPage-1)*12+1,ctx.Compact and #list or math.min(#list,M.IndexPage*12)do local d=list[i];petCard(ctx,grid,d,data.PetIndex[d.PetId],eligible)end
+  local foot=W.New('Frame',{Size=UDim2.new(ctx.Narrow and 1 or .47,-10,0,46),Position=UDim2.new(ctx.Narrow and 0 or .16,0,1,-46),BackgroundTransparency=1},body)
+  foot.Visible=not ctx.Compact
+  pager(ctx,foot,M.IndexPage,total,function(v)M.IndexPage=v end)
+--- before/src/StarterGui/AnimalKingdomUI/PetOwnershipMenus.lua
++++ src/StarterGui/AnimalKingdomUI/PetOwnershipMenus.lua
+@@ -1,52 +1,35 @@
+ local RS=game:GetService('ReplicatedStorage')
+ local W=require(script.Parent.GameplayWidgets)
+ local Cards=require(script.Parent.OwnedPetCards)
+-local Definitions=require(RS.Shared.Gameplay.Definitions.PetDefinitions)
+-local Rarities=require(RS.Shared.Gameplay.Definitions.RarityDefinitions)
+-local Locations=require(RS.Shared.Gameplay.PetLocations)
+-local Format=require(RS.Shared.Gameplay.PetNumberFormat)
+-local M={Filter='Inventory',Sort='Rarity',Rarity='All',Search='',Page=1}
+-local sorts={'Rarity','Weight','Coins/sec','Sell Value','Newest','Name'}
+-local filters={'Inventory','Held','Sanctuary','Garden','All','Favorite','Locked'}
+-local function cycle(list,value)return list[(table.find(list,value) or 1)%#list+1]end
++local M={Sort='Highest',Page=1}
+ function M.Back()return false end
+ function M.Render(ctx)
+  local data=ctx.Data;W.List(ctx.Content)
+- local top=W.New('Frame',{Name='InventoryTools',Size=UDim2.new(1,-8,0,ctx.Narrow and 100 or ctx.Short and 44 or 78),BackgroundTransparency=1},ctx.Content)
+- if not ctx.Narrow and not ctx.Short then
+-  W.Heading(top,'Inventory '..Locations.Count(data,'Inventory')..' / '..data.PetStorageCapacity..'   •   Held '..#data.EquippedPets..' / 5',UDim2.new(1,-8,0,25),nil,16)
+- end
+- local y=(ctx.Narrow or ctx.Short) and 0 or 31
+- local search=W.SearchBar(top,M.Search,function(v)M.Search=v;M.Page=1;ctx.Refresh()end)
+- search.Position=UDim2.fromOffset(0,y);search.Size=UDim2.new(ctx.Narrow and 1 or .46,-6,0,44)
+- for i,spec in ipairs({{M.Filter,filters,'Filter'},{M.Sort,sorts,'Sort'},{M.Rarity=='All' and 'All rarities' or M.Rarity,{'All',table.unpack(Rarities.Ordered)},'Rarity'}})do
+-  local b=W.Button(top,spec[1],UDim2.new(ctx.Narrow and 1/3 or .18,-6,0,44),UDim2.new(ctx.Narrow and (i-1)/3 or .46+(i-1)*.18,0,0,ctx.Narrow and 52 or y),function()M[spec[3]]=cycle(spec[2],M[spec[3]]);M.Page=1;ctx.Refresh()end,W.Color.Wood);b.Name='Pet'..spec[3];b.TextSize=12
+- end
+- local selling=W.New('Frame',{Name='PetSelling',Size=UDim2.new(1,-8,0,44),BackgroundTransparency=1},ctx.Content)
+- local active=Locations.Find(data,data.ActiveHeldPetUID)
+- local held=W.Button(selling,'SELL HELD PET',UDim2.new(.5,-5,1,0),nil,function()ctx.Request('SellPets',{Mode='Held',UID=data.ActiveHeldPetUID})end,W.Color.Red)
+- held.Name='SellHeldPet';held.TextSize=ctx.Narrow and 12 or 14;W.Disabled(held,not active or active.Location~='Held')
+- local all=W.Button(selling,'SELL ALL',UDim2.new(.5,-5,1,0),UDim2.fromScale(.5,0),function()ctx.Request('SellPets',{Mode='Inventory',UID=''})end,W.Color.Red)
+- all.Name='SellAllPets';all.TextSize=ctx.Narrow and 12 or 14;W.Disabled(all,Locations.Count(data,'Inventory')==0)
+- local filtered={}
+- for _,pet in ipairs(data.Pets)do
+-  local def=Definitions[pet.PetId]
+-  local status=M.Filter=='All' or pet.Location==M.Filter or M.Filter=='Favorite' and pet.Favorite or M.Filter=='Locked' and pet.Locked
+-  if status and (M.Rarity=='All' or def and def.Rarity==M.Rarity) and (M.Search=='' or ((def and def.DisplayName or pet.PetId)..' '..pet.Mutation):lower():find(M.Search:lower(),1,true)) then table.insert(filtered,pet)end
+- end
+- local function value(p)
+-  local d=Definitions[p.PetId]
+-  if M.Sort=='Weight'then return p.Weight or 0 elseif M.Sort=='Coins/sec'then return p.CoinsPerSecond or 0 elseif M.Sort=='Sell Value'then return p.SellValue or 0 elseif M.Sort=='Newest'then return p.AcquiredAt or 0 elseif M.Sort=='Name'then return d and d.DisplayName or p.PetId end
+-  return d and Rarities[d.Rarity].Order or 0
+- end
+- table.sort(filtered,function(a,b)local x,y=value(a),value(b);if x==y then return a.UID<b.UID end;if M.Sort=='Name'then return x<y end;return x>y end)
+- if #filtered==0 then W.Empty(ctx.Content,'No pets here',M.Filter=='Inventory' and 'New companions fill your five Held slots first. Click a Held slot to hold its pet.' or 'Try another location, rarity or search.');return end
++ local top=W.New('Frame',{Name='InventoryTools',Size=UDim2.new(1,-8,0,76),BackgroundTransparency=1},ctx.Content)
++ W.Heading(top,'ALL PETS • '..#data.Pets,UDim2.new(1,0,0,24),nil,16)
++ local all=W.Button(top,'SELL ALL',UDim2.new(.45,-4,0,44),UDim2.fromOffset(0,30),function()ctx.Request('SellPets',{Mode='Inventory',UID=''})end,W.Color.Red);all.Name='SellAllPets';all.TextSize=14
++ local sort=W.Button(top,'SORT: '..M.Sort:upper(),UDim2.new(.55,-4,0,44),UDim2.new(.45,4,0,30),function()M.Sort=M.Sort=='Highest' and 'Lowest' or 'Highest';M.Page=1;ctx.Refresh()end,W.Color.Wood);sort.Name='PetSort';sort.TextSize=13
++ local filtered=table.clone(data.Pets)
++ table.sort(filtered,function(a,b)
++  local x,y=a.CoinsPerSecond or 0,b.CoinsPerSecond or 0
++  if x==y then return a.UID<b.UID end
++  if M.Sort=='Lowest' then return x<y end
++  return x>y
++ end)
++ if #filtered==0 then W.Empty(ctx.Content,'Your companions','Search a Meadow tree to find your first pet.');return end
+  local pages=math.max(1,math.ceil(#filtered/18));M.Page=math.clamp(M.Page,1,pages)
+  local wide=ctx.Short and not ctx.Narrow
+- local cardHeight=wide and 96 or 168
++ local cardHeight=wide and 172 or 246
+  local grid=W.New('Frame',{Name='OwnedPetGrid',Size=UDim2.new(1,-8,0,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},ctx.Content);W.Grid(grid,wide and 260 or ctx.Narrow and 130 or 145,cardHeight,10)
+  for i=(M.Page-1)*18+1,math.min(#filtered,M.Page*18)do
+-  local pet=filtered[i];local b=Cards.Card(grid,pet,'',UDim2.fromOffset(150,cardHeight),nil,function()ctx.Request('Equip',{UID=pet.UID,Equipped=true})end,pet.UID==data.ActiveHeldPetUID,wide and 'wide' or false);b.Name='Select_'..pet.UID;b.LayoutOrder=i
++  local pet=filtered[i]
++  local frame=W.New('Frame',{Name='Owned_'..pet.UID,Size=UDim2.fromOffset(150,cardHeight),BackgroundTransparency=1,LayoutOrder=i},grid)
++  local movable=pet.Location=='Inventory' or pet.Location=='Held'
++  local b=Cards.Card(frame,pet,'',UDim2.new(1,0,1,-48),nil,function()if movable then ctx.Request('Equip',{UID=pet.UID,Equipped=true})end end,pet.UID==data.ActiveHeldPetUID,wide and 'wide' or false);b.Name='Select_'..pet.UID
++  b.Selectable=movable
++  local location=W.Text(frame,pet.Location,UDim2.new(1,-8,0,20),UDim2.new(0,4,1,-70),11,W.Color.Muted);location.Name='Location';location.TextXAlignment=Enum.TextXAlignment.Center
++  local lock=W.Button(frame,pet.Locked and 'UNLOCK' or 'LOCK',UDim2.new(pet.Location=='Held' and .5 or 1,-2,0,44),UDim2.new(0,0,1,-44),function()ctx.Request('Lock',{UID=pet.UID,Value=not pet.Locked})end,W.Color.Wood);lock.Name='Lock_'..pet.UID;lock.TextSize=11
++  if pet.Location=='Held' then local store=W.Button(frame,'STORE',UDim2.new(.5,-2,0,44),UDim2.new(.5,2,1,-44),function()ctx.Request('MovePet',{UID=pet.UID,Location='Inventory',Slot=0})end);store.Name='Store_'..pet.UID;store.TextSize=11 end
+  end
+  local pager=W.New('Frame',{Size=UDim2.new(1,-8,0,46),BackgroundTransparency=1},ctx.Content)
+  local prev=W.Button(pager,'‹ Previous',UDim2.new(.32,0,1,0),nil,function()M.Page-=1;ctx.Content.CanvasPosition=Vector2.zero;ctx.Refresh()end);W.Disabled(prev,M.Page<=1)
+--- before/src/StarterGui/AnimalKingdomUI/PlotMenu.lua
++++ src/StarterGui/AnimalKingdomUI/PlotMenu.lua
+@@ -2,7 +2,11 @@
+ local Players=game:GetService('Players')
+ local W=require(script.Parent.GameplayWidgets)
+ local Catalog=require(RS.Shared.Gameplay.Definitions.ShopDefinitions)
+-local M={Category='All'}
++local M={Category='All',Page='Shop'}
++local function available(def)
++ local assets=RS:FindFirstChild('Assets');local category=assets and assets:FindFirstChild(def.Category);local model=category and category:FindFirstChild(def.ModelName)
++ return model and not model:GetAttribute('Placeholder') and (model:IsA('BasePart') or model:FindFirstChildWhichIsA('BasePart',true))
++end
+ local function place(ctx,id)
+  local player=Players.LocalPlayer;local root=player.Character and player.Character:FindFirstChild('HumanoidRootPart');local plot
+  for _,name in ipairs({'PlayerPlots','AnimalKingdomPlayerPlots','Plots','AnimalKingdomFuturePlayerPlots'})do
+@@ -15,13 +19,32 @@
+  local point=cf:PointToObjectSpace(root.Position)
+  ctx.Request('Place',{Id=id,Offset=Vector3.new(math.round(point.X),0,math.round(point.Z)),Rotation=0})
+ end
++function M.Decorations(ctx)
++ local data=ctx.Data
++ W.Text(ctx.Content,'Stand on your plot where you want to place a decoration. Owned copies are reusable.',UDim2.new(1,-8,0,48),nil,14,W.Color.Muted)
++ local placed={};for _,entry in ipairs(data.PlotProgression.Placements)do placed[entry.ItemId]=(placed[entry.ItemId] or 0)+1 end
++ local any=false
++ for id,d in pairs(Catalog)do
++  local owned=data.Items[id] or 0
++  if owned>0 and not d.UpgradeId then
++   any=true
++   local b=W.Button(ctx.Content,d.DisplayName..' • '..(placed[id] or 0)..' / '..owned..' placed • PLACE HERE',UDim2.new(1,-8,0,46),nil,function()place(ctx,id)end);b.Name='Place_'..id;W.Disabled(b,(placed[id] or 0)>=owned or not available(d))
++  end
++ end
++ if not any then W.Empty(ctx.Content,'Your decorations','Buy furniture or flowers in Shop.')end
++ for _,e in ipairs(data.PlotProgression.Placements)do
++  local b=W.Button(ctx.Content,'REMOVE '..(Catalog[e.ItemId] and Catalog[e.ItemId].DisplayName or 'decoration'),UDim2.new(1,-8,0,44),nil,function()ctx.Request('RemovePlacement',{UID=e.UID})end,W.Color.Wood);b.Name='Remove_'..e.UID
++ end
++end
+ function M.Shop(ctx)
+  W.List(ctx.Content)
+- if not ctx.Short and ctx.Content.AbsoluteSize.Y>=370 then W.Text(ctx.Content,'Make a little place of your own. Purchased decorations can be placed from Plot.',UDim2.new(1,-8,0,30),nil,15,W.Color.Muted)end
++ local tabs=W.New('Frame',{Name='ShopPages',Size=UDim2.new(1,-8,0,46),BackgroundTransparency=1},ctx.Content)
++ for i,page in ipairs({'Shop','My Decorations'})do local b=W.Button(tabs,page:upper(),UDim2.new(.5,-6,1,0),UDim2.fromScale((i-1)*.5,0),function()M.Page=page;ctx.Refresh()end,M.Page==page and W.Color.Green or W.Color.Wood);b.Name=page=='Shop' and 'Shop' or 'MyDecorations' end
++ if M.Page=='My Decorations' then M.Decorations(ctx);return end
+  local bar=W.New('Frame',{Size=UDim2.new(1,-8,0,46),BackgroundTransparency=1},ctx.Content)
+  for i,category in ipairs({'All','Furniture','Decorations'})do W.Button(bar,category,UDim2.new(1/3,-8,1,0),UDim2.fromScale((i-1)/3,0),function()M.Category=category;ctx.Refresh()end,M.Category==category and W.Color.Green or W.Color.Wood)end
+  local grid=W.New('Frame',{Size=UDim2.new(1,-8,0,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},ctx.Content);if ctx.Short then W.List(grid)else W.Grid(grid,math.min(400,math.max(260,(ctx.Content.AbsoluteSize.X-40)/2)),274,14)end
+- local ids={};for id,d in pairs(Catalog)do if not d.Season and (M.Category=='All' or M.Category==d.Category)then table.insert(ids,id)end end;table.sort(ids)
++ local ids={};for id,d in pairs(Catalog)do if not d.Season and available(d) and (M.Category=='All' or M.Category==d.Category)then table.insert(ids,id)end end;table.sort(ids)
+  for _,id in ipairs(ids)do
+   local d=Catalog[id];local card=W.Card(grid,ctx.Short and 100 or 274);card.Name='Shop_'..id
+   local folder=RS:FindFirstChild('Assets');folder=folder and folder:FindFirstChild(d.Category);local model=folder and folder:FindFirstChild(d.ModelName)
+@@ -41,21 +64,4 @@
+   local b=W.Button(card,'Buy • '..W.Format(d.Cost)..' '..W.Theme.CurrencyName(d.Currency),UDim2.new(1,-28,0,46),UDim2.fromOffset(14,216),function()ctx.Request('ShopBuy',{Id=id})end);b.Name='Buy_'..id;W.Disabled(b,(ctx.Data.Items[id] or 0)>=d.MaxOwned)
+  end
+ end
+-function M.Render(ctx)
+- local data=ctx.Data;W.List(ctx.Content)
+- local top=W.Card(ctx.Content,192)
+- W.Icon(top,'Plot',UDim2.fromOffset(90,90),UDim2.fromOffset(14,14))
+- W.Heading(top,'Your sanctuary • Level '..data.PlotProgression.Level,UDim2.new(1,-127,0,46),UDim2.fromOffset(114,17),24)
+- W.Text(top,W.Format(data.UncollectedSanctuaryCoins)..' Forest Coins ready to collect',UDim2.new(1,-127,0,45),UDim2.fromOffset(114,62),16,W.Color.Muted)
+- W.Button(top,'Collect income',UDim2.new(.5,-22,0,46),UDim2.fromOffset(14,130),function()ctx.Request('CollectIdle',{})end)
+- W.Button(top,data.PlotProgression.Level>=10 and 'Maximum level' or ('Upgrade • '..W.Format(math.floor(2500*2^data.PlotProgression.Level))..' Coins'),UDim2.new(.5,-22,0,46),UDim2.new(.5,8,0,130),function()ctx.Request('PlotUpgrade',{})end,W.Color.Wood)
+- W.Button(ctx.Content,'Visit your Sanctuary',UDim2.new(1,-8,0,46),nil,function()ctx.PlotTravel()end)
+- W.Button(ctx.Content,'Visitors • '..(data.PlotProgression.VisitorsAllowed and 'Welcome' or 'Private'),UDim2.new(1,-8,0,46),nil,function()ctx.Request('PlotVisitors',{Allowed=not data.PlotProgression.VisitorsAllowed})end,W.Color.Wood)
+- W.Button(ctx.Content,'Visit the decoration shop',UDim2.new(1,-8,0,46),nil,function()ctx.Open('Shop')end)
+- W.Heading(ctx.Content,'Your decorations',UDim2.new(1,-8,0,36),nil,22)
+- local any=false
+- for id,d in pairs(Catalog)do if (data.Items[id] or 0)>0 and not d.UpgradeId then any=true;W.Button(ctx.Content,d.DisplayName..' • Place here',UDim2.new(1,-8,0,46),nil,function()place(ctx,id)end)end end
+- if not any then W.Empty(ctx.Content,'A space to make your own','Find furniture and flowers in the Shop.')end
+- for _,e in ipairs(data.PlotProgression.Placements)do W.Button(ctx.Content,'Remove '..(Catalog[e.ItemId] and Catalog[e.ItemId].DisplayName or 'decoration'),UDim2.new(1,-8,0,44),nil,function()ctx.Request('RemovePlacement',{UID=e.UID})end,W.Color.Wood)end
+-end
+ return M
+--- before/src/StarterGui/AnimalKingdomUI/ProgressionMenus.lua
++++ src/StarterGui/AnimalKingdomUI/ProgressionMenus.lua
+@@ -7,7 +7,12 @@
+ local Images=require(script.Parent.BiomeImages)
+ local M={Period='Daily'}
+ function M.Biomes(ctx)
++ local current=game.Players.LocalPlayer:GetAttribute('CurrentBiome')
+  local content=ctx.Content;W.List(content)
++ local destinations=W.New('Frame',{Name='SpecialDestinations',Size=UDim2.new(1,-8,0,44),BackgroundTransparency=1},content)
++ local plot=W.Button(destinations,'Your Sanctuary',UDim2.new(.5,-5,1,0),nil,ctx.PlotTravel);plot.Name='Travel_Plot'
++ local garden=W.Button(destinations,'Your Garden',UDim2.new(.5,-5,1,0),UDim2.fromScale(.5,0),function()ctx.GardenTravel('VisitGarden')end);garden.Name='Travel_Garden'
++
+  if ctx.Short then
+   for _,d in ipairs(Biomes.Ordered)do
+    local owned=ctx.Data.UnlockedBiomes[d.Id];local card=W.Card(content,136);card.Name='Biome_'..d.Id;card.LayoutOrder=d.Order
+@@ -16,12 +21,12 @@
+    W.Heading(card,d.DisplayName,UDim2.new(.47,-16,0,30),UDim2.new(.24,0,0,9),20)
+    W.Text(card,d.Description or ('Explore '..d.DisplayName..' and discover its companions.'),UDim2.new(.47,-16,0,56),UDim2.new(.24,0,0,43),13,W.Color.Muted)
+    local previous=d.PreviousBiome and Biomes[d.PreviousBiome]
+-   W.Text(card,owned and '✓ Unlocked' or (W.Format(d.Cost)..' Forest Coins'..(previous and '\nRequires '..previous.DisplayName or '')),UDim2.new(.29,-16,0,52),UDim2.new(.71,0,0,12),12,owned and W.Color.GreenDark or W.Color.Ink)
+-   local b=W.Button(card,owned and 'Travel ›' or 'Unlock',UDim2.new(.29,-16,0,44),UDim2.new(.71,0,0,78),function()if owned then ctx.Travel(d.DisplayName)else ctx.Request('UnlockBiome',{Id=d.Id})end end,owned and W.Color.Green or W.Color.Wood);b.Name=(owned and 'Travel_' or 'Unlock_')..d.Id
++   W.Text(card,owned and (current==d.Id and 'YOU ARE HERE' or '✓ Unlocked') or (W.Format(d.Cost)..' Forest Coins'..(previous and '\nRequires '..previous.DisplayName or '')),UDim2.new(.29,-16,0,52),UDim2.new(.71,0,0,12),12,owned and W.Color.GreenDark or W.Color.Ink)
++   local b=W.Button(card,owned and 'Travel ›' or 'Unlock',UDim2.new(.29,-16,0,44),UDim2.new(.71,0,0,78),function()if owned then ctx.Travel(d.DisplayName)else ctx.Request('UnlockBiome',{Id=d.Id})end end,owned and W.Color.Green or W.Color.Wood);b.Name=(owned and 'Travel_' or 'Unlock_')..d.Id;W.Disabled(b,not owned and ((d.PreviousBiome and not ctx.Data.UnlockedBiomes[d.PreviousBiome]) or (ctx.Data.Currencies.Coins or 0)<d.Cost))
+   end
+   return
+  end
+- local intro=W.Text(content,'Explore new biomes, meet companions, and grow your kingdom.',UDim2.new(1,-12,0,32),nil,16,W.Color.Muted);intro.TextXAlignment=Enum.TextXAlignment.Center
++ local intro=W.Text(content,'Unlock regions and choose where to travel. Future collections arrive as companions become available.',UDim2.new(1,-12,0,32),nil,16,W.Color.Muted);intro.TextXAlignment=Enum.TextXAlignment.Center
+  local cardHeight=math.clamp(content.AbsoluteSize.Y-60,280,352);local imageHeight=cardHeight-178
+  local grid=W.New('Frame',{Name='BiomeCards',Size=UDim2.new(1,-8,0,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},content);W.Grid(grid,175,cardHeight,12)
+  for _,d in ipairs(Biomes.Ordered) do
+@@ -35,36 +40,41 @@
+   local title=W.Heading(ribbon,d.DisplayName,UDim2.new(1,-10,1,0),UDim2.fromOffset(5,0),18);title.TextXAlignment=Enum.TextXAlignment.Center
+   local description=W.Text(card,d.Description or ('Explore '..d.DisplayName..' and discover its companions.'),UDim2.new(1,-24,0,49),UDim2.fromOffset(12,imageHeight+33),13,W.Color.Muted);description.TextXAlignment=Enum.TextXAlignment.Center
+   local previous=d.PreviousBiome and Biomes[d.PreviousBiome]
+-  local req=owned and '✓ Unlocked' or (W.Format(d.Cost)..' Forest Coins\n'..(previous and 'Requires '..previous.DisplayName or ''))
++  local req=owned and (current==d.Id and 'YOU ARE HERE' or '✓ Unlocked') or (W.Format(d.Cost)..' Forest Coins\n'..(previous and 'Requires '..previous.DisplayName or ''))
+   local status=W.Text(card,req,UDim2.new(1,-20,0,37),UDim2.fromOffset(10,cardHeight-92),12,owned and W.Color.GreenDark or W.Color.Ink);status.TextXAlignment=Enum.TextXAlignment.Center
+   local b=W.Button(card,owned and 'Travel ›' or 'Unlock',UDim2.new(1,-22,0,44),UDim2.fromOffset(11,cardHeight-56),function()
+    if owned then ctx.Travel(d.DisplayName) else ctx.Request('UnlockBiome',{Id=d.Id})end
+-  end,owned and W.Color.Green or W.Color.Wood);b.Name=(owned and 'Travel_' or 'Unlock_')..d.Id
++  end,owned and W.Color.Green or W.Color.Wood);b.Name=(owned and 'Travel_' or 'Unlock_')..d.Id;W.Disabled(b,not owned and ((d.PreviousBiome and not ctx.Data.UnlockedBiomes[d.PreviousBiome]) or (ctx.Data.Currencies.Coins or 0)<d.Cost))
+  end
+  local footer=W.Text(content,'A brighter kingdom grows together.',UDim2.new(1,-8,0,30),nil,15,W.Color.Muted);footer.TextXAlignment=Enum.TextXAlignment.Center
+ end
++local upgradeDescriptions={
++ PetStorage='Inventory capacity; Garden pets reserve their return space. Existing larger capacity is preserved.',
++ Luck='+15% per level to supported luck rolls, weight tails and Prismatic chance. Meadow/Forest species weights stay fixed.',
++ HatchSpeed='+15% hatch speed per level. Shorter reveal and server hatch cooldown; tree shake time stays the same.',
++ WalkSpeed='+6% base movement per level, through the existing movement modifiers.',
++ Coins='+15% per level on applicable coin loot. Excludes Sanctuary income, sales and fixed rewards.',
++ FriendshipTokens='+15% per level on applicable token loot. Fixed Index and Challenge rewards stay the same.',
++ GatheringPower='+20% per level to gathering power from all five Held slots. Improves resource rewards, not tree shake speed.',
++ ResourceRewards='+15% per level on secondary resource loot. Does not grant extra primary tree pets.',
++}
+ function M.Upgrades(ctx)
+- if ctx.Short then W.List(ctx.Content)else W.Grid(ctx.Content,260,228,14)end
+- local ids={};for id,def in pairs(Upgrades)do if not def.Retired then table.insert(ids,id)end end;table.sort(ids)
+- for i,id in ipairs(ids)do
+-  local d=Upgrades[id];local level=ctx.Data.Upgrades[id] or 0;local max=level>=d.MaxLevel
+-  local card=W.Card(ctx.Content,ctx.Short and 136 or 228);card.LayoutOrder=i
+-  if ctx.Short then
+-   W.Icon(card,id=='Coins' and 'Coins' or id=='FriendshipTokens' and id or id=='PetStorage' and 'Pets' or id=='Luck' and 'Leaf' or 'Upgrades',UDim2.fromOffset(64,64),UDim2.fromOffset(12,14))
+-   W.Heading(card,d.DisplayName,UDim2.new(.65,-96,0,33),UDim2.fromOffset(86,10),19)
+-   local benefit=(id=='PetStorage' or id=='EquippedSlots')and('+'..d.Effect..' capacity')or('+'..math.floor(d.Effect*100)..'% base benefit')
+-   W.Text(card,'Level '..level..' / '..d.MaxLevel..'\n'..(max and 'Fully upgraded' or 'Next: '..benefit),UDim2.new(.65,-96,0,58),UDim2.fromOffset(86,46),14,W.Color.Muted)
+-   W.Text(card,max and 'Complete' or (W.Format(d.Costs[level+1])..' '..W.Theme.CurrencyName(d.Currency)),UDim2.new(.35,-20,0,44),UDim2.new(.65,0,0,15),13,W.Color.Muted)
+-   local b=W.Button(card,max and 'Complete ✓'or 'Upgrade',UDim2.new(.35,-20,0,44),UDim2.new(.65,0,0,78),function()ctx.Request('Upgrade',{Id=id})end);b.Name='Upgrade_'..id;W.Disabled(b,max)
+-   continue
+-  end
+-  W.Icon(card,id=='Coins' and 'Coins' or id=='FriendshipTokens' and id or id=='PetStorage' and 'Pets' or id=='Luck' and 'Leaf' or 'Upgrades',UDim2.fromOffset(61,61),UDim2.fromOffset(12,12))
+-  W.Heading(card,d.DisplayName,UDim2.new(1,-92,0,48),UDim2.fromOffset(83,14),20)
+-  W.Text(card,'Level '..level..' / '..d.MaxLevel,UDim2.new(1,-92,0,25),UDim2.fromOffset(83,62),13,W.Color.Muted)
+-  local effect=(id=='PetStorage' or id=='EquippedSlots') and ('+'..d.Effect..' capacity') or ('+'..math.floor(d.Effect*100)..'% base benefit')
+-  W.Text(card,max and 'You have reached the maximum level.' or ('Next level: '..effect),UDim2.new(1,-28,0,41),UDim2.fromOffset(14,101),15)
+-  W.Text(card,max and 'Complete' or (W.Format(d.Costs[level+1])..' '..W.Theme.CurrencyName(d.Currency)),UDim2.new(1,-28,0,26),UDim2.fromOffset(14,146),14,W.Color.Muted)
+-  local b=W.Button(card,max and 'Fully upgraded ✓' or 'Upgrade',UDim2.new(1,-28,0,42),UDim2.fromOffset(14,177),function()ctx.Request('Upgrade',{Id=id})end);b.Name='Upgrade_'..id;W.Disabled(b,max)
++ if ctx.Short then W.List(ctx.Content)else W.Grid(ctx.Content,270,304,14)end
++ local function upgradeCard(id,title,level,max,description,price,action)
++  local c=W.Card(ctx.Content,ctx.Short and 260 or 304);c.Name=id;c.LayoutOrder=id=='DecorationCapacity' and 0 or 1
++  W.Heading(c,title,UDim2.new(1,-28,0,48),UDim2.fromOffset(14,10),20)
++  W.Text(c,'Level '..level..' / '..max,UDim2.new(1,-28,0,24),UDim2.fromOffset(14,59),13,W.Color.Muted)
++  W.Text(c,description,UDim2.new(1,-28,0,ctx.Short and 74 or 110),UDim2.fromOffset(14,86),13)
++  W.Text(c,price,UDim2.new(1,-28,0,24),UDim2.new(0,14,1,-82),13,W.Color.Muted)
++  local button=W.Button(c,level>=max and 'MAXIMUM' or 'UPGRADE',UDim2.new(1,-28,0,44),UDim2.new(0,14,1,-52),action);button.Name='Upgrade_'..id;W.Disabled(button,level>=max)
++ end
++ local level=ctx.Data.PlotProgression.Level;local limit=25+level*5
++ upgradeCard('DecorationCapacity','Decoration Capacity',level,10,limit..' maximum placed decorations.'..(level<10 and (' Next: '..(limit+5)..'. Purchase while at your plot.') or ''),level>=10 and 'Complete' or W.Format(math.floor(2500*2^level))..' Forest Coins',function()ctx.Request('PlotUpgrade',{})end)
++ local ids={};for id,d in pairs(Upgrades)do if not d.Retired then table.insert(ids,id)end end;table.sort(ids)
++ for _,id in ipairs(ids)do
++  local d=Upgrades[id];local current=ctx.Data.Upgrades[id] or 0;local description=upgradeDescriptions[id]
++  if id=='PetStorage' then description='Capacity '..ctx.Data.PetStorageCapacity..(current<d.MaxLevel and (' → '..math.max(ctx.Data.PetStorageCapacity,50+25*(current+1))) or '')..'. '..description end
++  upgradeCard(id,d.DisplayName,current,d.MaxLevel,description,current>=d.MaxLevel and 'Complete' or W.Format(d.Costs[current+1])..' '..W.Theme.CurrencyName(d.Currency),function()ctx.Request('Upgrade',{Id=id})end)
+  end
+ end
+ function M.Challenges(ctx)
+@@ -86,27 +96,12 @@
+ end
+ function M.Settings(ctx)
+  W.List(ctx.Content)
+- local utilities=W.New('Frame',{Name='ProfileActions',Size=UDim2.new(1,-8,0,46),BackgroundTransparency=1},ctx.Content)
+- for i,item in ipairs({{'Your profile',ctx.ShowProfile},{'Notifications',ctx.ShowUpdates},{'Invite friends',ctx.InviteFriends}})do W.Button(utilities,item[1],UDim2.new(1/3,-8,0,44),UDim2.fromScale((i-1)/3,0),item[2],W.Color.Wood)end
+- for _,e in ipairs({{'ReducedMotion','Reduced effects','Use softer reveals and reduced motion.'},{'ShowOtherPets','Other players’ companions','Show companions belonging to nearby players.'}})do
+-  local value=ctx.Data.Settings[e[1]];local c=W.Card(ctx.Content,100)
+-  W.Heading(c,e[2],UDim2.new(.7,-28,0,30),UDim2.fromOffset(16,14),20)
+-  W.Text(c,e[3],UDim2.new(.7,-28,0,36),UDim2.fromOffset(16,49),13,W.Color.Muted)
++ for _,e in ipairs({{'ReducedMotion','Reduced Motion','Use softer reveals and reduced motion.'},{'ShowOtherPets','Show Other Players’ Held Pets','Show the pet held above other players. Garden and Sanctuary displays stay visible.'}})do
++  local value=ctx.Data.Settings[e[1]];local c=W.Card(ctx.Content,142)
++  W.Heading(c,e[2],UDim2.new(.7,-28,0,52),UDim2.fromOffset(16,14),20)
++  W.Text(c,e[3],UDim2.new(.7,-28,0,58),UDim2.fromOffset(16,70),13,W.Color.Muted)
+   W.Button(c,value and 'ON' or 'OFF',UDim2.new(.26,-8,0,44),UDim2.new(.73,0,.5,-22),function()ctx.Request('Setting',{Id=e[1],Value=not value})end,value and W.Color.Green or W.Color.Wood)
+  end
+- W.Heading(ctx.Content,'Collection preferences',UDim2.new(1,-8,0,36),nil,22)
+- W.Text(ctx.Content,'Every new companion is kept. The first five fill Held Pets; extras go to Inventory. Use Sell All to review and sell eligible Inventory pets. Your earlier auto-delete preferences remain saved, but no longer discard new companions.',UDim2.new(1,-8,0,90),nil,14,W.Color.Muted)
+-end
+-function M.Teleport(ctx)
+- W.List(ctx.Content)
+- W.Text(ctx.Content,'Choose your next stop.',UDim2.new(1,-8,0,30),nil,16,W.Color.Muted)
+- local destinations={{Name='Your Sanctuary',Icon='Plot',Text='Your own plot and displayed companions.',Go=ctx.PlotTravel},{Name='Your Garden',Icon='Garden',Text='Crops, expeditions, and a quiet corner of your kingdom.',Go=function()ctx.GardenTravel('VisitGarden')end}}
+- for _,d in ipairs(Biomes.Ordered)do if ctx.Data.UnlockedBiomes[d.Id]then table.insert(destinations,{Name=d.DisplayName,Icon='Biomes',Text='Explore '..d.DisplayName..'.',Go=function()ctx.Travel(d.DisplayName)end})end end
+- for _,d in ipairs(destinations)do
+-  local card=W.Card(ctx.Content,96);W.Icon(card,d.Icon,UDim2.fromOffset(62,62),UDim2.fromOffset(12,14))
+-  W.Heading(card,d.Name,UDim2.new(1,-220,0,30),UDim2.fromOffset(82,14),19)
+-  W.Text(card,d.Text,UDim2.new(1,-220,0,37),UDim2.fromOffset(82,47),12,W.Color.Muted)
+-  W.Button(card,'Travel ›',UDim2.fromOffset(110,46),UDim2.new(1,-126,.5,-23),d.Go)
+- end
++
+ end
+ return M
+--- before/src/StarterPlayer/StarterPlayerScripts/SanctuaryInteraction.client.lua
++++ src/StarterPlayer/StarterPlayerScripts/SanctuaryInteraction.client.lua
+@@ -17,10 +17,10 @@
+  prompts[prompt]=prompt.Triggered:Connect(function()
+   if not data or prompt:GetAttribute('OwnerUserId')~=player.UserId then return end
+   local held=Locations.Find(data,data.ActiveHeldPetUID)
+-  if not held or held.Location~='Held' then return end
++  if held and held.Location~='Held' then held=nil end
+   local slotId=prompt:GetAttribute('SlotId')
+   local displayed=Locations.At(data,'Sanctuary',slotId)
+-  Bridge.Request('SwapSanctuary',{HeldSlot=held.LocationSlot,SanctuarySlot=slotId,HeldUID=held.UID,SanctuaryUID=displayed and displayed.UID or ''})
++  Bridge.Request('SwapSanctuary',{HeldSlot=held and held.LocationSlot or 0,SanctuarySlot=slotId,HeldUID=held and held.UID or '',SanctuaryUID=displayed and displayed.UID or ''})
+  end)
+ end
+ local function remove(prompt)
+@@ -38,7 +38,7 @@
+  elapsed+=dt;if elapsed<.1 then return end;elapsed=0
+  local root=player.Character and player.Character:FindFirstChild('HumanoidRootPart')
+  local held=data and Locations.Find(data,data.ActiveHeldPetUID)
+- local allowed=root and held and held.Location=='Held' and screen:GetAttribute('ActiveMenu')==''
++ local allowed=root and data and screen:GetAttribute('ActiveMenu')==''
+   and not screen:GetAttribute('RewardRevealActive') and not screen:GetAttribute('ModalActive')
+  local nearest,distance=nil,9
+  if allowed then
+@@ -46,13 +46,13 @@
+    local anchor=prompt.Parent
+    if anchor and anchor:IsA('BasePart') and prompt:GetAttribute('OwnerUserId')==player.UserId then
+     local d=(root.Position-anchor.Position).Magnitude
+-    if d<distance then nearest,distance=prompt,d end
++    if d<distance and (held or Locations.At(data,'Sanctuary',prompt:GetAttribute('SlotId'))) then nearest,distance=prompt,d end
+    end
+   end
+  end
+  for prompt in pairs(prompts)do
+   prompt.Enabled=prompt==nearest
+-  if prompt==nearest then prompt.ActionText=Locations.At(data,'Sanctuary',prompt:GetAttribute('SlotId')) and 'SWAP' or 'PLACE' end
++  if prompt==nearest then prompt.ActionText=Locations.At(data,'Sanctuary',prompt:GetAttribute('SlotId')) and (held and 'SWAP' or 'PICK UP') or 'PLACE' end
+  end
+ end)
+ script.Destroying:Once(function()
+--- before/src/StarterGui/AnimalKingdomUI/Components.lua
++++ src/StarterGui/AnimalKingdomUI/Components.lua
+@@ -1,113 +0,0 @@
+-local TweenService = game:GetService("TweenService")
+-local UserInputService = game:GetService("UserInputService")
+-local Theme = require(script.Parent.Theme)
+-
+-local C = {}
+-
+-local function new(className, props, parent)
+-	local object = Instance.new(className)
+-	for key, value in pairs(props or {}) do object[key] = value end
+-	object.Parent = parent
+-	return object
+-end
+-C.new = new
+-
+-function C.corner(parent, radius)
+-	return new("UICorner", { CornerRadius = UDim.new(0, radius or 14) }, parent)
+-end
+-
+-function C.stroke(parent, thickness, color)
+-	return new("UIStroke", { Thickness = thickness or 3, Color = color or Theme.Ink, ApplyStrokeMode = Enum.ApplyStrokeMode.Border }, parent)
+-end
+-
+-function C.padding(parent, left, right, top, bottom)
+-	return new("UIPadding", {
+-		PaddingLeft = UDim.new(0, left), PaddingRight = UDim.new(0, right or left),
+-		PaddingTop = UDim.new(0, top or left), PaddingBottom = UDim.new(0, bottom or top or left),
+-	}, parent)
+-end
+-
+-function C.text(parent, props)
+-	props = props or {}
+-	props.BackgroundTransparency = props.BackgroundTransparency == nil and 1 or props.BackgroundTransparency
+-	props.Font = props.Font or Enum.Font.GothamBold
+-	props.TextColor3 = props.TextColor3 or Theme.Ink
+-	props.TextSize = props.TextSize or 18
+-	props.TextWrapped = props.TextWrapped == nil and true or props.TextWrapped
+-	local label = new("TextLabel", props, parent)
+-	new("UITextSizeConstraint", { MinTextSize = math.min(10, props.TextSize), MaxTextSize = props.TextSize }, label)
+-	return label
+-end
+-
+-function C.shadow(parent, offset)
+-	local shadow = new("Frame", {
+-		Name = "Shadow", AnchorPoint = parent.AnchorPoint, Position = parent.Position + UDim2.fromOffset(0, offset or 7),
+-		Size = parent.Size, BackgroundColor3 = Theme.Shadow, BackgroundTransparency = 0.58,
+-		BorderSizePixel = 0, ZIndex = math.max(0, parent.ZIndex - 1), Visible = parent.Visible,
+-	}, parent.Parent)
+-	C.corner(shadow, 16)
+-	parent:GetPropertyChangedSignal("Position"):Connect(function() shadow.Position = parent.Position + UDim2.fromOffset(0, offset or 7) end)
+-	parent:GetPropertyChangedSignal("Size"):Connect(function() shadow.Size = parent.Size end)
+-	parent:GetPropertyChangedSignal("Visible"):Connect(function() shadow.Visible = parent.Visible end)
+-	return shadow
+-end
+-
+-function C.button(parent, name, text, color, size)
+-	local button = new("TextButton", {
+-		Name = name, Size = size or UDim2.fromOffset(150, 48), BackgroundColor3 = color or Theme.Green,
+-		BorderSizePixel = 0, AutoButtonColor = false, Text = text, TextColor3 = Theme.White,
+-		TextStrokeColor3 = Theme.Ink, TextStrokeTransparency = 0.55, TextSize = 18,
+-		Font = Enum.Font.GothamBlack, ZIndex = 5,
+-	}, parent)
+-	C.corner(button, 12); C.stroke(button, 3)
+-	local scale = new("UIScale", { Scale = 1 }, button)
+-	local function tween(value, duration) TweenService:Create(scale, TweenInfo.new(duration or .1, Enum.EasingStyle.Quad), { Scale = value }):Play() end
+-	if not UserInputService.TouchEnabled or UserInputService.MouseEnabled then
+-		button.MouseEnter:Connect(function() tween(1.05, .12) end)
+-		button.MouseLeave:Connect(function() tween(1, .12) end)
+-	end
+-	button.MouseButton1Down:Connect(function() tween(.94, .06) end)
+-	button.MouseButton1Up:Connect(function() tween(UserInputService.MouseEnabled and 1.05 or 1, .09) end)
+-	return button
+-end
+-
+-function C.pill(parent, text, color)
+-	local label = C.text(parent, { Size = UDim2.fromOffset(100, 28), BackgroundTransparency = 0, BackgroundColor3 = color, Text = text, TextColor3 = Theme.White, TextSize = 13 })
+-	C.corner(label, 10); C.stroke(label, 2)
+-	return label
+-end
+-
+-function C.card(parent, name, size, color)
+-	local frame = new("Frame", { Name = name, Size = size, BackgroundColor3 = color or Theme.White, BorderSizePixel = 0 }, parent)
+-	C.corner(frame, 14); C.stroke(frame, 3)
+-	return frame
+-end
+-
+-function C.scroller(parent, name, pos, size)
+-	local scroll = new("ScrollingFrame", {
+-		Name = name, Position = pos, Size = size, BackgroundTransparency = 1, BorderSizePixel = 0,
+-		ScrollBarThickness = 6, ScrollBarImageColor3 = Theme.Ink, AutomaticCanvasSize = Enum.AutomaticSize.Y,
+-		CanvasSize = UDim2.new(), ScrollingDirection = Enum.ScrollingDirection.Y,
+-	}, parent)
+-	return scroll
+-end
+-
+-function C.window(parent, name, title, accent)
+-	local root = new("Frame", {
+-		Name = name, AnchorPoint = Vector2.new(.5, .5), Position = UDim2.fromScale(.5, .53),
+-		Size = UDim2.fromScale(.6, .74), BackgroundColor3 = Theme.Panel, BorderSizePixel = 0,
+-		Visible = false, ClipsDescendants = false, ZIndex = 20,
+-	}, parent)
+-	C.corner(root, 18); C.stroke(root, 4); C.shadow(root, 9)
+-	new("UISizeConstraint", { MinSize = Vector2.new(300, 360), MaxSize = Vector2.new(1050, 760) }, root)
+-	local scale = new("UIScale", { Name = "OpenScale", Scale = .92 }, root)
+-	local header = new("Frame", { Name = "Header", Size = UDim2.new(1, 0, 0, 66), BackgroundColor3 = accent, BorderSizePixel = 0, ZIndex = 21 }, root)
+-	C.corner(header, 16)
+-	new("Frame", { Name = "SquareBottom", Position = UDim2.new(0, 0, 1, -18), Size = UDim2.new(1, 0, 0, 18), BackgroundColor3 = accent, BorderSizePixel = 0, ZIndex = 21 }, header)
+-	C.text(header, { Name = "Title", Position = UDim2.fromOffset(22, 7), Size = UDim2.new(1, -92, 1, -14), Text = title, TextColor3 = Theme.White, TextStrokeColor3 = Theme.Ink, TextStrokeTransparency = .35, TextXAlignment = Enum.TextXAlignment.Left, TextSize = 28, ZIndex = 22 })
+-	local close = C.button(header, "Close", "X", Theme.Red, UDim2.fromOffset(48, 48))
+-	close.AnchorPoint = Vector2.new(1, .5); close.Position = UDim2.new(1, -10, .5, 0); close.ZIndex = 23
+-	return root, close, scale
+-end
+-
+-return C
+--- before/src/StarterGui/AnimalKingdomUI/ExampleData.lua
++++ src/StarterGui/AnimalKingdomUI/ExampleData.lua
+@@ -1,30 +0,0 @@
+-local biomes = { "Meadow", "Forest", "Jungle", "Desert", "Snow", "Volcano", "Ocean", "Ancient Ruins", "Magical Forest", "Sky", "Prehistoric", "Mythical" }
+-local colors = {
+-	Color3.fromRGB(104,207,104), Color3.fromRGB(47,147,84), Color3.fromRGB(39,184,117), Color3.fromRGB(242,188,85),
+-	Color3.fromRGB(140,217,242), Color3.fromRGB(230,83,54), Color3.fromRGB(71,170,232), Color3.fromRGB(156,135,101),
+-	Color3.fromRGB(174,100,221), Color3.fromRGB(111,190,246), Color3.fromRGB(124,135,65), Color3.fromRGB(121,72,185),
+-}
+-local biomeData = {}
+-local biomeConfig = require(game:GetService("ReplicatedStorage").SharedSource.Datas.AnimalKingdomConfig)
+-local biomePrices = {}
+-for _, biome in ipairs(biomeConfig.Biomes) do biomePrices[biome.Id] = biome.UnlockCost end
+-for i, name in ipairs(biomes) do
+-	local id = name:gsub(" ", "")
+-	table.insert(biomeData, { Id = id, Name = name, Color = colors[i], Unlocked = i == 1, Price = biomePrices[id] })
+-end
+-local pets = {
+-	{ Id="meadow_bunny", Name="Daisy Bunny", Biome="Meadow", Rarity="Common", Income=12, Discovered=true, Mutations={"Normal","Golden"}, Owned=3 },
+-	{ Id="forest_fox", Name="Mossy Fox", Biome="Forest", Rarity="Rare", Income=125, Discovered=true, Mutations={"Normal"}, Owned=1 },
+-	{ Id="jungle_parrot", Name="Sunset Parrot", Biome="Jungle", Rarity="Epic", Income=680, Discovered=true, Mutations={"Normal","Shiny"}, Owned=2 },
+-	{ Id="desert_fennec", Name="Dune Fennec", Biome="Desert", Rarity="Legendary", Income=2400, Discovered=false, Mutations={}, Owned=0 },
+-	{ Id="snow_owl", Name="Frost Owl", Biome="Snow", Rarity="Mystic", Income=9600, Discovered=false, Mutations={}, Owned=0 },
+-}
+-local decor = {
+-	{Id="fern",Name="Sunny Fern",Category="Plants",Price=350,Owned=true,Color=Color3.fromRGB(88,190,94)},
+-	{Id="bench",Name="Acorn Bench",Category="Furniture",Price=800,Owned=false,Color=Color3.fromRGB(190,125,67)},
+-	{Id="path",Name="Pebble Path",Category="Paths",Price=500,Owned=true,Color=Color3.fromRGB(158,151,135)},
+-	{Id="lamp",Name="Firefly Lamp",Category="Lighting",Price=1200,Owned=false,Color=Color3.fromRGB(255,194,54)},
+-	{Id="arch",Name="Forest Arch",Category="Structures",Price=2600,Owned=false,Color=Color3.fromRGB(69,155,82)},
+-	{Id="fountain",Name="Moon Fountain",Category="Special",Price=7500,Owned=false,Color=Color3.fromRGB(126,112,230)},
+-}
+-return table.freeze({ Biomes=biomeData, Pets=pets, Decor=decor })
+--- before/src/StarterGui/AnimalKingdomUI/SanctuaryMenus.lua
++++ src/StarterGui/AnimalKingdomUI/SanctuaryMenus.lua
+@@ -1,104 +0,0 @@
+-local W=require(script.Parent.GameplayWidgets)
+-local Cards=require(script.Parent.OwnedPetCards)
+-local Locations=require(game.ReplicatedStorage.Shared.Gameplay.PetLocations)
+-local Definitions=require(game.ReplicatedStorage.Shared.Gameplay.Definitions.PetDefinitions)
+-local Format=require(game.ReplicatedStorage.Shared.Gameplay.PetNumberFormat)
+-local M={Page=1,HeldSlot=nil,DisplaySlot=nil}
+-local function describe(pet)
+- return pet and ((Definitions[pet.PetId] and Definitions[pet.PetId].DisplayName or 'Companion')..' • '..Format.Weight(pet.Weight)) or 'Empty slot'
+-end
+--- Phone/tablet flow: pick a Held slot, then a display. No drag/drop is required.
+-local function compact(ctx)
+- local data=ctx.Data
+- W.List(ctx.Content)
+- local function refresh(stage)
+-  M.Stage=stage or M.Stage;ctx.Content.CanvasPosition=Vector2.zero;ctx.Refresh()
+- end
+- local function store(pet)
+-  if pet then ctx.Request('MovePet',{UID=pet.UID,Location='Inventory',Slot=0})end
+- end
+- local held=M.HeldSlot and Locations.At(data,'Held',M.HeldSlot)
+- local displayed=M.DisplaySlot and Locations.At(data,'Sanctuary',M.DisplaySlot)
+- if M.Stage~='Displays' then
+-  W.Text(ctx.Content,'TOTAL INCOME  '..Format.Income(data.SanctuaryIncomePerSecond)..' Forest Coins\nChoose a Held slot to place, swap or collect a display pet.',UDim2.new(1,-8,0,36),nil,ctx.Narrow and 12 or 14,W.Color.GreenDark)
+-  local row=W.New('Frame',{Name='SanctuaryHeldSlots',Size=UDim2.new(1,-8,0,86),BackgroundTransparency=1},ctx.Content)
+-  for i=1,5 do
+-   local pet=Locations.At(data,'Held',i)
+-   local b=Cards.Card(row,pet,'Slot '..i,UDim2.new(.2,-6,1,0),UDim2.new((i-1)*.2,3,0,0),function()M.HeldSlot=i;M.DisplaySlot=nil;refresh('Displays')end,M.HeldSlot==i,true)
+-   b.Name='ChooseHeld_'..i
+-  end
+-  W.Text(ctx.Content,'Tap an empty Held slot to bring a Sanctuary pet back with you.',UDim2.new(1,-8,0,38),nil,13,W.Color.Muted)
+-  return
+- end
+- local controls=W.New('Frame',{Name='SwapActions',Size=UDim2.new(1,-8,0,ctx.Narrow and 96 or 44),BackgroundTransparency=1},ctx.Content)
+- local actions={
+-  {'‹ Held pets','ChooseHeldBack',function()refresh('Held')end,false},
+-  {'SWAP / PLACE','SwapHeldSanctuary',function()
+-   local h,d=M.HeldSlot,M.DisplaySlot;local hu,du=held and held.UID or '',displayed and displayed.UID or ''
+-   ctx.Confirm('Update Sanctuary slots?',describe(held)..'  ↔  '..describe(displayed),function()ctx.Request('SwapSanctuary',{HeldSlot=h,SanctuarySlot=d,HeldUID=hu,SanctuaryUID=du})end)
+-  end,not M.DisplaySlot or not(held or displayed)},
+-  {'Store Held pet','StoreSelectedHeld',function()store(held)end,not held},
+-  {'Store display pet','StoreSelectedDisplay',function()store(displayed)end,not displayed},
+- }
+- for i,a in ipairs(actions)do
+-  local columns=ctx.Narrow and 2 or 4;local col=(i-1)%columns;local row=math.floor((i-1)/columns)
+-  local b=W.Button(controls,a[1],UDim2.new(1/columns,-7,0,44),UDim2.new(col/columns,0,0,row*52),a[3],i==2 and W.Color.Green or W.Color.Wood);b.Name=a[2];b.TextSize=12;W.Disabled(b,a[4])
+- end
+- local capacity=data.SanctuaryCapacity or 0
+- if capacity==0 then W.Empty(ctx.Content,'Your display is getting ready','Visit your Sanctuary and reopen this page.');return end
+- local pages=math.ceil(capacity/12);M.Page=math.clamp(M.Page,1,pages)
+- local grid=W.New('Frame',{Name='SanctuarySlots',Size=UDim2.new(1,-8,0,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},ctx.Content)
+- local wide=ctx.Short and not ctx.Narrow;local height=wide and 96 or 168
+- W.Grid(grid,wide and 260 or 130,height,10)
+- for i=(M.Page-1)*12+1,math.min(capacity,M.Page*12)do
+-  local pet=Locations.At(data,'Sanctuary',i)
+-  local b=Cards.Card(grid,pet,'Display '..i,UDim2.fromOffset(150,height),nil,function()M.DisplaySlot=i;ctx.Refresh()end,M.DisplaySlot==i,wide and 'wide' or false)
+-  b.Name='ChooseDisplay_'..i;b.LayoutOrder=i
+-  W.Text(b,tostring(i),UDim2.fromOffset(23,20),UDim2.fromOffset(5,3),11,W.Color.Muted)
+- end
+- local pager=W.New('Frame',{Size=UDim2.new(1,-8,0,44),BackgroundTransparency=1},ctx.Content)
+- local back=W.Button(pager,'‹ Previous',UDim2.new(.33,-6,1,0),nil,function()M.Page-=1;refresh()end);W.Disabled(back,M.Page<=1)
+- W.Text(pager,M.Page..' / '..pages,UDim2.new(.33,-6,1,0),UDim2.fromScale(.34,0),14)
+- local next=W.Button(pager,'Next ›',UDim2.new(.33,-6,1,0),UDim2.fromScale(.67,0),function()M.Page+=1;refresh()end);W.Disabled(next,M.Page>=pages)
+- W.Text(ctx.Content,'Held '..M.HeldSlot..': '..describe(held)..'\nTOTAL INCOME  '..Format.Income(data.SanctuaryIncomePerSecond)..' Forest Coins',UDim2.new(1,-8,0,42),nil,13,W.Color.GreenDark)
+-end
+-function M.Render(ctx)
+- if ctx.Compact then compact(ctx);return end
+- local data=ctx.Data;W.List(ctx.Content)
+- local total=W.Card(ctx.Content,65)
+- W.Heading(total,'TOTAL INCOME  '..Format.Income(data.SanctuaryIncomePerSecond)..' Forest Coins',UDim2.new(1,-24,0,31),UDim2.fromOffset(12,4),ctx.Narrow and 15 or 21,W.Color.GreenDark)
+- W.Text(total,'Tap a Held slot and a Sanctuary slot, then confirm the swap.',UDim2.new(1,-24,0,25),UDim2.fromOffset(12,35),ctx.Narrow and 11 or 14)
+- W.Heading(ctx.Content,'HELD PETS • 5 slots',UDim2.new(1,-8,0,25),nil,18)
+- local heldRow=W.New('Frame',{Name='SanctuaryHeldSlots',Size=UDim2.new(1,-8,0,ctx.Narrow and 104 or 155),BackgroundTransparency=1},ctx.Content)
+- for i=1,5 do
+-  local pet=Locations.At(data,'Held',i)
+-  local b=Cards.Card(heldRow,pet,'Slot '..i,UDim2.new(.2,-6,1,0),UDim2.new((i-1)*.2,3,0,0),function()M.HeldSlot=i;ctx.Refresh()end,M.HeldSlot==i,ctx.Narrow);b.Name='ChooseHeld_'..i
+- end
+- local held=M.HeldSlot and Locations.At(data,'Held',M.HeldSlot)
+- local displayed=M.DisplaySlot and Locations.At(data,'Sanctuary',M.DisplaySlot)
+- local controls=W.New('Frame',{Name='SwapActions',Size=UDim2.new(1,-8,0,100),BackgroundTransparency=1},ctx.Content)
+- local chosen=describe(held)..'  ↔  '..describe(displayed)
+- local swap=W.Button(controls,'SWAP / PLACE',UDim2.new(1,-8,0,44),nil,function()
+-  local heldUID=held and held.UID or '';local displayUID=displayed and displayed.UID or ''
+-  local hs,ds=M.HeldSlot,M.DisplaySlot
+-  ctx.Confirm('Update Sanctuary slots?',chosen,function()ctx.Request('SwapSanctuary',{HeldSlot=hs,SanctuarySlot=ds,HeldUID=heldUID,SanctuaryUID=displayUID})end)
+- end);swap.Name='SwapHeldSanctuary';W.Disabled(swap,not M.HeldSlot or not M.DisplaySlot or not (held or displayed))
+- for i,entry in ipairs({{held,'Store Held pet'},{displayed,'Store display pet'}})do
+-  local pet=entry[1];local b=W.Button(controls,entry[2],UDim2.new(.5,-8,0,44),UDim2.new((i-1)*.5,0,0,52),function()if pet then ctx.Request('MovePet',{UID=pet.UID,Location='Inventory',Slot=0})end end,W.Color.Wood);b.Name=i==1 and 'StoreSelectedHeld' or 'StoreSelectedDisplay';W.Disabled(b,not pet)
+- end
+- local capacity=data.SanctuaryCapacity or 0
+- W.Heading(ctx.Content,'SANCTUARY PETS • '..#data.DisplayedPetIds..' / '..capacity,UDim2.new(1,-8,0,28),nil,18)
+- if capacity==0 then W.Empty(ctx.Content,'Your display is getting ready','Visit your Sanctuary and reopen this page.');return end
+- local pages=math.ceil(capacity/16);M.Page=math.clamp(M.Page,1,pages)
+- local grid=W.New('Frame',{Name='SanctuarySlots',Size=UDim2.new(1,-8,0,0),AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1},ctx.Content);W.Grid(grid,ctx.Narrow and 135 or 145,166,10)
+- for i=(M.Page-1)*16+1,math.min(capacity,M.Page*16)do
+-  local pet=Locations.At(data,'Sanctuary',i)
+-  local b=Cards.Card(grid,pet,'Display '..i,UDim2.fromOffset(150,166),nil,function()M.DisplaySlot=i;ctx.Refresh()end,M.DisplaySlot==i,false);b.Name='ChooseDisplay_'..i;b.LayoutOrder=i
+-  W.Text(b,tostring(i),UDim2.fromOffset(23,20),UDim2.fromOffset(5,3),11,W.Color.Muted)
+- end
+- local bar=W.New('Frame',{Size=UDim2.new(1,-8,0,46),BackgroundTransparency=1},ctx.Content)
+- local prev=W.Button(bar,'‹ Displays',UDim2.new(.32,0,1,0),nil,function()M.Page-=1;ctx.Refresh()end);W.Disabled(prev,M.Page<=1)
+- local text=W.Text(bar,M.Page..' / '..pages,UDim2.new(.32,0,1,0),UDim2.fromScale(.34,0),14);text.TextXAlignment=Enum.TextXAlignment.Center
+- local next=W.Button(bar,'Displays ›',UDim2.new(.32,0,1,0),UDim2.fromScale(.68,0),function()M.Page+=1;ctx.Refresh()end);W.Disabled(next,M.Page>=pages)
+-end
+-return M

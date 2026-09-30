@@ -1,0 +1,49 @@
+{
+  "ProtectedSource": [
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/PlacementService.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/NormalTreeOdds.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/PetStats.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/PetDefinitions.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/LuckyTreeDefinitions.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ForestPetDefinitions.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/ImportedPetDefinitions.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua",
+      "Unchanged": true
+    },
+    {
+      "File": "src/ReplicatedStorage/Shared/Gameplay/Definitions/BiomeDefinitions.lua",
+      "Unchanged": true
+    }
+  ],
+  "FinalCheckpointFiles": 664,
+  "NewAssetFiles": [],
+  "ChangedAssetFiles": [],
+  "DeletedSource": [],
+  "Published": false
+}

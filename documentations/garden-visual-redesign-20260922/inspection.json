@@ -1,0 +1,1788 @@
+{
+  "garden": [
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.RealmBase",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "130, 2, 130",
+      "pos": "2000, 30, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2000, 31.100000381469727, 2052"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2002, 31.100000381469727, 2042"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "1998, 31.100000381469727, 2032"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2001, 31.100000381469727, 2022"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone5",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2000, 31.100000381469727, 2012"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone6",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2000, 31.100000381469727, 2002"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone7",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "1986, 31.100000381469727, 1994"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone8",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2000, 31.100000381469727, 1992"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PathStone9",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 0.4000000059604645, 4",
+      "pos": "2014, 31.100000381469727, 1994"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Pond",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "22, 0.6000000238418579, 16",
+      "pos": "2038, 31.100000381469727, 2018"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bridge0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3, 0.30000001192092896, 2.4000000953674316",
+      "pos": "2038, 31.5, 2010"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bridge1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3, 0.30000001192092896, 2.4000000953674316",
+      "pos": "2038, 31.5, 2012.5999755859375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bridge2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3, 0.30000001192092896, 2.4000000953674316",
+      "pos": "2038, 31.5, 2015.199951171875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bridge3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3, 0.30000001192092896, 2.4000000953674316",
+      "pos": "2038, 31.5, 2017.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2055, 34, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2055, 38.5, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2047.63134765625, 34, 2027.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2047.63134765625, 38.5, 2027.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2027.5, 34, 2047.63134765625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2027.5, 38.5, 2047.63134765625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2000, 34, 2055"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2000, 38.5, 2055"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "1972.5, 34, 2047.63134765625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "1972.5, 38.5, 2047.63134765625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk5",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "1952.36865234375, 34, 2027.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop5",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "1952.36865234375, 38.5, 2027.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk6",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "1945, 34, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop6",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "1945, 38.5, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk7",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "1952.36865234375, 34, 1972.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop7",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "1952.36865234375, 38.5, 1972.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk8",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "1972.5, 34, 1952.36865234375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop8",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "1972.5, 38.5, 1952.36865234375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk9",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2000, 34, 1945"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop9",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2000, 38.5, 1945"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk10",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2027.5, 34, 1952.36865234375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop10",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2027.5, 38.5, 1952.36865234375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTrunk11",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 6, 1.600000023841858",
+      "pos": "2047.63134765625, 34, 1972.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.TreeTop11",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "6, 5, 6",
+      "pos": "2047.63134765625, 38.5, 1972.5"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Hedge0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "4, 3, 4",
+      "pos": "1952, 32.5, 1980"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Hedge1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "4, 3, 4",
+      "pos": "1952, 32.5, 1990"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Hedge2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "4, 3, 4",
+      "pos": "1952, 32.5, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Hedge3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "4, 3, 4",
+      "pos": "1952, 32.5, 2010"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Hedge4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "4, 3, 4",
+      "pos": "1952, 32.5, 2020"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2060, 32.20000076293945, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2055.432861328125, 32.20000076293945, 2022.9610595703125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2042.4263916015625, 32.20000076293945, 2042.4263916015625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2022.9610595703125, 32.20000076293945, 2055.432861328125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2000, 32.20000076293945, 2060"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost5",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1977.0389404296875, 32.20000076293945, 2055.432861328125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost6",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1957.5736083984375, 32.20000076293945, 2042.4263916015625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost7",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1944.5672607421875, 32.20000076293945, 2022.9610595703125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost8",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1940, 32.20000076293945, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost9",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1944.5672607421875, 32.20000076293945, 1977.0389404296875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost10",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1957.5736083984375, 32.20000076293945, 1957.5736083984375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost11",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "1977.0389404296875, 32.20000076293945, 1944.5672607421875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost12",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2000, 32.20000076293945, 1940"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost13",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2022.9610595703125, 32.20000076293945, 1944.5672607421875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost14",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2042.4263916015625, 32.20000076293945, 1957.5736083984375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FencePost15",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 2.5999999046325684, 0.800000011920929",
+      "pos": "2055.432861328125, 32.20000076293945, 1977.0389404296875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "2036.7227783203125, 31.600000381469727, 2009.76904296875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead0",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "2036.7227783203125, 32.400001525878906, 2009.76904296875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "2026.9183349609375, 31.600000381469727, 2026.8216552734375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead1",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "2026.9183349609375, 32.400001525878906, 2026.8216552734375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "2009.901123046875, 31.600000381469727, 2036.6873779296875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead2",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "2009.901123046875, 32.400001525878906, 2036.6873779296875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "1990.23095703125, 31.600000381469727, 2036.7227783203125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead3",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "1990.23095703125, 32.400001525878906, 2036.7227783203125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "1973.1783447265625, 31.600000381469727, 2026.9183349609375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead4",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "1973.1783447265625, 32.400001525878906, 2026.9183349609375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem5",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "1963.3126220703125, 31.600000381469727, 2009.901123046875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead5",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "1963.3126220703125, 32.400001525878906, 2009.901123046875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem6",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "1963.2772216796875, 31.600000381469727, 1990.23095703125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead6",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "1963.2772216796875, 32.400001525878906, 1990.23095703125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem7",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "1973.0816650390625, 31.600000381469727, 1973.1783447265625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead7",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "1973.0816650390625, 32.400001525878906, 1973.1783447265625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem8",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "1990.098876953125, 31.600000381469727, 1963.3126220703125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead8",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "1990.098876953125, 32.400001525878906, 1963.3126220703125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem9",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "2009.76904296875, 31.600000381469727, 1963.2772216796875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead9",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "2009.76904296875, 32.400001525878906, 1963.2772216796875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem10",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "2026.8216552734375, 31.600000381469727, 1973.0816650390625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead10",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "2026.8216552734375, 32.400001525878906, 1973.0816650390625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerStem11",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.30000001192092896, 1.2000000476837158, 0.30000001192092896",
+      "pos": "2036.6873779296875, 31.600000381469727, 1990.098876953125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.FlowerHead11",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "0.8999999761581421, 0.8999999761581421, 0.8999999761581421",
+      "pos": "2036.6873779296875, 32.400001525878906, 1990.098876953125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bush0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3.4000000953674316, 2.5999999046325684, 3.4000000953674316",
+      "pos": "1970, 32.20000076293945, 2034"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bush1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3.4000000953674316, 2.5999999046325684, 3.4000000953674316",
+      "pos": "1982, 32.20000076293945, 2034"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bush2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3.4000000953674316, 2.5999999046325684, 3.4000000953674316",
+      "pos": "1994, 32.20000076293945, 2034"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bush3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3.4000000953674316, 2.5999999046325684, 3.4000000953674316",
+      "pos": "2006, 32.20000076293945, 2034"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bush4",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3.4000000953674316, 2.5999999046325684, 3.4000000953674316",
+      "pos": "2018, 32.20000076293945, 2034"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Bush5",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "3.4000000953674316, 2.5999999046325684, 3.4000000953674316",
+      "pos": "2030, 32.20000076293945, 2034"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushStem0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.6000000238418579, 1, 0.6000000238418579",
+      "pos": "1976, 31.5, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushCap0",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 0.800000011920929, 1.600000023841858",
+      "pos": "1976, 32.20000076293945, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushStem1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.6000000238418579, 1, 0.6000000238418579",
+      "pos": "1985, 31.5, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushCap1",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 0.800000011920929, 1.600000023841858",
+      "pos": "1985, 32.20000076293945, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushStem2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.6000000238418579, 1, 0.6000000238418579",
+      "pos": "1994, 31.5, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushCap2",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 0.800000011920929, 1.600000023841858",
+      "pos": "1994, 32.20000076293945, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushStem3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.6000000238418579, 1, 0.6000000238418579",
+      "pos": "2003, 31.5, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.MushCap3",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 0.800000011920929, 1.600000023841858",
+      "pos": "2003, 32.20000076293945, 1972"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PavilionPost",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.8999999761581421, 7, 0.8999999761581421",
+      "pos": "1996, 34.5, 1996"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PavilionPost",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.8999999761581421, 7, 0.8999999761581421",
+      "pos": "2004, 34.5, 1996"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PavilionPost",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.8999999761581421, 7, 0.8999999761581421",
+      "pos": "1996, 34.5, 2004"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PavilionPost",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.8999999761581421, 7, 0.8999999761581421",
+      "pos": "2004, 34.5, 2004"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PavilionRoof",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "12, 0.800000011920929, 12",
+      "pos": "2000, 38.400001525878906, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomStem",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1, 5, 1",
+      "pos": "2000, 33.5, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomPetal0",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.600000023841858, 0.6000000238418579, 1.600000023841858",
+      "pos": "2001.800048828125, 36.400001525878906, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomPetal1",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.600000023841858, 0.6000000238418579, 1.600000023841858",
+      "pos": "2000.9000244140625, 36.400001525878906, 2001.558837890625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomPetal2",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.600000023841858, 0.6000000238418579, 1.600000023841858",
+      "pos": "1999.0999755859375, 36.400001525878906, 2001.558837890625"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomPetal3",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.600000023841858, 0.6000000238418579, 1.600000023841858",
+      "pos": "1998.199951171875, 36.400001525878906, 2000"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomPetal4",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.600000023841858, 0.6000000238418579, 1.600000023841858",
+      "pos": "1999.0999755859375, 36.400001525878906, 1998.441162109375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomPetal5",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.600000023841858, 0.6000000238418579, 1.600000023841858",
+      "pos": "2000.9000244140625, 36.400001525878906, 1998.441162109375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.BloomCore",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1.399999976158142, 1.399999976158142, 1.399999976158142",
+      "pos": "2000, 36.599998474121094, 2000"
+    },
+    {
+      "attrs": {
+        "SlotId": 1,
+        "PlotIndex": 1
+      },
+      "path": "Workspace.PetGardenRealm.GardenPlot1",
+      "class": "Model"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.SoilBase",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13, 1, 10",
+      "pos": "1980, 31.399999618530273, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.BorderN",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13.600000381469727, 1, 0.800000011920929",
+      "pos": "1980, 31.600000381469727, 1980.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.BorderS",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13.600000381469727, 1, 0.800000011920929",
+      "pos": "1980, 31.600000381469727, 1991.199951171875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.BorderW",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 1, 10",
+      "pos": "1973.4000244140625, 31.600000381469727, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.BorderE",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 1, 10",
+      "pos": "1986.5999755859375, 31.600000381469727, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.CropAnchor0_0",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1976, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.CropAnchor0_1",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1980, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.CropAnchor0_2",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1984, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.CropAnchor1_0",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1976, 32.20000076293945, 1988"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.CropAnchor1_1",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1980, 32.20000076293945, 1988"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.CropAnchor1_2",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1984, 32.20000076293945, 1988"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.PetPad",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "4, 0.4000000059604645, 4",
+      "pos": "1980, 32, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.PlotSign",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 2.4000000953674316, 0.5",
+      "pos": "1980, 33.400001525878906, 1978.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.PlotSign.PlotSignGui",
+      "class": "SurfaceGui"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot1.PlotSign.PlotSignGui.TextLabel",
+      "text": "GARDEN PLOT 1",
+      "class": "TextLabel"
+    },
+    {
+      "attrs": {
+        "SlotId": 2,
+        "PlotIndex": 2
+      },
+      "path": "Workspace.PetGardenRealm.GardenPlot2",
+      "class": "Model"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.SoilBase",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13, 1, 10",
+      "pos": "2000, 31.399999618530273, 1982"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.BorderN",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13.600000381469727, 1, 0.800000011920929",
+      "pos": "2000, 31.600000381469727, 1976.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.BorderS",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13.600000381469727, 1, 0.800000011920929",
+      "pos": "2000, 31.600000381469727, 1987.199951171875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.BorderW",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 1, 10",
+      "pos": "1993.4000244140625, 31.600000381469727, 1982"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.BorderE",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 1, 10",
+      "pos": "2006.5999755859375, 31.600000381469727, 1982"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.CropAnchor0_0",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1996, 32.20000076293945, 1980"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.CropAnchor0_1",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2000, 32.20000076293945, 1980"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.CropAnchor0_2",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2004, 32.20000076293945, 1980"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.CropAnchor1_0",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1996, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.CropAnchor1_1",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2000, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.CropAnchor1_2",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2004, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.PetPad",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "4, 0.4000000059604645, 4",
+      "pos": "2000, 32, 1982"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.PlotSign",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 2.4000000953674316, 0.5",
+      "pos": "2000, 33.400001525878906, 1974.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.PlotSign.PlotSignGui",
+      "class": "SurfaceGui"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot2.PlotSign.PlotSignGui.TextLabel",
+      "text": "GARDEN PLOT 2",
+      "class": "TextLabel"
+    },
+    {
+      "attrs": {
+        "SlotId": 3,
+        "PlotIndex": 3
+      },
+      "path": "Workspace.PetGardenRealm.GardenPlot3",
+      "class": "Model"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.SoilBase",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13, 1, 10",
+      "pos": "2020, 31.399999618530273, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.BorderN",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13.600000381469727, 1, 0.800000011920929",
+      "pos": "2020, 31.600000381469727, 1980.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.BorderS",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "13.600000381469727, 1, 0.800000011920929",
+      "pos": "2020, 31.600000381469727, 1991.199951171875"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.BorderW",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 1, 10",
+      "pos": "2013.4000244140625, 31.600000381469727, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.BorderE",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.800000011920929, 1, 10",
+      "pos": "2026.5999755859375, 31.600000381469727, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.CropAnchor0_0",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2016, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.CropAnchor0_1",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2020, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.CropAnchor0_2",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2024, 32.20000076293945, 1984"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.CropAnchor1_0",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2016, 32.20000076293945, 1988"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.CropAnchor1_1",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2020, 32.20000076293945, 1988"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.CropAnchor1_2",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2024, 32.20000076293945, 1988"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.PetPad",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "4, 0.4000000059604645, 4",
+      "pos": "2020, 32, 1986"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.PlotSign",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "5, 2.4000000953674316, 0.5",
+      "pos": "2020, 33.400001525878906, 1978.800048828125"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.PlotSign.PlotSignGui",
+      "class": "SurfaceGui"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenPlot3.PlotSign.PlotSignGui.TextLabel",
+      "text": "GARDEN PLOT 3",
+      "class": "TextLabel"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopCounter",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "8, 2, 3",
+      "pos": "1968, 32, 2004"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopAwning",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "9, 0.5, 5",
+      "pos": "1968, 35.400001525878906, 2004"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopPost",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.699999988079071, 4.400000095367432, 0.699999988079071",
+      "pos": "1964.4000244140625, 33.20000076293945, 2005.5999755859375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopPost",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.699999988079071, 4.400000095367432, 0.699999988079071",
+      "pos": "1971.5999755859375, 33.20000076293945, 2005.5999755859375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopSign",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "7, 2, 0.5",
+      "pos": "1968, 36.79999923706055, 2004"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopSign.SurfaceGui",
+      "class": "SurfaceGui"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ShopSign.SurfaceGui.TextLabel",
+      "text": "GARDEN SHOP",
+      "class": "TextLabel"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.Basket",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.600000023841858, 1, 1.600000023841858",
+      "pos": "1963, 31.5, 2006"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.SeedSack",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.7999999523162842, 1.399999976158142, 1.7999999523162842",
+      "pos": "1973, 31.700000762939453, 2006"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.WateringBody",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1.399999976158142, 1.2000000476837158, 1",
+      "pos": "1971, 31.600000381469727, 2002"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PreviewStage",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "8, 0.800000011920929, 8",
+      "pos": "2032, 31.399999618530273, 2004"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PreviewSign",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "7, 2, 0.5",
+      "pos": "2032, 34.599998474121094, 1999.5999755859375"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PreviewSign.SurfaceGui",
+      "class": "SurfaceGui"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PreviewSign.SurfaceGui.TextLabel",
+      "text": "COSMETIC PREVIEW",
+      "class": "TextLabel"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternPole",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.5, 4.400000095367432, 0.5",
+      "pos": "1990, 33.20000076293945, 2010"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1990, 35.599998474121094, 2010"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp.PointLight",
+      "class": "PointLight"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternPole",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.5, 4.400000095367432, 0.5",
+      "pos": "2010, 33.20000076293945, 2010"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2010, 35.599998474121094, 2010"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp.PointLight",
+      "class": "PointLight"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternPole",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.5, 4.400000095367432, 0.5",
+      "pos": "1974, 33.20000076293945, 1994"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "1974, 35.599998474121094, 1994"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp.PointLight",
+      "class": "PointLight"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternPole",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "0.5, 4.400000095367432, 0.5",
+      "pos": "2026, 33.20000076293945, 1994"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp",
+      "trans": 0,
+      "collide": false,
+      "class": "Part",
+      "size": "1, 1, 1",
+      "pos": "2026, 35.599998474121094, 1994"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.LanternLamp.PointLight",
+      "class": "PointLight"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.EntryArchL",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1, 7, 1",
+      "pos": "1995, 34.5, 2058"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.EntryArchR",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1, 7, 1",
+      "pos": "2005, 34.5, 2058"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.EntryArchTop",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "12, 1, 1",
+      "pos": "2000, 38, 2058"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenMainSign",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "10, 3, 0.6000000238418579",
+      "pos": "2000, 36, 2058"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenMainSign.SurfaceGui",
+      "class": "SurfaceGui"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenMainSign.SurfaceGui.TextLabel",
+      "text": "PET GARDEN",
+      "class": "TextLabel"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PortalL",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1, 6, 1",
+      "pos": "1997, 34, 1966"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PortalR",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "1, 6, 1",
+      "pos": "2003, 34, 1966"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.PortalTop",
+      "trans": 0,
+      "collide": true,
+      "class": "Part",
+      "size": "7.400000095367432, 1, 1.399999976158142",
+      "pos": "2000, 37, 1966"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ReturnPortal",
+      "trans": 0.3499999940395355,
+      "collide": false,
+      "class": "Part",
+      "size": "5, 5.400000095367432, 0.6000000238418579",
+      "pos": "2000, 33.79999923706055, 1966"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.ReturnPortal.ReturnPrompt",
+      "class": "ProximityPrompt"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenArrival",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "2, 0.4000000059604645, 2",
+      "pos": "2000, 31.600000381469727, 2048"
+    },
+    {
+      "attrs": [],
+      "path": "Workspace.PetGardenRealm.GardenReturnFallback",
+      "trans": 1,
+      "collide": false,
+      "class": "Part",
+      "size": "2, 0.4000000059604645, 2",
+      "pos": "2000, 31.600000381469727, 2044"
+    }
+  ],
+  "assets": [],
+  "sources": {
+    "ServerScriptService.ServerSource.Server.GardenExpeditionService": "--!strict\nlocal RS = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\nlocal Http = game:GetService(\"HttpService\")\nlocal Knit = require(RS.Packages.Knit)\nlocal Garden = require(RS.Shared.Gameplay.Definitions.GardenDefinitions)\nlocal PetDefs = require(RS.Shared.Gameplay.Definitions.PetDefinitions)\nlocal Variants = require(RS.Shared.Gameplay.Definitions.VariantDefinitions)\nlocal PetMath = require(RS.Shared.Gameplay.PetMath)\nlocal Guard = require(script.Parent.Parent.Utilities.GameplayGuard)\n\nlocal Service = Knit.CreateService({ Name = \"GardenExpeditionService\", Client = {} })\nlocal Data: any = nil\nlocal returnSpots: { [Player]: CFrame } = {}\nlocal claimLocks = setmetatable({}, { __mode = \"k\" })\nlocal REALM_CENTER = Vector3.new(2000, 30, 2000)\n\nlocal function expeditions(data: any): { any }\n\tif type(data.GardenExpeditions) ~= \"table\" then data.GardenExpeditions = {} end\n\treturn data.GardenExpeditions\nend\n\nlocal function cosmetics(data: any): { [string]: boolean }\n\tif type(data.GardenCosmetics) ~= \"table\" then data.GardenCosmetics = {} end\n\treturn data.GardenCosmetics\nend\n\nlocal function findExpedition(data: any, uid: string): (any, number)\n\tfor i, entry in ipairs(expeditions(data)) do\n\t\tif type(entry) == \"table\" and entry.UID == uid then return entry, i end\n\tend\n\treturn nil, 0\nend\n\nlocal function mutationPower(pet: any): number\n\tlocal entry = Variants.Mutations[pet.Mutation]\n\treturn (entry and entry.Power) or 1\nend\n\nlocal function fullReward(pet: any, durationSeconds: number): number\n\tlocal def = PetDefs[pet.PetId]\n\tlocal rarity = def and def.Rarity or \"Common\"\n\treturn Garden.Estimate(rarity, pet.Level or 1, mutationPower(pet), pet.Shiny == true, pet.Prismatic == true, durationSeconds)\nend\n\nlocal function grantPetXP(player: Player, data: any, pet: any, amount: number)\n\tif amount <= 0 or pet.Level >= Variants.MaxLevel then return false end\n\tpet.XP += amount\n\tlocal leveled = false\n\twhile pet.Level < Variants.MaxLevel and pet.XP >= PetMath.RequiredXP(pet.Level) do\n\t\tpet.XP -= PetMath.RequiredXP(pet.Level)\n\t\tpet.Level += 1\n\t\tleveled = true\n\tend\n\tif pet.Level >= Variants.MaxLevel then pet.XP = 0 end\n\treturn leveled\nend\n\nfunction Service:Start(player: Player, uid: string, durationId: string): (boolean, any)\n\tif not Guard.IsPlayer(player) or not Guard.Id(uid) or not Guard.Id(durationId) then return false, \"Invalid expedition\" end\n\tlocal duration = Garden.Durations[durationId]\n\tif not duration then return false, \"Unknown expedition length\" end\n\tlocal data = Data:Get(player)\n\tif not data then return false, \"Profile is loading\" end\n\tlocal pets = Knit.GetService(\"PetService\")\n\tlocal pet, petIndex = pets:FindOwned(data, uid)\n\tif not pet then return false, \"Pet unavailable\" end\n if findExpedition(data, uid) ~= nil then return false, \"This pet is already foraging.\" end\n if #expeditions(data) >= Garden.MaxActive then return false, \"All 3 Garden plots are occupied.\" end\n if table.find(data.EquippedPets, uid) ~= nil then return false, \"Unequip this pet before sending it.\" end\n local def = PetDefs[pet.PetId]\n if not def then return false, \"Pet unavailable\" end\n local now = os.time()\n table.insert(expeditions(data), {\n  TripId = Http:GenerateGUID(false),\n  UID = uid,\n\t\tPetId = pet.PetId,\n\t\tDurationId = durationId,\n\t\tDuration = duration.Seconds,\n\t\tStartedAt = now,\n\t\tReadyAt = now + duration.Seconds,\n\t})\n Data:Publish(player, \"GardenExpeditions\")\n print(\"[Garden] Start\", player.Name, pet.PetId, durationId)\n return true, { Kind = \"GardenStarted\", PetId = pet.PetId, DisplayName = def.DisplayName, DurationId = durationId, DurationLabel = duration.Label }\nend\n\nfunction Service:Claim(player: Player, uid: string): (boolean, any)\n if not Guard.IsPlayer(player) or not Guard.Id(uid) then return false, \"Invalid claim\" end\n if claimLocks[player] then return false, \"Claim already in progress\" end\n claimLocks[player] = true\n local ok, success, result = pcall(function()\n  return self:ClaimInternal(player, uid)\n end)\n claimLocks[player] = nil\n if not ok then warn(\"[Garden] Claim error \" .. tostring(success)); return false, \"Action unavailable; please try again\" end\n return success, result\nend\n\nfunction Service:ClaimInternal(player: Player, uid: string): (boolean, any)\n\tif not Guard.IsPlayer(player) or not Guard.Id(uid) then return false, \"Invalid claim\" end\n\tlocal data = Data:Get(player)\n\tif not data then return false, \"Profile is loading\" end\n local entry, index = findExpedition(data, uid)\n if not entry then return false, \"That expedition has already been claimed.\" end\n local now = os.time()\n if now < entry.ReadyAt then\n  return false, \"Still foraging (\" .. tostring(entry.ReadyAt - now) .. \"s left)\"\n end\n\tlocal pets = Knit.GetService(\"PetService\")\n\tlocal pet, petIndex = pets:FindOwned(data, uid)\n\tif not pet then\n\t\ttable.remove(expeditions(data), index)\n\t\tData:Publish(player, \"GardenExpeditions\")\n\t\treturn false, \"Pet is gone; expedition cleared\"\n\tend\n\tlocal amount = fullReward(pet, entry.Duration)\n\tlocal jitter = 0.9 + ((now + #pet.PetId) % 20) / 100\n\tamount = math.max(1, math.floor(amount * jitter))\n\ttable.remove(expeditions(data), index)\n\tlocal economy = Knit.GetService(\"EconomyService\")\n\teconomy:Add(player, Garden.Currency, amount, \"Garden\")\n\tgrantPetXP(player, data, pet, math.floor(entry.Duration / 60 * 10))\n\tpets:Publish(player)\n\tData:Publish(player, \"GardenExpeditions\")\n\tlocal crops = Garden.SplitCrops(amount, now % 997)\n\tprint(\"[Garden] Claim\", player.Name, pet.PetId, amount)\n\treturn true, { Kind = \"GardenClaim\", Amount = amount, Crops = crops, PetId = pet.PetId }\nend\n\nfunction Service:Cancel(player: Player, uid: string): (boolean, any)\n\tif not Guard.IsPlayer(player) or not Guard.Id(uid) then return false, \"Invalid expedition\" end\n\tlocal data = Data:Get(player)\n\tif not data then return false, \"Profile is loading\" end\n\tlocal entry, index = findExpedition(data, uid)\n\tif not entry then return false, \"No expedition found\" end\n\tlocal now = os.time()\n\tlocal elapsed = math.max(0, now - (entry.StartedAt or now))\n\ttable.remove(expeditions(data), index)\n\tlocal partial = 0\n\tif elapsed >= 20 then\n\t\tlocal pets = Knit.GetService(\"PetService\")\n\t\tlocal pet = pets:FindOwned(data, uid)\n\t\tif pet then\n\t\t\tpartial = math.floor(fullReward(pet, entry.Duration) * (math.min(elapsed, entry.Duration) / entry.Duration) * 0.5)\n\t\tend\n\tend\n\tif partial > 0 then\n\t\tKnit.GetService(\"EconomyService\"):Add(player, Garden.Currency, partial, \"GardenRecall\")\n\tend\n Data:Publish(player, \"GardenExpeditions\")\n print(\"[Garden] Cancel\", player.Name, uid, partial)\n if partial > 0 then return true, \"Pet recalled with +\" .. tostring(partial) .. \" Harvest\" end\n return true, \"Pet recalled from the garden\"\nend\n\nfunction Service:ClaimAll(player: Player): (boolean, any)\n if not Guard.IsPlayer(player) then return false, \"Invalid claim\" end\n if claimLocks[player] then return false, \"Claim already in progress\" end\n claimLocks[player] = true\n local ok, success, result = pcall(function()\n  local data = Data:Get(player)\n  if not data then return false, \"Profile is loading\" end\n  local now = os.time()\n  local ready: { string } = {}\n  for _, entry in ipairs(expeditions(data)) do\n   if type(entry) == \"table\" and type(entry.UID) == \"string\" and now >= (entry.ReadyAt or math.huge) then\n    table.insert(ready, entry.UID)\n   end\n  end\n  if #ready == 0 then return false, \"No finished expeditions to claim.\" end\n  local total = 0\n  local claims: { any } = {}\n  for _, uid in ipairs(ready) do\n   local done, res = self:ClaimInternal(player, uid)\n   if done and type(res) == \"table\" then\n    total += (res.Amount or 0)\n    table.insert(claims, res)\n   end\n  end\n  if total <= 0 then return false, \"That expedition has already been claimed.\" end\n  return true, { Kind = \"GardenClaimAll\", Amount = total, Claims = claims }\n end)\n claimLocks[player] = nil\n if not ok then warn(\"[Garden] ClaimAll error \" .. tostring(success)); return false, \"Action unavailable; please try again\" end\n return success, result\nend\n\nlocal function gardenArrival(): (Vector3, Vector3)\n local realm = workspace:FindFirstChild(\"PetGardenRealm\")\n local marker = realm and realm:FindFirstChild(\"GardenArrival\", true)\n if marker and marker:IsA(\"BasePart\") then\n  return marker.Position, REALM_CENTER\n end\n return REALM_CENTER + Vector3.new(0, 1.6, 48), REALM_CENTER\nend\n\nlocal function safeGround(position: Vector3, character: Model?): Vector3?\n local ray = RaycastParams.new()\n ray.FilterType = Enum.RaycastFilterType.Exclude\n local filter: { Instance } = { workspace:FindFirstChild(\"BiomeTeleportPoints\") }\n if character then table.insert(filter, character) end\n local realm = workspace:FindFirstChild(\"PetGardenRealm\")\n if realm then table.insert(filter, realm) end\n ray.FilterDescendantsInstances = filter\n ray.IgnoreWater = true\n local hit = workspace:Raycast(position + Vector3.new(0, 10, 0), Vector3.new(0, -30, 0), ray)\n if hit and hit.Instance and hit.Instance.CanCollide then\n  return hit.Position + Vector3.new(0, 4, 0)\n end\n return nil\nend\n\nfunction Service:VisitGarden(player: Player): (boolean, any)\n if not Guard.IsPlayer(player) then return false, \"Invalid request\" end\n local root = Guard.Alive(player)\n if not root then return false, \"Respawn first\" end\n local character = player.Character\n local realm = workspace:FindFirstChild(\"PetGardenRealm\")\n if not realm then return false, \"Garden is unavailable\" end\n if (root.Position - REALM_CENTER).Magnitude < 90 then return false, \"You are already in the garden.\" end\n if claimLocks[player] then return false, \"Please wait a moment\" end\n returnSpots[player] = root.CFrame\n local marker = realm:FindFirstChild(\"GardenArrival\", true)\n local dest: Vector3\n if marker and marker:IsA(\"BasePart\") then\n  dest = marker.Position + Vector3.new(0, 2, 0)\n else\n  dest = REALM_CENTER + Vector3.new(0, 2, 48)\n end\n local facing = REALM_CENTER - dest\n character:PivotTo(CFrame.lookAt(dest, dest + Vector3.new(facing.X, 0, facing.Z)))\n local humanoid = character:FindFirstChildOfClass(\"Humanoid\")\n if humanoid then\n  local hrp = character:FindFirstChild(\"HumanoidRootPart\")\n  if hrp and hrp:IsA(\"BasePart\") then hrp.AssemblyLinearVelocity = Vector3.zero end\n end\n print(\"[Garden] Visit\", player.Name)\n return true, { Kind = \"GardenVisit\" }\nend\n\nfunction Service:ReturnToKingdom(player: Player): (boolean, any)\n if not Guard.IsPlayer(player) then return false, \"Invalid request\" end\n local root = Guard.Alive(player)\n if not root then returnSpots[player] = nil; return false, \"Respawn first\" end\n local character = player.Character\n local saved = returnSpots[player]\n returnSpots[player] = nil\n local dest: Vector3? = nil\n if saved then\n  local pos = saved.Position\n  if (pos - REALM_CENTER).Magnitude > 90 and math.abs(pos.Y) < 600 and pos.Magnitude < 12000 then\n   dest = safeGround(pos, character) or pos + Vector3.new(0, 4, 0)\n  end\n end\n if not dest then\n  local plot = Knit.GetService(\"PlotService\"):GetPlot(player)\n  local spawnPart: BasePart? = nil\n  if plot then spawnPart = plot:FindFirstChild(\"PlotSpawn\", true) or plot:FindFirstChild(\"Plot1Spawn\", true) end\n  if spawnPart and spawnPart:IsA(\"BasePart\") then\n   dest = spawnPart.Position + Vector3.new(0, 4, 0)\n  else\n   local markers = workspace:FindFirstChild(\"BiomeTeleportPoints\")\n   local meadow = markers and markers:FindFirstChild(\"Meadow\")\n   if meadow and meadow:IsA(\"BasePart\") then\n    dest = meadow.Position + Vector3.new(0, 4, 0)\n   else\n    local anySpawn = workspace:FindFirstChildWhichIsA(\"SpawnLocation\", true)\n    if anySpawn then dest = (anySpawn :: BasePart).Position + Vector3.new(0, 5, 0) end\n   end\n  end\n end\n if not dest then return false, \"Return unavailable\" end\n local look = saved and (saved.LookVector.X * Vector3.xAxis + saved.LookVector.Z * Vector3.zAxis) or Vector3.new(0, 0, -1)\n if look.Magnitude < 0.01 then look = Vector3.new(0, 0, -1) end\n character:PivotTo(CFrame.lookAt(dest, dest + look))\n print(\"[Garden] Return\", player.Name)\n return true, { Kind = \"GardenReturn\" }\nend\n\nfunction Service:BuyCosmetic(player: Player, cosmeticId: string): (boolean, any)\n\tif not Guard.IsPlayer(player) or not Guard.Id(cosmeticId) then return false, \"Invalid cosmetic\" end\n\tlocal def = Garden.Cosmetics[cosmeticId]\n\tif not def then return false, \"Unknown cosmetic\" end\n\tlocal data = Data:Get(player)\n\tif not data then return false, \"Profile is loading\" end\n\tif cosmetics(data)[cosmeticId] then return false, \"Already owned\" end\n if not Knit.GetService(\"EconomyService\"):Spend(player, Garden.Currency, def.Cost, \"GardenCosmetic\") then\n  return false, \"Not enough Harvest.\"\n end\n\tcosmetics(data)[cosmeticId] = true\n\tData:Publish(player, \"GardenCosmetics\")\n\tprint(\"[Garden] BuyCosmetic\", player.Name, cosmeticId)\n\treturn true, def.DisplayName .. \" unlocked!\"\nend\n\nfunction Service:EquipCosmetic(player: Player, uid: string, cosmeticId: string): (boolean, any)\n\tif not Guard.IsPlayer(player) or not Guard.Id(uid) or type(cosmeticId) ~= \"string\" or #cosmeticId > 40 then\n\t\treturn false, \"Invalid cosmetic\"\n\tend\n\tlocal data = Data:Get(player)\n\tif not data then return false, \"Profile is loading\" end\n\tlocal pets = Knit.GetService(\"PetService\")\n\tlocal pet = pets:FindOwned(data, uid)\n\tif not pet then return false, \"Pet unavailable\" end\n\tif cosmeticId == \"None\" or cosmeticId == \"\" then\n\t\tpet.Cosmetic = nil\n\telse\n\t\tif not Garden.Cosmetics[cosmeticId] then return false, \"Unknown cosmetic\" end\n\t\tif not cosmetics(data)[cosmeticId] then return false, \"Unlock it with Harvest first\" end\n\t\tpet.Cosmetic = cosmeticId\n\tend\n\tpets:Publish(player)\n\tprint(\"[Garden] EquipCosmetic\", player.Name, pet.PetId, cosmeticId)\n\tif cosmeticId == \"None\" or cosmeticId == \"\" then return true, \"Cosmetic removed\" end\n\treturn true, Garden.Cosmetics[cosmeticId].DisplayName .. \" dressed up!\"\nend\n\nfunction Service:KnitInit()\n Data = Knit.GetService(\"PlayerDataService\")\nend\n\nfunction Service:KnitStart()\n Players.PlayerRemoving:Connect(function(player)\n  returnSpots[player] = nil\n  claimLocks[player] = nil\n end)\nend\n\nreturn Service\n",
+    "ReplicatedStorage.Shared.Gameplay.Definitions.GardenDefinitions": "--!strict\n-- Garden expedition tuning. Single source of truth for server + client preview.\nlocal Garden = {}\n\nGarden.MaxActive = 3\nGarden.Currency = \"GardenHarvest\"\n\nGarden.Durations = {\n\tSproutRun = { Id = \"SproutRun\", DisplayName = \"Sprout Run\", Seconds = 60, Label = \"1 min\" },\n\tGardenShift = { Id = \"GardenShift\", DisplayName = \"Garden Shift\", Seconds = 300, Label = \"5 min\" },\n\tGrandHarvest = { Id = \"GrandHarvest\", DisplayName = \"Grand Harvest\", Seconds = 900, Label = \"15 min\" },\n}\nGarden.DurationOrder = { \"SproutRun\", \"GardenShift\", \"GrandHarvest\" }\n\nGarden.TripDisplay = {\n SproutRun = { Tagline = \"Quick expedition\", BaseLabel = \"Low\", BestFor = \"fast farming\" },\n GardenShift = { Tagline = \"Balanced expedition\", BaseLabel = \"Medium\", BestFor = \"steady harvest\" },\n GrandHarvest = { Tagline = \"Long expedition\", BaseLabel = \"High\", BestFor = \"big hauls\" },\n}\n\nGarden.RealmCenter = Vector3.new(2000, 30, 2000)\n\nGarden.RarityMultiplier = {\n\tCommon = 1,\n\tUncommon = 1.5,\n\tRare = 2.2,\n\tEpic = 3.2,\n\tLegendary = 5,\n\tMythical = 8,\n\tSecret = 12,\n}\n\nGarden.CropNames = { \"Carrot\", \"Tomato\", \"Pumpkin\", \"Starberry\", \"Moonmelon\" }\n\nGarden.Cosmetics = {\n\tFlowerCrown = { Id = \"FlowerCrown\", DisplayName = \"Flower Crown\", Cost = 40, Description = \"A ring of garden blooms.\" },\n\tStrawberryHat = { Id = \"StrawberryHat\", DisplayName = \"Strawberry Hat\", Cost = 90, Description = \"Freshly picked berry cap.\" },\n\tLeafyAura = { Id = \"LeafyAura\", DisplayName = \"Leafy Aura\", Cost = 150, Description = \"Swirling garden leaves.\" },\n\tGoldenBloom = { Id = \"GoldenBloom\", DisplayName = \"Golden Bloom\", Cost = 300, Description = \"A radiant golden harvest glow.\" },\n\tRainbowSprout = { Id = \"RainbowSprout\", DisplayName = \"Rainbow Sprout\", Cost = 500, Description = \"The garden's rarest shimmer.\" },\n}\nGarden.CosmeticOrder = { \"FlowerCrown\", \"StrawberryHat\", \"LeafyAura\", \"GoldenBloom\", \"RainbowSprout\" }\n\nfunction Garden.RarityMult(rarity: string): number\n\treturn Garden.RarityMultiplier[rarity] or 1\nend\n\nfunction Garden.LevelMult(level: number): number\n\treturn 1 + (math.max(1, level) - 1) * 0.03\nend\n\n-- Longer expeditions and higher rarity pets earn more. Deterministic preview.\nfunction Garden.Estimate(rarity: string, level: number, mutationPower: number, shiny: boolean, prismatic: boolean, seconds: number): number\n\tlocal base = math.max(1, seconds) / 60 * 8\n\tlocal total = base * Garden.RarityMult(rarity) * Garden.LevelMult(level or 1) * (mutationPower or 1)\n\tif shiny then total *= 1.5 end\n\tif prismatic then total *= 2 end\n\treturn math.max(1, math.floor(total))\nend\n\n-- Flavor split of a total harvest across crop names. Sums back to total.\nfunction Garden.SplitCrops(total: number, seed: number): {{ Name: string, Amount: number }}\n\tlocal names = Garden.CropNames\n\tlocal parts = math.min(#names, 2 + (seed % 3))\n\tlocal remaining = total\n\tlocal out = {}\n\tfor i = 1, parts do\n\t\tlocal amount = 0\n\t\tif i == parts then\n\t\t\tamount = remaining\n\t\telse\n\t\t\tamount = math.max(1, math.floor(total / parts * (0.7 + ((seed + i * 37) % 60) / 100)))\n\t\t\tamount = math.min(amount, remaining - (parts - i))\n\t\tend\n\t\tremaining -= amount\n\t\ttable.insert(out, { Name = names[((seed + i - 1) % #names) + 1], Amount = amount })\n\tend\n\treturn out\nend\n\nreturn table.freeze(Garden)\n",
+    "StarterPlayer.StarterPlayerScripts.GardenPlotVisuals": "--!strict\nlocal Players = game:GetService(\"Players\")\nlocal RS = game:GetService(\"ReplicatedStorage\")\nlocal Run = game:GetService(\"RunService\")\nlocal Knit = require(RS.Packages.Knit)\nlocal Appearance = require(RS.Shared.Gameplay.PetAppearance)\n\nlocal localPlayer = Players.LocalPlayer\nlocal REALM_CENTER = Vector3.new(2000, 30, 2000)\nlocal slots: { any } = {}\nlocal butterflies: { BasePart } = {}\nlocal dataSnapshot: any = nil\n\nlocal function realm(): Model?\n\treturn workspace:FindFirstChild(\"PetGardenRealm\") :: any\nend\n\nlocal function getData(): any\n\tlocal ok, ctrl = pcall(function() return Knit.GetController(\"DataController\") end)\n\tif not ok or not ctrl then return nil end\n\tlocal ok2, d = pcall(function() return (ctrl :: any):GetPlayerData() end)\n\tif not ok2 then return nil end\n\treturn d\nend\n\nlocal function findPet(data: any, uid: string): any\n\tfor _, p in ipairs(data.Pets or {}) do if p.UID == uid then return p end end\n\treturn nil\nend\n\nlocal function ensureSlot(i: number): any\n\tif slots[i] then return slots[i] end\n\tlocal r = realm()\n\tif not r then return nil end\n\tlocal plot = r:FindFirstChild(\"GardenPlot\" .. tostring(i))\n\tif not plot then return nil end\n\tlocal pad = plot:FindFirstChild(\"PetPad\")\n\tlocal anchors: { BasePart } = {}\n\tfor _, child in ipairs(plot:GetChildren()) do\n\t\tif child:IsA(\"BasePart\") and child.Name:match(\"^CropAnchor\") then table.insert(anchors, child) end\n\tend\n\ttable.sort(anchors, function(a: BasePart, b: BasePart): boolean return a.Name < b.Name end)\n\tlocal folderVisuals = Instance.new(\"Folder\")\n\tfolderVisuals.Name = \"WorkVisuals\"\n\tfolderVisuals.Parent = plot\n\tlocal crops: { BasePart } = {}\n\tfor k, anchor in ipairs(anchors) do\n\t\tlocal part = Instance.new(\"Part\")\n\t\tpart.Name = \"CropStage\" .. tostring(k)\n\t\tpart.Size = Vector3.new(0.6, 0.8, 0.6)\n\t\tpart.Color = Color3.fromRGB(110, 200, 120)\n\t\tpart.Material = Enum.Material.Grass\n\t\tpart.Shape = Enum.PartType.Ball\n\t\tpart.Anchored = true\n\t\tpart.CanCollide = false\n\t\tpart.CanTouch = false\n\t\tpart.CanQuery = false\n\t\tpart.CFrame = CFrame.new(anchor.Position)\n\t\tpart.Parent = folderVisuals\n\t\ttable.insert(crops, part)\n\tend\n\tlocal bill = Instance.new(\"BillboardGui\")\n\tbill.Name = \"PlotStatus\"\n\tbill.Size = UDim2.fromOffset(220, 64)\n\tbill.StudsOffsetWorldSpace = Vector3.new(0, 5, 0)\n\tbill.AlwaysOnTop = false\n\tbill.MaxDistance = 90\n\tlocal sign = plot:FindFirstChild(\"PlotSign\")\n\tlocal adornee: Instance? = sign and sign:IsA(\"BasePart\") and sign or pad\n\tif adornee then bill.Adornee = adornee end\n\tbill.Parent = plot\n\tlocal text = Instance.new(\"TextLabel\")\n\ttext.Name = \"StatusText\"\n\ttext.Size = UDim2.fromScale(1, 1)\n\ttext.BackgroundTransparency = 0.25\n\ttext.BackgroundColor3 = Color3.fromRGB(34, 58, 49)\n\ttext.TextColor3 = Color3.new(1, 1, 1)\n\ttext.Font = Enum.Font.GothamBold\n\ttext.TextSize = 14\n\ttext.TextWrapped = true\n\ttext.Parent = bill\n\tlocal sparkAttach = Instance.new(\"Attachment\")\n\tsparkAttach.Name = \"ReadySparkles\"\n\tlocal padPart = pad and pad:IsA(\"BasePart\") and pad or nil\n\tif padPart then\n\t\tsparkAttach.Position = Vector3.new(0, 1, 0)\n\t\tsparkAttach.Parent = padPart\n\t\tlocal emitter = Instance.new(\"ParticleEmitter\")\n\t\temitter.Name = \"ReadyGlow\"\n\t\temitter.Color = ColorSequence.new(Color3.fromRGB(255, 220, 130))\n\t\temitter.Rate = 0\n\t\temitter.Lifetime = NumberRange.new(0.5, 1)\n\t\temitter.Speed = NumberRange.new(0.6, 1.2)\n\t\temitter.Size = NumberSequence.new(0.16)\n\t\temitter.LightEmission = 0.5\n\t\temitter.Parent = sparkAttach\n\tend\n\tlocal slot = {\n\t\tIndex = i,\n\t\tPlot = plot,\n\t\tPad = pad,\n\t\tCrops = crops,\n\t\tBillboard = bill,\n\t\tStatusText = text,\n\t\tVisuals = folderVisuals,\n\t\tPetModel = nil :: any,\n\t\tPetUID = nil :: any,\n\t\tSeed = math.random() * 10,\n\t}\n\tslots[i] = slot\n\treturn slot\nend\n\nlocal function setCrops(slot: any, frac: number, ready: boolean)\n\tlocal stage = 0\n\tif frac < 0.25 then stage = 0\n\telseif frac < 0.5 then stage = 1\n\telseif frac < 0.75 then stage = 2\n\telseif frac < 1 then stage = 3\n\telse stage = 4 end\n\tfor k, part in ipairs(slot.Crops) do\n\t\tlocal p = part :: BasePart\n\t\tif stage == 0 then\n\t\t\tp.Size = Vector3.new(0.4, 0.7, 0.4)\n\t\t\tp.Color = Color3.fromRGB(120, 210, 130)\n\t\t\tp.Material = Enum.Material.Grass\n\t\telseif stage == 1 then\n\t\t\tp.Size = Vector3.new(0.7, 1, 0.7)\n\t\t\tp.Color = Color3.fromRGB(95, 185, 105)\n\t\t\tp.Material = Enum.Material.Grass\n\t\telseif stage == 2 then\n\t\t\tp.Size = Vector3.new(1, 1.3, 1)\n\t\t\tp.Color = Color3.fromRGB(235, 150, 60)\n\t\t\tp.Material = Enum.Material.SmoothPlastic\n\t\telseif stage == 3 then\n\t\t\tp.Size = Vector3.new(1.2, 1.4, 1.2)\n\t\t\tp.Color = Color3.fromRGB(230, 110, 60)\n\t\t\tp.Material = Enum.Material.SmoothPlastic\n\t\telse\n\t\t\tp.Size = Vector3.new(1.4, 1.5, 1.4)\n\t\t\tp.Color = (k % 2 == 0) and Color3.fromRGB(240, 140, 30) or Color3.fromRGB(220, 60, 60)\n\t\t\tp.Material = Enum.Material.SmoothPlastic\n\t\tend\n\t\tp.Transparency = 0\n\tend\n\tlocal padPart = slot.Pad and slot.Pad:IsA(\"BasePart\") and slot.Pad or nil\n\tif padPart then\n\t\tlocal attach = padPart:FindFirstChild(\"ReadySparkles\")\n\t\tif attach then\n\t\t\tlocal emitter = attach:FindFirstChild(\"ReadyGlow\")\n\t\t\tif emitter and emitter:IsA(\"ParticleEmitter\") then\n\t\t\t\temitter.Rate = ready and 4 or 0\n\t\t\tend\n\t\tend\n\tend\nend\n\nlocal function clearSlot(slot: any)\n\tif slot.PetModel then (slot.PetModel :: Model):Destroy() slot.PetModel = nil end\n\tslot.PetUID = nil\n\tfor _, part in ipairs(slot.Crops) do (part :: BasePart).Transparency = 1 end\n\tlocal padPart = slot.Pad and slot.Pad:IsA(\"BasePart\") and slot.Pad or nil\n\tif padPart then\n\t\tlocal attach = padPart:FindFirstChild(\"ReadySparkles\")\n\t\tif attach then\n\t\t\tlocal emitter = attach:FindFirstChild(\"ReadyGlow\")\n\t\t\tif emitter and emitter:IsA(\"ParticleEmitter\") then emitter.Rate = 0 end\n\t\tend\n\tend\n\tslot.StatusText.Text = \"EMPTY PLOT ➕\"\nend\n\nlocal function refreshState()\n\tdataSnapshot = getData()\n\tlocal r = realm()\n\tif not r then return end\n\tlocal entries: { any } = {}\n\tif dataSnapshot and type(dataSnapshot.GardenExpeditions) == \"table\" then\n\t\tfor _, e in ipairs(dataSnapshot.GardenExpeditions) do table.insert(entries, e) end\n\t\ttable.sort(entries, function(a: any, b: any): boolean return (a.StartedAt or 0) < (b.StartedAt or 0) end)\n\tend\n\tfor i = 1, 3 do\n\t\tlocal slot = ensureSlot(i)\n\t\tif not slot then continue end\n\t\tlocal entry = entries[i]\n\t\tif not entry then\n\t\t\tif slot.PetUID ~= nil then clearSlot(slot) end\n\t\t\tslot.StatusText.Text = \"EMPTY PLOT ➕\"\n\t\t\tcontinue\n\t\tend\n\t\tlocal now = os.time()\n\t\tlocal duration = math.max(1, entry.Duration or 60)\n\t\tlocal left = math.max(0, (entry.ReadyAt or now) - now)\n\t\tlocal frac = math.clamp((duration - left) / duration, 0, 1)\n\t\tlocal ready = left <= 0\n\t\tsetCrops(slot, frac, ready)\n\t\tlocal pet = dataSnapshot and findPet(dataSnapshot, entry.UID) or nil\n\t\tlocal wantKey = entry.UID .. \"|\" .. (pet and (pet.PetId .. tostring(pet.Cosmetic)) or \"gone\")\n\t\tif slot.PetUID ~= wantKey then\n\t\t\tif slot.PetModel then (slot.PetModel :: Model):Destroy() slot.PetModel = nil end\n\t\t\tif pet then\n\t\t\t\tlocal ok, model = pcall(function() return Appearance.Create(pet) end)\n\t\t\t\tif ok and model then\n\t\t\t\t\t(model :: Model).Parent = workspace\n\t\t\t\t\tslot.PetModel = model\n\t\t\t\tend\n\t\t\tend\n\t\t\tslot.PetUID = wantKey\n\t\tend\n\t\tlocal mm = math.floor(left / 60)\n\t\tlocal ss = left % 60\n\t\tlocal label = (pet and entry.PetId or \"Pet\") .. \"\\n\" .. string.format(\"%02d:%02d\", mm, ss)\n\t\tif ready then label = \"READY TO HARVEST ✨\" end\n\t\tslot.StatusText.Text = label\n\tend\nend\n\nlocal function nearRealm(): boolean\n\tlocal char = localPlayer.Character\n\tlocal root = char and char:FindFirstChild(\"HumanoidRootPart\")\n\tif not root or not root:IsA(\"BasePart\") then return false end\n\treturn (root.Position - REALM_CENTER).Magnitude < 260\nend\n\n-- Butterflies: 3 tiny wanderers, only animate near realm.\nlocal function ensureButterflies()\n\tlocal r = realm()\n\tif not r or #butterflies > 0 then return end\n\tfor i = 1, 3 do\n\t\tlocal p = Instance.new(\"Part\")\n\t\tp.Name = \"Butterfly\" .. tostring(i)\n\t\tp.Size = Vector3.new(0.4, 0.2, 0.4)\n\t\tp.Color = if i == 1 then Color3.fromRGB(255, 170, 220) elseif i == 2 then Color3.fromRGB(150, 220, 255) else Color3.fromRGB(255, 230, 150)\n\t\tp.Material = Enum.Material.Neon\n\t\tp.Anchored = true\n\t\tp.CanCollide = false\n\t\tp.CanTouch = false\n\t\tp.CanQuery = false\n\t\tp.Position = REALM_CENTER + Vector3.new(-10 + i * 8, 34, 10)\n\t\tp.Parent = r\n\t\ttable.insert(butterflies, p)\n\tend\nend\n\nKnit.OnStart():andThen(function()\n\tlocal ok, ctrl = pcall(function() return Knit.GetController(\"DataController\") end)\n\tif ok and ctrl then\n\t\t(ctrl :: any).Changed:Connect(function() refreshState() end)\n\tend\n\trefreshState()\nend):catch(function() end)\n\n-- Portal prompt -> same secure Return function as UI.\ntask.spawn(function()\n\twhile true do\n\t\ttask.wait(1)\n\t\tlocal r = realm()\n\t\tif r then\n\t\t\tlocal gate = r:FindFirstChild(\"ReturnPortal\", true)\n\t\t\tif gate and gate:IsA(\"BasePart\") then\n\t\t\t\tlocal prompt = gate:FindFirstChild(\"ReturnPrompt\")\n\t\t\t\tif prompt and prompt:IsA(\"ProximityPrompt\") and not prompt:GetAttribute(\"Hooked\") then\n\t\t\t\t\tprompt:SetAttribute(\"Hooked\", true)\n\t\t\t\t\tprompt.Triggered:Connect(function()\n\t\t\t\t\t\tlocal folder = RS:FindFirstChild(\"AnimalKingdomRemotes\")\n\t\t\t\t\t\tlocal req = folder and folder:FindFirstChild(\"UIRequest\")\n\t\t\t\t\t\tif req and req:IsA(\"RemoteEvent\") then (req :: RemoteEvent):FireServer(\"ReturnGarden\", {}) end\n\t\t\t\t\tend)\n\t\t\t\tend\n\t\t\tend\n\t\tend\n\tend\nend)\n\ntask.spawn(function()\n\twhile true do\n\t\ttask.wait(1)\n\t\trefreshState()\n\t\tensureButterflies()\n\tend\nend)\n\nlocal elapsed = 0\nRun.RenderStepped:Connect(function(dt)\n\tif not nearRealm() then return end\n\telapsed += dt\n\tif elapsed < 1 / 30 then return end\n\tlocal delta = elapsed\n\telapsed = 0\n\tlocal t = os.clock()\n\tfor _, slot in pairs(slots) do\n\t\tlocal model = slot.PetModel\n\t\tif not model then continue end\n\t\tlocal pad = slot.Pad\n\t\tif not pad or not pad:IsA(\"BasePart\") then continue end\n\t\tlocal seed = slot.Seed or 0\n\t\tlocal wander = Vector3.new(math.sin(t * 0.5 + seed) * 2.2, 0, math.cos(t * 0.4 + seed * 1.7) * 1.6)\n\t\tlocal hop = math.abs(math.sin(t * 2.2 + seed * 3)) * 0.35\n\t\tlocal bob = math.sin(t * 3 + seed) * 0.12\n\t\tlocal base = (pad :: BasePart).Position + Vector3.new(0, 1.6 + hop + bob, 0) + wander\n\t\tlocal faceAngle = math.sin(t * 0.3 + seed * 2) * 1.2\n\t\tlocal target = CFrame.new(base) * CFrame.Angles(0, faceAngle, math.sin(t * 1.4 + seed) * 0.06)\n\t\tlocal current = (model :: Model):GetPivot()\n\t\tif (current.Position - target.Position).Magnitude > 40 then\n\t\t\t(model :: Model):PivotTo(target)\n\t\telse\n\t\t\t(model :: Model):PivotTo(current:Lerp(target, 1 - math.exp(-6 * delta)))\n\t\tend\n\tend\n\tfor i, b in ipairs(butterflies) do\n\t\tlocal c = REALM_CENTER + Vector3.new(math.sin(t * 0.4 + i * 2.1) * 22, 4.5 + math.sin(t * 0.9 + i) * 1.2, math.cos(t * 0.33 + i * 1.3) * 22)\n\t\tb.Position = b.Position:Lerp(c, 1 - math.exp(-2 * delta))\n\tend\nend)\n"
+  },
+  "refs": {
+    "ServerScriptService.ServerSource.Server.GardenExpeditionService": [
+      "local Garden = require(RS.Shared.Gameplay.Definitions.GardenDefinitions)",
+      "local Service = Knit.CreateService({ Name = \"GardenExpeditionService\", Client = {} })",
+      "\tif type(data.GardenExpeditions) ~= \"table\" then data.GardenExpeditions = {} end",
+      "\treturn data.GardenExpeditions",
+      "\tif type(data.GardenCosmetics) ~= \"table\" then data.GardenCosmetics = {} end",
+      "\treturn data.GardenCosmetics",
+      "\treturn Garden.Estimate(rarity, pet.Level or 1, mutationPower(pet), pet.Shiny == true, pet.Prismatic == true, durationSeconds)",
+      "\tlocal duration = Garden.Durations[durationId]",
+      " if #expeditions(data) >= Garden.MaxActive then return false, \"All 3 Garden plots are occupied.\" end",
+      " Data:Publish(player, \"GardenExpeditions\")",
+      " print(\"[Garden] Start\", player.Name, pet.PetId, durationId)",
+      " return true, { Kind = \"GardenStarted\", PetId = pet.PetId, DisplayName = def.DisplayName, DurationId = durationId, DurationLabel = duration.Label }",
+      " if not ok then warn(\"[Garden] Claim error \" .. tostring(success)); return false, \"Action unavailable; please try again\" end",
+      "\t\tData:Publish(player, \"GardenExpeditions\")",
+      "\teconomy:Add(player, Garden.Currency, amount, \"Garden\")",
+      "\tData:Publish(player, \"GardenExpeditions\")",
+      "\tlocal crops = Garden.SplitCrops(amount, now % 997)",
+      "\tprint(\"[Garden] Claim\", player.Name, pet.PetId, amount)",
+      "\treturn true, { Kind = \"GardenClaim\", Amount = amount, Crops = crops, PetId = pet.PetId }",
+      "\t\tKnit.GetService(\"EconomyService\"):Add(player, Garden.Currency, partial, \"GardenRecall\")",
+      " Data:Publish(player, \"GardenExpeditions\")",
+      " print(\"[Garden] Cancel\", player.Name, uid, partial)",
+      "  return true, { Kind = \"GardenClaimAll\", Amount = total, Claims = claims }",
+      " if not ok then warn(\"[Garden] ClaimAll error \" .. tostring(success)); return false, \"Action unavailable; please try again\" end",
+      " local realm = workspace:FindFirstChild(\"PetGardenRealm\")",
+      " local marker = realm and realm:FindFirstChild(\"GardenArrival\", true)",
+      " local realm = workspace:FindFirstChild(\"PetGardenRealm\")",
+      "function Service:VisitGarden(player: Player): (boolean, any)",
+      " local realm = workspace:FindFirstChild(\"PetGardenRealm\")",
+      " if not realm then return false, \"Garden is unavailable\" end",
+      " local marker = realm:FindFirstChild(\"GardenArrival\", true)",
+      " print(\"[Garden] Visit\", player.Name)",
+      " return true, { Kind = \"GardenVisit\" }",
+      "  local plot = Knit.GetService(\"PlotService\"):GetPlot(player)",
+      "  if plot then spawnPart = plot:FindFirstChild(\"PlotSpawn\", true) or plot:FindFirstChild(\"Plot1Spawn\", true) end",
+      " print(\"[Garden] Return\", player.Name)",
+      " return true, { Kind = \"GardenReturn\" }",
+      "\tlocal def = Garden.Cosmetics[cosmeticId]",
+      " if not Knit.GetService(\"EconomyService\"):Spend(player, Garden.Currency, def.Cost, \"GardenCosmetic\") then",
+      "\tData:Publish(player, \"GardenCosmetics\")",
+      "\tprint(\"[Garden] BuyCosmetic\", player.Name, cosmeticId)",
+      "\t\tif not Garden.Cosmetics[cosmeticId] then return false, \"Unknown cosmetic\" end",
+      "\tprint(\"[Garden] EquipCosmetic\", player.Name, pet.PetId, cosmeticId)",
+      "\treturn true, Garden.Cosmetics[cosmeticId].DisplayName .. \" dressed up!\""
+    ],
+    "StarterPlayer.StarterPlayerScripts.GardenPlotVisuals": [
+      "\treturn workspace:FindFirstChild(\"PetGardenRealm\") :: any",
+      "\tlocal plot = r:FindFirstChild(\"GardenPlot\" .. tostring(i))",
+      "\t\tif child:IsA(\"BasePart\") and child.Name:match(\"^CropAnchor\") then table.insert(anchors, child) end",
+      "\t\tpart.Anchored = true",
+      "\tbill.Name = \"PlotStatus\"",
+      "\tlocal sign = plot:FindFirstChild(\"PlotSign\")",
+      "\t\tPlot = plot,",
+      "\tif dataSnapshot and type(dataSnapshot.GardenExpeditions) == \"table\" then",
+      "\t\tfor _, e in ipairs(dataSnapshot.GardenExpeditions) do table.insert(entries, e) end",
+      "\t\tp.Anchored = true",
+      "\t\t\t\t\t\tif req and req:IsA(\"RemoteEvent\") then (req :: RemoteEvent):FireServer(\"ReturnGarden\", {}) end"
+    ]
+  }
+}

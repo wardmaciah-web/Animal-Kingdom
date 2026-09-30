@@ -1,0 +1,130 @@
+{
+  "Kind": "Exact weighted calculations, neutral existing Luck, before weight rounding; no live Monte Carlo",
+  "Weight": [
+    {
+      "WeightBias": 0,
+      "Bands": [
+        0.8,
+        0.15,
+        0.04,
+        0.01
+      ],
+      "ExpectedRatio": 1.1035,
+      "AtLeast1_35": 0.05,
+      "AtLeast1_5": 0.025505102572168224,
+      "HeavyHunt12PullSuccess": 0.45963991233736334
+    },
+    {
+      "WeightBias": 0.15,
+      "Bands": [
+        0.7699711260827719,
+        0.16602502406159766,
+        0.05004812319538017,
+        0.01395572666025024
+      ],
+      "ExpectedRatio": 1.1149422521655437,
+      "AtLeast1_35": 0.06400384985563042,
+      "AtLeast1_5": 0.03335575875247227,
+      "HeavyHunt12PullSuccess": 0.5478435303581441
+    },
+    {
+      "WeightBias": 0.4,
+      "Bands": [
+        0.7246376811594203,
+        0.19021739130434784,
+        0.06521739130434782,
+        0.01992753623188406
+      ],
+      "ExpectedRatio": 1.1322161835748792,
+      "AtLeast1_35": 0.08514492753623189,
+      "AtLeast1_5": 0.045207594773462687,
+      "HeavyHunt12PullSuccess": 0.6562619533613585
+    }
+  ],
+  "StarterSpeciesOdds": {
+    "Neutral": [
+      0.8100147275405006,
+      0.1767304860088365,
+      0.013254786450662739
+    ],
+    "Clover": [
+      0.8004041410742548,
+      0.18491131816732045,
+      0.014684540758424632
+    ],
+    "FamilyRank5": [
+      0.8051441621839897,
+      0.18088634536919476,
+      0.013969492446815533
+    ],
+    "CloverFamilyHot": [
+      0.780214566498103,
+      0.20183687133080364,
+      0.017948562171093273
+    ]
+  },
+  "RarityHunt8PullSuccess": 0.8146710258885065,
+  "PreviousHeavyHunt8PullSuccess": 0.1867266231972723,
+  "SanctuaryBlessingTenMinuteBonus": {
+    "2.5": 225.0,
+    "12.5": 1125.0,
+    "81": 7290.0,
+    "125": 11250.0,
+    "783": 70470.0
+  },
+  "Pacing": [
+    {
+      "Name": "One weakest starter",
+      "Rate": 2.5,
+      "TenMinutes": 1500.0,
+      "TwentyMinutes": 3000.0
+    },
+    {
+      "Name": "Five weakest starters",
+      "Rate": 12.5,
+      "TenMinutes": 7500.0,
+      "TwentyMinutes": 15000.0
+    },
+    {
+      "Name": "Developed Meadow",
+      "Rate": 81,
+      "TenMinutes": 48600,
+      "TwentyMinutes": 97200
+    },
+    {
+      "Name": "Meadow plus two Forest Raccoons",
+      "Rate": 125,
+      "TenMinutes": 75000,
+      "TwentyMinutes": 150000
+    },
+    {
+      "Name": "Developed Forest",
+      "Rate": 783,
+      "TenMinutes": 469800,
+      "TwentyMinutes": 939600
+    }
+  ],
+  "RoundedWeightStarterPool": [
+    {
+      "Bias": 0,
+      "ActualStarterPoolP1_35": 0.05011068763542329,
+      "Actual12PullSuccess": 0.46039493802418374,
+      "ActualStarterPoolP1_5": 0.02917170260808479,
+      "ActualOld8PullSuccess": 0.21088661102878492
+    },
+    {
+      "Bias": 0.15,
+      "ActualStarterPoolP1_35": 0.06412636263786023,
+      "Actual12PullSuccess": 0.5485532138651825,
+      "ActualStarterPoolP1_5": 0.03794342001011571,
+      "ActualOld8PullSuccess": 0.266154028661333
+    },
+    {
+      "Bias": 0.4,
+      "ActualStarterPoolP1_35": 0.08528529229129764,
+      "Actual12PullSuccess": 0.6568942897479801,
+      "ActualStarterPoolP1_5": 0.05118574700593533,
+      "ActualOld8PullSuccess": 0.3431751126884466
+    }
+  ]
+}

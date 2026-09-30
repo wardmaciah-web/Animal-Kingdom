@@ -1,0 +1,55 @@
+{
+  "Kind": "Actual Studio Play UI and walking; mock/copy profile",
+  "Town": {
+    "Activities": "E opened internal Challenges, title Activities",
+    "Shop": "Walked from Activities to General Store; E opened Shop; clicked Clover purchase; charged 250 once; active 300s timer",
+    "Index": "Walked from Shop; E opened existing Index",
+    "Biomes": "Walked from Index; E opened existing Biomes",
+    "Garden": "Walked from Biomes; E invoked existing Garden travel; InGarden=true"
+  },
+  "Stock": {
+    "BeforeRotation": 2984553,
+    "AfterRotation": 2984554,
+    "CloverBeforeCoins": 100000,
+    "CloverAfterCoins": 99750,
+    "RetainedPreviousRotationReceipt": true
+  },
+  "Paw": {
+    "RouteId": "8193176c-b7d0-4c2f-87aa-320ca32039ab",
+    "EInputAdvanced": 1,
+    "CoinsUnchanged": true,
+    "DirectionalArrows": 1,
+    "RoutePreservedAcrossDesktopTablet": true
+  },
+  "Lucky": {
+    "EventId": "ca6a029e-4948-47ad-a558-a3b312241957",
+    "ActiveModels": 1,
+    "Model": "ForestLuckyTree",
+    "Used": 0,
+    "SharedToastId": "LuckySpawn:ca6a029e-4948-47ad-a558-a3b312241957",
+    "SeparateBannerCount": 0,
+    "BiomesPulse": "Biome_Forest"
+  },
+  "Announcements": {
+    "QueuedDuringReveal": true,
+    "ResumedAfterReveal": true,
+    "DuplicateIdSentTwice": true
+  },
+  "AmbientLocalSimulation": {
+    "BreezeRate": 7,
+    "FirefliesRate": 8,
+    "RestlessRate": 5.5,
+    "MajorWeatherRate": 0,
+    "ReducedMotionRate": 0,
+    "CollidingAnchors": 0
+  },
+  "Devices": {
+    "Desktop": "Activities and Shop visually reviewed; actual prompts and purchase input",
+    "GalaxyA06Landscape": "Short Activities intro fixed and visually rechecked; first offer now visible. Shop short-card overlap corrected and visually rechecked; text-overflow scan empty.",
+    "ForcedPortrait": "Activities Play and Goals visually reviewed at 359x718; no text overflow detected. Existing LandscapeSensor retained.",
+    "iPadProM5": "1375x1032 guidance/HUD reviewed; one arrow, existing weather retained.",
+    "Controller": "BLOCKED: VirtualInput rejects ButtonB as permanently bound to CoreGUI. Focus/back implementation source reviewed."
+  },
+  "FixtureRestored": true,
+  "PersonalNoticeRegression": "Restored missing Players service reference and verified existing personal notification reached shared queue."
+}

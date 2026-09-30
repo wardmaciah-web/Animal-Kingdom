@@ -1,0 +1,142 @@
+2026-09-18T01:03:08.388Z,12383.388672,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_BEGIN local presentation only; Heartbeat samples are diagnostic, not a device/server benchmark
+2026-09-18T01:03:08.488Z,12383.488281,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm starts actual visual controller
+2026-09-18T01:03:08.488Z,12383.488281,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm uses High quality for budget checks
+2026-09-18T01:03:08.488Z,12383.488281,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm environment is world space
+2026-09-18T01:03:08.489Z,12383.489258,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_FIRST Thunderstorm {"sounds":2,"observeSeconds":20,"parts":7}
+2026-09-18T01:03:08.489Z,12383.489258,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE Thunderstorm
+2026-09-18T01:03:10.453Z,12385.453125,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR Thunderstorm WorldLightning -27.864776611328125, 7.828930854797363, -221.298828125
+2026-09-18T01:03:18.902Z,12393.902344,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR Thunderstorm WorldLightning -826.67919921875, 7.828930854797363, 868.7559814453125
+2026-09-18T01:03:27.418Z,12402.418945,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR Thunderstorm WorldLightning -144.91160583496094, 7.828930854797363, -345.3670654296875
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm peak budgets parts=20 sounds=3
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm every observed cosmetic is anchored/noncollidable/nontouchable/nonqueryable
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm all world sounds have positional Workspace parents
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm produces at least two fixed world lightning strikes; observed=3
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm produces positional thunder sound instances; observed=3
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm ordinary scene raycasts reach the map without hitting cosmetics
+2026-09-18T01:03:28.499Z,12403.499023,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_LAST Thunderstorm {"heartbeatMeanHz":59.10777959946121,"peakSounds":3,"over33msFrames":3,"sounds":3,"maxHeartbeatSeconds":0.1712016761302948,"stages":[],"strikes":3,"heartbeatFrames":1186,"thunderVoices":3,"peakParts":20,"parts":19}
+2026-09-18T01:03:30.916Z,12405.916992,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm removes world/meteor/environment/celestial containers
+2026-09-18T01:03:30.916Z,12405.916992,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm removes all weather audio after fade
+2026-09-18T01:03:30.916Z,12405.916992,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm destroys every observed temporary actor and voice
+2026-09-18T01:03:30.916Z,12405.916992,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm restores original Lighting properties
+2026-09-18T01:03:30.916Z,12405.916992,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm restores original effects/Sky and removes temporary effects
+2026-09-18T01:03:30.916Z,12405.916992,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Thunderstorm restores original GlobalWind
+2026-09-18T01:03:30.948Z,12405.948242,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos starts actual visual controller
+2026-09-18T01:03:30.948Z,12405.948242,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos uses High quality for budget checks
+2026-09-18T01:03:30.948Z,12405.948242,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos environment is world space
+2026-09-18T01:03:30.949Z,12405.949219,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos includes meteor combination
+2026-09-18T01:03:30.949Z,12405.949219,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_FIRST Chaos {"sounds":4,"observeSeconds":35,"parts":26}
+2026-09-18T01:03:30.949Z,12405.949219,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE Chaos
+2026-09-18T01:03:32.965Z,12407.965820,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR Chaos WorldLightning 166.53607177734375, 9.128954887390137, -179.57473754882812
+2026-09-18T01:03:33.030Z,12408.030273,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 0
+2026-09-18T01:03:38.015Z,12413.015625,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 1
+2026-09-18T01:03:43.047Z,12418.047852,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 2
+2026-09-18T01:03:47.998Z,12422.998047,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 3
+2026-09-18T01:03:52.966Z,12427.966797,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR Chaos WorldLightning -605.6848754882812, 9.128954887390137, 727.805419921875
+2026-09-18T01:03:53.031Z,12428.031250,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 0
+2026-09-18T01:03:58.047Z,12433.047852,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 1
+2026-09-18T01:04:03.064Z,12438.064453,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE Chaos 2
+2026-09-18T01:04:05.963Z,12440.963867,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos peak budgets parts=62 sounds=6
+2026-09-18T01:04:05.964Z,12440.964844,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos every observed cosmetic is anchored/noncollidable/nontouchable/nonqueryable
+2026-09-18T01:04:05.964Z,12440.964844,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos all world sounds have positional Workspace parents
+2026-09-18T01:04:05.964Z,12440.964844,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos visits all four CombinationStage values
+2026-09-18T01:04:05.964Z,12440.964844,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos rain/snow turn on and off at their matching stages
+2026-09-18T01:04:05.964Z,12440.964844,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos ordinary scene raycasts reach the map without hitting cosmetics
+2026-09-18T01:04:05.964Z,12440.964844,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_LAST Chaos {"heartbeatMeanHz":59.67327488410469,"peakSounds":6,"over33msFrames":2,"sounds":4,"maxHeartbeatSeconds":0.07189299911260605,"stages":[0,1,2,3,0,1,2],"strikes":2,"heartbeatFrames":2089,"thunderVoices":2,"peakParts":62,"parts":59}
+2026-09-18T01:04:08.365Z,12443.365234,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos removes world/meteor/environment/celestial containers
+2026-09-18T01:04:08.366Z,12443.366211,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos removes all weather audio after fade
+2026-09-18T01:04:08.366Z,12443.366211,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos destroys every observed temporary actor and voice
+2026-09-18T01:04:08.366Z,12443.366211,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos restores original Lighting properties
+2026-09-18T01:04:08.366Z,12443.366211,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos restores original effects/Sky and removes temporary effects
+2026-09-18T01:04:08.366Z,12443.366211,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Chaos restores original GlobalWind
+2026-09-18T01:04:08.404Z,12443.404297,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse starts actual visual controller
+2026-09-18T01:04:08.404Z,12443.404297,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse uses High quality for budget checks
+2026-09-18T01:04:08.404Z,12443.404297,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse environment is world space
+2026-09-18T01:04:08.404Z,12443.404297,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse includes meteor combination
+2026-09-18T01:04:08.404Z,12443.404297,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_FIRST AdminAbuse {"sounds":3,"observeSeconds":35,"parts":70}
+2026-09-18T01:04:08.404Z,12443.404297,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE AdminAbuse
+2026-09-18T01:04:10.368Z,12445.368164,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR AdminAbuse WorldLightning -391.01361083984375, 7.828930854797363, -212.75604248046875
+2026-09-18T01:04:10.463Z,12445.463867,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 0
+2026-09-18T01:04:14.149Z,12449.149414,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 1
+2026-09-18T01:04:17.913Z,12452.913086,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 2
+2026-09-18T01:04:21.581Z,12456.581055,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 3
+2026-09-18T01:04:25.215Z,12460.215820,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR AdminAbuse WorldLightning -392.4479064941406, 7.828930854797363, 229.346435546875
+2026-09-18T01:04:25.263Z,12460.263672,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 0
+2026-09-18T01:04:28.996Z,12463.996094,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 1
+2026-09-18T01:04:32.730Z,12467.730469,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 2
+2026-09-18T01:04:36.447Z,12471.447266,454d000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 3
+2026-09-18T01:04:39.999Z,12474.999023,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_ACTOR AdminAbuse WorldLightning -672.8931274414062, 9.128954887390137, 790.2169189453125
+2026-09-18T01:04:40.145Z,12475.145508,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_STAGE AdminAbuse 0
+2026-09-18T01:04:43.413Z,12478.413086,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse peak budgets parts=135 sounds=5
+2026-09-18T01:04:43.414Z,12478.414062,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse every observed cosmetic is anchored/noncollidable/nontouchable/nonqueryable
+2026-09-18T01:04:43.414Z,12478.414062,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse all world sounds have positional Workspace parents
+2026-09-18T01:04:43.414Z,12478.414062,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse visits all four CombinationStage values
+2026-09-18T01:04:43.414Z,12478.414062,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse rain/snow turn on and off at their matching stages
+2026-09-18T01:04:43.414Z,12478.414062,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse ordinary scene raycasts reach the map without hitting cosmetics
+2026-09-18T01:04:43.414Z,12478.414062,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_LAST AdminAbuse {"heartbeatMeanHz":59.91819978521235,"peakSounds":5,"over33msFrames":2,"sounds":4,"maxHeartbeatSeconds":0.08892980217933655,"stages":[0,1,2,3,0,1,2,3,0],"strikes":3,"heartbeatFrames":2099,"thunderVoices":3,"peakParts":135,"parts":126}
+2026-09-18T01:04:45.830Z,12480.830078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse removes world/meteor/environment/celestial containers
+2026-09-18T01:04:45.830Z,12480.830078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse removes all weather audio after fade
+2026-09-18T01:04:45.830Z,12480.830078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse destroys every observed temporary actor and voice
+2026-09-18T01:04:45.830Z,12480.830078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse restores original Lighting properties
+2026-09-18T01:04:45.830Z,12480.830078,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse restores original effects/Sky and removes temporary effects
+2026-09-18T01:04:45.831Z,12480.831055,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS AdminAbuse restores original GlobalWind
+2026-09-18T01:04:45.862Z,12480.862305,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon starts actual visual controller
+2026-09-18T01:04:45.862Z,12480.862305,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon uses High quality for budget checks
+2026-09-18T01:04:47.663Z,12482.663086,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon fixed anchor BloodMoonAnchor exists
+2026-09-18T01:04:47.663Z,12482.663086,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoonAnchor uses a world BillboardGui
+2026-09-18T01:04:47.664Z,12482.664062,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoonAnchor billboard has stud dimensions, world adornee and scene occlusion
+2026-09-18T01:04:47.664Z,12482.664062,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_BILLBOARD BloodMoonAnchor studs=5600x5600
+2026-09-18T01:04:47.664Z,12482.664062,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoonAnchor projects into view when facing its fixed world location
+2026-09-18T01:04:47.664Z,12482.664062,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE BloodMoon BloodMoonAnchor
+2026-09-18T01:04:47.746Z,12482.746094,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoonAnchor leaves view when camera turns away
+2026-09-18T01:04:48.112Z,12483.112305,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon centers and billboard stud sizes stay fixed through 360-degree camera rotation/translation
+2026-09-18T01:04:48.112Z,12483.112305,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon celestial actors remain noninteractive
+2026-09-18T01:04:48.113Z,12483.113281,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon ordinary scene raycasts reach the map without hitting cosmetics
+2026-09-18T01:04:50.529Z,12485.529297,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon removes world/meteor/environment/celestial containers
+2026-09-18T01:04:50.529Z,12485.529297,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon removes all weather audio after fade
+2026-09-18T01:04:50.529Z,12485.529297,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon restores original Lighting properties
+2026-09-18T01:04:50.530Z,12485.530273,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon restores original effects/Sky and removes temporary effects
+2026-09-18T01:04:50.530Z,12485.530273,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS BloodMoon restores original GlobalWind
+2026-09-18T01:04:50.562Z,12485.562500,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow starts actual visual controller
+2026-09-18T01:04:50.562Z,12485.562500,5953000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow uses High quality for budget checks
+2026-09-18T01:04:52.378Z,12487.378906,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow fixed anchor RainbowAnchor exists
+2026-09-18T01:04:52.379Z,12487.379883,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS RainbowAnchor projects into view when facing its fixed world location
+2026-09-18T01:04:52.379Z,12487.379883,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE Rainbow RainbowAnchor
+2026-09-18T01:04:52.462Z,12487.462891,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS RainbowAnchor leaves view when camera turns away
+2026-09-18T01:04:52.830Z,12487.830078,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow centers and billboard stud sizes stay fixed through 360-degree camera rotation/translation
+2026-09-18T01:04:52.830Z,12487.830078,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow celestial actors remain noninteractive
+2026-09-18T01:04:52.831Z,12487.831055,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow ordinary scene raycasts reach the map without hitting cosmetics
+2026-09-18T01:04:55.245Z,12490.245117,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow removes world/meteor/environment/celestial containers
+2026-09-18T01:04:55.246Z,12490.246094,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow removes all weather audio after fade
+2026-09-18T01:04:55.246Z,12490.246094,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow restores original Lighting properties
+2026-09-18T01:04:55.246Z,12490.246094,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow restores original effects/Sky and removes temporary effects
+2026-09-18T01:04:55.246Z,12490.246094,3b4a000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Rainbow restores original GlobalWind
+2026-09-18T01:04:55.281Z,12490.281250,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void starts actual visual controller
+2026-09-18T01:04:55.281Z,12490.281250,23af000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void uses High quality for budget checks
+2026-09-18T01:04:57.095Z,12492.095703,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void fixed anchor VoidPlanetAnchor exists
+2026-09-18T01:04:57.095Z,12492.095703,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidPlanetAnchor uses a world BillboardGui
+2026-09-18T01:04:57.095Z,12492.095703,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidPlanetAnchor billboard has stud dimensions, world adornee and scene occlusion
+2026-09-18T01:04:57.095Z,12492.095703,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_BILLBOARD VoidPlanetAnchor studs=1720.5x1720.5
+2026-09-18T01:04:57.095Z,12492.095703,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidPlanetAnchor projects into view when facing its fixed world location
+2026-09-18T01:04:57.095Z,12492.095703,6d59000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE Void VoidPlanetAnchor
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidPlanetAnchor leaves view when camera turns away
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void fixed anchor VoidMoonAnchor exists
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidMoonAnchor uses a world BillboardGui
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidMoonAnchor billboard has stud dimensions, world adornee and scene occlusion
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_BILLBOARD VoidMoonAnchor studs=1517x1517
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidMoonAnchor projects into view when facing its fixed world location
+2026-09-18T01:04:57.178Z,12492.178711,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_CAPTURE Void VoidMoonAnchor
+2026-09-18T01:04:57.262Z,12492.262695,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS VoidMoonAnchor leaves view when camera turns away
+2026-09-18T01:04:57.629Z,12492.629883,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void centers and billboard stud sizes stay fixed through 360-degree camera rotation/translation
+2026-09-18T01:04:57.629Z,12492.629883,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void celestial actors remain noninteractive
+2026-09-18T01:04:57.629Z,12492.629883,6356000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void ordinary scene raycasts reach the map without hitting cosmetics
+2026-09-18T01:05:00.045Z,12495.045898,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void removes world/meteor/environment/celestial containers
+2026-09-18T01:05:00.045Z,12495.045898,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void removes all weather audio after fade
+2026-09-18T01:05:00.045Z,12495.045898,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void restores original Lighting properties
+2026-09-18T01:05:00.045Z,12495.045898,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void restores original effects/Sky and removes temporary effects
+2026-09-18T01:05:00.045Z,12495.045898,4f50000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS Void restores original GlobalWind
+2026-09-18T01:05:02.461Z,12497.461914,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS final restoration restores original Lighting properties
+2026-09-18T01:05:02.461Z,12497.461914,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS final restoration restores original effects/Sky and removes temporary effects
+2026-09-18T01:05:02.461Z,12497.461914,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS final restoration restores original GlobalWind
+2026-09-18T01:05:02.461Z,12497.461914,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS final restoration leaves no weather world/audio containers
+2026-09-18T01:05:02.462Z,12497.462891,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_PASS test and restoration finish within 120 seconds
+2026-09-18T01:05:02.462Z,12497.462891,2db2000,6,Info [FLog::CreatorOutput] AK_POLISH_EXT_DONE assertions=100 failures=0 elapsed=114.08

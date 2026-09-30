@@ -1,0 +1,57 @@
+{
+  "Arrival": {
+    "Ok": true,
+    "Result": {
+      "Type": "Enum.CameraType.Custom",
+      "SubjectCurrent": true,
+      "Root": "4, 25004.255859375, 36",
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Fade": false
+    }
+  },
+  "Viewing": {
+    "Ok": true,
+    "Result": {
+      "Type": "Enum.CameraType.Scriptable",
+      "SubjectCurrent": true,
+      "Root": "4, 25004.255859375, 36",
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Owner": "AdminCamera",
+      "Fade": false
+    }
+  },
+  "PlotReturn": {
+    "Ok": true,
+    "Result": {
+      "Type": "Enum.CameraType.Custom",
+      "SubjectCurrent": true,
+      "Root": "-465.9891357421875, 12.820233345031738, 470.15631103515625",
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Fade": false
+    }
+  },
+  "InitialExitObstructedByHUD": {
+    "Ok": true,
+    "Result": {
+      "Type": "Enum.CameraType.Scriptable",
+      "SubjectCurrent": true,
+      "Root": "4, 25004.255859375, 36",
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Owner": "AdminCamera",
+      "Fade": false
+    }
+  },
+  "Exit": {
+    "Ok": true,
+    "Result": {
+      "Overlay": false,
+      "Type": "Enum.CameraType.Custom",
+      "Mouse": "Enum.MouseBehavior.Default",
+      "SubjectCurrent": true
+    }
+  },
+  "MouseLookAfterExit": {
+    "Rotated": true,
+    "Mouse": "Enum.MouseBehavior.LockCurrentPosition"
+  }
+}

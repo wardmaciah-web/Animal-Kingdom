@@ -1,0 +1,947 @@
+{
+  "Stationary": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.521612167358398,
+      "MaximumFormationError": 0,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 0,
+          "Position": [
+            -434.5216369628906,
+            8.89847183227539,
+            454.5
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0,
+          "Position": [
+            -430,
+            8.900835037231445,
+            454.5
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 0,
+          "Position": [
+            -425.4783630371094,
+            8.882392883300781,
+            454.5
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 0,
+          "Position": [
+            -434.5216369628906,
+            8.888130187988281,
+            459.0216369628906
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 0,
+          "Position": [
+            -430,
+            8.900005340576172,
+            459.0216369628906
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 0,
+          "Position": [
+            -425.4783630371094,
+            8.896053314208984,
+            459.0216369628906
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 0,
+          "Position": [
+            -434.5216369628906,
+            8.878998756408691,
+            463.54327392578125
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 0,
+          "Position": [
+            -430,
+            8.897640228271484,
+            463.54327392578125
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 0,
+          "Position": [
+            -425.4783630371094,
+            8.88572883605957,
+            463.54327392578125
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 0,
+          "Position": [
+            -434.5216369628906,
+            8.886364936828613,
+            468.06488037109375
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 0,
+          "Position": [
+            -430,
+            8.90276050567627,
+            468.06488037109375
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 0,
+          "Position": [
+            -425.4783630371094,
+            8.880062103271484,
+            468.06488037109375
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.31059678449916345,
+        "VisiblePets": 12,
+        "RenderPeakMs": 0.48362999223172665,
+        "ClonesPerWindow": 0,
+        "RaycastsPerSecond": 91.18986186920971,
+        "RenderFrames": 75
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -430,
+        12.820233345031738,
+        450
+      ],
+      "SubjectCurrent": true
+    }
+  },
+  "Running": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.521613597869873,
+      "MaximumFormationError": 1.8475669622421265,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 0.6781139969825745,
+          "Position": [
+            -434.5216369628906,
+            8.89567756652832,
+            417.4609680175781
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0.47191330790519714,
+          "Position": [
+            -430,
+            8.94225025177002,
+            417.4609680175781
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 0.5912708640098572,
+          "Position": [
+            -425.4783630371094,
+            8.928727149963379,
+            417.4609680175781
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 1.0398597717285156,
+          "Position": [
+            -434.5216369628906,
+            8.879131317138672,
+            421.98260498046875
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 0.8979195952415466,
+          "Position": [
+            -430,
+            8.944391250610352,
+            421.98260498046875
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 0.9461432695388794,
+          "Position": [
+            -425.4783630371094,
+            8.889139175415039,
+            421.98260498046875
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 1.4373130798339844,
+          "Position": [
+            -434.5216369628906,
+            8.905746459960938,
+            426.5042419433594
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 1.3239737749099731,
+          "Position": [
+            -430,
+            8.947836875915527,
+            426.5042419433594
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 1.3431200981140137,
+          "Position": [
+            -425.4783630371094,
+            8.87912654876709,
+            426.5042419433594
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 1.8475669622421265,
+          "Position": [
+            -434.5216369628906,
+            8.878971099853516,
+            431.0258483886719
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 1.7500391006469727,
+          "Position": [
+            -430,
+            8.931065559387207,
+            431.0258483886719
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 1.7538037300109863,
+          "Position": [
+            -425.4783630371094,
+            8.917261123657227,
+            431.0258483886719
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.3013646070796408,
+        "VisiblePets": 12,
+        "RenderPeakMs": 0.5321099888533354,
+        "ClonesPerWindow": 0,
+        "RaycastsPerSecond": 90.01434864682336,
+        "RenderFrames": 76
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -430.0447082519531,
+        12.747329711914062,
+        412.9384460449219
+      ],
+      "SubjectCurrent": true
+    }
+  },
+  "SharpTurn": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.519673824310303,
+      "MaximumFormationError": 3.586928367614746,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 1.2790253162384033,
+          "Position": [
+            -409.5096435546875,
+            8.902403831481934,
+            408.5697937011719
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0.8689493536949158,
+          "Position": [
+            -409.477783203125,
+            8.945958137512207,
+            413.0893859863281
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 1.1647231578826904,
+          "Position": [
+            -409.4459533691406,
+            8.921687126159668,
+            417.6089782714844
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 1.9719218015670776,
+          "Position": [
+            -414.02923583984375,
+            8.880708694458008,
+            408.60162353515625
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 1.730753779411316,
+          "Position": [
+            -413.9974060058594,
+            8.947347640991211,
+            413.1212463378906
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 1.8933178186416626,
+          "Position": [
+            -413.9655456542969,
+            8.894923210144043,
+            417.6408386230469
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 2.7625725269317627,
+          "Position": [
+            -418.548828125,
+            8.901705741882324,
+            408.6334533691406
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 2.5935380458831787,
+          "Position": [
+            -418.5169982910156,
+            8.948905944824219,
+            413.153076171875
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 2.7024710178375244,
+          "Position": [
+            -418.48516845703125,
+            8.879132270812988,
+            417.67266845703125
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 3.586928367614746,
+          "Position": [
+            -423.06842041015625,
+            8.87940788269043,
+            408.6653137207031
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 3.456611394882202,
+          "Position": [
+            -423.0365905761719,
+            8.93713092803955,
+            413.1849060058594
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 3.5373470783233643,
+          "Position": [
+            -423.0047302246094,
+            8.909818649291992,
+            417.7044982910156
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.3013646070796408,
+        "VisiblePets": 12,
+        "RenderPeakMs": 0.5321099888533354,
+        "ClonesPerWindow": 0,
+        "RaycastsPerSecond": 90.01434864682336,
+        "RenderFrames": 76
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -404.9056091308594,
+        12.80435848236084,
+        413.0581359863281
+      ],
+      "SubjectCurrent": true
+    }
+  },
+  "Jump": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.518128395080566,
+      "MaximumFormationError": 0.577034592628479,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 0.2804601490497589,
+          "Position": [
+            -409.9054260253906,
+            7.929554462432861,
+            406.9678955078125
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0.3784998953342438,
+          "Position": [
+            -410.0539855957031,
+            13.508865356445312,
+            411.48358154296875
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 0.47675544023513794,
+          "Position": [
+            -410.2025451660156,
+            8.902069091796875,
+            415.9992980957031
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 0.3073974847793579,
+          "Position": [
+            -414.421142578125,
+            7.948399066925049,
+            406.8193054199219
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 0.39883092045783997,
+          "Position": [
+            -414.5696716308594,
+            13.507034301757812,
+            411.3350524902344
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 0.4930449426174164,
+          "Position": [
+            -414.7182312011719,
+            8.936382293701172,
+            415.8507385253906
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 0.36017319560050964,
+          "Position": [
+            -418.93682861328125,
+            7.9253153800964355,
+            406.6707458496094
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 0.4408295452594757,
+          "Position": [
+            -419.08538818359375,
+            13.504378318786621,
+            411.18646240234375
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 0.5276020169258118,
+          "Position": [
+            -419.2339782714844,
+            8.94892692565918,
+            415.7021789550781
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 0.4293951392173767,
+          "Position": [
+            -423.4525451660156,
+            7.949049472808838,
+            406.5221862792969
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 0.49898409843444824,
+          "Position": [
+            -423.6011047363281,
+            8.894102096557617,
+            411.03790283203125
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 0.577034592628479,
+          "Position": [
+            -423.7496643066406,
+            8.91377067565918,
+            415.5536193847656
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.3013646070796408,
+        "VisiblePets": 12,
+        "RenderPeakMs": 0.5321099888533354,
+        "ClonesPerWindow": 0,
+        "RaycastsPerSecond": 90.01434864682336,
+        "RenderFrames": 76
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -405.179443359375,
+        20.32084083557129,
+        411.58624267578125
+      ],
+      "SubjectCurrent": true
+    }
+  },
+  "Stopped": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.521607875823975,
+      "MaximumFormationError": 0,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 0,
+          "Position": [
+            -399.58404541015625,
+            7.879039287567139,
+            407.0457763671875
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0,
+          "Position": [
+            -399.5843505859375,
+            7.891587734222412,
+            411.5674133300781
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 0,
+          "Position": [
+            -399.58465576171875,
+            7.902568340301514,
+            416.0890197753906
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 0,
+          "Position": [
+            -404.10565185546875,
+            7.882406711578369,
+            407.0454406738281
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 0,
+          "Position": [
+            -404.1059875488281,
+            13.517936706542969,
+            411.56707763671875
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 0,
+          "Position": [
+            -404.1062927246094,
+            13.503995895385742,
+            416.0887145996094
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 0,
+          "Position": [
+            -408.6272888183594,
+            7.8982110023498535,
+            407.0451354980469
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 0,
+          "Position": [
+            -408.62762451171875,
+            13.520957946777344,
+            411.5667724609375
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 0,
+          "Position": [
+            -408.6279296875,
+            8.884383201599121,
+            416.08837890625
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 0,
+          "Position": [
+            -413.14892578125,
+            7.8838114738464355,
+            407.0447998046875
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 0,
+          "Position": [
+            -413.14923095703125,
+            13.511521339416504,
+            411.5664367675781
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 0,
+          "Position": [
+            -413.1495666503906,
+            8.900917053222656,
+            416.08807373046875
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.3013646070796408,
+        "VisiblePets": 12,
+        "RenderPeakMs": 0.5321099888533354,
+        "ClonesPerWindow": 0,
+        "RaycastsPerSecond": 90.01434864682336,
+        "RenderFrames": 76
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -395.0843505859375,
+        11.820233345031738,
+        411.5677185058594
+      ],
+      "SubjectCurrent": true
+    }
+  },
+  "TeleportRecovery": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.5216217041015625,
+      "MaximumFormationError": 0,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 0,
+          "Position": [
+            -244.52163696289062,
+            8.543683052062988,
+            224.5
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0,
+          "Position": [
+            -240,
+            8.527660369873047,
+            224.5
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 0,
+          "Position": [
+            -235.47836303710938,
+            8.531970977783203,
+            224.5
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 0,
+          "Position": [
+            -244.52163696289062,
+            8.549192428588867,
+            229.02163696289062
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 0,
+          "Position": [
+            -240,
+            8.526905059814453,
+            229.02163696289062
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 0,
+          "Position": [
+            -235.47836303710938,
+            8.545891761779785,
+            229.02163696289062
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 0,
+          "Position": [
+            -244.52163696289062,
+            8.539834022521973,
+            233.5432586669922
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 0,
+          "Position": [
+            -240,
+            8.525671005249023,
+            233.5432586669922
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 0,
+          "Position": [
+            -235.47836303710938,
+            8.549147605895996,
+            233.5432586669922
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 0,
+          "Position": [
+            -244.52163696289062,
+            8.549214363098145,
+            238.0648956298828
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 0,
+          "Position": [
+            -240,
+            8.531556129455566,
+            238.0648956298828
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 0,
+          "Position": [
+            -235.47836303710938,
+            8.535881042480469,
+            238.0648956298828
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.3013646070796408,
+        "VisiblePets": 12,
+        "RenderPeakMs": 0.5321099888533354,
+        "ClonesPerWindow": 0,
+        "RaycastsPerSecond": 90.01434864682336,
+        "RenderFrames": 76
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -240,
+        12.466541290283203,
+        220
+      ],
+      "SubjectCurrent": true
+    }
+  },
+  "RespawnRecovery": {
+    "Ok": true,
+    "Result": {
+      "MinimumSeparation": 4.521636962890625,
+      "MaximumFormationError": 0,
+      "Collisions": 0,
+      "Pets": [
+        {
+          "Species": "ForestRaccoon",
+          "Error": 0,
+          "Position": [
+            -466.5107727050781,
+            8.883949279785156,
+            476.7563171386719
+          ]
+        },
+        {
+          "Species": "ForestBlackBearCub",
+          "Error": 0,
+          "Position": [
+            -461.9891357421875,
+            8.880646705627441,
+            476.7563171386719
+          ]
+        },
+        {
+          "Species": "ForestSkunk",
+          "Error": 0,
+          "Position": [
+            -457.4674987792969,
+            8.898961067199707,
+            476.7563171386719
+          ]
+        },
+        {
+          "Species": "ForestBadger",
+          "Error": 0,
+          "Position": [
+            -466.5107727050781,
+            8.894411087036133,
+            481.2779541015625
+          ]
+        },
+        {
+          "Species": "ForestTreeFrog",
+          "Error": 0,
+          "Position": [
+            -461.9891357421875,
+            8.881410598754883,
+            481.2779541015625
+          ]
+        },
+        {
+          "Species": "ForestRiverOtter",
+          "Error": 0,
+          "Position": [
+            -457.4674987792969,
+            8.878095626831055,
+            481.2779541015625
+          ]
+        },
+        {
+          "Species": "ForestBrownBat",
+          "Error": 0,
+          "Position": [
+            -466.5107727050781,
+            8.902767181396484,
+            485.7995910644531
+          ]
+        },
+        {
+          "Species": "ForestWoodlandOwl",
+          "Error": 0,
+          "Position": [
+            -461.9891357421875,
+            8.883649826049805,
+            485.7995910644531
+          ]
+        },
+        {
+          "Species": "ForestCrestedOwl",
+          "Error": 0,
+          "Position": [
+            -457.4674987792969,
+            8.896758079528809,
+            485.7995910644531
+          ]
+        },
+        {
+          "Species": "ForestLeafAntler",
+          "Error": 0,
+          "Position": [
+            -466.5107727050781,
+            8.896140098571777,
+            490.32122802734375
+          ]
+        },
+        {
+          "Species": "ForestEmeraldWing",
+          "Error": 0,
+          "Position": [
+            -461.9891357421875,
+            8.87900447845459,
+            490.32122802734375
+          ]
+        },
+        {
+          "Species": "MeadowFieldMouse",
+          "Error": 0,
+          "Position": [
+            -457.4674987792969,
+            8.901481628417969,
+            490.32122802734375
+          ]
+        }
+      ],
+      "Camera": "Enum.CameraType.Custom",
+      "Count": 12,
+      "Performance": {
+        "RenderAvgMs": 0.4120013591212531,
+        "VisiblePets": 12,
+        "RenderPeakMs": 8.421487000305206,
+        "ClonesPerWindow": 12,
+        "RaycastsPerSecond": 86.09937786216254,
+        "RenderFrames": 75
+      },
+      "Mouse": "Enum.MouseBehavior.Default",
+      "Root": [
+        -461.9891357421875,
+        12.820233345031738,
+        472.2563171386719
+      ],
+      "SubjectCurrent": true
+    }
+  }
+}

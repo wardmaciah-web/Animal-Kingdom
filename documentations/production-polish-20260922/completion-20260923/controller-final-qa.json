@@ -1,0 +1,144 @@
+{
+  "Method": "Xbox device emulator; production UI callbacks opened each screen; GuiService verified focus/scroll graph. Physical A/B input was not supplied.",
+  "Pets": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Pets",
+      "Missing": [],
+      "Selected": "Next",
+      "FocusVisible": true,
+      "Buttons": 22
+    }
+  },
+  "Index": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Index",
+      "Missing": [],
+      "Selected": "Mythical",
+      "FocusVisible": true,
+      "Buttons": 26
+    }
+  },
+  "Garden": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Garden",
+      "Missing": [],
+      "Selected": "SendPet_3",
+      "FocusVisible": true,
+      "Buttons": 9
+    }
+  },
+  "Biomes": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Biomes",
+      "Missing": [],
+      "Selected": "Unlock_Mythical",
+      "FocusVisible": true,
+      "Buttons": 13
+    }
+  },
+  "Challenges": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Challenges",
+      "Missing": [],
+      "Selected": "Claim_Tokens20",
+      "FocusVisible": true,
+      "Buttons": 5
+    }
+  },
+  "Shop": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Shop",
+      "Missing": [],
+      "Selected": "Buy_WoodenChair",
+      "FocusVisible": true,
+      "Buttons": 6
+    }
+  },
+  "Upgrades": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Upgrades",
+      "Missing": [],
+      "Selected": "Upgrade_WalkSpeed",
+      "FocusVisible": true,
+      "Buttons": 9
+    }
+  },
+  "Plot": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Plot",
+      "Missing": [],
+      "Selected": "FlowerPotPlacehere",
+      "FocusVisible": true,
+      "Buttons": 8
+    }
+  },
+  "Settings": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Settings",
+      "Missing": [],
+      "Selected": "AutoDelete_Mythical",
+      "FocusVisible": true,
+      "Buttons": 12
+    }
+  },
+  "Daily": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Daily",
+      "Missing": [],
+      "Selected": "Claim_Tokens20",
+      "FocusVisible": true,
+      "Buttons": 5
+    }
+  },
+  "Teleport": {
+    "Ok": true,
+    "Result": {
+      "TenFoot": true,
+      "Modal": false,
+      "Active": "Teleport",
+      "Missing": [],
+      "Selected": "Travel",
+      "FocusVisible": true,
+      "Buttons": 5
+    }
+  },
+  "Modal": {
+    "Ok": true,
+    "Result": {
+      "FocusVisible": true,
+      "FocusInsideModal": true,
+      "Active": true
+    }
+  },
+  "ButtonBInjection": "VirtualInput::SendKey: key is permanently bound to a CoreGUI core action. VirtualInput cannot process this key."
+}

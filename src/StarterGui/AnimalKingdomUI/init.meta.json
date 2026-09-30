@@ -1,0 +1,14 @@
+{
+  "className": "ScreenGui",
+  "attributes": {
+    "ProductionUI": true,
+    "Version": "2.2.0"
+  },
+  "properties": {
+    "DisplayOrder": 20,
+    "IgnoreGuiInset": false,
+    "ResetOnSpawn": false,
+    "ScreenInsets": "CoreUISafeInsets",
+    "ZIndexBehavior": "Sibling"
+  }
+}

@@ -1,0 +1,23 @@
+--- baseline/src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua
++++ src/ReplicatedStorage/Shared/Gameplay/PetAppearance.lua
+@@ -2,13 +2,19 @@
+ local Pets=require(script.Parent.Definitions.PetDefinitions)
+ local Rarities=require(script.Parent.Definitions.RarityDefinitions)
+ local Variants=require(script.Parent.Definitions.VariantDefinitions)
++local Models=require(script.Parent.PetModelValidation)
+ local A={}
+ function A.Create(pet)
+  local def=Pets[pet.PetId];if not def then return nil end
+  local rarity=Rarities[def.Rarity];local mutation=Variants.Mutations[pet.Mutation]
+  local color=(mutation and mutation.Color) or rarity.Color
+  local variant=pet.Prismatic and "Prismatic " or pet.Shiny and "Shiny " or ""
+- local model=Resolver.Create("Pets",def.ModelName,def.DisplayName.."\n"..variant..def.Rarity,color)
++ local model
++ if def.IsMeadowPet then
++  model=Models.Clone(def.PetId)
++  if not model then return nil end -- Canonical Meadow pets never fall back to primitive geometry.
++  Resolver.Label(model,def.DisplayName.."\n"..variant..def.Rarity,color)
++ else model=Resolver.Create("Pets",def.ModelName,def.DisplayName.."\n"..variant..def.Rarity,color) end
+  local _,size=model:GetBoundingBox()
+  model:ScaleTo(model:GetScale()*math.clamp(2.8/math.max(size.X,size.Y,size.Z,.01),.01,100))
+  if model:GetAttribute("Placeholder") then

@@ -1,0 +1,24 @@
+--- before/PetMenus
++++ src/StarterGui/AnimalKingdomUI/PetMenus.lua
+@@ -7,6 +7,7 @@
+ local Models=require(RS.Shared.Gameplay.PetModelResolver)
+ local Catalog=require(RS.Shared.Gameplay.IndexCatalog)
+ local Odds=require(RS.Shared.Gameplay.NormalTreeOdds)
++local Format=require(RS.Shared.Gameplay.PetNumberFormat)
+ local M={Biome='Meadow',IndexPage=1,SelectedIndex=nil,DetailMode=false}
+ local function name(def)
+  if not def then return 'Archived companion' end
+@@ -28,7 +29,7 @@
+  local odds={}
+  for _,pool in ipairs(Catalog.SourcePools(def.PetId))do
+   local base=Odds.Chance(pool,def.PetId);local yours=Odds.Chance(pool,def.PetId,data.NormalTreeModifiers and data.NormalTreeModifiers[def.Biome])
+-  table.insert(odds,pool.DisplayName..' • Base chance: '..Odds.Format(base)..(math.abs(base-yours)>1e-10 and (' • Your chance: '..Odds.Format(yours)) or ''))
++  table.insert(odds,pool.DisplayName..' • '..Format.Number(pool.Cost)..' Forest Coins\nBase chance: '..Odds.Format(base)..(math.abs(base-yours)>1e-10 and (' • Your chance: '..Odds.Format(yours)) or ''))
+  end
+  return (eligible[def.PetId] and (entry and 'Discovered' or 'Undiscovered') or (entry and 'Archived discovery' or 'Coming Soon'))..' • '..W.Rate(def.BaseIncome)..' base coins/sec\n'..(#odds>0 and table.concat(odds,'\n') or 'Not in current reward pools')..(data.WeightRecords and data.WeightRecords[def.PetId] and string.format('\nYour heaviest: %.2f kg',data.WeightRecords[def.PetId]) or '')..(#variants>0 and ('\n'..table.concat(variants,' • ')) or '')
+ end
+@@ -120,4 +121,3 @@
+  pager(ctx,foot,M.IndexPage,total,function(v)M.IndexPage=v end)
+ end
+ return M
+-

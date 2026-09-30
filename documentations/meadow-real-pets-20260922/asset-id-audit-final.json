@@ -1,0 +1,130 @@
+[
+  {
+    "AssetID": "88997960887832",
+    "IdentifiedPet": "Meadow Chick",
+    "Duplicate": true,
+    "Usable": "Yes",
+    "Canonical": false,
+    "Note": "Same Chick mesh/albedo/normal as 98876995093333; metalness incorrectly repeats roughness"
+  },
+  {
+    "AssetID": "97905390781453",
+    "IdentifiedPet": "Celestial Lamb",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "110305591746768",
+    "IdentifiedPet": "Cloudtail Fox",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "138223719551625",
+    "IdentifiedPet": "Blossom Bunny",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "105166919366910",
+    "IdentifiedPet": "Prism-Antler Deer",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "133237199904570",
+    "IdentifiedPet": "Daisy-Crown Bunny",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "95703383291167",
+    "IdentifiedPet": "Daisy Hedgehog",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "112116752525943",
+    "IdentifiedPet": "Meadow Buck",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "100554319678383",
+    "IdentifiedPet": "Patchwork Lop Bunny",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "72284151375691",
+    "IdentifiedPet": "Fluffy Lop Bunny",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "131817571953129",
+    "IdentifiedPet": "Meadow Fawn",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "84570662269866",
+    "IdentifiedPet": "Meadow Goat",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "110005101968034",
+    "IdentifiedPet": "Red Squirrel",
+    "Duplicate": false,
+    "Usable": "Yes after original-texture repair",
+    "Canonical": true,
+    "Note": "Original upload has no texture; canonical local copy uses exact source GLB maps"
+  },
+  {
+    "AssetID": "98876995093333",
+    "IdentifiedPet": "Meadow Chick",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": ""
+  },
+  {
+    "AssetID": "137387722906572",
+    "IdentifiedPet": "Field Mouse",
+    "Duplicate": true,
+    "Usable": "Yes",
+    "Canonical": false,
+    "Note": "Same Mouse mesh/albedo/normal as 113989055590248; roughness incorrectly repeats metalness"
+  },
+  {
+    "AssetID": "113989055590248",
+    "IdentifiedPet": "Field Mouse",
+    "Duplicate": false,
+    "Usable": "Yes",
+    "Canonical": true,
+    "Note": "LoadAsset succeeded; actual model asset, usable Mouse"
+  }
+]

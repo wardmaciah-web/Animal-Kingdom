@@ -1,0 +1,652 @@
+[
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_01",
+      "OwnedPetInstanceId": "c9fb69e5-860e-4a89-a6f0-1557acceb9eb",
+      "Tree": "Workspace.Tree_Oak_1_V5_014",
+      "MeshId": "rbxassetid://97924899190875",
+      "Income": 10,
+      "Rarity": "Common",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestRaccoon",
+      "PetTypeId": "ForestRaccoon"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://97924899190875\",\"Texture\":\"rbxassetid://129022509074285\",\"PetTypeId\":\"ForestRaccoon\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_01",
+      "OwnedPetInstanceId": "5c7f8582-1497-4dc3-aaa3-6d721515bb5e",
+      "Tree": "Workspace.Tree_Oak_1_V5_030",
+      "MeshId": "rbxassetid://131926612358052",
+      "Income": 12,
+      "Rarity": "Common",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestBlackBearCub",
+      "PetTypeId": "ForestBlackBearCub"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://131926612358052\",\"Texture\":\"rbxassetid://95294656364429\",\"PetTypeId\":\"ForestBlackBearCub\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_02",
+      "OwnedPetInstanceId": "2c2a6427-9b9f-4216-b677-7ba0584c07a7",
+      "Tree": "Workspace.Tree_Oak_2_V5_001",
+      "MeshId": "rbxassetid://94866246199758",
+      "Income": 15,
+      "Rarity": "Uncommon",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestSkunk",
+      "PetTypeId": "ForestSkunk"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://94866246199758\",\"Texture\":\"rbxassetid://119398526295183\",\"PetTypeId\":\"ForestSkunk\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_02",
+      "OwnedPetInstanceId": "e20c38ac-3604-49f3-9e85-ea0358bc605f",
+      "Tree": "Workspace.Tree_Oak_2_V5_003",
+      "MeshId": "rbxassetid://130215170262976",
+      "Income": 18,
+      "Rarity": "Uncommon",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestBadger",
+      "PetTypeId": "ForestBadger"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://130215170262976\",\"Texture\":\"rbxassetid://135911004193278\",\"PetTypeId\":\"ForestBadger\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_03",
+      "OwnedPetInstanceId": "f1534449-8828-4fb1-a7e5-471dd23a8cc8",
+      "Tree": "Workspace.Tree_Cedar_1_V5_007",
+      "MeshId": "rbxassetid://126806763850171",
+      "Income": 22,
+      "Rarity": "Rare",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestTreeFrog",
+      "PetTypeId": "ForestTreeFrog"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://126806763850171\",\"Texture\":\"rbxassetid://133597800956686\",\"PetTypeId\":\"ForestTreeFrog\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_03",
+      "OwnedPetInstanceId": "111eb0ee-ff3c-445b-a98b-8e6a19a5810d",
+      "Tree": "Workspace.PineTree_3_V5_023",
+      "MeshId": "rbxassetid://125023493018070",
+      "Income": 28,
+      "Rarity": "Rare",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestRiverOtter",
+      "PetTypeId": "ForestRiverOtter"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://125023493018070\",\"Texture\":\"rbxassetid://131616920065617\",\"PetTypeId\":\"ForestRiverOtter\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_04",
+      "OwnedPetInstanceId": "801d7c5b-37b3-4cef-9636-48095b9575c0",
+      "Tree": "Workspace.Tree_Pine_1_V5_021",
+      "MeshId": "rbxassetid://106744044776841",
+      "Income": 36,
+      "Rarity": "Epic",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestBrownBat",
+      "PetTypeId": "ForestBrownBat"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://106744044776841\",\"Texture\":\"rbxassetid://84452625990128\",\"PetTypeId\":\"ForestBrownBat\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_04",
+      "OwnedPetInstanceId": "5d068a76-9667-4705-be6b-2a6fa16fbaee",
+      "Tree": "Workspace.tree_pineRoundA_V5_002",
+      "MeshId": "rbxassetid://95294648810339",
+      "Income": 45,
+      "Rarity": "Epic",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestWoodlandOwl",
+      "PetTypeId": "ForestWoodlandOwl"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://95294648810339\",\"Texture\":\"rbxassetid://102420541096782\",\"PetTypeId\":\"ForestWoodlandOwl\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_05",
+      "OwnedPetInstanceId": "2038e6e7-9835-4575-a749-e029b513dc02",
+      "Tree": "Workspace.Willow_5_V5_033",
+      "MeshId": "rbxassetid://82138478193574",
+      "Income": 55,
+      "Rarity": "Legendary",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestCrestedOwl",
+      "PetTypeId": "ForestCrestedOwl"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://82138478193574\",\"Texture\":\"rbxassetid://126502584357511\",\"PetTypeId\":\"ForestCrestedOwl\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_05",
+      "OwnedPetInstanceId": "5996f2d1-840a-4c84-b889-ed9d5690332f",
+      "Tree": "Workspace.Willow_5_V5_036",
+      "MeshId": "rbxassetid://111837749719637",
+      "Income": 70,
+      "Rarity": "Legendary",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestLeafAntler",
+      "PetTypeId": "ForestLeafAntler"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://111837749719637\",\"Texture\":\"rbxassetid://123865829385359\",\"PetTypeId\":\"ForestLeafAntler\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Forest_Shakeable_05",
+      "OwnedPetInstanceId": "828a40c8-57d4-462e-afc3-647a68a03a73",
+      "Tree": "Workspace.Tree_Pine_2_V5_018",
+      "MeshId": "rbxassetid://89750756176673",
+      "Income": 90,
+      "Rarity": "Secret",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "ForestTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 750
+      },
+      "ActualPetTypeId": "ForestEmeraldWing",
+      "PetTypeId": "ForestEmeraldWing"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://89750756176673\",\"Texture\":\"rbxassetid://73081746031370\",\"PetTypeId\":\"ForestEmeraldWing\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_01",
+      "OwnedPetInstanceId": "85d40d61-25de-466b-8838-a226e34e25dd",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_016",
+      "MeshId": "rbxassetid://127414738965477",
+      "Income": 1,
+      "Rarity": "Common",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowFieldMouse",
+      "PetTypeId": "MeadowFieldMouse"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://127414738965477\",\"Texture\":\"rbxassetid://73748377999416\",\"PetTypeId\":\"MeadowFieldMouse\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_01",
+      "OwnedPetInstanceId": "a1823077-71ca-4bcc-9358-209cb7157a9e",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_017",
+      "MeshId": "rbxassetid://122845755829690",
+      "Income": 1.25,
+      "Rarity": "Common",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowChick",
+      "PetTypeId": "MeadowChick"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://122845755829690\",\"Texture\":\"rbxassetid://77213563483513\",\"PetTypeId\":\"MeadowChick\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_02",
+      "OwnedPetInstanceId": "6bbdc0d2-181c-40b3-b8d9-626a2b410c3f",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2_V5_011",
+      "MeshId": "rbxassetid://73672924650229",
+      "Income": 1.75,
+      "Rarity": "Uncommon",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowRedSquirrel",
+      "PetTypeId": "MeadowRedSquirrel"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://73672924650229\",\"Texture\":\"rbxassetid://83064824068183\",\"PetTypeId\":\"MeadowRedSquirrel\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_02",
+      "OwnedPetInstanceId": "7e1de173-9787-4556-ad89-ca2a64b3a42c",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2_V5_011",
+      "MeshId": "rbxassetid://89904570166738",
+      "Income": 2,
+      "Rarity": "Uncommon",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowGoat",
+      "PetTypeId": "MeadowGoat"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://89904570166738\",\"Texture\":\"rbxassetid://79773020130638\",\"PetTypeId\":\"MeadowGoat\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_02",
+      "OwnedPetInstanceId": "191cc399-b7f9-47b5-87b2-5fcc898b46f4",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2_V5_011",
+      "MeshId": "rbxassetid://107263251366206",
+      "Income": 2.5,
+      "Rarity": "Rare",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowFawn",
+      "PetTypeId": "MeadowFawn"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://107263251366206\",\"Texture\":\"rbxassetid://76132821896289\",\"PetTypeId\":\"MeadowFawn\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_03",
+      "OwnedPetInstanceId": "a73d7e92-56e1-4476-a3b5-5d8a10e3fb56",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_015",
+      "MeshId": "rbxassetid://99771514014908",
+      "Income": 3,
+      "Rarity": "Rare",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowFluffyLop",
+      "PetTypeId": "MeadowFluffyLop"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://99771514014908\",\"Texture\":\"rbxassetid://77371096825073\",\"PetTypeId\":\"MeadowFluffyLop\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_03",
+      "OwnedPetInstanceId": "5223d060-8e31-4e6c-a65f-f5f7efd279bc",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_015",
+      "MeshId": "rbxassetid://129971024677390",
+      "Income": 3.5,
+      "Rarity": "Rare",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowPatchworkLop",
+      "PetTypeId": "MeadowPatchworkLop"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://129971024677390\",\"Texture\":\"rbxassetid://129853249692809\",\"PetTypeId\":\"MeadowPatchworkLop\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_03",
+      "OwnedPetInstanceId": "6bf0de83-7269-46af-b781-f1e47cdd8ac8",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_015",
+      "MeshId": "rbxassetid://82581654748495",
+      "Income": 4,
+      "Rarity": "Epic",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowDaisyHedgehog",
+      "PetTypeId": "MeadowDaisyHedgehog"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://82581654748495\",\"Texture\":\"rbxassetid://83789055307274\",\"PetTypeId\":\"MeadowDaisyHedgehog\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_04",
+      "OwnedPetInstanceId": "b2f2da5c-b45a-491c-b315-9c3707ef3303",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_023",
+      "MeshId": "rbxassetid://74693569451680",
+      "Income": 4.5,
+      "Rarity": "Epic",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowBuck",
+      "PetTypeId": "MeadowBuck"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://74693569451680\",\"Texture\":\"rbxassetid://116242731028580\",\"PetTypeId\":\"MeadowBuck\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_04",
+      "OwnedPetInstanceId": "99a98146-503e-40c1-b47b-dc6e4adff22e",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_023",
+      "MeshId": "rbxassetid://70876461319097",
+      "Income": 5,
+      "Rarity": "Epic",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowDaisyCrownBunny",
+      "PetTypeId": "MeadowDaisyCrownBunny"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://70876461319097\",\"Texture\":\"rbxassetid://120392697720099\",\"PetTypeId\":\"MeadowDaisyCrownBunny\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_04",
+      "OwnedPetInstanceId": "8088361c-d61f-4063-9eb3-f90df583151f",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_023",
+      "MeshId": "rbxassetid://81163303277235",
+      "Income": 6,
+      "Rarity": "Legendary",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowBlossomBunny",
+      "PetTypeId": "MeadowBlossomBunny"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://81163303277235\",\"Texture\":\"rbxassetid://110600438861044\",\"PetTypeId\":\"MeadowBlossomBunny\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_05",
+      "OwnedPetInstanceId": "dd4beffc-fe2c-4347-9742-d4533cf74cf7",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_004",
+      "MeshId": "rbxassetid://125325309083944",
+      "Income": 7,
+      "Rarity": "Legendary",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowPrismAntlerDeer",
+      "PetTypeId": "MeadowPrismAntlerDeer"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://125325309083944\",\"Texture\":\"rbxassetid://70473479723436\",\"PetTypeId\":\"MeadowPrismAntlerDeer\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_05",
+      "OwnedPetInstanceId": "37dd5334-0d7c-4466-8757-651f314350c1",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_004",
+      "MeshId": "rbxassetid://99272790538349",
+      "Income": 8,
+      "Rarity": "Legendary",
+      "IndexAdded": 1,
+      "NewDiscovery": false,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowCloudtailFox",
+      "PetTypeId": "MeadowCloudtailFox"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://99272790538349\",\"Texture\":\"rbxassetid://100873128150834\",\"PetTypeId\":\"MeadowCloudtailFox\"}",
+    "Continue": "Success"
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "PetAdded": 1,
+      "Charges": 1,
+      "Pool": "Meadow_Shakeable_05",
+      "OwnedPetInstanceId": "81455f5e-b939-4027-b519-96db870a81d6",
+      "Tree": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_004",
+      "MeshId": "rbxassetid://112434751758874",
+      "Income": 9,
+      "Rarity": "Secret",
+      "IndexAdded": 1,
+      "NewDiscovery": true,
+      "AcceptedBurst": 1,
+      "Spend": {
+        "Reason": "MeadowTreeSearch",
+        "Player": 3009757271,
+        "Currency": "Coins",
+        "Amount": 250
+      },
+      "ActualPetTypeId": "MeadowCelestialLamb",
+      "PetTypeId": "MeadowCelestialLamb"
+    },
+    "Presentation": "{\"Camera\":\"Enum.CameraType.Custom\",\"Phase\":\"Showcase\",\"MeshId\":\"rbxassetid://112434751758874\",\"Texture\":\"rbxassetid://104848496835588\",\"PetTypeId\":\"MeadowCelestialLamb\"}",
+    "Continue": "Success"
+  }
+]

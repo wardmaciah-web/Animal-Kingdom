@@ -1,0 +1,383 @@
+{
+  "Normal": {
+    "Left": {
+      "1": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Shop",
+        "Focus": true
+      },
+      "3": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Teleport",
+        "Focus": true
+      },
+      "2": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Daily",
+        "Focus": true
+      }
+    },
+    "Right": {
+      "1": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Friends",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      },
+      "3": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Profile",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      },
+      "2": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Updates",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      }
+    }
+  },
+  "Hover": {
+    "Left": {
+      "1": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Shop",
+        "Focus": true
+      },
+      "3": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Teleport",
+        "Focus": true
+      },
+      "2": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Daily",
+        "Focus": true
+      }
+    },
+    "Right": {
+      "1": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": true,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Friends",
+        "Backplate": false,
+        "Color": "0.643333, 0.408431, 0.195098",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      },
+      "3": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Profile",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      },
+      "2": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Updates",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      }
+    }
+  },
+  "Pressed": {
+    "Left": {
+      "1": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Shop",
+        "Focus": true
+      },
+      "3": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Teleport",
+        "Focus": true
+      },
+      "2": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Daily",
+        "Focus": true
+      }
+    },
+    "Right": {
+      "1": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 0.9750000238418579,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": true,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Friends",
+        "Backplate": false,
+        "Color": "0.49902, 0.286275, 0.147059",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": true
+      },
+      "3": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Profile",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      },
+      "2": {
+        "Radius": 14,
+        "RootImage": "",
+        "Shell": "SingleSurface",
+        "Scale": 1,
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Strokes": 1,
+        "Name": "Nav_Updates",
+        "Backplate": false,
+        "Color": "0.580392, 0.337255, 0.168627",
+        "Grain": false,
+        "Fills": 1,
+        "Pressed": false
+      }
+    }
+  },
+  "SelectedAndFocus": {
+    "Left": {
+      "1": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Shop",
+        "Focus": true
+      },
+      "3": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Teleport",
+        "Focus": true
+      },
+      "2": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Daily",
+        "Focus": true
+      }
+    },
+    "Right": {
+      "1": {
+        "Shell": "SingleSurface",
+        "Radius": 14,
+        "Fills": 1,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Color": "0.227451, 0.54902, 0.258824",
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "Backplate": false,
+        "Strokes": 1,
+        "Name": "Nav_Friends",
+        "Grain": false,
+        "Scale": 1,
+        "Selected": true,
+        "RootImage": "",
+        "Pressed": false
+      },
+      "3": {
+        "Shell": "SingleSurface",
+        "Radius": 14,
+        "Fills": 1,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Color": "0.343333, 0.588431, 0.271765",
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "Backplate": false,
+        "Strokes": 1,
+        "Name": "Nav_Profile",
+        "Grain": false,
+        "Scale": 1,
+        "Selected": true,
+        "RootImage": "",
+        "Pressed": false
+      },
+      "2": {
+        "Shell": "SingleSurface",
+        "Radius": 14,
+        "Fills": 1,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Color": "0.227451, 0.54902, 0.258824",
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "Backplate": false,
+        "Strokes": 1,
+        "Name": "Nav_Updates",
+        "Grain": false,
+        "Scale": 1,
+        "Selected": true,
+        "RootImage": "",
+        "Pressed": false
+      }
+    }
+  },
+  "Restored": {
+    "Left": {
+      "1": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Shop",
+        "Focus": true
+      },
+      "3": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Teleport",
+        "Focus": true
+      },
+      "2": {
+        "Backplate": true,
+        "Grain": true,
+        "Name": "Nav_Daily",
+        "Focus": true
+      }
+    },
+    "Right": {
+      "1": {
+        "Shell": "SingleSurface",
+        "Radius": 14,
+        "Fills": 1,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Color": "0.580392, 0.337255, 0.168627",
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "Backplate": false,
+        "Strokes": 1,
+        "Name": "Nav_Friends",
+        "Grain": false,
+        "Scale": 1,
+        "Selected": false,
+        "RootImage": "",
+        "Pressed": false
+      },
+      "3": {
+        "Shell": "SingleSurface",
+        "Radius": 14,
+        "Fills": 1,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Color": "0.580392, 0.337255, 0.168627",
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "Backplate": false,
+        "Strokes": 1,
+        "Name": "Nav_Profile",
+        "Grain": false,
+        "Scale": 1,
+        "Selected": false,
+        "RootImage": "",
+        "Pressed": false
+      },
+      "2": {
+        "Shell": "SingleSurface",
+        "Radius": 14,
+        "Fills": 1,
+        "BodyPosition": "{0, 2}, {0, 2}",
+        "Color": "0.580392, 0.337255, 0.168627",
+        "BodySize": "{1, -4}, {1, -4}",
+        "Hovered": false,
+        "ExtraFocusShell": false,
+        "Backplate": false,
+        "Strokes": 1,
+        "Name": "Nav_Updates",
+        "Grain": false,
+        "Scale": 1,
+        "Selected": false,
+        "RootImage": "",
+        "Pressed": false
+      }
+    }
+  }
+}

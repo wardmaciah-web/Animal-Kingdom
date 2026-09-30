@@ -1,0 +1,87 @@
+[
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/Definitions/TutorialDefinitions.lua",
+    "new": false,
+    "sha256": "e12744d78c8dc099d36e5c253e1b7fe04193c725e6563ccb727eec88622ae3d5"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/SellValueCalculator.lua",
+    "new": false,
+    "sha256": "9b1bdb866746679a0c6061a9e3010b8ddb1741c5a849a2681c8633302ce5fe52"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/EggService.lua",
+    "new": false,
+    "sha256": "88216e73a4eeea0a65cd72058cf617a499d27cb6c62265a4d6e9ae554470fd7c"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+    "new": false,
+    "sha256": "a869390bddfde7197357e4a86f9ef8b8eceacb7958ad50e18eb66b14dddb8178"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+    "new": false,
+    "sha256": "b12beb797fc8b4c368a2e9497ac5bfcf7f3341bbb40e7c2ac0a6ae8af9ad545b"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/PlotService.lua",
+    "new": false,
+    "sha256": "8680e203d2214bbaa3bba0efd0e56eb50cc3d3a69449a5ade3869cb74e5fede8"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/TutorialService.lua",
+    "new": false,
+    "sha256": "056d7c6fa0324d196b60040410cbdd7852d675650037dd94ffa8a5677b4288d4"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+    "new": false,
+    "sha256": "b45c6eda62f0c6b79b2fecbc1886facb7b5abde0fd895a3dd313beb0a5e61f95"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/MenuManager.lua",
+    "new": false,
+    "sha256": "4880692c2b683ed0a6a4752b7e9c31011d4ff9a13fee7e8466a067e0fb6397b8"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/TutorialPointer.lua",
+    "new": true,
+    "sha256": "5b77784d057ef6da2809794cef8ac9b9431145fd2c062fc6c485987463ddf663"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/HatchPresentation.lua",
+    "new": false,
+    "sha256": "eaeb4d6800bb618ef06206f83007192408072bc96e81376312e2415821411087"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/HeldPetActions.lua",
+    "new": true,
+    "sha256": "673cd281c8ff0b5e2a676fb1613958e77c5ba8254004a38af68e0c339b6c06c5"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/HeldPetsBar.lua",
+    "new": false,
+    "sha256": "1c668d70496a001be6d2894595c6c9b9f1d8a7726d0ffe7d005cc17c54fd1d29"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "new": false,
+    "sha256": "a7ed60328aa9657c8152e0f39ca4156ba6d9c84cd59eda6fee479951572f2d48"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/TutorialGuidance.lua",
+    "new": true,
+    "sha256": "853a96af78dce22fd5f68f40599896de3fac7433e53e721580577e8d1944dbef"
+  },
+  {
+    "path": "src/StarterPlayer/StarterPlayerScripts/KingdomPrompts.client.lua",
+    "new": false,
+    "sha256": "44ddec6f3a91cbf7697ed5d93431f3290eb4b770cff98514f564ae8149d7035d"
+  },
+  {
+    "path": "src/StarterPlayer/StarterPlayerScripts/SanctuaryInteraction.client.lua",
+    "new": false,
+    "sha256": "ef1615d9b97222cc835cdef4d16ba2cf2b047ace17b6ecbdafaa4747566ef4e0"
+  }
+]

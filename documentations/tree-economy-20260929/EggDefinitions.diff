@@ -1,0 +1,22 @@
+--- before/EggDefinitions
++++ src/ReplicatedStorage/Shared/Gameplay/Definitions/EggDefinitions.lua
+@@ -17,16 +17,16 @@
+  -- Future generated definitions are retained; empty future family pools stay unavailable.
+  if Biomes.IsContentReady(biome) then legacy.Pets={};legacy.Retired=true end
+  for _,family in ipairs(families)do
++  assert(not Biomes.IsContentReady(biome) or (type(family.Cost)=="number" and family.Cost>0 and family.Cost%1==0),"Released tree needs a canonical price: "..family.Id)
+   local pool={}
+   for _,petId in ipairs(family.PetIds)do
+    local pet=assert(Pets[petId],"Unknown configured tree species: "..petId)
+    assert(pet.Biome==biome and not pet.LegacyOnly and not pet.RetiredFromRewards,"Invalid tree species: "..petId)
+-   table.insert(pool,{PetId=petId,DropWeight=assert(Families.RarityWeights[pet.Rarity])})
++   table.insert(pool,{PetId=petId,DropWeight=(family.RarityWeights and family.RarityWeights[pet.Rarity]) or assert(weights[pet.Rarity])})
+   end
+   eggs[family.Id]={Id=family.Id,DisplayName=family.DisplayName,ModelName=biome.."Egg",Currency="Coins",
+-   Cost=legacy.Cost,Biome=biome,Tier=family.Tier,Pets=pool,AllowTriple=false,
++   Cost=family.Cost or legacy.Cost,Biome=biome,Tier=family.Tier,Pets=pool,AllowTriple=false,
+    HatchSeconds=biome=="Forest" and 1.4 or 2,MeadowPool=biome=="Meadow",ForestPool=biome=="Forest",CanonicalPool=true}
+  end
+ end
+ return eggs
+-

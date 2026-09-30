@@ -1,0 +1,24 @@
+[
+  {
+    "command": [
+      "rojo",
+      "build",
+      "default.project.json",
+      "-o",
+      "documentations/tree-egg-loop-20260917/AnimalKingdom-tree-egg-loop-source.rbxlx"
+    ],
+    "exit": 0,
+    "output": "Building project 'Real_Animal_K'\nBuilt project to AnimalKingdom-tree-egg-loop-source.rbxlx\n"
+  },
+  {
+    "command": [
+      "rojo",
+      "sourcemap",
+      "default.project.json",
+      "-o",
+      "documentations/tree-egg-loop-20260917/AnimalKingdom-tree-egg-loop.sourcemap.json"
+    ],
+    "exit": 0,
+    "output": "Created sourcemap at documentations/tree-egg-loop-20260917/AnimalKingdom-tree-egg-loop.sourcemap.json\n"
+  }
+]

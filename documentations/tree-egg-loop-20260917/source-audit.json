@@ -1,0 +1,18 @@
+{
+  "literal_requires_checked": 188,
+  "missing_requires": [],
+  "cyclic_requires": false,
+  "registered_services": 32,
+  "service_lookups": 107,
+  "missing_services": [],
+  "protected_files_unchanged": [
+    "default.project.json",
+    "src/ServerScriptService/ServerSource/Server/WeatherAdminService.lua",
+    "src/ServerScriptService/ServerSource/Server/WeatherEventService.lua",
+    "src/ReplicatedStorage/Shared/AdminCameraDefinitions.lua",
+    "src/StarterPlayer/StarterPlayerScripts/AdminCameraController.client.lua",
+    "src/StarterPlayer/StarterPlayerScripts/WeatherVisualController.client.lua",
+    "src/StarterPlayer/StarterPlayerScripts/AnimalKingdomAnnouncements.client.lua",
+    "src/ServerScriptService/AK_PlotAssignment.server.lua"
+  ]
+}

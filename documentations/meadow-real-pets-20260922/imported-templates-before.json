@@ -1,0 +1,1034 @@
+[
+  {
+    "index": 266,
+    "children": [
+      {
+        "attrs": {
+          "SourceGLB": "e87c3dde_54c6_421e_8fe1_1f3c61_Cute_cartoon_mouse_with_big_eyes_Prism_31_dc0445d4.glb",
+          "ImportOriginalPivot": [
+            0,
+            -106.82046508789062,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "f20d1417-c36b-485f-b799-32edb555ef5b",
+          "PetTypeId": "MeadowFieldMouse"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowFieldMouse",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9763310551643372,
+          0.9552114605903625,
+          0.848651111125946
+        ],
+        "name": "MeadowFieldMouse",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_cd03c553-9892-4855-8f09-33b781092721",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://107513294671066",
+                "color": "rbxassetid://73748377999416",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://73748377999416",
+                  "VerifiedRoughnessMap": "rbxassetid://125785402534996",
+                  "VerifiedMetalnessMap": "rbxassetid://128877854788095",
+                  "VerifiedNormalMap": "rbxassetid://107513294671066"
+                },
+                "rough": "rbxassetid://125785402534996",
+                "metal": "rbxassetid://128877854788095"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://127414738965477",
+            "size": [
+              0.8486558794975281,
+              0.9552464485168457,
+              0.9763309955596924
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "3082bb87_98d1_4e88_9a10_8cf96b_Cute_cartoon_chick_with_big_expressive_eyes_Prism_31_c0656b70.glb",
+          "ImportOriginalPivot": [
+            0,
+            -105.0020751953125,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "a9f1a46e-3d9e-4c5a-86ce-107405390c77",
+          "PetTypeId": "MeadowChick"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowChick",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.7673746943473816,
+          0.9772095084190369,
+          0.7262683510780334
+        ],
+        "name": "MeadowChick",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_c4c19b18-cf5b-4fb1-8dcc-0a257a090fe1",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://115349930864646",
+                "color": "rbxassetid://77213563483513",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://77213563483513",
+                  "VerifiedRoughnessMap": "rbxassetid://131516093008909",
+                  "VerifiedMetalnessMap": "rbxassetid://80616376937051",
+                  "VerifiedNormalMap": "rbxassetid://115349930864646"
+                },
+                "rough": "rbxassetid://131516093008909",
+                "metal": "rbxassetid://80616376937051"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://122845755829690",
+            "size": [
+              0.7262683510780334,
+              0.9772312045097351,
+              0.7673857808113098
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "386cb474_3026_438a_84ac_90e5a2_Cute_cartoon_goat_with_large_expressive_eyes_Prism_31_f5a80e5d.glb",
+          "ImportOriginalPivot": [
+            0,
+            -106.82046508789062,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "1a7c3d1e-04c4-4154-baeb-b64506410744",
+          "PetTypeId": "MeadowGoat"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowGoat",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.97636878490448,
+          0.869905948638916,
+          0.8083003163337708
+        ],
+        "name": "MeadowGoat",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_92488a83-44b7-4ca6-8173-b6cb5f88c5a1",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://125176441379752",
+                "color": "rbxassetid://79773020130638",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://79773020130638",
+                  "VerifiedRoughnessMap": "rbxassetid://134672877643564",
+                  "VerifiedMetalnessMap": "rbxassetid://134593766738006",
+                  "VerifiedNormalMap": "rbxassetid://125176441379752"
+                },
+                "rough": "rbxassetid://134672877643564",
+                "metal": "rbxassetid://134593766738006"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://89904570166738",
+            "size": [
+              0.8083165884017944,
+              0.869905948638916,
+              0.9764164090156555
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "87e3edd8_9af3_49c7_99b5_ee90b0_Cute_cartoonish_fawn_with_big_eyes_Prism_31_f23e711b.glb",
+          "ImportOriginalPivot": [
+            0,
+            -103.08014678955078,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "a6fd8b40-196c-4bdc-bb56-e7cafb493d26",
+          "PetTypeId": "MeadowFawn"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowFawn",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.7614757418632507,
+          0.974736750125885,
+          0.8002047538757324
+        ],
+        "name": "MeadowFawn",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_5540feee-a628-4492-bf85-4b08a32157c8",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://75047215073772",
+                "color": "rbxassetid://76132821896289",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://76132821896289",
+                  "VerifiedRoughnessMap": "rbxassetid://70797534053995",
+                  "VerifiedMetalnessMap": "rbxassetid://74949285323504",
+                  "VerifiedNormalMap": "rbxassetid://75047215073772"
+                },
+                "rough": "rbxassetid://70797534053995",
+                "metal": "rbxassetid://74949285323504"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://107263251366206",
+            "size": [
+              0.8002438545227051,
+              0.9747399091720581,
+              0.7615129351615906
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "5ec138c0_32fa_4486_87ff_cb2ff7_Cute_cartoon_bunny_with_big_expressive_eyes_Prism_31_ea68a550.glb",
+          "ImportOriginalPivot": [
+            0,
+            -102.22241973876953,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "674020e1-c319-420f-a64e-f369ad48edd3",
+          "PetTypeId": "MeadowFluffyLop"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowFluffyLop",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9783227443695068,
+          0.8422922492027283,
+          0.6182950139045715
+        ],
+        "name": "MeadowFluffyLop",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_d217bfb4-d96a-40d7-b908-73e4a2bf75ba",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://90499505870975",
+                "color": "rbxassetid://77371096825073",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://77371096825073",
+                  "VerifiedRoughnessMap": "rbxassetid://91625036019127",
+                  "VerifiedMetalnessMap": "rbxassetid://76445437935068",
+                  "VerifiedNormalMap": "rbxassetid://90499505870975"
+                },
+                "rough": "rbxassetid://91625036019127",
+                "metal": "rbxassetid://76445437935068"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://99771514014908",
+            "size": [
+              0.6183099746704102,
+              0.8422922492027283,
+              0.9783705472946167
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "3161da49_9708_4112_8837_2f094b_Cute_cartoon_bunny_with_big_eyes_Prism_31_0c18bf4f.glb",
+          "ImportOriginalPivot": [
+            0,
+            -101.4124526977539,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "367ce997-998d-444c-afef-31493ccbeb1a",
+          "PetTypeId": "MeadowPatchworkLop"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowPatchworkLop",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9765220880508423,
+          0.785178542137146,
+          0.6216317415237427
+        ],
+        "name": "MeadowPatchworkLop",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_3d194778-8a6d-43bc-ab92-3cf87bba28a1",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://87653626714147",
+                "color": "rbxassetid://129853249692809",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://129853249692809",
+                  "VerifiedRoughnessMap": "rbxassetid://133854510456521",
+                  "VerifiedMetalnessMap": "rbxassetid://140170357182395",
+                  "VerifiedNormalMap": "rbxassetid://87653626714147"
+                },
+                "rough": "rbxassetid://133854510456521",
+                "metal": "rbxassetid://140170357182395"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://129971024677390",
+            "size": [
+              0.6216316819190979,
+              0.7852169275283813,
+              0.9765220880508423
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "4418ab44_7e8b_4851_8cd0_d80a7d_Cute_hedgehog_with_big_eyes_and_flowers_Prism_31_d683accd.glb",
+          "ImportOriginalPivot": [
+            0,
+            -99.5788345336914,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "dcd9b7be-f9b4-408e-a2d3-ba3789011c0d",
+          "PetTypeId": "MeadowDaisyHedgehog"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowDaisyHedgehog",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9433603286743164,
+          0.9765011668205261,
+          0.8974553942680359
+        ],
+        "name": "MeadowDaisyHedgehog",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_d8835cc4-e843-4e37-82c8-65f80a338425",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://131533535435586",
+                "color": "rbxassetid://83789055307274",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://83789055307274",
+                  "VerifiedRoughnessMap": "rbxassetid://77242246500235",
+                  "VerifiedMetalnessMap": "rbxassetid://102478534355936",
+                  "VerifiedNormalMap": "rbxassetid://131533535435586"
+                },
+                "rough": "rbxassetid://77242246500235",
+                "metal": "rbxassetid://102478534355936"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://82581654748495",
+            "size": [
+              0.8974553346633911,
+              0.9765384793281555,
+              0.9433929920196533
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "8ed1ab0b_3ef1_434e_9129_111408_Cute_cartoon_deer_with_big_expressive_eyes_Prism_31_56c784e4.glb",
+          "ImportOriginalPivot": [
+            0,
+            -100.53221893310547,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "b15e4f9f-04f8-4c8e-9140-18417911b3c9",
+          "PetTypeId": "MeadowBuck"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowBuck",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9337677955627441,
+          0.9797587394714355,
+          0.6165930032730103
+        ],
+        "name": "MeadowBuck",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_fd7d8868-902a-4473-8a3c-feb6512014ec",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://128041311526858",
+                "color": "rbxassetid://116242731028580",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://116242731028580",
+                  "VerifiedRoughnessMap": "rbxassetid://72971033504395",
+                  "VerifiedMetalnessMap": "rbxassetid://73864039726135",
+                  "VerifiedNormalMap": "rbxassetid://128041311526858"
+                },
+                "rough": "rbxassetid://72971033504395",
+                "metal": "rbxassetid://73864039726135"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://74693569451680",
+            "size": [
+              0.6165929436683655,
+              0.97978276014328,
+              0.9337677955627441
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "d2d5c58e_2109_48b6_8430_d3cd3c_Cute_cartoon_bunny_with_flower_crown_Prism_31_48fae1a9.glb",
+          "ImportOriginalPivot": [
+            0,
+            -98.71467590332031,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "891f4b53-0f71-46e2-9e86-f29aa7c22d38",
+          "PetTypeId": "MeadowDaisyCrownBunny"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowDaisyCrownBunny",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9805618524551392,
+          0.7705296874046326,
+          0.6344611048698425
+        ],
+        "name": "MeadowDaisyCrownBunny",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_73cbea41-f239-4fd1-b2cb-0d8ea6d5edd9",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://132840718932667",
+                "color": "rbxassetid://120392697720099",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://120392697720099",
+                  "VerifiedRoughnessMap": "rbxassetid://94880270353711",
+                  "VerifiedMetalnessMap": "rbxassetid://135222764389571",
+                  "VerifiedNormalMap": "rbxassetid://132840718932667"
+                },
+                "rough": "rbxassetid://94880270353711",
+                "metal": "rbxassetid://135222764389571"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://70876461319097",
+            "size": [
+              0.6344610452651978,
+              0.7705458402633667,
+              0.9805973172187805
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "0c7618c9_6608_479e_9df0_1c505b_Cute_rabbit_with_flowers_and_leaves_design_Prism_31_6d0b8cb8.glb",
+          "ImportOriginalPivot": [
+            0,
+            -96.93054962158203,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "b872d803-905f-44e0-9669-127e4ff3bab1",
+          "PetTypeId": "MeadowBlossomBunny"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowBlossomBunny",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9767798185348511,
+          0.8677788376808167,
+          0.604936420917511
+        ],
+        "name": "MeadowBlossomBunny",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_a3815d15-d927-4476-9027-4fc48f3e255f",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://116518881029932",
+                "color": "rbxassetid://110600438861044",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://110600438861044",
+                  "VerifiedRoughnessMap": "rbxassetid://122149791379322",
+                  "VerifiedMetalnessMap": "rbxassetid://119040525148593",
+                  "VerifiedNormalMap": "rbxassetid://116518881029932"
+                },
+                "rough": "rbxassetid://122149791379322",
+                "metal": "rbxassetid://119040525148593"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://81163303277235",
+            "size": [
+              0.6049506068229675,
+              0.8678094148635864,
+              0.9767798781394958
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "9157fbb5_dd29_41d1_921b_db0cc9_Cute_cartoon_deer_with_colorful_antlers_Prism_31_a52be6b6.glb",
+          "ImportOriginalPivot": [
+            0,
+            -97.85061645507812,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "af181534-087b-4b8a-9dc6-3b11119d4c67",
+          "PetTypeId": "MeadowPrismAntlerDeer"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowPrismAntlerDeer",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.7546953558921814,
+          0.9796265959739685,
+          0.740157425403595
+        ],
+        "name": "MeadowPrismAntlerDeer",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_c9ed4ede-d440-4cf2-8811-fd42a6ba3325",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://113832268002902",
+                "color": "rbxassetid://70473479723436",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://70473479723436",
+                  "VerifiedRoughnessMap": "rbxassetid://101532226048659",
+                  "VerifiedMetalnessMap": "rbxassetid://88319662713940",
+                  "VerifiedNormalMap": "rbxassetid://113832268002902"
+                },
+                "rough": "rbxassetid://101532226048659",
+                "metal": "rbxassetid://88319662713940"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://125325309083944",
+            "size": [
+              0.7401573657989502,
+              0.9796386361122131,
+              0.7547137141227722
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "2dd9bed2_9ed1_446b_8ae0_08adac_Cute_cartoon_fox_with_blue_accents_Prism_31_0719edee.glb",
+          "ImportOriginalPivot": [
+            0,
+            -96.02783966064453,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "e71186d0-3633-4e8c-98c8-dd6eaf6a8a22",
+          "PetTypeId": "MeadowCloudtailFox"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowCloudtailFox",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.9144696593284607,
+          0.9795609712600708,
+          0.7240385413169861
+        ],
+        "name": "MeadowCloudtailFox",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_30a6be52-f783-4d1e-b47d-5aa9b77ac5f9",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://137574484960331",
+                "color": "rbxassetid://100873128150834",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://100873128150834",
+                  "VerifiedRoughnessMap": "rbxassetid://140611944152897",
+                  "VerifiedMetalnessMap": "rbxassetid://81175225099490",
+                  "VerifiedNormalMap": "rbxassetid://137574484960331"
+                },
+                "rough": "rbxassetid://140611944152897",
+                "metal": "rbxassetid://81175225099490"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://99272790538349",
+            "size": [
+              0.7240810394287109,
+              0.9795849323272705,
+              0.914490818977356
+            ]
+          }
+        ]
+      },
+      {
+        "attrs": {
+          "SourceGLB": "c9755a19_b5e2_4dd6_ac4f_e24ab5_Cute_lamb_with_golden_halo_and_sparkles_Prism_31_c9bb18b2.glb",
+          "ImportOriginalPivot": [
+            0,
+            -95.0693359375,
+            -70.52224731445312,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "RBX_ReimportId": "32d76101-4d21-4851-b378-ce548ad9cb93",
+          "PetTypeId": "MeadowCelestialLamb"
+        },
+        "path": "ReplicatedStorage.Assets.Pets.MeadowCelestialLamb",
+        "folderIndex": 266,
+        "class": "Model",
+        "bounds": [
+          0.8894681334495544,
+          0.9787358641624451,
+          0.8050121665000916
+        ],
+        "name": "MeadowCelestialLamb",
+        "sourceAssetId": "<restricted>",
+        "pivot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "color": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ],
+            "class": "MeshPart",
+            "transparency": 0,
+            "name": "tripo_mesh_1ff9d927-b5da-4e5f-9ac1-e49ab126a5bb",
+            "surfaces": [
+              {
+                "normal": "rbxassetid://102063994556417",
+                "color": "rbxassetid://104848496835588",
+                "attrs": {
+                  "VerifiedColorMap": "rbxassetid://104848496835588",
+                  "VerifiedRoughnessMap": "rbxassetid://110363759590435",
+                  "VerifiedMetalnessMap": "rbxassetid://106228697606258",
+                  "VerifiedNormalMap": "rbxassetid://102063994556417"
+                },
+                "rough": "rbxassetid://110363759590435",
+                "metal": "rbxassetid://106228697606258"
+              }
+            ],
+            "texture": "",
+            "material": "Plastic",
+            "mesh": "rbxassetid://112434751758874",
+            "size": [
+              0.8050263524055481,
+              0.978759765625,
+              0.8895550966262817
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

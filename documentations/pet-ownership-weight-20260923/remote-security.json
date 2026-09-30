@@ -1,0 +1,34 @@
+{
+  "Ok": true,
+  "Result": {
+    "OwnedStatsUnchanged": true,
+    "Feedback": {
+      "qa-spoof-2": {
+        "Success": false,
+        "Action": "MovePet",
+        "Result": "Please wait a moment and try again.",
+        "RequestId": "qa-spoof-2"
+      },
+      "qa-spoof-3": {
+        "Success": false,
+        "Action": "MovePet",
+        "Result": "Please wait a moment and try again.",
+        "RequestId": "qa-spoof-3"
+      },
+      "qa-spoof-4": {
+        "Success": false,
+        "Action": "MovePet",
+        "Result": "Please wait a moment and try again.",
+        "RequestId": "qa-spoof-4"
+      },
+      "qa-spoof-1": {
+        "Success": false,
+        "Action": "MovePet",
+        "Result": "Please wait a moment and try again.",
+        "RequestId": "qa-spoof-1"
+      }
+    },
+    "ClientWeightIncomeValueSpeciesRejected": true,
+    "Attempts": 4
+  }
+}

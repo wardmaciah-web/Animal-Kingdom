@@ -1,0 +1,351 @@
+{
+  "Ok": true,
+  "Result": {
+    "Copies": [
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_1_V5_006",
+        "Pool": "Forest_Shakeable_01",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 1,
+        "Charges": 1,
+        "Reward": "ForestRaccoon"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_1_V5_009",
+        "Pool": "Forest_Shakeable_01",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 1,
+        "Charges": 1,
+        "Reward": "ForestRaccoon"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_1_V5_014",
+        "Pool": "Forest_Shakeable_01",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 1,
+        "Charges": 1,
+        "Reward": "ForestRaccoon"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_1_V5_030",
+        "Pool": "Forest_Shakeable_01",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 1,
+        "Charges": 1,
+        "Reward": "ForestRaccoon"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_2_V5_001",
+        "Pool": "Forest_Shakeable_02",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 2,
+        "Charges": 1,
+        "Reward": "ForestSkunk"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_2_V5_003",
+        "Pool": "Forest_Shakeable_02",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 2,
+        "Charges": 1,
+        "Reward": "ForestSkunk"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_2_V5_008",
+        "Pool": "Forest_Shakeable_02",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 2,
+        "Charges": 1,
+        "Reward": "ForestSkunk"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Oak_2_V5_024",
+        "Pool": "Forest_Shakeable_02",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 2,
+        "Charges": 1,
+        "Reward": "ForestSkunk"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.PineTree_3_V5_019",
+        "Pool": "Forest_Shakeable_03",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 3,
+        "Charges": 1,
+        "Reward": "ForestTreeFrog"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.PineTree_3_V5_023",
+        "Pool": "Forest_Shakeable_03",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 3,
+        "Charges": 1,
+        "Reward": "ForestTreeFrog"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.PineTree_3_V5_026",
+        "Pool": "Forest_Shakeable_03",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 3,
+        "Charges": 1,
+        "Reward": "ForestRiverOtter"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.PineTree_3_V5_027",
+        "Pool": "Forest_Shakeable_03",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 3,
+        "Charges": 1,
+        "Reward": "ForestTreeFrog"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Cedar_1_V5_007",
+        "Pool": "Forest_Shakeable_03",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 3,
+        "Charges": 1,
+        "Reward": "ForestRiverOtter"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Cedar_1_V5_022",
+        "Pool": "Forest_Shakeable_03",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 3,
+        "Charges": 1,
+        "Reward": "ForestTreeFrog"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_1_V5_012",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_1_V5_021",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestWoodlandOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_1_V5_028",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_1_V5_029",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.tree_pineRoundA_V5_002",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.tree_pineRoundA_V5_013",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.tree_pineRoundA_V5_031",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.tree_pineRoundA_V5_032",
+        "Pool": "Forest_Shakeable_04",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 4,
+        "Charges": 1,
+        "Reward": "ForestBrownBat"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_2_V5_015",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_2_V5_016",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Tree_Pine_2_V5_018",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Willow_5_V5_033",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Willow_5_V5_034",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Willow_5_V5_035",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      },
+      {
+        "TransformError": 0,
+        "Path": "Workspace.Willow_5_V5_036",
+        "Pool": "Forest_Shakeable_05",
+        "AcceptedBurst": 1,
+        "Added": 1,
+        "ExactTransform": true,
+        "Tier": 5,
+        "Charges": 1,
+        "Reward": "ForestCrestedOwl"
+      }
+    ],
+    "TreeCount": 29,
+    "Invalid": {
+      "LockedBiome": {
+        "Message": "Biome locked",
+        "Accepted": false
+      },
+      "FullInventory": {
+        "Message": "Your pet inventory is full. Upgrade storage or make room.",
+        "Accepted": false
+      },
+      "TooFar": {
+        "Message": "Tree unavailable",
+        "Accepted": false
+      },
+      "NoCoins": {
+        "Message": "Not enough Forest Coins",
+        "Accepted": false
+      },
+      "BrokenCandidate": {
+        "Message": "This tree is temporarily unavailable. Please try another tree.",
+        "Charges": 0,
+        "Added": 0,
+        "Accepted": false
+      }
+    }
+  }
+}

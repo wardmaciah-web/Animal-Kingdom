@@ -1,0 +1,79 @@
+<roblox version="4">
+  <Item class="Model" referent="RBX_MODEL">
+    <Properties>
+      <string name="Name">MeadowFieldMouse</string>
+      <Ref name="PrimaryPart">RBX_MESH0</Ref>
+    </Properties>
+    <Item class="MeshPart" referent="RBX_MESH0">
+      <Properties>
+        <string name="Name">tripo_mesh_cd03c553-9892-4855-8f09-33b781092721</string>
+        <bool name="Anchored">true</bool>
+        <bool name="CanCollide">false</bool>
+        <bool name="CanTouch">false</bool>
+        <bool name="CanQuery">false</bool>
+        <bool name="DoubleSided">false</bool>
+        <Vector3 name="Size">
+          <X>0.8486558794975281</X>
+          <Y>0.9552464485168457</Y>
+          <Z>0.9763309955596924</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <R00>-4.371138828673793e-08</R00>
+          <R01>0</R01>
+          <R02>-1</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>1</R20>
+          <R21>0</R21>
+          <R22>-4.371138828673793e-08</R22>
+        </CoordinateFrame>
+        <CoordinateFrame name="PivotOffset">
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <R00>-4.371138828673793e-08</R00>
+          <R01>0</R01>
+          <R02>1</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>-1</R20>
+          <R21>0</R21>
+          <R22>-4.371138828673793e-08</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.6392157077789307</R>
+          <G>0.6352941393852234</G>
+          <B>0.6470588445663452</B>
+        </Color3>
+        <Content name="MeshId">
+          <url>rbxassetid://127414738965477</url>
+        </Content>
+        <Content name="TextureID">
+          <url>rbxassetid://73748377999416</url>
+        </Content>
+      </Properties>
+      <Item class="SurfaceAppearance" referent="RBX_SURFACE0">
+        <Properties>
+          <string name="Name">SurfaceAppearance</string>
+          <Content name="ColorMap">
+            <url>rbxassetid://73748377999416</url>
+          </Content>
+          <Content name="NormalMap">
+            <url>rbxassetid://107513294671066</url>
+          </Content>
+          <Content name="RoughnessMap">
+            <url>rbxassetid://125785402534996</url>
+          </Content>
+          <Content name="MetalnessMap">
+            <url>rbxassetid://128877854788095</url>
+          </Content>
+        </Properties>
+      </Item>
+    </Item>
+  </Item>
+</roblox>

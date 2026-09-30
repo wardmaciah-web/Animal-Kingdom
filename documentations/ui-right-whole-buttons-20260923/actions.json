@@ -1,0 +1,11 @@
+{
+  "Updates": {
+    "Continue": true,
+    "Title": "Kingdom updates"
+  },
+  "Profile": {
+    "Continue": true,
+    "Title": "KaiKai's kingdom"
+  },
+  "FriendsCallback": "Unchanged HUD callback to ctx.InviteFriends; no invitation sent."
+}

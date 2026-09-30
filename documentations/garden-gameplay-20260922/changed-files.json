@@ -1,0 +1,62 @@
+[
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/Main.client.lua",
+    "new": false,
+    "sha256": "da153dfb9c7ba33015999a970a902cdf21095bace2d1674c8422af2eeb72f981"
+  },
+  {
+    "path": "src/StarterGui/AnimalKingdomUI/GardenMenus.lua",
+    "new": false,
+    "sha256": "7e16a971bb14ae9e244ffd6b0f81e451849f550743e27a65f9858d96362a2402"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/PetService.lua",
+    "new": false,
+    "sha256": "814d376c20f676d49de1d3b9c9f552e7843414d3df1e8e80f4a5b6dcd91706eb"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/GameplayService.lua",
+    "new": false,
+    "sha256": "7611618af5c6f7c084f89a97aeabe0d4d162bf846b5199534032d5f5c0c7286c"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Server/GardenExpeditionService.lua",
+    "new": false,
+    "sha256": "18c58644ccbcbe1249f09cfc1bffb20e1f094a811519f9220f1e617012758369"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Utilities/GameplayRequestPolicy.lua",
+    "new": false,
+    "sha256": "021a850379b3624e93dfaa569dadc032ef66edfa94e3fcb0c94bc5eb17686649"
+  },
+  {
+    "path": "src/ServerScriptService/ServerSource/Utilities/GardenPlotRuntime.lua",
+    "new": true,
+    "sha256": "12707264d7e4cb8d2642bd43367e079241854024270a0c57a4b74dd28417926b"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/GardenProgress.lua",
+    "new": true,
+    "sha256": "d247a39a3fc0134dfc37f40b31cbafc8e2b1b7ec28bdb953aa9893c53477bb29"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/ProfileMigrations.lua",
+    "new": false,
+    "sha256": "c867c5f56551d01f2a5b7981cd2623dc8509c9faa2a2ee2c9d32a16ca080db91"
+  },
+  {
+    "path": "src/ReplicatedStorage/Shared/Gameplay/Definitions/GardenDefinitions.lua",
+    "new": false,
+    "sha256": "f231a250d69f3416eb5267f9e9cccc1eecf2c2133fb1eb024413e0adf521db38"
+  },
+  {
+    "path": "src/ReplicatedStorage/SharedSource/Datas/ProfileTemplate.lua",
+    "new": false,
+    "sha256": "bc993ab91a4dd8f20789d712961c09fcf1bdcb431e53f8cab19fcd9dc58d25d8"
+  },
+  {
+    "path": "src/StarterPlayer/StarterPlayerScripts/GardenPlotVisuals.client.lua",
+    "new": false,
+    "sha256": "daf054ec21dee09e56b97846ac96eed01920b78a4b65a39248e2f8e2103da792"
+  }
+]

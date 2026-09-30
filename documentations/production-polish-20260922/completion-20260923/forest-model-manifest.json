@@ -1,0 +1,1234 @@
+[
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.49888235330581665,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://129022509074285",
+        "MeshId": "rbxassetid://97924899190875",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_b20ee4fb-658c-43d8-9467-1b3d74fd7791",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.9587303996086121,
+          0.9977647066116333,
+          0.9920828938484192
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.49888235330581665,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.9586936831474304,
+      0.9977647066116333,
+      0.9920828342437744
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY",
+    "PetTypeId": "ForestRaccoon",
+    "DisplayName": "Raccoon",
+    "Rarity": "Common",
+    "Income": 10,
+    "RobloxModelAssetId": 85734355315305,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestRaccoon",
+    "MeshIds": [
+      "rbxassetid://97924899190875"
+    ],
+    "TextureRefs": [
+      "rbxassetid://129022509074285"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_663443bd_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.4993915557861328,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://95294656364429",
+        "MeshId": "rbxassetid://131926612358052",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_9cecf91a-1af7-4613-a0b6-2fdb3c0e3d3b",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.7245271801948547,
+          0.9987831711769104,
+          0.7898188829421997
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.4993915557861328,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.7244918346405029,
+      0.9987831115722656,
+      0.789760947227478
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY",
+    "PetTypeId": "ForestBlackBearCub",
+    "DisplayName": "Black Bear Cub",
+    "Rarity": "Common",
+    "Income": 12,
+    "RobloxModelAssetId": 134079974891290,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestBlackBearCub",
+    "MeshIds": [
+      "rbxassetid://131926612358052"
+    ],
+    "TextureRefs": [
+      "rbxassetid://95294656364429"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_fca34df2_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.4994535446166992,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://119398526295183",
+        "MeshId": "rbxassetid://94866246199758",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_4c297f98-b15f-48b8-83a9-debeff3e14c2",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.7094051837921143,
+          0.9990048408508301,
+          0.9762659072875977
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.4994535446166992,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.7093561887741089,
+      0.9989070892333984,
+      0.9762424826622009
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY",
+    "PetTypeId": "ForestSkunk",
+    "DisplayName": "Skunk",
+    "Rarity": "Uncommon",
+    "Income": 15,
+    "RobloxModelAssetId": 103074281827139,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestSkunk",
+    "MeshIds": [
+      "rbxassetid://94866246199758"
+    ],
+    "TextureRefs": [
+      "rbxassetid://119398526295183"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_34254bc8_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.4993739426136017,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://135911004193278",
+        "MeshId": "rbxassetid://130215170262976",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_fd387859-e734-47ea-8610-1eaf4c4d5e1f",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          -1.8328428268432617e-05,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.8615455627441406,
+          0.9988089799880981,
+          0.7726348638534546
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.4993739426136017,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.8615455627441406,
+      0.9987478852272034,
+      0.772597074508667
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY",
+    "PetTypeId": "ForestBadger",
+    "DisplayName": "Badger",
+    "Rarity": "Uncommon",
+    "Income": 18,
+    "RobloxModelAssetId": 114016759553112,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestBadger",
+    "MeshIds": [
+      "rbxassetid://130215170262976"
+    ],
+    "TextureRefs": [
+      "rbxassetid://135911004193278"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_7603cf3a_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.49967730045318604,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://133597800956686",
+        "MeshId": "rbxassetid://126806763850171",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_01ff4433-b14f-4963-8cbf-152f266b4e83",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.8395726084709167,
+          0.9993546009063721,
+          0.990246057510376
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.49967730045318604,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.8395521640777588,
+      0.9993546009063721,
+      0.9902061223983765
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY",
+    "PetTypeId": "ForestTreeFrog",
+    "DisplayName": "Tree Frog",
+    "Rarity": "Rare",
+    "Income": 22,
+    "RobloxModelAssetId": 127911896145490,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestTreeFrog",
+    "MeshIds": [
+      "rbxassetid://126806763850171"
+    ],
+    "TextureRefs": [
+      "rbxassetid://133597800956686"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_f8e98947_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.49891412258148193,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://131616920065617",
+        "MeshId": "rbxassetid://125023493018070",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_da4058e2-fad7-4794-b339-3b66841fd3b9",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.9340941905975342,
+          0.9978282451629639,
+          0.9435724020004272
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.49891412258148193,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.9340941905975342,
+      0.9978282451629639,
+      0.9435724020004272
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY",
+    "PetTypeId": "ForestRiverOtter",
+    "DisplayName": "River Otter",
+    "Rarity": "Rare",
+    "Income": 28,
+    "RobloxModelAssetId": 76913333675834,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestRiverOtter",
+    "MeshIds": [
+      "rbxassetid://125023493018070"
+    ],
+    "TextureRefs": [
+      "rbxassetid://131616920065617"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_35be4ffb_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.4992353916168213,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://84452625990128",
+        "MeshId": "rbxassetid://106744044776841",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_9c8864c2-e6ab-4a18-be4d-240f9a3e6d31",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.6354910135269165,
+          0.9984707832336426,
+          0.8687260150909424
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.4992353916168213,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.6354910135269165,
+      0.9984707832336426,
+      0.8686834573745728
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY",
+    "PetTypeId": "ForestBrownBat",
+    "DisplayName": "Brown Bat",
+    "Rarity": "Epic",
+    "Income": 36,
+    "RobloxModelAssetId": 122381922150314,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestBrownBat",
+    "MeshIds": [
+      "rbxassetid://106744044776841"
+    ],
+    "TextureRefs": [
+      "rbxassetid://84452625990128"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_a167f18d_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.4987224042415619,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://102420541096782",
+        "MeshId": "rbxassetid://95294648810339",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_92005fed-b1ce-4c48-a396-2a1dd4f9d3e9",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          4.231929779052734e-06,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.8435412049293518,
+          0.9974532723426819,
+          0.7895172834396362
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.4987224042415619,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.8435205221176147,
+      0.9974448084831238,
+      0.7895172834396362
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY",
+    "PetTypeId": "ForestWoodlandOwl",
+    "DisplayName": "Woodland Owl",
+    "Rarity": "Epic",
+    "Income": 45,
+    "RobloxModelAssetId": 120411588642627,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestWoodlandOwl",
+    "MeshIds": [
+      "rbxassetid://95294648810339"
+    ],
+    "TextureRefs": [
+      "rbxassetid://102420541096782"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_237a53a2_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.49964338541030884,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://126502584357511",
+        "MeshId": "rbxassetid://82138478193574",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_a038d25d-6c46-476d-b056-cbb8ff1ddacf",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          -1.2218952178955078e-05,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.6858313679695129,
+          0.9993112087249756,
+          0.6589154005050659
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.49964338541030884,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.6857978105545044,
+      0.9992867708206177,
+      0.6589154005050659
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY",
+    "PetTypeId": "ForestCrestedOwl",
+    "DisplayName": "Crested Owl",
+    "Rarity": "Legendary",
+    "Income": 55,
+    "RobloxModelAssetId": 90100153950093,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestCrestedOwl",
+    "MeshIds": [
+      "rbxassetid://82138478193574"
+    ],
+    "TextureRefs": [
+      "rbxassetid://126502584357511"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_58c6a281_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.49962905049324036,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://123865829385359",
+        "MeshId": "rbxassetid://111837749719637",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_e52346cc-4e3a-44c9-b666-597a2ba0a7df",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          -6.109476089477539e-06,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.6085129380226135,
+          0.9992703199386597,
+          0.8279234170913696
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.49962905049324036,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.6085129380226135,
+      0.9992581009864807,
+      0.8278930187225342
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY",
+    "PetTypeId": "ForestLeafAntler",
+    "DisplayName": "Leaf-Antler Guardian",
+    "Rarity": "Legendary",
+    "Income": 70,
+    "RobloxModelAssetId": 112384650584330,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestLeafAntler",
+    "MeshIds": [
+      "rbxassetid://111837749719637"
+    ],
+    "TextureRefs": [
+      "rbxassetid://123865829385359"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_e23de4f2_ROBLOX_READY"
+  },
+  {
+    "OriginalPivot": [
+      -354.2380065917969,
+      0.4736297130584717,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "Parts": [
+      {
+        "TextureID": "rbxassetid://73081746031370",
+        "MeshId": "rbxassetid://89750756176673",
+        "Color": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "PivotOffset": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Transparency": 0,
+        "Name": "tripo_mesh_baf6893f-578a-45ff-9308-25a944f75b02",
+        "Surfaces": [],
+        "DoubleSided": false,
+        "Material": 256,
+        "CFrame": [
+          0,
+          -6.556510925292969e-06,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Size": [
+          0.6146225929260254,
+          0.947292685508728,
+          0.9997575283050537
+        ]
+      }
+    ],
+    "BoundsCFrame": [
+      -354.2380065917969,
+      0.4736297130584717,
+      379.0040283203125,
+      -0.8867910504341125,
+      0,
+      -0.4621706008911133,
+      0,
+      1,
+      0,
+      0.4621706008911133,
+      0,
+      -0.8867910504341125
+    ],
+    "BoundsSize": [
+      0.614607572555542,
+      0.9472594261169434,
+      0.9997575283050537
+    ],
+    "ImportedModelPath": "ReplicatedStorage.PetAssets.ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY",
+    "PetTypeId": "ForestEmeraldWing",
+    "DisplayName": "Emerald-Wing Guardian",
+    "Rarity": "Secret",
+    "Income": 90,
+    "RobloxModelAssetId": 80671057535524,
+    "OriginalName": "ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY",
+    "MeshPartCount": 1,
+    "Ready": true,
+    "CanonicalPath": "ReplicatedStorage.PetAssets.ForestEmeraldWing",
+    "MeshIds": [
+      "rbxassetid://89750756176673"
+    ],
+    "TextureRefs": [
+      "rbxassetid://73081746031370"
+    ],
+    "ModelRotationDegrees": -90,
+    "SurfaceAppearanceCount": 0,
+    "VerifiedIn": [
+      "TreeReward",
+      "EggReveal",
+      "Inventory",
+      "Index",
+      "Follower",
+      "Sanctuary",
+      "Garden"
+    ],
+    "ArchivedImportPath": "ServerStorage.ForestImportArchive.ChatGPT_Image_Sep_21_20...31_06acbd90_ROBLOX_READY"
+  }
+]

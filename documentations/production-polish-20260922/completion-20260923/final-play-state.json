@@ -1,0 +1,55 @@
+{
+  "Method": "Clean startup, original Studio mock snapshot, native MCP mouse clicks; no direct UI callback invocation",
+  "Steps": [
+    {
+      "Menu": "Pets",
+      "Opened": "Pets",
+      "Closed": ""
+    },
+    {
+      "Menu": "Garden",
+      "Opened": "Garden",
+      "Closed": ""
+    },
+    {
+      "Menu": "Shop",
+      "Opened": "Shop",
+      "Closed": ""
+    },
+    {
+      "Menu": "Index",
+      "Opened": "Index",
+      "Closed": ""
+    },
+    {
+      "Menu": "Biomes",
+      "Opened": "Biomes",
+      "Closed": ""
+    }
+  ],
+  "State": {
+    "Ok": true,
+    "Result": {
+      "CurrentHumanoid": true,
+      "PlaceId": 132313449035787,
+      "Viewports": {
+        "Live": 0,
+        "Budget": 24,
+        "Registered": 0
+      },
+      "Running": true,
+      "CameraType": "Custom",
+      "GameId": 10764288431,
+      "PromptsEnabled": true,
+      "Mouse": "Default",
+      "ActiveMenu": "",
+      "Ready": 25
+    }
+  },
+  "ConsoleNotes": [
+    "Known later-biome missing-asset validator warnings remain (250 errors / 68 warnings).",
+    "Existing weather audio manifest has 69 unassigned upload slots.",
+    "One AssistantCommand inspection used the wrong Shop button name; this QA probe error was corrected to Nav_Shop. The native menu checks then passed.",
+    "No production runtime exception or WalkSpeed re-entrancy error was seen in the final Play log."
+  ]
+}

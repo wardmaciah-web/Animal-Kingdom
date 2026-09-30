@@ -1,0 +1,82 @@
+[
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestTreeFrog",
+      "Pool": "Forest_Shakeable_03",
+      "UID": "7694e6be-ff8a-4972-a0ed-220b06471bc9"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestCrestedOwl",
+      "Pool": "Forest_Shakeable_04",
+      "UID": "06942352-0ccc-4031-988b-f953c781da23"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestSkunk",
+      "Pool": "Forest_Shakeable_02",
+      "UID": "da78fc08-0de9-47a5-807e-da730cedf4a1"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestBlackBearCub",
+      "Pool": "Forest_Shakeable_01",
+      "UID": "49b9a131-0273-4c52-93c9-c750eaa5b11c"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestSkunk",
+      "Pool": "Forest_Shakeable_02",
+      "UID": "12be42f7-acdc-415c-a14c-07b56495287e"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestBrownBat",
+      "Pool": "Forest_Shakeable_03",
+      "UID": "a4c6c097-a141-4542-9b61-deaf23c7c1e9"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestCrestedOwl",
+      "Pool": "Forest_Shakeable_04",
+      "UID": "ff272cfa-716c-4706-b036-4e621ece792f"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestSkunk",
+      "Pool": "Forest_Shakeable_02",
+      "UID": "4ddadd94-6061-4cc3-a92c-013e40530b3b"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestBlackBearCub",
+      "Pool": "Forest_Shakeable_01",
+      "UID": "c5354d26-4d14-40e3-92b9-4f18bd271ee7"
+    }
+  },
+  {
+    "Ok": true,
+    "Result": {
+      "Species": "ForestSkunk",
+      "Pool": "Forest_Shakeable_02",
+      "UID": "a9f43f6c-d015-4b82-81e9-f69453aec21e"
+    }
+  }
+]

@@ -1,0 +1,54 @@
+ANIMAL KINGDOM PREBUILT TOWN MODEL ASSET IDS
+
+All nine FBXs were uploaded through the configured Roblox Open Cloud pipeline and verified by Roblox metadata as AssetTypeId 10 (Model).
+Image textures: none
+Old Kenney atlas applicable: NO
+
+filename: Inn.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy Inn/Inn.fbx
+Roblox asset ID: 76054364259066
+intended use: Trading Hall
+
+filename: House_4.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House/House_4.fbx
+Roblox asset ID: 83947637366705
+intended use: Rewards Building
+
+filename: House_1.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House-BH2XHWUNmF/House_1.fbx
+Roblox asset ID: 78939662267762
+intended use: Pet Shop decorative building
+
+filename: House_2.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Fantasy House-dcPho4SUA3/House_2.fbx
+Roblox asset ID: 83210607576799
+intended use: General Store decorative building
+
+filename: Blacksmith.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Blacksmith/Blacksmith.fbx
+Roblox asset ID: 119587733343794
+intended use: Blacksmith decorative building
+
+filename: Well.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Well/Well.fbx
+Roblox asset ID: 138924880488823
+intended use: Central town Well
+
+filename: MarketStand_1.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Market Stand/MarketStand_1.fbx
+Roblox asset ID: 102223874475635
+intended use: Market Stand 1
+
+filename: MarketStand_2.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Market Stand/MarketStand_2.fbx
+Roblox asset ID: 107112033268689
+intended use: Market Stand 2
+
+filename: Cart.fbx
+source path: /Users/jefferypryor/Downloads/RobloxBatches/TownBuildings/Medieval Village Pack-zip/Cart/Cart.fbx
+Roblox asset ID: 109625564519903
+intended use: Market Cart
+
+Uploaded: 9/9
+Verified model assets: 9/9
+Invented asset IDs: 0

@@ -1,0 +1,100 @@
+--- /dev/null
++++ src/StarterGui/AnimalKingdomUI/AnimalKingdomUIV2/SideActionButton.lua
+@@ -0,0 +1,97 @@
++local T=require(script.Parent.Theme)
++local Motion=require(script.Parent.Motion)
++local S={}
++
++function S.new(W,parent,name,icon,size,pos,callback)
++ local style=T.SideAction
++ local button=W.New('ImageButton',{Name='Nav_'..name,Size=size,Position=pos or UDim2.new(),
++  BackgroundTransparency=1,BorderSizePixel=0,Image='',ClipsDescendants=true,Active=true},parent)
++ button:SetAttribute('Component','SideActionButton')
++ W.Round(button,style.Radius+style.Inset)
++ local visual=W.New('Frame',{Name='Visual',AnchorPoint=Vector2.new(.5,.5),Position=UDim2.fromScale(.5,.5),
++  Size=UDim2.fromScale(1,1),BackgroundTransparency=1,BorderSizePixel=0,ClipsDescendants=true},button)
++ local scale=Motion.Scale(visual)
++ local shadow=W.New('Frame',{Name='Backplate',Position=UDim2.fromOffset(2,4),Size=UDim2.new(1,-4,1,-5),
++  BackgroundColor3=T.Shadow.Color,BackgroundTransparency=style.ShadowTransparency,BorderSizePixel=0,ZIndex=1},visual)
++ W.Round(shadow,style.Radius)
++ local body=W.New('Frame',{Name='Body',Position=UDim2.fromOffset(style.Inset,style.Inset),Size=UDim2.new(1,-style.Inset*2,1,-7),
++  BackgroundColor3=style.Body,BorderSizePixel=0,ClipsDescendants=true,ZIndex=2},visual)
++ W.Round(body,style.Radius)
++ local rim=W.Stroke(body,style.Rim,style.Stroke)
++ W.Gradient(body,Color3.fromRGB(255,248,225),Color3.fromRGB(184,148,112))
++ -- The former small 9-slice shell compressed baked bevels into side seams.
++ -- Only use the border-free center as grain; native corners/stroke own the silhouette.
++ local grain=W.New('ImageLabel',{Name='WoodGrain',Size=UDim2.fromScale(1,1),BackgroundTransparency=1,BorderSizePixel=0,
++  Image=T.Assets.Wood,ImageRectOffset=Vector2.new(220,220),ImageRectSize=Vector2.new(584,584),
++  ScaleType=Enum.ScaleType.Crop,ImageTransparency=.7,ZIndex=3},body)
++ W.Round(grain,style.Radius)
++ local glyph=W.Icon(visual,icon or name,UDim2.fromOffset(40,40),UDim2.new(.5,0,0,5));glyph.AnchorPoint=Vector2.new(.5,0);glyph.ZIndex=4
++ local label=W.Heading(visual,name,UDim2.new(1,-12,0,18),UDim2.new(0,6,1,-23),style.LabelMax,T.Color.White)
++ label.TextXAlignment=Enum.TextXAlignment.Center;label.TextWrapped=false;label.TextScaled=true;label.ZIndex=5
++ label.TextStrokeColor3=T.Color.WoodDark;label.TextStrokeTransparency=.35
++ W.New('UITextSizeConstraint',{MinTextSize=9,MaxTextSize=style.LabelMax},label)
++ -- Focus replaces the one body stroke at identical bounds/radius. It never grows outside the button.
++ local focus=W.New('Frame',{Name='Focus',Position=body.Position,Size=body.Size,BackgroundTransparency=1,
++  BorderSizePixel=0,Visible=false,ZIndex=6},visual)
++ W.Round(focus,style.Radius);W.Stroke(focus,T.Color.Gold,style.FocusStroke)
++ local hovering,pressed,focused=false,false,false
++ local pressVersion=0
++ local function render()
++  local disabled=not button.Active or button:GetAttribute('Disabled')or button:GetAttribute('Pending')
++  local selected=button:GetAttribute('Selected')==true
++  local color=selected and T.Color.Green or style.Body
++  if disabled then color=color:Lerp(T.Color.WoodDark,.45)
++  elseif pressed then color=color:Lerp(T.Color.WoodDark,.25)
++  elseif hovering or focused then color=color:Lerp(T.Color.Gold,.15)end
++  button:SetAttribute('Hovered',hovering);button:SetAttribute('Pressed',pressed)
++  Motion.Tween(body,'SideActionState',{BackgroundColor3=color})
++  Motion.Tween(rim,'SideActionState',{Color=(selected or hovering)and T.Color.Gold or style.Rim})
++  Motion.Tween(grain,'SideActionState',{ImageTransparency=selected and .91 or .7})
++  -- Shrink only the contained visual on press; never expand a hit target into its neighbor.
++  Motion.Tween(scale,'SideActionState',{Scale=pressed and not disabled and .975 or 1})
++  rim.Enabled=not focused;focus.Visible=focused
++ end
++ local function press(down)pressVersion+=1;pressed=down;render()end
++ W.Bind(button,callback,{
++  Focus=focus,
++  FocusChanged=function(value)focused=value;render()end,
++  Hover=function(value)hovering=value;render()end,
++  Press=press,
++  Activate=function()
++   press(true);local version=pressVersion
++   task.delay(T.Motion.ButtonPress,function()if button.Parent and version==pressVersion then press(false)end end)
++  end,
++ })
++ local function resize()
++  local s=button.AbsoluteSize
++  local edge=math.max(18,math.min(s.X-18,s.Y-28))
++  glyph.Size=UDim2.fromOffset(edge,edge)
++ end
++ button:GetPropertyChangedSignal('AbsoluteSize'):Connect(resize)
++ button:GetPropertyChangedSignal('Active'):Connect(function()if not button.Active then hovering=false;pressed=false end;render()end)
++ button:GetAttributeChangedSignal('Selected'):Connect(render)
++ button:GetAttributeChangedSignal('Disabled'):Connect(render)
++ button:GetAttributeChangedSignal('Pending'):Connect(render)
++ button:GetPropertyChangedSignal('Visible'):Connect(function()if not button.Visible then hovering=false;press(false)end end)
++ resize();render()
++ return button
++end
++
++function S.Badge(W,button)
++ local visual=button:FindFirstChild('Visual')
++ local badge=W.New('Frame',{Name='NotificationBadge',AnchorPoint=Vector2.new(1,0),Position=UDim2.new(1,-6,0,5),
++  Size=UDim2.fromOffset(21,21),BackgroundColor3=T.Color.Red,BorderSizePixel=0,Visible=false,ZIndex=7},visual)
++ W.Round(badge,20);W.Stroke(badge,T.Color.Panel,1)
++ local label=W.Heading(badge,'',UDim2.fromScale(1,1),nil,12,T.Color.White);label.TextXAlignment=Enum.TextXAlignment.Center;label.ZIndex=8
++ local function resize()
++  local s=button.AbsoluteSize
++  local edge=math.clamp(math.floor(math.min(s.X,s.Y)*.28),T.SideAction.BadgeMin,T.SideAction.BadgeMax)
++  badge.Size=UDim2.fromOffset(edge,edge);label.TextSize=edge<20 and 10 or 12
++ end
++ local changed=button:GetPropertyChangedSignal('AbsoluteSize'):Connect(resize)
++ badge.Destroying:Once(function()changed:Disconnect()end)
++ resize()
++ return function(count)badge.Visible=count>0;label.Text=count>9 and '9+'or tostring(count)end
++end
++
++return S

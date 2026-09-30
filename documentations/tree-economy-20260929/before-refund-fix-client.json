@@ -1,0 +1,75 @@
+{
+  "Reveals": [
+    {
+      "Id": "Meadow_Shakeable_01",
+      "UID": "4d33a1ba-48d9-4e9e-9a4a-bd53ce7ef8f8",
+      "Cost": 250
+    },
+    {
+      "Id": "Meadow_Shakeable_01",
+      "UID": "a99ed9db-0e28-4e34-9180-da91868e3c13",
+      "Cost": 250
+    },
+    {
+      "Id": "Meadow_Shakeable_01",
+      "UID": "70968ebb-cca9-459a-94af-f425bcd3c57b",
+      "Cost": 250
+    },
+    {
+      "Id": "Meadow_Shakeable_02",
+      "UID": "19da2a91-9ff0-47bb-aa97-79f6f174c6d6",
+      "Cost": 500
+    },
+    {
+      "Id": "Meadow_Shakeable_03",
+      "UID": "a29955e0-4676-4d6c-9ee3-c27e5e01f3bd",
+      "Cost": 1000
+    },
+    {
+      "Id": "Meadow_Shakeable_04",
+      "UID": "d087e831-f4d7-4e39-b8f0-b480e9afa425",
+      "Cost": 2000
+    },
+    {
+      "Id": "Meadow_Shakeable_05",
+      "UID": "68e05aff-944a-4249-b5c0-b708d0d938ab",
+      "Cost": 4000
+    },
+    {
+      "Id": "Forest_Shakeable_01",
+      "UID": "916a5ddd-276d-4db1-ab7d-42cefe5d49c8",
+      "Cost": 6000
+    },
+    {
+      "Id": "Forest_Shakeable_02",
+      "UID": "0391de56-c732-4c0d-acc7-fe6ee42d6315",
+      "Cost": 10000
+    },
+    {
+      "Id": "Forest_Shakeable_03",
+      "UID": "000f2521-91ec-436b-a515-548e006b83f6",
+      "Cost": 17500
+    },
+    {
+      "Id": "Forest_Shakeable_04",
+      "UID": "c630a5d7-5d95-4312-be19-f34ac93e1aed",
+      "Cost": 30000
+    },
+    {
+      "Id": "Forest_Shakeable_05",
+      "UID": "2a88cb4c-7a21-416c-97ca-c6de6d74133f",
+      "Cost": 50000
+    }
+  ],
+  "LastShowcase": {
+    "PetId": "ForestTreeFrog",
+    "ViewportReady": true,
+    "UID": "916a5ddd-276d-4db1-ab7d-42cefe5d49c8"
+  },
+  "Labels": [
+    {
+      "Path": "Workspace.LocalPetFollowers.MeadowFieldMouse.tripo_mesh_cd03c553-9892-4855-8f09-33b781092721.PetInformation.Frame.PetIncome",
+      "Text": "+2.7/sec"
+    }
+  ]
+}

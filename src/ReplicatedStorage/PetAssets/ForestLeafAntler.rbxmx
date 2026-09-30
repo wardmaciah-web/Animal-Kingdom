@@ -1,0 +1,64 @@
+<roblox version="4">
+  <Item class="Model" referent="RBX_MODEL">
+    <Properties>
+      <string name="Name">ForestLeafAntler</string>
+      <Ref name="PrimaryPart">RBX_MESH0</Ref>
+    </Properties>
+    <Item class="MeshPart" referent="RBX_MESH0">
+      <Properties>
+        <string name="Name">tripo_mesh_e52346cc-4e3a-44c9-b666-597a2ba0a7df</string>
+        <bool name="Anchored">true</bool>
+        <bool name="CanCollide">false</bool>
+        <bool name="CanTouch">false</bool>
+        <bool name="CanQuery">false</bool>
+        <bool name="DoubleSided">false</bool>
+        <Vector3 name="Size">
+          <X>0.6085129380226135</X>
+          <Y>0.9992703199386597</Y>
+          <Z>0.8279234170913696</Z>
+        </Vector3>
+        <CoordinateFrame name="CFrame">
+          <X>0</X>
+          <Y>-6.109476089477539e-06</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <CoordinateFrame name="PivotOffset">
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <R00>1</R00>
+          <R01>0</R01>
+          <R02>0</R02>
+          <R10>0</R10>
+          <R11>1</R11>
+          <R12>0</R12>
+          <R20>0</R20>
+          <R21>0</R21>
+          <R22>1</R22>
+        </CoordinateFrame>
+        <Color3 name="Color">
+          <R>0.6392157077789307</R>
+          <G>0.6352941393852234</G>
+          <B>0.6470588445663452</B>
+        </Color3>
+        <float name="Transparency">0</float>
+        <token name="Material">256</token>
+        <Content name="MeshId">
+          <url>rbxassetid://111837749719637</url>
+        </Content>
+        <Content name="TextureID">
+          <url>rbxassetid://123865829385359</url>
+        </Content>
+      </Properties>
+    </Item>
+  </Item>
+</roblox>

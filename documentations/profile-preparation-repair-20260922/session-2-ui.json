@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"top\":[{\"name\":\"HUD\",\"visible\":true},{\"name\":\"GameplayMenu\",\"visible\":true},{\"name\":\"Notifications\",\"visible\":false},{\"name\":\"GardenFade\",\"visible\":false},{\"name\":\"GardenTitle\",\"visible\":false}],\"texts\":[\"Harvest: 223\"],\"visibleGarden\":true}"
+    }
+  ],
+  "isError": false
+}

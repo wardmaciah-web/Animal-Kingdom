@@ -1,0 +1,317 @@
+{
+  "Kind": "Targeted Studio Play presentation pass, mock/copy profiles; no publication",
+  "Announcements": {
+    "DesktopTitlePixels": 40,
+    "DesktopBodyPixels": 21,
+    "Observed": [
+      "Lucky Tree actual event",
+      "Journey 2/3 from real normal searches",
+      "Journey step complete with next Sanctuary objective",
+      "Tree Rush accepted route",
+      "Paw discovery via E input",
+      "Hot Tree live state",
+      "Shop server announcement fixture",
+      "Server-record replay from actual current record snapshot"
+    ],
+    "Coalescing": {
+      "HUDHidden": true,
+      "HiddenDuringReveal": true,
+      "LatestOnly": true,
+      "NotRepeated": false,
+      "Detail": "20 / 20",
+      "Followup": "The interrupted earlier record resumed after 20/20. The initial NotRepeated test expected an empty queue and was therefore not a valid duplicate assertion; observed current ID was PolishRecordSnapshot, then hidden.",
+      "FollowupVerified": {
+        "Passed": true,
+        "RapidUpdates": 10,
+        "DisplayedIds": [
+          "FinalCoalesce:10"
+        ],
+        "Method": "Queue updates while reveal-active, then observe current notice IDs after reveal releases"
+      }
+    },
+    "HUDYields": true,
+    "Mobile": "Skipped at user's request"
+  },
+  "Paw": {
+    "Meadow": {
+      "Count": 6,
+      "AllOpenGround": true,
+      "MinimumSeparation": 22.239885330200195,
+      "RouteLength": 419.0532982349396
+    },
+    "Forest": {
+      "Count": 6,
+      "AllOpenGround": true,
+      "MinimumSeparation": 38.97085952758789,
+      "RouteLength": 319.34411656856537
+    },
+    "ActualWalkingAndE": "First marker in both biomes; remaining markers completed using server-valid scripted positions",
+    "FreeCompletion": "No coin deduction or pet grant during discoveries",
+    "GroundLift": 0.1,
+    "ClearanceOutsideTreeFootprint": 5,
+    "ConfiguredMinimumMarkerSeparation": 16
+  },
+  "GameplayRegression": {
+    "MeadowPaidSearches": 3,
+    "EachCharged": 250,
+    "ExactlyOnePetPerSearch": true,
+    "JourneyProgress": [
+      1,
+      2,
+      3
+    ],
+    "JourneyStepAfterThird": 2,
+    "RevealContinues": "Actual mouse input",
+    "ForestSearch": [
+      {
+        "JourneyStep": 1,
+        "JourneyProgress": 0,
+        "Weight": 7.1,
+        "Price": 6000,
+        "PetId": "ForestRaccoon",
+        "UID": "e138bde7-22b4-4fc1-97bf-22f86d12e8ae"
+      }
+    ],
+    "OriginalUncollectedBefore": 569139.4334479594,
+    "OriginalUncollectedAfter": 569139.4334479594,
+    "OriginalMockRestored": true
+  },
+  "WorldWalks": {
+    "Town": {
+      "StandSeconds": 12.014469442001428,
+      "Observed": "Drifting leaves, localized shop sparkles and soft building pulse; attention switched while walking from board to shop",
+      "ParticleRate": 9
+    },
+    "Meadow": {
+      "StandSeconds": 12.014519720993121,
+      "Observed": "Several simultaneously drifting pink petals/green leaves and warm pollen points; final leaf art refined to reuse the existing leaf icon",
+      "FinalBaselineFoliage": 24,
+      "FinalBaselinePollenRate": 24
+    },
+    "Forest": {
+      "StandSeconds": 12.014315723004984,
+      "Observed": "Falling leaf silhouettes, sparse glowing firefly pockets, floating dust and low localized haze",
+      "FinalBaselineFoliage": 24,
+      "FireflyPocketCount": 3,
+      "EachPocketRate": 5,
+      "EachMistPocketRate": 0.9
+    }
+  },
+  "Hot": [
+    {
+      "Variant": "Heavy",
+      "Outline": 0.06777400523424149,
+      "Label": "HOT TREE\nHEAVY\n2:00",
+      "Color": [
+        0.8549019694328308,
+        0.5176470875740051,
+        1
+      ],
+      "Rate": 10,
+      "Fill": 0.5700885057449341
+    },
+    {
+      "Variant": "Lucky",
+      "Outline": 0.05304991826415062,
+      "Label": "HOT TREE\nLUCKY\n2:00",
+      "Color": [
+        0.5843137502670288,
+        0.95686274766922,
+        0.43529412150382996
+      ],
+      "Rate": 10,
+      "Fill": 0.5541374087333679
+    },
+    {
+      "Variant": "Rich",
+      "Outline": 0.14210793375968933,
+      "Label": "HOT TREE\nRICH\n2:00",
+      "Color": [
+        1,
+        0.8549019694328308,
+        0.3333333432674408
+      ],
+      "Rate": 10,
+      "Fill": 0.6506169438362122
+    },
+    {
+      "Variant": "Fast",
+      "Outline": 0.1275695115327835,
+      "Label": "HOT TREE\nFAST\n2:00",
+      "Color": [
+        0.42352941632270813,
+        0.886274516582489,
+        1
+      ],
+      "Rate": 10,
+      "Fill": 0.6348669528961182
+    },
+    {
+      "Variant": "Mastery",
+      "Outline": 0.04411908611655235,
+      "Label": "HOT TREE\nMASTERY\n2:00",
+      "Color": [
+        1,
+        0.6549019813537598,
+        0.4000000059604645
+      ],
+      "Rate": 10,
+      "Fill": 0.5444623231887817
+    }
+  ],
+  "WeatherVisualFixtures": {
+    "Snowfall": {
+      "Mist": 0.13500000536441803,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 1.100000023841858,
+      "Rate": 3.755000039935112,
+      "Fireflies": 0.75
+    },
+    "Foggy": {
+      "Mist": 0,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 6.050000190734863,
+      "Rate": 21.050000190734863,
+      "Fireflies": 5
+    },
+    "High": {
+      "Mist": 0.8999999761581421,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 11,
+      "Rate": 28.699999928474426,
+      "Fireflies": 5
+    },
+    "ReducedMotion": {
+      "Mist": 0.3149999976158142,
+      "Leaves": 9,
+      "Scale": 0.35,
+      "Pollen": 3.8499999046325684,
+      "Rate": 10.044999897480011,
+      "Fireflies": 1.75
+    },
+    "Low": {
+      "Mist": 0.3149999976158142,
+      "Leaves": 9,
+      "Scale": 0.35,
+      "Pollen": 3.8499999046325684,
+      "Rate": 10.044999897480011,
+      "Fireflies": 1.75
+    },
+    "Medium": {
+      "Mist": 0.5849999785423279,
+      "Leaves": 16,
+      "Scale": 0.65,
+      "Pollen": 7.150000095367432,
+      "Rate": 18.655000030994415,
+      "Fireflies": 3.25
+    },
+    "Thunderstorm": {
+      "Mist": 0.36000001430511475,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 0.8799999952316284,
+      "Rate": 3.4600000381469727,
+      "Fireflies": 0.5
+    },
+    "RainyDay": {
+      "Mist": 0.8999999761581421,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 2.4200000762939453,
+      "Rate": 8.870000004768372,
+      "Fireflies": 1.25
+    },
+    "Windy": {
+      "Mist": 0.8999999761581421,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 8.25,
+      "Rate": 25.949999928474426,
+      "Fireflies": 5
+    },
+    "SunnySkies": {
+      "Mist": 0.8999999761581421,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 14.300000190734863,
+      "Rate": 32.00000011920929,
+      "Fireflies": 5
+    },
+    "ForestHighFireflyMicro": {
+      "Mist": 0.8999999761581421,
+      "Leaves": 24,
+      "Scale": 1,
+      "Pollen": 11,
+      "Rate": 28.699999928474426,
+      "Fireflies": 5
+    }
+  },
+  "MicroVisualFixtures": {
+    "Breeze": {
+      "Foliage": 36,
+      "RateWithConcurrentSpecialFX": 62.086674
+    },
+    "Fireflies": {
+      "Foliage": 28,
+      "FirefliesPerPocket": 12.5,
+      "RateWithConcurrentSpecialFX": 76.929816
+    },
+    "Restless": {
+      "Foliage": 36,
+      "RateWithConcurrentSpecialFX": 59.193282
+    },
+    "Note": "Injected client visual state, not a change to server weather or event scheduling"
+  },
+  "Guidance": {
+    "SampledRenderFrames": 46,
+    "ChangingHeadingFrames": 10,
+    "MaximumSampledHeadingStepDegrees": 16.358317753379907,
+    "SameArrowInstance": true,
+    "AmbientDescendantsStable": true,
+    "AmbientDescendants": 299,
+    "ArrowChildren": 2,
+    "Note": "Studio background rendering sampled about 15 frames/sec; not a hardware performance benchmark"
+  },
+  "ProtectedGameplay": "SHA-256 comparison performed separately against the current-build checkpoint",
+  "HotLabelFinal": {
+    "FreshPlayVerified": true,
+    "Capture": "PolishFinalHotLabelAndGlow",
+    "Enabled": true,
+    "Text": "HOT TREE\nHEAVY\n1:59",
+    "TextSize": 21,
+    "HaloRadius": 11.555087089538574,
+    "Fix": "Explicit Adornee and smoothly offset depth-tested billboard in front of the full canopy footprint; halo adapts to tree size"
+  },
+  "AmbientScopeFinal": {
+    "GardenBiome": "Garden",
+    "GardenFoliage": 0,
+    "GardenPollen": 0,
+    "AwayTownBiome": "none",
+    "AwayTownFoliage": 0,
+    "Method": "Client attribute fixtures in fresh Play, restored immediately"
+  },
+  "StaticCompile": {
+    "ScriptCount": 173,
+    "Errors": [],
+    "Method": "Studio Edit loadstring of mapped server, shared, UI, and player scripts"
+  },
+  "FinalRestore": {
+    "OriginalUncollected": 605491.3651860262,
+    "RestoredUncollected": 605491.3651860262,
+    "OriginalUIDCount": 5,
+    "Restored": true
+  },
+  "FinalConsole": {
+    "NewErrorsFromChangedScripts": 0,
+    "ExistingWarnings": "25/330 pet models available; 68 asset warnings; Superbullet localhost backend unavailable. No asset changes attempted."
+  },
+  "FinalState": {
+    "StudioMode": "Edit",
+    "MockProfiles": true,
+    "Published": false,
+    "AssetImports": false
+  }
+}

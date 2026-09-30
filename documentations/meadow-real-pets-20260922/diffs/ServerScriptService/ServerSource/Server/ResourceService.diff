@@ -1,0 +1,14 @@
+--- baseline/src/ServerScriptService/ServerSource/Server/ResourceService.lua
++++ src/ServerScriptService/ServerSource/Server/ResourceService.lua
+@@ -54,6 +54,11 @@
+  anchor.WorldPosition=interaction
+  local prompt=anchor:FindFirstChild("GatherPrompt") or Instance.new("ProximityPrompt")
+  prompt.Name="GatherPrompt";prompt.ActionText=isTree and "SHAKE TREE" or "GATHER";prompt.ObjectText=isTree and "Tree" or "Resource"
++ if isTree and biome=="Meadow" then
++  local def=require(RS.Shared.Gameplay.Definitions.MeadowTreeDefinitions).Get(object,biome)
++  prompt.ActionText=def and ("SEARCH · "..def.Cost.." Forest Coins") or "UNAVAILABLE"
++  prompt.ObjectText=def and def.DisplayName or "Meadow Tree"
++ end
+  prompt.HoldDuration=.2;prompt.MaxActivationDistance=14;prompt.RequiresLineOfSight=false;prompt.Parent=anchor
+  local record={Object=object,Pivot=original,InteractionPosition=interaction,IsTree=isTree,State="AVAILABLE",Properties={},Prompt=prompt,Biome=biome,Table=tableId}
+  local objects=object:GetDescendants();table.insert(objects,object)

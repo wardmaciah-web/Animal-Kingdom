@@ -1,0 +1,18 @@
+{
+  "Path": "/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/tree-egg-loop-20260917/AnimalKingdom-tree-egg-loop-complete.rbxl",
+  "Bytes": 9569326,
+  "SHA256": "03849b81966324d79e0eae731108464e04ac3b42f58c8b302f946ed4124744b3",
+  "StudioLog": [
+    "2026-09-18T03:43:51.785Z,1978.785156,1b769600,6,Info [FLog::CreatorOutput] Saved new changes in \"Animal Kingdom[TESTING}\" to Roblox.",
+    "2026-09-18T03:43:54.413Z,1981.413452,b8b7000,6,Info [FLog::CreatorOutput] Place file downloaded to '/Users/jefferypryor/Documents/SuperbulletAI/Real_Animal_K/documentations/tree-egg-loop-20260917/AnimalKingdom-tree-egg-loop-complete.rbxl'"
+  ],
+  "FinalEditAudit": {
+    "MissingAssetFolders": [],
+    "SourceMismatches": [],
+    "EggStations": 0,
+    "SourceCount": 15,
+    "TemporaryAudits": 0,
+    "RegisteredTrees": 322,
+    "GeneratedGeometry": 0
+  }
+}

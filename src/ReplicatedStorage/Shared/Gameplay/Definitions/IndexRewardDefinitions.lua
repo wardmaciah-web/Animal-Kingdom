@@ -1,0 +1,1 @@
+return {{Percent=25,Coins=25000,FriendshipTokens=100},{Percent=50,Coins=250000,FriendshipTokens=500},{Percent=75,Coins=2500000,FriendshipTokens=1500},{Percent=100,Coins=25000000,FriendshipTokens=5000}}

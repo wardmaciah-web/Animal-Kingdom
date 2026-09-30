@@ -1,0 +1,383 @@
+[
+  {
+    "Expected": [
+      {
+        "UID": "59980199-c5ff-4519-b88a-e8089f0e1b6a",
+        "PetTypeId": "MeadowFieldMouse"
+      },
+      {
+        "UID": "7a224473-b8cf-4232-9c9e-b1d80721f769",
+        "PetTypeId": "MeadowChick"
+      },
+      {
+        "UID": "b89e655a-c988-432a-9475-43597bdcbe3b",
+        "PetTypeId": "MeadowRedSquirrel"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "2.952287435531616, 3.200000047683716, 2.8663408756256104",
+          "Texture": "rbxassetid://83064824068183",
+          "UID": "b89e655a-c988-432a-9475-43597bdcbe3b",
+          "Mesh": "rbxassetid://73672924650229",
+          "PetTypeId": "MeadowRedSquirrel"
+        },
+        {
+          "Collides": false,
+          "Size": "2.512850046157837, 3.200000047683716, 2.378208637237549",
+          "Texture": "rbxassetid://77213563483513",
+          "UID": "7a224473-b8cf-4232-9c9e-b1d80721f769",
+          "Mesh": "rbxassetid://122845755829690",
+          "PetTypeId": "MeadowChick"
+        },
+        {
+          "Collides": false,
+          "Size": "3.200000047683716, 3.1308937072753906, 2.7815349102020264",
+          "Texture": "rbxassetid://73748377999416",
+          "UID": "59980199-c5ff-4519-b88a-e8089f0e1b6a",
+          "Mesh": "rbxassetid://127414738965477",
+          "PetTypeId": "MeadowFieldMouse"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "eaa5420b-cbbf-4731-a377-c887fa924a1a",
+        "PetTypeId": "MeadowGoat"
+      },
+      {
+        "UID": "16513d5b-7367-465c-9602-3e05bb1512c5",
+        "PetTypeId": "MeadowFawn"
+      },
+      {
+        "UID": "ed7cc643-05be-45d1-8ae6-e77c826b3d3b",
+        "PetTypeId": "MeadowFluffyLop"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "3.1999995708465576, 2.75492262840271, 2.0223336219787598",
+          "Texture": "rbxassetid://77371096825073",
+          "UID": "ed7cc643-05be-45d1-8ae6-e77c826b3d3b",
+          "Mesh": "rbxassetid://99771514014908",
+          "PetTypeId": "MeadowFluffyLop"
+        },
+        {
+          "Collides": false,
+          "Size": "2.4999911785125732, 3.200000047683716, 2.6271421909332275",
+          "Texture": "rbxassetid://76132821896289",
+          "UID": "16513d5b-7367-465c-9602-3e05bb1512c5",
+          "Mesh": "rbxassetid://107263251366206",
+          "PetTypeId": "MeadowFawn"
+        },
+        {
+          "Collides": false,
+          "Size": "3.1999998092651367, 2.8509342670440674, 2.649087905883789",
+          "Texture": "rbxassetid://79773020130638",
+          "UID": "eaa5420b-cbbf-4731-a377-c887fa924a1a",
+          "Mesh": "rbxassetid://89904570166738",
+          "PetTypeId": "MeadowGoat"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "c414f30f-cc30-4996-8c46-03c62d2e263e",
+        "PetTypeId": "MeadowPatchworkLop"
+      },
+      {
+        "UID": "d6d5c919-4f8c-4df4-955d-28310949ff61",
+        "PetTypeId": "MeadowDaisyHedgehog"
+      },
+      {
+        "UID": "01c5d66d-4cac-40a0-941f-4a1f61eb4538",
+        "PetTypeId": "MeadowBuck"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "3.0497143268585205, 3.200000047683716, 2.0138118267059326",
+          "Texture": "rbxassetid://116242731028580",
+          "UID": "01c5d66d-4cac-40a0-941f-4a1f61eb4538",
+          "Mesh": "rbxassetid://74693569451680",
+          "PetTypeId": "MeadowBuck"
+        },
+        {
+          "Collides": false,
+          "Size": "3.091386079788208, 3.1999998092651367, 2.940854072570801",
+          "Texture": "rbxassetid://83789055307274",
+          "UID": "d6d5c919-4f8c-4df4-955d-28310949ff61",
+          "Mesh": "rbxassetid://82581654748495",
+          "PetTypeId": "MeadowDaisyHedgehog"
+        },
+        {
+          "Collides": false,
+          "Size": "3.200000047683716, 2.5731053352355957, 2.0370469093322754",
+          "Texture": "rbxassetid://129853249692809",
+          "UID": "c414f30f-cc30-4996-8c46-03c62d2e263e",
+          "Mesh": "rbxassetid://129971024677390",
+          "PetTypeId": "MeadowPatchworkLop"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "2ce1cbfc-aa50-4526-84d4-4519a9e012dd",
+        "PetTypeId": "MeadowDaisyCrownBunny"
+      },
+      {
+        "UID": "6c2714f1-57b6-4ffc-919b-5af6d018cde1",
+        "PetTypeId": "MeadowBlossomBunny"
+      },
+      {
+        "UID": "0823a800-5249-47b5-9b2d-12b86b6ba8e3",
+        "PetTypeId": "MeadowPrismAntlerDeer"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "2.465280294418335, 3.200000524520874, 2.417732000350952",
+          "Texture": "rbxassetid://70473479723436",
+          "UID": "0823a800-5249-47b5-9b2d-12b86b6ba8e3",
+          "Mesh": "rbxassetid://125325309083944",
+          "PetTypeId": "MeadowPrismAntlerDeer"
+        },
+        {
+          "Collides": false,
+          "Size": "3.1999998092651367, 2.8430051803588867, 1.981860876083374",
+          "Texture": "rbxassetid://110600438861044",
+          "UID": "6c2714f1-57b6-4ffc-919b-5af6d018cde1",
+          "Mesh": "rbxassetid://81163303277235",
+          "PetTypeId": "MeadowBlossomBunny"
+        },
+        {
+          "Collides": false,
+          "Size": "3.200000524520874, 2.5145351886749268, 2.0704476833343506",
+          "Texture": "rbxassetid://120392697720099",
+          "UID": "2ce1cbfc-aa50-4526-84d4-4519a9e012dd",
+          "Mesh": "rbxassetid://70876461319097",
+          "PetTypeId": "MeadowDaisyCrownBunny"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "c4aef335-30bc-4745-a8d8-01a92a4c88a6",
+        "PetTypeId": "MeadowCloudtailFox"
+      },
+      {
+        "UID": "26737830-fd76-46ae-a1e7-cd2062f97831",
+        "PetTypeId": "MeadowCelestialLamb"
+      },
+      {
+        "UID": "09c74160-d67d-4e93-8451-ac9189e800ef",
+        "PetTypeId": "ForestRaccoon"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "3.074810266494751, 3.1999998092651367, 3.1817774772644043",
+          "Texture": "rbxassetid://129022509074285",
+          "UID": "09c74160-d67d-4e93-8451-ac9189e800ef",
+          "Mesh": "rbxassetid://97924899190875",
+          "PetTypeId": "ForestRaccoon"
+        },
+        {
+          "Collides": false,
+          "Size": "2.9083495140075684, 3.1999998092651367, 2.6319870948791504",
+          "Texture": "rbxassetid://104848496835588",
+          "UID": "26737830-fd76-46ae-a1e7-cd2062f97831",
+          "Mesh": "rbxassetid://112434751758874",
+          "PetTypeId": "MeadowCelestialLamb"
+        },
+        {
+          "Collides": false,
+          "Size": "2.9873576164245605, 3.200000047683716, 2.3653481006622314",
+          "Texture": "rbxassetid://100873128150834",
+          "UID": "c4aef335-30bc-4745-a8d8-01a92a4c88a6",
+          "Mesh": "rbxassetid://99272790538349",
+          "PetTypeId": "MeadowCloudtailFox"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "09c4dbb7-8141-4773-bd08-9302073b557b",
+        "PetTypeId": "ForestBlackBearCub"
+      },
+      {
+        "UID": "fe391cb6-13c2-4b79-990d-6427bf892a5d",
+        "PetTypeId": "ForestSkunk"
+      },
+      {
+        "UID": "82ef0a14-c126-402f-b4cb-2555db8b006b",
+        "PetTypeId": "ForestBadger"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "2.7602341175079346, 3.1999998092651367, 2.4753808975219727",
+          "Texture": "rbxassetid://135911004193278",
+          "UID": "82ef0a14-c126-402f-b4cb-2555db8b006b",
+          "Mesh": "rbxassetid://130215170262976",
+          "PetTypeId": "ForestBadger"
+        },
+        {
+          "Collides": false,
+          "Size": "2.272357940673828, 3.1999998092651367, 3.1271634101867676",
+          "Texture": "rbxassetid://119398526295183",
+          "UID": "fe391cb6-13c2-4b79-990d-6427bf892a5d",
+          "Mesh": "rbxassetid://94866246199758",
+          "PetTypeId": "ForestSkunk"
+        },
+        {
+          "Collides": false,
+          "Size": "2.3213119506835938, 3.200000047683716, 2.5304999351501465",
+          "Texture": "rbxassetid://95294656364429",
+          "UID": "09c4dbb7-8141-4773-bd08-9302073b557b",
+          "Mesh": "rbxassetid://131926612358052",
+          "PetTypeId": "ForestBlackBearCub"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "3de165cd-d078-4eda-99a6-c54a4ebd965e",
+        "PetTypeId": "ForestTreeFrog"
+      },
+      {
+        "UID": "2cf8dcf7-4e62-4895-8b1e-c257908804c9",
+        "PetTypeId": "ForestRiverOtter"
+      },
+      {
+        "UID": "f0ba9b0b-bf11-4d47-ab7d-9aa724299453",
+        "PetTypeId": "ForestBrownBat"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "2.0366854667663574, 3.1999998092651367, 2.7841806411743164",
+          "Texture": "rbxassetid://84452625990128",
+          "UID": "f0ba9b0b-bf11-4d47-ab7d-9aa724299453",
+          "Mesh": "rbxassetid://106744044776841",
+          "PetTypeId": "ForestBrownBat"
+        },
+        {
+          "Collides": false,
+          "Size": "2.9956071376800537, 3.200000047683716, 3.026003360748291",
+          "Texture": "rbxassetid://131616920065617",
+          "UID": "2cf8dcf7-4e62-4895-8b1e-c257908804c9",
+          "Mesh": "rbxassetid://125023493018070",
+          "PetTypeId": "ForestRiverOtter"
+        },
+        {
+          "Collides": false,
+          "Size": "2.6883673667907715, 3.200000047683716, 3.1708335876464844",
+          "Texture": "rbxassetid://133597800956686",
+          "UID": "3de165cd-d078-4eda-99a6-c54a4ebd965e",
+          "Mesh": "rbxassetid://126806763850171",
+          "PetTypeId": "ForestTreeFrog"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "8409ac28-9cd0-44ff-b9a6-38614ec31d8c",
+        "PetTypeId": "ForestWoodlandOwl"
+      },
+      {
+        "UID": "efaed398-0b8d-4c04-9cd7-fccf889a489a",
+        "PetTypeId": "ForestCrestedOwl"
+      },
+      {
+        "UID": "25d245ba-dc6d-4ba9-bc7f-14363c3c8ad8",
+        "PetTypeId": "ForestLeafAntler"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "1.9486640691757202, 3.200000047683716, 2.6512906551361084",
+          "Texture": "rbxassetid://123865829385359",
+          "UID": "25d245ba-dc6d-4ba9-bc7f-14363c3c8ad8",
+          "Mesh": "rbxassetid://111837749719637",
+          "PetTypeId": "ForestLeafAntler"
+        },
+        {
+          "Collides": false,
+          "Size": "2.1961727142333984, 3.1999998092651367, 2.1099822521209717",
+          "Texture": "rbxassetid://126502584357511",
+          "UID": "efaed398-0b8d-4c04-9cd7-fccf889a489a",
+          "Mesh": "rbxassetid://82138478193574",
+          "PetTypeId": "ForestCrestedOwl"
+        },
+        {
+          "Collides": false,
+          "Size": "2.706223726272583, 3.200000524520874, 2.532905340194702",
+          "Texture": "rbxassetid://102420541096782",
+          "UID": "8409ac28-9cd0-44ff-b9a6-38614ec31d8c",
+          "Mesh": "rbxassetid://95294648810339",
+          "PetTypeId": "ForestWoodlandOwl"
+        }
+      ]
+    }
+  },
+  {
+    "Expected": [
+      {
+        "UID": "a4df750d-14e1-41bb-b961-87073b6ab7f2",
+        "PetTypeId": "ForestEmeraldWing"
+      }
+    ],
+    "Visuals": {
+      "Ok": true,
+      "Result": [
+        {
+          "Collides": false,
+          "Size": "1.9672690629959106, 3.032071828842163, 3.1999998092651367",
+          "Texture": "rbxassetid://73081746031370",
+          "UID": "a4df750d-14e1-41bb-b961-87073b6ab7f2",
+          "Mesh": "rbxassetid://89750756176673",
+          "PetTypeId": "ForestEmeraldWing"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "RestoredOriginalMock": true,
+  "Rows": [
+    {
+      "CalculatedSeconds": 100,
+      "Target": 250,
+      "Name": "Weakest starter, zero coins",
+      "Earned": 250.22291243076324,
+      "Elapsed": 100.0891649723053,
+      "Collected": 250,
+      "Rate": 2.5,
+      "Count": 1
+    },
+    {
+      "CalculatedSeconds": 40,
+      "Target": 500,
+      "Name": "Several starters",
+      "Earned": 62.652426958084106,
+      "Elapsed": 5.0121941566467285,
+      "Collected": 62,
+      "Rate": 12.5,
+      "Count": 5
+    },
+    {
+      "CalculatedSeconds": 104.93827160493827,
+      "Target": 8500,
+      "Name": "Developed Meadow",
+      "Earned": 406.10912132263184,
+      "Elapsed": 5.013692855834961,
+      "Collected": 406,
+      "Rate": 81,
+      "Count": 10
+    },
+    {
+      "CalculatedSeconds": 80,
+      "Target": 10000,
+      "Name": "New Forest, Meadow plus two Raccoons",
+      "Earned": 626.5136301517487,
+      "Elapsed": 5.012109041213989,
+      "Collected": 626,
+      "Rate": 125,
+      "Count": 12
+    },
+    {
+      "CalculatedSeconds": 63.85696040868455,
+      "Target": 50000,
+      "Name": "Developed Forest, three typical pets per tier",
+      "Earned": 3925.1625809669495,
+      "Elapsed": 5.012979030609131,
+      "Collected": 3926,
+      "Rate": 783,
+      "Count": 15
+    }
+  ],
+  "Passed": true,
+  "Checks": 63
+}

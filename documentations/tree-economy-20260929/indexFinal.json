@@ -1,0 +1,46 @@
+{
+  "Families": [
+    {
+      "Id": "Meadow_Shakeable_01",
+      "Text": "Undiscovered • 2.5 base coins/sec\nBlossombark • 250 Forest Coins\nBase chance: 81.00% • Your chance: 76.25%"
+    },
+    {
+      "Id": "Meadow_Shakeable_02",
+      "Text": "Undiscovered • 4 base coins/sec\nHoneybloom • 500 Forest Coins\nBase chance: 75.61% • Your chance: 70.01%"
+    },
+    {
+      "Id": "Meadow_Shakeable_03",
+      "Text": "Undiscovered • 6 base coins/sec\nClover Crown • 1,000 Forest Coins\nBase chance: 68.46% • Your chance: 65.08%"
+    },
+    {
+      "Id": "Meadow_Shakeable_04",
+      "Text": "Undiscovered • 9 base coins/sec\nSunpetal • 2,000 Forest Coins\nBase chance: 77.78% • Your chance: 72.91%"
+    },
+    {
+      "Id": "Meadow_Shakeable_05",
+      "Text": "Undiscovered • 14 base coins/sec\nWhisper Willow • 4,000 Forest Coins\nBase chance: 99.98% • Your chance: 99.96%"
+    },
+    {
+      "Id": "Forest_Shakeable_01",
+      "Text": "Undiscovered • 22 base coins/sec\nMossheart • 6,000 Forest Coins\nBase chance: 82.09% • Your chance: 77.89%"
+    },
+    {
+      "Id": "Forest_Shakeable_02",
+      "Text": "Undiscovered • 32 base coins/sec\nFernwood • 10,000 Forest Coins\nBase chance: 85.71% • Your chance: 80.18%"
+    },
+    {
+      "Id": "Forest_Shakeable_03",
+      "Text": "Undiscovered • 46 base coins/sec\nDuskleaf • 17,500 Forest Coins\nBase chance: 87.50% • Your chance: 84.33%"
+    },
+    {
+      "Id": "Forest_Shakeable_04",
+      "Text": "Undiscovered • 66 base coins/sec\nElderbark • 30,000 Forest Coins\nBase chance: 88.61% • Your chance: 83.98%"
+    },
+    {
+      "Id": "Forest_Shakeable_05",
+      "Text": "Undiscovered • 95 base coins/sec\nMooncap • 50,000 Forest Coins\nBase chance: 93.02% • Your chance: 91.11%"
+    }
+  ],
+  "Passed": true,
+  "Checks": 30
+}

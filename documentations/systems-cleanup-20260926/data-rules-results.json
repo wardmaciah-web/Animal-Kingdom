@@ -1,0 +1,22 @@
+{
+  "Passed": true,
+  "Checks": [
+    "full 64-slot repair returns exact legacy record to Inventory",
+    "repair preserves pet stats and flags",
+    "repair journals previous slot and preserves return capacity",
+    "repair is idempotent",
+    "repair reuses real free slot",
+    "unresolved empty slot map never migrates pets",
+    "currently obtainable Index completion reaches 100 percent",
+    "historical discovery retained",
+    "Index reward claimed once 25",
+    "Index reward claimed once 50",
+    "Index reward claimed once 75",
+    "Index reward claimed once 100",
+    "full-wallet collector displays EMPTY and capacity feedback",
+    "mock wallet spend opens room",
+    "currency update refreshes collectible whole amount",
+    "partial-cap collection retains exact remainder",
+    "collector returns to EMPTY after cap-limited payout"
+  ]
+}

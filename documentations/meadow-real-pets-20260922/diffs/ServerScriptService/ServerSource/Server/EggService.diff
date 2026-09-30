@@ -1,0 +1,91 @@
+--- baseline/src/ServerScriptService/ServerSource/Server/EggService.lua
++++ src/ServerScriptService/ServerSource/Server/EggService.lua
+@@ -8,6 +8,8 @@
+ local PetMath=require(RS.Shared.Gameplay.PetMath)
+ local Guard=require(script.Parent.Parent.Utilities.GameplayGuard)
+ local Egg=Knit.CreateService({Name="EggService",Client={},Hatched=Signal.new()})
++local MeadowTrees=require(RS.Shared.Gameplay.Definitions.MeadowTreeDefinitions)
++local MeadowReady=require(script.Parent.Parent.Utilities.MeadowPoolReadiness)
+ local lastHatch=setmetatable({},{__mode="k"});local rng=Random.new()
+ local Data,Biomes,Pets,Modifiers,Loot
+ -- Called only by server resource flow. No client-supplied egg ID, pet ID or price.
+@@ -15,6 +17,13 @@
+  local record=Knit.GetService("ResourceService"):GetRecords()[tree]
+  local biome=record and record.IsTree and BiomeDefinitions[record.Biome]
+  local id=biome and biome.EggId;local def=id and Eggs[id]
++ if record and record.Biome=="Meadow" then
++  local issue;def,issue=MeadowTrees.Get(tree,record.Biome)
++  if not def then return false,issue end
++  id=def.Id
++  local ready,why=MeadowReady.Check(def,player)
++  if not ready then return false,"Tree unavailable — "..why end
++ end
+  if not def or def.Biome~=record.Biome or not tree:IsDescendantOf(workspace) then return false,"Invalid tree egg" end
+  local data=Data:Get(player);local root=Guard.Alive(player)
+  if not data or not root or (root.Position-record.InteractionPosition).Magnitude>18 then return false,"Move closer to the tree" end
+@@ -22,13 +31,16 @@
+  if def.Season and not Knit.GetService("SeasonalService"):IsActive(def.Season) then return false,"Season is inactive" end
+  if not Pets:HasSpace(player,1) then return false,"PET INVENTORY FULL" end
+  if lastHatch[player] and os.clock()<lastHatch[player] then return false,"Hatch in progress" end
++ if def.MeadowPool and not Knit.GetService("EconomyService"):CanAfford(player,"Coins",def.Cost) then return false,"Not enough Forest Coins" end
+  return true,def,id,data
+ end
+ local function roll(player,def,data,count)
+  local results={}
+  -- Shared weighted RNG and existing variant modifiers remain server-owned.
+  for _=1,count do
+-  local selection=Loot:Roll(def.Pets,function(entry) return Modifiers:GetPetWeight(player,Definitions[entry.PetId],entry.Weight,def.Biome) end)
++  local selection
++  if def.MeadowPool then selection=Loot:Roll(def.Pets)
++  else selection=Loot:Roll(def.Pets,function(entry) return Modifiers:GetPetWeight(player,Definitions[entry.PetId],entry.Weight,def.Biome) end) end
+   if not selection then return false,"Egg is unavailable" end
+   local mutationPool={}
+   for mutation,v in pairs(Variants.Mutations) do
+@@ -42,7 +54,7 @@
+   local prismatic=rng:NextNumber()<math.min(.05,Variants.PrismaticChance*Modifiers:Get(player,"Luck",def.Biome))
+   local pet=Pets:Create(selection.PetId,mutation,shiny,prismatic)
+   if not pet then return false,"Pet definition unavailable" end
+-  table.insert(results,{Pet=pet,AutoDeleted=data.Settings.AutoDelete[Definitions[pet.PetId].Rarity]==true and not PetMath.Protected(pet)})
++  table.insert(results,{Pet=pet,AutoDeleted=not def.MeadowPool and data.Settings.AutoDelete[Definitions[pet.PetId].Rarity]==true and not PetMath.Protected(pet)})
+  end
+  return true,results
+ end
+@@ -53,13 +65,27 @@
+  if not valid then return false,def end
+  local ok,results=roll(player,def,data,1)
+  if not ok then return false,results end
+- -- No yielding code separates the final capacity check and the saved inventory commit.
+- for _,result in ipairs(results) do
+-  result.NewDiscovery=Pets:Discover(data,result.Pet)
+-  if not result.AutoDeleted then table.insert(data.Pets,result.Pet) end
++ -- Prepare the index change before charging. Commit is synchronous under the resource claim.
++ if def.MeadowPool then
++  local result=results[1]
++  local candidate={PetIndex=table.clone(data.PetIndex)}
++  local previous=candidate.PetIndex[result.Pet.PetId]
++  if previous then
++   candidate.PetIndex[result.Pet.PetId]=table.clone(previous)
++   candidate.PetIndex[result.Pet.PetId].Variants=table.clone(previous.Variants)
++  end
++  result.NewDiscovery=Pets:Discover(candidate,result.Pet)
++  if not Knit.GetService("EconomyService"):Spend(player,"Coins",def.Cost,"MeadowTreeSearch") then return false,"Not enough Forest Coins" end
++  table.insert(data.Pets,result.Pet)
++  data.PetIndex=candidate.PetIndex
++ else
++  for _,result in ipairs(results) do
++   result.NewDiscovery=Pets:Discover(data,result.Pet)
++   if not result.AutoDeleted then table.insert(data.Pets,result.Pet) end
++  end
+  end
+  local duration=math.max(.6,def.HatchSeconds/Modifiers:Get(player,"HatchSpeed"))
+- record.HatchResult={Kind="Hatch",Source="Tree",EggId=id,Results=results,Duration=duration}
++ record.HatchResult={Kind="Hatch",Source="Tree",EggId=id,PoolId=def.MeadowPool and id or nil,Cost=def.MeadowPool and def.Cost or 0,Results=results,Duration=duration}
+  record.Awarded=true
+  lastHatch[player]=os.clock()+duration+1.5 -- allow reveal, also bounds presentation queue growth
+  Pets:Publish(player)
+@@ -73,4 +99,5 @@
+  Data=Knit.GetService("PlayerDataService");Biomes=Knit.GetService("BiomeService")
+  Pets=Knit.GetService("PetService");Modifiers=Knit.GetService("ModifierService");Loot=Knit.GetService("LootService")
+ end
++function Egg:KnitStart() MeadowReady.Start() end
+ return Egg

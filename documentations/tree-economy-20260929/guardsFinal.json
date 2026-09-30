@@ -1,0 +1,14 @@
+{
+  "Passed": true,
+  "Checks": 8,
+  "RestoredOriginalMock": true,
+  "Transactions": [
+    {
+      "Currency": "Coins",
+      "Reason": "MeadowTreeSearch",
+      "Amount": -250
+    }
+  ],
+  "FinalBalance": 0,
+  "FinalPetCount": 2
+}

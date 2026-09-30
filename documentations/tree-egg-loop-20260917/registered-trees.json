@@ -1,0 +1,8069 @@
+{
+  "Trees": [
+    {
+      "Interaction": [
+        211.06268310546875,
+        12.128936767578125,
+        -143.61495971679688
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_005",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_005.Tree_Oak_4.Icosphere.085",
+      "Class": "Model",
+      "Pivot": [
+        211.06268310546875,
+        9.128936767578125,
+        -143.61495971679688,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        276.2138977050781,
+        12.128931045532227,
+        -7.813934326171875
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.CommonTree_4_V5_020",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.CommonTree_4_V5_020.CommonTree_4.CommonTree_4",
+      "Class": "Model",
+      "Pivot": [
+        276.2138977050781,
+        7.828925132751465,
+        -7.813934326171875,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        267.07318115234375,
+        12.12893295288086,
+        -97.19161224365234
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.CommonTree_4_V5_019",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.CommonTree_4_V5_019.CommonTree_4.CommonTree_4",
+      "Class": "Model",
+      "Pivot": [
+        267.07318115234375,
+        9.12893295288086,
+        -97.19161224365234,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        228.16651916503906,
+        12.128936767578125,
+        -163.83984375
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_3_V5_009",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_3_V5_009.Tree_Oak_3.Cube.081",
+      "Class": "Model",
+      "Pivot": [
+        228.16651916503906,
+        9.128936767578125,
+        -163.83984375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        180.16281127929688,
+        12.128931045532227,
+        -126.02754211425781
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2_V5_011",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_2_V5_011.common_tree_2.common_tree_2_trunk",
+      "Class": "Model",
+      "Pivot": [
+        180.16281127929688,
+        9.128931045532227,
+        -126.02754211425781,
+        0,
+        0,
+        -1.000000238418579,
+        0,
+        1,
+        0,
+        1.000000238418579,
+        0,
+        0
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        89.12083435058594,
+        12.128931045532227,
+        -154.88035583496094
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_3_V5_013",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_3_V5_013.Tree_Oak_3.Cube.081",
+      "Class": "Model",
+      "Pivot": [
+        89.12083435058594,
+        9.128931045532227,
+        -154.88035583496094,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        96.57952117919922,
+        12.128931045532227,
+        -124.65235900878906
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_022",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_022.BirchTree_4.BirchTree_4",
+      "Class": "Model",
+      "Pivot": [
+        96.57952117919922,
+        9.128931045532227,
+        -124.65235900878906,
+        0.7071067690849304,
+        0,
+        0.7071067690849304,
+        0,
+        1,
+        0,
+        -0.7071067690849304,
+        0,
+        0.7071067690849304
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        150.61260986328125,
+        12.12893295288086,
+        -36.31159210205078
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_006",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_006.common_tree_3.common_tree_3_leaves_dark",
+      "Class": "Model",
+      "Pivot": [
+        150.61260986328125,
+        9.12893295288086,
+        -36.31159210205078,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        269.8889465332031,
+        12.128931045532227,
+        -40.037322998046875
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1_V5_008",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1_V5_008.common_tree_1.common_tree_1_trunk",
+      "Class": "Model",
+      "Pivot": [
+        269.8889465332031,
+        9.128931045532227,
+        -40.037322998046875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        131.79774475097656,
+        12.12893295288086,
+        -117.04940032958984
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_015",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_3_V5_015.common_tree_3.common_tree_3_leaves_dark",
+      "Class": "Model",
+      "Pivot": [
+        131.79774475097656,
+        9.128929138183594,
+        -117.04940032958984,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        95.08999633789062,
+        12.12894058227539,
+        -163.38449096679688
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_017",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_017.Willow_1.Willow_1",
+      "Class": "Model",
+      "Pivot": [
+        95.08999633789062,
+        9.12893295288086,
+        -163.38449096679688,
+        0.7071068286895752,
+        0,
+        -0.7071067094802856,
+        0,
+        1,
+        0,
+        0.7071067094802856,
+        0,
+        0.7071068286895752
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        97.70673370361328,
+        12.128931045532227,
+        -7.015064239501953
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_016",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_016.Willow_1.Willow_1",
+      "Class": "Model",
+      "Pivot": [
+        97.70673370361328,
+        7.828929901123047,
+        -7.015064239501953,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        265.1204528808594,
+        12.128936767578125,
+        -161.45849609375
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_018",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Willow_1_V5_018.Willow_1.Willow_1",
+      "Class": "Model",
+      "Pivot": [
+        265.1204528808594,
+        9.128935813903809,
+        -161.45849609375,
+        0.9999990463256836,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999990463256836
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        226.0665283203125,
+        12.128936767578125,
+        -171.69497680664062
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_3_V5_012",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_3_V5_012.Tree_Oak_3.Cube.081",
+      "Class": "Model",
+      "Pivot": [
+        226.0665283203125,
+        9.128936767578125,
+        -171.69497680664062,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        179.7321319580078,
+        12.128931045532227,
+        -60.69099044799805
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_004",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.Tree_Oak_4_V5_004.Tree_Oak_4.Icosphere.086",
+      "Class": "Model",
+      "Pivot": [
+        179.7321319580078,
+        9.128927230834961,
+        -60.69099044799805,
+        0.9999998807907104,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999998807907104
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        202.6798858642578,
+        12.12893295288086,
+        -170.106689453125
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1_V5_001",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.common_tree_1_V5_001.common_tree_1.common_tree_1_leaves",
+      "Class": "Model",
+      "Pivot": [
+        202.6798858642578,
+        9.12893295288086,
+        -170.106689453125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        205.56680297851562,
+        12.128931045532227,
+        -83.91918182373047
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_024",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_024.BirchTree_4.BirchTree_4",
+      "Class": "Model",
+      "Pivot": [
+        205.56680297851562,
+        9.128925323486328,
+        -83.91918182373047,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        214.929931640625,
+        12.128931045532227,
+        -31.743877410888672
+      ],
+      "Path": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_023",
+      "Root": "Workspace.BiomeEnvironments.MeadowEnvironment.Scenery.Trees.BirchTree_4_V5_023.BirchTree_4.BirchTree_4",
+      "Class": "Model",
+      "Pivot": [
+        214.929931640625,
+        9.128931045532227,
+        -31.743877410888672,
+        0.9999998807907104,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999998807907104
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -662.00048828125,
+        12.128931045532227,
+        362.7016906738281
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_02_Type1",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_02_Type1.Sketchfab_model.400243bc19f546ec82c00ec6f4cfe718.fbx.RootNode.ancientTREE.branch_10.leaves_4.leaves_4_leaves_0_Node.leaves_4_leaves_0",
+      "Class": "Model",
+      "Pivot": [
+        -662.00048828125,
+        10.373377799987793,
+        362.7016906738281,
+        0,
+        0,
+        1.0000001192092896,
+        0,
+        1,
+        0,
+        -1.0000001192092896,
+        0,
+        0
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -694.6439819335938,
+        12.128931045532227,
+        396.3946228027344
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_04_Type3",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_04_Type3.Sketchfab_model.root.GLTF_SceneRootNode.Plane.002_2.Object_8.Object_2",
+      "Class": "Model",
+      "Pivot": [
+        -694.6439819335938,
+        9.13107681274414,
+        396.3946228027344,
+        -0.8683318495750427,
+        0,
+        0.49598369002342224,
+        0,
+        1,
+        0,
+        -0.49598369002342224,
+        0,
+        -0.8683318495750427
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -652.8489990234375,
+        12.128931045532227,
+        411.47198486328125
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_11_Type3",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_11_Type3.Sketchfab_model.root.GLTF_SceneRootNode.Plane.002_2.Object_8.Object_2",
+      "Class": "Model",
+      "Pivot": [
+        -652.8489990234375,
+        9.13107681274414,
+        411.47198486328125,
+        -0.5481346845626831,
+        0,
+        0.8363900780677795,
+        0,
+        1,
+        0,
+        -0.8363900780677795,
+        0,
+        -0.5481346845626831
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -715.6996459960938,
+        12.128931045532227,
+        477.9844970703125
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_14_Type1",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_14_Type1.Sketchfab_model.400243bc19f546ec82c00ec6f4cfe718.fbx.RootNode.ancientTREE.branch_3.leaves_2.leaves_2_leaves_0_Node.leaves_2_leaves_0",
+      "Class": "Model",
+      "Pivot": [
+        -715.6996459960938,
+        12.733792304992676,
+        477.9844970703125,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -658.6310424804688,
+        12.128931045532227,
+        391.9928283691406
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_09_Type2",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_09_Type2.Sketchfab_model.cdf5df8fd79e4e0b852a82ac39b138e1.fbx.RootNode.Cypress_V2_test.Cypress_V2_test_Cypress_bark.1_0_Node.Cypress_V2_test_Cypress_bark.1_0",
+      "Class": "Model",
+      "Pivot": [
+        -658.6310424804688,
+        9.12893009185791,
+        391.9928283691406,
+        -0.02586950734257698,
+        0,
+        0.9996653199195862,
+        0,
+        1,
+        0,
+        -0.9996653199195862,
+        0,
+        -0.02586950734257698
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -667.5823974609375,
+        12.128931045532227,
+        395.0866394042969
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_07_Type2",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_07_Type2.Sketchfab_model.cdf5df8fd79e4e0b852a82ac39b138e1.fbx.RootNode.Cypress_V2_test.Cypress_V2_test_Cypress_bark.2_0_Node.Cypress_V2_test_Cypress_bark.2_0",
+      "Class": "Model",
+      "Pivot": [
+        -667.5823974609375,
+        9.12893009185791,
+        395.0866394042969,
+        0.9843043684959412,
+        0,
+        -0.17647936940193176,
+        0,
+        1,
+        0,
+        0.17647936940193176,
+        0,
+        0.9843043684959412
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -669.8316040039062,
+        12.128931045532227,
+        459.8310852050781
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_12_Type2",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_12_Type2.Sketchfab_model.cdf5df8fd79e4e0b852a82ac39b138e1.fbx.RootNode.Cypress_V2_test.Cypress_V2_test_Cypress_bark_0_Node.Cypress_V2_test_Cypress_bark_0",
+      "Class": "Model",
+      "Pivot": [
+        -669.8316040039062,
+        9.12893009185791,
+        459.8310852050781,
+        0.9106033444404602,
+        0,
+        -0.41328150033950806,
+        0,
+        1,
+        0,
+        0.41328150033950806,
+        0,
+        0.9106033444404602
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -644.1502075195312,
+        12.128931045532227,
+        454.4539794921875
+      ],
+      "Path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_13_Type3",
+      "Root": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_13_Type3.Sketchfab_model.root.GLTF_SceneRootNode.Plane.001_1.Object_6.Object_1",
+      "Class": "Model",
+      "Pivot": [
+        -644.1502075195312,
+        9.13107681274414,
+        454.4539794921875,
+        -0.9857204556465149,
+        0,
+        -0.16839009523391724,
+        0,
+        1,
+        0,
+        0.16839009523391724,
+        0,
+        -0.9857204556465149
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -710.6956787109375,
+        12.128931045532227,
+        151.85302734375
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_006_AK_LowpolyWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_006_AK_LowpolyWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -710.6956787109375,
+        14.464442253112793,
+        151.85302734375,
+        -0.9055798649787903,
+        0,
+        -0.4241762161254883,
+        0,
+        1,
+        0,
+        0.4241762161254883,
+        0,
+        -0.9055798649787903
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -723.5931396484375,
+        12.128931045532227,
+        167.45675659179688
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_007_AK_LowpolyWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_007_AK_LowpolyWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -723.5931396484375,
+        19.15753173828125,
+        167.45675659179688,
+        0.9993512034416199,
+        0,
+        -0.03602159023284912,
+        0,
+        1,
+        0,
+        0.03602159395813942,
+        0,
+        0.9993510246276855
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -724.514892578125,
+        12.12893009185791,
+        163.8248748779297
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_021_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_021_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -724.514892578125,
+        11.207292556762695,
+        163.8248748779297,
+        -0.04185909032821655,
+        0,
+        0.9991235136985779,
+        0,
+        1,
+        0,
+        -0.9991235136985779,
+        0,
+        -0.04185909032821655
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -641.3029174804688,
+        12.12893009185791,
+        67.83038330078125
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_025_AK_NimbusWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_025_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -641.3029174804688,
+        -0.0800619125366211,
+        67.83038330078125,
+        -0.634640634059906,
+        0.7728073596954346,
+        0,
+        0,
+        0,
+        -1,
+        -0.7728073596954346,
+        -0.634640634059906,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -577.9639892578125,
+        12.12893295288086,
+        114.38489532470703
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_018_AK_NimbusWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_018_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -577.9639892578125,
+        13.816332817077637,
+        114.38489532470703,
+        8.940696716308594e-08,
+        0.9999998211860657,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -8.940696716308594e-08,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -675.542724609375,
+        12.12893009185791,
+        87.9174575805664
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_010_AK_NimbusWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_010_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -675.542724609375,
+        1.76857328414917,
+        87.9174575805664,
+        0.5150262117385864,
+        -0.8571743369102478,
+        0,
+        0,
+        0,
+        -1,
+        0.8571740388870239,
+        0.5150263905525208,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -709.92138671875,
+        12.128931045532227,
+        152.451416015625
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_012_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_012_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -709.92138671875,
+        10.598691940307617,
+        152.451416015625,
+        0.5011354088783264,
+        0,
+        0.8653689026832581,
+        0,
+        1,
+        0,
+        -0.8653689026832581,
+        0,
+        0.5011354088783264
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -643.4005126953125,
+        12.12893295288086,
+        76.6655502319336
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_041",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_041.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -643.4005126953125,
+        9.128931999206543,
+        76.6655502319336,
+        -0.7938058376312256,
+        0,
+        -0.608171820640564,
+        0,
+        1,
+        0,
+        0.6081717610359192,
+        0,
+        -0.7938058972358704
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -715.4120483398438,
+        12.12893009185791,
+        169.10435485839844
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_011_AK_NimbusWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_011_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -715.4120483398438,
+        -0.9031028747558594,
+        169.10435485839844,
+        0.8483273983001709,
+        0.5294720530509949,
+        0,
+        0,
+        0,
+        -1,
+        -0.5294720530509949,
+        0.8483273983001709,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -735.8373413085938,
+        12.12893009185791,
+        99.61961364746094
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_015_AK_LowpolyWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_015_AK_LowpolyWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -735.8373413085938,
+        20.360782623291016,
+        99.61961364746094,
+        -0.6216360926628113,
+        0,
+        -0.7833061814308167,
+        0,
+        1,
+        0,
+        0.7833061814308167,
+        0,
+        -0.6216360926628113
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -709.759765625,
+        12.12893009185791,
+        119.6113052368164
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_005_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_005_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -709.759765625,
+        11.317581176757812,
+        119.6113052368164,
+        -0.7877832651138306,
+        0,
+        -0.6159534454345703,
+        0,
+        1,
+        0,
+        0.6159534454345703,
+        0,
+        -0.7877832651138306
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -732.7532958984375,
+        12.12893009185791,
+        195.214599609375
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_008_AK_OldMagicalTree_2",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_008_AK_OldMagicalTree_2.tree.041",
+      "Class": "Model",
+      "Pivot": [
+        -732.7532958984375,
+        9.128928184509277,
+        195.214599609375,
+        0.9897083044052124,
+        0,
+        0.14310145378112793,
+        0,
+        1,
+        0,
+        -0.14310145378112793,
+        0,
+        0.9897083044052124
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -722.9163208007812,
+        12.12893009185791,
+        168.97520446777344
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_027_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_027_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -722.9163208007812,
+        11.314891815185547,
+        168.97520446777344,
+        -0.7268912196159363,
+        0,
+        -0.6867532134056091,
+        0,
+        1,
+        0,
+        0.6867520809173584,
+        0,
+        -0.7268921136856079
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -618.9904174804688,
+        12.12893295288086,
+        120.42247772216797
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_004_AK_OldMagicalTree_1",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_004_AK_OldMagicalTree_1.tree.0392",
+      "Class": "Model",
+      "Pivot": [
+        -618.9904174804688,
+        9.12893295288086,
+        120.42247772216797,
+        -0.17392225563526154,
+        0,
+        -0.9847596883773804,
+        0,
+        1,
+        0,
+        0.9847598075866699,
+        0,
+        -0.17392219603061676
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -690.21923828125,
+        12.128931045532227,
+        120.33500671386719
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_017_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_017_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -690.21923828125,
+        10.449402809143066,
+        120.33500671386719,
+        -0.7318804264068604,
+        0,
+        0.6814333200454712,
+        0,
+        1,
+        0,
+        -0.6814337968826294,
+        0,
+        -0.731880247592926
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -668.619140625,
+        12.12893295288086,
+        80.40255737304688
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_038",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_038.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -668.619140625,
+        9.128931999206543,
+        80.40255737304688,
+        0.5283137559890747,
+        0,
+        -0.8490495085716248,
+        0,
+        1,
+        0,
+        0.8490495085716248,
+        0,
+        0.5283138751983643
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -631.8699951171875,
+        12.12893009185791,
+        93.94377136230469
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_014_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_014_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -631.8699951171875,
+        11.13381290435791,
+        93.94377136230469,
+        -0.9089341163635254,
+        0,
+        -0.41693952679634094,
+        0,
+        1,
+        0,
+        0.41693979501724243,
+        0,
+        -0.9089342355728149
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -704.537841796875,
+        12.12893009185791,
+        105.1026611328125
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_022_AK_OldMagicalTree_1",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_022_AK_OldMagicalTree_1.tree.0392",
+      "Class": "Model",
+      "Pivot": [
+        -704.537841796875,
+        9.128929138183594,
+        105.1026611328125,
+        0.8570479154586792,
+        0,
+        0.5152373313903809,
+        0,
+        1,
+        0,
+        -0.5152373909950256,
+        0,
+        0.857047975063324
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -690.0703125,
+        12.128931045532227,
+        120.82247924804688
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_024_AK_MagicTree",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_024_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -690.0703125,
+        10.184453964233398,
+        120.82247924804688,
+        -0.9956886172294617,
+        0,
+        -0.09276459366083145,
+        0,
+        1,
+        0,
+        0.09276457130908966,
+        0,
+        -0.9956880807876587
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -698.9662475585938,
+        12.12893009185791,
+        85.78998565673828
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_001_AK_NimbusWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_001_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -698.9662475585938,
+        -0.8612470626831055,
+        85.78998565673828,
+        0.4464211165904999,
+        0.894824206829071,
+        0,
+        0,
+        0,
+        -1,
+        -0.894824206829071,
+        0.4464211165904999,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -628.7422485351562,
+        12.12893009185791,
+        84.954345703125
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_020_AK_OldMagicalTree_2",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_020_AK_OldMagicalTree_2.tree.0412",
+      "Class": "Model",
+      "Pivot": [
+        -628.7422485351562,
+        9.128929138183594,
+        84.954345703125,
+        0.06919370591640472,
+        0,
+        -0.9976036548614502,
+        0,
+        1,
+        0,
+        0.9976035356521606,
+        0,
+        0.06919364631175995
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -718.6136474609375,
+        12.12893009185791,
+        87.1714096069336
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_003_AK_OldMagicalTree_1",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_003_AK_OldMagicalTree_1.tree.0392",
+      "Class": "Model",
+      "Pivot": [
+        -718.6136474609375,
+        9.128929138183594,
+        87.1714096069336,
+        -0.7209736704826355,
+        0,
+        0.6929628252983093,
+        0,
+        1,
+        0,
+        -0.6929628252983093,
+        0,
+        -0.720973789691925
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -659.2848510742188,
+        12.12893009185791,
+        100.25187683105469
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_023_AK_OldMagicalTree_1",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_023_AK_OldMagicalTree_1.tree.0392",
+      "Class": "Model",
+      "Pivot": [
+        -659.2848510742188,
+        9.128913879394531,
+        100.25187683105469,
+        0.7697619795799255,
+        0,
+        0.6383315920829773,
+        0,
+        1,
+        0,
+        -0.6383314728736877,
+        0,
+        0.7697619795799255
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -599.2791748046875,
+        12.12893009185791,
+        104.61370849609375
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_019_AK_OldMagicalTree_1",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_019_AK_OldMagicalTree_1.tree.039",
+      "Class": "Model",
+      "Pivot": [
+        -599.2791748046875,
+        9.128927230834961,
+        104.61370849609375,
+        -0.8180757761001587,
+        0,
+        0.5751110315322876,
+        0,
+        1,
+        0,
+        -0.5751109719276428,
+        0,
+        -0.8180757164955139
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -624.9768676757812,
+        12.12893009185791,
+        110.19203186035156
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_042",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_042.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -624.9768676757812,
+        9.12893009185791,
+        110.19203186035156,
+        -0.979269802570343,
+        0,
+        -0.20256201922893524,
+        0,
+        1,
+        0,
+        0.20256195962429047,
+        0,
+        -0.9792697429656982
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -728.6177368164062,
+        12.12893009185791,
+        173.8545684814453
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_009_AK_OldMagicalTree_2",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_009_AK_OldMagicalTree_2.tree.041",
+      "Class": "Model",
+      "Pivot": [
+        -728.6177368164062,
+        9.12893009185791,
+        173.8545684814453,
+        -0.7637866735458374,
+        0,
+        0.6454693675041199,
+        0,
+        1,
+        0,
+        -0.6454693078994751,
+        0,
+        -0.7637866139411926
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -686.49951171875,
+        12.12893009185791,
+        99.71578216552734
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_002_AK_NimbusWillow",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_002_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -686.49951171875,
+        -1.5843067169189453,
+        99.71578216552734,
+        -0.046949006617069244,
+        0.9988974928855896,
+        0,
+        0,
+        0,
+        -1,
+        -0.9988973140716553,
+        -0.04694901779294014,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -670.3483276367188,
+        12.12893009185791,
+        80.52954864501953
+      ],
+      "Path": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_039",
+      "Root": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_039.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -670.3483276367188,
+        9.12893009185791,
+        80.52954864501953,
+        0.39673280715942383,
+        0,
+        -0.9179346561431885,
+        0,
+        1,
+        0,
+        0.9179345369338989,
+        0,
+        0.3967328667640686
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        200.5994415283203,
+        12.128931045532227,
+        211.41964721679688
+      ],
+      "Path": "Workspace.Willow_5_V5_034",
+      "Root": "Workspace.Willow_5_V5_034.Willow_5.Willow_5",
+      "Class": "Model",
+      "Pivot": [
+        200.5994415283203,
+        7.849998474121094,
+        211.41964721679688,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -310.68182373046875,
+        12.128936767578125,
+        -115.20590209960938
+      ],
+      "Path": "Workspace.Willow_3_V5_038",
+      "Root": "Workspace.Willow_3_V5_038.Willow_3.Willow_3",
+      "Class": "Model",
+      "Pivot": [
+        -310.68182373046875,
+        9.128935813903809,
+        -115.20590209960938,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        97.51806640625,
+        12.128931045532227,
+        174.44850158691406
+      ],
+      "Path": "Workspace.Tree_Pine_1_V5_029",
+      "Root": "Workspace.Tree_Pine_1_V5_029.Cube.079",
+      "Class": "Model",
+      "Pivot": [
+        97.51806640625,
+        7.849998474121094,
+        174.44850158691406,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -731.9359130859375,
+        12.128931045532227,
+        649.9095458984375
+      ],
+      "Path": "Workspace.Tree_Palm_1_V5_002",
+      "Root": "Workspace.Tree_Palm_1_V5_002.Cube.083",
+      "Class": "Model",
+      "Pivot": [
+        -731.9359130859375,
+        8.550000190734863,
+        649.9095458984375,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -726.5945434570312,
+        12.12893009185791,
+        -13.980110168457031
+      ],
+      "Path": "Workspace.Tree_Pine_6_V5_015",
+      "Root": "Workspace.Tree_Pine_6_V5_015.Tree_Pine_6.Cube.084",
+      "Class": "Model",
+      "Pivot": [
+        -726.5945434570312,
+        9.128928184509277,
+        -13.980110168457031,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -629.0416259765625,
+        12.12893009185791,
+        226.102294921875
+      ],
+      "Path": "Workspace.MagicalForestTree_005_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_005_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -629.0416259765625,
+        11.206830978393555,
+        226.102294921875,
+        0.9876298308372498,
+        0,
+        -0.1568307727575302,
+        0,
+        1,
+        0,
+        0.15683066844940186,
+        0,
+        0.9876301884651184
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -584.599365234375,
+        12.128931045532227,
+        723.8472900390625
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_016",
+      "Root": "Workspace.Tree_Palm_6_V5_016.Cube.184",
+      "Class": "Model",
+      "Pivot": [
+        -584.599365234375,
+        8.550002098083496,
+        723.8472900390625,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -647.583984375,
+        12.128931045532227,
+        805.9420776367188
+      ],
+      "Path": "Workspace.Tree_Palm_3_V5_004",
+      "Root": "Workspace.Tree_Palm_3_V5_004.Cube.170",
+      "Class": "Model",
+      "Pivot": [
+        -647.583984375,
+        8.549999237060547,
+        805.9420776367188,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        161.06959533691406,
+        12.128931045532227,
+        252.9730987548828
+      ],
+      "Path": "Workspace.PineTree_3_V5_027",
+      "Root": "Workspace.PineTree_3_V5_027.PineTree_3.PineTree_3",
+      "Class": "Model",
+      "Pivot": [
+        161.06959533691406,
+        7.849998474121094,
+        252.9730987548828,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        137.5535888671875,
+        12.128946304321289,
+        336.70550537109375
+      ],
+      "Path": "Workspace.CommonTree_5_V5_041",
+      "Root": "Workspace.CommonTree_5_V5_041.CommonTree_5.CommonTree_5",
+      "Class": "Model",
+      "Pivot": [
+        137.5535888671875,
+        8.128948211669922,
+        336.70550537109375,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        88.84825897216797,
+        12.128946304321289,
+        387.15631103515625
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_002",
+      "Root": "Workspace.tree_palmDetailedShort_V5_002.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        88.84825897216797,
+        7.828929901123047,
+        387.15631103515625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        241.7105255126953,
+        12.128931045532227,
+        -7.6941680908203125
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Icosphere.086",
+      "Class": "Model",
+      "Pivot": [
+        241.7105255126953,
+        9.128961563110352,
+        -7.6941680908203125,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -672.6241455078125,
+        12.128931045532227,
+        716.7644653320312
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_014",
+      "Root": "Workspace.Tree_Palm_6_V5_014.Icosphere.060",
+      "Class": "Model",
+      "Pivot": [
+        -672.6241455078125,
+        8.55000114440918,
+        716.7644653320312,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -689.5140991210938,
+        12.128931045532227,
+        791.4286499023438
+      ],
+      "Path": "Workspace.Willow_2_V5_019",
+      "Root": "Workspace.Willow_2_V5_019.Willow_2.Willow_2",
+      "Class": "Model",
+      "Pivot": [
+        -689.5140991210938,
+        8.549997329711914,
+        791.4286499023438,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -597.0624389648438,
+        12.12893009185791,
+        221.82666015625
+      ],
+      "Path": "Workspace.MagicalForestTree_012_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_012_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -597.0624389648438,
+        10.667791366577148,
+        221.82666015625,
+        -0.9748221635818481,
+        0,
+        -0.22298510372638702,
+        0,
+        1,
+        0,
+        0.22298522293567657,
+        0,
+        -0.9748218655586243
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        181.89501953125,
+        12.128931045532227,
+        257.5352783203125
+      ],
+      "Path": "Workspace.Tree_Oak_1_V5_030",
+      "Root": "Workspace.Tree_Oak_1_V5_030.Cube.079",
+      "Class": "Model",
+      "Pivot": [
+        181.89501953125,
+        7.850000381469727,
+        257.5352783203125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -392.9610595703125,
+        12.12893295288086,
+        -84.58629608154297
+      ],
+      "Path": "Workspace.PalmTree_3_V5_010",
+      "Root": "Workspace.PalmTree_3_V5_010.PalmTree_3.PalmTree_3",
+      "Class": "Model",
+      "Pivot": [
+        -392.9610595703125,
+        9.12893295288086,
+        -84.58629608154297,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -597.9033813476562,
+        12.12893009185791,
+        206.38525390625
+      ],
+      "Path": "Workspace.MagicalForestTree_011_AK_NimbusWillow",
+      "Root": "Workspace.MagicalForestTree_011_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -597.9033813476562,
+        7.723638534545898,
+        206.38525390625,
+        -0.9655874967575073,
+        0.26007020473480225,
+        0,
+        0,
+        0,
+        -1,
+        -0.26007920503616333,
+        -0.9655914902687073,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -726.4159545898438,
+        12.128931045532227,
+        729.20654296875
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_016",
+      "Root": "Workspace.Tree_Palm_6_V5_016.Icosphere.059",
+      "Class": "Model",
+      "Pivot": [
+        -726.4159545898438,
+        8.550002098083496,
+        729.20654296875,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -129.7089385986328,
+        12.12894058227539,
+        737.7011108398438
+      ],
+      "Path": "Workspace.pine_tree_1_snow_V5_012",
+      "Root": "Workspace.pine_tree_1_snow_V5_012.pine_tree_1_snow.pine_tree_1_snow",
+      "Class": "Model",
+      "Pivot": [
+        -129.7089385986328,
+        9.128939628601074,
+        737.7011108398438,
+        1.0000004768371582,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -305.1533203125,
+        12.12893009185791,
+        -50.30377197265625
+      ],
+      "Path": "Workspace.Willow_3_V5_042",
+      "Root": "Workspace.Willow_3_V5_042.Willow_3.Willow_3",
+      "Class": "Model",
+      "Pivot": [
+        -305.1533203125,
+        9.12893295288086,
+        -50.30377197265625,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        122.35276794433594,
+        12.128946304321289,
+        497.4479064941406
+      ],
+      "Path": "Workspace.Tree_Oak_7_V5_021",
+      "Root": "Workspace.Tree_Oak_7_V5_021.Tree_Oak_7.Icosphere.056",
+      "Class": "Model",
+      "Pivot": [
+        122.35276794433594,
+        8.128948211669922,
+        497.4479064941406,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        10.803718566894531,
+        12.128931045532227,
+        -176.4425811767578
+      ],
+      "Path": "Workspace.Tree3_V5_024",
+      "Root": "Workspace.Tree3_V5_024.trunk.003.Mesh_0.003",
+      "Class": "Model",
+      "Pivot": [
+        10.803718566894531,
+        8.29999828338623,
+        -176.4425811767578,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Mythical"
+    },
+    {
+      "Interaction": [
+        -700.8236083984375,
+        12.12893009185791,
+        186.69525146484375
+      ],
+      "Path": "Workspace.MagicalForestTree_014_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_014_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -700.8236083984375,
+        11.05219841003418,
+        186.69525146484375,
+        0.9245535135269165,
+        0,
+        -0.381052702665329,
+        0,
+        1,
+        0,
+        0.381052702665329,
+        0,
+        0.9245535135269165
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -569.3519897460938,
+        12.129172325134277,
+        -127.5281982421875
+      ],
+      "Path": "Workspace.tree_cone_V5_018",
+      "Root": "Workspace.tree_cone_V5_018.tree_cone.tree_cone",
+      "Class": "Model",
+      "Pivot": [
+        -569.3519897460938,
+        9.12917423248291,
+        -127.5281982421875,
+        0.4285164475440979,
+        0,
+        -0.903533935546875,
+        0,
+        0.9999999403953552,
+        0,
+        0.9035339951515198,
+        0,
+        0.4285164177417755
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        130.87673950195312,
+        12.128946304321289,
+        368.8622741699219
+      ],
+      "Path": "Workspace.Tree_Palm_2_V5_018",
+      "Root": "Workspace.Tree_Palm_2_V5_018.Tree_Palm_2.Icosphere.036",
+      "Class": "Model",
+      "Pivot": [
+        130.87673950195312,
+        7.850004196166992,
+        368.8622741699219,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        207.72064208984375,
+        12.128946304321289,
+        370.3287048339844
+      ],
+      "Path": "Workspace.Tree_Palm_2_V5_034",
+      "Root": "Workspace.Tree_Palm_2_V5_034.Tree_Palm_2.Cube.130",
+      "Class": "Model",
+      "Pivot": [
+        207.72064208984375,
+        7.850002288818359,
+        370.3287048339844,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -596.1343994140625,
+        13.052360534667969,
+        653.4827270507812
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_016",
+      "Root": "Workspace.Tree_Palm_6_V5_016.Cube.185",
+      "Class": "Model",
+      "Pivot": [
+        -596.1343994140625,
+        10.052360534667969,
+        653.4827270507812,
+        0.7071067690849304,
+        0,
+        -0.7071067690849304,
+        0,
+        1,
+        0,
+        0.7071067690849304,
+        0,
+        0.7071067690849304
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        188.9490966796875,
+        12.12893009185791,
+        662.0657958984375
+      ],
+      "Path": "Workspace.CactusFlowers_2_V5_015",
+      "Root": "Workspace.CactusFlowers_2_V5_015.CactusFlowers_2.CactusFlowers_2",
+      "Class": "Model",
+      "Pivot": [
+        188.9490966796875,
+        7.829437255859375,
+        662.0657958984375,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -166.30224609375,
+        12.128938674926758,
+        718.8489990234375
+      ],
+      "Path": "Workspace.pine_tree_2_snow_V5_013",
+      "Root": "Workspace.pine_tree_2_snow_V5_013.pine_tree_2_snow.pine_tree_2_snow",
+      "Class": "Model",
+      "Pivot": [
+        -166.30224609375,
+        9.128942489624023,
+        718.8489990234375,
+        1.0000033378601074,
+        0,
+        0,
+        0,
+        1.000004768371582,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -439.85858154296875,
+        12.12893009185791,
+        -116.01675415039062
+      ],
+      "Path": "Workspace.palm_tree_1_V5_007",
+      "Root": "Workspace.palm_tree_1_V5_007.palm_tree_1_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -439.85858154296875,
+        9.12893295288086,
+        -116.01675415039062,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -730.8974609375,
+        12.12893295288086,
+        463.3822021484375
+      ],
+      "Path": "Workspace.AK_AncientRuins_CypressTree",
+      "Root": "Workspace.AK_AncientRuins_CypressTree.Sketchfab_model.cdf5df8fd79e4e0b852a82ac39b138e1.fbx.RootNode.Cypress_V2_test.Cypress_V2_test_Cypress_bark_0_Node.Cypress_V2_test_Cypress_bark_0",
+      "Class": "Model",
+      "Pivot": [
+        -730.8974609375,
+        9.128926277160645,
+        463.3822021484375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -411.0000915527344,
+        12.12893009185791,
+        5.237665176391602
+      ],
+      "Path": "Workspace.tree_oak_V5_019",
+      "Root": "Workspace.tree_oak_V5_019.tree_oak.tree_oak",
+      "Class": "Model",
+      "Pivot": [
+        -411.0000915527344,
+        9.128931045532227,
+        5.237665176391602,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -679.9014892578125,
+        12.12893009185791,
+        165.91021728515625
+      ],
+      "Path": "Workspace.MagicalForestTree_018_AK_NimbusWillow",
+      "Root": "Workspace.MagicalForestTree_018_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -679.9014892578125,
+        -2.8335437774658203,
+        165.91021728515625,
+        -0.23766620457172394,
+        -0.9713512063026428,
+        0,
+        0,
+        0,
+        -1,
+        0.971347451210022,
+        -0.2376686930656433,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        246.01907348632812,
+        12.128946304321289,
+        335.0573425292969
+      ],
+      "Path": "Workspace.Tree_Palm_2_V5_032",
+      "Root": "Workspace.Tree_Palm_2_V5_032.Tree_Palm_2.Cube.145",
+      "Class": "Model",
+      "Pivot": [
+        246.01907348632812,
+        8.128945350646973,
+        335.0573425292969,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        180.49996948242188,
+        12.128946304321289,
+        328.2774353027344
+      ],
+      "Path": "Workspace.tree_palmDetailedTall_V5_031",
+      "Root": "Workspace.tree_palmDetailedTall_V5_031.tree_palmDetailedTall",
+      "Class": "Model",
+      "Pivot": [
+        180.49996948242188,
+        7.850002288818359,
+        328.2774353027344,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -593.5070190429688,
+        12.12893009185791,
+        212.12249755859375
+      ],
+      "Path": "Workspace.MagicalForestTree_027_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_027_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -593.5070190429688,
+        10.804502487182617,
+        212.12249755859375,
+        0.9979488849639893,
+        0,
+        -0.06401818990707397,
+        0,
+        1,
+        0,
+        0.06401818990707397,
+        0,
+        0.9979488849639893
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -564.365966796875,
+        12.12893009185791,
+        -15.097578048706055
+      ],
+      "Path": "Workspace.Tree_Pine_5_V5_005",
+      "Root": "Workspace.Tree_Pine_5_V5_005.Tree_Pine_5.Cube.083",
+      "Class": "Model",
+      "Pivot": [
+        -564.365966796875,
+        9.128928184509277,
+        -15.097578048706055,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        182.23956298828125,
+        12.128946304321289,
+        445.17510986328125
+      ],
+      "Path": "Workspace.Tree_Oak_8_V5_028",
+      "Root": "Workspace.Tree_Oak_8_V5_028.Tree_Oak_8.Icosphere.053",
+      "Class": "Model",
+      "Pivot": [
+        182.23956298828125,
+        7.850000381469727,
+        445.17510986328125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -704.361572265625,
+        12.128931045532227,
+        692.202392578125
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_016",
+      "Root": "Workspace.Tree_Palm_6_V5_016.Icosphere.059",
+      "Class": "Model",
+      "Pivot": [
+        -704.361572265625,
+        8.550010681152344,
+        692.202392578125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -705.3338623046875,
+        12.12893009185791,
+        -3.6239166259765625
+      ],
+      "Path": "Workspace.Tree_Pine_5_V5_003",
+      "Root": "Workspace.Tree_Pine_5_V5_003.Tree_Pine_5.Cone.103",
+      "Class": "Model",
+      "Pivot": [
+        -705.3338623046875,
+        9.12893009185791,
+        -3.6239166259765625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -592.73095703125,
+        12.12893009185791,
+        199.30059814453125
+      ],
+      "Path": "Workspace.MagicalForestTree_006_AK_LowpolyWillow",
+      "Root": "Workspace.MagicalForestTree_006_AK_LowpolyWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -592.73095703125,
+        16.927160263061523,
+        199.30059814453125,
+        0.9275392889976501,
+        0,
+        -0.37372609972953796,
+        0,
+        1,
+        0,
+        0.37372615933418274,
+        0,
+        0.9275391101837158
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        276.49615478515625,
+        12.128946304321289,
+        375.7773742675781
+      ],
+      "Path": "Workspace.tree_palmTall_V5_036",
+      "Root": "Workspace.tree_palmTall_V5_036.tree_palmTall.tree_palmTall",
+      "Class": "Model",
+      "Pivot": [
+        276.49615478515625,
+        7.850006103515625,
+        375.7773742675781,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -616.0951538085938,
+        12.128931045532227,
+        794.36279296875
+      ],
+      "Path": "Workspace.Tree_Palm_5_V5_001",
+      "Root": "Workspace.Tree_Palm_5_V5_001.Cube.163",
+      "Class": "Model",
+      "Pivot": [
+        -616.0951538085938,
+        8.54998779296875,
+        794.36279296875,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -90.08937072753906,
+        12.128941535949707,
+        665.4154663085938
+      ],
+      "Path": "Workspace.common_tree_1_snow_V5_007",
+      "Root": "Workspace.common_tree_1_snow_V5_007.common_tree_1_snow.common_tree_1_snow_leaves",
+      "Class": "Model",
+      "Pivot": [
+        -90.08937072753906,
+        9.128941535949707,
+        665.4154663085938,
+        1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -592.0800170898438,
+        12.128931045532227,
+        807.9771728515625
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_016",
+      "Root": "Workspace.Tree_Palm_6_V5_016.Icosphere.060",
+      "Class": "Model",
+      "Pivot": [
+        -592.0800170898438,
+        8.550010681152344,
+        807.9771728515625,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        238.93246459960938,
+        12.128946304321289,
+        398.75018310546875
+      ],
+      "Path": "Workspace.Tree_Oak_7_V5_026",
+      "Root": "Workspace.Tree_Oak_7_V5_026.Tree_Oak_7.Icosphere.056",
+      "Class": "Model",
+      "Pivot": [
+        238.93246459960938,
+        7.849998474121094,
+        398.75018310546875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -675.7348022460938,
+        12.128931045532227,
+        773.740966796875
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_016",
+      "Root": "Workspace.Tree_Palm_6_V5_016.Cube.179",
+      "Class": "Model",
+      "Pivot": [
+        -675.7348022460938,
+        8.550004959106445,
+        773.740966796875,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -391.9585876464844,
+        12.12893009185791,
+        615.421142578125
+      ],
+      "Path": "Workspace.CommonTree_Dead_5_V5_001",
+      "Root": "Workspace.CommonTree_Dead_5_V5_001.CommonTree_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        -391.9585876464844,
+        7.128923416137695,
+        615.421142578125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -603.5225830078125,
+        12.128931045532227,
+        798.99951171875
+      ],
+      "Path": "Workspace.Willow_2_V5_006",
+      "Root": "Workspace.Willow_2_V5_006.Willow_2.Willow_2",
+      "Class": "Model",
+      "Pivot": [
+        -603.5225830078125,
+        8.942172050476074,
+        798.99951171875,
+        -0.6606635451316833,
+        0.005122883711010218,
+        -0.7506647109985352,
+        -0.010681023821234703,
+        0.9998112916946411,
+        0.016223594546318054,
+        0.7506062388420105,
+        0.018736202269792557,
+        -0.6604841351509094
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -676.1812133789062,
+        12.128931045532227,
+        658.841552734375
+      ],
+      "Path": "Workspace.Willow_2_V5_006",
+      "Root": "Workspace.Willow_2_V5_006.Willow_2.Willow_2",
+      "Class": "Model",
+      "Pivot": [
+        -676.1812133789062,
+        8.549999237060547,
+        658.841552734375,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -666.3316650390625,
+        12.12893009185791,
+        246.44058227539062
+      ],
+      "Path": "Workspace.MagicalForestTree_001_AK_NimbusWillow",
+      "Root": "Workspace.MagicalForestTree_001_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -666.3316650390625,
+        0.06457901000976562,
+        246.44058227539062,
+        -0.9591084718704224,
+        -0.28303930163383484,
+        0,
+        0,
+        0,
+        -1,
+        0.28303930163383484,
+        -0.9591084718704224,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -572.5427856445312,
+        12.128931045532227,
+        499.33148193359375
+      ],
+      "Path": "Workspace.AK_AncientRuins_StylizedTree",
+      "Root": "Workspace.AK_AncientRuins_StylizedTree.Sketchfab_model.root.GLTF_SceneRootNode.BezierCurve.001_0.Object_4.Object_0",
+      "Class": "Model",
+      "Pivot": [
+        -572.5427856445312,
+        9.177587509155273,
+        499.33148193359375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        151.87319946289062,
+        12.128931045532227,
+        194.8562469482422
+      ],
+      "Path": "Workspace.Willow_5_V5_036",
+      "Root": "Workspace.Willow_5_V5_036.Willow_5.Willow_5",
+      "Class": "Model",
+      "Pivot": [
+        151.87319946289062,
+        7.849998474121094,
+        194.8562469482422,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        170.63442993164062,
+        12.128946304321289,
+        377.69873046875
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_017",
+      "Root": "Workspace.tree_palmDetailedShort_V5_017.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        170.63442993164062,
+        8.128952026367188,
+        377.69873046875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -285.3838806152344,
+        25.09856414794922,
+        740.1859741210938
+      ],
+      "Path": "Workspace.Volcano island lowpoly.Palm tree_1",
+      "Root": "Workspace.Volcano island lowpoly.Palm tree_1",
+      "Class": "MeshPart",
+      "Pivot": [
+        -285.3838806152344,
+        13.798038482666016,
+        740.1859741210938,
+        -1.2652567668971491e-23,
+        1.0000001192092896,
+        -1.3311836255525122e-07,
+        9.313223525708736e-10,
+        -1.9272297890893242e-07,
+        -0.9999998807907104,
+        -0.9999999403953552,
+        1.51731724994072e-16,
+        9.313227966600834e-10
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -285.3839111328125,
+        18.15103530883789,
+        740.18603515625
+      ],
+      "Path": "Workspace.Volcano island lowpoly.Palm tree_2",
+      "Root": "Workspace.Volcano island lowpoly.Palm tree_2",
+      "Class": "MeshPart",
+      "Pivot": [
+        -285.3839111328125,
+        13.798030853271484,
+        740.18603515625,
+        -1.2652567668971491e-23,
+        1.0000001192092896,
+        -1.3311836255525122e-07,
+        9.313223525708736e-10,
+        -1.9272297890893242e-07,
+        -0.9999998807907104,
+        -0.9999999403953552,
+        1.51731724994072e-16,
+        9.313227966600834e-10
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -598.0059814453125,
+        12.128931045532227,
+        668.4005126953125
+      ],
+      "Path": "Workspace.Tree_Palm_3_V5_012",
+      "Root": "Workspace.Tree_Palm_3_V5_012.Cube.172",
+      "Class": "Model",
+      "Pivot": [
+        -598.0059814453125,
+        8.671348571777344,
+        668.4005126953125,
+        0.7269595265388489,
+        0.004460417199879885,
+        -0.6866658329963684,
+        -0.01622357778251171,
+        0.9998112916946411,
+        -0.010681048035621643,
+        0.6864885687828064,
+        0.01890486665070057,
+        0.726894736289978
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        95.86962890625,
+        12.128931045532227,
+        -49.675025939941406
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Icosphere.084",
+      "Class": "Model",
+      "Pivot": [
+        95.86962890625,
+        9.128925323486328,
+        -49.675025939941406,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        162.8587646484375,
+        12.128946304321289,
+        464.1949462890625
+      ],
+      "Path": "Workspace.Tree_Palm_2_V5_010",
+      "Root": "Workspace.Tree_Palm_2_V5_010.Tree_Palm_2.Icosphere.035",
+      "Class": "Model",
+      "Pivot": [
+        162.8587646484375,
+        8.128947257995605,
+        464.1949462890625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -720.4794921875,
+        12.12893009185791,
+        160.66990661621094
+      ],
+      "Path": "Workspace.MagicalForestTree_019_AK_OldMagicalTree_1",
+      "Root": "Workspace.MagicalForestTree_019_AK_OldMagicalTree_1.tree.039",
+      "Class": "Model",
+      "Pivot": [
+        -720.4794921875,
+        8.856657028198242,
+        160.66990661621094,
+        0.13655519485473633,
+        0,
+        -0.9906328916549683,
+        0,
+        1,
+        0,
+        0.9906328916549683,
+        0,
+        0.13655522465705872
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        136.65658569335938,
+        12.12893009185791,
+        788.7495727539062
+      ],
+      "Path": "Workspace.BirchTree_Dead_5_V5_004",
+      "Root": "Workspace.BirchTree_Dead_5_V5_004.BirchTree_Dead_5.BirchTree_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        136.65658569335938,
+        7.829439163208008,
+        788.7495727539062,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -725.8189697265625,
+        12.128931045532227,
+        704.2960205078125
+      ],
+      "Path": "Workspace.Tree_Palm_1_V5_015",
+      "Root": "Workspace.Tree_Palm_1_V5_015.Cube.086",
+      "Class": "Model",
+      "Pivot": [
+        -725.8189697265625,
+        8.549999237060547,
+        704.2960205078125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        139.254150390625,
+        12.128931045532227,
+        96.31686401367188
+      ],
+      "Path": "Workspace.Tree_Pine_2_V5_015",
+      "Root": "Workspace.Tree_Pine_2_V5_015.Cone.080",
+      "Class": "Model",
+      "Pivot": [
+        139.254150390625,
+        8.128952980041504,
+        96.31686401367188,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -587.8522338867188,
+        12.128931045532227,
+        -6.044177055358887
+      ],
+      "Path": "Workspace.Tree_Pine_6_V5_009",
+      "Root": "Workspace.Tree_Pine_6_V5_009.Tree_Pine_6.Cone.098",
+      "Class": "Model",
+      "Pivot": [
+        -587.8522338867188,
+        9.12893009185791,
+        -6.044177055358887,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        180.27572631835938,
+        12.128931045532227,
+        -30.94970703125
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Icosphere.086",
+      "Class": "Model",
+      "Pivot": [
+        180.27572631835938,
+        9.128917694091797,
+        -30.94970703125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -654.0198974609375,
+        12.128931045532227,
+        -160.46629333496094
+      ],
+      "Path": "Workspace.pine_tree_3_snow_V5_006",
+      "Root": "Workspace.pine_tree_3_snow_V5_006.pine_tree_3_snow.pine_tree_3_snow",
+      "Class": "Model",
+      "Pivot": [
+        -654.0198974609375,
+        9.128931999206543,
+        -160.46629333496094,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        95.24443054199219,
+        12.128931045532227,
+        133.62298583984375
+      ],
+      "Path": "Workspace.Tree_Pine_1_V5_028",
+      "Root": "Workspace.Tree_Pine_1_V5_028.Cone.095",
+      "Class": "Model",
+      "Pivot": [
+        95.24443054199219,
+        7.850000381469727,
+        133.62298583984375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -326.2840881347656,
+        12.129013061523438,
+        645.45751953125
+      ],
+      "Path": "Workspace.common_tree_dead_2_V5_022",
+      "Root": "Workspace.common_tree_dead_2_V5_022.common_tree_dead_2.common_tree_2_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -326.2840881347656,
+        9.129059791564941,
+        645.45751953125,
+        0,
+        0,
+        0.9999997615814209,
+        0,
+        1,
+        0,
+        -0.9999997615814209,
+        0,
+        0
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -673.07666015625,
+        12.12893009185791,
+        -174.2109832763672
+      ],
+      "Path": "Workspace.pine_tree_3_snow_V5_007",
+      "Root": "Workspace.pine_tree_3_snow_V5_007.pine_tree_3_snow.pine_tree_3_snow_snow",
+      "Class": "Model",
+      "Pivot": [
+        -673.07666015625,
+        9.128926277160645,
+        -174.2109832763672,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        273.03485107421875,
+        12.128931045532227,
+        98.46436309814453
+      ],
+      "Path": "Workspace.Willow_5_V5_035",
+      "Root": "Workspace.Willow_5_V5_035.Willow_5.Willow_5",
+      "Class": "Model",
+      "Pivot": [
+        273.03485107421875,
+        7.828929901123047,
+        98.46436309814453,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -640.0747680664062,
+        12.128931045532227,
+        684.7968139648438
+      ],
+      "Path": "Workspace.Tree_Palm_3_V5_011",
+      "Root": "Workspace.Tree_Palm_3_V5_011.Cube.177",
+      "Class": "Model",
+      "Pivot": [
+        -640.0747680664062,
+        8.550003051757812,
+        684.7968139648438,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -694.1386108398438,
+        12.12893009185791,
+        170.531494140625
+      ],
+      "Path": "Workspace.Willow_Autumn_4_V5_042",
+      "Root": "Workspace.Willow_Autumn_4_V5_042.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -694.1386108398438,
+        8.856657028198242,
+        170.531494140625,
+        0.8155603408813477,
+        0,
+        -0.5786728858947754,
+        0,
+        1,
+        0,
+        0.5786728858947754,
+        0,
+        0.8155603408813477
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -585.429443359375,
+        12.12893009185791,
+        212.82110595703125
+      ],
+      "Path": "Workspace.MagicalForestTree_009_AK_OldMagicalTree_2",
+      "Root": "Workspace.MagicalForestTree_009_AK_OldMagicalTree_2.tree.0412",
+      "Class": "Model",
+      "Pivot": [
+        -585.429443359375,
+        8.856657028198242,
+        212.82110595703125,
+        0.04806697368621826,
+        0,
+        -0.998844563961029,
+        0,
+        1,
+        0,
+        0.9988446235656738,
+        0,
+        0.048066914081573486
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -45.939205169677734,
+        12.12894344329834,
+        674.560791015625
+      ],
+      "Path": "Workspace.common_tree_3_snow_V5_003",
+      "Root": "Workspace.common_tree_3_snow_V5_003.common_tree_3_snow.common_tree_3_snow_snow",
+      "Class": "Model",
+      "Pivot": [
+        -45.939205169677734,
+        9.128939628601074,
+        674.560791015625,
+        1.0000004768371582,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        135.77554321289062,
+        12.12893009185791,
+        700.714111328125
+      ],
+      "Path": "Workspace.Cactus_4_V5_005",
+      "Root": "Workspace.Cactus_4_V5_005.Cactus_4",
+      "Class": "Model",
+      "Pivot": [
+        135.77554321289062,
+        7.829433441162109,
+        700.714111328125,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -160.23721313476562,
+        12.128936767578125,
+        736.82958984375
+      ],
+      "Path": "Workspace.pine_tree_2_snow_V5_006",
+      "Root": "Workspace.pine_tree_2_snow_V5_006.pine_tree_2_snow.pine_tree_2_snow",
+      "Class": "Model",
+      "Pivot": [
+        -160.23721313476562,
+        9.128937721252441,
+        736.82958984375,
+        1.0000004768371582,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        2.7181015014648438,
+        12.128941535949707,
+        762.6395874023438
+      ],
+      "Path": "Workspace.Willow_Snow_5_V5_008",
+      "Root": "Workspace.Willow_Snow_5_V5_008.Willow_Snow_5.Willow_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        2.7181015014648438,
+        9.128931045532227,
+        762.6395874023438,
+        0,
+        0,
+        -1.000000238418579,
+        0,
+        1.0000019073486328,
+        0,
+        0.9999970197677612,
+        0,
+        0
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        112.90377044677734,
+        12.12893009185791,
+        718.628662109375
+      ],
+      "Path": "Workspace.cactus_short_V5_011",
+      "Root": "Workspace.cactus_short_V5_011.cactus_short.cactus_short",
+      "Class": "Model",
+      "Pivot": [
+        112.90377044677734,
+        7.829435348510742,
+        718.628662109375,
+        0,
+        0,
+        1,
+        0,
+        0.9999978542327881,
+        0,
+        -0.9999978542327881,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        215.66519165039062,
+        12.128931045532227,
+        97.0121078491211
+      ],
+      "Path": "Workspace.tree_pineRoundA_V5_002",
+      "Root": "Workspace.tree_pineRoundA_V5_002.tree_pineRoundA.tree_pineRoundA",
+      "Class": "Model",
+      "Pivot": [
+        215.66519165039062,
+        8.128959655761719,
+        97.0121078491211,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -278.8289489746094,
+        12.12893009185791,
+        789.0619506835938
+      ],
+      "Path": "Workspace.CommonTree_Dead_1_V5_007",
+      "Root": "Workspace.CommonTree_Dead_1_V5_007.CommonTree_Dead_1",
+      "Class": "Model",
+      "Pivot": [
+        -278.8289489746094,
+        5.828930854797363,
+        789.0619506835938,
+        0.7071067094802856,
+        0,
+        -0.7071067094802856,
+        0,
+        1,
+        0,
+        0.7071067094802856,
+        0,
+        0.7071067094802856
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -662.3405151367188,
+        12.128931045532227,
+        628.430908203125
+      ],
+      "Path": "Workspace.Tree_Palm_3_V5_018",
+      "Root": "Workspace.Tree_Palm_3_V5_018.Icosphere.052",
+      "Class": "Model",
+      "Pivot": [
+        -662.3405151367188,
+        8.549999237060547,
+        628.430908203125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -559.794921875,
+        12.12893295288086,
+        -42.4832763671875
+      ],
+      "Path": "Workspace.Tree_Pine_5_V5_008",
+      "Root": "Workspace.Tree_Pine_5_V5_008.Tree_Pine_5.Cone.103",
+      "Class": "Model",
+      "Pivot": [
+        -559.794921875,
+        9.128931999206543,
+        -42.4832763671875,
+        0.7071066498756409,
+        0,
+        -0.7071067690849304,
+        0,
+        1,
+        0,
+        0.7071067690849304,
+        0,
+        0.7071066498756409
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -43.220550537109375,
+        12.128936767578125,
+        731.6550903320312
+      ],
+      "Path": "Workspace.Willow_Snow_5_V5_010",
+      "Root": "Workspace.Willow_Snow_5_V5_010.Willow_Snow_5.Willow_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        -43.220550537109375,
+        9.128936767578125,
+        731.6550903320312,
+        0.7071067690849304,
+        0,
+        -0.7071067690849304,
+        0,
+        1.0000014305114746,
+        0,
+        0.7071047425270081,
+        0,
+        0.7071047425270081
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        142.065673828125,
+        12.128946304321289,
+        494.3145446777344
+      ],
+      "Path": "Workspace.tree_palmDetailedTall_V5_008",
+      "Root": "Workspace.tree_palmDetailedTall_V5_008.tree_palmDetailedTall",
+      "Class": "Model",
+      "Pivot": [
+        142.065673828125,
+        8.128948211669922,
+        494.3145446777344,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -147.70065307617188,
+        12.128936767578125,
+        659.0081787109375
+      ],
+      "Path": "Workspace.PineTree_Snow_1_V5_021",
+      "Root": "Workspace.PineTree_Snow_1_V5_021.PineTree_Snow_1.PineTree_Snow_1",
+      "Class": "Model",
+      "Pivot": [
+        -147.70065307617188,
+        9.128918647766113,
+        659.0081787109375,
+        1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        220.36383056640625,
+        12.128946304321289,
+        339.50372314453125
+      ],
+      "Path": "Workspace.Tree_Oak_7_V5_005",
+      "Root": "Workspace.Tree_Oak_7_V5_005.Tree_Oak_7.Icosphere.055",
+      "Class": "Model",
+      "Pivot": [
+        220.36383056640625,
+        7.849998474121094,
+        339.50372314453125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -641.2650146484375,
+        12.12893009185791,
+        211.2645263671875
+      ],
+      "Path": "Workspace.MagicalForestTree_024_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_024_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -641.2650146484375,
+        10.213888168334961,
+        211.2645263671875,
+        0.7463802695274353,
+        0,
+        -0.6655197143554688,
+        0,
+        1,
+        0,
+        0.6655195355415344,
+        0,
+        0.7463804483413696
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        147.2543182373047,
+        12.12893009185791,
+        647.7142944335938
+      ],
+      "Path": "Workspace.cactus_short_V5_012",
+      "Root": "Workspace.cactus_short_V5_012.cactus_short.cactus_short",
+      "Class": "Model",
+      "Pivot": [
+        147.2543182373047,
+        7.829431533813477,
+        647.7142944335938,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -629.9130249023438,
+        12.128931045532227,
+        766.6182861328125
+      ],
+      "Path": "Workspace.tree_palmBend_V5_027",
+      "Root": "Workspace.tree_palmBend_V5_027.tree_palmBend.tree_palmBend",
+      "Class": "Model",
+      "Pivot": [
+        -629.9130249023438,
+        8.55000114440918,
+        766.6182861328125,
+        -0.9999997615814209,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.9999997615814209
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -708.7711791992188,
+        12.128931045532227,
+        783.3924560546875
+      ],
+      "Path": "Workspace.Tree_Palm_6_V5_005",
+      "Root": "Workspace.Tree_Palm_6_V5_005.Cube.182",
+      "Class": "Model",
+      "Pivot": [
+        -708.7711791992188,
+        8.55000114440918,
+        783.3924560546875,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        265.03778076171875,
+        17.207721710205078,
+        619.0567626953125
+      ],
+      "Path": "Workspace.Cactus_5_V5_001",
+      "Root": "Workspace.Cactus_5_V5_001.Cactus_5",
+      "Class": "Model",
+      "Pivot": [
+        265.03778076171875,
+        14.207721710205078,
+        619.0567626953125,
+        -0.5359504818916321,
+        0,
+        0.8442493081092834,
+        0,
+        0.9999999403953552,
+        0,
+        -0.844249427318573,
+        0,
+        -0.5359504222869873
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        115.3397216796875,
+        12.128931045532227,
+        141.56552124023438
+      ],
+      "Path": "Workspace.Tree_Pine_1_V5_021",
+      "Root": "Workspace.Tree_Pine_1_V5_021.Cone.096",
+      "Class": "Model",
+      "Pivot": [
+        115.3397216796875,
+        7.849998474121094,
+        141.56552124023438,
+        0.9999997615814209,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999997615814209
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        158.856689453125,
+        12.128931045532227,
+        159.0021514892578
+      ],
+      "Path": "Workspace.PineTree_3_V5_019",
+      "Root": "Workspace.PineTree_3_V5_019.PineTree_3.PineTree_3",
+      "Class": "Model",
+      "Pivot": [
+        158.856689453125,
+        8.128955841064453,
+        159.0021514892578,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -171.68873596191406,
+        12.128931045532227,
+        -44.363922119140625
+      ],
+      "Path": "Workspace.TwistedTree_5_V5_018",
+      "Root": "Workspace.TwistedTree_5_V5_018.tree.042",
+      "Class": "Model",
+      "Pivot": [
+        -171.68873596191406,
+        8.299991607666016,
+        -44.363922119140625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Mythical"
+    },
+    {
+      "Interaction": [
+        -266.80523681640625,
+        12.12893009185791,
+        612.7531127929688
+      ],
+      "Path": "Workspace.common_tree_dead_1_V5_012",
+      "Root": "Workspace.common_tree_dead_1_V5_012.common_tree_dead_1.common_tree_1_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -266.80523681640625,
+        7.12893009185791,
+        612.7531127929688,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        155.39955139160156,
+        12.12893295288086,
+        -148.9387969970703
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Cube.082",
+      "Class": "Model",
+      "Pivot": [
+        155.39955139160156,
+        9.128929138183594,
+        -148.9387969970703,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        182.53135681152344,
+        12.128946304321289,
+        394.5265197753906
+      ],
+      "Path": "Workspace.Tree_Oak_7_V5_001",
+      "Root": "Workspace.Tree_Oak_7_V5_001.Tree_Oak_7.Cube.085",
+      "Class": "Model",
+      "Pivot": [
+        182.53135681152344,
+        8.128946304321289,
+        394.5265197753906,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        215.29287719726562,
+        12.128946304321289,
+        393.46441650390625
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_017",
+      "Root": "Workspace.tree_palmDetailedShort_V5_017.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        215.29287719726562,
+        8.128948211669922,
+        393.46441650390625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -614.4027709960938,
+        12.12893295288086,
+        -156.00003051757812
+      ],
+      "Path": "Workspace.tree_cone_V5_017",
+      "Root": "Workspace.tree_cone_V5_017.tree_cone.tree_cone",
+      "Class": "Model",
+      "Pivot": [
+        -614.4027709960938,
+        9.128931999206543,
+        -156.00003051757812,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -430.5797119140625,
+        12.12893009185791,
+        790.7232666015625
+      ],
+      "Path": "Workspace.common_tree_dead_3_V5_025",
+      "Root": "Workspace.common_tree_dead_3_V5_025.common_tree_dead_3.common_tree_3_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -430.5797119140625,
+        7.128932952880859,
+        790.7232666015625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        243.43820190429688,
+        12.128946304321289,
+        367.0684814453125
+      ],
+      "Path": "Workspace.tree_palmDetailedTall_V5_016",
+      "Root": "Workspace.tree_palmDetailedTall_V5_016.tree_palmDetailedTall",
+      "Class": "Model",
+      "Pivot": [
+        243.43820190429688,
+        7.850000381469727,
+        367.0684814453125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -690.7306518554688,
+        12.12893009185791,
+        159.17877197265625
+      ],
+      "Path": "Workspace.MagicalForestTree_004_AK_OldMagicalTree_1",
+      "Root": "Workspace.MagicalForestTree_004_AK_OldMagicalTree_1.tree.039",
+      "Class": "Model",
+      "Pivot": [
+        -690.7306518554688,
+        8.856657028198242,
+        159.17877197265625,
+        0.8392407894134521,
+        0,
+        0.5437607765197754,
+        0,
+        1,
+        0,
+        -0.5437608957290649,
+        0,
+        0.8392407894134521
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -413.2951354980469,
+        12.12893295288086,
+        767.2999877929688
+      ],
+      "Path": "Workspace.common_tree_dead_3_V5_023",
+      "Root": "Workspace.common_tree_dead_3_V5_023.common_tree_dead_3.common_tree_3_trunk.001",
+      "Class": "Model",
+      "Pivot": [
+        -413.2951354980469,
+        9.128933906555176,
+        767.2999877929688,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -729.9678344726562,
+        12.12893009185791,
+        -132.71966552734375
+      ],
+      "Path": "Workspace.CommonTree_Snow_5_V5_012",
+      "Root": "Workspace.CommonTree_Snow_5_V5_012.CommonTree_Snow_5.CommonTree_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        -729.9678344726562,
+        9.128927230834961,
+        -132.71966552734375,
+        0.9999994039535522,
+        0,
+        0,
+        0,
+        0.9999997615814209,
+        0,
+        0,
+        0,
+        1.000000238418579
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        126.0240478515625,
+        12.12893009185791,
+        639.8589477539062
+      ],
+      "Path": "Workspace.Cactus_4_V5_010",
+      "Root": "Workspace.Cactus_4_V5_010.Cactus_4",
+      "Class": "Model",
+      "Pivot": [
+        126.0240478515625,
+        7.829433441162109,
+        639.8589477539062,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -99.65187072753906,
+        12.128946304321289,
+        730.7787475585938
+      ],
+      "Path": "Workspace.common_tree_3_snow_V5_011",
+      "Root": "Workspace.common_tree_3_snow_V5_011.common_tree_3_snow.common_tree_3_snow_leaves",
+      "Class": "Model",
+      "Pivot": [
+        -99.65187072753906,
+        9.128946304321289,
+        730.7787475585938,
+        1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -701.8673706054688,
+        12.12893009185791,
+        -90.0048599243164
+      ],
+      "Path": "Workspace.tree_thin_V5_022",
+      "Root": "Workspace.tree_thin_V5_022.tree_thin.tree_thin",
+      "Class": "Model",
+      "Pivot": [
+        -701.8673706054688,
+        9.128928184509277,
+        -90.0048599243164,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        150.6405029296875,
+        12.12893009185791,
+        787.0130615234375
+      ],
+      "Path": "Workspace.BirchTree_Dead_5_V5_007",
+      "Root": "Workspace.BirchTree_Dead_5_V5_007.BirchTree_Dead_5.BirchTree_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        150.6405029296875,
+        7.8294358253479,
+        787.0130615234375,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -591.7838134765625,
+        12.12893009185791,
+        -28.626628875732422
+      ],
+      "Path": "Workspace.Tree_Pine_3_V5_004",
+      "Root": "Workspace.Tree_Pine_3_V5_004.Tree_Pine_3.Cone.083",
+      "Class": "Model",
+      "Pivot": [
+        -591.7838134765625,
+        9.128927230834961,
+        -28.626628875732422,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -747.4100341796875,
+        12.128931045532227,
+        807.2176513671875
+      ],
+      "Path": "Workspace.tree_palmShort_V5_025",
+      "Root": "Workspace.tree_palmShort_V5_025.tree_palmShort.tree_palmShort",
+      "Class": "Model",
+      "Pivot": [
+        -747.4100341796875,
+        7.25,
+        807.2176513671875,
+        0.9999997615814209,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999997615814209
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -408.3523254394531,
+        12.12893009185791,
+        -153.3011932373047
+      ],
+      "Path": "Workspace.Tree_Oak_6_V5_024",
+      "Root": "Workspace.Tree_Oak_6_V5_024.Tree_Oak_6.Icosphere.059",
+      "Class": "Model",
+      "Pivot": [
+        -408.3523254394531,
+        9.12893009185791,
+        -153.3011932373047,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -277.9456481933594,
+        12.12893295288086,
+        -7.53448486328125
+      ],
+      "Path": "Workspace.palm_tree_3_V5_021",
+      "Root": "Workspace.palm_tree_3_V5_021.palm_tree_3_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -277.9456481933594,
+        9.12893009185791,
+        -7.53448486328125,
+        0.9999998211860657,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999998211860657
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -740.6856079101562,
+        12.12893009185791,
+        236.6011962890625
+      ],
+      "Path": "Workspace.MagicalForestTree_015_AK_LowpolyWillow",
+      "Root": "Workspace.MagicalForestTree_015_AK_LowpolyWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -740.6856079101562,
+        9.12893009185791,
+        236.6011962890625,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        128.63491821289062,
+        35.80409240722656,
+        422.7990417480469
+      ],
+      "Path": "Workspace.Tree_Oak_7_V5_025",
+      "Root": "Workspace.Tree_Oak_7_V5_025.Tree_Oak_7.Icosphere.055",
+      "Class": "Model",
+      "Pivot": [
+        128.63491821289062,
+        38.18574905395508,
+        422.7990417480469,
+        0.7844251394271851,
+        -0.598802387714386,
+        -0.1615949422121048,
+        0.6171994805335999,
+        0.7793373465538025,
+        0.10815773159265518,
+        0.06117185950279236,
+        -0.18457795679569244,
+        0.980912446975708
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        123.12245178222656,
+        12.128946304321289,
+        416.3490295410156
+      ],
+      "Path": "Workspace.CommonTree_5_V5_042",
+      "Root": "Workspace.CommonTree_5_V5_042.CommonTree_5.CommonTree_5",
+      "Class": "Model",
+      "Pivot": [
+        123.12245178222656,
+        8.128946304321289,
+        416.3490295410156,
+        0.9999980926513672,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999980926513672
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -668.2334594726562,
+        12.128931045532227,
+        511.3194580078125
+      ],
+      "Path": "Workspace.Willow_Dead_4_V5_006",
+      "Root": "Workspace.Willow_Dead_4_V5_006.Willow_Dead_4.Willow_Dead_4",
+      "Class": "Model",
+      "Pivot": [
+        -668.2334594726562,
+        9.128918647766113,
+        511.3194580078125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -25.96029281616211,
+        12.128937721252441,
+        781.3320922851562
+      ],
+      "Path": "Workspace.BirchTree_Dead_Snow_2_V5_026",
+      "Root": "Workspace.BirchTree_Dead_Snow_2_V5_026.BirchTree_Dead_Snow_2.BirchTree_Dead_Snow_2",
+      "Class": "Model",
+      "Pivot": [
+        -25.96029281616211,
+        9.128937721252441,
+        781.3320922851562,
+        0,
+        0,
+        1,
+        0,
+        1.0000014305114746,
+        0,
+        -0.9999971389770508,
+        0,
+        0
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        139.04376220703125,
+        12.128946304321289,
+        402.6044616699219
+      ],
+      "Path": "Workspace.CommonTree_5_V5_039",
+      "Root": "Workspace.CommonTree_5_V5_039.CommonTree_5.CommonTree_5",
+      "Class": "Model",
+      "Pivot": [
+        139.04376220703125,
+        7.849998474121094,
+        402.6044616699219,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -572.9005126953125,
+        12.12893009185791,
+        -69.36901092529297
+      ],
+      "Path": "Workspace.tree_thin_V5_021",
+      "Root": "Workspace.tree_thin_V5_021.tree_thin.tree_thin",
+      "Class": "Model",
+      "Pivot": [
+        -572.9005126953125,
+        9.128928184509277,
+        -69.36901092529297,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        7.701324462890625,
+        12.128942489624023,
+        629.024169921875
+      ],
+      "Path": "Workspace.pine_tree_1_snow_V5_014",
+      "Root": "Workspace.pine_tree_1_snow_V5_014.pine_tree_1_snow.pine_tree_1_snow",
+      "Class": "Model",
+      "Pivot": [
+        7.701324462890625,
+        9.128934860229492,
+        629.024169921875,
+        1.0000033378601074,
+        0,
+        0,
+        0,
+        1.000004768371582,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        153.46168518066406,
+        12.128931045532227,
+        121.45744323730469
+      ],
+      "Path": "Workspace.Tree_Pine_2_V5_018",
+      "Root": "Workspace.Tree_Pine_2_V5_018.Cone.080",
+      "Class": "Model",
+      "Pivot": [
+        153.46168518066406,
+        7.849998950958252,
+        121.45744323730469,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        0.069732666015625,
+        12.128947257995605,
+        656.0215454101562
+      ],
+      "Path": "Workspace.Willow_Snow_5_V5_022",
+      "Root": "Workspace.Willow_Snow_5_V5_022.Willow_Snow_5.Willow_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        0.069732666015625,
+        9.128938674926758,
+        656.0215454101562,
+        0.7071067690849304,
+        0,
+        0.7071067690849304,
+        0,
+        1.0000014305114746,
+        0,
+        -0.7071047425270081,
+        0,
+        0.7071047425270081
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -622.5781860351562,
+        12.128931045532227,
+        705.8399658203125
+      ],
+      "Path": "Workspace.tree_palm_V5_021",
+      "Root": "Workspace.tree_palm_V5_021.tree_palm.tree_palm",
+      "Class": "Model",
+      "Pivot": [
+        -622.5781860351562,
+        8.55000114440918,
+        705.8399658203125,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -735.69189453125,
+        12.128931045532227,
+        518.180908203125
+      ],
+      "Path": "Workspace.Willow_Dead_4_V5_009",
+      "Root": "Workspace.Willow_Dead_4_V5_009.Willow_Dead_4.Willow_Dead_4",
+      "Class": "Model",
+      "Pivot": [
+        -735.69189453125,
+        9.128933906555176,
+        518.180908203125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -611.3056640625,
+        12.128952026367188,
+        499.6790466308594
+      ],
+      "Path": "Workspace.AK_AncientRuins_CypressTree",
+      "Root": "Workspace.AK_AncientRuins_CypressTree.Sketchfab_model.cdf5df8fd79e4e0b852a82ac39b138e1.fbx.RootNode.Cypress_V2_test.Cypress_V2_test_Cypress_bark_0_Node.Cypress_V2_test_Cypress_bark_0",
+      "Class": "Model",
+      "Pivot": [
+        -611.3056640625,
+        9.128920555114746,
+        499.6790466308594,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -603.6213989257812,
+        12.12893295288086,
+        355.3847961425781
+      ],
+      "Path": "Workspace.AK_AncientRuins_CypressTree",
+      "Root": "Workspace.AK_AncientRuins_CypressTree.Sketchfab_model.cdf5df8fd79e4e0b852a82ac39b138e1.fbx.RootNode.Cypress_V2_test.Cypress_V2_test_Cypress_2_sided_0_Node.Cypress_V2_test_Cypress_2_sided_0",
+      "Class": "Model",
+      "Pivot": [
+        -603.6213989257812,
+        9.128933906555176,
+        355.3847961425781,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        85.54330444335938,
+        12.128946304321289,
+        354.0614318847656
+      ],
+      "Path": "Workspace.tree_palmTall_V5_009",
+      "Root": "Workspace.tree_palmTall_V5_009.tree_palmTall.tree_palmTall",
+      "Class": "Model",
+      "Pivot": [
+        85.54330444335938,
+        7.82893180847168,
+        354.0614318847656,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -710.043701171875,
+        12.12893009185791,
+        190.48516845703125
+      ],
+      "Path": "Workspace.MagicalForestTree_020_AK_OldMagicalTree_2",
+      "Root": "Workspace.MagicalForestTree_020_AK_OldMagicalTree_2.tree.041",
+      "Class": "Model",
+      "Pivot": [
+        -710.043701171875,
+        8.856657028198242,
+        190.48516845703125,
+        0.6829729080200195,
+        0,
+        0.7304443120956421,
+        0,
+        1,
+        0,
+        -0.7304443120956421,
+        0,
+        0.6829731464385986
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        124.89409637451172,
+        12.128931045532227,
+        233.30001831054688
+      ],
+      "Path": "Workspace.PineTree_3_V5_026",
+      "Root": "Workspace.PineTree_3_V5_026.PineTree_3.PineTree_3",
+      "Class": "Model",
+      "Pivot": [
+        124.89409637451172,
+        7.850001335144043,
+        233.30001831054688,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -73.20664978027344,
+        12.128938674926758,
+        649.9671020507812
+      ],
+      "Path": "Workspace.common_tree_3_snow_V5_016",
+      "Root": "Workspace.common_tree_3_snow_V5_016.common_tree_3_snow.common_tree_3_snow_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -73.20664978027344,
+        9.128939628601074,
+        649.9671020507812,
+        1,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.999997615814209
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -373.8795471191406,
+        12.12893009185791,
+        701.571044921875
+      ],
+      "Path": "Workspace.common_tree_dead_2_V5_021",
+      "Root": "Workspace.common_tree_dead_2_V5_021.common_tree_dead_2.common_tree_2_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -373.8795471191406,
+        9.128928184509277,
+        701.571044921875,
+        0,
+        0,
+        -0.9999999403953552,
+        0,
+        1,
+        0,
+        0.9999999403953552,
+        0,
+        0
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        1.4257888793945312,
+        12.128931045532227,
+        -142.86825561523438
+      ],
+      "Path": "Workspace.TwistedTree_5_V5_028",
+      "Root": "Workspace.TwistedTree_5_V5_028.tree.042",
+      "Class": "Model",
+      "Pivot": [
+        1.4257888793945312,
+        8.300003051757812,
+        -142.86825561523438,
+        0,
+        0,
+        -0.9999999403953552,
+        0,
+        1,
+        0,
+        0.9999999403953552,
+        0,
+        0
+      ],
+      "Biome": "Mythical"
+    },
+    {
+      "Interaction": [
+        -427.0834045410156,
+        12.12893009185791,
+        -158.27969360351562
+      ],
+      "Path": "Workspace.palm_tree_2_V5_025",
+      "Root": "Workspace.palm_tree_2_V5_025.palm_tree_2_leaves",
+      "Class": "Model",
+      "Pivot": [
+        -427.0834045410156,
+        9.128938674926758,
+        -158.27969360351562,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -56.248985290527344,
+        12.128936767578125,
+        692.7987670898438
+      ],
+      "Path": "Workspace.common_tree_1_snow_V5_002",
+      "Root": "Workspace.common_tree_1_snow_V5_002.common_tree_1_snow.common_tree_1_snow_leaves",
+      "Class": "Model",
+      "Pivot": [
+        -56.248985290527344,
+        3.1289167404174805,
+        692.7987670898438,
+        1,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.999997615814209
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -385.4123840332031,
+        12.12893295288086,
+        667.5785522460938
+      ],
+      "Path": "Workspace.CommonTree_Dead_1_V5_020",
+      "Root": "Workspace.CommonTree_Dead_1_V5_020.CommonTree_Dead_1",
+      "Class": "Model",
+      "Pivot": [
+        -385.4123840332031,
+        9.12893009185791,
+        667.5785522460938,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -599.33154296875,
+        12.12893009185791,
+        -187.9857177734375
+      ],
+      "Path": "Workspace.CommonTree_Snow_5_V5_014",
+      "Root": "Workspace.CommonTree_Snow_5_V5_014.CommonTree_Snow_5.CommonTree_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        -599.33154296875,
+        9.128928184509277,
+        -187.9857177734375,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        125.75274658203125,
+        12.128946304321289,
+        453.3339538574219
+      ],
+      "Path": "Workspace.Tree_Palm_2_V5_030",
+      "Root": "Workspace.Tree_Palm_2_V5_030.Tree_Palm_2.Cube.145",
+      "Class": "Model",
+      "Pivot": [
+        125.75274658203125,
+        7.850002288818359,
+        453.3339538574219,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -378.18890380859375,
+        12.12893009185791,
+        -5.485462188720703
+      ],
+      "Path": "Workspace.palm_tree_1_V5_016",
+      "Root": "Workspace.palm_tree_1_V5_016.palm_tree_1_leaves",
+      "Class": "Model",
+      "Pivot": [
+        -378.18890380859375,
+        9.128931045532227,
+        -5.485462188720703,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        244.6282958984375,
+        12.128946304321289,
+        424.7884216308594
+      ],
+      "Path": "Workspace.PalmTree_1_V5_035",
+      "Root": "Workspace.PalmTree_1_V5_035.PalmTree_1.PalmTree_1",
+      "Class": "Model",
+      "Pivot": [
+        244.6282958984375,
+        8.849998474121094,
+        424.7884216308594,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -130.892822265625,
+        12.128936767578125,
+        697.745361328125
+      ],
+      "Path": "Workspace.Willow_Snow_5_V5_023",
+      "Root": "Workspace.Willow_Snow_5_V5_023.Willow_Snow_5.Willow_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        -130.892822265625,
+        9.128933906555176,
+        697.745361328125,
+        0.7071067094802856,
+        0,
+        -0.7071071267127991,
+        0,
+        1.0000019073486328,
+        0,
+        0.7071046829223633,
+        0,
+        0.7071051001548767
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -446.0046691894531,
+        12.12893009185791,
+        6.138581275939941
+      ],
+      "Path": "Workspace.PalmTree_3_V5_035",
+      "Root": "Workspace.PalmTree_3_V5_035.PalmTree_3.PalmTree_3",
+      "Class": "Model",
+      "Pivot": [
+        -446.0046691894531,
+        15.480989456176758,
+        6.138581275939941,
+        -0.1786784827709198,
+        0.5578881502151489,
+        -0.8104531764984131,
+        0.32169151306152344,
+        0.811562716960907,
+        0.487729549407959,
+        0.9298313856124878,
+        -0.17356941103935242,
+        -0.32447734475135803
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -730.2869262695312,
+        12.128936767578125,
+        376.2513122558594
+      ],
+      "Path": "Workspace.AK_AncientRuins_StylizedTree",
+      "Root": "Workspace.AK_AncientRuins_StylizedTree.Sketchfab_model.root.GLTF_SceneRootNode.BezierCurve.001_0.Object_4.Object_0",
+      "Class": "Model",
+      "Pivot": [
+        -730.2869262695312,
+        9.172272682189941,
+        376.2513122558594,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -272.0369873046875,
+        12.12893009185791,
+        636.7455444335938
+      ],
+      "Path": "Workspace.common_tree_dead_2_V5_003",
+      "Root": "Workspace.common_tree_dead_2_V5_003.common_tree_dead_2.common_tree_2_trunk.001",
+      "Class": "Model",
+      "Pivot": [
+        -272.0369873046875,
+        9.128928184509277,
+        636.7455444335938,
+        0.9999998807907104,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999998807907104
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -642.0771484375,
+        12.12893009185791,
+        211.9508056640625
+      ],
+      "Path": "Workspace.MagicalForestTree_017_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_017_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -642.0771484375,
+        10.40394401550293,
+        211.9508056640625,
+        -1.3709104678127915e-06,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1.3709108088733046e-06
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        197.14813232421875,
+        12.128931045532227,
+        224.01461791992188
+      ],
+      "Path": "Workspace.Tree_Cedar_1_V5_007",
+      "Root": "Workspace.Tree_Cedar_1_V5_007.Cube.086",
+      "Class": "Model",
+      "Pivot": [
+        197.14813232421875,
+        8.12895393371582,
+        224.01461791992188,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        230.6868896484375,
+        12.12893295288086,
+        1.2138335704803467
+      ],
+      "Path": "Workspace.Tree_Oak_3_V5_013",
+      "Root": "Workspace.Tree_Oak_3_V5_013.Tree_Oak_3.Icosphere.081",
+      "Class": "Model",
+      "Pivot": [
+        230.6868896484375,
+        9.128946304321289,
+        1.2138335704803467,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -129.3494415283203,
+        12.12894058227539,
+        781.66455078125
+      ],
+      "Path": "Workspace.common_tree_1_snow_V5_001",
+      "Root": "Workspace.common_tree_1_snow_V5_001.common_tree_1_snow.common_tree_1_snow_leaves_dark",
+      "Class": "Model",
+      "Pivot": [
+        -129.3494415283203,
+        9.12894344329834,
+        781.66455078125,
+        1,
+        0,
+        0,
+        0,
+        1.0000028610229492,
+        0,
+        0,
+        0,
+        0.9999985694885254
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -324.0686340332031,
+        12.12893009185791,
+        -104.14224243164062
+      ],
+      "Path": "Workspace.Tree_Oak_5_V5_020",
+      "Root": "Workspace.Tree_Oak_5_V5_020.Tree_Oak_5.Icosphere.080",
+      "Class": "Model",
+      "Pivot": [
+        -324.0686340332031,
+        9.128929138183594,
+        -104.14224243164062,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -587.0277709960938,
+        12.128931999206543,
+        392.0343017578125
+      ],
+      "Path": "Workspace.Tree_Bare_5_V5_023",
+      "Root": "Workspace.Tree_Bare_5_V5_023.Tree_Bare_5.Cube.083",
+      "Class": "Model",
+      "Pivot": [
+        -587.0277709960938,
+        9.128931999206543,
+        392.0343017578125,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -293.38262939453125,
+        12.129020690917969,
+        660.6041259765625
+      ],
+      "Path": "Workspace.common_tree_dead_1_V5_014",
+      "Root": "Workspace.common_tree_dead_1_V5_014.common_tree_dead_1.common_tree_1_snow_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -293.38262939453125,
+        9.129059791564941,
+        660.6041259765625,
+        0.9999997615814209,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.9999997615814209
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -334.99951171875,
+        12.12893009185791,
+        -93.08428955078125
+      ],
+      "Path": "Workspace.tree_oak_V5_019",
+      "Root": "Workspace.tree_oak_V5_019.tree_oak.tree_oak",
+      "Class": "Model",
+      "Pivot": [
+        -334.99951171875,
+        9.128921508789062,
+        -93.08428955078125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -281.6014404296875,
+        12.128936767578125,
+        -74.1664047241211
+      ],
+      "Path": "Workspace.Tree_Oak_6_V5_005",
+      "Root": "Workspace.Tree_Oak_6_V5_005.Tree_Oak_6.Icosphere.062",
+      "Class": "Model",
+      "Pivot": [
+        -281.6014404296875,
+        9.12893009185791,
+        -74.1664047241211,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -685.0585327148438,
+        12.128931045532227,
+        -147.35598754882812
+      ],
+      "Path": "Workspace.pine_tree_3_snow_V5_010",
+      "Root": "Workspace.pine_tree_3_snow_V5_010.pine_tree_3_snow.pine_tree_3_snow",
+      "Class": "Model",
+      "Pivot": [
+        -685.0585327148438,
+        9.128926277160645,
+        -147.35598754882812,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -643.6477661132812,
+        12.12893009185791,
+        232.2285614013672
+      ],
+      "Path": "Workspace.MagicalForestTree_022_AK_OldMagicalTree_1",
+      "Root": "Workspace.MagicalForestTree_022_AK_OldMagicalTree_1.tree.0392",
+      "Class": "Model",
+      "Pivot": [
+        -643.6477661132812,
+        8.856657028198242,
+        232.2285614013672,
+        -0.9611141085624695,
+        0,
+        0.2761532664299011,
+        0,
+        1,
+        0,
+        -0.2761531472206116,
+        0,
+        -0.961114227771759
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -124.66377258300781,
+        12.128936767578125,
+        632.9851684570312
+      ],
+      "Path": "Workspace.PineTree_Snow_1_V5_018",
+      "Root": "Workspace.PineTree_Snow_1_V5_018.PineTree_Snow_1.PineTree_Snow_1",
+      "Class": "Model",
+      "Pivot": [
+        -124.66377258300781,
+        9.128888130187988,
+        632.9851684570312,
+        1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        85.03362274169922,
+        12.128946304321289,
+        419.57208251953125
+      ],
+      "Path": "Workspace.tree_palmDetailedTall_V5_012",
+      "Root": "Workspace.tree_palmDetailedTall_V5_012.tree_palmDetailedTall",
+      "Class": "Model",
+      "Pivot": [
+        85.03362274169922,
+        7.828935146331787,
+        419.57208251953125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        97.60272216796875,
+        12.128931045532227,
+        110.18795013427734
+      ],
+      "Path": "Workspace.PineTree_3_V5_023",
+      "Root": "Workspace.PineTree_3_V5_023.PineTree_3.PineTree_3",
+      "Class": "Model",
+      "Pivot": [
+        97.60272216796875,
+        7.850000381469727,
+        110.18795013427734,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        130.4076385498047,
+        12.128931045532227,
+        270.17578125
+      ],
+      "Path": "Workspace.Tree_Cedar_1_V5_022",
+      "Root": "Workspace.Tree_Cedar_1_V5_022.Icosphere.036",
+      "Class": "Model",
+      "Pivot": [
+        130.4076385498047,
+        7.850002288818359,
+        270.17578125,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -428.4276428222656,
+        12.128952026367188,
+        -40.4268798828125
+      ],
+      "Path": "Workspace.palm_tree_3_V5_008",
+      "Root": "Workspace.palm_tree_3_V5_008.palm_tree_3_leaves",
+      "Class": "Model",
+      "Pivot": [
+        -428.4276428222656,
+        9.128934860229492,
+        -40.4268798828125,
+        0,
+        0,
+        -0.999999463558197,
+        0,
+        1,
+        0,
+        0.999999463558197,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -680.53271484375,
+        12.128931045532227,
+        518.89208984375
+      ],
+      "Path": "Workspace.Tree_Cedar_3_V5_008",
+      "Root": "Workspace.Tree_Cedar_3_V5_008.Tree_Cedar_3.Cube.087",
+      "Class": "Model",
+      "Pivot": [
+        -680.53271484375,
+        9.12890338897705,
+        518.89208984375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -392.4028625488281,
+        12.12893009185791,
+        789.983154296875
+      ],
+      "Path": "Workspace.CommonTree_Dead_1_V5_009",
+      "Root": "Workspace.CommonTree_Dead_1_V5_009.CommonTree_Dead_1",
+      "Class": "Model",
+      "Pivot": [
+        -392.4028625488281,
+        7.128928184509277,
+        789.983154296875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -402.67852783203125,
+        12.12893009185791,
+        -115.94062805175781
+      ],
+      "Path": "Workspace.Tree_Oak_5_V5_012",
+      "Root": "Workspace.Tree_Oak_5_V5_012.Tree_Oak_5.Icosphere.080",
+      "Class": "Model",
+      "Pivot": [
+        -402.67852783203125,
+        9.128925323486328,
+        -115.94062805175781,
+        0,
+        0,
+        0.9999998807907104,
+        0,
+        1,
+        0,
+        -0.9999998807907104,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        223.6829833984375,
+        12.128946304321289,
+        407.1222839355469
+      ],
+      "Path": "Workspace.CommonTree_5_V5_040",
+      "Root": "Workspace.CommonTree_5_V5_040.CommonTree_5.CommonTree_5",
+      "Class": "Model",
+      "Pivot": [
+        223.6829833984375,
+        8.128946304321289,
+        407.1222839355469,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -431.63470458984375,
+        12.12893009185791,
+        673.6669311523438
+      ],
+      "Path": "Workspace.CommonTree_Dead_3_V5_010",
+      "Root": "Workspace.CommonTree_Dead_3_V5_010.CommonTree_Dead_3",
+      "Class": "Model",
+      "Pivot": [
+        -431.63470458984375,
+        8.128929138183594,
+        673.6669311523438,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        277.21710205078125,
+        12.128931045532227,
+        219.71337890625
+      ],
+      "Path": "Workspace.Tree_Pine_1_V5_012",
+      "Root": "Workspace.Tree_Pine_1_V5_012.Cone.097",
+      "Class": "Model",
+      "Pivot": [
+        277.21710205078125,
+        8.12895679473877,
+        219.71337890625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        130.90013122558594,
+        12.128931045532227,
+        -167.3987579345703
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Cube.082",
+      "Class": "Model",
+      "Pivot": [
+        130.90013122558594,
+        9.12891960144043,
+        -167.3987579345703,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -706.4263916015625,
+        12.12893009185791,
+        -27.10821533203125
+      ],
+      "Path": "Workspace.Tree_Pine_3_V5_001",
+      "Root": "Workspace.Tree_Pine_3_V5_001.Tree_Pine_3.Cone.083",
+      "Class": "Model",
+      "Pivot": [
+        -706.4263916015625,
+        9.128928184509277,
+        -27.10821533203125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        115.60816192626953,
+        12.128931045532227,
+        -32.226287841796875
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Cube.082",
+      "Class": "Model",
+      "Pivot": [
+        115.60816192626953,
+        9.128921508789062,
+        -32.226287841796875,
+        0.7071064114570618,
+        0,
+        -0.7071064114570618,
+        0,
+        1,
+        0,
+        0.7071064114570618,
+        0,
+        0.7071064114570618
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        145.07403564453125,
+        12.12893009185791,
+        683.0317993164062
+      ],
+      "Path": "Workspace.cactus_tall_V5_014",
+      "Root": "Workspace.cactus_tall_V5_014.cactus_tall.cactus_tall",
+      "Class": "Model",
+      "Pivot": [
+        145.07403564453125,
+        7.829436302185059,
+        683.0317993164062,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -306.7982177734375,
+        12.129043579101562,
+        620.8629760742188
+      ],
+      "Path": "Workspace.CommonTree_Dead_1_V5_016",
+      "Root": "Workspace.CommonTree_Dead_1_V5_016.CommonTree_Dead_1",
+      "Class": "Model",
+      "Pivot": [
+        -306.7982177734375,
+        9.129059791564941,
+        620.8629760742188,
+        0.7071065902709961,
+        0,
+        0.7071065902709961,
+        0,
+        1,
+        0,
+        -0.7071065902709961,
+        0,
+        0.7071065902709961
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -279.181640625,
+        12.12893009185791,
+        -5.8996686935424805
+      ],
+      "Path": "Workspace.palm_tree_2_V5_034",
+      "Root": "Workspace.palm_tree_2_V5_034.palm_tree_2_coconuts",
+      "Class": "Model",
+      "Pivot": [
+        -279.181640625,
+        9.128921508789062,
+        -5.8996686935424805,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -55.838287353515625,
+        12.128936767578125,
+        609.0496215820312
+      ],
+      "Path": "Workspace.Willow_Snow_5_V5_022",
+      "Root": "Workspace.Willow_Snow_5_V5_022.Willow_Snow_5.Willow_Snow_5",
+      "Class": "Model",
+      "Pivot": [
+        -55.838287353515625,
+        9.128952980041504,
+        609.0496215820312,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -4.3779449462890625,
+        12.128947257995605,
+        686.56005859375
+      ],
+      "Path": "Workspace.common_tree_1_snow_V5_004",
+      "Root": "Workspace.common_tree_1_snow_V5_004.common_tree_1_snow.common_tree_1_snow_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -4.3779449462890625,
+        9.128944396972656,
+        686.56005859375,
+        1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -417.87005615234375,
+        12.128944396972656,
+        745.0906982421875
+      ],
+      "Path": "Workspace.Willow_Dead_5_V5_004",
+      "Root": "Workspace.Willow_Dead_5_V5_004.Willow_Dead_5.Willow_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        -417.87005615234375,
+        9.128931045532227,
+        745.0906982421875,
+        -0.7071065902709961,
+        0,
+        0.7071065902709961,
+        0,
+        1,
+        0,
+        -0.7071065902709961,
+        0,
+        -0.7071065902709961
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -173.30474853515625,
+        12.12894058227539,
+        626.6470947265625
+      ],
+      "Path": "Workspace.BirchTree_Dead_Snow_2_V5_027",
+      "Root": "Workspace.BirchTree_Dead_Snow_2_V5_027.BirchTree_Dead_Snow_2.BirchTree_Dead_Snow_2",
+      "Class": "Model",
+      "Pivot": [
+        -173.30474853515625,
+        9.128939628601074,
+        626.6470947265625,
+        -1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        -0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -556.5270385742188,
+        24.389095306396484,
+        -142.4922332763672
+      ],
+      "Path": "Workspace.tree_fat_V5_020",
+      "Root": "Workspace.tree_fat_V5_020.tree_fat.tree_fat",
+      "Class": "Model",
+      "Pivot": [
+        -556.5270385742188,
+        21.38909149169922,
+        -142.4922332763672,
+        0.9035340547561646,
+        0,
+        0.42851635813713074,
+        0,
+        0.9999997615814209,
+        0,
+        -0.4285164773464203,
+        0,
+        0.9035337567329407
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        -327.8708190917969,
+        12.12893009185791,
+        7.6447906494140625
+      ],
+      "Path": "Workspace.PalmTree_3_V5_013",
+      "Root": "Workspace.PalmTree_3_V5_013.PalmTree_3.PalmTree_3",
+      "Class": "Model",
+      "Pivot": [
+        -327.8708190917969,
+        7.3431243896484375,
+        7.6447906494140625,
+        0.7071067094802856,
+        0,
+        0.70710688829422,
+        0,
+        1,
+        0,
+        -0.70710688829422,
+        0,
+        0.7071067094802856
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        280.73760986328125,
+        12.12893009185791,
+        616.3187255859375
+      ],
+      "Path": "Workspace.Cactus_1_V5_008",
+      "Root": "Workspace.Cactus_1_V5_008.Cactus_1",
+      "Class": "Model",
+      "Pivot": [
+        280.73760986328125,
+        7.829435348510742,
+        616.3187255859375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -575.475830078125,
+        19.389070510864258,
+        -164.52386474609375
+      ],
+      "Path": "Workspace.tree_fat_V5_019",
+      "Root": "Workspace.tree_fat_V5_019.tree_fat.tree_fat",
+      "Class": "Model",
+      "Pivot": [
+        -575.475830078125,
+        16.389068603515625,
+        -164.52386474609375,
+        -0.4285164475440979,
+        0,
+        0.903533935546875,
+        0,
+        0.9999999403953552,
+        0,
+        -0.9035339951515198,
+        0,
+        -0.4285164177417755
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        171.54864501953125,
+        12.128946304321289,
+        361.04949951171875
+      ],
+      "Path": "Workspace.PalmTree_1_V5_013",
+      "Root": "Workspace.PalmTree_1_V5_013.PalmTree_1.PalmTree_1",
+      "Class": "Model",
+      "Pivot": [
+        171.54864501953125,
+        7.850003719329834,
+        361.04949951171875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -618.5001220703125,
+        12.128931045532227,
+        402.71929931640625
+      ],
+      "Path": "Workspace.Tree_Cedar_2_V5_001",
+      "Root": "Workspace.Tree_Cedar_2_V5_001.Tree_Cedar_2.Cube.085",
+      "Class": "Model",
+      "Pivot": [
+        -618.5001220703125,
+        9.12893009185791,
+        402.71929931640625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -123.44850158691406,
+        12.128945350646973,
+        599.8770751953125
+      ],
+      "Path": "Workspace.Willow_Dead_Snow_3_V5_029",
+      "Root": "Workspace.Willow_Dead_Snow_3_V5_029.Willow_Dead_Snow_3.Willow_Dead_Snow_3",
+      "Class": "Model",
+      "Pivot": [
+        -123.44850158691406,
+        9.12894058227539,
+        599.8770751953125,
+        0,
+        0,
+        -1,
+        0,
+        1.0000014305114746,
+        0,
+        0.9999971389770508,
+        0,
+        0
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        5.543983459472656,
+        12.128936767578125,
+        607.9938354492188
+      ],
+      "Path": "Workspace.common_tree_3_snow_V5_025",
+      "Root": "Workspace.common_tree_3_snow_V5_025.common_tree_3_snow.common_tree_3_snow_leaves_dark",
+      "Class": "Model",
+      "Pivot": [
+        5.543983459472656,
+        9.12893295288086,
+        607.9938354492188,
+        0.9999999403953552,
+        0,
+        0,
+        0,
+        1.0000028610229492,
+        0,
+        0,
+        0,
+        0.9999985694885254
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        228.05923461914062,
+        12.12893009185791,
+        669.6171264648438
+      ],
+      "Path": "Workspace.Cactus_4_V5_005",
+      "Root": "Workspace.Cactus_4_V5_005.Cactus_4",
+      "Class": "Model",
+      "Pivot": [
+        228.05923461914062,
+        7.829444885253906,
+        669.6171264648438,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -358.02667236328125,
+        12.12893295288086,
+        -166.68243408203125
+      ],
+      "Path": "Workspace.Tree_Oak_5_V5_011",
+      "Root": "Workspace.Tree_Oak_5_V5_011.Tree_Oak_5.Icosphere.079",
+      "Class": "Model",
+      "Pivot": [
+        -358.02667236328125,
+        9.128927230834961,
+        -166.68243408203125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -426.8011474609375,
+        12.128938674926758,
+        757.1431274414062
+      ],
+      "Path": "Workspace.common_tree_dead_3_V5_024",
+      "Root": "Workspace.common_tree_dead_3_V5_024.common_tree_dead_3.common_tree_3_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -426.8011474609375,
+        9.128934860229492,
+        757.1431274414062,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -728.4745483398438,
+        12.128931045532227,
+        441.0516052246094
+      ],
+      "Path": "Workspace.Tree_Cedar_3_V5_008",
+      "Root": "Workspace.Tree_Cedar_3_V5_008.Tree_Cedar_3.Cube.087",
+      "Class": "Model",
+      "Pivot": [
+        -728.4745483398438,
+        9.12893009185791,
+        441.0516052246094,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        104.69992065429688,
+        12.128931045532227,
+        263.69036865234375
+      ],
+      "Path": "Workspace.tree_pineRoundA_V5_032",
+      "Root": "Workspace.tree_pineRoundA_V5_032.tree_pineRoundA.tree_pineRoundA",
+      "Class": "Model",
+      "Pivot": [
+        104.69992065429688,
+        7.849998474121094,
+        263.69036865234375,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -415.85040283203125,
+        12.12893295288086,
+        -27.226552963256836
+      ],
+      "Path": "Workspace.Tree_Oak_6_V5_030",
+      "Root": "Workspace.Tree_Oak_6_V5_030.Tree_Oak_6.Icosphere.062",
+      "Class": "Model",
+      "Pivot": [
+        -415.85040283203125,
+        9.128931045532227,
+        -27.226552963256836,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -642.455078125,
+        12.128931045532227,
+        730.2244873046875
+      ],
+      "Path": "Workspace.tree_palm_V5_003",
+      "Root": "Workspace.tree_palm_V5_003.tree_palm.tree_palm",
+      "Class": "Model",
+      "Pivot": [
+        -642.455078125,
+        8.549999237060547,
+        730.2244873046875,
+        0,
+        0,
+        -1.0000004768371582,
+        0,
+        1,
+        0,
+        1.0000004768371582,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -568.493408203125,
+        12.12893295288086,
+        245.77178955078125
+      ],
+      "Path": "Workspace.MagicalForestTree_008_AK_OldMagicalTree_2",
+      "Root": "Workspace.MagicalForestTree_008_AK_OldMagicalTree_2.tree.041",
+      "Class": "Model",
+      "Pivot": [
+        -568.493408203125,
+        9.128934860229492,
+        245.77178955078125,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -292.7701416015625,
+        12.12893009185791,
+        -31.279457092285156
+      ],
+      "Path": "Workspace.Tree_Oak_6_V5_009",
+      "Root": "Workspace.Tree_Oak_6_V5_009.Tree_Oak_6.Icosphere.061",
+      "Class": "Model",
+      "Pivot": [
+        -292.7701416015625,
+        9.128929138183594,
+        -31.279457092285156,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -565.5592041015625,
+        12.128931045532227,
+        356.54278564453125
+      ],
+      "Path": "Workspace.Willow_Dead_4_V5_009",
+      "Root": "Workspace.Willow_Dead_4_V5_009.Willow_Dead_4.Willow_Dead_4",
+      "Class": "Model",
+      "Pivot": [
+        -565.5592041015625,
+        9.12893009185791,
+        356.54278564453125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -170.47926330566406,
+        12.128937721252441,
+        650.2293090820312
+      ],
+      "Path": "Workspace.Willow_Dead_Snow_3_V5_028",
+      "Root": "Workspace.Willow_Dead_Snow_3_V5_028.Willow_Dead_Snow_3.Willow_Dead_Snow_3",
+      "Class": "Model",
+      "Pivot": [
+        -170.47926330566406,
+        9.128937721252441,
+        650.2293090820312,
+        -1.0000009536743164,
+        0,
+        0,
+        0,
+        1.0000028610229492,
+        0,
+        0,
+        0,
+        -0.9999969005584717
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -153.1444549560547,
+        12.128936767578125,
+        763.9140625
+      ],
+      "Path": "Workspace.pine_tree_1_snow_V5_017",
+      "Root": "Workspace.pine_tree_1_snow_V5_017.pine_tree_1_snow.pine_tree_1_snow",
+      "Class": "Model",
+      "Pivot": [
+        -153.1444549560547,
+        9.128917694091797,
+        763.9140625,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        1.000004768371582,
+        0,
+        0,
+        0,
+        0.9999985694885254
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -352.6652526855469,
+        12.12894058227539,
+        672.0072021484375
+      ],
+      "Path": "Workspace.Willow_Dead_5_V5_017",
+      "Root": "Workspace.Willow_Dead_5_V5_017.Willow_Dead_5.Willow_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        -352.6652526855469,
+        9.128933906555176,
+        672.0072021484375,
+        -0.7071067094802856,
+        0,
+        -0.7071068286895752,
+        0,
+        1,
+        0,
+        0.7071068286895752,
+        0,
+        -0.7071067094802856
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -326.92120361328125,
+        12.129053115844727,
+        661.8245849609375
+      ],
+      "Path": "Workspace.CommonTree_Dead_4_V5_008",
+      "Root": "Workspace.CommonTree_Dead_4_V5_008.CommonTree_Dead_4",
+      "Class": "Model",
+      "Pivot": [
+        -326.92120361328125,
+        9.129059791564941,
+        661.8245849609375,
+        0.7071066498756409,
+        0,
+        0.7071066498756409,
+        0,
+        1,
+        0,
+        -0.7071066498756409,
+        0,
+        0.7071066498756409
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -0.9177169799804688,
+        12.12894344329834,
+        782.4814453125
+      ],
+      "Path": "Workspace.PineTree_Snow_1_V5_024",
+      "Root": "Workspace.PineTree_Snow_1_V5_024.PineTree_Snow_1.PineTree_Snow_1",
+      "Class": "Model",
+      "Pivot": [
+        -0.9177169799804688,
+        9.128937721252441,
+        782.4814453125,
+        1,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.999997615814209
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        135.02659606933594,
+        12.12893295288086,
+        -1.110137939453125
+      ],
+      "Path": "Workspace.CommonTree_4_V5_021",
+      "Root": "Workspace.CommonTree_4_V5_021.CommonTree_4.CommonTree_4",
+      "Class": "Model",
+      "Pivot": [
+        135.02659606933594,
+        9.128917694091797,
+        -1.110137939453125,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        216.71414184570312,
+        12.12893009185791,
+        636.6417846679688
+      ],
+      "Path": "Workspace.cactus_tall_V5_013",
+      "Root": "Workspace.cactus_tall_V5_013.cactus_tall.cactus_tall",
+      "Class": "Model",
+      "Pivot": [
+        216.71414184570312,
+        7.829437732696533,
+        636.6417846679688,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -591.18115234375,
+        12.128931045532227,
+        746.9058227539062
+      ],
+      "Path": "Workspace.Willow_2_V5_006",
+      "Root": "Workspace.Willow_2_V5_006.Willow_2.Willow_2",
+      "Class": "Model",
+      "Pivot": [
+        -591.18115234375,
+        8.550010681152344,
+        746.9058227539062,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -86.91194152832031,
+        12.12894058227539,
+        618.9408569335938
+      ],
+      "Path": "Workspace.PineTree_Snow_1_V5_015",
+      "Root": "Workspace.PineTree_Snow_1_V5_015.PineTree_Snow_1.PineTree_Snow_1",
+      "Class": "Model",
+      "Pivot": [
+        -86.91194152832031,
+        9.12894058227539,
+        618.9408569335938,
+        1,
+        0,
+        0,
+        0,
+        1.0000028610229492,
+        0,
+        0,
+        0,
+        0.9999985694885254
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        90.71356201171875,
+        12.128946304321289,
+        335.8504638671875
+      ],
+      "Path": "Workspace.tree_palmDetailedTall_V5_020",
+      "Root": "Workspace.tree_palmDetailedTall_V5_020.tree_palmDetailedTall",
+      "Class": "Model",
+      "Pivot": [
+        90.71356201171875,
+        7.850000381469727,
+        335.8504638671875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        193.3562469482422,
+        12.128931045532227,
+        1.6593170166015625
+      ],
+      "Path": "Workspace.Tree_Oak_4_V5_007",
+      "Root": "Workspace.Tree_Oak_4_V5_007.Tree_Oak_4.Icosphere.084",
+      "Class": "Model",
+      "Pivot": [
+        193.3562469482422,
+        9.128974914550781,
+        1.6593170166015625,
+        -0.9999999403953552,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.9999999403953552
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -590.6170043945312,
+        12.12893009185791,
+        216.19580078125
+      ],
+      "Path": "Workspace.MagicalForestTree_007_AK_LowpolyWillow",
+      "Root": "Workspace.MagicalForestTree_007_AK_LowpolyWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -590.6170043945312,
+        15.850790023803711,
+        216.19580078125,
+        -0.6546355485916138,
+        0,
+        0.7559473514556885,
+        0,
+        1,
+        0,
+        -0.7559508085250854,
+        0,
+        -0.6546332240104675
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        1.4218978881835938,
+        12.12894058227539,
+        710.3096923828125
+      ],
+      "Path": "Workspace.BirchTree_Dead_Snow_2_V5_009",
+      "Root": "Workspace.BirchTree_Dead_Snow_2_V5_009.BirchTree_Dead_Snow_2.BirchTree_Dead_Snow_2",
+      "Class": "Model",
+      "Pivot": [
+        1.4218978881835938,
+        9.128941535949707,
+        710.3096923828125,
+        1.0000004768371582,
+        0,
+        0,
+        0,
+        1.0000019073486328,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -680.54150390625,
+        12.12893009185791,
+        227.90159606933594
+      ],
+      "Path": "Workspace.MagicalForestTree_010_AK_NimbusWillow",
+      "Root": "Workspace.MagicalForestTree_010_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -680.54150390625,
+        -0.9491977691650391,
+        227.90159606933594,
+        0.27639976143836975,
+        0.9610429406166077,
+        0,
+        0,
+        0,
+        -1,
+        -0.9610429406166077,
+        0.27639976143836975,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -296.7980041503906,
+        12.12893009185791,
+        609.982666015625
+      ],
+      "Path": "Workspace.CommonTree_Dead_3_V5_011",
+      "Root": "Workspace.CommonTree_Dead_3_V5_011.CommonTree_Dead_3",
+      "Class": "Model",
+      "Pivot": [
+        -296.7980041503906,
+        7.12893009185791,
+        609.982666015625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -690.9483642578125,
+        12.12893009185791,
+        227.9166717529297
+      ],
+      "Path": "Workspace.Willow_Autumn_4_V5_038",
+      "Root": "Workspace.Willow_Autumn_4_V5_038.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -690.9483642578125,
+        8.856664657592773,
+        227.9166717529297,
+        0.2613885700702667,
+        0,
+        0.965234100818634,
+        0,
+        1,
+        0,
+        -0.9652341604232788,
+        0,
+        0.26138848066329956
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -114.00961303710938,
+        12.128938674926758,
+        765.9411010742188
+      ],
+      "Path": "Workspace.pine_tree_2_snow_V5_020",
+      "Root": "Workspace.pine_tree_2_snow_V5_020.pine_tree_2_snow.pine_tree_2_snow",
+      "Class": "Model",
+      "Pivot": [
+        -114.00961303710938,
+        9.128944396972656,
+        765.9411010742188,
+        1,
+        0,
+        0,
+        0,
+        1.0000028610229492,
+        0,
+        0,
+        0,
+        0.9999985694885254
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        152.34646606445312,
+        12.12893009185791,
+        610.9505615234375
+      ],
+      "Path": "Workspace.Cactus_5_V5_002",
+      "Root": "Workspace.Cactus_5_V5_002.Cactus_5",
+      "Class": "Model",
+      "Pivot": [
+        152.34646606445312,
+        7.829436779022217,
+        610.9505615234375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -45.05320739746094,
+        12.12894058227539,
+        788.8483276367188
+      ],
+      "Path": "Workspace.Willow_Dead_Snow_3_V5_030",
+      "Root": "Workspace.Willow_Dead_Snow_3_V5_030.Willow_Dead_Snow_3.Willow_Dead_Snow_3",
+      "Class": "Model",
+      "Pivot": [
+        -45.05320739746094,
+        9.128941535949707,
+        788.8483276367188,
+        0,
+        0,
+        -1,
+        0,
+        1.0000019073486328,
+        0,
+        0.999997615814209,
+        0,
+        0
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        107.22836303710938,
+        12.128946304321289,
+        365.3418884277344
+      ],
+      "Path": "Workspace.PalmTree_1_V5_033",
+      "Root": "Workspace.PalmTree_1_V5_033.PalmTree_1.PalmTree_1",
+      "Class": "Model",
+      "Pivot": [
+        107.22836303710938,
+        7.849998474121094,
+        365.3418884277344,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -674.9785766601562,
+        12.128931045532227,
+        740.7848510742188
+      ],
+      "Path": "Workspace.Willow_2_V5_010",
+      "Root": "Workspace.Willow_2_V5_010.Willow_2.Willow_2",
+      "Class": "Model",
+      "Pivot": [
+        -674.9785766601562,
+        8.55000114440918,
+        740.7848510742188,
+        0,
+        0,
+        0.9999971389770508,
+        0,
+        1,
+        0,
+        -0.9999971389770508,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -307.2276306152344,
+        12.12893009185791,
+        1.6136207580566406
+      ],
+      "Path": "Workspace.Tree_Oak_5_V5_003",
+      "Root": "Workspace.Tree_Oak_5_V5_003.Tree_Oak_5.Icosphere.063",
+      "Class": "Model",
+      "Pivot": [
+        -307.2276306152344,
+        7.3431243896484375,
+        1.6136207580566406,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -36.26313400268555,
+        12.128936767578125,
+        604.41259765625
+      ],
+      "Path": "Workspace.pine_tree_2_snow_V5_019",
+      "Root": "Workspace.pine_tree_2_snow_V5_019.pine_tree_2_snow.pine_tree_2_snow",
+      "Class": "Model",
+      "Pivot": [
+        -36.26313400268555,
+        9.128938674926758,
+        604.41259765625,
+        1,
+        0,
+        0,
+        0,
+        1.0000014305114746,
+        0,
+        0,
+        0,
+        0.9999971389770508
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        -726.0276489257812,
+        12.12893009185791,
+        -40.90175247192383
+      ],
+      "Path": "Workspace.Tree_Pine_6_V5_013",
+      "Root": "Workspace.Tree_Pine_6_V5_013.Tree_Pine_6.Cone.091",
+      "Class": "Model",
+      "Pivot": [
+        -726.0276489257812,
+        9.128925323486328,
+        -40.90175247192383,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Sky"
+    },
+    {
+      "Interaction": [
+        197.77076721191406,
+        12.12893009185791,
+        614.99462890625
+      ],
+      "Path": "Workspace.Cactus_3_V5_003",
+      "Root": "Workspace.Cactus_3_V5_003.Cactus_3",
+      "Class": "Model",
+      "Pivot": [
+        197.77076721191406,
+        7.829437255859375,
+        614.99462890625,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        100.87440490722656,
+        12.128931045532227,
+        203.92164611816406
+      ],
+      "Path": "Workspace.Tree_Pine_2_V5_016",
+      "Root": "Workspace.Tree_Pine_2_V5_016.Cone.080",
+      "Class": "Model",
+      "Pivot": [
+        100.87440490722656,
+        7.850001335144043,
+        203.92164611816406,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -595.2262573242188,
+        12.12893009185791,
+        216.00018310546875
+      ],
+      "Path": "Workspace.MagicalForestTree_021_AK_MagicTree",
+      "Root": "Workspace.MagicalForestTree_021_AK_MagicTree.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -595.2262573242188,
+        10.66090202331543,
+        216.00018310546875,
+        -0.7027111649513245,
+        0,
+        -0.7114752531051636,
+        0,
+        1,
+        0,
+        0.7114754319190979,
+        0,
+        -0.7027113437652588
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        267.41162109375,
+        12.128946304321289,
+        345.4418640136719
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_004",
+      "Root": "Workspace.tree_palmDetailedShort_V5_004.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        267.41162109375,
+        7.8289337158203125,
+        345.4418640136719,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -393.2382507324219,
+        12.128936767578125,
+        753.5274047851562
+      ],
+      "Path": "Workspace.CommonTree_Dead_4_V5_013",
+      "Root": "Workspace.CommonTree_Dead_4_V5_013.CommonTree_Dead_4",
+      "Class": "Model",
+      "Pivot": [
+        -393.2382507324219,
+        9.128937721252441,
+        753.5274047851562,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        153.2337646484375,
+        12.12893009185791,
+        720.9365844726562
+      ],
+      "Path": "Workspace.cactus_short_V5_012",
+      "Root": "Workspace.cactus_short_V5_012.cactus_short.cactus_short",
+      "Class": "Model",
+      "Pivot": [
+        153.2337646484375,
+        7.829435348510742,
+        720.9365844726562,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -718.6825561523438,
+        12.12893009185791,
+        216.4960174560547
+      ],
+      "Path": "Workspace.MagicalForestTree_025_AK_NimbusWillow",
+      "Root": "Workspace.MagicalForestTree_025_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -718.6825561523438,
+        0.6840267181396484,
+        216.4960174560547,
+        -0.1331472098827362,
+        -0.9910962581634521,
+        0,
+        0,
+        0,
+        -1,
+        0.9910962581634521,
+        -0.1331472247838974,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        96.51838684082031,
+        12.128931045532227,
+        231.91506958007812
+      ],
+      "Path": "Workspace.Tree_Oak_1_V5_006",
+      "Root": "Workspace.Tree_Oak_1_V5_006.Cube.079",
+      "Class": "Model",
+      "Pivot": [
+        96.51838684082031,
+        7.885681629180908,
+        231.91506958007812,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -443.2021484375,
+        12.12893009185791,
+        0.46742725372314453
+      ],
+      "Path": "Workspace.tree_oak_V5_002",
+      "Root": "Workspace.tree_oak_V5_002.tree_oak.tree_oak",
+      "Class": "Model",
+      "Pivot": [
+        -443.2021484375,
+        9.128927230834961,
+        0.46742725372314453,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        135.22073364257812,
+        12.128931045532227,
+        118.59646606445312
+      ],
+      "Path": "Workspace.Willow_5_V5_033",
+      "Root": "Workspace.Willow_5_V5_033.Willow_5.Willow_5",
+      "Class": "Model",
+      "Pivot": [
+        135.22073364257812,
+        7.8289337158203125,
+        118.59646606445312,
+        -0.7071053981781006,
+        0,
+        -0.7071053981781006,
+        0,
+        1,
+        0,
+        0.7071053981781006,
+        0,
+        -0.7071053981781006
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -134.7056121826172,
+        12.128931045532227,
+        -175.09130859375
+      ],
+      "Path": "Workspace.Tree4_V5_016",
+      "Root": "Workspace.Tree4_V5_016.leaves.004.Mesh_1.004",
+      "Class": "Model",
+      "Pivot": [
+        -134.7056121826172,
+        8.300003051757812,
+        -175.09130859375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Mythical"
+    },
+    {
+      "Interaction": [
+        209.2633514404297,
+        12.128931045532227,
+        264.05889892578125
+      ],
+      "Path": "Workspace.tree_pineRoundA_V5_031",
+      "Root": "Workspace.tree_pineRoundA_V5_031.tree_pineRoundA.tree_pineRoundA",
+      "Class": "Model",
+      "Pivot": [
+        209.2633514404297,
+        7.850002288818359,
+        264.05889892578125,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -710.8682861328125,
+        12.12893009185791,
+        212.0062713623047
+      ],
+      "Path": "Workspace.Willow_Autumn_4_V5_041",
+      "Root": "Workspace.Willow_Autumn_4_V5_041.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -710.8682861328125,
+        8.856664657592773,
+        212.0062713623047,
+        0.9860352277755737,
+        0,
+        -0.16653892397880554,
+        0,
+        1,
+        0,
+        0.166538804769516,
+        0,
+        0.9860353469848633
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        234.73989868164062,
+        12.128931045532227,
+        99.25578308105469
+      ],
+      "Path": "Workspace.Tree_Oak_2_V5_008",
+      "Root": "Workspace.Tree_Oak_2_V5_008.Icosphere.083",
+      "Class": "Model",
+      "Pivot": [
+        234.73989868164062,
+        8.128955841064453,
+        99.25578308105469,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        271,
+        12.128946304321289,
+        418.4999694824219
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_003",
+      "Root": "Workspace.tree_palmDetailedShort_V5_003.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        271,
+        7.849998474121094,
+        418.4999694824219,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -659.796875,
+        12.12893009185791,
+        222.768798828125
+      ],
+      "Path": "Workspace.MagicalForestTree_002_AK_NimbusWillow",
+      "Root": "Workspace.MagicalForestTree_002_AK_NimbusWillow.RootPart",
+      "Class": "Model",
+      "Pivot": [
+        -659.796875,
+        -0.44216346740722656,
+        222.768798828125,
+        -0.6990838646888733,
+        -0.7150397896766663,
+        0,
+        0,
+        0,
+        -1,
+        0.7150399088859558,
+        -0.6990837454795837,
+        0
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        -431.63970947265625,
+        12.12893009185791,
+        719.417236328125
+      ],
+      "Path": "Workspace.CommonTree_Dead_3_V5_005",
+      "Root": "Workspace.CommonTree_Dead_3_V5_005.CommonTree_Dead_3",
+      "Class": "Model",
+      "Pivot": [
+        -431.63970947265625,
+        8.128929138183594,
+        719.417236328125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -680.5001220703125,
+        12.128931045532227,
+        695.8399658203125
+      ],
+      "Path": "Workspace.tree_palmBend_V5_026",
+      "Root": "Workspace.tree_palmBend_V5_026.tree_palmBend.tree_palmBend",
+      "Class": "Model",
+      "Pivot": [
+        -680.5001220703125,
+        8.549999237060547,
+        695.8399658203125,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -412.6457214355469,
+        12.12893009185791,
+        620.0436401367188
+      ],
+      "Path": "Workspace.common_tree_dead_1_V5_018",
+      "Root": "Workspace.common_tree_dead_1_V5_018.common_tree_dead_1.common_tree_1_snow_trunk",
+      "Class": "Model",
+      "Pivot": [
+        -412.6457214355469,
+        7.12893009185791,
+        620.0436401367188,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        247.89060974121094,
+        12.128931045532227,
+        110.87439727783203
+      ],
+      "Path": "Workspace.Tree_Oak_1_V5_009",
+      "Root": "Workspace.Tree_Oak_1_V5_009.Icosphere.082",
+      "Class": "Model",
+      "Pivot": [
+        247.89060974121094,
+        8.128955841064453,
+        110.87439727783203,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        124.916748046875,
+        12.128931045532227,
+        195.47271728515625
+      ],
+      "Path": "Workspace.Tree_Oak_1_V5_014",
+      "Root": "Workspace.Tree_Oak_1_V5_014.Cube.079",
+      "Class": "Model",
+      "Pivot": [
+        124.916748046875,
+        7.850002288818359,
+        195.47271728515625,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -342.99951171875,
+        12.12893295288086,
+        -37.08916091918945
+      ],
+      "Path": "Workspace.tree_oak_V5_019",
+      "Root": "Workspace.tree_oak_V5_019.tree_oak.tree_oak",
+      "Class": "Model",
+      "Pivot": [
+        -342.99951171875,
+        9.128925323486328,
+        -37.08916091918945,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -400.40740966796875,
+        12.128936767578125,
+        -48.44005584716797
+      ],
+      "Path": "Workspace.palm_tree_1_V5_015",
+      "Root": "Workspace.palm_tree_1_V5_015.palm_tree_1_coconuts",
+      "Class": "Model",
+      "Pivot": [
+        -400.40740966796875,
+        9.128937721252441,
+        -48.44005584716797,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        250.0342254638672,
+        12.128931045532227,
+        243.00003051757812
+      ],
+      "Path": "Workspace.tree_pineRoundA_V5_013",
+      "Root": "Workspace.tree_pineRoundA_V5_013.tree_pineRoundA.tree_pineRoundA",
+      "Class": "Model",
+      "Pivot": [
+        250.0342254638672,
+        7.849998474121094,
+        243.00003051757812,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        157.53744506835938,
+        12.128946304321289,
+        432.03448486328125
+      ],
+      "Path": "Workspace.PalmTree_1_V5_011",
+      "Root": "Workspace.PalmTree_1_V5_011.PalmTree_1.PalmTree_1",
+      "Class": "Model",
+      "Pivot": [
+        157.53744506835938,
+        8.128948211669922,
+        432.03448486328125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        155.99993896484375,
+        12.128946304321289,
+        481
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_024",
+      "Root": "Workspace.tree_palmDetailedShort_V5_024.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        155.99993896484375,
+        8.128948211669922,
+        481,
+        0,
+        0,
+        -1.0000004768371582,
+        0,
+        1,
+        0,
+        1.0000004768371582,
+        0,
+        0
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -427.34515380859375,
+        12.12893009185791,
+        702.4556884765625
+      ],
+      "Path": "Workspace.CommonTree_Dead_4_V5_006",
+      "Root": "Workspace.CommonTree_Dead_4_V5_006.CommonTree_Dead_4",
+      "Class": "Model",
+      "Pivot": [
+        -427.34515380859375,
+        8.12893009185791,
+        702.4556884765625,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -689.677001953125,
+        12.12893009185791,
+        229.09568786621094
+      ],
+      "Path": "Workspace.Willow_Autumn_4_V5_039",
+      "Root": "Workspace.Willow_Autumn_4_V5_039.Willow_Autumn_4.Willow_Autumn_4",
+      "Class": "Model",
+      "Pivot": [
+        -689.677001953125,
+        8.856657028198242,
+        229.09568786621094,
+        0.4014680087566376,
+        0,
+        0.915873646736145,
+        0,
+        1,
+        0,
+        -0.915873646736145,
+        0,
+        0.4014680087566376
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        90.07987976074219,
+        12.128931045532227,
+        231.79220581054688
+      ],
+      "Path": "Workspace.Tree_Oak_2_V5_001",
+      "Root": "Workspace.Tree_Oak_2_V5_001.Cube.080",
+      "Class": "Model",
+      "Pivot": [
+        90.07987976074219,
+        7.849998474121094,
+        231.79220581054688,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        -743.0113525390625,
+        12.128931045532227,
+        764.9298706054688
+      ],
+      "Path": "Workspace.Willow_2_V5_020",
+      "Root": "Workspace.Willow_2_V5_020.Willow_2.Willow_2",
+      "Class": "Model",
+      "Pivot": [
+        -743.0113525390625,
+        8.549997329711914,
+        764.9298706054688,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -664.2518310546875,
+        23.31513023376465,
+        470.3314514160156
+      ],
+      "Path": "Workspace.Tree_Cedar_2_V5_004",
+      "Root": "Workspace.Tree_Cedar_2_V5_004.Tree_Cedar_2.Cube.085",
+      "Class": "Model",
+      "Pivot": [
+        -664.2518310546875,
+        20.67591094970703,
+        470.3314514160156,
+        0.9696100354194641,
+        0.03620140999555588,
+        -0.2419624775648117,
+        -0.04004659876227379,
+        0.9991373419761658,
+        -0.010990973562002182,
+        0.24135585129261017,
+        0.020346732810139656,
+        0.9702233672142029
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        168.18722534179688,
+        12.128931045532227,
+        -168.65234375
+      ],
+      "Path": "Workspace.BirchTree_4_V5_022",
+      "Root": "Workspace.BirchTree_4_V5_022.BirchTree_4.BirchTree_4",
+      "Class": "Model",
+      "Pivot": [
+        168.18722534179688,
+        9.128934860229492,
+        -168.65234375,
+        0.7071067094802856,
+        0,
+        0.7071067094802856,
+        0,
+        1,
+        0,
+        -0.7071067094802856,
+        0,
+        0.7071067094802856
+      ],
+      "Biome": "Meadow"
+    },
+    {
+      "Interaction": [
+        -349.9479064941406,
+        12.12893009185791,
+        618.2677001953125
+      ],
+      "Path": "Workspace.CommonTree_Dead_5_V5_015",
+      "Root": "Workspace.CommonTree_Dead_5_V5_015.CommonTree_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        -349.9479064941406,
+        7.128927230834961,
+        618.2677001953125,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        174.04205322265625,
+        12.12893009185791,
+        630.4072875976562
+      ],
+      "Path": "Workspace.CactusFlowers_2_V5_016",
+      "Root": "Workspace.CactusFlowers_2_V5_016.CactusFlowers_2.CactusFlowers_2",
+      "Class": "Model",
+      "Pivot": [
+        174.04205322265625,
+        7.829435348510742,
+        630.4072875976562,
+        0,
+        0,
+        0.9999990463256836,
+        0,
+        1,
+        0,
+        -0.9999990463256836,
+        0,
+        0
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        89.15629577636719,
+        12.128946304321289,
+        503.0581359863281
+      ],
+      "Path": "Workspace.tree_palmDetailedShort_V5_015",
+      "Root": "Workspace.tree_palmDetailedShort_V5_015.tree_palmDetailedShort.tree_palmDetailedShort",
+      "Class": "Model",
+      "Pivot": [
+        89.15629577636719,
+        7.850002288818359,
+        503.0581359863281,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        262.4215087890625,
+        12.12893009185791,
+        662.9210815429688
+      ],
+      "Path": "Workspace.Cactus_3_V5_009",
+      "Root": "Workspace.Cactus_3_V5_009.Cactus_3",
+      "Class": "Model",
+      "Pivot": [
+        262.4215087890625,
+        7.829437255859375,
+        662.9210815429688,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -361.6785583496094,
+        12.12893009185791,
+        -44.60395812988281
+      ],
+      "Path": "Workspace.Tree_Oak_5_V5_012",
+      "Root": "Workspace.Tree_Oak_5_V5_012.Tree_Oak_5.Icosphere.063",
+      "Class": "Model",
+      "Pivot": [
+        -361.6785583496094,
+        9.12894058227539,
+        -44.60395812988281,
+        0,
+        0,
+        0.9999997615814209,
+        0,
+        1,
+        0,
+        -0.9999997615814209,
+        0,
+        0
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        84.44295501708984,
+        12.128946304321289,
+        481.9829406738281
+      ],
+      "Path": "Workspace.tree_palmTall_V5_037",
+      "Root": "Workspace.tree_palmTall_V5_037.tree_palmTall.tree_palmTall",
+      "Class": "Model",
+      "Pivot": [
+        84.44295501708984,
+        7.82893180847168,
+        481.9829406738281,
+        -0.9999995231628418,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.9999995231628418
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -644.2136840820312,
+        16.434364318847656,
+        488.0967712402344
+      ],
+      "Path": "Workspace.Tree_Bare_5_V5_023",
+      "Root": "Workspace.Tree_Bare_5_V5_023.Tree_Bare_5.Cube.083",
+      "Class": "Model",
+      "Pivot": [
+        -644.2136840820312,
+        13.434365272521973,
+        488.0967712402344,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "Biome": "AncientRuins"
+    },
+    {
+      "Interaction": [
+        -704.8521118164062,
+        12.128931045532227,
+        718.072998046875
+      ],
+      "Path": "Workspace.tree_palmShort_V5_023",
+      "Root": "Workspace.tree_palmShort_V5_023.tree_palmShort.tree_palmShort",
+      "Class": "Model",
+      "Pivot": [
+        -704.8521118164062,
+        8.550000190734863,
+        718.072998046875,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Ocean"
+    },
+    {
+      "Interaction": [
+        -382.00006103515625,
+        12.12893295288086,
+        -147.00054931640625
+      ],
+      "Path": "Workspace.tree_oak_V5_037",
+      "Root": "Workspace.tree_oak_V5_037.tree_oak.tree_oak",
+      "Class": "Model",
+      "Pivot": [
+        -382.00006103515625,
+        9.12893295288086,
+        -147.00054931640625,
+        -0.9999997615814209,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.9999997615814209
+      ],
+      "Biome": "Prehistoric"
+    },
+    {
+      "Interaction": [
+        -678.0350341796875,
+        12.12893009185791,
+        202.41424560546875
+      ],
+      "Path": "Workspace.MagicalForestTree_023_AK_OldMagicalTree_1",
+      "Root": "Workspace.MagicalForestTree_023_AK_OldMagicalTree_1.tree.0392",
+      "Class": "Model",
+      "Pivot": [
+        -678.0350341796875,
+        8.856657028198242,
+        202.41424560546875,
+        -0.9917241334915161,
+        0,
+        0.12838968634605408,
+        0,
+        1,
+        0,
+        -0.12838974595069885,
+        0,
+        -0.9917242527008057
+      ],
+      "Biome": "MagicalForest"
+    },
+    {
+      "Interaction": [
+        107.95972442626953,
+        12.12893009185791,
+        686.14794921875
+      ],
+      "Path": "Workspace.Cactus_1_V5_008",
+      "Root": "Workspace.Cactus_1_V5_008.Cactus_1",
+      "Class": "Model",
+      "Pivot": [
+        107.95972442626953,
+        7.829444885253906,
+        686.14794921875,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        181.81619262695312,
+        12.128931045532227,
+        276.99176025390625
+      ],
+      "Path": "Workspace.Tree_Oak_2_V5_003",
+      "Root": "Workspace.Tree_Oak_2_V5_003.Icosphere.083",
+      "Class": "Model",
+      "Pivot": [
+        181.81619262695312,
+        7.850002288818359,
+        276.99176025390625,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        272.1224365234375,
+        12.128931045532227,
+        274.0094909667969
+      ],
+      "Path": "Workspace.Tree_Oak_2_V5_024",
+      "Root": "Workspace.Tree_Oak_2_V5_024.Icosphere.083",
+      "Class": "Model",
+      "Pivot": [
+        272.1224365234375,
+        8.128957748413086,
+        274.0094909667969,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "Biome": "Forest"
+    },
+    {
+      "Interaction": [
+        96.55155181884766,
+        12.128946304321289,
+        457.33685302734375
+      ],
+      "Path": "Workspace.PalmTree_1_V5_029",
+      "Root": "Workspace.PalmTree_1_V5_029.PalmTree_1.PalmTree_1",
+      "Class": "Model",
+      "Pivot": [
+        96.55155181884766,
+        7.850002288818359,
+        457.33685302734375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Jungle"
+    },
+    {
+      "Interaction": [
+        -408.607666015625,
+        12.12893295288086,
+        687.0914306640625
+      ],
+      "Path": "Workspace.Willow_Dead_5_V5_019",
+      "Root": "Workspace.Willow_Dead_5_V5_019.Willow_Dead_5.Willow_Dead_5",
+      "Class": "Model",
+      "Pivot": [
+        -408.607666015625,
+        9.128926277160645,
+        687.0914306640625,
+        0.7071067690849304,
+        0,
+        0.7071067690849304,
+        0,
+        1,
+        0,
+        -0.7071067690849304,
+        0,
+        0.7071067690849304
+      ],
+      "Biome": "Volcano"
+    },
+    {
+      "Interaction": [
+        -17.429763793945312,
+        12.128942489624023,
+        607.654296875
+      ],
+      "Path": "Workspace.pine_tree_1_snow_V5_005",
+      "Root": "Workspace.pine_tree_1_snow_V5_005.pine_tree_1_snow.pine_tree_1_snow",
+      "Class": "Model",
+      "Pivot": [
+        -17.429763793945312,
+        9.128942489624023,
+        607.654296875,
+        1,
+        0,
+        0,
+        0,
+        1.0000028610229492,
+        0,
+        0,
+        0,
+        0.9999985694885254
+      ],
+      "Biome": "Snow"
+    },
+    {
+      "Interaction": [
+        120.30030822753906,
+        12.12893009185791,
+        737.3675537109375
+      ],
+      "Path": "Workspace.Cactus_1_V5_006",
+      "Root": "Workspace.Cactus_1_V5_006.Cactus_1",
+      "Class": "Model",
+      "Pivot": [
+        120.30030822753906,
+        7.829437255859375,
+        737.3675537109375,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Desert"
+    },
+    {
+      "Interaction": [
+        -281.87835693359375,
+        12.12893009185791,
+        -154.1421356201172
+      ],
+      "Path": "Workspace.tree_oak_V5_033",
+      "Root": "Workspace.tree_oak_V5_033.tree_oak.tree_oak",
+      "Class": "Model",
+      "Pivot": [
+        -281.87835693359375,
+        9.128931999206543,
+        -154.1421356201172,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Biome": "Prehistoric"
+    }
+  ],
+  "Counts": {
+    "Jungle": 35,
+    "AncientRuins": 22,
+    "Mythical": 4,
+    "Ocean": 27,
+    "Desert": 19,
+    "Forest": 29,
+    "Sky": 19,
+    "Meadow": 28,
+    "MagicalForest": 55,
+    "Volcano": 26,
+    "Prehistoric": 27,
+    "Snow": 31
+  },
+  "RemovedGenerated": 0
+}

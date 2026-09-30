@@ -1,0 +1,7 @@
+Final host check: macOS CGSession ScreenLocked = true; RobloxStudio AX window count = 0.
+The session was not unlocked or bypassed.
+Last successful live test: 2026-09-18T02:02:03Z, 83 server assertions / 6 client assertions, zero failures. Original saved ProfileStore object restored.
+Stop action completed; subsequent EDIT-mode temporary test install was rejected because window 1 was unavailable.
+Two prior temporary single-player audit scripts may remain in the EDIT place: ServerScriptService.AK_GameplayReleaseTest and StarterPlayer.StarterPlayerScripts.AK_GameplayClientTest.
+They are not mapped into the Rojo build. Remove using cleanup-temporary-tests.studio.lua before further acceptance testing or publishing.
+New multiplayer test sources are prepared and compile; they were not installed or executed. Full authored-place recovery save remains pending.

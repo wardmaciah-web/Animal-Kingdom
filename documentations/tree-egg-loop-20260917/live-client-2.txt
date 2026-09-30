@@ -1,0 +1,13 @@
+2026-09-18T03:31:40.203Z,12.203638,6611000,6,Error [FLog::CreatorError] Error: [Roblox][ControlsEmulator.ControlsEmulator.Src.Util.MockableProxyPluginComponents] ControlsEmulator.ControlsEmulator.Src.Util.MockableProxyPluginComponents:6: Plugin component not supported.
+2026-09-18T03:31:40.207Z,12.207480,6611000,6,Error [FLog::CreatorError] Error: [Roblox][ControlsEmulator.ControlsEmulator.Src.Components.DeviceBlueprint] Requested module experienced an error while loading
+2026-09-18T03:31:40.207Z,12.207726,6611000,6,Error [FLog::CreatorError] Error: [Roblox][ControlsEmulator.ControlsEmulator.Src.MainPlugin] Requested module experienced an error while loading
+2026-09-18T03:31:40.208Z,12.208077,6611000,6,Error [FLog::CreatorError] Error: [Roblox][ControlsEmulator.ControlsEmulator.Bin.Common.setupMain] Requested module experienced an error while loading
+2026-09-18T03:31:47.282Z,19.282757,9d3e000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT_DONE player=Player2 hatches=0 assertions=0 failures=0
+2026-09-18T03:31:48.524Z,20.524509,6611000,6,Error [FLog::CreatorError] Error: Players.Player2.PlayerScripts.ChatScript:116: Error calling SetCore CoreGuiChatConnections: SetCore: CoreGuiChatConnections has not been registered by the CoreScripts
+2026-09-18T03:33:36.606Z,128.606491,7014000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS actual tree result shows one biome egg/pet
+2026-09-18T03:33:36.607Z,128.607910,7014000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS actual tree result shows one biome egg/pet
+2026-09-18T03:33:36.975Z,128.975479,7014000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS immediate hatch view appears without world egg
+2026-09-18T03:33:36.975Z,128.975586,7014000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS immediate hatch view appears without world egg
+2026-09-18T03:33:39.021Z,131.021713,6611000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS pet name/rarity reveal rendered
+2026-09-18T03:33:39.021Z,131.021835,6611000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT PASS pet name/rarity reveal rendered
+2026-09-18T03:33:40.825Z,132.825241,6611000,6,Info [FLog::CreatorOutput] AK_TREE_CLIENT_DONE player=Player2 hatches=1 assertions=3 failures=0

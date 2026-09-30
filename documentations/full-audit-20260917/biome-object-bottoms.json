@@ -1,0 +1,5656 @@
+{
+  "Sky": [
+    {
+      "path": "Workspace.tree_fat_V5_019",
+      "position": [
+        -575.475830078125,
+        47.56367874145508,
+        -164.52386474609375
+      ],
+      "bottom": 18.109420624608106,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_3_V5_001",
+      "position": [
+        -706.4263916015625,
+        25.530338287353516,
+        -27.10821533203125
+      ],
+      "bottom": 10.849997997283936,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_6_V5_009",
+      "position": [
+        -587.8522338867188,
+        33.53912353515625,
+        -6.044177055358887
+      ],
+      "bottom": 10.850000858306885,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_5_V5_008",
+      "position": [
+        -559.794921875,
+        36.20390701293945,
+        -42.4832763671875
+      ],
+      "bottom": 10.850000381469727,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Snow_5_V5_012",
+      "position": [
+        -729.9678344726562,
+        61.371944427490234,
+        -132.71971130371094
+      ],
+      "bottom": 10.84999907540805,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_5_V5_003",
+      "position": [
+        -705.3338623046875,
+        24.578107833862305,
+        -3.6239166259765625
+      ],
+      "bottom": 10.850000619888306,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Sky_Decor_rock_smallFlatB_31",
+      "position": [
+        -704.191162109375,
+        13.735673904418945,
+        -148.68975830078125
+      ],
+      "bottom": 10.850000858306885,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.CommonTree_Snow_5_V5_014",
+      "position": [
+        -599.33154296875,
+        73.77008056640625,
+        -187.9857177734375
+      ],
+      "bottom": 10.849998474121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.pine_tree_3_snow_V5_007",
+      "position": [
+        -673.07666015625,
+        47.718414306640625,
+        -174.2109832763672
+      ],
+      "bottom": 10.849380493164062,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_thin_V5_022",
+      "position": [
+        -701.867431640625,
+        42.80353546142578,
+        -90.00489807128906
+      ],
+      "bottom": 10.849996566772461,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_thin_V5_021",
+      "position": [
+        -572.9005126953125,
+        52.40178680419922,
+        -69.36894989013672
+      ],
+      "bottom": 10.849998474121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Sky_Decor_rock_smallFlatB_47",
+      "position": [
+        -565.7527465820312,
+        14.480069160461426,
+        -149.64413452148438
+      ],
+      "bottom": 10.850000143051147,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Pine_3_V5_004",
+      "position": [
+        -591.7838134765625,
+        31.932125091552734,
+        -28.626628875732422
+      ],
+      "bottom": 10.849997758865356,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Sky_Decor_rock_smallFlatB_7",
+      "position": [
+        -714.8945922851562,
+        14.552837371826172,
+        -177.1409912109375
+      ],
+      "bottom": 10.84999942779541,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_cone_V5_017",
+      "position": [
+        -614.4027709960938,
+        46.00004196166992,
+        -156.00003051757812
+      ],
+      "bottom": 10.849571228027344,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.pine_tree_3_snow_V5_010",
+      "position": [
+        -685.0585327148438,
+        38.96974182128906,
+        -147.35598754882812
+      ],
+      "bottom": 10.849525451660156,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_5_V5_005",
+      "position": [
+        -564.365966796875,
+        49.102203369140625,
+        -15.097578048706055
+      ],
+      "bottom": 10.849998950958252,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_6_V5_015",
+      "position": [
+        -726.5945434570312,
+        54.034034729003906,
+        -13.980110168457031
+      ],
+      "bottom": 10.849998950958252,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.pine_tree_3_snow_V5_006",
+      "position": [
+        -654.0198974609375,
+        34.73881530761719,
+        -160.46629333496094
+      ],
+      "bottom": 10.849603652954102,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_fat_V5_020",
+      "position": [
+        -556.5270385742188,
+        38.76019287109375,
+        -142.4922332763672
+      ],
+      "bottom": 23.10977736717041,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_cone_V5_018",
+      "position": [
+        -569.3519897460938,
+        26.50027847290039,
+        -127.5281982421875
+      ],
+      "bottom": 10.85005281272629,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_6_V5_013",
+      "position": [
+        -726.0276489257812,
+        35.625118255615234,
+        -40.90175247192383
+      ],
+      "bottom": 10.849997997283936,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Sky_Decor_rock_smallFlatB_23",
+      "position": [
+        -594.5762939453125,
+        12.90998363494873,
+        -164.62733459472656
+      ],
+      "bottom": 10.850000143051147,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Sky_Decor_rock_smallFlatB_39",
+      "position": [
+        -726.3265991210938,
+        14.45769214630127,
+        -146.68606567382812
+      ],
+      "bottom": 10.850000143051147,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Sky_Decor_rock_smallFlatB_15",
+      "position": [
+        -561.081787109375,
+        12.93852710723877,
+        -181.62124633789062
+      ],
+      "bottom": 10.85000205039978,
+      "kind": "decor"
+    }
+  ],
+  "MagicalForest": [
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_72",
+      "position": [
+        -603.226806640625,
+        12.492935180664062,
+        208.09091186523438
+      ],
+      "bottom": 10.264472484588623,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_3_39",
+      "position": [
+        -677.7752685546875,
+        14.896614074707031,
+        206.92591857910156
+      ],
+      "bottom": 10.2644681930542,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_027_AK_MagicTree",
+      "position": [
+        -598.5907592773438,
+        28.927749633789062,
+        213.34226989746094
+      ],
+      "bottom": 10.26446533203125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redTall_46",
+      "position": [
+        -600.9615478515625,
+        12.242027282714844,
+        241.18988037109375
+      ],
+      "bottom": 10.264472246170044,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_16",
+      "position": [
+        -611.8975830078125,
+        11.70284366607666,
+        223.36585998535156
+      ],
+      "bottom": 10.264467716217041,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_021_AK_MagicTree",
+      "position": [
+        -592.9916381835938,
+        27.55181884765625,
+        211.70411682128906
+      ],
+      "bottom": 10.264469146728516,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redGroup_1",
+      "position": [
+        -633.2197265625,
+        11.648277282714844,
+        215.25677490234375
+      ],
+      "bottom": 10.264474153518677,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_017_AK_MagicTree",
+      "position": [
+        -643.3026733398438,
+        25.089752197265625,
+        207.9829559326172
+      ],
+      "bottom": 10.264469146728516,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_024_AK_MagicTree",
+      "position": [
+        -644.5782470703125,
+        23.26879119873047,
+        209.7505340576172
+      ],
+      "bottom": 10.264472961425781,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_2_93",
+      "position": [
+        -711.746826171875,
+        11.76911735534668,
+        188.9215087890625
+      ],
+      "bottom": 10.264469146728516,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_3_53",
+      "position": [
+        -577.4114379882812,
+        17.220375061035156,
+        211.48687744140625
+      ],
+      "bottom": 10.26447057723999,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redTall_60",
+      "position": [
+        -672.655517578125,
+        11.642486572265625,
+        190.1539306640625
+      ],
+      "bottom": 10.26447331905365,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_012_AK_MagicTree",
+      "position": [
+        -592.8547973632812,
+        27.61789321899414,
+        219.3926239013672
+      ],
+      "bottom": 10.264469146728516,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_crystal_double_purple_type2_27",
+      "position": [
+        -589.916259765625,
+        15.530975341796875,
+        218.38400268554688
+      ],
+      "bottom": 10.264469146728516,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_003_AK_OldMagicalTree_1",
+      "position": [
+        -651.9263916015625,
+        26.17232894897461,
+        259.8939514160156
+      ],
+      "bottom": 10.264470100402832,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_014_AK_MagicTree",
+      "position": [
+        -706.6919555664062,
+        31.301069259643555,
+        186.1575469970703
+      ],
+      "bottom": 10.26446533203125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redGroup_85",
+      "position": [
+        -717.7327270507812,
+        11.870513916015625,
+        193.02105712890625
+      ],
+      "bottom": 10.264468550682068,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_005_AK_MagicTree",
+      "position": [
+        -635.2860107421875,
+        32.78269958496094,
+        226.99549865722656
+      ],
+      "bottom": 10.264471054077148,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_59",
+      "position": [
+        -635.2871704101562,
+        11.751014709472656,
+        231.6743621826172
+      ],
+      "bottom": 10.26447331905365,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_023_AK_OldMagicalTree_1",
+      "position": [
+        -678.0350341796875,
+        36.45819854736328,
+        202.41427612304688
+      ],
+      "bottom": 10.264469146728516,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_004_AK_OldMagicalTree_1",
+      "position": [
+        -690.730712890625,
+        29.58160400390625,
+        159.1787567138672
+      ],
+      "bottom": 10.26446533203125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_007_AK_LowpolyWillow",
+      "position": [
+        -583.8895874023438,
+        29.327865600585938,
+        222.40155029296875
+      ],
+      "bottom": 17.244500160217285,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redTall_88",
+      "position": [
+        -685.1820678710938,
+        11.34637451171875,
+        235.96502685546875
+      ],
+      "bottom": 10.264469623565674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_018_AK_NimbusWillow",
+      "position": [
+        -678.9923706054688,
+        31.928600311279297,
+        166.05894470214844
+      ],
+      "bottom": -1.4257335662841797,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_100",
+      "position": [
+        -563.4616088867188,
+        11.764092445373535,
+        207.7762451171875
+      ],
+      "bottom": 10.264472723007202,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_025_AK_NimbusWillow",
+      "position": [
+        -718.0396728515625,
+        25.409875869750977,
+        216.53192138671875
+      ],
+      "bottom": 2.091838836669922,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_3",
+      "position": [
+        -686.7916259765625,
+        12.243385314941406,
+        156.80169677734375
+      ],
+      "bottom": 10.264469623565674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_crystal_double_purple_type2_13",
+      "position": [
+        -698.810546875,
+        14.945465087890625,
+        217.51116943359375
+      ],
+      "bottom": 10.264471530914307,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_44",
+      "position": [
+        -678.693359375,
+        12.259681701660156,
+        220.39828491210938
+      ],
+      "bottom": 10.26446783542633,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_crystal_double_purple_type2_69",
+      "position": [
+        -675.0313720703125,
+        15.076102256774902,
+        214.61181640625
+      ],
+      "bottom": 10.26447343826294,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_3_81",
+      "position": [
+        -679.3768920898438,
+        12.51416015625,
+        165.6890411376953
+      ],
+      "bottom": 10.264471292495728,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_001_AK_NimbusWillow",
+      "position": [
+        -665.9308471679688,
+        42.15917205810547,
+        247.4903106689453
+      ],
+      "bottom": 1.4723854064941406,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_3_67",
+      "position": [
+        -593.4982299804688,
+        16.912967681884766,
+        124.23313903808594
+      ],
+      "bottom": 10.536736488342285,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_015_AK_LowpolyWillow",
+      "position": [
+        -739.4659423828125,
+        24.92609405517578,
+        247.44482421875
+      ],
+      "bottom": 10.519943237304688,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Autumn_4_V5_039",
+      "position": [
+        -689.6769409179688,
+        27.775115966796875,
+        229.09576416015625
+      ],
+      "bottom": 10.264471054077148,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_crystal_double_purple_type2_97",
+      "position": [
+        -681.0201416015625,
+        13.909538269042969,
+        210.05450439453125
+      ],
+      "bottom": 10.264471292495728,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_45",
+      "position": [
+        -600.430908203125,
+        11.66375732421875,
+        229.78106689453125
+      ],
+      "bottom": 10.264467239379883,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_2_79",
+      "position": [
+        -573.361083984375,
+        12.671106338500977,
+        222.21990966796875
+      ],
+      "bottom": 10.26447319984436,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_31",
+      "position": [
+        -677.771484375,
+        12.047706604003906,
+        169.2451934814453
+      ],
+      "bottom": 10.264472484588623,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_009_AK_OldMagicalTree_2",
+      "position": [
+        -585.4295043945312,
+        26.56509017944336,
+        212.82113647460938
+      ],
+      "bottom": 10.26446533203125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redTall_18",
+      "position": [
+        -686.195068359375,
+        11.091452598571777,
+        156.6724853515625
+      ],
+      "bottom": 10.264465391635895,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_26",
+      "position": [
+        -642.5497436523438,
+        15.195243835449219,
+        215.11683654785156
+      ],
+      "bottom": 10.264468669891357,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_010_AK_NimbusWillow",
+      "position": [
+        -681.2985229492188,
+        28.437313079833984,
+        227.74630737304688
+      ],
+      "bottom": 0.45851898193359375,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_crystal_double_purple_type2_83",
+      "position": [
+        -583.8464965820312,
+        14.672401428222656,
+        234.82470703125
+      ],
+      "bottom": 10.264469623565674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_3_52",
+      "position": [
+        -692.3871459960938,
+        11.011519432067871,
+        152.92822265625
+      ],
+      "bottom": 10.264466524124146,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_2_9",
+      "position": [
+        -605.150634765625,
+        11.225160598754883,
+        203.2269287109375
+      ],
+      "bottom": 10.264465868473053,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_12",
+      "position": [
+        -595.6640014648438,
+        12.91717529296875,
+        197.5606231689453
+      ],
+      "bottom": 10.264467239379883,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_82",
+      "position": [
+        -561.2509765625,
+        12.925873756408691,
+        249.66378784179688
+      ],
+      "bottom": 10.536738872528076,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_82",
+      "position": [
+        -614.497802734375,
+        16.31300926208496,
+        248.79913330078125
+      ],
+      "bottom": 10.53673791885376,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_82",
+      "position": [
+        -581.9717407226562,
+        12.925872802734375,
+        93.14525604248047
+      ],
+      "bottom": 10.53673791885376,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_011_AK_NimbusWillow",
+      "position": [
+        -598.050537109375,
+        38.0431022644043,
+        207.1700439453125
+      ],
+      "bottom": 9.131446838378906,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_3_66",
+      "position": [
+        -686.6777954101562,
+        11.181480407714844,
+        183.47735595703125
+      ],
+      "bottom": 10.264466881752014,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_2_23",
+      "position": [
+        -681.079833984375,
+        12.596355438232422,
+        171.28753662109375
+      ],
+      "bottom": 10.2644681930542,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_73",
+      "position": [
+        -596.58837890625,
+        11.078315734863281,
+        255.5554962158203
+      ],
+      "bottom": 10.264468491077423,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_68",
+      "position": [
+        -678.9154052734375,
+        13.441291809082031,
+        202.16696166992188
+      ],
+      "bottom": 10.264472484588623,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_019_AK_OldMagicalTree_1",
+      "position": [
+        -720.4794921875,
+        34.798519134521484,
+        160.66981506347656
+      ],
+      "bottom": 10.26447868347168,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_86",
+      "position": [
+        -616.5665283203125,
+        12.065667152404785,
+        217.3145751953125
+      ],
+      "bottom": 10.264474630355835,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redGroup_71",
+      "position": [
+        -602.6175537109375,
+        11.308074951171875,
+        226.26406860351562
+      ],
+      "bottom": 10.26446783542633,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_3_25",
+      "position": [
+        -652.0725708007812,
+        15.721649169921875,
+        246.62298583984375
+      ],
+      "bottom": 10.536738395690918,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_2",
+      "position": [
+        -657.5663452148438,
+        12.318527221679688,
+        222.86279296875
+      ],
+      "bottom": 10.264471054077148,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_2_51",
+      "position": [
+        -587.6537475585938,
+        11.723258018493652,
+        225.11053466796875
+      ],
+      "bottom": 10.264470219612122,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_2_37",
+      "position": [
+        -653.9456176757812,
+        12.37960147857666,
+        222.46798706054688
+      ],
+      "bottom": 10.264475345611572,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_008_AK_OldMagicalTree_2",
+      "position": [
+        -568.4934692382812,
+        40.590850830078125,
+        245.77186584472656
+      ],
+      "bottom": 10.536735534667969,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_87",
+      "position": [
+        -596.2111206054688,
+        12.807693481445312,
+        232.89849853515625
+      ],
+      "bottom": 10.26447081565857,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_3_10",
+      "position": [
+        -616.90673828125,
+        12.708061218261719,
+        202.67251586914062
+      ],
+      "bottom": 10.264472723007202,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_3_11",
+      "position": [
+        -578.6493530273438,
+        15.874176025390625,
+        229.5477294921875
+      ],
+      "bottom": 10.264469623565674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redGroup_43",
+      "position": [
+        -597.338623046875,
+        11.734840393066406,
+        245.57257080078125
+      ],
+      "bottom": 10.264469623565674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_002_AK_NimbusWillow",
+      "position": [
+        -659.2345581054688,
+        27.497249603271484,
+        223.2388458251953
+      ],
+      "bottom": 0.9656448364257812,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_3_94",
+      "position": [
+        -584.45556640625,
+        12.627357482910156,
+        219.02059936523438
+      ],
+      "bottom": 10.264469861984253,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_tanGroup_58",
+      "position": [
+        -706.5241088867188,
+        12.353416442871094,
+        186.09771728515625
+      ],
+      "bottom": 10.26447319984436,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_006_AK_LowpolyWillow",
+      "position": [
+        -602.9065551757812,
+        32.261661529541016,
+        196.47335815429688
+      ],
+      "bottom": 18.31870460510254,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_022_AK_OldMagicalTree_1",
+      "position": [
+        -643.647705078125,
+        27.03081512451172,
+        232.2286376953125
+      ],
+      "bottom": 10.264470100402832,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForestTree_020_AK_OldMagicalTree_2",
+      "position": [
+        -710.043701171875,
+        25.78786849975586,
+        190.48516845703125
+      ],
+      "bottom": 10.264470100402832,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_3_80",
+      "position": [
+        -634.225341796875,
+        11.228645324707031,
+        249.16241455078125
+      ],
+      "bottom": 10.264472305774689,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Autumn_4_V5_042",
+      "position": [
+        -694.1386108398438,
+        32.440250396728516,
+        170.53150939941406
+      ],
+      "bottom": 10.264474868774414,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redTall_4",
+      "position": [
+        -715.6937866210938,
+        12.502998352050781,
+        219.31556701660156
+      ],
+      "bottom": 10.264469385147095,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_40",
+      "position": [
+        -582.4228515625,
+        14.968642234802246,
+        216.1256103515625
+      ],
+      "bottom": 10.264472961425781,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Autumn_4_V5_038",
+      "position": [
+        -690.9483032226562,
+        32.83686828613281,
+        227.91668701171875
+      ],
+      "bottom": 10.26446533203125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Mushroom_Red_Spotted_17",
+      "position": [
+        -635.6300048828125,
+        11.246665954589844,
+        204.79574584960938
+      ],
+      "bottom": 10.264468252658844,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Rock_Moss_6_96",
+      "position": [
+        -702.2149658203125,
+        14.688363075256348,
+        247.34823608398438
+      ],
+      "bottom": 10.264469623565674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Autumn_4_V5_041",
+      "position": [
+        -710.8682250976562,
+        31.80677032470703,
+        212.00631713867188
+      ],
+      "bottom": 10.26446533203125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_Root_3_38",
+      "position": [
+        -694.4627685546875,
+        11.761978149414062,
+        244.41683959960938
+      ],
+      "bottom": 10.264471530914307,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.MagicalForest_Decor_mushroom_redGroup_29",
+      "position": [
+        -718.5220947265625,
+        12.109794616699219,
+        217.29946899414062
+      ],
+      "bottom": 10.26447069644928,
+      "kind": "decor"
+    }
+  ],
+  "Jungle": [
+    {
+      "path": "Workspace.tree_palmDetailedTall_V5_008",
+      "position": [
+        142.065673828125,
+        24.48603057861328,
+        494.3145446777344
+      ],
+      "bottom": 8.128948211669922,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PalmTree_1_V5_035",
+      "position": [
+        244.6282958984375,
+        24.70289421081543,
+        424.7884216308594
+      ],
+      "bottom": 8.849225044250488,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_2_V5_018",
+      "position": [
+        130.87672424316406,
+        61.76641845703125,
+        368.8622741699219
+      ],
+      "bottom": 7.850009918212891,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_2_V5_032",
+      "position": [
+        246.01907348632812,
+        28.207698822021484,
+        335.0573425292969
+      ],
+      "bottom": 8.128946304321289,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_grass_leafsLarge_40",
+      "position": [
+        118.98667907714844,
+        10.031915664672852,
+        338.34088134765625
+      ],
+      "bottom": 8.044023513793945,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_grass_leafsLarge_40",
+      "position": [
+        246.9619903564453,
+        10.116838455200195,
+        340.8883361816406
+      ],
+      "bottom": 8.128947257995605,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_002",
+      "position": [
+        88.84825897216797,
+        26.827369689941406,
+        387.15631103515625
+      ],
+      "bottom": 7.828145980834961,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_2_V5_010",
+      "position": [
+        162.8587646484375,
+        24.804798126220703,
+        464.1949462890625
+      ],
+      "bottom": 8.128949165344238,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_8_V5_028",
+      "position": [
+        182.2395782470703,
+        23.56532859802246,
+        445.17510986328125
+      ],
+      "bottom": 7.850003242492676,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_2_V5_034",
+      "position": [
+        207.7206573486328,
+        25.984466552734375,
+        370.3287048339844
+      ],
+      "bottom": 7.850002288818359,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_2_V5_030",
+      "position": [
+        125.75273895263672,
+        43.203182220458984,
+        453.3339538574219
+      ],
+      "bottom": 7.849998474121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_7_V5_025",
+      "position": [
+        117.99146270751953,
+        52.03813552856445,
+        419.51824951171875
+      ],
+      "bottom": 35.61801621795606,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_017",
+      "position": [
+        170.63442993164062,
+        25.15212059020996,
+        377.69873046875
+      ],
+      "bottom": 8.12824535369873,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_017",
+      "position": [
+        215.29287719726562,
+        25.152122497558594,
+        393.46441650390625
+      ],
+      "bottom": 8.128249168395996,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedTall_V5_020",
+      "position": [
+        90.71356201171875,
+        27.00600814819336,
+        335.8504638671875
+      ],
+      "bottom": 7.850000381469727,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedTall_V5_031",
+      "position": [
+        180.49996948242188,
+        27.76007843017578,
+        328.2774353027344
+      ],
+      "bottom": 7.850004196166992,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_024",
+      "position": [
+        155.99993896484375,
+        26.6784610748291,
+        481
+      ],
+      "bottom": 8.12818431854248,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Rock_Moss_4_72",
+      "position": [
+        143.4657440185547,
+        11.690532684326172,
+        358.2812194824219
+      ],
+      "bottom": 8.128946781158447,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_015",
+      "position": [
+        89.15629577636719,
+        39.447383880615234,
+        503.0581359863281
+      ],
+      "bottom": 7.848695755004883,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Plant_4_56",
+      "position": [
+        102.04949188232422,
+        9.29609489440918,
+        434.9820251464844
+      ],
+      "bottom": 8.128947019577026,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Plant_4_65",
+      "position": [
+        151.04251098632812,
+        9.534765243530273,
+        344.4355773925781
+      ],
+      "bottom": 8.300000429153442,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Rock_Moss_4_27",
+      "position": [
+        184.73562622070312,
+        11.259343147277832,
+        449.6800842285156
+      ],
+      "bottom": 8.128947734832764,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_7_V5_005",
+      "position": [
+        220.3638458251953,
+        23.447628021240234,
+        339.50372314453125
+      ],
+      "bottom": 7.849414825439453,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_7_V5_026",
+      "position": [
+        238.93246459960938,
+        26.004037857055664,
+        398.75018310546875
+      ],
+      "bottom": 7.8493194580078125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_BushBerries_1_78",
+      "position": [
+        185.6875457763672,
+        9.566335678100586,
+        340.1571960449219
+      ],
+      "bottom": 8.300000548362732,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_7_V5_001",
+      "position": [
+        182.53135681152344,
+        23.962839126586914,
+        394.5265197753906
+      ],
+      "bottom": 8.128355026245117,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Rock_Moss_4_63",
+      "position": [
+        148.28652954101562,
+        11.142066955566406,
+        363.2395935058594
+      ],
+      "bottom": 8.1289309310242,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmTall_V5_036",
+      "position": [
+        276.49615478515625,
+        23.39031410217285,
+        375.7773742675781
+      ],
+      "bottom": 7.850008010864258,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedTall_V5_012",
+      "position": [
+        85.03362274169922,
+        36.63926315307617,
+        419.5721740722656
+      ],
+      "bottom": 7.828937530517578,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_5_V5_039",
+      "position": [
+        139.04376220703125,
+        27.938690185546875,
+        402.6044616699219
+      ],
+      "bottom": 7.849996566772461,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_003",
+      "position": [
+        271,
+        23.86183738708496,
+        418.4999694824219
+      ],
+      "bottom": 7.849337577819824,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PalmTree_1_V5_013",
+      "position": [
+        171.5486602783203,
+        33.83934783935547,
+        361.0494689941406
+      ],
+      "bottom": 7.848731994628906,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedShort_V5_004",
+      "position": [
+        267.41162109375,
+        43.65842056274414,
+        345.4418640136719
+      ],
+      "bottom": 7.827459335327148,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_grass_leafsLarge_49",
+      "position": [
+        203.24783325195312,
+        10.093717575073242,
+        393.20184326171875
+      ],
+      "bottom": 8.128947496414185,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmTall_V5_009",
+      "position": [
+        85.54330444335938,
+        20.53589630126953,
+        354.0614318847656
+      ],
+      "bottom": 7.828932762145996,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_5_V5_042",
+      "position": [
+        123.12245178222656,
+        23.669254302978516,
+        416.3489990234375
+      ],
+      "bottom": 8.128945350646973,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_grass_leafsLarge_76",
+      "position": [
+        255.2863006591797,
+        9.394144058227539,
+        391.8282470703125
+      ],
+      "bottom": 8.128946900367737,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Plant_4_29",
+      "position": [
+        198.1995086669922,
+        9.980426788330078,
+        435.0305480957031
+      ],
+      "bottom": 8.128947734832764,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_7_V5_021",
+      "position": [
+        122.35276794433594,
+        25.888151168823242,
+        497.4479064941406
+      ],
+      "bottom": 8.128283500671387,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Plant_3_46",
+      "position": [
+        111.33680725097656,
+        9.454383850097656,
+        483.8724060058594
+      ],
+      "bottom": 8.299999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Plant_4_83",
+      "position": [
+        98.6036376953125,
+        9.144630432128906,
+        366.99517822265625
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.PalmTree_1_V5_011",
+      "position": [
+        157.53744506835938,
+        27.265037536621094,
+        432.03448486328125
+      ],
+      "bottom": 8.128009796142578,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_Rock_Moss_4_81",
+      "position": [
+        187.25389099121094,
+        11.768302917480469,
+        441.27191162109375
+      ],
+      "bottom": 8.128947019577026,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.PalmTree_1_V5_033",
+      "position": [
+        107.22837829589844,
+        29.544601440429688,
+        365.34185791015625
+      ],
+      "bottom": 7.848934173583984,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PalmTree_1_V5_029",
+      "position": [
+        96.55155181884766,
+        26.801597595214844,
+        457.33685302734375
+      ],
+      "bottom": 7.84907341003418,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_5_V5_040",
+      "position": [
+        223.68299865722656,
+        25.18538475036621,
+        407.1222839355469
+      ],
+      "bottom": 8.128948211669922,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_5_V5_041",
+      "position": [
+        137.5535888671875,
+        25.18538475036621,
+        336.70550537109375
+      ],
+      "bottom": 8.128948211669922,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_palmTall_V5_037",
+      "position": [
+        84.44295501708984,
+        23.36924171447754,
+        481.9829406738281
+      ],
+      "bottom": 7.828935623168945,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Jungle_Decor_grass_leafsLarge_85",
+      "position": [
+        131.089111328125,
+        9.337682723999023,
+        385.0684509277344
+      ],
+      "bottom": 8.128947377204895,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmDetailedTall_V5_016",
+      "position": [
+        243.43820190429688,
+        23.363727569580078,
+        367.0684814453125
+      ],
+      "bottom": 7.84999942779541,
+      "kind": "tree"
+    }
+  ],
+  "Prehistoric": [
+    {
+      "path": "Workspace.PalmTree_3_V5_013",
+      "position": [
+        -327.870849609375,
+        27.58743667602539,
+        7.644801616668701
+      ],
+      "bottom": 7.828927993774414,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_5_V5_011",
+      "position": [
+        -358.02667236328125,
+        33.470970153808594,
+        -166.68243408203125
+      ],
+      "bottom": 9.614736557006836,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.palm_tree_2_V5_025",
+      "position": [
+        -427.0834045410156,
+        65.95897674560547,
+        -158.27969360351562
+      ],
+      "bottom": 9.614742279052734,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Prehistoric_Decor_Root_5_58",
+      "position": [
+        -548.5405883789062,
+        104.90196990966797,
+        -217.12709045410156
+      ],
+      "bottom": 103.09036791324615,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Prehistoric_Decor_Root_5_58",
+      "position": [
+        -656.7021484375,
+        -84.82107543945312,
+        -260.250244140625
+      ],
+      "bottom": -87.37197732925415,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.palm_tree_3_V5_021",
+      "position": [
+        -277.9456787109375,
+        32.833003997802734,
+        -7.534490585327148
+      ],
+      "bottom": 9.614736557006836,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.palm_tree_1_V5_007",
+      "position": [
+        -439.8586120605469,
+        32.97602844238281,
+        -116.01675415039062
+      ],
+      "bottom": 9.614734649658203,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_oak_V5_019",
+      "position": [
+        -342.99951171875,
+        31.019134521484375,
+        -37.08916091918945
+      ],
+      "bottom": 9.614736557006836,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_oak_V5_019",
+      "position": [
+        -334.99951171875,
+        31.01913070678711,
+        -93.08428955078125
+      ],
+      "bottom": 9.61473274230957,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_oak_V5_019",
+      "position": [
+        -411.0000915527344,
+        31.019132614135742,
+        5.237665176391602
+      ],
+      "bottom": 9.614734649658203,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.palm_tree_3_V5_008",
+      "position": [
+        -428.42767333984375,
+        64.94509887695312,
+        -40.42678451538086
+      ],
+      "bottom": 9.614746890420292,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PalmTree_3_V5_010",
+      "position": [
+        -392.9610290527344,
+        40.85008239746094,
+        -84.58629608154297
+      ],
+      "bottom": 9.614736557006836,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.palm_tree_1_V5_016",
+      "position": [
+        -378.1888732910156,
+        44.206947326660156,
+        -5.485416412353516
+      ],
+      "bottom": 9.614730834960938,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Prehistoric_Decor_grass_leafsLarge_28",
+      "position": [
+        -431.19061279296875,
+        11.253755569458008,
+        -11.050758361816406
+      ],
+      "bottom": 9.61473536491394,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_6_V5_030",
+      "position": [
+        -415.8503723144531,
+        42.51171875,
+        -27.226551055908203
+      ],
+      "bottom": 9.614110946655273,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_6_V5_005",
+      "position": [
+        -281.6014404296875,
+        61.735713958740234,
+        -74.16639709472656
+      ],
+      "bottom": 9.613758087158203,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PalmTree_3_V5_035",
+      "position": [
+        -437.9363098144531,
+        27.703876495361328,
+        3.628356695175171
+      ],
+      "bottom": 8.045739482693136,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Prehistoric_Decor_Root_5_40",
+      "position": [
+        -534.62646484375,
+        104.05896759033203,
+        -187.7850341796875
+      ],
+      "bottom": 103.09036880731583,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_6_V5_009",
+      "position": [
+        -292.7701416015625,
+        28.428377151489258,
+        -31.279457092285156
+      ],
+      "bottom": 9.6143798828125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_oak_V5_002",
+      "position": [
+        -443.2021484375,
+        49.13066101074219,
+        0.46742725372314453
+      ],
+      "bottom": 9.614734649658203,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.palm_tree_2_V5_031",
+      "position": [
+        -459.7634582519531,
+        32.61538314819336,
+        -176.8271484375
+      ],
+      "bottom": 7.828929901123047,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Prehistoric_Decor_log_large_79",
+      "position": [
+        -541.6841430664062,
+        104.676025390625,
+        -183.03726196289062
+      ],
+      "bottom": 103.09036755561829,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.palm_tree_1_V5_015",
+      "position": [
+        -400.4073486328125,
+        75.86441040039062,
+        -48.43992614746094
+      ],
+      "bottom": 9.614741823430052,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_5_V5_003",
+      "position": [
+        -307.22760009765625,
+        35.771427154541016,
+        1.6136045455932617
+      ],
+      "bottom": 7.828929901123047,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_5_V5_012",
+      "position": [
+        -361.6785583496094,
+        32.23631286621094,
+        -44.60398483276367
+      ],
+      "bottom": 9.614727973937988,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_5_V5_012",
+      "position": [
+        -402.67852783203125,
+        32.23631286621094,
+        -115.9406509399414
+      ],
+      "bottom": 9.614731788635254,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.palm_tree_2_V5_034",
+      "position": [
+        -279.181640625,
+        52.314266204833984,
+        -5.8996686935424805
+      ],
+      "bottom": 9.614738464355469,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_3_V5_042",
+      "position": [
+        -305.15338134765625,
+        40.7215461730957,
+        -50.30378723144531
+      ],
+      "bottom": 9.614736557006836,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Prehistoric_Decor_grass_leafsLarge_37",
+      "position": [
+        -267.8502197265625,
+        11.337488174438477,
+        -1.0420074462890625
+      ],
+      "bottom": 9.614735722541809,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_oak_V5_033",
+      "position": [
+        -281.87835693359375,
+        83.44635772705078,
+        -154.1421356201172
+      ],
+      "bottom": 9.614730834960938,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_oak_V5_037",
+      "position": [
+        -382.00006103515625,
+        56.62760925292969,
+        -147.00054931640625
+      ],
+      "bottom": 9.614734649658203,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_5_V5_020",
+      "position": [
+        -324.0686340332031,
+        37.46717071533203,
+        -104.14224243164062
+      ],
+      "bottom": 9.614734649658203,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_3_V5_038",
+      "position": [
+        -310.6818542480469,
+        53.92458724975586,
+        -115.2059326171875
+      ],
+      "bottom": 9.614742279052734,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_6_V5_024",
+      "position": [
+        -408.3523254394531,
+        42.47824478149414,
+        -153.3011932373047
+      ],
+      "bottom": 9.614116668701172,
+      "kind": "tree"
+    }
+  ],
+  "Ocean": [
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_28",
+      "position": [
+        -745.1781005859375,
+        9.365335464477539,
+        734.7538452148438
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_016",
+      "position": [
+        -704.3616333007812,
+        58.54154968261719,
+        692.2026977539062
+      ],
+      "bottom": 8.550003051757812,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_016",
+      "position": [
+        -596.1346435546875,
+        60.04389953613281,
+        653.48291015625
+      ],
+      "bottom": 10.052352905273438,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_016",
+      "position": [
+        -675.735107421875,
+        58.54151916503906,
+        773.7409057617188
+      ],
+      "bottom": 8.549995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_016",
+      "position": [
+        -592.0802612304688,
+        46.041542053222656,
+        807.9771118164062
+      ],
+      "bottom": 8.55000114440918,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_016",
+      "position": [
+        -584.5996704101562,
+        58.541534423828125,
+        723.8472290039062
+      ],
+      "bottom": 8.549995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_016",
+      "position": [
+        -726.4161376953125,
+        37.54153823852539,
+        729.20654296875
+      ],
+      "bottom": 8.550003051757812,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_13",
+      "position": [
+        -599.51953125,
+        10.214601516723633,
+        702.1287231445312
+      ],
+      "bottom": 8.30000102519989,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmShort_V5_025",
+      "position": [
+        -747.4100341796875,
+        33.881439208984375,
+        807.2176513671875
+      ],
+      "bottom": 7.250001907348633,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_42",
+      "position": [
+        -680.0181884765625,
+        9.003477096557617,
+        653.547607421875
+      ],
+      "bottom": 8.300001055002213,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_2_V5_019",
+      "position": [
+        -689.5140991210938,
+        23.924768447875977,
+        791.4286499023438
+      ],
+      "bottom": 8.5499906539917,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_3_V5_012",
+      "position": [
+        -597.9299926757812,
+        25.682334899902344,
+        668.72216796875
+      ],
+      "bottom": 8.456677808422707,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_18",
+      "position": [
+        -732.1015014648438,
+        10.405320167541504,
+        759.6648559570312
+      ],
+      "bottom": 8.550000667572021,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_41",
+      "position": [
+        -624.5242309570312,
+        9.828140258789062,
+        791.630615234375
+      ],
+      "bottom": 8.300001382827759,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_48",
+      "position": [
+        -728.8043212890625,
+        10.222005844116211,
+        635.6170043945312
+      ],
+      "bottom": 8.549999058246613,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palm_V5_021",
+      "position": [
+        -622.5781860351562,
+        24.96955680847168,
+        705.8399658203125
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_4",
+      "position": [
+        -669.9268798828125,
+        9.33102035522461,
+        764.1064453125
+      ],
+      "bottom": 8.549998939037323,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_3",
+      "position": [
+        -691.6044921875,
+        9.982782363891602,
+        768.55517578125
+      ],
+      "bottom": 8.30000126361847,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_66",
+      "position": [
+        -743.48828125,
+        10.351799011230469,
+        678.2071533203125
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_34",
+      "position": [
+        -633.267822265625,
+        9.775117874145508,
+        718.82763671875
+      ],
+      "bottom": 8.549998939037323,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_56",
+      "position": [
+        -696.3434448242188,
+        9.796392440795898,
+        763.3433837890625
+      ],
+      "bottom": 8.549998849630356,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_2",
+      "position": [
+        -707.6116333007812,
+        9.515218734741211,
+        747.5137939453125
+      ],
+      "bottom": 8.300001293420792,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_005",
+      "position": [
+        -708.7713012695312,
+        24.20996856689453,
+        783.3925170898438
+      ],
+      "bottom": 8.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Palm_3_V5_011",
+      "position": [
+        -640.0747680664062,
+        39.86659622192383,
+        684.7968139648438
+      ],
+      "bottom": 8.550003051757812,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_59",
+      "position": [
+        -621.8655395507812,
+        10.372016906738281,
+        734.8116455078125
+      ],
+      "bottom": 8.300001382827759,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_3_V5_018",
+      "position": [
+        -662.340576171875,
+        30.83446502685547,
+        628.4308471679688
+      ],
+      "bottom": 8.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_9",
+      "position": [
+        -712.813232421875,
+        10.098888397216797,
+        701.3145751953125
+      ],
+      "bottom": 8.300001382827759,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_35",
+      "position": [
+        -580.8701171875,
+        9.420610427856445,
+        700.1210327148438
+      ],
+      "bottom": 8.549998760223389,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_37",
+      "position": [
+        -573.322265625,
+        12.138914108276367,
+        641.8377685546875
+      ],
+      "bottom": 10.549999475479126,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_73",
+      "position": [
+        -641.333251953125,
+        10.039875030517578,
+        807.8194580078125
+      ],
+      "bottom": 8.300000786781311,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_27",
+      "position": [
+        -702.9188232421875,
+        9.311092376708984,
+        659.4721069335938
+      ],
+      "bottom": 8.549999356269836,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_60",
+      "position": [
+        -581.476318359375,
+        9.983221054077148,
+        665.7718505859375
+      ],
+      "bottom": 8.300001382827759,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_54",
+      "position": [
+        -604.3411865234375,
+        10.415964126586914,
+        751.8005981445312
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_45",
+      "position": [
+        -694.4884033203125,
+        9.500633239746094,
+        716.3297119140625
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_5_V5_001",
+      "position": [
+        -616.0951538085938,
+        25.885162353515625,
+        794.36279296875
+      ],
+      "bottom": 8.549989700317383,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_25",
+      "position": [
+        -594.0609741210938,
+        10.352659225463867,
+        689.1160888671875
+      ],
+      "bottom": 8.549998879432678,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_7",
+      "position": [
+        -600.837646484375,
+        9.31072998046875,
+        664.3341064453125
+      ],
+      "bottom": 8.549999356269836,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_1_V5_002",
+      "position": [
+        -731.93603515625,
+        40.03318786621094,
+        649.9094848632812
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_53",
+      "position": [
+        -604.4635009765625,
+        9.640451431274414,
+        741.84619140625
+      ],
+      "bottom": 8.30000126361847,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_43",
+      "position": [
+        -679.498046875,
+        9.273462295532227,
+        722.5892333984375
+      ],
+      "bottom": 8.3000009059906,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_46",
+      "position": [
+        -732.3469848632812,
+        9.778949737548828,
+        723.4046020507812
+      ],
+      "bottom": 8.549998968839645,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_61",
+      "position": [
+        -621.839111328125,
+        9.12542724609375,
+        677.128662109375
+      ],
+      "bottom": 8.300000846385956,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_70",
+      "position": [
+        -676.6063232421875,
+        10.561883926391602,
+        669.1596069335938
+      ],
+      "bottom": 8.30000114440918,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_20",
+      "position": [
+        -696.3402709960938,
+        9.804813385009766,
+        737.8844604492188
+      ],
+      "bottom": 8.30000102519989,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_30",
+      "position": [
+        -665.0678100585938,
+        10.812602996826172,
+        652.000244140625
+      ],
+      "bottom": 8.549998760223389,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_10",
+      "position": [
+        -683.0609130859375,
+        11.422075271606445,
+        806.3173828125
+      ],
+      "bottom": 8.549999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_1_V5_015",
+      "position": [
+        -725.81884765625,
+        27.675018310546875,
+        704.2959594726562
+      ],
+      "bottom": 8.55000114440918,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_49",
+      "position": [
+        -671.7359008789062,
+        9.969221115112305,
+        664.296142578125
+      ],
+      "bottom": 8.300000786781311,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_23",
+      "position": [
+        -649.587158203125,
+        9.933103561401367,
+        807.7632446289062
+      ],
+      "bottom": 8.300001621246338,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_51",
+      "position": [
+        -567.3167724609375,
+        9.360771179199219,
+        708.171875
+      ],
+      "bottom": 8.3000009059906,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_17",
+      "position": [
+        -744.407958984375,
+        9.522904396057129,
+        655.2710571289062
+      ],
+      "bottom": 8.5499986410141,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_63",
+      "position": [
+        -577.10009765625,
+        9.227590560913086,
+        716.6549072265625
+      ],
+      "bottom": 8.300001084804535,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_15",
+      "position": [
+        -643.50341796875,
+        9.31916618347168,
+        773.3732299804688
+      ],
+      "bottom": 8.549999058246613,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_78",
+      "position": [
+        -587.4876708984375,
+        9.839988708496094,
+        767.3201904296875
+      ],
+      "bottom": 8.54999965429306,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_22",
+      "position": [
+        -711.899658203125,
+        9.388492584228516,
+        733.4505004882812
+      ],
+      "bottom": 8.300001293420792,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_6_V5_014",
+      "position": [
+        -672.6240844726562,
+        21.802921295166016,
+        716.7643432617188
+      ],
+      "bottom": 8.550000190734863,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_32",
+      "position": [
+        -594.789306640625,
+        10.350290298461914,
+        670.800537109375
+      ],
+      "bottom": 8.300001084804535,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_44",
+      "position": [
+        -569.4990844726562,
+        10.298173904418945,
+        778.91357421875
+      ],
+      "bottom": 8.549998998641968,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_2_V5_010",
+      "position": [
+        -674.9785766601562,
+        22.17593765258789,
+        740.7848510742188
+      ],
+      "bottom": 8.549945831298828,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_52",
+      "position": [
+        -717.0880126953125,
+        10.276321411132812,
+        646.8470458984375
+      ],
+      "bottom": 8.300001442432404,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_19",
+      "position": [
+        -636.3516235351562,
+        9.671913146972656,
+        659.2918701171875
+      ],
+      "bottom": 8.3000009059906,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Palm_3_V5_004",
+      "position": [
+        -647.583984375,
+        26.02947998046875,
+        805.9419555664062
+      ],
+      "bottom": 8.55000114440918,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_11",
+      "position": [
+        -685.1735229492188,
+        9.360574722290039,
+        656.24951171875
+      ],
+      "bottom": 8.300001502037048,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Kelp_33",
+      "position": [
+        -669.6195068359375,
+        10.250368118286133,
+        791.9774780273438
+      ],
+      "bottom": 8.300001621246338,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_69",
+      "position": [
+        -734.2032470703125,
+        9.037187576293945,
+        672.1959838867188
+      ],
+      "bottom": 8.30000126361847,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_29",
+      "position": [
+        -597.6980590820312,
+        10.153364181518555,
+        693.82080078125
+      ],
+      "bottom": 8.30000126361847,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_8",
+      "position": [
+        -572.3624877929688,
+        9.530654907226562,
+        673.2440795898438
+      ],
+      "bottom": 8.549998700618744,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_72",
+      "position": [
+        -601.57275390625,
+        10.119942665100098,
+        789.8324584960938
+      ],
+      "bottom": 8.549999833106995,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_64",
+      "position": [
+        -654.4031372070312,
+        10.170904159545898,
+        739.8135986328125
+      ],
+      "bottom": 8.549999117851257,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_62",
+      "position": [
+        -621.92578125,
+        9.720743179321289,
+        657.5328979492188
+      ],
+      "bottom": 8.300001621246338,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_2_V5_020",
+      "position": [
+        -743.0113525390625,
+        27.087894439697266,
+        764.9298706054688
+      ],
+      "bottom": 8.549989700317383,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_38",
+      "position": [
+        -570.669677734375,
+        9.474231719970703,
+        750.9945678710938
+      ],
+      "bottom": 8.549999222159386,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_77",
+      "position": [
+        -699.042236328125,
+        9.307241439819336,
+        780.207763671875
+      ],
+      "bottom": 8.549999356269836,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_2_V5_006",
+      "position": [
+        -676.1812133789062,
+        24.117324829101562,
+        658.841552734375
+      ],
+      "bottom": 8.5499906539917,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_2_V5_006",
+      "position": [
+        -591.18115234375,
+        24.117324829101562,
+        746.9058227539062
+      ],
+      "bottom": 8.5499906539917,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_2_V5_006",
+      "position": [
+        -603.4095458984375,
+        31.005321502685547,
+        799.4129638671875
+      ],
+      "bottom": 8.46879074658763,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_5",
+      "position": [
+        -704.2721557617188,
+        10.366944313049316,
+        802.85205078125
+      ],
+      "bottom": 8.549999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_31",
+      "position": [
+        -648.5512084960938,
+        9.224084854125977,
+        770.2796020507812
+      ],
+      "bottom": 8.300000965595245,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_65",
+      "position": [
+        -640.331298828125,
+        9.510971069335938,
+        635.90380859375
+      ],
+      "bottom": 8.549999177455902,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmBend_V5_027",
+      "position": [
+        -629.9130249023438,
+        22.469558715820312,
+        766.6182861328125
+      ],
+      "bottom": 8.55000114440918,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_TubeSponge_12",
+      "position": [
+        -668.9459838867188,
+        9.626787185668945,
+        746.8786010742188
+      ],
+      "bottom": 8.300001055002213,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_26",
+      "position": [
+        -638.5908813476562,
+        9.634693145751953,
+        792.9725341796875
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_58",
+      "position": [
+        -614.1659545898438,
+        12.467562675476074,
+        635.9727172851562
+      ],
+      "bottom": 10.549998760223389,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Bleached_68",
+      "position": [
+        -723.859130859375,
+        9.694355964660645,
+        673.964111328125
+      ],
+      "bottom": 8.549999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_36",
+      "position": [
+        -614.874267578125,
+        10.169742584228516,
+        680.4847412109375
+      ],
+      "bottom": 8.549999594688416,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_75",
+      "position": [
+        -717.3248291015625,
+        9.747608184814453,
+        776.0078125
+      ],
+      "bottom": 8.549999326467514,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_21",
+      "position": [
+        -592.0172729492188,
+        10.203908920288086,
+        759.2652587890625
+      ],
+      "bottom": 8.300001621246338,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Salmon_55",
+      "position": [
+        -613.7903442382812,
+        10.176103591918945,
+        773.3363037109375
+      ],
+      "bottom": 8.549999058246613,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_74",
+      "position": [
+        -658.9698486328125,
+        9.396013259887695,
+        705.9554443359375
+      ],
+      "bottom": 8.549999356269836,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmBend_V5_026",
+      "position": [
+        -680.5001220703125,
+        26.181438446044922,
+        695.8399658203125
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_57",
+      "position": [
+        -616.4705200195312,
+        9.85936164855957,
+        804.0994262695312
+      ],
+      "bottom": 8.549998879432678,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_16",
+      "position": [
+        -629.7428588867188,
+        9.983963012695312,
+        659.0604248046875
+      ],
+      "bottom": 8.549999117851257,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Slate_76",
+      "position": [
+        -741.5175170898438,
+        10.121665954589844,
+        700.3536376953125
+      ],
+      "bottom": 8.549999475479126,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_1",
+      "position": [
+        -670.1578979492188,
+        9.299938201904297,
+        642.9739990234375
+      ],
+      "bottom": 8.3000009059906,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_67",
+      "position": [
+        -573.7012329101562,
+        9.853660583496094,
+        805.6571044921875
+      ],
+      "bottom": 8.549999088048935,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Starfish_Salmon_47",
+      "position": [
+        -730.6469116210938,
+        10.378252983093262,
+        793.382568359375
+      ],
+      "bottom": 8.549997806549072,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_40",
+      "position": [
+        -638.583740234375,
+        10.66795539855957,
+        671.0060424804688
+      ],
+      "bottom": 8.30000114440918,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palm_V5_003",
+      "position": [
+        -642.455078125,
+        25.384174346923828,
+        730.2244873046875
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_CoralPlant_71",
+      "position": [
+        -586.49072265625,
+        9.196069717407227,
+        762.5849609375
+      ],
+      "bottom": 8.300001204013824,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Rock_2_50",
+      "position": [
+        -747.6405029296875,
+        11.513188362121582,
+        630.8504028320312
+      ],
+      "bottom": 8.549998760223389,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Coconut_39",
+      "position": [
+        -687.121826171875,
+        10.339473724365234,
+        765.3901977539062
+      ],
+      "bottom": 8.300001382827759,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_palmShort_V5_023",
+      "position": [
+        -704.8521118164062,
+        23.70684814453125,
+        718.072998046875
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_24",
+      "position": [
+        -651.4439086914062,
+        9.398788452148438,
+        682.8801879882812
+      ],
+      "bottom": 8.549998819828033,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Ocean_Decor_Shell_Layered_14",
+      "position": [
+        -709.024658203125,
+        10.415700912475586,
+        637.8121337890625
+      ],
+      "bottom": 8.549998998641968,
+      "kind": "decor"
+    }
+  ],
+  "AncientRuins": [
+    {
+      "path": "Workspace.AK_AncientRuins_CypressTree",
+      "position": [
+        -609.904052734375,
+        67.47940826416016,
+        497.8335876464844
+      ],
+      "bottom": 11.550006866455078,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.AK_AncientRuins_CypressTree",
+      "position": [
+        -602.8156127929688,
+        43.70363235473633,
+        354.3238525390625
+      ],
+      "bottom": 11.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.AK_AncientRuins_CypressTree",
+      "position": [
+        -730.0916748046875,
+        43.70362854003906,
+        462.3212585449219
+      ],
+      "bottom": 11.549995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.AK_AncientRuins_StylizedTree",
+      "position": [
+        -729.4535522460938,
+        44.16552734375,
+        382.0361328125
+      ],
+      "bottom": 11.549310684204102,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.AK_AncientRuins_StylizedTree",
+      "position": [
+        -729.4535522460938,
+        44.16552734375,
+        382.0361328125
+      ],
+      "bottom": 11.549310684204102,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.AK_AncientRuins_StylizedTree",
+      "position": [
+        -571.607177734375,
+        48.16551971435547,
+        505.82574462890625
+      ],
+      "bottom": 11.549217224121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_4_V5_006",
+      "position": [
+        -668.2334594726562,
+        27.881431579589844,
+        511.3194580078125
+      ],
+      "bottom": 11.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Cedar_3_V5_008",
+      "position": [
+        -680.53271484375,
+        29.520477294921875,
+        518.89208984375
+      ],
+      "bottom": 11.54997205734253,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Cedar_3_V5_008",
+      "position": [
+        -728.4745483398438,
+        29.520505905151367,
+        441.0516052246094
+      ],
+      "bottom": 11.549998760223389,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Bare_5_V5_023",
+      "position": [
+        -587.02783203125,
+        25.69392967224121,
+        392.0343017578125
+      ],
+      "bottom": 11.549312591552734,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Bare_5_V5_023",
+      "position": [
+        -644.2137451171875,
+        29.999361038208008,
+        488.0967712402344
+      ],
+      "bottom": 15.854743957519531,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_4_V5_009",
+      "position": [
+        -735.6918334960938,
+        40.479610443115234,
+        518.180908203125
+      ],
+      "bottom": 11.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_4_V5_009",
+      "position": [
+        -565.5592041015625,
+        26.4796142578125,
+        356.54278564453125
+      ],
+      "bottom": 11.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Cedar_2_V5_001",
+      "position": [
+        -618.5001220703125,
+        25.821434020996094,
+        402.71929931640625
+      ],
+      "bottom": 11.549997806549072,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Cedar_2_V5_004",
+      "position": [
+        -663.621826171875,
+        40.48632049560547,
+        470.685546875
+      ],
+      "bottom": 23.041768105490988,
+      "kind": "tree"
+    }
+  ],
+  "Forest": [
+    {
+      "path": "Workspace.Tree_Oak_2_V5_008",
+      "position": [
+        234.73989868164062,
+        20.69997787475586,
+        99.25576782226562
+      ],
+      "bottom": 8.12895535385094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_1_V5_029",
+      "position": [
+        97.51802825927734,
+        44.15215301513672,
+        174.44850158691406
+      ],
+      "bottom": 7.849997520446777,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_2_V5_016",
+      "position": [
+        100.87440490722656,
+        22.493175506591797,
+        203.92164611816406
+      ],
+      "bottom": 7.850000381469727,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_2_V5_018",
+      "position": [
+        153.46170043945312,
+        23.345998764038086,
+        121.45744323730469
+      ],
+      "bottom": 7.84999942779541,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_1_V5_009",
+      "position": [
+        247.890625,
+        27.723163604736328,
+        110.8744125366211
+      ],
+      "bottom": 8.128957271575928,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_pineRoundA_V5_031",
+      "position": [
+        209.2633514404297,
+        50.95602798461914,
+        264.05889892578125
+      ],
+      "bottom": 7.850002288818359,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Plant_1_34",
+      "position": [
+        158.4961395263672,
+        9.301334381103516,
+        219.39889526367188
+      ],
+      "bottom": 8.128902912139893,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Mushroom_Brown_20",
+      "position": [
+        139.593505859375,
+        9.505544662475586,
+        115.91598510742188
+      ],
+      "bottom": 8.128955960273743,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_1_V5_030",
+      "position": [
+        181.89500427246094,
+        18.442716598510742,
+        257.5352783203125
+      ],
+      "bottom": 7.850000619888306,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Mushroom_Red_Spotted_13",
+      "position": [
+        154.4999542236328,
+        10.147350311279297,
+        233.0000762939453
+      ],
+      "bottom": 8.128955841064453,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.PineTree_3_V5_019",
+      "position": [
+        158.856689453125,
+        21.30394744873047,
+        159.0021514892578
+      ],
+      "bottom": 8.128918647766113,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_2_V5_015",
+      "position": [
+        139.25411987304688,
+        31.697147369384766,
+        96.3168716430664
+      ],
+      "bottom": 8.128953456878662,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_plant_bushDetailed_11",
+      "position": [
+        136.4401092529297,
+        46.4706916809082,
+        209.70411682128906
+      ],
+      "bottom": 44.17851630999708,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Pine_2_V5_017",
+      "position": [
+        -172.3835906982422,
+        20.631357192993164,
+        211.48365783691406
+      ],
+      "bottom": 8.475242376327515,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Mushroom_Brown_52",
+      "position": [
+        143.56076049804688,
+        10.113836288452148,
+        224.695556640625
+      ],
+      "bottom": 8.128955602645874,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_2_V5_003",
+      "position": [
+        181.81622314453125,
+        29.077693939208984,
+        276.9917907714844
+      ],
+      "bottom": 7.850000858306885,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_5_V5_036",
+      "position": [
+        151.87319946289062,
+        36.95602798461914,
+        194.8562469482422
+      ],
+      "bottom": 7.8499908447265625,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_5_V5_034",
+      "position": [
+        200.5994415283203,
+        49.938289642333984,
+        211.41964721679688
+      ],
+      "bottom": 7.8499908447265625,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PineTree_3_V5_027",
+      "position": [
+        161.06954956054688,
+        57.38542938232422,
+        252.9730987548828
+      ],
+      "bottom": 7.849864959716797,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PineTree_3_V5_023",
+      "position": [
+        97.60273742675781,
+        31.351560592651367,
+        110.18794250488281
+      ],
+      "bottom": 7.849939346313477,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_plant_bushDetailed_3",
+      "position": [
+        89.41924285888672,
+        9.988962173461914,
+        92.78555297851562
+      ],
+      "bottom": 8.128955245018005,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Pine_1_V5_021",
+      "position": [
+        115.33966827392578,
+        35.99075698852539,
+        141.5655517578125
+      ],
+      "bottom": 7.849999904632568,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_5_V5_035",
+      "position": [
+        273.03485107421875,
+        26.74462890625,
+        98.46436309814453
+      ],
+      "bottom": 7.828924179077148,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Plant_1_42",
+      "position": [
+        113.06295776367188,
+        9.050556182861328,
+        216.42669677734375
+      ],
+      "bottom": 8.128914296627045,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.PineTree_3_V5_026",
+      "position": [
+        124.89408874511719,
+        21.82754135131836,
+        233.30001831054688
+      ],
+      "bottom": 7.84996223449707,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_2_V5_024",
+      "position": [
+        272.1224060058594,
+        23.745391845703125,
+        274.0094909667969
+      ],
+      "bottom": 8.128957509994507,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Cedar_1_V5_022",
+      "position": [
+        130.40765380859375,
+        21.33000946044922,
+        270.1758117675781
+      ],
+      "bottom": 7.850002765655518,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Root_1_70",
+      "position": [
+        199.7254638671875,
+        9.83551025390625,
+        235.18167114257812
+      ],
+      "bottom": 8.128955721855164,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_1_V5_006",
+      "position": [
+        96.51838684082031,
+        8.442840576171875,
+        231.91506958007812
+      ],
+      "bottom": 7.88568177819252,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_pineRoundA_V5_032",
+      "position": [
+        104.69992065429688,
+        50.61085510253906,
+        263.69036865234375
+      ],
+      "bottom": 7.849998474121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Cedar_1_V5_007",
+      "position": [
+        197.1481475830078,
+        25.654245376586914,
+        224.01461791992188
+      ],
+      "bottom": 8.128955841064453,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Mushroom_Brown_60",
+      "position": [
+        150.7371368408203,
+        9.672174453735352,
+        106.31488037109375
+      ],
+      "bottom": 8.128955841064453,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_2_V5_001",
+      "position": [
+        90.0798568725586,
+        27.751277923583984,
+        231.79222106933594
+      ],
+      "bottom": 7.849998474121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_plant_bushDetailed_51",
+      "position": [
+        115.99639892578125,
+        11.376665115356445,
+        -158.52081298828125
+      ],
+      "bottom": 9.12893009185791,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Plant_1_58",
+      "position": [
+        173.04107666015625,
+        9.468132019042969,
+        146.0391845703125
+      ],
+      "bottom": 8.128895282745361,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Oak_1_V5_014",
+      "position": [
+        124.91676330566406,
+        20.40736198425293,
+        195.47271728515625
+      ],
+      "bottom": 7.850000619888306,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_5_V5_033",
+      "position": [
+        135.22073364257812,
+        60.26237869262695,
+        118.59646606445312
+      ],
+      "bottom": 7.82891845703125,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Plant_1_26",
+      "position": [
+        100.36026000976562,
+        10.217644691467285,
+        150.23240661621094
+      ],
+      "bottom": 8.12886118888855,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.tree_pineRoundA_V5_013",
+      "position": [
+        250.0342254638672,
+        68.58775329589844,
+        243.00003051757812
+      ],
+      "bottom": 7.849998474121094,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Pine_1_V5_028",
+      "position": [
+        95.2444076538086,
+        21.149253845214844,
+        133.62301635742188
+      ],
+      "bottom": 7.850000858306885,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.tree_pineRoundA_V5_002",
+      "position": [
+        215.66519165039062,
+        54.852622985839844,
+        97.0121078491211
+      ],
+      "bottom": 8.128955841064453,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Plant_1_18",
+      "position": [
+        91.7487564086914,
+        9.945913314819336,
+        248.29920959472656
+      ],
+      "bottom": 8.128873944282532,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree_Pine_1_V5_012",
+      "position": [
+        277.2170715332031,
+        22.240764617919922,
+        219.71337890625
+      ],
+      "bottom": 8.128955841064453,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Forest_Decor_Mushroom_Red_Spotted_45",
+      "position": [
+        161.2976837158203,
+        10.160358428955078,
+        225.3970947265625
+      ],
+      "bottom": 8.128956079483032,
+      "kind": "decor"
+    }
+  ],
+  "Snow": [
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_23",
+      "position": [
+        -0.069915771484375,
+        12.538585662841797,
+        736.7725830078125
+      ],
+      "bottom": 9.128268670138368,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_1_snow_V5_004",
+      "position": [
+        -4.377965927124023,
+        34.04674530029297,
+        686.56005859375
+      ],
+      "bottom": 9.128943103753045,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.pine_tree_1_snow_V5_014",
+      "position": [
+        7.701324462890625,
+        27.091835021972656,
+        629.024169921875
+      ],
+      "bottom": 9.128940532324123,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PineTree_Snow_1_V5_015",
+      "position": [
+        -86.91193389892578,
+        24.383657455444336,
+        618.9408569335938
+      ],
+      "bottom": 9.128195032928488,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.common_tree_1_snow_V5_002",
+      "position": [
+        -56.24898910522461,
+        57.86558532714844,
+        692.7987670898438
+      ],
+      "bottom": 3.129150390625,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PineTree_Snow_1_V5_018",
+      "position": [
+        -124.66377258300781,
+        47.078006744384766,
+        632.9851684570312
+      ],
+      "bottom": 9.127036166020844,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.common_tree_3_snow_V5_011",
+      "position": [
+        -99.65187072753906,
+        39.602760314941406,
+        730.77880859375
+      ],
+      "bottom": 9.128944109776967,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_Snow_3_V5_028",
+      "position": [
+        -170.479248046875,
+        22.18158531188965,
+        650.2293701171875
+      ],
+      "bottom": 9.128937570716516,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.common_tree_1_snow_V5_001",
+      "position": [
+        -129.34942626953125,
+        38.483726501464844,
+        781.66455078125
+      ],
+      "bottom": 9.128938921112422,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.common_tree_3_snow_V5_025",
+      "position": [
+        5.543983459472656,
+        49.41253662109375,
+        607.9938354492188
+      ],
+      "bottom": 9.128935565193387,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_45",
+      "position": [
+        -74.69651794433594,
+        11.70265007019043,
+        790.1065673828125
+      ],
+      "bottom": 9.128902154399839,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.BirchTree_Dead_Snow_2_V5_009",
+      "position": [
+        1.4218976497650146,
+        24.40351104736328,
+        710.3096313476562
+      ],
+      "bottom": 9.12894196608977,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_27",
+      "position": [
+        -76.3891830444336,
+        12.075090408325195,
+        783.80615234375
+      ],
+      "bottom": 9.128865975839744,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Snow_5_V5_022",
+      "position": [
+        -55.838287353515625,
+        41.55549621582031,
+        609.0496215820312
+      ],
+      "bottom": 9.128935542903491,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Snow_5_V5_022",
+      "position": [
+        0.069732666015625,
+        26.05550765991211,
+        656.0215454101562
+      ],
+      "bottom": 9.128943070432797,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_7",
+      "position": [
+        -105.5985107421875,
+        10.712737083435059,
+        606.549560546875
+      ],
+      "bottom": 9.12862797256878,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.PineTree_Snow_1_V5_024",
+      "position": [
+        -0.9177265167236328,
+        27.515541076660156,
+        782.4814453125
+      ],
+      "bottom": 9.128041482817935,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_31",
+      "position": [
+        -158.32266235351562,
+        11.757596969604492,
+        610.1797485351562
+      ],
+      "bottom": 9.12842403668651,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_55",
+      "position": [
+        -28.11468505859375,
+        12.222414016723633,
+        761.936279296875
+      ],
+      "bottom": 9.128273352473116,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_52",
+      "position": [
+        -170.07354736328125,
+        14.60291862487793,
+        638.2945556640625
+      ],
+      "bottom": 12.372629526009945,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.pine_tree_2_snow_V5_019",
+      "position": [
+        -36.26313400268555,
+        24.898529052734375,
+        604.41259765625
+      ],
+      "bottom": 9.128937710253012,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_Snow_3_V5_030",
+      "position": [
+        -45.053199768066406,
+        27.275249481201172,
+        788.848388671875
+      ],
+      "bottom": 9.12893839584649,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Snow_5_V5_023",
+      "position": [
+        -130.892822265625,
+        35.866634368896484,
+        697.745361328125
+      ],
+      "bottom": 9.128933450974728,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_51",
+      "position": [
+        -165.60507202148438,
+        10.92919921875,
+        788.2433471679688
+      ],
+      "bottom": 9.128895186877344,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.pine_tree_1_snow_V5_017",
+      "position": [
+        -153.14443969726562,
+        48.71148681640625,
+        763.9140625
+      ],
+      "bottom": 9.128927202298655,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_19",
+      "position": [
+        8.284042358398438,
+        12.081951141357422,
+        703.134765625
+      ],
+      "bottom": 9.12886604683763,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_3_snow_V5_003",
+      "position": [
+        -45.939205169677734,
+        29.380176544189453,
+        674.560791015625
+      ],
+      "bottom": 9.128940642276575,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_1_17",
+      "position": [
+        -139.40403747558594,
+        11.218692779541016,
+        599.894775390625
+      ],
+      "bottom": 9.128924198688765,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_44",
+      "position": [
+        -135.78269958496094,
+        12.245615005493164,
+        609.0144653320312
+      ],
+      "bottom": 9.128937642313304,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_5",
+      "position": [
+        -116.92435455322266,
+        9.49336051940918,
+        727.9375
+      ],
+      "bottom": 8.19893782942114,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Snow_5_V5_008",
+      "position": [
+        2.7181015014648438,
+        44.395225524902344,
+        762.6395874023438
+      ],
+      "bottom": 9.128934349420888,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.pine_tree_1_snow_V5_005",
+      "position": [
+        -17.429767608642578,
+        30.468660354614258,
+        607.654296875
+      ],
+      "bottom": 9.128941761469832,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Snow_5_V5_010",
+      "position": [
+        -43.220550537109375,
+        29.45116424560547,
+        731.6550903320312
+      ],
+      "bottom": 9.1289343979779,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.pine_tree_2_snow_V5_013",
+      "position": [
+        -166.30224609375,
+        21.137182235717773,
+        718.8489990234375
+      ],
+      "bottom": 9.128938284960896,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.PineTree_Snow_1_V5_021",
+      "position": [
+        -147.70065307617188,
+        23.199153900146484,
+        659.0081787109375
+      ],
+      "bottom": 9.128229993906643,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Mushroom_Grey_32",
+      "position": [
+        -48.18751525878906,
+        8.906168937683105,
+        731.7100830078125
+      ],
+      "bottom": 8.198937596505289,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_2_2",
+      "position": [
+        -95.99861907958984,
+        8.924819946289062,
+        641.56884765625
+      ],
+      "bottom": 8.198937212185513,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_1_snow_V5_007",
+      "position": [
+        -90.0893783569336,
+        28.212200164794922,
+        665.4154663085938
+      ],
+      "bottom": 9.12894113647053,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_28",
+      "position": [
+        -57.7955322265625,
+        17.823970794677734,
+        784.0201416015625
+      ],
+      "bottom": 15.938628749676695,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_36",
+      "position": [
+        9.709060668945312,
+        12.213899612426758,
+        713.5391235351562
+      ],
+      "bottom": 9.128939066463317,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_47",
+      "position": [
+        -166.75778198242188,
+        10.750871658325195,
+        639.8530883789062
+      ],
+      "bottom": 9.12861968446316,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.pine_tree_2_snow_V5_020",
+      "position": [
+        -114.00961303710938,
+        36.48521423339844,
+        765.9411010742188
+      ],
+      "bottom": 9.128936921973946,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Mushroom_Grey_16",
+      "position": [
+        -86.64070892333984,
+        8.974947929382324,
+        727.4767456054688
+      ],
+      "bottom": 8.198938630606023,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_13",
+      "position": [
+        -67.91827392578125,
+        18.29975128173828,
+        781.5430908203125
+      ],
+      "bottom": 15.938542803065047,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_14",
+      "position": [
+        -20.491249084472656,
+        10.287656784057617,
+        621.6544189453125
+      ],
+      "bottom": 9.128939444970683,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_2_10",
+      "position": [
+        -82.60042572021484,
+        9.282157897949219,
+        611.270263671875
+      ],
+      "bottom": 8.19893741626214,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_12",
+      "position": [
+        -171.8724365234375,
+        11.670782089233398,
+        599.5466918945312
+      ],
+      "bottom": 9.128938356785056,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_29",
+      "position": [
+        -30.5660400390625,
+        18.656024932861328,
+        771.7952880859375
+      ],
+      "bottom": 15.315839917495424,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_39",
+      "position": [
+        7.933685302734375,
+        11.068942070007324,
+        687.0592651367188
+      ],
+      "bottom": 9.128532256540097,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_stone_smallFlatC_15",
+      "position": [
+        -61.723846435546875,
+        12.53382682800293,
+        771.7459716796875
+      ],
+      "bottom": 9.128271044720805,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_1_41",
+      "position": [
+        -150.66168212890625,
+        9.39999008178711,
+        706.3997802734375
+      ],
+      "bottom": 8.198938082189898,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_6",
+      "position": [
+        -38.14418029785156,
+        10.75523567199707,
+        745.050048828125
+      ],
+      "bottom": 9.128938314644756,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_35",
+      "position": [
+        -108.4187240600586,
+        10.069928169250488,
+        628.8712768554688
+      ],
+      "bottom": 8.198937123833048,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_2_42",
+      "position": [
+        -108.03726196289062,
+        10.091108322143555,
+        643.9503173828125
+      ],
+      "bottom": 8.19893832205068,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_43",
+      "position": [
+        -39.5264892578125,
+        17.627483367919922,
+        772.868408203125
+      ],
+      "bottom": 15.315885574964568,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_59",
+      "position": [
+        -51.026222229003906,
+        9.730250358581543,
+        742.9234008789062
+      ],
+      "bottom": 8.198937490536593,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_62",
+      "position": [
+        -11.682113647460938,
+        10.286993026733398,
+        627.1397705078125
+      ],
+      "bottom": 9.128938850189115,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.BirchTree_Dead_Snow_2_V5_027",
+      "position": [
+        -173.30474853515625,
+        23.4549560546875,
+        626.6471557617188
+      ],
+      "bottom": 9.128939162319512,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_2_34",
+      "position": [
+        -6.1317596435546875,
+        9.193655967712402,
+        709.7449951171875
+      ],
+      "bottom": 8.198937960099641,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.BirchTree_Dead_Snow_2_V5_026",
+      "position": [
+        -25.960294723510742,
+        27.275226593017578,
+        781.3320922851562
+      ],
+      "bottom": 9.128939419446397,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_20",
+      "position": [
+        -160.2152099609375,
+        16.405990600585938,
+        602.9700317382812
+      ],
+      "bottom": 14.38613977788728,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_3_snow_V5_016",
+      "position": [
+        -73.20664978027344,
+        22.081501007080078,
+        649.9671020507812
+      ],
+      "bottom": 9.128939909029214,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_22",
+      "position": [
+        -104.91326904296875,
+        13.524548530578613,
+        609.3770141601562
+      ],
+      "bottom": 12.296298296463817,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_60",
+      "position": [
+        11.220321655273438,
+        19.230487823486328,
+        741.5352172851562
+      ],
+      "bottom": 15.947990490252323,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Mushroom_Grey_56",
+      "position": [
+        -87.42686462402344,
+        10.720612525939941,
+        600.8099975585938
+      ],
+      "bottom": 9.128860394238814,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_54",
+      "position": [
+        -48.97187805175781,
+        10.584396362304688,
+        751.9456176757812
+      ],
+      "bottom": 9.128938759729863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Mushroom_Grey_40",
+      "position": [
+        11.179512023925781,
+        11.013912200927734,
+        712.010498046875
+      ],
+      "bottom": 9.128846626236282,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_46",
+      "position": [
+        -0.657379150390625,
+        17.753751754760742,
+        732.1487426757812
+      ],
+      "bottom": 15.948019981384277,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_2_50",
+      "position": [
+        -173.46925354003906,
+        10.136064529418945,
+        784.0106811523438
+      ],
+      "bottom": 9.128929243834364,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_1_57",
+      "position": [
+        -50.02735137939453,
+        8.906306266784668,
+        748.8258056640625
+      ],
+      "bottom": 8.19893723868455,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_3_4",
+      "position": [
+        -36.226654052734375,
+        16.945968627929688,
+        773.7178955078125
+      ],
+      "bottom": 15.315885909725111,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Mushroom_Grey_24",
+      "position": [
+        2.1829681396484375,
+        10.757246017456055,
+        708.0663452148438
+      ],
+      "bottom": 9.128859155949385,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_61",
+      "position": [
+        14.746368408203125,
+        10.825843811035156,
+        707.1285400390625
+      ],
+      "bottom": 9.12891386151091,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_38",
+      "position": [
+        -7.16278076171875,
+        17.155372619628906,
+        723.6409301757812
+      ],
+      "bottom": 15.948007453972906,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Mushroom_Grey_48",
+      "position": [
+        -167.79177856445312,
+        10.829133987426758,
+        784.8746337890625
+      ],
+      "bottom": 9.128854846500872,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.pine_tree_1_snow_V5_012",
+      "position": [
+        -129.7089385986328,
+        25.127296447753906,
+        737.7011108398438
+      ],
+      "bottom": 9.128939276481105,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_WoodLog_Snow_30",
+      "position": [
+        -163.07803344726562,
+        10.179962158203125,
+        657.73486328125
+      ],
+      "bottom": 9.128939531185097,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_11",
+      "position": [
+        7.2717437744140625,
+        19.191844940185547,
+        746.720947265625
+      ],
+      "bottom": 15.947951733221856,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Bush_Snow_2_58",
+      "position": [
+        -105.30196380615234,
+        8.949941635131836,
+        648.177001953125
+      ],
+      "bottom": 8.198937176247284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Dead_Snow_3_V5_029",
+      "position": [
+        -123.44847106933594,
+        26.001808166503906,
+        599.8770751953125
+      ],
+      "bottom": 9.128943148287362,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_37",
+      "position": [
+        -131.55862426757812,
+        11.592264175415039,
+        601.2794799804688
+      ],
+      "bottom": 9.12890373246887,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_1_3",
+      "position": [
+        -110.48766326904297,
+        9.44112777709961,
+        697.5318603515625
+      ],
+      "bottom": 8.198937427289195,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.pine_tree_2_snow_V5_006",
+      "position": [
+        -160.23721313476562,
+        27.405136108398438,
+        736.82958984375
+      ],
+      "bottom": 9.128937188179407,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_53",
+      "position": [
+        -63.6270751953125,
+        18.423126220703125,
+        787.3920288085938
+      ],
+      "bottom": 13.216605476917053,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Snow_Decor_Rock_Snow_5_21",
+      "position": [
+        -168.1053466796875,
+        16.03034782409668,
+        604.8500366210938
+      ],
+      "bottom": 14.386116288222524,
+      "kind": "decor"
+    }
+  ],
+  "Desert": [
+    {
+      "path": "Workspace.Desert_Decor_Rock_3_11",
+      "position": [
+        112.99279022216797,
+        16.138927459716797,
+        612.8173217773438
+      ],
+      "bottom": 13.022037267684937,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_9_29",
+      "position": [
+        165.8467559814453,
+        10.339344024658203,
+        730.3642578125
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Cactus_1_V5_008",
+      "position": [
+        107.959716796875,
+        27.032960891723633,
+        686.1478271484375
+      ],
+      "bottom": 7.828969955444336,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Cactus_1_V5_008",
+      "position": [
+        280.7375793457031,
+        27.032957077026367,
+        616.318603515625
+      ],
+      "bottom": 7.82896614074707,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Cactus_5_V5_001",
+      "position": [
+        265.03778076171875,
+        27.095001220703125,
+        619.056884765625
+      ],
+      "bottom": 14.20756321475011,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Desert_Decor_rock_smallFlatA_30",
+      "position": [
+        109.8485107421875,
+        10.425483703613281,
+        623.3914794921875
+      ],
+      "bottom": 7.828930616378784,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.cactus_short_V5_011",
+      "position": [
+        112.90377044677734,
+        24.02602195739746,
+        718.628662109375
+      ],
+      "bottom": 7.829435770560849,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.cactus_short_V5_012",
+      "position": [
+        153.2337646484375,
+        18.526123046875,
+        720.9365844726562
+      ],
+      "bottom": 7.829435348510742,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.cactus_short_V5_012",
+      "position": [
+        147.2543182373047,
+        18.526124954223633,
+        647.7142944335938
+      ],
+      "bottom": 7.829437255859375,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Desert_Decor_stone_smallB_15",
+      "position": [
+        121.33036804199219,
+        11.581098556518555,
+        795.7460327148438
+      ],
+      "bottom": 7.829436779022217,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_rock_smallFlatA_14",
+      "position": [
+        260.95806884765625,
+        11.018579483032227,
+        629.1807250976562
+      ],
+      "bottom": 7.829436779022217,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Cactus_4_V5_005",
+      "position": [
+        135.77554321289062,
+        27.244422912597656,
+        700.714111328125
+      ],
+      "bottom": 7.829196929931641,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Cactus_4_V5_005",
+      "position": [
+        228.05923461914062,
+        27.244426727294922,
+        669.6171264648438
+      ],
+      "bottom": 7.829200744628906,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.cactus_tall_V5_013",
+      "position": [
+        216.71414184570312,
+        24.526126861572266,
+        636.6417846679688
+      ],
+      "bottom": 7.829435348510742,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_6_20",
+      "position": [
+        140.8803253173828,
+        10.37991714477539,
+        779.12060546875
+      ],
+      "bottom": 7.829436540603638,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Cactus_3_V5_003",
+      "position": [
+        197.77076721191406,
+        19.687301635742188,
+        614.9946899414062
+      ],
+      "bottom": 7.829436302185059,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Cactus_3_V5_009",
+      "position": [
+        262.4215087890625,
+        19.89654541015625,
+        662.921142578125
+      ],
+      "bottom": 7.829436302185059,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Cactus_4_V5_010",
+      "position": [
+        126.0240478515625,
+        31.01045799255371,
+        639.85888671875
+      ],
+      "bottom": 7.829153060913086,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_6_4",
+      "position": [
+        240.397216796875,
+        11.431764602661133,
+        618.3453979492188
+      ],
+      "bottom": 7.829436540603638,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_6_36",
+      "position": [
+        104.61799621582031,
+        16.529428482055664,
+        614.21142578125
+      ],
+      "bottom": 13.022035569393339,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_rock_smallFlatA_22",
+      "position": [
+        117.29234313964844,
+        11.480180740356445,
+        768.1707763671875
+      ],
+      "bottom": 7.8294358253479,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_stone_smallB_23",
+      "position": [
+        104.04010009765625,
+        9.07733154296875,
+        792.8431396484375
+      ],
+      "bottom": 1.7241975140005579,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_6_12",
+      "position": [
+        278.1873474121094,
+        10.182292938232422,
+        690.2689208984375
+      ],
+      "bottom": 7.8294360637664795,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Grass_Short_25",
+      "position": [
+        193.3497772216797,
+        9.176462173461914,
+        668.2603149414062
+      ],
+      "bottom": 8.300000369548798,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_3_3",
+      "position": [
+        275.459716796875,
+        17.887313842773438,
+        626.1683349609375
+      ],
+      "bottom": 14.207720975851828,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_rock_smallFlatA_6",
+      "position": [
+        107.5972900390625,
+        10.58199691772461,
+        658.4251708984375
+      ],
+      "bottom": 7.829436540603638,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_3_35",
+      "position": [
+        271.65966796875,
+        10.018953323364258,
+        691.8929443359375
+      ],
+      "bottom": 7.829436540603638,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_9_5",
+      "position": [
+        104.08351135253906,
+        9.684678077697754,
+        733.872802734375
+      ],
+      "bottom": 7.8293445110321045,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Grass_Short_1",
+      "position": [
+        167.89122009277344,
+        9.16254997253418,
+        639.3355102539062
+      ],
+      "bottom": 8.300000250339508,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_stone_smallB_31",
+      "position": [
+        244.38421630859375,
+        9.979412078857422,
+        611.7745971679688
+      ],
+      "bottom": 7.8294360637664795,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Cactus_1_V5_006",
+      "position": [
+        120.30030059814453,
+        18.232990264892578,
+        737.3674926757812
+      ],
+      "bottom": 7.8291826248168945,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.cactus_tall_V5_014",
+      "position": [
+        145.07403564453125,
+        16.779727935791016,
+        683.0317993164062
+      ],
+      "bottom": 7.829437255859375,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Desert_Decor_stone_smallB_7",
+      "position": [
+        172.8163604736328,
+        9.509675979614258,
+        662.0098266601562
+      ],
+      "bottom": 7.8294358253479,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_6_28",
+      "position": [
+        105.80970764160156,
+        18.551746368408203,
+        777.5697021484375
+      ],
+      "bottom": 15.130924701690674,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.BirchTree_Dead_5_V5_007",
+      "position": [
+        150.6405029296875,
+        19.403404235839844,
+        787.0130615234375
+      ],
+      "bottom": 7.829437255859375,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Cactus_5_V5_002",
+      "position": [
+        152.34646606445312,
+        26.303176879882812,
+        610.9505615234375
+      ],
+      "bottom": 7.82921028137207,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.BirchTree_Dead_5_V5_004",
+      "position": [
+        136.6565704345703,
+        30.582181930541992,
+        788.7495727539062
+      ],
+      "bottom": 7.829441070556641,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Desert_Decor_Rock_3_19",
+      "position": [
+        94.03728485107422,
+        9.73513412475586,
+        738.087646484375
+      ],
+      "bottom": 7.829436182975769,
+      "kind": "decor"
+    }
+  ],
+  "Volcano": [
+    {
+      "path": "Workspace.Volcano_Decor_stone_tallF_6",
+      "position": [
+        -358.5194396972656,
+        13.18221664428711,
+        648.9202880859375
+      ],
+      "bottom": 10.550000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_7_17",
+      "position": [
+        -437.77325439453125,
+        11.502206802368164,
+        690.427490234375
+      ],
+      "bottom": 9.549999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_8_26",
+      "position": [
+        -282.7262878417969,
+        9.828718185424805,
+        675.0071411132812
+      ],
+      "bottom": 8.299999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Stump_2_7",
+      "position": [
+        -412.71697998046875,
+        12.505992889404297,
+        649.2902221679688
+      ],
+      "bottom": 10.550000429153442,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_7_41",
+      "position": [
+        -383.48992919921875,
+        11.477262496948242,
+        784.5335693359375
+      ],
+      "bottom": 8.549999952316284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_3_V5_024",
+      "position": [
+        -426.8011474609375,
+        20.523160934448242,
+        757.1431274414062
+      ],
+      "bottom": 10.550005912780762,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_1_V5_007",
+      "position": [
+        -278.82891845703125,
+        55.590972900390625,
+        789.0618286132812
+      ],
+      "bottom": 7.249996185302734,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Stump_2_15",
+      "position": [
+        -307.252197265625,
+        12.542413711547852,
+        669.1162109375
+      ],
+      "bottom": 11.583271980285645,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_7_1",
+      "position": [
+        -385.767822265625,
+        12.23532485961914,
+        679.5844116210938
+      ],
+      "bottom": 10.549999833106995,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_1_V5_014",
+      "position": [
+        -293.38262939453125,
+        37.030006408691406,
+        660.6041259765625
+      ],
+      "bottom": 10.550086975097656,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_5_V5_015",
+      "position": [
+        -349.9480285644531,
+        28.89287567138672,
+        618.2676391601562
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_tallF_46",
+      "position": [
+        -334.2152099609375,
+        20.746368408203125,
+        790.7264404296875
+      ],
+      "bottom": 18.533159883941806,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_2_V5_022",
+      "position": [
+        -326.2839660644531,
+        33.7158317565918,
+        645.45751953125
+      ],
+      "bottom": 10.550081253051758,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_largeD_37",
+      "position": [
+        -412.68731689453125,
+        12.554231643676758,
+        639.1849365234375
+      ],
+      "bottom": 10.550000429153442,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_tallF_30",
+      "position": [
+        -287.92230224609375,
+        10.391841888427734,
+        687.0972290039062
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_4_V5_008",
+      "position": [
+        -326.9212646484375,
+        23.15550994873047,
+        661.82470703125
+      ],
+      "bottom": 10.55012321472168,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_3_V5_011",
+      "position": [
+        -296.79803466796875,
+        21.388534545898438,
+        609.9827270507812
+      ],
+      "bottom": 8.550000190734863,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_9_19",
+      "position": [
+        -299.95263671875,
+        10.569839477539062,
+        662.4421997070312
+      ],
+      "bottom": 8.549900770187378,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_largeD_21",
+      "position": [
+        -289.1159973144531,
+        11.557022094726562,
+        666.5556640625
+      ],
+      "bottom": 8.549999952316284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_largeD_45",
+      "position": [
+        -372.73052978515625,
+        12.294035911560059,
+        768.57177734375
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_1_V5_018",
+      "position": [
+        -412.6457214355469,
+        49.43903732299805,
+        620.043701171875
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_1_V5_009",
+      "position": [
+        -392.4029235839844,
+        33.77437210083008,
+        789.9830932617188
+      ],
+      "bottom": 8.550003051757812,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_4_V5_013",
+      "position": [
+        -393.23828125,
+        30.415159225463867,
+        753.52734375
+      ],
+      "bottom": 10.550006866455078,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_5_V5_017",
+      "position": [
+        -352.6652526855469,
+        34.20556640625,
+        672.0072021484375
+      ],
+      "bottom": 10.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Willow_Dead_5_V5_004",
+      "position": [
+        -417.87005615234375,
+        45.00893783569336,
+        745.0906982421875
+      ],
+      "bottom": 10.54998779296875,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_9_11",
+      "position": [
+        -339.5509033203125,
+        21.19055938720703,
+        788.055908203125
+      ],
+      "bottom": 19.331114797100643,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_2_V5_003",
+      "position": [
+        -272.0369567871094,
+        34.292938232421875,
+        636.7456665039062
+      ],
+      "bottom": 10.549995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.common_tree_dead_3_V5_023",
+      "position": [
+        -413.2951965332031,
+        36.94213104248047,
+        767.2998657226562
+      ],
+      "bottom": 10.550004959106445,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.common_tree_dead_3_V5_025",
+      "position": [
+        -430.5797119140625,
+        33.91511917114258,
+        790.7232666015625
+      ],
+      "bottom": 8.55000114440918,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_largeD_13",
+      "position": [
+        -436.70367431640625,
+        11.678664207458496,
+        701.869384765625
+      ],
+      "bottom": 9.550000429153442,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_1_V5_012",
+      "position": [
+        -266.80523681640625,
+        22.065448760986328,
+        612.7531127929688
+      ],
+      "bottom": 8.550000190734863,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_8_34",
+      "position": [
+        -429.5804748535156,
+        12.119169235229492,
+        707.0951538085938
+      ],
+      "bottom": 9.549748659133911,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.common_tree_dead_2_V5_021",
+      "position": [
+        -373.8795471191406,
+        40.969139099121094,
+        701.5711059570312
+      ],
+      "bottom": 10.55000114440918,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_8_2",
+      "position": [
+        -302.1910400390625,
+        9.589430809020996,
+        742.90283203125
+      ],
+      "bottom": 8.299999952316284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Willow_Dead_5_V5_019",
+      "position": [
+        -408.6077880859375,
+        42.779258728027344,
+        687.09130859375
+      ],
+      "bottom": 10.549983978271484,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Stump_2_47",
+      "position": [
+        -323.6954345703125,
+        12.601341247558594,
+        658.4140014648438
+      ],
+      "bottom": 11.583271622657776,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_1_V5_016",
+      "position": [
+        -306.79815673828125,
+        37.83332824707031,
+        620.8629150390625
+      ],
+      "bottom": 10.550111770629883,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_9_3",
+      "position": [
+        -318.1591796875,
+        13.174452781677246,
+        654.7109375
+      ],
+      "bottom": 10.54993987083435,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Stump_2_39",
+      "position": [
+        -417.25115966796875,
+        9.333236694335938,
+        665.5560302734375
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_5_V5_001",
+      "position": [
+        -391.95855712890625,
+        29.631515502929688,
+        615.4210815429688
+      ],
+      "bottom": 8.549999237060547,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_1_V5_020",
+      "position": [
+        -385.4124450683594,
+        38.3342170715332,
+        667.5784301757812
+      ],
+      "bottom": 10.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_largeD_29",
+      "position": [
+        -372.3548278808594,
+        11.516786575317383,
+        788.4426879882812
+      ],
+      "bottom": 8.549999952316284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Rock_7_9",
+      "position": [
+        -367.12060546875,
+        13.279783248901367,
+        734.8477172851562
+      ],
+      "bottom": 10.550000429153442,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_Stump_2_23",
+      "position": [
+        -329.8846130371094,
+        9.019615173339844,
+        758.276123046875
+      ],
+      "bottom": 8.300000488758087,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_3_V5_010",
+      "position": [
+        -431.6348876953125,
+        31.46759796142578,
+        673.6671752929688
+      ],
+      "bottom": 9.549997329711914,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_largeD_5",
+      "position": [
+        -378.78741455078125,
+        23.49313735961914,
+        755.7156982421875
+      ],
+      "bottom": 19.01814473258477,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_3_V5_005",
+      "position": [
+        -431.6397705078125,
+        32.99056625366211,
+        719.4171752929688
+      ],
+      "bottom": 9.549995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_Dead_4_V5_006",
+      "position": [
+        -427.3451232910156,
+        19.389995574951172,
+        702.4556884765625
+      ],
+      "bottom": 9.550002098083496,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_tallF_38",
+      "position": [
+        -422.2606201171875,
+        11.948673248291016,
+        797.2723999023438
+      ],
+      "bottom": 8.550000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Volcano_Decor_stone_tallF_14",
+      "position": [
+        -360.23284912109375,
+        13.946418762207031,
+        722.7752685546875
+      ],
+      "bottom": 10.5500009059906,
+      "kind": "decor"
+    }
+  ],
+  "Meadow": [
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        95.86963653564453,
+        26.17182731628418,
+        -49.67503356933594
+      ],
+      "bottom": 9.128928184509277,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        180.27574157714844,
+        36.671817779541016,
+        -30.949716567993164
+      ],
+      "bottom": 9.128927230834961,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        115.60816955566406,
+        35.17182159423828,
+        -32.22628402709961
+      ],
+      "bottom": 9.128929138183594,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        193.35626220703125,
+        31.671829223632812,
+        1.6593220233917236
+      ],
+      "bottom": 9.128931045532227,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        155.39956665039062,
+        28.17182731628418,
+        -148.93881225585938
+      ],
+      "bottom": 9.128934860229492,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        130.90016174316406,
+        46.17182159423828,
+        -167.39877319335938
+      ],
+      "bottom": 9.12893295288086,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_4_V5_007",
+      "position": [
+        241.7105255126953,
+        31.67182731628418,
+        -7.6941938400268555
+      ],
+      "bottom": 9.12893295288086,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.CommonTree_4_V5_021",
+      "position": [
+        135.02659606933594,
+        35.813106536865234,
+        -1.110137939453125
+      ],
+      "bottom": 9.128931045532227,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Tree_Oak_3_V5_013",
+      "position": [
+        230.6868896484375,
+        16.51822280883789,
+        1.2138335704803467
+      ],
+      "bottom": 9.12887191772461,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.BirchTree_4_V5_022",
+      "position": [
+        168.18722534179688,
+        28.03474235534668,
+        -168.65234375
+      ],
+      "bottom": 9.128931045532227,
+      "kind": "tree"
+    }
+  ],
+  "Mythical": [
+    {
+      "path": "Workspace.Mythical_Decor_stone_tallJ_47",
+      "position": [
+        -138.414794921875,
+        11.676105499267578,
+        -22.118961334228516
+      ],
+      "bottom": 8.299999952316284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_crystal_double_purple_type1_6",
+      "position": [
+        -152.56629943847656,
+        13.40084171295166,
+        -52.1331787109375
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_crystal_double_purple_type1_44",
+      "position": [
+        -11.731704711914062,
+        12.810966491699219,
+        -131.29437255859375
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_plant_bushDetailed_112",
+      "position": [
+        -152.77833557128906,
+        10.542396545410156,
+        -145.60580444335938
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree4_V5_016",
+      "position": [
+        -134.7056121826172,
+        86.53691101074219,
+        -175.09129333496094
+      ],
+      "bottom": 8.300010681152344,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_crystal_double_purple_type1_82",
+      "position": [
+        -44.968231201171875,
+        12.410282135009766,
+        -167.5119171142578
+      ],
+      "bottom": 10.299999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_stone_tallJ_28",
+      "position": [
+        -11.04827880859375,
+        12.249957084655762,
+        -25.499595642089844
+      ],
+      "bottom": 8.300000667572021,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_mushroom_tanTall_35",
+      "position": [
+        -158.03672790527344,
+        9.13749885559082,
+        -120.52459716796875
+      ],
+      "bottom": 8.300000667572021,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.TwistedTree_5_V5_018",
+      "position": [
+        -171.68873596191406,
+        46.1463508605957,
+        -44.36392593383789
+      ],
+      "bottom": 8.299995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_rock_tallH_46",
+      "position": [
+        -166.5341339111328,
+        13.131077766418457,
+        4.334159851074219
+      ],
+      "bottom": 8.300000667572021,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_Root_6_71",
+      "position": [
+        140.39306640625,
+        102.38951110839844,
+        -254.25454711914062
+      ],
+      "bottom": 100.32523703575134,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Tree3_V5_024",
+      "position": [
+        10.803756713867188,
+        81.58568572998047,
+        -176.44256591796875
+      ],
+      "bottom": 8.296989440917969,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_plant_bushDetailed_17",
+      "position": [
+        7.79095458984375,
+        11.606047630310059,
+        -128.33450317382812
+      ],
+      "bottom": 10.29999852180481,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_mushroom_redTall_72",
+      "position": [
+        -161.52708435058594,
+        9.278948783874512,
+        -117.29496765136719
+      ],
+      "bottom": 8.300000369548798,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_rock_tallJ_45",
+      "position": [
+        -174.94906616210938,
+        11.47613525390625,
+        4.667877197265625
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_rock_tallJ_83",
+      "position": [
+        -16.573287963867188,
+        15.162516593933105,
+        4.711952209472656
+      ],
+      "bottom": 10.299999237060547,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_rock_tallH_103",
+      "position": [
+        -153.7687530517578,
+        10.710447311401367,
+        -150.7880401611328
+      ],
+      "bottom": 8.299999952316284,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_mushroom_tanTall_111",
+      "position": [
+        -139.61302185058594,
+        10.362764358520508,
+        -161.10894775390625
+      ],
+      "bottom": 8.300000429153442,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_crystal_single_purple_big_type2_40",
+      "position": [
+        -152.8038330078125,
+        11.343856811523438,
+        -56.889408111572266
+      ],
+      "bottom": 8.299926280975342,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_mushroom_tanTall_73",
+      "position": [
+        -38.45903015136719,
+        9.811762809753418,
+        -150.66964721679688
+      ],
+      "bottom": 8.300000190734863,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_plant_bushDetailed_74",
+      "position": [
+        -148.20323181152344,
+        10.123443603515625,
+        -148.95497131347656
+      ],
+      "bottom": 8.2999986410141,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_stone_tallJ_85",
+      "position": [
+        -172.79991149902344,
+        13.736774444580078,
+        -4.399677276611328
+      ],
+      "bottom": 8.30000114440918,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_mushroom_tanTall_16",
+      "position": [
+        -15.3621826171875,
+        9.505189895629883,
+        -127.25323486328125
+      ],
+      "bottom": 8.299999713897705,
+      "kind": "decor"
+    },
+    {
+      "path": "Workspace.TwistedTree_5_V5_028",
+      "position": [
+        1.4257888793945312,
+        38.908878326416016,
+        -142.86825561523438
+      ],
+      "bottom": 8.299995422363281,
+      "kind": "tree"
+    },
+    {
+      "path": "Workspace.Mythical_Decor_mushroom_redTall_53",
+      "position": [
+        -123.27252197265625,
+        9.391477584838867,
+        -7.441425323486328
+      ],
+      "bottom": 8.300000309944153,
+      "kind": "decor"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "Applied": false,
+  "TransformedCount": 0,
+  "Factor": 0.95,
+  "Pivot": [
+    -237.3525390625,
+    9.12893009185791,
+    192.42086791992188
+  ],
+  "CandidateRoots": 887,
+  "ExclusionRoots": 489,
+  "ProtectedMembersInCandidates": 0,
+  "Limit": "Conservative bounding-box dry run, not a mesh collision proof. Scaling stopped before mutation because five new candidate bounds overlap the protected future plot footprint. No post-scale landing/seam tests apply.",
+  "Conflicts": [
+    {
+      "Moving": "Workspace.BiomeEnvironments.VolcanoEnvironment.Scenery.Rocks.Volcano_Decor_Rock_7_25.Rock_7",
+      "MovingDebugId": "1_24518",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -442.60052490234375,
+        8.238801002502441,
+        736.1492309570312
+      ],
+      "ProposedPosition": [
+        -432.338134765625,
+        8.283307075500488,
+        708.962890625
+      ],
+      "PreviousOverlapVolume": 45.727393962442875,
+      "ProposedOverlapVolume": 55.89458867907524
+    },
+    {
+      "Moving": "Workspace.Volcano_Decor_stone_largeD_45.stone_largeD",
+      "MovingDebugId": "1_25226",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -372.730224609375,
+        10.872966766357422,
+        768.5718994140625
+      ],
+      "ProposedPosition": [
+        -365.9613342285156,
+        10.785764694213867,
+        739.7642822265625
+      ],
+      "PreviousOverlapVolume": 166.1828543767333,
+      "ProposedOverlapVolume": 291.33576588332653
+    },
+    {
+      "Moving": "Workspace.Volcano_Decor_stone_tallF_38.stone_tallF",
+      "MovingDebugId": "1_25212",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -422.2606201171875,
+        10.527603149414062,
+        797.2723999023438
+      ],
+      "ProposedPosition": [
+        -413.01519775390625,
+        10.457669258117676,
+        767.02978515625
+      ],
+      "PreviousOverlapVolume": 0,
+      "ProposedOverlapVolume": 31.187462389469147
+    },
+    {
+      "Moving": "Workspace.Willow_Dead_5_V5_004.Willow_Dead_5.Willow_Dead_5",
+      "MovingDebugId": "1_25200",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -417.869873046875,
+        43.588287353515625,
+        745.0908813476562
+      ],
+      "ProposedPosition": [
+        -408.843994140625,
+        41.865318298339844,
+        717.4573974609375
+      ],
+      "PreviousOverlapVolume": 1290.252135828867,
+      "ProposedOverlapVolume": 1384.923533432206
+    },
+    {
+      "Moving": "Workspace.common_tree_dead_3_V5_023.common_tree_dead_3.common_tree_3_trunk.001",
+      "MovingDebugId": "1_25187",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -413.2953186035156,
+        35.521060943603516,
+        767.2998657226562
+      ],
+      "ProposedPosition": [
+        -404.4981689453125,
+        34.201454162597656,
+        738.555908203125
+      ],
+      "PreviousOverlapVolume": 126.58171308162126,
+      "ProposedOverlapVolume": 199.92080438967304
+    },
+    {
+      "Moving": "Workspace.common_tree_dead_3_V5_023.common_tree_dead_3.common_tree_3_trunk",
+      "MovingDebugId": "1_25188",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -413.2953186035156,
+        35.521060943603516,
+        767.2998657226562
+      ],
+      "ProposedPosition": [
+        -404.4981689453125,
+        34.201454162597656,
+        738.555908203125
+      ],
+      "PreviousOverlapVolume": 126.58171308162126,
+      "ProposedOverlapVolume": 199.92080438967304
+    },
+    {
+      "Moving": "Workspace.CommonTree_Dead_1_V5_009.CommonTree_Dead_1",
+      "MovingDebugId": "1_25208",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -392.40301513671875,
+        32.353302001953125,
+        789.9834594726562
+      ],
+      "ProposedPosition": [
+        -384.6504821777344,
+        31.19208526611328,
+        760.1053466796875
+      ],
+      "PreviousOverlapVolume": 163.84262265264988,
+      "ProposedOverlapVolume": 1062.527133077383
+    },
+    {
+      "Moving": "Workspace.Volcano_Decor_stone_largeD_29.stone_largeD",
+      "MovingDebugId": "1_25214",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -372.3551025390625,
+        10.09571647644043,
+        788.4426879882812
+      ],
+      "ProposedPosition": [
+        -365.60498046875,
+        10.047377586364746,
+        758.6416015625
+      ],
+      "PreviousOverlapVolume": 0,
+      "ProposedOverlapVolume": 119.82873868942261
+    },
+    {
+      "Moving": "Workspace.common_tree_dead_3_V5_025.common_tree_dead_3.common_tree_3_trunk",
+      "MovingDebugId": "1_25204",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -430.5797119140625,
+        32.494049072265625,
+        790.723388671875
+      ],
+      "ProposedPosition": [
+        -420.9183349609375,
+        31.325794219970703,
+        760.8082275390625
+      ],
+      "PreviousOverlapVolume": 0,
+      "ProposedOverlapVolume": 377.402176015079
+    },
+    {
+      "Moving": "Workspace.common_tree_dead_3_V5_025.common_tree_dead_3.common_tree_3_trunk.001",
+      "MovingDebugId": "1_25203",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -430.5797119140625,
+        32.494049072265625,
+        790.723388671875
+      ],
+      "ProposedPosition": [
+        -420.9183349609375,
+        31.325794219970703,
+        760.8082275390625
+      ],
+      "PreviousOverlapVolume": 0,
+      "ProposedOverlapVolume": 377.402176015079
+    },
+    {
+      "Moving": "Workspace.Volcano_Decor_Rock_7_41.Rock_7",
+      "MovingDebugId": "1_25236",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -383.4898376464844,
+        10.056192398071289,
+        784.5335693359375
+      ],
+      "ProposedPosition": [
+        -376.1829833984375,
+        10.0098295211792,
+        754.9278564453125
+      ],
+      "PreviousOverlapVolume": 0,
+      "ProposedOverlapVolume": 81.27188828587532
+    },
+    {
+      "Moving": "Workspace.CommonTree_Dead_1_V5_007.CommonTree_Dead_1",
+      "MovingDebugId": "1_25194",
+      "Fixed": "Workspace.Plot4Reservation",
+      "FixedDebugId": "1_51039",
+      "OldPosition": [
+        -278.8295593261719,
+        54.16990280151367,
+        789.0621337890625
+      ],
+      "ProposedPosition": [
+        -276.7557067871094,
+        51.91785430908203,
+        759.22998046875
+      ],
+      "PreviousOverlapVolume": 368.6443483438343,
+      "ProposedOverlapVolume": 556.8645283710212
+    }
+  ]
+}
