@@ -19,11 +19,11 @@ return {
  FamilyRanks={5,15,35,70,120},FamilyLuckPerRank=.01,FamilyLuckCap=.05,
  HotOrder={"Heavy","Lucky","Rich","Fast","Mastery"},
  Hot={
-  Heavy={Name="Heavy Tree",WeightBias=.15,Description="Higher weight bands gain 15% weight per band step."},
-  Lucky={Name="Lucky Treelet",Luck=1.15,Description="×1.15 normal-search Luck on this tree."},
-  Rich={Name="Rich Tree",CoinFraction=.10,CoinCap=250,Description="10% of the search price returned as bonus coins, up to 250."},
-  Fast={Name="Fast Tree",Cooldown=12,Description="This tree returns in 12 seconds after a successful search."},
-  Mastery={Name="Mastery Tree",Mastery=1,Description="One extra biome and family mastery search point."},
+  Heavy={Name="Heavy Tree",WeightBias=.15,MinimumWeight=3,RarityFloor=5,Description="Legendary+ companion guaranteed at 3kg or heavier."},
+  Lucky={Name="Lucky Treelet",Luck=1.15,RarityFloor=5,Description="Legendary+ companion guaranteed with ×1.15 normal-search Luck."},
+  Rich={Name="Rich Tree",CoinFraction=.10,CoinCap=250,RarityFloor=5,Description="Legendary+ companion guaranteed plus 10% of the search price returned, up to 250."},
+  Fast={Name="Fast Tree",Cooldown=12,RarityFloor=5,Description="Legendary+ companion guaranteed; this tree returns in 12 seconds after a successful search."},
+  Mastery={Name="Mastery Tree",Mastery=1,RarityFloor=5,Description="Legendary+ companion guaranteed plus one extra biome and family mastery search point."},
  },
  Limits={WeightBias=.40,NormalLuckExtra=1.5,RecoveryFloor=.75,PendingRewards=32,EventReceipts=256},
  Micro={
