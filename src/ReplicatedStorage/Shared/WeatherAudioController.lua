@@ -287,6 +287,7 @@ function Session:CleanupAudio()
 	local voices = {}
 	for voice in pairs(self.Voices) do table.insert(voices, voice) end
 	for _, voice in ipairs(voices) do self:_release(voice) end
+	if self.VolumeConnection then self.VolumeConnection:Disconnect();self.VolumeConnection=nil end
 	self.WorldFolder:Destroy()
 	self.Root:Destroy()
 	if activeSession == self then activeSession = nil end
@@ -316,7 +317,11 @@ function Audio.Start(eventId, startedAt, runtime)
 	self.WorldFolder = folder("EventAudio", runtime)
 	self.MixGroup = Instance.new("SoundGroup")
 	self.MixGroup.Name = "WeatherMix"
-	self.MixGroup.Volume = Definitions.Mix.MasterVolume
+	local player=game:GetService("Players").LocalPlayer
+ self.MixGroup.Volume = Definitions.Mix.MasterVolume*(player:GetAttribute("AKAmbienceVolume")or 1)
+ self.VolumeConnection=player:GetAttributeChangedSignal("AKAmbienceVolume"):Connect(function()
+  self.MixGroup.Volume=Definitions.Mix.MasterVolume*(player:GetAttribute("AKAmbienceVolume")or 1)
+ end)
 	self.MixGroup.Parent = self.Root
 	self.Categories = {}
 	self.WorldCategories = {}

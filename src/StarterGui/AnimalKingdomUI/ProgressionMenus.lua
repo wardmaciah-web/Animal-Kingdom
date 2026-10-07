@@ -110,6 +110,24 @@ end
 function M.Challenges(ctx)return require(script.Parent.ActivityMenus).Render(ctx)end
 function M.Settings(ctx)
  W.List(ctx.Content)
+ local intro=W.Card(ctx.Content,100);intro.Name='IntroSettings'
+ W.Heading(intro,'Your Kingdom',UDim2.new(.55,-20,0,36),UDim2.fromOffset(14,10),20)
+ local replay=W.Button(intro,'Replay Intro',UDim2.new(.4,-12,0,44),UDim2.new(.6,0,0,30),function()
+  local event=game.Players.LocalPlayer.PlayerGui:FindFirstChild('ReplayKingdomIntro')
+  if event then event:Fire()end
+ end);replay.Name='ReplayIntro'
+ for _,group in ipairs({'Music','Ambience','SFX'})do
+  local card=W.Card(ctx.Content,100);card.Name='Audio_'..group
+  W.Heading(card,group..' Volume',UDim2.new(.5,-20,0,36),UDim2.fromOffset(14,10),18)
+  local key='AK'..group..'Volume';local player=game.Players.LocalPlayer
+  for i,value in ipairs({0,.25,.5,.75,1})do
+   local b=W.Button(card,tostring(value*100)..'%',UDim2.new(.2,-10,0,44),UDim2.new((i-1)*.2,5,0,48),function()
+    player:SetAttribute(key,value)
+    local soundGroup=game:GetService('SoundService'):FindFirstChild(group)
+    if soundGroup then soundGroup.Volume=value end
+   end);b.Name=group..'Volume_'..i
+  end
+ end
  local qualityCard=W.Card(ctx.Content,164);qualityCard.Name='VisualQuality'
  W.Heading(qualityCard,'Living World Quality',UDim2.new(1,-28,0,36),UDim2.fromOffset(14,10),20)
  W.Text(qualityCard,'Cosmetic detail only. Low preserves essential interaction feedback.',UDim2.new(1,-28,0,42),UDim2.fromOffset(14,46),13,W.Color.Muted)
