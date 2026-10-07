@@ -190,6 +190,7 @@ function M.Start(screen)
   if state.PendingRequestId then attemptIds[state.EventId]=state.PendingRequestId end
   if not state.Active or seen==state.EventId then return end
   seen=state.EventId
+  require(RS.Shared.Gameplay.PresentationSounds).Play("LuckyTree",screen)
   screen:WaitForChild("PresentationNotice"):Fire({
    Id="LuckySpawn:"..state.EventId,World=true,Category="LuckyTree",Priority=100,ExpiresAt=state.EndsAt,
    Message="A Lucky Tree has appeared in "..state.Biome.."! Three free tries each • 5% Secret / 40% Coins / 55% Luck.",

@@ -6,12 +6,29 @@ local CAS=game:GetService("ContextActionService")
 local Lighting=game:GetService("Lighting")
 local p=Players.LocalPlayer
 local Camera=require(RS.Shared.Gameplay.CameraOwnership)
+local Sounds=require(RS.Shared.Gameplay.PresentationSounds)
+local Foliage=require(RS.Shared.Gameplay.FoliageCurtain)
+-- Mount the same foliage before profile readiness so startup shows leaves, not a world flash.
+local startupFoliage,startupConnection
+task.spawn(function()
+ repeat task.wait()until workspace.CurrentCamera
+ local ok,result=pcall(Foliage.Create,workspace,workspace.CurrentCamera.CFrame)
+ if ok then
+  startupFoliage=result
+  startupConnection=Run.RenderStepped:Connect(function()if startupFoliage and workspace.CurrentCamera then startupFoliage.Update(workspace.CurrentCamera.CFrame,0)end end)
+ end
+end)
+local function clearStartup()
+ if startupConnection then startupConnection:Disconnect();startupConnection=nil end
+ if startupFoliage then startupFoliage.Destroy();startupFoliage=nil end
+end
 local running=false
 local replay=Instance.new("BindableEvent");replay.Name="ReplayKingdomIntro";replay.Parent=p:WaitForChild("PlayerGui")
 local function play()
  if running or Camera.Current() then return end
  local char=p.Character;local root=char and char:FindFirstChild("HumanoidRootPart")
  if not root or not workspace.CurrentCamera then return end
+ clearStartup()
  running=true;p:SetAttribute("KingdomIntroPlaying",true)
  local gui=Instance.new("ScreenGui");gui.Name="KingdomIntro";gui.ResetOnSpawn=false;gui.DisplayOrder=200;gui.IgnoreGuiInset=true;gui.Parent=p.PlayerGui
  local function text(name,content,pos,size)
@@ -32,7 +49,7 @@ local function play()
  local warmth=Instance.new("ColorCorrectionEffect");warmth.Name="IntroSunrise";warmth.TintColor=Color3.fromRGB(255,239,216);warmth.Brightness=.04;warmth.Parent=Lighting
  local fade=Instance.new("Frame");fade.Name="Transition";fade.Size=UDim2.fromScale(1,1);fade.BackgroundColor3=Color3.new();fade.BorderSizePixel=0;fade.ZIndex=5;fade.Parent=gui
  skip.ZIndex=6
- local done=false;local token;local connection
+ local done=false;local token;local connection;local curtain
  local function cleanup(reason)
   if done then return end;done=true
   if connection then connection:Disconnect()end
@@ -66,12 +83,28 @@ local function play()
    {8,discovery+Vector3.new(-18,10,45),discovery+Vector3.new(12,6,38),petFocus,"THE MAGIC OF DISCOVERY","Every search begins a new friendship."},
    {10,home+Vector3.new(-45,38,55),root.Position+Vector3.new(0,7,16),root.Position+Vector3.new(0,2,0),"ANIMAL KINGDOM","Your adventure begins."}
   }
-  token=Camera.Acquire("KingdomIntro",function(c)if c then c.CameraType=Enum.CameraType.Scriptable;c.FieldOfView=60 end end,function()cleanup("Interrupted")end)
+  local openingEnd=CFrame.lookAt(shots[1][2],town)
+  local openingStart=openingEnd*CFrame.new(0,0,4)
+  curtain=Foliage.Create(visual,openingStart)
+  token=Camera.Acquire("KingdomIntro",function(c)if c then c.CameraType=Enum.CameraType.Scriptable;c.FieldOfView=60;c.CFrame=openingStart end end,function()cleanup("Interrupted")end)
   local anchor=Instance.new("Part");anchor.Name="DiscoverySparkles";anchor.Size=Vector3.new(.1,.1,.1);anchor.Anchored=true;anchor.CanCollide=false;anchor.CanTouch=false;anchor.CanQuery=false;anchor.Transparency=1;anchor.Position=petFocus;anchor.Parent=visual
   local spark=Instance.new("ParticleEmitter");spark.Texture="rbxasset://textures/particles/sparkles_main.dds";spark.Color=ColorSequence.new(Color3.fromRGB(154,255,172),Color3.fromRGB(255,219,113));spark.Size=NumberSequence.new({NumberSequenceKeypoint.new(0,.4),NumberSequenceKeypoint.new(1,0)});spark.Lifetime=NumberRange.new(1,2);spark.Speed=NumberRange.new(2,5);spark.SpreadAngle=Vector2.new(180,180);spark.LightEmission=.8;spark.Rate=0;spark.Parent=anchor
+  Sounds.Play("IntroRustle",visual.OpeningFoliage.PollenAnchor)
+  Sounds.Play("IntroWind",visual.OpeningFoliage.PollenAnchor)
   local started=os.clock();local shown=false
   connection=Run.RenderStepped:Connect(function()
    local elapsed=os.clock()-started
+   if elapsed<4 then
+    local a=elapsed/4;a=a*a*(3-2*a)
+    local frame=openingStart:Lerp(openingEnd,a)
+    workspace.CurrentCamera.CFrame=frame;curtain.Update(frame,elapsed)
+    warmth.Brightness=-.12+a*.16;fade.BackgroundTransparency=1
+    title.Text="";subtitle.Text="";p:SetAttribute("KingdomIntroScene",0)
+    return
+   end
+   if curtain then curtain.Destroy();curtain=nil end
+   warmth.Brightness=.04
+   elapsed-=4
    if elapsed>=30 then cleanup("Completed");return end
    local i=1;local t=elapsed
    while t>shots[i][1]and i<#shots do t-=shots[i][1];i+=1 end
@@ -81,7 +114,7 @@ local function play()
    if specimen and i==4 then if not shown then shown=true;specimen.Parent=visual;spark:Emit(32) end;specimen:PivotTo(CFrame.new(petFocus+Vector3.new(0,math.sin(elapsed*2)*.25,0))*CFrame.Angles(0,elapsed*.45,0))end
    local c=workspace.CurrentCamera;if c then c.CFrame=CFrame.lookAt(s[2]:Lerp(s[3],a),s[4])end
   end)
-  task.delay(32,function()cleanup("Completed")end)
+  task.delay(36,function()cleanup("Completed")end)
  end,debug.traceback)
  if not ok then warn("[KingdomIntro] "..tostring(err));cleanup("Error")end
 end
@@ -89,5 +122,5 @@ replay.Event:Connect(play)
 task.spawn(function()
  local deadline=os.clock()+120
  repeat task.wait(.25)until (p:GetAttribute("IntroReady")==true and p.Character and p.Character:FindFirstChild("HumanoidRootPart") and workspace.CurrentCamera)or os.clock()>deadline
- if p:GetAttribute("IntroReady")and(Run:IsStudio()or p:GetAttribute("IntroCompleted")~=true)then task.wait(2);play()end
+ if p:GetAttribute("IntroReady")and(Run:IsStudio()or p:GetAttribute("IntroCompleted")~=true)then play()else clearStartup()end
 end)

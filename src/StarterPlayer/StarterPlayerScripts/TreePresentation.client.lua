@@ -172,6 +172,7 @@ local function tick(r,now)
 end
 connections[#connections+1]=RS:WaitForChild('AnimalKingdomRemotes'):WaitForChild('GatherVisual').OnClientEvent:Connect(function(_,position,_,tree,phase)
  local r=root();if not r or typeof(position)~='Vector3'or(r.Position-position).Magnitude>115 or not tree or not tree:IsDescendantOf(workspace)then return end
+ if phase=='Committed'then local point=tree:FindFirstChild('AKTreeInteraction',true)or tree:FindFirstChild('LuckyInteraction',true);if point then Sounds.Play('LeafBurst',point)end end
  if phase~='Committed'then local point=tree:FindFirstChild('AKTreeInteraction',true)or tree:FindFirstChild('LuckyInteraction',true);if point then Sounds.Play('TreeRustle',point);Sounds.Play('TreeShake',point)end end
  if os.clock()-burstAt<.25 then return end;burstAt=os.clock()
  burst.Position=groundAt(position,tree:GetAttribute('BiomeId'))+Vector3.new(0,5,0);burstEmitter.Color=ColorSequence.new(tree:GetAttribute('BiomeId')=='Forest'and Color3.fromRGB(177,192,103)or Color3.fromRGB(255,194,207));burstEmitter:Emit(math.max(5,math.floor((phase=='Committed'and 42 or 14)*quality)))

@@ -100,7 +100,9 @@ function H.Play(screen,result,reduced,ctx)
   petView.ImageTransparency=0;W.Motion.PetReveal(petView);details.Visible=true
   if not reduced then Viewport.Turntable(petView,10)end
   continueButton.Visible=true;equipButton.Visible=ctx~=nil and not entry.AutoDeleted;skipButton.Visible=false
-  Sounds.Play(rarity.Order>=5 and 'LegendaryFound' or 'PetReveal',screen)
+  local cue=entry.Pet.Weight and entry.Pet.Weight>=70 and 'MaxWeight' or d and d.Rarity=='Secret' and 'SecretFound' or rarity.Order>=5 and 'LegendaryFound' or rarity.Order==4 and 'EpicFound' or rarity.Order==3 and 'RareFound' or 'PetReveal'
+  Sounds.Play(cue,screen)
+  if cue=='PetReveal'and entry.Pet.Weight and entry.Pet.Weight>=Weight.HeavyThreshold()then Sounds.Play('HeavyFound',screen)end
   if ctx then ctx.Manager:Focus(shade,'ContinueReward')end
   shade:SetAttribute('Phase','Showcase')
  end

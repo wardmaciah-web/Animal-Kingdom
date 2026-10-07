@@ -21,12 +21,12 @@ function Sounds.Play(id,parent)
  if not def or def.SoundId==""then return end
  local now=os.clock();if active>=16 or(last[id]and now-last[id]<(def.Debounce or .065))then return end;last[id]=now
  local sound=Instance.new("Sound");sound.Name=id;sound.SoundId=def.SoundId;sound.Volume=def.Volume;sound.PlaybackSpeed=def.Pitch or 1
- sound.SoundGroup=groups.SFX;sound.RollOffMinDistance=8;sound.RollOffMaxDistance=55;sound.Parent=parent or Service
+ sound.SoundGroup=groups[def.Group or "SFX"] or groups.SFX;sound.RollOffMinDistance=8;sound.RollOffMaxDistance=55;sound.Parent=parent or Service
  active+=1;local released=false
  local function release()if released then return end;released=true;active=math.max(0,active-1)end
  sound.Destroying:Once(release);sound.Ended:Once(function()release();sound:Destroy()end)
- sound:Play();Debris:AddItem(sound,8)
- if id=="LegendaryFound"or id=="PetReveal"then Sounds.Duck(2)end
+ sound:Play();Debris:AddItem(sound,def.Duration or 8)
+ if id=="LegendaryFound"or id=="SecretFound"or id=="MaxWeight"then Sounds.Duck(4)elseif id=="PetReveal"then Sounds.Duck(1)end
 end
 -- Approved original asset is deliberately unset until generation cost and audio rights are confirmed.
 function Sounds.SetMusic(assetId)
@@ -37,5 +37,14 @@ function Sounds.SetMusic(assetId)
  Tween:Create(sound,TweenInfo.new(1.5),{Volume=.45}):Play()
  if old then old.Name="KingdomMusicFading";Tween:Create(old,TweenInfo.new(1.5),{Volume=0}):Play();Debris:AddItem(old,1.6)end
  return true
+end
+-- Free Creator Store APM Music: Harp Fantasy. One persistent loop for intro and gameplay.
+if game:GetService("RunService"):IsClient()then
+ local player=Players.LocalPlayer
+ for id,group in pairs(groups)do
+  group.Volume=player:GetAttribute("AK"..id.."Volume")or 1
+  player:GetAttributeChangedSignal("AK"..id.."Volume"):Connect(function()group.Volume=player:GetAttribute("AK"..id.."Volume")or 1 end)
+ end
+ task.defer(function()Sounds.SetMusic("rbxassetid://1838853377")end)
 end
 return Sounds

@@ -32,6 +32,7 @@ function M:WorldNotice(world)
  if hot and not self.SeenWorld[hot.Id]then
   for id,at in pairs(self.SeenWorld)do if workspace:GetServerTimeNow()-at>600 then self.SeenWorld[id]=nil end end
   self.SeenWorld[hot.Id]=workspace:GetServerTimeNow()
+  Sounds.Play('HotTree',self.Screen)
   self:Notice({Id='Hot:'..hot.Id,CoalesceKey='HotTree',ExpiresAt=hot.EndsAt,Title='HOT TREE',Message=(hot.Biome or '')..' • '..(hot.Variant or '')..' Tree',Detail='Legendary+ pets guaranteed • normal search costs apply',Category='HotTree',Priority=55})
  end
  self:Attention(self.Ctx.Data)
@@ -74,6 +75,7 @@ function M:Update(d)
    local category=r.Kind=='Paw'and 'Paw'or r.Kind=='Adventure'and 'Adventure'or 'Rush'
    local title=category=='Paw'and 'PAWPRINT HUNT'or category=='Adventure'and 'BIOME ADVENTURE'or 'TREE RUSH'
    local complete=r.Completed;local body=r.Name
+   if complete and not(old and old.Completed)then Sounds.Play('ActivityComplete',self.Screen)end
    if r.Kind=='Adventure'then body=({'Search '..(r.Targets[1].Name or 'the marked tree'),'Find a pet at least '..(r.Ratio or 1.25)..'× base weight','Place an eligible pet in Sanctuary'})[r.Step]or r.Name end
    self:Notice({Id=r.Id..':'..r.Progress,CoalesceKey=r.Id,Category=category,Priority=complete and 80 or 42,Complete=complete,Title=complete and('✓ '..title..' COMPLETE')or title,Message=body,Detail=complete and 'Claim your reward in Activities'or((r.Kind=='Paw'and '🐾 'or '')..r.Progress..' / '..r.Target)})
    if old and old.Id==r.Id and r.Kind=='Paw'and r.Progress>old.Progress and self.Marker then self:PawFound()end
@@ -88,7 +90,7 @@ function M:PawFound()
  self.Marker=nil;self.MarkerKey=nil
  local prompt=marker:FindFirstChild('PawPrompt');if prompt then prompt.Enabled=false end
  local e=marker:FindFirstChild('PawShimmer');if e then e.Rate=0;e:Emit(W.Motion.Reduced()and 5 or 22)end
- Sounds.Play('UIClaim',marker)
+ Sounds.Play('Pawprint',marker)
  local ui=marker:FindFirstChild('Pawprint');if ui then local scale=ui:FindFirstChildOfClass('UIScale');if scale then Tween:Create(scale,TweenInfo.new(.4),{Scale=W.Motion.Reduced()and 1 or 1.35}):Play()end end
  game:GetService('Debris'):AddItem(marker,.65)
 end

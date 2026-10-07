@@ -15,10 +15,33 @@ local Hatch=require(script.Parent.HatchPresentation)
 local Sounds=require(RS.Shared.Gameplay.PresentationSounds)
 local screen=script.Parent;local player=Players.LocalPlayer
 screen:SetAttribute('ProductionUI',true);screen:SetAttribute('Version','2.2.0');screen:SetAttribute('ActiveMenu','')
+screen:SetAttribute('UIHidden',false) -- Session presentation only; never written to profile data.
 screen.IgnoreGuiInset=false;screen.ScreenInsets=Enum.ScreenInsets.CoreUISafeInsets;screen.ClipToDeviceSafeArea=true;screen.DisplayOrder=40
 local connections={};local function connect(signal,fn)local c=signal:Connect(fn);table.insert(connections,c);return c end
 local data,controller;local ctx={Request=Bridge.Request};local manager,hud,overlays,heldBar,quick,tutorial;local resize
 local root=W.New('Frame',{Name='Interface',Size=UDim2.fromScale(1,1),BackgroundTransparency=1},screen)
+-- Keep the restore control outside the interface it hides.
+local visibilityControl=W.New('Frame',{Name='UIVisibilityControl',Size=UDim2.fromOffset(76,44),BackgroundTransparency=1,ZIndex=W.Theme.Layers.HUD},screen)
+local uiToggle=W.Button(visibilityControl,'Hide UI',UDim2.fromScale(1,1),nil,function()ctx.SetUIHidden(not screen:GetAttribute('UIHidden'))end,W.Color.Wood)
+uiToggle.Name='ToggleUI';uiToggle.TextSize=12
+local function visibilityRequired()
+ return screen:GetAttribute('OnboardingActive')or screen:GetAttribute('RewardRevealActive')or screen:GetAttribute('ModalActive')or(screen:GetAttribute('ActiveMenu')or '')~=''
+end
+function ctx.SetUIHidden(hidden)
+ hidden=hidden==true and not visibilityRequired()
+ local changed=screen:GetAttribute('UIHidden')~=hidden
+ screen:SetAttribute('UIHidden',hidden);root.Visible=not hidden;uiToggle.Text=hidden and 'Show UI'or 'Hide UI'
+ if hidden then
+  if tutorial then tutorial.Pointer:Clear()end
+  if Gui.SelectedObject and Gui.SelectedObject:IsDescendantOf(root)or Input:GetLastInputType().Name:find('Gamepad')then Gui.SelectedObject=uiToggle end
+ end
+ if changed and manager and not visibilityRequired()then manager:Focus(manager.Nav,'ToggleUI')end
+end
+local function updateVisibility()
+ if visibilityRequired()then ctx.SetUIHidden(false)end
+ visibilityControl.Visible=not visibilityRequired()
+end
+for _,key in ipairs({'OnboardingActive','RewardRevealActive','ModalActive','ActiveMenu'})do connect(screen:GetAttributeChangedSignal(key),updateVisibility)end
 local panel=W.Surface(root,'Screens',UDim2.fromOffset(1150,650),UDim2.fromScale(.5,.47),'Wood');panel.AnchorPoint=Vector2.new(.5,.5);panel.ZIndex=W.Theme.Layers.Menu;panel.Visible=false;W.Decorate(panel)
 local parchment=W.Surface(panel,'Parchment',UDim2.new(1,-26,1,-26),UDim2.fromOffset(13,13),'Paper')
 local header=W.Surface(panel,'ScreenHeader',UDim2.new(1,-54,0,61),UDim2.fromOffset(27,15),'Wood')
@@ -117,6 +140,9 @@ connect(travelFinished.Event,function(key,success)overlays:FinishTravel(key,succ
 tutorial=require(script.Parent.TutorialGuidance).new(root,screen,ctx,heldBar,quick)
 resize=function()
  local size=screen.AbsoluteSize;hud:Resize(size,Input.TouchEnabled);ctx.Compact=hud.Compact;ctx.Narrow=size.X<600;ctx.Short=size.Y<520
+ visibilityControl.Size=UDim2.fromOffset(ctx.Compact and 56 or 76,44)
+ visibilityControl.Position=ctx.Compact and UDim2.new(1,-68,0,58)or UDim2.new(0,16,.3,86)
+ updateVisibility()
  screen:SetAttribute('CompactLayout',ctx.Compact)
  heldBar:Resize(size,manager.Active,screen:GetAttribute('RewardRevealActive'))
  if ctx.Compact then
@@ -179,7 +205,7 @@ task.spawn(function()
  local physical=remotes:WaitForChild('OpenKingdomRoute',30)
  if physical and screen.Parent then connect(physical.OnClientEvent,function(route)if route=='Shop'or route=='Challenges'or route=='Index'or route=='Biomes'then ctx.Open(route)end end)end
  local stock=RS:WaitForChild('KingdomShopStock',30)
- if stock and screen.Parent then connect(stock:GetAttributeChangedSignal('Rotation'),function()if ctx.ActiveName=='Shop'then ctx.Refresh()end end)end
+ if stock and screen.Parent then connect(stock:GetAttributeChangedSignal('Rotation'),function()Sounds.Play('Restock',screen);if ctx.ActiveName=='Shop'then ctx.Refresh()end end)end
 end)
 connect(remotes:WaitForChild('TeleportToBiome').OnClientEvent,function(name,success,message)overlays:FinishTravel(name,success);if not success then ctx.Notify(message or 'This destination is not available yet.')end end)
 connect(remotes:WaitForChild('GameplayNotice').OnClientEvent,function(payload)
@@ -194,17 +220,19 @@ connect(Bridge.Completed,function(payload)
  if not payload.Success then ctx.Notify(type(result)=='string' and result or 'Action unavailable. Please try again.');return end
  if type(result)=='table' and result.Kind=='PetsSold' then ctx.Notify('Sold '..result.Count..' pets for '..NumberFormat.Number(result.Total)..' Forest Coins.');Sounds.Play('UIClaim',screen)
  elseif type(result)=='table' and result.Kind=='Hatch' then ctx.Close();task.delay(result.PresentationDelay or 0,function()if screen.Parent then Hatch.Play(screen,result,data and data.Settings.ReducedMotion,ctx)end end)
- elseif type(result)=='table' and result.Kind=='LuckyReward' then task.delay(result.PresentationDelay or 0,function()if screen.Parent then ctx.Notify(result.Text);Sounds.Play('UIClaim',screen)end end)
+ elseif type(result)=='table' and result.Kind=='LuckyReward' then task.delay(result.PresentationDelay or 0,function()if screen.Parent then ctx.Notify(result.Text);Sounds.Play('LuckyTree',screen)end end)
  elseif type(result)=='table' and result.Kind=='DeleteConfirmation' then
   overlays:Modal('Release this companion?','This permanently removes the companion from your inventory.',{{Text='Cancel',Color=W.Color.Wood,Callback=function()overlays:Close()end},{Text='Delete pet',Color=W.Color.Red,Callback=function()overlays:Close();ctx.Request('Delete',{UID=result.UID,Token=result.Token})end}})
  elseif type(result)=='table' and (result.Kind=='GardenClaim' or result.Kind=='GardenRecall' or result.Kind=='GardenClaimAll')then
   local lines={};for _,crop in ipairs(result.Crops or {})do table.insert(lines,'+'..tostring(crop.Amount)..' '..tostring(crop.Name))end
   overlays:Modal('Harvest complete!','+'..tostring(result.Amount)..' Harvest\n\n'..table.concat(lines,'  •  '),{{Text='Continue',Callback=function()overlays:Close()end}});Sounds.Play('UIClaim',screen)
- elseif type(result)=='table' and result.Kind=='GardenStarted' then ctx.Notify('Your companion is off to forage!')
+ elseif type(result)=='table' and result.Kind=='GardenStarted' then ctx.Notify('Your companion is off to forage!');Sounds.Play('Garden',screen)
  elseif type(result)=='table' and result.Kind=='KingdomPurchase'then ctx.Notify(result.Text);Sounds.Play('UIPurchase',screen)
  elseif type(result)=='table' and (result.Kind=='GardenVisit' or result.Kind=='GardenReturn')then ctx.Notify(result.Kind=='GardenVisit' and 'Welcome to your Garden!' or 'Welcome back to the kingdom!')
  elseif type(result)=='string' then if payload.Action~='ActivityAccept'and payload.Action~='PawDiscover'then ctx.Notify(result)end
  elseif successText[payload.Action] then ctx.Notify(successText[payload.Action])end
+ if payload.Action=='ClaimMastery'then Sounds.Play('Mastery',screen)end
+ if payload.Action=='Equip'or payload.Action=='SelectHeldPet'or payload.Action=='SanctuarySwap'then Sounds.Play('PetSelect',screen)end
  if payload.Action=='UnlockBiome' then Sounds.Play('UIUnlock',screen)elseif payload.Action=='Upgrade' or payload.Action=='ShopBuy' then Sounds.Play('UIPurchase',screen)end
 end)
 local disposed=false
