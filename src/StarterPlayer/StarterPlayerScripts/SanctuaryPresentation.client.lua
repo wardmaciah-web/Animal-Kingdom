@@ -10,10 +10,16 @@ local function initialize(model)
   local bounds=Geometry.Measure(model);if not bounds then return false end
   local phase=0;for i=1,#model.Name do phase=(phase+string.byte(model.Name,i)*i)%997 end
   local e={Model=model,Bounds=bounds,Base=model:GetAttribute('DisplayBasePivot') or model:GetPivot(),Phase=phase/997*math.pi*2,Labels={}}
-  local function label(d)if d:IsA('BillboardGui')then d.Enabled=false;d.MaxDistance=48;table.insert(e.Labels,d)end end
+  e.BaseBounds=Geometry.RotateBounds(bounds,e.Base.Rotation)
+  e.LabelDistance=math.max(48,bounds.Size.Magnitude+32)
+  e.YawAmplitude=math.min(.018,.12/math.max(.1,Vector2.new(bounds.Size.X,bounds.Size.Z).Magnitude*.5))
+  local function label(d)if d:IsA('BillboardGui')then d.Enabled=false;d.MaxDistance=e.LabelDistance;table.insert(e.Labels,d)end end
   for _,d in ipairs(model:GetDescendants())do label(d)end
   e.LabelConnection=model.DescendantAdded:Connect(label)
-  e.Connection=model:GetAttributeChangedSignal('DisplayBasePivot'):Connect(function()e.Base=model:GetAttribute('DisplayBasePivot') or model:GetPivot()end)
+  e.Connection=model:GetAttributeChangedSignal('DisplayBasePivot'):Connect(function()
+   e.Base=model:GetAttribute('DisplayBasePivot') or model:GetPivot()
+   e.BaseBounds=Geometry.RotateBounds(e.Bounds,e.Base.Rotation)
+  end)
   entries[model]=e;return true
 end
 local function add(model)if model:IsA('Model')and not entries[model]then pending[model]=true end end
@@ -31,9 +37,16 @@ RunService.Heartbeat:Connect(function(dt)
  local reduced=Players.LocalPlayer:GetAttribute('AKReducedMotion')==true
  for model,e in pairs(entries)do
   if not model.Parent then remove(model);continue end
-  local distance=(camera.CFrame.Position-e.Base.Position).Magnitude
-  local point,onScreen=camera:WorldToViewportPoint(e.Base.Position)
-  if onScreen and distance<48 then
+  local bounds=e.BaseBounds
+  local lower=e.Base.Position+bounds.Min;local upper=e.Base.Position+bounds.Max
+  local view=camera.CFrame.Position
+  local nearestPoint=Vector3.new(math.clamp(view.X,lower.X,upper.X),math.clamp(view.Y,lower.Y,upper.Y),math.clamp(view.Z,lower.Z,upper.Z))
+  local distance=(view-nearestPoint).Magnitude
+  local foot=e.Base.Position+Vector3.new(bounds.Center.X,bounds.Min.Y,bounds.Center.Z)
+  local point,onScreen=camera:WorldToViewportPoint(foot)
+  -- A giant's model pivot may be far overhead. Selection follows the physical
+  -- footprint; its label still remains above the actual measured model.
+  if (onScreen or distance<12) and distance<48 then
    local center=Vector2.new(point.X,point.Y)-camera.ViewportSize/2
    local rank=center.Magnitude+distance*2
    if rank<score then nearest=e;score=rank end
@@ -43,7 +56,7 @@ RunService.Heartbeat:Connect(function(dt)
    if not e.Next or now>=e.Next then
     e.Next=now+rate
     -- Yaw around the grounded bounding center. No vertical float or synchronized bounce.
-    local yaw=math.sin(now*.7+e.Phase)*.018
+    local yaw=math.sin(now*.7+e.Phase)*e.YawAmplitude
     local rotation=e.Base.Rotation*CFrame.Angles(0,yaw,0)
     local old=Geometry.RotateBounds(e.Bounds,e.Base.Rotation)
     local surface=e.Base.Position+Vector3.new(old.Center.X,old.Min.Y,old.Center.Z)

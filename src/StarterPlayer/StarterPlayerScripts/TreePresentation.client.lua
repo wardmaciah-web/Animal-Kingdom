@@ -34,8 +34,9 @@ for i=0,15 do
 end
 local hotLight=Instance.new('PointLight');hotLight.Range=17;hotLight.Brightness=1.4;hotLight.Shadows=false;hotLight.Enabled=false;hotLight.Parent=hotGround
 local hotHighlight=Instance.new('Highlight');hotHighlight.Name='HotTreeSilhouette';hotHighlight.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;hotHighlight.Enabled=false;hotHighlight.Parent=folder
-local hotGui=Instance.new('BillboardGui');hotGui.Name='HotTreeLabel';hotGui.Adornee=hotAnchor;hotGui.Size=UDim2.fromOffset(186,92);hotGui.StudsOffsetWorldSpace=Vector3.new(0,5,0);hotGui.MaxDistance=185;hotGui.AlwaysOnTop=false;hotGui.LightInfluence=0;hotGui.Parent=hotAnchor
-local label=Instance.new('TextLabel');label.Size=UDim2.fromScale(1,1);label.BackgroundTransparency=1;label.Font=Enum.Font.GothamBold;label.TextSize=21;label.TextColor3=Color3.new(1,1,1);label.TextStrokeColor3=Color3.fromRGB(28,23,31);label.TextStrokeTransparency=.08;label.Parent=hotGui
+local hotGui=Instance.new('BillboardGui');hotGui.Name='HotTreeLabel';hotGui.Adornee=hotAnchor;hotGui.Size=UDim2.fromOffset(280,130);hotGui.StudsOffsetWorldSpace=Vector3.new(0,5,0);hotGui.MaxDistance=185;hotGui.AlwaysOnTop=false;hotGui.LightInfluence=0;hotGui.Parent=hotAnchor
+local label=Instance.new('TextLabel');label.Size=UDim2.fromScale(1,1);label.BackgroundTransparency=1;label.Font=Enum.Font.GothamBold;label.TextSize=21;label.TextScaled=true;label.TextWrapped=true;label.TextColor3=Color3.new(1,1,1);label.TextStrokeColor3=Color3.fromRGB(28,23,31);label.TextStrokeTransparency=.08;label.Parent=hotGui
+local hotTextSize=Instance.new("UITextSizeConstraint");hotTextSize.MinTextSize=12;hotTextSize.MaxTextSize=21;hotTextSize.Parent=label
 local labelTree;local labelRadius=8
 local luckyAnchor=anchor('LuckyAreaGlow',Vector3.new(12,7,12));local luckyGlints=emitter(luckyAnchor,'LuckyGreenGold');luckyGlints.Color=ColorSequence.new(Color3.fromRGB(141,241,148),Color3.fromRGB(255,226,124));luckyGlints.LightEmission=1
 local zones={}
@@ -153,7 +154,7 @@ local function tick(r,now)
    local radius=math.clamp(math.min(size.X,size.Z)*.5+1,6,16)
    for i,b in ipairs(ringBeams)do b.Attachment0.Position=Vector3.new(math.cos((i-1)*math.pi/8)*radius,0,math.sin((i-1)*math.pi/8)*radius);b.Attachment1.Position=Vector3.new(math.cos(i*math.pi/8)*radius,0,math.sin(i*math.pi/8)*radius)end
   end
-  local remaining=math.max(0,math.ceil(c.Tree:GetAttribute('HotTreeEndsAt')-now));label.Text='HOT TREE\n'..string.upper(c.Tree:GetAttribute('HotTreeVariant'))..'\n'..math.floor(remaining/60)..':'..string.format('%02d',remaining%60)
+  local remaining=math.max(0,math.ceil(c.Tree:GetAttribute('HotTreeEndsAt')-now));label.Text=string.upper(c.Tree:GetAttribute('HotTreeVariant'))..' HOT TREE\nLEGENDARY+ GUARANTEED\n'..(c.Tree:GetAttribute('HotTreeDescription')or '')..'\n'..math.floor(remaining/60)..':'..string.format('%02d',remaining%60)
   local available=c.Tree:GetAttribute('ResourceState')=='AVAILABLE'
   hotHighlight.Enabled=available
   if available and c.Distance<115 then hotUp.Rate=10*quality;for _,o in ipairs(orbit)do o.Emitter.Rate=3*quality;o.Emitter.Color=ColorSequence.new(c.Color)end end

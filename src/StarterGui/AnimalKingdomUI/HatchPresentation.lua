@@ -8,6 +8,7 @@ local Viewport=require(script.Parent.AnimalKingdomUIV2.Viewport)
 local Pets=require(RS.Shared.Gameplay.Definitions.PetDefinitions)
 local Rarities=require(RS.Shared.Gameplay.Definitions.RarityDefinitions)
 local Format=require(RS.Shared.Gameplay.PetNumberFormat)
+local Weight=require(RS.Shared.Gameplay.PetWeight)
 local Camera=require(RS.Shared.Gameplay.CameraOwnership)
 local Sounds=require(RS.Shared.Gameplay.PresentationSounds)
 local H={Busy=false};local queue={};local activeClose
@@ -51,9 +52,15 @@ function H.Play(screen,result,reduced,ctx)
  local name=W.Heading(details,d and d.DisplayName or 'Companion',UDim2.new(1,0,0,29),nil,ctx and ctx.Compact and 19 or 26,W.Color.White);name.TextXAlignment=Enum.TextXAlignment.Center
  local text=W.Text(details,(d and d.Rarity or '')..'  •  '..Format.Weight(entry.Pet.Weight)..'  •  '..Format.Income(entry.Pet.CoinsPerSecond),UDim2.new(1,0,0,25),UDim2.fromOffset(0,29),13,rarity.Color:Lerp(W.Color.White,.55));text.TextXAlignment=Enum.TextXAlignment.Center
  local record=entry.WeightRecord
+ local hot=result.Hot
+ local benefit=hot and (hot.Variant=='Heavy'and ('HEAVY FIND! '..Format.Weight(entry.Pet.Weight)..' • '..Format.Weight(hot.MinimumWeight or Weight.HeavyThreshold())..'+ guaranteed')
+  or hot.Variant=='Rich'and ('+'..Format.Number(hot.BonusCoins)..' bonus Forest Coins'..(hot.BonusPending and ' • claim in Activities'or ''))
+  or hot.Variant=='Mastery'and (hot.Mastery..'× MASTERY • +'..hot.Mastery..' biome + family points')
+  or hot.Variant=='Fast'and ('RAPID SEARCH • tree returns after '..hot.TreeCooldown..'s')
+  or 'HIGH-RARITY HOT FIND • Legendary+ guaranteed')
  local recordText=record and (record.First and string.format('First recorded weight: %.2f kg',record.Weight) or string.format('%.2f kg • Previous best: %.2f kg',record.Weight,record.Previous))
  local destinationText=entry.Destination=='Held'  and 'ADDED TO HELD PETS' or 'SENT TO PET INVENTORY'
- local destination=W.Text(details,recordText or destinationText,UDim2.new(1,0,0,22),UDim2.fromOffset(0,55),12,W.Color.White);destination.TextXAlignment=Enum.TextXAlignment.Center
+ local destination=W.Text(details,benefit or recordText or destinationText,UDim2.new(1,0,0,22),UDim2.fromOffset(0,55),12,W.Color.White);destination.TextXAlignment=Enum.TextXAlignment.Center
  local closed,ready=false,false;local born=os.clock()
  local duration=reduced and .45 or math.clamp(tonumber(result.Duration) or 1.3,.6,30)
  shade:SetAttribute('HatchDuration',duration)

@@ -5,6 +5,14 @@ local Definitions=require(RS.Shared.Gameplay.Definitions.PetDefinitions)
 local PetWeight=require(RS.Shared.Gameplay.PetWeight)
 local T=require(script.Parent.Theme)
 local V={Budget=24}
+-- A fixed authored-baseline camera makes the kg ladder visibly grow. This is
+-- framing only: Appearance owns physical Model:ScaleTo, including huge pets.
+-- Beyond the reference, emergency retreat permits increasing overscan rather
+-- than fitting every owned specimen back to the same apparent dimensions.
+-- The camera reference follows the canonical 10kg specimen; it is not a
+-- second size curve and never changes the clone's physical dimensions.
+local REFERENCE_CAMERA_SCALE=PetWeight.Scale({Weight=10})
+local MAX_EMERGENCY_COVERAGE=1.7
 local entries={}
 local animated={}
 local motionConnection
@@ -41,20 +49,38 @@ local function frame(e)
   local h=e.height or select(2,model:GetBoundingBox()).Y
   for _,x in ipairs({-radius,radius})do for _,y in ipairs({-h/2,h/2})do for _,z in ipairs({-radius,radius})do table.insert(bounds.Corners,Vector3.new(x,y,z))end end end
  end
- if e.pet then
-  local def=Definitions[e.pet.PetId]
-  local referenceScale=math.min(1.6,PetWeight.Maximum(def)^.35)/PetWeight.Scale(e.pet,def)
-  for i,corner in ipairs(bounds.Corners)do bounds.Corners[i]=bounds.Center+(corner-bounds.Center)*referenceScale end
- end
+ local weightScale=model:GetAttribute('WeightVisualScale')
+ local ownedSpecimen=weightScale and (model:GetAttribute('OwnedPetInstanceId')~=nil or (e.pet and type(e.pet.Weight)=='number'))
  local aspect=math.max(e.view.AbsoluteSize.X,1)/math.max(e.view.AbsoluteSize.Y,1)
  local rotation=CFrame.lookAt(Vector3.new(.24,.13,-1),Vector3.zero).Rotation
  local tan=math.tan(math.rad(e.camera.FieldOfView/2));local distance=.1
+ local referenceDistance=.1
+ local coverage=ownedSpecimen and (1+(MAX_EMERGENCY_COVERAGE-1)*math.max(0,1-REFERENCE_CAMERA_SCALE/weightScale))or 1
  for _,corner in ipairs(bounds.Corners) do
   local p=rotation:VectorToObjectSpace(corner-bounds.Center)
-  distance=math.max(distance,p.Z+1.13*math.max(math.abs(p.X)/(tan*aspect),math.abs(p.Y)/tan))
+  local extent=math.max(math.abs(p.X)/(tan*aspect),math.abs(p.Y)/tan)
+  local fitted=p.Z+1.13*extent
+  if ownedSpecimen then
+   referenceDistance=math.max(referenceDistance,fitted*REFERENCE_CAMERA_SCALE/weightScale)
+   -- p.Z stays physical so the camera cannot move inside the oversized model.
+   distance=math.max(distance,p.Z+1.13*extent/coverage)
+  else distance=math.max(distance,fitted)end -- species-only Index silhouettes
  end
+ if ownedSpecimen then distance=math.max(distance,referenceDistance)end
  e.camera.CFrame=CFrame.new(bounds.Center+rotation.ZVector*distance)*rotation
+ local minX,minY,maxX,maxY=math.huge,math.huge,-math.huge,-math.huge
+ for _,corner in ipairs(bounds.Corners)do
+  local p=rotation:VectorToObjectSpace(corner-bounds.Center)
+  local depth=math.max(.001,distance-p.Z)
+  local x,y=p.X/(depth*tan*aspect),p.Y/(depth*tan)
+  minX=math.min(minX,x);maxX=math.max(maxX,x);minY=math.min(minY,y);maxY=math.max(maxY,y)
+ end
  e.view:SetAttribute('FramedDistance',distance)
+ e.view:SetAttribute('WeightVisualScale',weightScale)
+ e.view:SetAttribute('ReferenceFramedDistance',ownedSpecimen and referenceDistance or nil)
+ e.view:SetAttribute('EmergencyFraming',ownedSpecimen and distance>referenceDistance+.001 or false)
+ e.view:SetAttribute('ProjectedWidthFraction',(maxX-minX)/2)
+ e.view:SetAttribute('ProjectedHeightFraction',(maxY-minY)/2)
 end
 local function mount(e)
  local model=e.source
@@ -107,7 +133,7 @@ local function mount(e)
   else model.Parent=world;e.ready=true;e.message.Visible=false;e.view:SetAttribute('PreviewReady',true)end
  end)
  if e.showcase then
-  local diameter=math.max(b.Size.X,b.Size.Z)*1.22
+  local diameter=math.max(b.Size.X,b.Size.Z)/(model:GetAttribute('WeightVisualScale')or 1)*1.22
   for i,style in ipairs({{Size=diameter,Color=T.Color.Gold},{Size=diameter*.92,Color=T.Color.Wood}})do
    local disc=Instance.new('Part');disc.Name='ShowcaseStage';disc.Shape=Enum.PartType.Cylinder;disc.Size=Vector3.new(.06,style.Size,style.Size);disc.CFrame=CFrame.new(0,-b.Size.Y/2-.06+(i-1)*.035,0)*CFrame.Angles(0,0,math.pi/2);disc.Anchored=true;disc.CanCollide=false;disc.Color=style.Color;disc.Material=Enum.Material.SmoothPlastic;disc.Parent=e.world
   end
