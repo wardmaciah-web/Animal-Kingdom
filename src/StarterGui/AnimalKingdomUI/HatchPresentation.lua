@@ -62,7 +62,8 @@ function H.Play(screen,result,reduced,ctx)
  local destinationText=entry.Destination=='Held'  and 'ADDED TO HELD PETS' or 'SENT TO PET INVENTORY'
  local destination=W.Text(details,benefit or recordText or destinationText,UDim2.new(1,0,0,22),UDim2.fromOffset(0,55),12,W.Color.White);destination.TextXAlignment=Enum.TextXAlignment.Center
  local closed,ready=false,false;local born=os.clock()
- local duration=reduced and .45 or math.clamp(tonumber(result.Duration) or 1.3,.6,30)
+ local duration=reduced and .35 or (rarity.Order<=2 and .65 or rarity.Order<=3 and 1 or rarity.Order<=4 and 1.35 or 1.8)
+ if entry.Pet.Weight and entry.Pet.Weight>=70 then duration=reduced and .35 or 2 end
  shade:SetAttribute('HatchDuration',duration)
  local continueButton,equipButton,skipButton
  local function close(immediate)
@@ -82,6 +83,19 @@ function H.Play(screen,result,reduced,ctx)
   end
   if eggView.Parent then eggView:Destroy()end
   title.Text=(record and not record.First and 'NEW WEIGHT RECORD!' or entry.NewDiscovery and 'NEW DISCOVERY!' or 'NEW COMPANION!')..((entry.Pet.WeightQuality or '')~='' and (' • '..entry.Pet.WeightQuality) or '')
+  if entry.Pet.Weight and entry.Pet.Weight>=70 then title.Text='MAX WEIGHT • 70 kg JACKPOT';title.TextColor3=W.Color.Gold
+  elseif d and d.Rarity=='Secret' then title.Text='SECRET DISCOVERY';title.TextColor3=rarity.Color
+  elseif rarity.Order>=5 then title.Text=string.upper(d and d.Rarity or 'LEGENDARY')..' DISCOVERY';title.TextColor3=rarity.Color end
+  -- Local pooled-size UI celebration; it never changes the committed reward.
+  if not reduced and rarity.Order>=3 then
+   local tween=game:GetService('TweenService')
+   for i=1,math.min(24,6+rarity.Order*3)do
+    local spark=W.New('Frame',{Name='DiscoverySpark',AnchorPoint=Vector2.new(.5,.5),Size=UDim2.fromOffset(5,9),Position=UDim2.fromScale(.5,.48),BackgroundColor3=entry.Pet.Weight and entry.Pet.Weight>=70 and W.Color.Gold or rarity.Color,BorderSizePixel=0,ZIndex=62},stage);W.Round(spark,4)
+    local angle=i*2.399;local radius=.25+((i%3)*.06)
+    tween:Create(spark,TweenInfo.new(.8,Enum.EasingStyle.Quart,Enum.EasingDirection.Out),{Position=UDim2.fromScale(.5+math.cos(angle)*radius,.48+math.sin(angle)*radius),Rotation=i*31,BackgroundTransparency=1}):Play()
+    game:GetService('Debris'):AddItem(spark,1)
+   end
+  end
   Sounds.Play('EggCrack',screen)
   petView.ImageTransparency=0;W.Motion.PetReveal(petView);details.Visible=true
   if not reduced then Viewport.Turntable(petView,10)end

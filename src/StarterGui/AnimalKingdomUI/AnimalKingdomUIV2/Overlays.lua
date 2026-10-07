@@ -53,14 +53,15 @@ function O:LayoutNotice(item)
  local size=self.Screen.AbsoluteSize;local small=size.X<700 or size.Y<500
  local width=math.min(size.X-28,900);local title=small and math.clamp(width/14,25,32)or math.clamp(size.X/43,32,42)
  local body=small and 16 or math.clamp(size.X/80,18,24)
- self.Toast.Size=UDim2.fromOffset(width,small and 136 or 160);self.Toast.Position=UDim2.new(.5,0,0,small and 10 or 82)
- for _,label in ipairs({self.ToastTitle,self.Shadow,self.Glow})do label.Text=item.Title;label.TextSize=title end
+ self.Toast.Size=UDim2.fromOffset(width,small and 112 or 160);self.Toast.Position=UDim2.new(.5,0,0,small and 142 or 82)
+ for _,label in ipairs({self.ToastTitle,self.Shadow,self.Glow})do label.Text=item.Title;label.TextSize=title;label.Size=UDim2.new(1,-28,0,small and 36 or 52)end
  self.ToastText.Text=item.Subtitle or item.Message;self.ToastText.TextSize=body
  self.ToastDetail.Text=item.Detail or '';self.ToastDetail.TextSize=small and 19 or 24
+ self.ToastDetail.Size=UDim2.new(1,-28,0,small and 24 or 31);self.Accent.Position=UDim2.new(.5,-60,0,small and 35 or 49)
  self.ToastDetail.TextColor3=item.Accent;self.Accent.BackgroundColor3=item.Accent
  self.Glow.TextColor3=item.Accent;self.Glow.UIStroke.Color=item.Accent
- self.ToastText.Position=UDim2.fromOffset(14,small and 48 or 54);self.ToastText.Size=UDim2.new(1,-28,0,small and 50 or 60)
- self.ToastDetail.Position=UDim2.fromOffset(14,small and 101 or 115)
+ self.ToastText.Position=UDim2.fromOffset(14,small and 40 or 54);self.ToastText.Size=UDim2.new(1,-28,0,small and 40 or 60)
+ self.ToastDetail.Position=UDim2.fromOffset(14,small and 84 or 115)
  for _,label in ipairs({self.ToastTitle,self.Shadow,self.Glow,self.ToastDetail,self.Accent})do label.Visible=not item.Compact end
  if item.Compact then self.Toast.Size=UDim2.fromOffset(math.min(width,640),54);self.ToastText.Position=UDim2.fromOffset(14,4);self.ToastText.Size=UDim2.new(1,-28,1,-8);self.ToastText.TextSize=small and 16 or 19 end
  self.Toast:SetAttribute('AnnouncementId',item.Id);self.Toast:SetAttribute('Priority',item.Priority);self.Toast:SetAttribute('Title',item.Title)
@@ -99,7 +100,7 @@ function O:Notify(payload)
    local gui=self.Gui;local index=1
    if gui and gui:GetAttribute('OnboardingActive')then for i,candidate in ipairs(self.Queue)do if not candidate.World and candidate.Priority>=70 then index=i;break end end end
    local item=self.Queue[index]
-   local function blocked(candidate)return gui and(gui:GetAttribute('RewardRevealActive')or gui:GetAttribute('ModalActive')or candidate.Category=='LuckyTree'and gui:GetAttribute('LuckyAssetsReady')==false or gui:GetAttribute('OnboardingActive')and(candidate.World or candidate.Priority<70))end
+   local function blocked(candidate)return gui and(gui:GetAttribute('UIHidden')or gui:GetAttribute('RewardRevealActive')or gui:GetAttribute('ModalActive')or candidate.Category=='LuckyTree'and gui:GetAttribute('LuckyAssetsReady')==false or gui:GetAttribute('OnboardingActive')and(candidate.World or candidate.Priority<70))end
    if item.ExpiresAt<=workspace:GetServerTimeNow()then table.remove(self.Queue,index);continue end
    if blocked(item)then task.wait(.15);continue end
    table.remove(self.Queue,index);self.Current=item;self:LayoutNotice(item);self.Toast.Visible=true;if gui then gui:SetAttribute('AnnouncementActive',true)end;self:AnimateNotice(true)

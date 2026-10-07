@@ -1,13 +1,13 @@
 -- One visual authority for HUD, screens, overlays and reusable controls.
 local T = {}
 T.Color = {
- Panel=Color3.fromRGB(255,241,209), Card=Color3.fromRGB(255,247,225),
- Ink=Color3.fromRGB(77,44,25), Muted=Color3.fromRGB(135,103,68),
- Wood=Color3.fromRGB(116,64,32), WoodDark=Color3.fromRGB(65,34,21),
- Green=Color3.fromRGB(58,140,66), GreenDark=Color3.fromRGB(30,90,44),
- Gold=Color3.fromRGB(255,207,88), Pink=Color3.fromRGB(240,133,158),
+ Panel=Color3.fromRGB(244,235,211), Card=Color3.fromRGB(252,246,227),
+ Ink=Color3.fromRGB(30,53,43), Muted=Color3.fromRGB(100,112,91),
+ Wood=Color3.fromRGB(47,72,57), WoodDark=Color3.fromRGB(18,39,31),
+ Green=Color3.fromRGB(48,111,78), GreenDark=Color3.fromRGB(22,63,46),
+ Gold=Color3.fromRGB(220,185,106), Pink=Color3.fromRGB(240,133,158),
  Red=Color3.fromRGB(185,65,57), White=Color3.fromRGB(255,250,232),
- Garden=Color3.fromRGB(240,246,214), Line=Color3.fromRGB(205,161,101),
+ Garden=Color3.fromRGB(240,246,214), Line=Color3.fromRGB(186,164,116),
 }
 T.Size={Header=26,Subheader=20,Body=15,Small=12,Button=46,TouchButton=48}
 T.Spacing={Tiny=4,Small=8,Normal=12,Large=20,Panel=26}
@@ -16,9 +16,9 @@ T.Stroke={Normal=1.5,Button=2,Focus=3}
 T.Shadow={Color=Color3.fromRGB(39,25,17),Transparency=.65,Offset=5}
 -- Side actions keep their entire shell, focus and badge inside the hit target.
 T.SideAction={Radius=14,Inset=2,Stroke=2,FocusStroke=3,Gap=8,LabelMax=14,BadgeMin=16,BadgeMax=21,
- Body=Color3.fromRGB(148,86,43),Rim=Color3.fromRGB(224,166,86),ShadowTransparency=.28}
+ Body=Color3.fromRGB(31,64,47),Rim=Color3.fromRGB(220,185,106),ShadowTransparency=.28}
 T.Rarities=require(game:GetService('ReplicatedStorage').Shared.Gameplay.Definitions.RarityDefinitions)
-T.Font=Enum.Font.FredokaOne
+T.Font=Enum.Font.GothamBold
 T.Body=Enum.Font.GothamMedium
 T.Assets={Icons="rbxassetid://92399661199946",Wood="rbxassetid://111463473227476",Paper="rbxassetid://96554661989239"}
 T.Icons={Pets=0,Index=1,Garden=2,Biomes=3,Challenges=4,Upgrades=5,Plot=6,Settings=7,Shop=8,FriendshipTokens=9,Coins=10,Teleport=11,Leaf=12,Flower=13,Crown=14,Harvest=15,Daily=4}

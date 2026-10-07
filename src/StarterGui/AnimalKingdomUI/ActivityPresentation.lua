@@ -100,12 +100,12 @@ function M:Paw(r,index,target)
  local ground=W.New('SurfaceGui',{Name='GroundPaw',Face=Enum.NormalId.Top,CanvasSize=Vector2.new(160,160),LightInfluence=0,AlwaysOnTop=false},anchor)
  local disc=W.New('Frame',{Size=UDim2.fromScale(.96,.96),Position=UDim2.fromScale(.02,.02),BackgroundColor3=Color3.fromRGB(102,236,207),BackgroundTransparency=.78},ground);W.Round(disc,80);W.Stroke(disc,Color3.fromRGB(176,255,233),2)
  W.Icon(ground,'Pets',UDim2.fromScale(.78,.78),UDim2.fromScale(.11,.11))
- local ui=W.New('BillboardGui',{Name='Pawprint',Adornee=anchor,Size=UDim2.fromOffset(82,95),StudsOffsetWorldSpace=Vector3.new(0,2,0),MaxDistance=85,AlwaysOnTop=false},anchor)
+ local ui=W.New('BillboardGui',{Name='Pawprint',Adornee=anchor,Size=UDim2.fromOffset(82,95),StudsOffsetWorldSpace=Vector3.new(0,3.5,0),MaxDistance=145,AlwaysOnTop=true},anchor)
  local scale=W.New('UIScale',{Scale=1},ui)
  W.Icon(ui,'Pets',UDim2.fromOffset(62,62),UDim2.fromOffset(10,0))
  local label=W.Text(ui,index..' / 6',UDim2.new(1,0,0,28),UDim2.fromOffset(0,64),18,Color3.fromRGB(218,255,244));label.TextXAlignment=Enum.TextXAlignment.Center;label.TextStrokeTransparency=.15
- if not W.Motion.Reduced()then local pulse=Tween:Create(scale,TweenInfo.new(1.1,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut,-1,true),{Scale=1.07});pulse:Play();anchor.Destroying:Once(function()pulse:Cancel()end)end
- local e=Instance.new('ParticleEmitter');e.Name='PawShimmer';e.Texture='rbxasset://textures/particles/sparkles_main.dds';e.Color=ColorSequence.new(Color3.fromRGB(151,255,219));e.Size=NumberSequence.new(.16);e.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.2,.25),NumberSequenceKeypoint.new(1,1)});e.Lifetime=NumberRange.new(1,2);e.Speed=NumberRange.new(.6,1.5);e.SpreadAngle=Vector2.new(40,40);e.Rate=W.Motion.Reduced()and 1 or 4;e.LightEmission=.8;e.Parent=anchor
+ if not W.Motion.Reduced()then local pulse=Tween:Create(scale,TweenInfo.new(1.1,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut,-1,true),{Scale=1.13});pulse:Play();anchor.Destroying:Once(function()pulse:Cancel()end)end
+ local e=Instance.new('ParticleEmitter');e.Name='PawShimmer';e.Texture='rbxasset://textures/particles/sparkles_main.dds';e.Color=ColorSequence.new(Color3.fromRGB(151,255,219));e.Size=NumberSequence.new(.16);e.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.2,.25),NumberSequenceKeypoint.new(1,1)});e.Lifetime=NumberRange.new(1,2);e.Speed=NumberRange.new(.6,1.5);e.SpreadAngle=Vector2.new(40,40);e.Rate=W.Motion.Reduced()and 1 or 7;e.LightEmission=.8;e.Parent=anchor
  local prompt=Instance.new('ProximityPrompt');prompt.Name='PawPrompt';prompt.ActionText='DISCOVER PAWPRINT';prompt.ObjectText='Your trail • '..index..'/6';prompt.MaxActivationDistance=8;prompt.HoldDuration=.15;prompt.RequiresLineOfSight=false;prompt.Parent=anchor
  prompt.Triggered:Connect(function()Bridge.Request('PawDiscover',{Id=r.Id,Index=index})end)
  self.Marker=anchor;self.MarkerKey=key;return anchor

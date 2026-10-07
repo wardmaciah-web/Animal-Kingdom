@@ -50,7 +50,9 @@ local function frame(e)
   for _,x in ipairs({-radius,radius})do for _,y in ipairs({-h/2,h/2})do for _,z in ipairs({-radius,radius})do table.insert(bounds.Corners,Vector3.new(x,y,z))end end end
  end
  local weightScale=model:GetAttribute('WeightVisualScale')
- local ownedSpecimen=weightScale and (model:GetAttribute('OwnedPetInstanceId')~=nil or (e.pet and type(e.pet.Weight)=='number'))
+ -- Small HUD portraits frame the physical clone tightly; world/model weight scale
+ -- remains untouched. Larger specimen cards retain the authored weight ladder.
+ local ownedSpecimen=e.view.AbsoluteSize.Y>=120 and weightScale and (model:GetAttribute('OwnedPetInstanceId')~=nil or (e.pet and type(e.pet.Weight)=='number'))
  local aspect=math.max(e.view.AbsoluteSize.X,1)/math.max(e.view.AbsoluteSize.Y,1)
  local rotation=CFrame.lookAt(Vector3.new(.24,.13,-1),Vector3.zero).Rotation
  local tan=math.tan(math.rad(e.camera.FieldOfView/2));local distance=.1

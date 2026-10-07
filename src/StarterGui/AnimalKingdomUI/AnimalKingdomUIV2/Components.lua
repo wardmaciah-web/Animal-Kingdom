@@ -28,6 +28,10 @@ function W.Skin(p,kind)
  local image=W.Image(p,kind=='Wood' and T.Assets.Wood or T.Assets.Paper)
  image.Name='Surface';image.ZIndex=0;image.ScaleType=Enum.ScaleType.Slice
  image.SliceCenter=Rect.new(150,150,874,874);image.SliceScale=kind=='Wood' and .2 or .14
+ image.ImageTransparency=kind=='Wood' and .9 or .92
+ p.BackgroundTransparency=0;p.BackgroundColor3=kind=='Wood' and T.Color.WoodDark or T.Color.Panel
+ W.Round(p,T.Radius.Panel);W.Stroke(p,kind=='Wood' and T.Color.Gold or T.Color.Line,1)
+ W.Gradient(p,kind=='Wood' and T.Color.Wood or T.Color.Card,kind=='Wood' and T.Color.WoodDark or T.Color.Panel)
  return image
 end
 function W.Surface(p,name,size,pos,kind)
@@ -42,6 +46,12 @@ function W.Decorate(p)
 end
 function W.Bind(b,callback,presentation)
  W.Activators[b]=callback;b.Selectable=true;b.AutoButtonColor=false
+ -- Studio-only bridge exercises existing callbacks during MCP visual QA.
+ if game:GetService('RunService'):IsStudio()then
+  local qa=Instance.new('BindableFunction');qa.Name='AKStudioActivate'
+  qa.OnInvoke=function()if not b.Active or b:GetAttribute('Pending')or b:GetAttribute('Disabled')then return false end;if callback then callback()end;return true end
+  qa.Parent=b
+ end
  local focus=presentation and presentation.Focus
  if not focus and not (presentation and presentation.FocusManaged) then
   Motion.Scale(b)
@@ -79,6 +89,7 @@ function W.WoodButton(p,name,icon,size,pos,callback)
  local selected=W.New('Frame',{Name='Selected',Size=UDim2.new(1,-10,1,-10),Position=UDim2.fromOffset(5,4),BackgroundColor3=T.Color.Green,BorderSizePixel=0,Visible=false},b);W.Round(selected,15);W.Stroke(selected,T.Color.Gold,2.5);W.Gradient(selected,Color3.fromRGB(216,255,180),Color3.fromRGB(106,166,75))
  W.Icon(b,icon or name,UDim2.new(1,-28,.65,-4),UDim2.fromOffset(14,5))
  local l=W.Heading(b,name,UDim2.new(1,-6,.29,0),UDim2.new(0,3,.68,-2),16,T.Color.White);l.TextXAlignment=Enum.TextXAlignment.Center;l.TextStrokeColor3=T.Color.WoodDark;l.TextStrokeTransparency=.15
+ b.ImageTransparency=.88;b.BackgroundTransparency=0;b.BackgroundColor3=T.Color.WoodDark;W.Round(b,14);W.Stroke(b,T.Color.Gold,1)
  W.Bind(b,callback);return b
 end
 function W.SideActionButton(p,name,icon,size,pos,callback,options)

@@ -110,6 +110,16 @@ end
 function M.Challenges(ctx)return require(script.Parent.ActivityMenus).Render(ctx)end
 function M.Settings(ctx)
  W.List(ctx.Content)
+ local qualityCard=W.Card(ctx.Content,164);qualityCard.Name='VisualQuality'
+ W.Heading(qualityCard,'Living World Quality',UDim2.new(1,-28,0,36),UDim2.fromOffset(14,10),20)
+ W.Text(qualityCard,'Cosmetic detail only. Low preserves essential interaction feedback.',UDim2.new(1,-28,0,42),UDim2.fromOffset(14,46),13,W.Color.Muted)
+ local player=game.Players.LocalPlayer;local selected=player:GetAttribute('WeatherVFXQuality')or (game:GetService('UserInputService').TouchEnabled and 'Medium' or 'Ultra')
+ for i,id in ipairs({'Low','Medium','High','Ultra'})do
+  local button=W.Button(qualityCard,string.upper(id),UDim2.new(.25,-12,0,44),UDim2.new((i-1)*.25,6,0,105),function()
+   player:SetAttribute('WeatherVFXQuality',id);ctx.Refresh()
+  end,id==selected and W.Color.Green or W.Color.Wood)
+  button.Name='Quality_'..id;button:SetAttribute('Selected',id==selected)
+ end
  for _,e in ipairs({{'ReducedMotion','Reduced Motion','Use softer reveals and reduced motion.'},{'ShowOtherPets','Show Other Players’ Held Pets','Show the pet held above other players. Garden and Sanctuary displays stay visible.'}})do
   local value=ctx.Data.Settings[e[1]];local c=W.Card(ctx.Content,142)
   W.Heading(c,e[2],UDim2.new(.7,-28,0,52),UDim2.fromOffset(16,14),20)

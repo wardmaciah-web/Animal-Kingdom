@@ -36,58 +36,352 @@
           "$className": "Model",
           "Meadow": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.466667, 0.74902, 0.4], "Material": "Grass", "Position": [-450, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.466667,
+                  0.74902,
+                  0.4
+                ],
+                "Material": "Grass",
+                "Position": [
+                  -450,
+                  0,
+                  -450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Forest": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.180392, 0.435294, 0.25098], "Material": "Grass", "Position": [-150, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.180392,
+                  0.435294,
+                  0.25098
+                ],
+                "Material": "Grass",
+                "Position": [
+                  -150,
+                  0,
+                  -450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Jungle": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.196078, 0.607843, 0.298039], "Material": "LeafyGrass", "Position": [150, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.196078,
+                  0.607843,
+                  0.298039
+                ],
+                "Material": "LeafyGrass",
+                "Position": [
+                  150,
+                  0,
+                  -450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Desert": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.866667, 0.709804, 0.423529], "Material": "Sand", "Position": [450, 0, -450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.866667,
+                  0.709804,
+                  0.423529
+                ],
+                "Material": "Sand",
+                "Position": [
+                  450,
+                  0,
+                  -450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Snow": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.843137, 0.937255, 0.960784], "Material": "Snow", "Position": [450, 0, -150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.843137,
+                  0.937255,
+                  0.960784
+                ],
+                "Material": "Snow",
+                "Position": [
+                  450,
+                  0,
+                  -150
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Volcano": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.694118, 0.262745, 0.176471], "Material": "Slate", "Position": [450, 0, 150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.694118,
+                  0.262745,
+                  0.176471
+                ],
+                "Material": "Slate",
+                "Position": [
+                  450,
+                  0,
+                  150
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Ocean": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.203922, 0.568627, 0.823529], "Material": "Sand", "Position": [450, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.203922,
+                  0.568627,
+                  0.823529
+                ],
+                "Material": "Sand",
+                "Position": [
+                  450,
+                  0,
+                  450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "AncientRuins": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.545098, 0.494118, 0.396078], "Material": "Cobblestone", "Position": [150, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.545098,
+                  0.494118,
+                  0.396078
+                ],
+                "Material": "Cobblestone",
+                "Position": [
+                  150,
+                  0,
+                  450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "MagicalForest": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.45098, 0.309804, 0.588235], "Material": "Grass", "Position": [-150, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.45098,
+                  0.309804,
+                  0.588235
+                ],
+                "Material": "Grass",
+                "Position": [
+                  -150,
+                  0,
+                  450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Sky": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.494118, 0.745098, 0.909804], "Material": "SmoothPlastic", "Position": [-450, 0, 450], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.494118,
+                  0.745098,
+                  0.909804
+                ],
+                "Material": "SmoothPlastic",
+                "Position": [
+                  -450,
+                  0,
+                  450
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Prehistoric": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.45098, 0.458824, 0.262745], "Material": "Ground", "Position": [-450, 0, 150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.45098,
+                  0.458824,
+                  0.262745
+                ],
+                "Material": "Ground",
+                "Position": [
+                  -450,
+                  0,
+                  150
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           },
           "Mythical": {
             "$className": "Model",
-            "Platform": { "$className": "Part", "$properties": { "Anchored": true, "CanCollide": true, "Color": [0.427451, 0.247059, 0.596078], "Material": "Slate", "Position": [-450, 0, -150], "Size": [300, 2, 300], "TopSurface": "Smooth", "BottomSurface": "Smooth" } }
+            "Platform": {
+              "$className": "Part",
+              "$properties": {
+                "Anchored": true,
+                "CanCollide": true,
+                "Color": [
+                  0.427451,
+                  0.247059,
+                  0.596078
+                ],
+                "Material": "Slate",
+                "Position": [
+                  -450,
+                  0,
+                  -150
+                ],
+                "Size": [
+                  300,
+                  2,
+                  300
+                ],
+                "TopSurface": "Smooth",
+                "BottomSurface": "Smooth"
+              }
+            }
           }
         },
         "CentralArea": {
           "$className": "Model",
-          "SpawnArea": { "$className": "Model" },
-          "SanctuaryArea": { "$className": "Model" },
-          "TownHallArea": { "$className": "Model" }
+          "SpawnArea": {
+            "$className": "Model"
+          },
+          "SanctuaryArea": {
+            "$className": "Model"
+          },
+          "TownHallArea": {
+            "$className": "Model"
+          }
         }
       }
     },
@@ -123,6 +417,53 @@
       "$className": "StarterGui",
       "$ignoreUnknownInstances": true,
       "$path": "src/StarterGui"
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$ignoreUnknownInstances": true,
+      "$properties": {
+        "GlobalShadows": true,
+        "Ambient": [
+          0.403921568627451,
+          0.45098039215686275,
+          0.4235294117647059
+        ],
+        "OutdoorAmbient": [
+          0.5607843137254902,
+          0.6039215686274509,
+          0.5176470588235295
+        ],
+        "Brightness": 2.2,
+        "ExposureCompensation": 0.08,
+        "EnvironmentDiffuseScale": 0.65,
+        "EnvironmentSpecularScale": 0.45
+      },
+      "AK_WorldAtmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0.23,
+          "Offset": 0.15,
+          "Color": [
+            0.8549019607843137,
+            0.9098039215686274,
+            0.8235294117647058
+          ],
+          "Decay": [
+            0.48627450980392156,
+            0.5882352941176471,
+            0.5372549019607843
+          ],
+          "Glare": 0.12,
+          "Haze": 1.25
+        }
+      },
+      "AK_SoftSunRays": {
+        "$className": "SunRaysEffect",
+        "$properties": {
+          "Intensity": 0.045,
+          "Spread": 0.65
+        }
+      }
     }
   }
 }

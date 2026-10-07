@@ -57,8 +57,8 @@ function H:Resize(size,touch)
  self.Logo.Size=UDim2.new(1,-12,1,compact and -6 or -18);self.Logo.Position=UDim2.fromOffset(6,compact and 3 or 5)
  self.Context.Position=UDim2.fromOffset(12,compact and 53 or 104);self.Context.Size=UDim2.fromOffset(compact and 142 or 224,compact and 24 or 32);self.ContextText.TextSize=compact and 10 or 12
  self.Currencies.Size=UDim2.fromOffset(compact and math.min(350,size.X-250) or math.min(510,size.X*.42),compact and 48 or 56)
- self.Currencies.Position=UDim2.new(compact and .6 or .5,0,0,compact and 3 or 12)
- self.Currencies.AnchorPoint=Vector2.new(.5,0)
+ self.Currencies.Position=compact and UDim2.new(.6,0,0,3) or UDim2.new(1,-14,0,12)
+ self.Currencies.AnchorPoint=Vector2.new(compact and .5 or 1,0)
  for _,pill in ipairs(self.Currencies:GetChildren())do
   local icon=pill:FindFirstChild('Icon_'..pill.Name);if icon then icon.Size=UDim2.fromOffset(compact and 36 or 50,compact and 36 or 50);icon.Position=UDim2.fromOffset(4,compact and 6 or 3)end
   for _,label in ipairs(pill:GetChildren())do if label:IsA('TextLabel')then
@@ -67,6 +67,11 @@ function H:Resize(size,touch)
  end
  for _,v in pairs(self.Counters) do v.TextSize=compact and 18 or 23 end
  if compact then
+  if self.NavLayout:IsA('UIListLayout')then self.NavLayout.FillDirection=Enum.FillDirection.Horizontal end
+  self.Navigation.ScrollingDirection=Enum.ScrollingDirection.X;self.Navigation.AutomaticCanvasSize=portrait and Enum.AutomaticSize.None or Enum.AutomaticSize.X
+  for _,b in pairs(self.Buttons)do local l=b:FindFirstChild('Label');if l then l.Position=UDim2.new(0,3,.68,-2);l.Size=UDim2.new(1,-6,.29,0);l.TextXAlignment=Enum.TextXAlignment.Center end
+   for _,icon in ipairs(b:GetChildren())do if icon:IsA('ImageLabel')and icon.Name:sub(1,5)=='Icon_'then icon.Position=UDim2.fromOffset(14,5);icon.Size=UDim2.new(1,-28,.65,-4)end end
+  end
   self.Navigation.AnchorPoint=Vector2.new(.5,0);self.Navigation.Position=UDim2.new(.5,-28,0,82);self.Navigation.Size=UDim2.new(1,-104,0,57);self.Navigation.ClipsDescendants=true
   if not portrait then self.NavLayout.Padding=UDim.new(0,5)end
   for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(72,48);local l=b:FindFirstChild('Label');if l then l.TextSize=11 end end
@@ -82,9 +87,12 @@ function H:Resize(size,touch)
   else self.Currencies.AnchorPoint=Vector2.new(.5,0)end
  else
   local width=math.min(936,size.X-(touch and 340 or 340))
-  self.Navigation.AnchorPoint=Vector2.new(.5,1);self.Navigation.Position=UDim2.new(.5,0,1,-10);self.Navigation.Size=UDim2.fromOffset(width,92);self.Navigation.ClipsDescendants=false
-  self.NavLayout.Padding=UDim.new(0,7)
-  for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(math.floor((width-61)/7),80);local l=b:FindFirstChild('Label');if l then l.TextSize=15 end end
+  self.Navigation.AnchorPoint=Vector2.zero;self.Navigation.Position=UDim2.fromOffset(14,350);self.Navigation.Size=UDim2.fromOffset(148,math.max(100,size.Y-370));self.Navigation.ClipsDescendants=true
+  self.Navigation.ScrollingDirection=Enum.ScrollingDirection.Y;self.Navigation.AutomaticCanvasSize=Enum.AutomaticSize.Y
+  self.NavLayout.FillDirection=Enum.FillDirection.Vertical;self.NavLayout.Padding=UDim.new(0,6)
+  for _,b in pairs(self.Buttons) do b.Size=UDim2.fromOffset(136,42);local l=b:FindFirstChild('Label');if l then l.TextSize=13;l.Position=UDim2.fromOffset(46,0);l.Size=UDim2.new(1,-52,1,0);l.TextXAlignment=Enum.TextXAlignment.Left end
+   for _,icon in ipairs(b:GetChildren())do if icon:IsA('ImageLabel')and icon.Name:sub(1,5)=='Icon_'then icon.Position=UDim2.fromOffset(7,6);icon.Size=UDim2.fromOffset(30,30)end end
+  end
   self.Utilities.Position=UDim2.new(0,16,.3,0);self.Utilities.Size=UDim2.fromOffset(76,0);self.Shop.Size=UDim2.fromOffset(76,78)
  end
  -- On landscape phones, leave the existing utility stack and jump control clear.

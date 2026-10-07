@@ -13,7 +13,7 @@ local folder=Instance.new('Folder');folder.Name='KingdomAmbientVisuals';folder.P
 local connections={};local alive=true;local targeted;local burstAt=0;local random=Random.new()
 local SPARK='rbxasset://textures/particles/sparkles_main.dds'
 local SMOKE='rbxasset://textures/particles/smoke_main.dds'
-local colors={Heavy=Color3.fromRGB(218,132,255),Lucky=Color3.fromRGB(149,244,111),Rich=Color3.fromRGB(255,218,85),Fast=Color3.fromRGB(108,226,255),Mastery=Color3.fromRGB(255,167,102)}
+local colors={Heavy=Color3.fromRGB(234,186,88),Lucky=Color3.fromRGB(149,244,111),Rich=Color3.fromRGB(255,218,85),Fast=Color3.fromRGB(108,226,255),Mastery=Color3.fromRGB(139,133,255)}
 local function anchor(name,size)
  local p=Instance.new('Part');p.Name=name;p.Size=size or Vector3.one*.2;p.Transparency=1;p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;p.CastShadow=false;p.Parent=folder;return p
 end
@@ -34,15 +34,15 @@ for i=0,15 do
 end
 local hotLight=Instance.new('PointLight');hotLight.Range=17;hotLight.Brightness=1.4;hotLight.Shadows=false;hotLight.Enabled=false;hotLight.Parent=hotGround
 local hotHighlight=Instance.new('Highlight');hotHighlight.Name='HotTreeSilhouette';hotHighlight.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop;hotHighlight.Enabled=false;hotHighlight.Parent=folder
-local hotGui=Instance.new('BillboardGui');hotGui.Name='HotTreeLabel';hotGui.Adornee=hotAnchor;hotGui.Size=UDim2.fromOffset(280,130);hotGui.StudsOffsetWorldSpace=Vector3.new(0,5,0);hotGui.MaxDistance=185;hotGui.AlwaysOnTop=false;hotGui.LightInfluence=0;hotGui.Parent=hotAnchor
+local hotGui=Instance.new('BillboardGui');hotGui.Name='HotTreeLabel';hotGui.Adornee=hotAnchor;hotGui.Size=UDim2.fromOffset(280,130);hotGui.StudsOffsetWorldSpace=Vector3.new(0,5,0);hotGui.MaxDistance=245;hotGui.AlwaysOnTop=false;hotGui.LightInfluence=0;hotGui.Parent=hotAnchor
 local label=Instance.new('TextLabel');label.Size=UDim2.fromScale(1,1);label.BackgroundTransparency=1;label.Font=Enum.Font.GothamBold;label.TextSize=21;label.TextScaled=true;label.TextWrapped=true;label.TextColor3=Color3.new(1,1,1);label.TextStrokeColor3=Color3.fromRGB(28,23,31);label.TextStrokeTransparency=.08;label.Parent=hotGui
 local hotTextSize=Instance.new("UITextSizeConstraint");hotTextSize.MinTextSize=12;hotTextSize.MaxTextSize=21;hotTextSize.Parent=label
 local labelTree;local labelRadius=8
 local luckyAnchor=anchor('LuckyAreaGlow',Vector3.new(12,7,12));local luckyGlints=emitter(luckyAnchor,'LuckyGreenGold');luckyGlints.Color=ColorSequence.new(Color3.fromRGB(141,241,148),Color3.fromRGB(255,226,124));luckyGlints.LightEmission=1
 local zones={}
 for i=1,3 do
- local fire=anchor('ForestFireflyPocket'..i,Vector3.new(14,5,14));local e=emitter(fire,'Fireflies');e.Color=ColorSequence.new(Color3.fromRGB(217,255,133));e.LightEmission=1;e.Size=NumberSequence.new(.13,.05);e.Speed=NumberRange.new(.2,.65);e.Acceleration=Vector3.new(.2,.06,.15)
- local ground=anchor('ForestMistPocket'..i,Vector3.new(18,1,18));local mist=emitter(ground,'LowForestMist');mist.Texture=SMOKE;mist.Size=NumberSequence.new({NumberSequenceKeypoint.new(0,6),NumberSequenceKeypoint.new(.6,12,3),NumberSequenceKeypoint.new(1,15)});mist.Lifetime=NumberRange.new(7,11);mist.Speed=NumberRange.new(.25,.6);mist.Acceleration=Vector3.new(.15,0,0);mist.LightEmission=0;mist.Color=ColorSequence.new(Color3.fromRGB(174,195,174));mist.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.25,.88),NumberSequenceKeypoint.new(.65,.91),NumberSequenceKeypoint.new(1,1)})
+ local fire=anchor('ForestFireflyPocket'..i,Vector3.new(14,5,14));local e=emitter(fire,'Fireflies');e.Color=ColorSequence.new(Color3.fromRGB(217,255,133));e.LightEmission=1;e.Size=NumberSequence.new(.24,.09);e.Speed=NumberRange.new(.2,.65);e.Acceleration=Vector3.new(.2,.06,.15)
+ local ground=anchor('ForestMistPocket'..i,Vector3.new(18,1,18));local mist=emitter(ground,'LowForestMist');mist.Texture=SMOKE;mist.Size=NumberSequence.new({NumberSequenceKeypoint.new(0,6),NumberSequenceKeypoint.new(.6,12,3),NumberSequenceKeypoint.new(1,15)});mist.Lifetime=NumberRange.new(7,11);mist.Speed=NumberRange.new(.25,.6);mist.Acceleration=Vector3.new(.15,0,0);mist.LightEmission=0;mist.Color=ColorSequence.new(Color3.fromRGB(174,195,174));mist.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(.25,.79),NumberSequenceKeypoint.new(.65,.86),NumberSequenceKeypoint.new(1,1)})
  zones[i]={Anchor=fire,Fireflies=e,Ground=ground,Mist=mist}
 end
 -- Reusable procedural 2D petals/leaves. No mesh/model/texture asset is created.
@@ -88,7 +88,7 @@ local function spawnLeaf(item,r,initial)
  item.Start=Vector3.new(origin.X,y,origin.Z);item.Age=0;item.Life=random:NextNumber(7,12);item.Velocity=Vector3.new(random:NextNumber(.5,1.5),random:NextNumber(-1.35,-.65),random:NextNumber(-.4,.6))
  item.Leaf.BackgroundColor3=meadow and(random:NextNumber()<.7 and Color3.fromRGB(255,180+random:NextInteger(0,35),210)or Color3.fromRGB(173,219,123))or Color3.fromRGB(random:NextInteger(146,195),random:NextInteger(151,192),random:NextInteger(64,105))
  item.IsLeaf=not meadow or random:NextNumber()>.72;item.Art.Visible=item.IsLeaf;item.Art.ImageColor3=meadow and Color3.fromRGB(225,255,190)or Color3.fromRGB(235,223,167);item.Vein.Visible=false;if not item.IsLeaf then item.Leaf.BackgroundColor3=Color3.fromRGB(255,random:NextInteger(185,220),216)end
- local size=random:NextNumber(.35,.65);item.Gui.Size=UDim2.fromScale(size,size*1.4);item.Gui.Enabled=true
+ local size=random:NextNumber(.55,.9);item.Gui.Size=UDim2.fromScale(size,size*1.4);item.Gui.Enabled=true
 end
 local function updateZones(r)
  if biome~='Forest'then zoneOrigin=nil;return end
@@ -129,16 +129,16 @@ local function tick(r,now)
  if biome~=lastBiome then for _,item in ipairs(foliage)do item.Age=100 end;zoneOrigin=nil;lastBiome=biome end
  updateZones(r)
  air.Position=r.Position+Vector3.new(0,5,0);motes.Color=ColorSequence.new(biome=='Meadow'and Color3.fromRGB(255,240,182)or Color3.fromRGB(216,231,176))
- motes.Rate=(biome=='Meadow'and 24 or biome=='Forest'and 11 or biome=='Town'and 5 or 0)*quality*delicate*density
+ motes.Rate=(biome=='Meadow'and 30 or biome=='Forest'and 18 or biome=='Garden'and 24 or biome=='Town'and 8 or 0)*quality*delicate*density
  motes.Acceleration=Vector3.new(.45*wind,.05,.17*wind)
  for _,z in ipairs(zones)do
   local visible=biome=='Forest'and(z.Anchor.Position-r.Position).Magnitude<90
-  z.Fireflies.Rate=visible and 5*quality*fireflies or 0;z.Mist.Rate=visible and .9*quality*mist or 0
+  z.Fireflies.Rate=visible and 8*quality*fireflies or 0;z.Mist.Rate=visible and .9*quality*mist or 0
  end
  local candidates={};currentHot=nil
  for _,tree in ipairs(trees)do if tree:IsDescendantOf(workspace)then
   local pos=treePosition(tree);local distance=(pos-r.Position).Magnitude
-  if distance<245 and(tree:GetAttribute('HotTreeEndsAt')or 0)>now then currentHot={Tree=tree,Position=groundAt(pos,tree:GetAttribute('BiomeId')),Distance=distance,Color=colors[tree:GetAttribute('HotTreeVariant')]or colors.Rich}end
+  if distance<245 and(tree:GetAttribute('HotTreeEndsAt')or 0)>now and(not currentHot or distance<currentHot.Distance)then currentHot={Tree=tree,Position=groundAt(pos,tree:GetAttribute('BiomeId')),Distance=distance,Color=colors[tree:GetAttribute('HotTreeVariant')]or colors.Rich}end
   if distance<85 and tree:GetAttribute('ResourceState')=='AVAILABLE'then table.insert(candidates,{Tree=tree,Distance=tree==targeted and -1 or distance})end
  end end
  table.sort(candidates,function(a,b)return a.Distance<b.Distance end)
@@ -157,11 +157,11 @@ local function tick(r,now)
   local remaining=math.max(0,math.ceil(c.Tree:GetAttribute('HotTreeEndsAt')-now));label.Text=string.upper(c.Tree:GetAttribute('HotTreeVariant'))..' HOT TREE\nLEGENDARY+ GUARANTEED\n'..(c.Tree:GetAttribute('HotTreeDescription')or '')..'\n'..math.floor(remaining/60)..':'..string.format('%02d',remaining%60)
   local available=c.Tree:GetAttribute('ResourceState')=='AVAILABLE'
   hotHighlight.Enabled=available
-  if available and c.Distance<115 then hotUp.Rate=10*quality;for _,o in ipairs(orbit)do o.Emitter.Rate=3*quality;o.Emitter.Color=ColorSequence.new(c.Color)end end
+  if available and c.Distance<115 then hotUp.Rate=18*quality;for _,o in ipairs(orbit)do o.Emitter.Rate=5*quality;o.Emitter.Color=ColorSequence.new(c.Color)end end
   for _,b in ipairs(ringBeams)do b.Color=ColorSequence.new(c.Color)end
  end
  luckyGlints.Rate=0
- if(player:GetAttribute('LuckyTreeEndsAt')or 0)>now then for _,tree in ipairs(workspace:GetChildren())do if tree:GetAttribute('LuckyEventId')then local pos=tree:IsA('Model')and tree:GetPivot().Position or tree.Position;if(pos-r.Position).Magnitude<120 then luckyAnchor.Position=groundAt(pos,player:GetAttribute('LuckyTreeBiome'))+Vector3.new(0,5,0);luckyGlints.Rate=8*quality end;break end end end
+ if(player:GetAttribute('LuckyTreeEndsAt')or 0)>now then for _,tree in ipairs(workspace:GetChildren())do if tree:GetAttribute('LuckyEventId')then local pos=tree:IsA('Model')and tree:GetPivot().Position or tree.Position;if(pos-r.Position).Magnitude<120 then luckyAnchor.Position=groundAt(pos,player:GetAttribute('LuckyTreeBiome'))+Vector3.new(0,5,0);luckyGlints.Rate=20*quality end;break end end end
  townTarget=chooseTown(r);townHighlight.Enabled=townTarget~=nil;townEmitter.Rate=townTarget and 4*quality or 0
  if townTarget then townAnchor.Position=townTarget.Position+Vector3.new(0,1,0);local path=townTarget:GetAttribute('ExistingLandmark');townHighlight.Adornee=path and workspace:FindFirstChild(path:gsub('^Workspace%.',''));townHighlight.OutlineColor=Color3.fromRGB(255,226,154);townEmitter.Color=ColorSequence.new(Color3.fromRGB(255,231,157))end
  local rate=motes.Rate+hotUp.Rate+luckyGlints.Rate+townEmitter.Rate
@@ -178,13 +178,66 @@ connections[#connections+1]=RS:WaitForChild('AnimalKingdomRemotes'):WaitForChild
  -- Reuse a few existing foliage visuals for a readable leaf burst.
  for i=1,math.min(8,math.ceil(8*quality))do local leaf=foliage[i];spawnLeaf(leaf,r,true);leaf.Start=burst.Position+Vector3.new(random:NextNumber(-4,4),random:NextNumber(-1,3),random:NextNumber(-4,4));leaf.Velocity=Vector3.new(random:NextNumber(-2,2),-1.5,random:NextNumber(-2,2));leaf.Life=3 end
 end)
+
+-- Bounded cosmetic motion for authored non-colliding foliage; never move pet slots,
+-- interaction anchors or physics colliders. Discovery is outside the render loop.
+local vegetation={}
+local moving={}
+local vegetationAt=0
+local function registerVegetation(part)
+ if not part:IsA('BasePart') or not part.Anchored or part.CanCollide then return end
+ local n=part.Name:lower()
+ local foliageName=n:find('leaf',1,true)or n:find('grass',1,true)or n:find('flower',1,true)or n=='water'
+ local searchable
+ local ancestor=part.Parent
+ while ancestor and ancestor~=workspace do
+  if Collection:HasTag(ancestor,'SanctuaryDisplayPet')or ancestor:GetAttribute('PetId')then return end
+  if Collection:HasTag(ancestor,'GatherableTree')then searchable=ancestor end
+  ancestor=ancestor.Parent
+ end
+ if not foliageName and not(searchable and part:IsA('MeshPart'))then return end
+ vegetation[part]={Base=part.CFrame,Tree=searchable,Water=n=='water',Seed=random:NextNumber(0,math.pi*2)}
+end
+for _,part in ipairs(workspace:GetDescendants())do registerVegetation(part)end
+connections[#connections+1]=workspace.DescendantAdded:Connect(registerVegetation)
+connections[#connections+1]=workspace.DescendantRemoving:Connect(function(part)vegetation[part]=nil end)
+local function animateVegetation(r,dt)
+ if time>=vegetationAt then
+  vegetationAt=time+1
+  local candidates={}
+  for part,e in pairs(vegetation)do
+   if part.Parent then local d=(e.Base.Position-r.Position).Magnitude;if d<100 then table.insert(candidates,{Part=part,Entry=e,Distance=d})end end
+  end
+  table.sort(candidates,function(a,b)return a.Distance<b.Distance end)
+  local selected={};local cap=reduced and 0 or math.floor(48*quality)
+  for i=1,math.min(cap,#candidates)do local c=candidates[i];selected[c.Part]=c.Entry end
+  for part,e in pairs(moving)do if not selected[part]and part.Parent then part.CFrame=e.Base end end
+  moving=selected
+ end
+ for part,e in pairs(moving)do
+  if part.Parent then
+   -- Observe external search transforms rather than overwriting them.
+   if e.Last and part.CFrame~=e.Last then e.Base=part.CFrame;e.Last=nil end
+   if e.Tree and e.Tree:GetAttribute('ResourceState')~='AVAILABLE'then
+    if e.Last then part.CFrame=e.Base;e.Last=nil end
+    continue
+   end
+   local wave=math.sin(time*(e.Water and .65 or 1.25)+e.Seed)
+   if e.Water then part.CFrame=e.Base*CFrame.new(0,wave*.045,0)
+   else local pivot=e.Base*CFrame.new(0,-part.Size.Y*.5,0);part.CFrame=pivot*CFrame.Angles(wave*.018*wind,0,math.cos(time*.85+e.Seed)*.013*wind)*CFrame.new(0,part.Size.Y*.5,0)end
+   e.Last=part.CFrame
+  end
+ end
+ local animated=0;for _ in pairs(moving)do animated+=1 end;folder:SetAttribute('AnimatedVegetation',animated)
+end
+
 connections[#connections+1]=Run.RenderStepped:Connect(function(dt)
  if not alive then return end;local r=root();if not r then return end
- time+=dt;local now=workspace:GetServerTimeNow()
+ time+=dt;local now=workspace:GetServerTimeNow();animateVegetation(r,dt)
  wind+=(targetWind-wind)*(1-math.exp(-dt*1.4));density+=(targetDensity-density)*(1-math.exp(-dt*1.4))
  if now>=tickAt then tickAt=now+.2;tick(r,now)end
  local pulse=reduced and .5 or .5+.5*math.sin(time*math.pi)
- if currentHot then hotHighlight.FillTransparency=currentHot.Distance>155 and .82 or .54+pulse*.13;hotHighlight.OutlineTransparency=.04+pulse*.12;hotLight.Brightness=.9+pulse*.7 end
+ if currentHot then hotHighlight.FillTransparency=currentHot.Distance>155 and .65 or .40+pulse*.13;hotHighlight.OutlineTransparency=.04+pulse*.12;hotLight.Brightness=.9+pulse*.7 end
  -- Put the depth-tested label in front of the canopy, never inside its mesh.
  -- Reuse the billboard and smooth its offset as the camera moves around the tree.
  local camera=workspace.CurrentCamera
@@ -197,7 +250,7 @@ connections[#connections+1]=Run.RenderStepped:Connect(function(dt)
  for i,o in ipairs(orbit)do local t=reduced and i*math.pi or time*.85+i*math.pi;o.Attachment.Position=Vector3.new(math.cos(t)*4,math.sin(t*.6)*.4,math.sin(t)*4)end
  for i,h in ipairs(ready)do h.OutlineTransparency=reduced and .92 or h.Adornee==targeted and .53 or .88+.055*math.sin(time*(biome=='Forest'and 1.2 or 1.8)+i)end
  townHighlight.OutlineTransparency=reduced and .45 or .32+.18*pulse
- local count=(biome=='Meadow'or biome=='Forest')and math.min(36,math.ceil(24*quality*density))or biome=='Town'and math.ceil(5*quality)or 0
+ local count=(biome=='Meadow'or biome=='Forest'or biome=='Garden')and math.min(36,math.ceil(36*quality*density))or biome=='Town'and math.ceil(9*quality)or 0
  for i,item in ipairs(foliage)do
   if i>count then item.Gui.Enabled=false;continue end
   if item.Age>=item.Life or(item.Anchor.Position-r.Position).Magnitude>85 then spawnLeaf(item,r,item.Age==100)end
@@ -211,4 +264,4 @@ connections[#connections+1]=Run.RenderStepped:Connect(function(dt)
  end
  folder:SetAttribute('VisibleFoliage',count)
 end)
-script.Destroying:Connect(function()alive=false;for _,c in ipairs(connections)do c:Disconnect()end;folder:Destroy()end)
+script.Destroying:Connect(function()alive=false;for _,c in ipairs(connections)do c:Disconnect()end;for part,e in pairs(moving)do if part.Parent then part.CFrame=e.Base end end;folder:Destroy()end)

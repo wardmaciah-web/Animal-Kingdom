@@ -11,6 +11,7 @@ local function initialize(model)
   local phase=0;for i=1,#model.Name do phase=(phase+string.byte(model.Name,i)*i)%997 end
   local e={Model=model,Bounds=bounds,Base=model:GetAttribute('DisplayBasePivot') or model:GetPivot(),Phase=phase/997*math.pi*2,Labels={}}
   e.BaseBounds=Geometry.RotateBounds(bounds,e.Base.Rotation)
+  local aura=Instance.new('Highlight');aura.Name='AKCollectibleAura';aura.Adornee=model;aura.FillTransparency=1;aura.OutlineTransparency=.45;aura.OutlineColor=Color3.fromRGB(220,185,106);aura.DepthMode=Enum.HighlightDepthMode.Occluded;aura.Enabled=false;aura.Parent=model;e.Aura=aura
   e.LabelDistance=math.max(48,bounds.Size.Magnitude+32)
   e.YawAmplitude=math.min(.018,.12/math.max(.1,Vector2.new(bounds.Size.X,bounds.Size.Z).Magnitude*.5))
   local function label(d)if d:IsA('BillboardGui')then d.Enabled=false;d.MaxDistance=e.LabelDistance;table.insert(e.Labels,d)end end
@@ -23,7 +24,7 @@ local function initialize(model)
   entries[model]=e;return true
 end
 local function add(model)if model:IsA('Model')and not entries[model]then pending[model]=true end end
-local function remove(model)pending[model]=nil;local e=entries[model];if e then e.Connection:Disconnect();e.LabelConnection:Disconnect();entries[model]=nil end end
+local function remove(model)pending[model]=nil;local e=entries[model];if e then e.Connection:Disconnect();e.LabelConnection:Disconnect();if e.Aura then e.Aura:Destroy()end;entries[model]=nil end end
 Collection:GetInstanceAddedSignal('SanctuaryDisplayPet'):Connect(add)
 Collection:GetInstanceRemovedSignal('SanctuaryDisplayPet'):Connect(remove)
 for _,m in ipairs(Collection:GetTagged('SanctuaryDisplayPet'))do add(m)end
@@ -64,5 +65,5 @@ RunService.Heartbeat:Connect(function(dt)
    end
   elseif e.Next then model:PivotTo(e.Base);e.Next=nil end
  end
- for _,e in pairs(entries)do for _,label in ipairs(e.Labels)do label.Enabled=e==nearest end end
+ for _,e in pairs(entries)do if e.Aura then e.Aura.Enabled=e==nearest;e.Aura.OutlineTransparency=reduced and .4 or .35+.15*math.sin(now*1.4)end;for _,label in ipairs(e.Labels)do label.Enabled=e==nearest end end
 end)
