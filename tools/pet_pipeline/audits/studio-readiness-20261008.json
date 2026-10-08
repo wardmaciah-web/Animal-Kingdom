@@ -1,0 +1,1996 @@
+{
+  "existing_asset_audit": {
+    "Definitions": 330,
+    "Errors": [],
+    "Available": 25,
+    "Deferred": [
+      {
+        "Message": "Jungle Common 01: imported model unavailable",
+        "PetTypeId": "Jungle_Common_01"
+      },
+      {
+        "Message": "Jungle Common 02: imported model unavailable",
+        "PetTypeId": "Jungle_Common_02"
+      },
+      {
+        "Message": "Jungle Uncommon 01: imported model unavailable",
+        "PetTypeId": "Jungle_Uncommon_01"
+      },
+      {
+        "Message": "Jungle Uncommon 02: imported model unavailable",
+        "PetTypeId": "Jungle_Uncommon_02"
+      },
+      {
+        "Message": "Jungle Uncommon 03: imported model unavailable",
+        "PetTypeId": "Jungle_Uncommon_03"
+      },
+      {
+        "Message": "Jungle Uncommon 04: imported model unavailable",
+        "PetTypeId": "Jungle_Uncommon_04"
+      },
+      {
+        "Message": "Jungle Uncommon 05: imported model unavailable",
+        "PetTypeId": "Jungle_Uncommon_05"
+      },
+      {
+        "Message": "Jungle Rare 01: imported model unavailable",
+        "PetTypeId": "Jungle_Rare_01"
+      },
+      {
+        "Message": "Jungle Rare 02: imported model unavailable",
+        "PetTypeId": "Jungle_Rare_02"
+      },
+      {
+        "Message": "Jungle Rare 03: imported model unavailable",
+        "PetTypeId": "Jungle_Rare_03"
+      },
+      {
+        "Message": "Jungle Rare 04: imported model unavailable",
+        "PetTypeId": "Jungle_Rare_04"
+      },
+      {
+        "Message": "Jungle Rare 05: imported model unavailable",
+        "PetTypeId": "Jungle_Rare_05"
+      },
+      {
+        "Message": "Jungle Rare 06: imported model unavailable",
+        "PetTypeId": "Jungle_Rare_06"
+      },
+      {
+        "Message": "Jungle Epic 01: imported model unavailable",
+        "PetTypeId": "Jungle_Epic_01"
+      },
+      {
+        "Message": "Jungle Epic 02: imported model unavailable",
+        "PetTypeId": "Jungle_Epic_02"
+      },
+      {
+        "Message": "Jungle Epic 03: imported model unavailable",
+        "PetTypeId": "Jungle_Epic_03"
+      },
+      {
+        "Message": "Jungle Epic 04: imported model unavailable",
+        "PetTypeId": "Jungle_Epic_04"
+      },
+      {
+        "Message": "Jungle Epic 05: imported model unavailable",
+        "PetTypeId": "Jungle_Epic_05"
+      },
+      {
+        "Message": "Jungle Epic 06: imported model unavailable",
+        "PetTypeId": "Jungle_Epic_06"
+      },
+      {
+        "Message": "Jungle Legendary 01: imported model unavailable",
+        "PetTypeId": "Jungle_Legendary_01"
+      },
+      {
+        "Message": "Jungle Legendary 02: imported model unavailable",
+        "PetTypeId": "Jungle_Legendary_02"
+      },
+      {
+        "Message": "Jungle Legendary 03: imported model unavailable",
+        "PetTypeId": "Jungle_Legendary_03"
+      },
+      {
+        "Message": "Jungle Legendary 04: imported model unavailable",
+        "PetTypeId": "Jungle_Legendary_04"
+      },
+      {
+        "Message": "Jungle Mystic 01: imported model unavailable",
+        "PetTypeId": "Jungle_Mystic_01"
+      },
+      {
+        "Message": "Jungle Mystic 02: imported model unavailable",
+        "PetTypeId": "Jungle_Mystic_02"
+      },
+      {
+        "Message": "Desert Common 01: imported model unavailable",
+        "PetTypeId": "Desert_Common_01"
+      },
+      {
+        "Message": "Desert Common 02: imported model unavailable",
+        "PetTypeId": "Desert_Common_02"
+      },
+      {
+        "Message": "Desert Uncommon 01: imported model unavailable",
+        "PetTypeId": "Desert_Uncommon_01"
+      },
+      {
+        "Message": "Desert Uncommon 02: imported model unavailable",
+        "PetTypeId": "Desert_Uncommon_02"
+      },
+      {
+        "Message": "Desert Uncommon 03: imported model unavailable",
+        "PetTypeId": "Desert_Uncommon_03"
+      },
+      {
+        "Message": "Desert Uncommon 04: imported model unavailable",
+        "PetTypeId": "Desert_Uncommon_04"
+      },
+      {
+        "Message": "Desert Uncommon 05: imported model unavailable",
+        "PetTypeId": "Desert_Uncommon_05"
+      },
+      {
+        "Message": "Desert Rare 01: imported model unavailable",
+        "PetTypeId": "Desert_Rare_01"
+      },
+      {
+        "Message": "Desert Rare 02: imported model unavailable",
+        "PetTypeId": "Desert_Rare_02"
+      },
+      {
+        "Message": "Desert Rare 03: imported model unavailable",
+        "PetTypeId": "Desert_Rare_03"
+      },
+      {
+        "Message": "Desert Rare 04: imported model unavailable",
+        "PetTypeId": "Desert_Rare_04"
+      },
+      {
+        "Message": "Desert Rare 05: imported model unavailable",
+        "PetTypeId": "Desert_Rare_05"
+      },
+      {
+        "Message": "Desert Rare 06: imported model unavailable",
+        "PetTypeId": "Desert_Rare_06"
+      },
+      {
+        "Message": "Desert Epic 01: imported model unavailable",
+        "PetTypeId": "Desert_Epic_01"
+      },
+      {
+        "Message": "Desert Epic 02: imported model unavailable",
+        "PetTypeId": "Desert_Epic_02"
+      },
+      {
+        "Message": "Desert Epic 03: imported model unavailable",
+        "PetTypeId": "Desert_Epic_03"
+      },
+      {
+        "Message": "Desert Epic 04: imported model unavailable",
+        "PetTypeId": "Desert_Epic_04"
+      },
+      {
+        "Message": "Desert Epic 05: imported model unavailable",
+        "PetTypeId": "Desert_Epic_05"
+      },
+      {
+        "Message": "Desert Epic 06: imported model unavailable",
+        "PetTypeId": "Desert_Epic_06"
+      },
+      {
+        "Message": "Desert Legendary 01: imported model unavailable",
+        "PetTypeId": "Desert_Legendary_01"
+      },
+      {
+        "Message": "Desert Legendary 02: imported model unavailable",
+        "PetTypeId": "Desert_Legendary_02"
+      },
+      {
+        "Message": "Desert Legendary 03: imported model unavailable",
+        "PetTypeId": "Desert_Legendary_03"
+      },
+      {
+        "Message": "Desert Legendary 04: imported model unavailable",
+        "PetTypeId": "Desert_Legendary_04"
+      },
+      {
+        "Message": "Desert Mystic 01: imported model unavailable",
+        "PetTypeId": "Desert_Mystic_01"
+      },
+      {
+        "Message": "Desert Mystic 02: imported model unavailable",
+        "PetTypeId": "Desert_Mystic_02"
+      },
+      {
+        "Message": "Snow Common 01: imported model unavailable",
+        "PetTypeId": "Snow_Common_01"
+      },
+      {
+        "Message": "Snow Common 02: imported model unavailable",
+        "PetTypeId": "Snow_Common_02"
+      },
+      {
+        "Message": "Snow Uncommon 01: imported model unavailable",
+        "PetTypeId": "Snow_Uncommon_01"
+      },
+      {
+        "Message": "Snow Uncommon 02: imported model unavailable",
+        "PetTypeId": "Snow_Uncommon_02"
+      },
+      {
+        "Message": "Snow Uncommon 03: imported model unavailable",
+        "PetTypeId": "Snow_Uncommon_03"
+      },
+      {
+        "Message": "Snow Uncommon 04: imported model unavailable",
+        "PetTypeId": "Snow_Uncommon_04"
+      },
+      {
+        "Message": "Snow Uncommon 05: imported model unavailable",
+        "PetTypeId": "Snow_Uncommon_05"
+      },
+      {
+        "Message": "Snow Rare 01: imported model unavailable",
+        "PetTypeId": "Snow_Rare_01"
+      },
+      {
+        "Message": "Snow Rare 02: imported model unavailable",
+        "PetTypeId": "Snow_Rare_02"
+      },
+      {
+        "Message": "Snow Rare 03: imported model unavailable",
+        "PetTypeId": "Snow_Rare_03"
+      },
+      {
+        "Message": "Snow Rare 04: imported model unavailable",
+        "PetTypeId": "Snow_Rare_04"
+      },
+      {
+        "Message": "Snow Rare 05: imported model unavailable",
+        "PetTypeId": "Snow_Rare_05"
+      },
+      {
+        "Message": "Snow Rare 06: imported model unavailable",
+        "PetTypeId": "Snow_Rare_06"
+      },
+      {
+        "Message": "Snow Epic 01: imported model unavailable",
+        "PetTypeId": "Snow_Epic_01"
+      },
+      {
+        "Message": "Snow Epic 02: imported model unavailable",
+        "PetTypeId": "Snow_Epic_02"
+      },
+      {
+        "Message": "Snow Epic 03: imported model unavailable",
+        "PetTypeId": "Snow_Epic_03"
+      },
+      {
+        "Message": "Snow Epic 04: imported model unavailable",
+        "PetTypeId": "Snow_Epic_04"
+      },
+      {
+        "Message": "Snow Epic 05: imported model unavailable",
+        "PetTypeId": "Snow_Epic_05"
+      },
+      {
+        "Message": "Snow Epic 06: imported model unavailable",
+        "PetTypeId": "Snow_Epic_06"
+      },
+      {
+        "Message": "Snow Legendary 01: imported model unavailable",
+        "PetTypeId": "Snow_Legendary_01"
+      },
+      {
+        "Message": "Snow Legendary 02: imported model unavailable",
+        "PetTypeId": "Snow_Legendary_02"
+      },
+      {
+        "Message": "Snow Legendary 03: imported model unavailable",
+        "PetTypeId": "Snow_Legendary_03"
+      },
+      {
+        "Message": "Snow Legendary 04: imported model unavailable",
+        "PetTypeId": "Snow_Legendary_04"
+      },
+      {
+        "Message": "Snow Mystic 01: imported model unavailable",
+        "PetTypeId": "Snow_Mystic_01"
+      },
+      {
+        "Message": "Snow Mystic 02: imported model unavailable",
+        "PetTypeId": "Snow_Mystic_02"
+      },
+      {
+        "Message": "Volcano Common 01: imported model unavailable",
+        "PetTypeId": "Volcano_Common_01"
+      },
+      {
+        "Message": "Volcano Common 02: imported model unavailable",
+        "PetTypeId": "Volcano_Common_02"
+      },
+      {
+        "Message": "Volcano Uncommon 01: imported model unavailable",
+        "PetTypeId": "Volcano_Uncommon_01"
+      },
+      {
+        "Message": "Volcano Uncommon 02: imported model unavailable",
+        "PetTypeId": "Volcano_Uncommon_02"
+      },
+      {
+        "Message": "Volcano Uncommon 03: imported model unavailable",
+        "PetTypeId": "Volcano_Uncommon_03"
+      },
+      {
+        "Message": "Volcano Uncommon 04: imported model unavailable",
+        "PetTypeId": "Volcano_Uncommon_04"
+      },
+      {
+        "Message": "Volcano Uncommon 05: imported model unavailable",
+        "PetTypeId": "Volcano_Uncommon_05"
+      },
+      {
+        "Message": "Volcano Rare 01: imported model unavailable",
+        "PetTypeId": "Volcano_Rare_01"
+      },
+      {
+        "Message": "Volcano Rare 02: imported model unavailable",
+        "PetTypeId": "Volcano_Rare_02"
+      },
+      {
+        "Message": "Volcano Rare 03: imported model unavailable",
+        "PetTypeId": "Volcano_Rare_03"
+      },
+      {
+        "Message": "Volcano Rare 04: imported model unavailable",
+        "PetTypeId": "Volcano_Rare_04"
+      },
+      {
+        "Message": "Volcano Rare 05: imported model unavailable",
+        "PetTypeId": "Volcano_Rare_05"
+      },
+      {
+        "Message": "Volcano Rare 06: imported model unavailable",
+        "PetTypeId": "Volcano_Rare_06"
+      },
+      {
+        "Message": "Volcano Epic 01: imported model unavailable",
+        "PetTypeId": "Volcano_Epic_01"
+      },
+      {
+        "Message": "Volcano Epic 02: imported model unavailable",
+        "PetTypeId": "Volcano_Epic_02"
+      },
+      {
+        "Message": "Volcano Epic 03: imported model unavailable",
+        "PetTypeId": "Volcano_Epic_03"
+      },
+      {
+        "Message": "Volcano Epic 04: imported model unavailable",
+        "PetTypeId": "Volcano_Epic_04"
+      },
+      {
+        "Message": "Volcano Epic 05: imported model unavailable",
+        "PetTypeId": "Volcano_Epic_05"
+      },
+      {
+        "Message": "Volcano Epic 06: imported model unavailable",
+        "PetTypeId": "Volcano_Epic_06"
+      },
+      {
+        "Message": "Volcano Legendary 01: imported model unavailable",
+        "PetTypeId": "Volcano_Legendary_01"
+      },
+      {
+        "Message": "Volcano Legendary 02: imported model unavailable",
+        "PetTypeId": "Volcano_Legendary_02"
+      },
+      {
+        "Message": "Volcano Legendary 03: imported model unavailable",
+        "PetTypeId": "Volcano_Legendary_03"
+      },
+      {
+        "Message": "Volcano Legendary 04: imported model unavailable",
+        "PetTypeId": "Volcano_Legendary_04"
+      },
+      {
+        "Message": "Volcano Mystic 01: imported model unavailable",
+        "PetTypeId": "Volcano_Mystic_01"
+      },
+      {
+        "Message": "Volcano Mystic 02: imported model unavailable",
+        "PetTypeId": "Volcano_Mystic_02"
+      },
+      {
+        "Message": "Ocean Common 01: imported model unavailable",
+        "PetTypeId": "Ocean_Common_01"
+      },
+      {
+        "Message": "Ocean Common 02: imported model unavailable",
+        "PetTypeId": "Ocean_Common_02"
+      },
+      {
+        "Message": "Ocean Uncommon 01: imported model unavailable",
+        "PetTypeId": "Ocean_Uncommon_01"
+      },
+      {
+        "Message": "Ocean Uncommon 02: imported model unavailable",
+        "PetTypeId": "Ocean_Uncommon_02"
+      },
+      {
+        "Message": "Ocean Uncommon 03: imported model unavailable",
+        "PetTypeId": "Ocean_Uncommon_03"
+      },
+      {
+        "Message": "Ocean Uncommon 04: imported model unavailable",
+        "PetTypeId": "Ocean_Uncommon_04"
+      },
+      {
+        "Message": "Ocean Uncommon 05: imported model unavailable",
+        "PetTypeId": "Ocean_Uncommon_05"
+      },
+      {
+        "Message": "Ocean Rare 01: imported model unavailable",
+        "PetTypeId": "Ocean_Rare_01"
+      },
+      {
+        "Message": "Ocean Rare 02: imported model unavailable",
+        "PetTypeId": "Ocean_Rare_02"
+      },
+      {
+        "Message": "Ocean Rare 03: imported model unavailable",
+        "PetTypeId": "Ocean_Rare_03"
+      },
+      {
+        "Message": "Ocean Rare 04: imported model unavailable",
+        "PetTypeId": "Ocean_Rare_04"
+      },
+      {
+        "Message": "Ocean Rare 05: imported model unavailable",
+        "PetTypeId": "Ocean_Rare_05"
+      },
+      {
+        "Message": "Ocean Rare 06: imported model unavailable",
+        "PetTypeId": "Ocean_Rare_06"
+      },
+      {
+        "Message": "Ocean Epic 01: imported model unavailable",
+        "PetTypeId": "Ocean_Epic_01"
+      },
+      {
+        "Message": "Ocean Epic 02: imported model unavailable",
+        "PetTypeId": "Ocean_Epic_02"
+      },
+      {
+        "Message": "Ocean Epic 03: imported model unavailable",
+        "PetTypeId": "Ocean_Epic_03"
+      },
+      {
+        "Message": "Ocean Epic 04: imported model unavailable",
+        "PetTypeId": "Ocean_Epic_04"
+      },
+      {
+        "Message": "Ocean Epic 05: imported model unavailable",
+        "PetTypeId": "Ocean_Epic_05"
+      },
+      {
+        "Message": "Ocean Epic 06: imported model unavailable",
+        "PetTypeId": "Ocean_Epic_06"
+      },
+      {
+        "Message": "Ocean Legendary 01: imported model unavailable",
+        "PetTypeId": "Ocean_Legendary_01"
+      },
+      {
+        "Message": "Ocean Legendary 02: imported model unavailable",
+        "PetTypeId": "Ocean_Legendary_02"
+      },
+      {
+        "Message": "Ocean Legendary 03: imported model unavailable",
+        "PetTypeId": "Ocean_Legendary_03"
+      },
+      {
+        "Message": "Ocean Legendary 04: imported model unavailable",
+        "PetTypeId": "Ocean_Legendary_04"
+      },
+      {
+        "Message": "Ocean Mystic 01: imported model unavailable",
+        "PetTypeId": "Ocean_Mystic_01"
+      },
+      {
+        "Message": "Ocean Mystic 02: imported model unavailable",
+        "PetTypeId": "Ocean_Mystic_02"
+      },
+      {
+        "Message": "Ancient Ruins Common 01: imported model unavailable",
+        "PetTypeId": "AncientRuins_Common_01"
+      },
+      {
+        "Message": "Ancient Ruins Common 02: imported model unavailable",
+        "PetTypeId": "AncientRuins_Common_02"
+      },
+      {
+        "Message": "Ancient Ruins Uncommon 01: imported model unavailable",
+        "PetTypeId": "AncientRuins_Uncommon_01"
+      },
+      {
+        "Message": "Ancient Ruins Uncommon 02: imported model unavailable",
+        "PetTypeId": "AncientRuins_Uncommon_02"
+      },
+      {
+        "Message": "Ancient Ruins Uncommon 03: imported model unavailable",
+        "PetTypeId": "AncientRuins_Uncommon_03"
+      },
+      {
+        "Message": "Ancient Ruins Uncommon 04: imported model unavailable",
+        "PetTypeId": "AncientRuins_Uncommon_04"
+      },
+      {
+        "Message": "Ancient Ruins Uncommon 05: imported model unavailable",
+        "PetTypeId": "AncientRuins_Uncommon_05"
+      },
+      {
+        "Message": "Ancient Ruins Rare 01: imported model unavailable",
+        "PetTypeId": "AncientRuins_Rare_01"
+      },
+      {
+        "Message": "Ancient Ruins Rare 02: imported model unavailable",
+        "PetTypeId": "AncientRuins_Rare_02"
+      },
+      {
+        "Message": "Ancient Ruins Rare 03: imported model unavailable",
+        "PetTypeId": "AncientRuins_Rare_03"
+      },
+      {
+        "Message": "Ancient Ruins Rare 04: imported model unavailable",
+        "PetTypeId": "AncientRuins_Rare_04"
+      },
+      {
+        "Message": "Ancient Ruins Rare 05: imported model unavailable",
+        "PetTypeId": "AncientRuins_Rare_05"
+      },
+      {
+        "Message": "Ancient Ruins Rare 06: imported model unavailable",
+        "PetTypeId": "AncientRuins_Rare_06"
+      },
+      {
+        "Message": "Ancient Ruins Epic 01: imported model unavailable",
+        "PetTypeId": "AncientRuins_Epic_01"
+      },
+      {
+        "Message": "Ancient Ruins Epic 02: imported model unavailable",
+        "PetTypeId": "AncientRuins_Epic_02"
+      },
+      {
+        "Message": "Ancient Ruins Epic 03: imported model unavailable",
+        "PetTypeId": "AncientRuins_Epic_03"
+      },
+      {
+        "Message": "Ancient Ruins Epic 04: imported model unavailable",
+        "PetTypeId": "AncientRuins_Epic_04"
+      },
+      {
+        "Message": "Ancient Ruins Epic 05: imported model unavailable",
+        "PetTypeId": "AncientRuins_Epic_05"
+      },
+      {
+        "Message": "Ancient Ruins Epic 06: imported model unavailable",
+        "PetTypeId": "AncientRuins_Epic_06"
+      },
+      {
+        "Message": "Ancient Ruins Legendary 01: imported model unavailable",
+        "PetTypeId": "AncientRuins_Legendary_01"
+      },
+      {
+        "Message": "Ancient Ruins Legendary 02: imported model unavailable",
+        "PetTypeId": "AncientRuins_Legendary_02"
+      },
+      {
+        "Message": "Ancient Ruins Legendary 03: imported model unavailable",
+        "PetTypeId": "AncientRuins_Legendary_03"
+      },
+      {
+        "Message": "Ancient Ruins Legendary 04: imported model unavailable",
+        "PetTypeId": "AncientRuins_Legendary_04"
+      },
+      {
+        "Message": "Ancient Ruins Mystic 01: imported model unavailable",
+        "PetTypeId": "AncientRuins_Mystic_01"
+      },
+      {
+        "Message": "Ancient Ruins Mystic 02: imported model unavailable",
+        "PetTypeId": "AncientRuins_Mystic_02"
+      },
+      {
+        "Message": "Magical Forest Common 01: imported model unavailable",
+        "PetTypeId": "MagicalForest_Common_01"
+      },
+      {
+        "Message": "Magical Forest Common 02: imported model unavailable",
+        "PetTypeId": "MagicalForest_Common_02"
+      },
+      {
+        "Message": "Magical Forest Uncommon 01: imported model unavailable",
+        "PetTypeId": "MagicalForest_Uncommon_01"
+      },
+      {
+        "Message": "Magical Forest Uncommon 02: imported model unavailable",
+        "PetTypeId": "MagicalForest_Uncommon_02"
+      },
+      {
+        "Message": "Magical Forest Uncommon 03: imported model unavailable",
+        "PetTypeId": "MagicalForest_Uncommon_03"
+      },
+      {
+        "Message": "Magical Forest Uncommon 04: imported model unavailable",
+        "PetTypeId": "MagicalForest_Uncommon_04"
+      },
+      {
+        "Message": "Magical Forest Uncommon 05: imported model unavailable",
+        "PetTypeId": "MagicalForest_Uncommon_05"
+      },
+      {
+        "Message": "Magical Forest Rare 01: imported model unavailable",
+        "PetTypeId": "MagicalForest_Rare_01"
+      },
+      {
+        "Message": "Magical Forest Rare 02: imported model unavailable",
+        "PetTypeId": "MagicalForest_Rare_02"
+      },
+      {
+        "Message": "Magical Forest Rare 03: imported model unavailable",
+        "PetTypeId": "MagicalForest_Rare_03"
+      },
+      {
+        "Message": "Magical Forest Rare 04: imported model unavailable",
+        "PetTypeId": "MagicalForest_Rare_04"
+      },
+      {
+        "Message": "Magical Forest Rare 05: imported model unavailable",
+        "PetTypeId": "MagicalForest_Rare_05"
+      },
+      {
+        "Message": "Magical Forest Rare 06: imported model unavailable",
+        "PetTypeId": "MagicalForest_Rare_06"
+      },
+      {
+        "Message": "Magical Forest Epic 01: imported model unavailable",
+        "PetTypeId": "MagicalForest_Epic_01"
+      },
+      {
+        "Message": "Magical Forest Epic 02: imported model unavailable",
+        "PetTypeId": "MagicalForest_Epic_02"
+      },
+      {
+        "Message": "Magical Forest Epic 03: imported model unavailable",
+        "PetTypeId": "MagicalForest_Epic_03"
+      },
+      {
+        "Message": "Magical Forest Epic 04: imported model unavailable",
+        "PetTypeId": "MagicalForest_Epic_04"
+      },
+      {
+        "Message": "Magical Forest Epic 05: imported model unavailable",
+        "PetTypeId": "MagicalForest_Epic_05"
+      },
+      {
+        "Message": "Magical Forest Epic 06: imported model unavailable",
+        "PetTypeId": "MagicalForest_Epic_06"
+      },
+      {
+        "Message": "Magical Forest Legendary 01: imported model unavailable",
+        "PetTypeId": "MagicalForest_Legendary_01"
+      },
+      {
+        "Message": "Magical Forest Legendary 02: imported model unavailable",
+        "PetTypeId": "MagicalForest_Legendary_02"
+      },
+      {
+        "Message": "Magical Forest Legendary 03: imported model unavailable",
+        "PetTypeId": "MagicalForest_Legendary_03"
+      },
+      {
+        "Message": "Magical Forest Legendary 04: imported model unavailable",
+        "PetTypeId": "MagicalForest_Legendary_04"
+      },
+      {
+        "Message": "Magical Forest Mystic 01: imported model unavailable",
+        "PetTypeId": "MagicalForest_Mystic_01"
+      },
+      {
+        "Message": "Magical Forest Mystic 02: imported model unavailable",
+        "PetTypeId": "MagicalForest_Mystic_02"
+      },
+      {
+        "Message": "Sky Common 01: imported model unavailable",
+        "PetTypeId": "Sky_Common_01"
+      },
+      {
+        "Message": "Sky Common 02: imported model unavailable",
+        "PetTypeId": "Sky_Common_02"
+      },
+      {
+        "Message": "Sky Uncommon 01: imported model unavailable",
+        "PetTypeId": "Sky_Uncommon_01"
+      },
+      {
+        "Message": "Sky Uncommon 02: imported model unavailable",
+        "PetTypeId": "Sky_Uncommon_02"
+      },
+      {
+        "Message": "Sky Uncommon 03: imported model unavailable",
+        "PetTypeId": "Sky_Uncommon_03"
+      },
+      {
+        "Message": "Sky Uncommon 04: imported model unavailable",
+        "PetTypeId": "Sky_Uncommon_04"
+      },
+      {
+        "Message": "Sky Uncommon 05: imported model unavailable",
+        "PetTypeId": "Sky_Uncommon_05"
+      },
+      {
+        "Message": "Sky Rare 01: imported model unavailable",
+        "PetTypeId": "Sky_Rare_01"
+      },
+      {
+        "Message": "Sky Rare 02: imported model unavailable",
+        "PetTypeId": "Sky_Rare_02"
+      },
+      {
+        "Message": "Sky Rare 03: imported model unavailable",
+        "PetTypeId": "Sky_Rare_03"
+      },
+      {
+        "Message": "Sky Rare 04: imported model unavailable",
+        "PetTypeId": "Sky_Rare_04"
+      },
+      {
+        "Message": "Sky Rare 05: imported model unavailable",
+        "PetTypeId": "Sky_Rare_05"
+      },
+      {
+        "Message": "Sky Rare 06: imported model unavailable",
+        "PetTypeId": "Sky_Rare_06"
+      },
+      {
+        "Message": "Sky Epic 01: imported model unavailable",
+        "PetTypeId": "Sky_Epic_01"
+      },
+      {
+        "Message": "Sky Epic 02: imported model unavailable",
+        "PetTypeId": "Sky_Epic_02"
+      },
+      {
+        "Message": "Sky Epic 03: imported model unavailable",
+        "PetTypeId": "Sky_Epic_03"
+      },
+      {
+        "Message": "Sky Epic 04: imported model unavailable",
+        "PetTypeId": "Sky_Epic_04"
+      },
+      {
+        "Message": "Sky Epic 05: imported model unavailable",
+        "PetTypeId": "Sky_Epic_05"
+      },
+      {
+        "Message": "Sky Epic 06: imported model unavailable",
+        "PetTypeId": "Sky_Epic_06"
+      },
+      {
+        "Message": "Sky Legendary 01: imported model unavailable",
+        "PetTypeId": "Sky_Legendary_01"
+      },
+      {
+        "Message": "Sky Legendary 02: imported model unavailable",
+        "PetTypeId": "Sky_Legendary_02"
+      },
+      {
+        "Message": "Sky Legendary 03: imported model unavailable",
+        "PetTypeId": "Sky_Legendary_03"
+      },
+      {
+        "Message": "Sky Legendary 04: imported model unavailable",
+        "PetTypeId": "Sky_Legendary_04"
+      },
+      {
+        "Message": "Sky Mystic 01: imported model unavailable",
+        "PetTypeId": "Sky_Mystic_01"
+      },
+      {
+        "Message": "Sky Mystic 02: imported model unavailable",
+        "PetTypeId": "Sky_Mystic_02"
+      },
+      {
+        "Message": "Prehistoric Common 01: imported model unavailable",
+        "PetTypeId": "Prehistoric_Common_01"
+      },
+      {
+        "Message": "Prehistoric Common 02: imported model unavailable",
+        "PetTypeId": "Prehistoric_Common_02"
+      },
+      {
+        "Message": "Prehistoric Uncommon 01: imported model unavailable",
+        "PetTypeId": "Prehistoric_Uncommon_01"
+      },
+      {
+        "Message": "Prehistoric Uncommon 02: imported model unavailable",
+        "PetTypeId": "Prehistoric_Uncommon_02"
+      },
+      {
+        "Message": "Prehistoric Uncommon 03: imported model unavailable",
+        "PetTypeId": "Prehistoric_Uncommon_03"
+      },
+      {
+        "Message": "Prehistoric Uncommon 04: imported model unavailable",
+        "PetTypeId": "Prehistoric_Uncommon_04"
+      },
+      {
+        "Message": "Prehistoric Uncommon 05: imported model unavailable",
+        "PetTypeId": "Prehistoric_Uncommon_05"
+      },
+      {
+        "Message": "Prehistoric Rare 01: imported model unavailable",
+        "PetTypeId": "Prehistoric_Rare_01"
+      },
+      {
+        "Message": "Prehistoric Rare 02: imported model unavailable",
+        "PetTypeId": "Prehistoric_Rare_02"
+      },
+      {
+        "Message": "Prehistoric Rare 03: imported model unavailable",
+        "PetTypeId": "Prehistoric_Rare_03"
+      },
+      {
+        "Message": "Prehistoric Rare 04: imported model unavailable",
+        "PetTypeId": "Prehistoric_Rare_04"
+      },
+      {
+        "Message": "Prehistoric Rare 05: imported model unavailable",
+        "PetTypeId": "Prehistoric_Rare_05"
+      },
+      {
+        "Message": "Prehistoric Rare 06: imported model unavailable",
+        "PetTypeId": "Prehistoric_Rare_06"
+      },
+      {
+        "Message": "Prehistoric Epic 01: imported model unavailable",
+        "PetTypeId": "Prehistoric_Epic_01"
+      },
+      {
+        "Message": "Prehistoric Epic 02: imported model unavailable",
+        "PetTypeId": "Prehistoric_Epic_02"
+      },
+      {
+        "Message": "Prehistoric Epic 03: imported model unavailable",
+        "PetTypeId": "Prehistoric_Epic_03"
+      },
+      {
+        "Message": "Prehistoric Epic 04: imported model unavailable",
+        "PetTypeId": "Prehistoric_Epic_04"
+      },
+      {
+        "Message": "Prehistoric Epic 05: imported model unavailable",
+        "PetTypeId": "Prehistoric_Epic_05"
+      },
+      {
+        "Message": "Prehistoric Epic 06: imported model unavailable",
+        "PetTypeId": "Prehistoric_Epic_06"
+      },
+      {
+        "Message": "Prehistoric Legendary 01: imported model unavailable",
+        "PetTypeId": "Prehistoric_Legendary_01"
+      },
+      {
+        "Message": "Prehistoric Legendary 02: imported model unavailable",
+        "PetTypeId": "Prehistoric_Legendary_02"
+      },
+      {
+        "Message": "Prehistoric Legendary 03: imported model unavailable",
+        "PetTypeId": "Prehistoric_Legendary_03"
+      },
+      {
+        "Message": "Prehistoric Legendary 04: imported model unavailable",
+        "PetTypeId": "Prehistoric_Legendary_04"
+      },
+      {
+        "Message": "Prehistoric Mystic 01: imported model unavailable",
+        "PetTypeId": "Prehistoric_Mystic_01"
+      },
+      {
+        "Message": "Prehistoric Mystic 02: imported model unavailable",
+        "PetTypeId": "Prehistoric_Mystic_02"
+      },
+      {
+        "Message": "Mythical Common 01: imported model unavailable",
+        "PetTypeId": "Mythical_Common_01"
+      },
+      {
+        "Message": "Mythical Common 02: imported model unavailable",
+        "PetTypeId": "Mythical_Common_02"
+      },
+      {
+        "Message": "Mythical Uncommon 01: imported model unavailable",
+        "PetTypeId": "Mythical_Uncommon_01"
+      },
+      {
+        "Message": "Mythical Uncommon 02: imported model unavailable",
+        "PetTypeId": "Mythical_Uncommon_02"
+      },
+      {
+        "Message": "Mythical Uncommon 03: imported model unavailable",
+        "PetTypeId": "Mythical_Uncommon_03"
+      },
+      {
+        "Message": "Mythical Uncommon 04: imported model unavailable",
+        "PetTypeId": "Mythical_Uncommon_04"
+      },
+      {
+        "Message": "Mythical Uncommon 05: imported model unavailable",
+        "PetTypeId": "Mythical_Uncommon_05"
+      },
+      {
+        "Message": "Mythical Rare 01: imported model unavailable",
+        "PetTypeId": "Mythical_Rare_01"
+      },
+      {
+        "Message": "Mythical Rare 02: imported model unavailable",
+        "PetTypeId": "Mythical_Rare_02"
+      },
+      {
+        "Message": "Mythical Rare 03: imported model unavailable",
+        "PetTypeId": "Mythical_Rare_03"
+      },
+      {
+        "Message": "Mythical Rare 04: imported model unavailable",
+        "PetTypeId": "Mythical_Rare_04"
+      },
+      {
+        "Message": "Mythical Rare 05: imported model unavailable",
+        "PetTypeId": "Mythical_Rare_05"
+      },
+      {
+        "Message": "Mythical Rare 06: imported model unavailable",
+        "PetTypeId": "Mythical_Rare_06"
+      },
+      {
+        "Message": "Mythical Epic 01: imported model unavailable",
+        "PetTypeId": "Mythical_Epic_01"
+      },
+      {
+        "Message": "Mythical Epic 02: imported model unavailable",
+        "PetTypeId": "Mythical_Epic_02"
+      },
+      {
+        "Message": "Mythical Epic 03: imported model unavailable",
+        "PetTypeId": "Mythical_Epic_03"
+      },
+      {
+        "Message": "Mythical Epic 04: imported model unavailable",
+        "PetTypeId": "Mythical_Epic_04"
+      },
+      {
+        "Message": "Mythical Epic 05: imported model unavailable",
+        "PetTypeId": "Mythical_Epic_05"
+      },
+      {
+        "Message": "Mythical Epic 06: imported model unavailable",
+        "PetTypeId": "Mythical_Epic_06"
+      },
+      {
+        "Message": "Mythical Legendary 01: imported model unavailable",
+        "PetTypeId": "Mythical_Legendary_01"
+      },
+      {
+        "Message": "Mythical Legendary 02: imported model unavailable",
+        "PetTypeId": "Mythical_Legendary_02"
+      },
+      {
+        "Message": "Mythical Legendary 03: imported model unavailable",
+        "PetTypeId": "Mythical_Legendary_03"
+      },
+      {
+        "Message": "Mythical Legendary 04: imported model unavailable",
+        "PetTypeId": "Mythical_Legendary_04"
+      },
+      {
+        "Message": "Mythical Mystic 01: imported model unavailable",
+        "PetTypeId": "Mythical_Mystic_01"
+      },
+      {
+        "Message": "Mythical Mystic 02: imported model unavailable",
+        "PetTypeId": "Mythical_Mystic_02"
+      }
+    ],
+    "Warnings": [
+      {
+        "Message": "Meadow Common 01: imported model unavailable",
+        "PetTypeId": "Meadow_Common_01"
+      },
+      {
+        "Message": "Meadow Common 02: imported model unavailable",
+        "PetTypeId": "Meadow_Common_02"
+      },
+      {
+        "Message": "Meadow Uncommon 01: imported model unavailable",
+        "PetTypeId": "Meadow_Uncommon_01"
+      },
+      {
+        "Message": "Meadow Uncommon 02: imported model unavailable",
+        "PetTypeId": "Meadow_Uncommon_02"
+      },
+      {
+        "Message": "Meadow Uncommon 03: imported model unavailable",
+        "PetTypeId": "Meadow_Uncommon_03"
+      },
+      {
+        "Message": "Meadow Uncommon 04: imported model unavailable",
+        "PetTypeId": "Meadow_Uncommon_04"
+      },
+      {
+        "Message": "Meadow Uncommon 05: imported model unavailable",
+        "PetTypeId": "Meadow_Uncommon_05"
+      },
+      {
+        "Message": "Meadow Rare 01: imported model unavailable",
+        "PetTypeId": "Meadow_Rare_01"
+      },
+      {
+        "Message": "Meadow Rare 02: imported model unavailable",
+        "PetTypeId": "Meadow_Rare_02"
+      },
+      {
+        "Message": "Meadow Rare 03: imported model unavailable",
+        "PetTypeId": "Meadow_Rare_03"
+      },
+      {
+        "Message": "Meadow Rare 04: imported model unavailable",
+        "PetTypeId": "Meadow_Rare_04"
+      },
+      {
+        "Message": "Meadow Rare 05: imported model unavailable",
+        "PetTypeId": "Meadow_Rare_05"
+      },
+      {
+        "Message": "Meadow Rare 06: imported model unavailable",
+        "PetTypeId": "Meadow_Rare_06"
+      },
+      {
+        "Message": "Meadow Epic 01: imported model unavailable",
+        "PetTypeId": "Meadow_Epic_01"
+      },
+      {
+        "Message": "Meadow Epic 02: imported model unavailable",
+        "PetTypeId": "Meadow_Epic_02"
+      },
+      {
+        "Message": "Meadow Epic 03: imported model unavailable",
+        "PetTypeId": "Meadow_Epic_03"
+      },
+      {
+        "Message": "Meadow Epic 04: imported model unavailable",
+        "PetTypeId": "Meadow_Epic_04"
+      },
+      {
+        "Message": "Meadow Epic 05: imported model unavailable",
+        "PetTypeId": "Meadow_Epic_05"
+      },
+      {
+        "Message": "Meadow Epic 06: imported model unavailable",
+        "PetTypeId": "Meadow_Epic_06"
+      },
+      {
+        "Message": "Meadow Legendary 01: imported model unavailable",
+        "PetTypeId": "Meadow_Legendary_01"
+      },
+      {
+        "Message": "Meadow Legendary 02: imported model unavailable",
+        "PetTypeId": "Meadow_Legendary_02"
+      },
+      {
+        "Message": "Meadow Legendary 03: imported model unavailable",
+        "PetTypeId": "Meadow_Legendary_03"
+      },
+      {
+        "Message": "Meadow Legendary 04: imported model unavailable",
+        "PetTypeId": "Meadow_Legendary_04"
+      },
+      {
+        "Message": "Meadow Mystic 01: imported model unavailable",
+        "PetTypeId": "Meadow_Mystic_01"
+      },
+      {
+        "Message": "Meadow Mystic 02: imported model unavailable",
+        "PetTypeId": "Meadow_Mystic_02"
+      },
+      {
+        "Message": "Forest Common 01: imported model unavailable",
+        "PetTypeId": "Forest_Common_01"
+      },
+      {
+        "Message": "Forest Common 02: imported model unavailable",
+        "PetTypeId": "Forest_Common_02"
+      },
+      {
+        "Message": "Forest Uncommon 01: imported model unavailable",
+        "PetTypeId": "Forest_Uncommon_01"
+      },
+      {
+        "Message": "Forest Uncommon 02: imported model unavailable",
+        "PetTypeId": "Forest_Uncommon_02"
+      },
+      {
+        "Message": "Forest Uncommon 03: imported model unavailable",
+        "PetTypeId": "Forest_Uncommon_03"
+      },
+      {
+        "Message": "Forest Uncommon 04: imported model unavailable",
+        "PetTypeId": "Forest_Uncommon_04"
+      },
+      {
+        "Message": "Forest Uncommon 05: imported model unavailable",
+        "PetTypeId": "Forest_Uncommon_05"
+      },
+      {
+        "Message": "Forest Rare 01: imported model unavailable",
+        "PetTypeId": "Forest_Rare_01"
+      },
+      {
+        "Message": "Forest Rare 02: imported model unavailable",
+        "PetTypeId": "Forest_Rare_02"
+      },
+      {
+        "Message": "Forest Rare 03: imported model unavailable",
+        "PetTypeId": "Forest_Rare_03"
+      },
+      {
+        "Message": "Forest Rare 04: imported model unavailable",
+        "PetTypeId": "Forest_Rare_04"
+      },
+      {
+        "Message": "Forest Rare 05: imported model unavailable",
+        "PetTypeId": "Forest_Rare_05"
+      },
+      {
+        "Message": "Forest Rare 06: imported model unavailable",
+        "PetTypeId": "Forest_Rare_06"
+      },
+      {
+        "Message": "Forest Epic 01: imported model unavailable",
+        "PetTypeId": "Forest_Epic_01"
+      },
+      {
+        "Message": "Forest Epic 02: imported model unavailable",
+        "PetTypeId": "Forest_Epic_02"
+      },
+      {
+        "Message": "Forest Epic 03: imported model unavailable",
+        "PetTypeId": "Forest_Epic_03"
+      },
+      {
+        "Message": "Forest Epic 04: imported model unavailable",
+        "PetTypeId": "Forest_Epic_04"
+      },
+      {
+        "Message": "Forest Epic 05: imported model unavailable",
+        "PetTypeId": "Forest_Epic_05"
+      },
+      {
+        "Message": "Forest Epic 06: imported model unavailable",
+        "PetTypeId": "Forest_Epic_06"
+      },
+      {
+        "Message": "Forest Legendary 01: imported model unavailable",
+        "PetTypeId": "Forest_Legendary_01"
+      },
+      {
+        "Message": "Forest Legendary 02: imported model unavailable",
+        "PetTypeId": "Forest_Legendary_02"
+      },
+      {
+        "Message": "Forest Legendary 03: imported model unavailable",
+        "PetTypeId": "Forest_Legendary_03"
+      },
+      {
+        "Message": "Forest Legendary 04: imported model unavailable",
+        "PetTypeId": "Forest_Legendary_04"
+      },
+      {
+        "Message": "Forest Mystic 01: imported model unavailable",
+        "PetTypeId": "Forest_Mystic_01"
+      },
+      {
+        "Message": "Forest Mystic 02: imported model unavailable",
+        "PetTypeId": "Forest_Mystic_02"
+      },
+      {
+        "Message": "Bunny: imported model unavailable",
+        "PetTypeId": "Bunny"
+      },
+      {
+        "Message": "Dog: imported model unavailable",
+        "PetTypeId": "Dog"
+      },
+      {
+        "Message": "Deer: imported model unavailable",
+        "PetTypeId": "Deer"
+      },
+      {
+        "Message": "Golden Fox: imported model unavailable",
+        "PetTypeId": "GoldenFox"
+      },
+      {
+        "Message": "Honey Lop Bunny: imported model unavailable",
+        "PetTypeId": "MeadowHoneyLop"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowFieldMouse",
+        "PetTypeId": "MeadowFieldMouse"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowChick",
+        "PetTypeId": "MeadowChick"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowGoat",
+        "PetTypeId": "MeadowGoat"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowFawn",
+        "PetTypeId": "MeadowFawn"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowFluffyLop",
+        "PetTypeId": "MeadowFluffyLop"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowPatchworkLop",
+        "PetTypeId": "MeadowPatchworkLop"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowDaisyHedgehog",
+        "PetTypeId": "MeadowDaisyHedgehog"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowBuck",
+        "PetTypeId": "MeadowBuck"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowDaisyCrownBunny",
+        "PetTypeId": "MeadowDaisyCrownBunny"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowBlossomBunny",
+        "PetTypeId": "MeadowBlossomBunny"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowPrismAntlerDeer",
+        "PetTypeId": "MeadowPrismAntlerDeer"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowCloudtailFox",
+        "PetTypeId": "MeadowCloudtailFox"
+      },
+      {
+        "Message": "Model without a resolvable PetDefinition: ReplicatedStorage.Assets.Pets.MeadowCelestialLamb",
+        "PetTypeId": "MeadowCelestialLamb"
+      }
+    ]
+  },
+  "place_id": 132313449035787,
+  "universe_id": 10764288431,
+  "scope": "read-only definitions, model resolution, texture bindings and physical tree mapping",
+  "interaction_qa": "not_run",
+  "biomes": [
+    {
+      "release_certified": false,
+      "content_ready": true,
+      "interaction_qa": "not_run",
+      "errors": [],
+      "id": "Meadow",
+      "families": [
+        {
+          "pets": [
+            {
+              "base_income": 2.5,
+              "rarity": "Common",
+              "errors": [],
+              "id": "MeadowFieldMouse",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://73748377999416",
+                  "mesh_id": "rbxassetid://127414738965477"
+                }
+              ],
+              "base_weight": 0.1,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowFieldMouse"
+            },
+            {
+              "base_income": 3.5,
+              "rarity": "Rare",
+              "errors": [],
+              "id": "MeadowPatchworkLop",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://129853249692809",
+                  "mesh_id": "rbxassetid://129971024677390"
+                }
+              ],
+              "base_weight": 3,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowPatchworkLop"
+            },
+            {
+              "base_income": 6,
+              "rarity": "Legendary",
+              "errors": [],
+              "id": "MeadowBlossomBunny",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://110600438861044",
+                  "mesh_id": "rbxassetid://81163303277235"
+                }
+              ],
+              "base_weight": 3.5,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowBlossomBunny"
+            }
+          ],
+          "name": "Blossombark",
+          "errors": [],
+          "id": "Meadow_Shakeable_01",
+          "physical_copies": 5,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 4,
+              "rarity": "Common",
+              "errors": [],
+              "id": "MeadowChick",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://77213563483513",
+                  "mesh_id": "rbxassetid://122845755829690"
+                }
+              ],
+              "base_weight": 0.4,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowChick"
+            },
+            {
+              "base_income": 5,
+              "rarity": "Rare",
+              "errors": [],
+              "id": "MeadowFawn",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://76132821896289",
+                  "mesh_id": "rbxassetid://107263251366206"
+                }
+              ],
+              "base_weight": 14,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowFawn"
+            },
+            {
+              "base_income": 8,
+              "rarity": "Legendary",
+              "errors": [],
+              "id": "MeadowCloudtailFox",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://100873128150834",
+                  "mesh_id": "rbxassetid://99272790538349"
+                }
+              ],
+              "base_weight": 7,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowCloudtailFox"
+            }
+          ],
+          "name": "Honeybloom",
+          "errors": [],
+          "id": "Meadow_Shakeable_02",
+          "physical_copies": 4,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 6,
+              "rarity": "Uncommon",
+              "errors": [],
+              "id": "MeadowRedSquirrel",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://83064824068183",
+                  "mesh_id": "rbxassetid://73672924650229"
+                }
+              ],
+              "base_weight": 0.5,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowRedSquirrel"
+            },
+            {
+              "base_income": 8,
+              "rarity": "Rare",
+              "errors": [],
+              "id": "MeadowFluffyLop",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://77371096825073",
+                  "mesh_id": "rbxassetid://99771514014908"
+                }
+              ],
+              "base_weight": 2.8,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowFluffyLop"
+            },
+            {
+              "base_income": 12,
+              "rarity": "Legendary",
+              "errors": [],
+              "id": "MeadowPrismAntlerDeer",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://70473479723436",
+                  "mesh_id": "rbxassetid://125325309083944"
+                }
+              ],
+              "base_weight": 70,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowPrismAntlerDeer"
+            }
+          ],
+          "name": "Clover Crown",
+          "errors": [],
+          "id": "Meadow_Shakeable_03",
+          "physical_copies": 6,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 9,
+              "rarity": "Uncommon",
+              "errors": [],
+              "id": "MeadowGoat",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://79773020130638",
+                  "mesh_id": "rbxassetid://89904570166738"
+                }
+              ],
+              "base_weight": 18,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowGoat"
+            },
+            {
+              "base_income": 12,
+              "rarity": "Epic",
+              "errors": [],
+              "id": "MeadowBuck",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://116242731028580",
+                  "mesh_id": "rbxassetid://74693569451680"
+                }
+              ],
+              "base_weight": 55,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowBuck"
+            },
+            {
+              "base_income": 14,
+              "rarity": "Epic",
+              "errors": [],
+              "id": "MeadowDaisyCrownBunny",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://120392697720099",
+                  "mesh_id": "rbxassetid://70876461319097"
+                }
+              ],
+              "base_weight": 3.2,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyCrownBunny"
+            }
+          ],
+          "name": "Sunpetal",
+          "errors": [],
+          "id": "Meadow_Shakeable_04",
+          "physical_copies": 2,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 14,
+              "rarity": "Epic",
+              "errors": [],
+              "id": "MeadowDaisyHedgehog",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://83789055307274",
+                  "mesh_id": "rbxassetid://82581654748495"
+                }
+              ],
+              "base_weight": 1.2,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowDaisyHedgehog"
+            },
+            {
+              "base_income": 22,
+              "rarity": "Secret",
+              "errors": [],
+              "id": "MeadowCelestialLamb",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://104848496835588",
+                  "mesh_id": "rbxassetid://112434751758874"
+                }
+              ],
+              "base_weight": 12,
+              "template": "ReplicatedStorage.MeadowPetTemplates.MeadowCelestialLamb"
+            }
+          ],
+          "name": "Whisper Willow",
+          "errors": [],
+          "id": "Meadow_Shakeable_05",
+          "physical_copies": 2,
+          "definition_and_asset_pass": true
+        }
+      ],
+      "definition_and_asset_pass": true,
+      "physical_trees": {
+        "mapped": {
+          "Meadow_Shakeable_02": 4,
+          "Meadow_Shakeable_04": 2,
+          "Meadow_Shakeable_01": 5,
+          "Meadow_Shakeable_05": 2,
+          "Meadow_Shakeable_03": 6
+        },
+        "total": 19,
+        "unmapped": 0
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": true,
+      "interaction_qa": "not_run",
+      "errors": [],
+      "id": "Forest",
+      "families": [
+        {
+          "pets": [
+            {
+              "base_income": 22,
+              "rarity": "Common",
+              "errors": [],
+              "id": "ForestRaccoon",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://129022509074285",
+                  "mesh_id": "rbxassetid://97924899190875"
+                }
+              ],
+              "base_weight": 6,
+              "template": "ReplicatedStorage.PetAssets.ForestRaccoon"
+            },
+            {
+              "base_income": 36,
+              "rarity": "Rare",
+              "errors": [],
+              "id": "ForestTreeFrog",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://133597800956686",
+                  "mesh_id": "rbxassetid://126806763850171"
+                }
+              ],
+              "base_weight": 0.2,
+              "template": "ReplicatedStorage.PetAssets.ForestTreeFrog"
+            },
+            {
+              "base_income": 180,
+              "rarity": "Secret",
+              "errors": [],
+              "id": "ForestEmeraldWing",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://73081746031370",
+                  "mesh_id": "rbxassetid://89750756176673"
+                }
+              ],
+              "base_weight": 40,
+              "template": "ReplicatedStorage.PetAssets.ForestEmeraldWing"
+            }
+          ],
+          "name": "Mossheart",
+          "errors": [],
+          "id": "Forest_Shakeable_01",
+          "physical_copies": 6,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 32,
+              "rarity": "Common",
+              "errors": [],
+              "id": "ForestBlackBearCub",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://95294656364429",
+                  "mesh_id": "rbxassetid://131926612358052"
+                }
+              ],
+              "base_weight": 18,
+              "template": "ReplicatedStorage.PetAssets.ForestBlackBearCub"
+            },
+            {
+              "base_income": 52,
+              "rarity": "Epic",
+              "errors": [],
+              "id": "ForestBrownBat",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://84452625990128",
+                  "mesh_id": "rbxassetid://106744044776841"
+                }
+              ],
+              "base_weight": 0.3,
+              "template": "ReplicatedStorage.PetAssets.ForestBrownBat"
+            }
+          ],
+          "name": "Fernwood",
+          "errors": [],
+          "id": "Forest_Shakeable_02",
+          "physical_copies": 6,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 46,
+              "rarity": "Uncommon",
+              "errors": [],
+              "id": "ForestSkunk",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://119398526295183",
+                  "mesh_id": "rbxassetid://94866246199758"
+                }
+              ],
+              "base_weight": 3,
+              "template": "ReplicatedStorage.PetAssets.ForestSkunk"
+            },
+            {
+              "base_income": 70,
+              "rarity": "Epic",
+              "errors": [],
+              "id": "ForestWoodlandOwl",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://102420541096782",
+                  "mesh_id": "rbxassetid://95294648810339"
+                }
+              ],
+              "base_weight": 1.5,
+              "template": "ReplicatedStorage.PetAssets.ForestWoodlandOwl"
+            }
+          ],
+          "name": "Duskleaf",
+          "errors": [],
+          "id": "Forest_Shakeable_03",
+          "physical_copies": 5,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 66,
+              "rarity": "Uncommon",
+              "errors": [],
+              "id": "ForestBadger",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://135911004193278",
+                  "mesh_id": "rbxassetid://130215170262976"
+                }
+              ],
+              "base_weight": 12,
+              "template": "ReplicatedStorage.PetAssets.ForestBadger"
+            },
+            {
+              "base_income": 100,
+              "rarity": "Legendary",
+              "errors": [],
+              "id": "ForestLeafAntler",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://123865829385359",
+                  "mesh_id": "rbxassetid://111837749719637"
+                }
+              ],
+              "base_weight": 70,
+              "template": "ReplicatedStorage.PetAssets.ForestLeafAntler"
+            }
+          ],
+          "name": "Elderbark",
+          "errors": [],
+          "id": "Forest_Shakeable_04",
+          "physical_copies": 7,
+          "definition_and_asset_pass": true
+        },
+        {
+          "pets": [
+            {
+              "base_income": 95,
+              "rarity": "Rare",
+              "errors": [],
+              "id": "ForestRiverOtter",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://131616920065617",
+                  "mesh_id": "rbxassetid://125023493018070"
+                }
+              ],
+              "base_weight": 9,
+              "template": "ReplicatedStorage.PetAssets.ForestRiverOtter"
+            },
+            {
+              "base_income": 140,
+              "rarity": "Legendary",
+              "errors": [],
+              "id": "ForestCrestedOwl",
+              "meshes": [
+                {
+                  "color_map": "rbxassetid://126502584357511",
+                  "mesh_id": "rbxassetid://82138478193574"
+                }
+              ],
+              "base_weight": 2.4,
+              "template": "ReplicatedStorage.PetAssets.ForestCrestedOwl"
+            }
+          ],
+          "name": "Mooncap",
+          "errors": [],
+          "id": "Forest_Shakeable_05",
+          "physical_copies": 6,
+          "definition_and_asset_pass": true
+        }
+      ],
+      "definition_and_asset_pass": true,
+      "physical_trees": {
+        "mapped": {
+          "Forest_Shakeable_03": 5,
+          "Forest_Shakeable_05": 6,
+          "Forest_Shakeable_04": 7,
+          "Forest_Shakeable_02": 6,
+          "Forest_Shakeable_01": 6
+        },
+        "total": 30,
+        "unmapped": 0
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Family incomplete: Jungle_Shakeable_01",
+        "Family incomplete: Jungle_Shakeable_02",
+        "Family incomplete: Jungle_Shakeable_03",
+        "Family incomplete: Jungle_Shakeable_04",
+        "Family incomplete: Jungle_Shakeable_05"
+      ],
+      "id": "Jungle",
+      "families": [
+        {
+          "pets": [],
+          "name": "Rainbloom",
+          "errors": [
+            "Missing canonical search price",
+            "Empty species roster",
+            "No mapped physical tree"
+          ],
+          "id": "Jungle_Shakeable_01",
+          "physical_copies": 0,
+          "definition_and_asset_pass": false
+        },
+        {
+          "pets": [],
+          "name": "Emerald Canopy",
+          "errors": [
+            "Missing canonical search price",
+            "Empty species roster",
+            "No mapped physical tree"
+          ],
+          "id": "Jungle_Shakeable_02",
+          "physical_copies": 0,
+          "definition_and_asset_pass": false
+        },
+        {
+          "pets": [],
+          "name": "Orchidwood",
+          "errors": [
+            "Missing canonical search price",
+            "Empty species roster",
+            "No mapped physical tree"
+          ],
+          "id": "Jungle_Shakeable_03",
+          "physical_copies": 0,
+          "definition_and_asset_pass": false
+        },
+        {
+          "pets": [],
+          "name": "Sunvine",
+          "errors": [
+            "Missing canonical search price",
+            "Empty species roster",
+            "No mapped physical tree"
+          ],
+          "id": "Jungle_Shakeable_04",
+          "physical_copies": 0,
+          "definition_and_asset_pass": false
+        },
+        {
+          "pets": [],
+          "name": "Ancient Banyan",
+          "errors": [
+            "Missing canonical search price",
+            "Empty species roster",
+            "No mapped physical tree"
+          ],
+          "id": "Jungle_Shakeable_05",
+          "physical_copies": 0,
+          "definition_and_asset_pass": false
+        }
+      ],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 35,
+        "unmapped": 35
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Desert",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 19,
+        "unmapped": 19
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Snow",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 31,
+        "unmapped": 31
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Volcano",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 24,
+        "unmapped": 24
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Ocean",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 27,
+        "unmapped": 27
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "AncientRuins",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 22,
+        "unmapped": 22
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "MagicalForest",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 55,
+        "unmapped": 55
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Sky",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 19,
+        "unmapped": 19
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Prehistoric",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 27,
+        "unmapped": 27
+      }
+    },
+    {
+      "release_certified": false,
+      "content_ready": false,
+      "interaction_qa": "not_run",
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "id": "Mythical",
+      "families": [],
+      "definition_and_asset_pass": false,
+      "physical_trees": {
+        "mapped": [],
+        "total": 4,
+        "unmapped": 4
+      }
+    }
+  ]
+}

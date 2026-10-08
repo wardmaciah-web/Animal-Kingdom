@@ -54,3 +54,11 @@ species generation and art QA, durable Studio import verification, complete
 unique rosters, all future-biome production, full feature integration, and every
 tree-family reward test before biome release. No future biome has been released
 and the Roblox game has not been published. The full user task remains active.
+
+Continuation audit: current Studio definition/model/tree-binding checks pass for
+Meadow and Forest without edits. Jungle's five families remain empty and none of
+its 35 authored trees has a family binding. The other nine future biomes lack
+configured families. `studio_readiness_audit.luau` reuses the game's canonical
+validator/resolver and records these failures without certifying interactions.
+The report is preserved under audits. Tapir background removal also completed;
+its isolated concept, input/output hashes and exact U2Net model hash are saved.

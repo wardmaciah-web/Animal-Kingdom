@@ -44,5 +44,11 @@ Followers, Sanctuary, Garden, Index, mutations, Shiny/Prismatic and the 70kg sys
 Test every tree family before releasing a biome. No pipeline stage publishes the
 game or changes Coming Soon gates.
 
+Run `studio_readiness_audit.luau` through Studio's `execute_luau` to reuse the
+game's existing PetAssetValidator and PetModelResolver and check every family's
+definitions, reward membership, durable texture bindings and mapped physical
+trees. The report explicitly leaves interaction QA unverified. It does not
+change the place, profiles, rewards, or release flags.
+
 Current implementation and reproducibility status is recorded in run manifests;
 the presence of these scripts alone does not establish successful reproduction.

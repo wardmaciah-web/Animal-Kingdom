@@ -1,0 +1,17 @@
+{
+  "input_sha256": "ddaf2f37fbdfea402195230cc77af0ebb92fcf9c3ec3b9e541d29c55d431713b",
+  "prepared_sha256": "49e00774ceffac4943306777b3df919e615f29530915fffd4a4880d4245b09b6",
+  "size": [
+    1376,
+    768
+  ],
+  "foreground_box": [
+    434,
+    70,
+    910,
+    708
+  ],
+  "foreground_ratio": 0.85,
+  "rgb_background": 0.5,
+  "style_conditioning": "concept and downstream visual review; TripoSR has no style-reference input"
+}
