@@ -207,6 +207,7 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ Prehistoric={palm_tree_1="PrehistoricAraucaria",Tree_Oak_5="PrehistoricSequoia",palm_tree_3="PrehistoricTreeFern",Tree_Oak_6="PrehistoricMonkeyPuzzle",Willow_3="PrehistoricGinkgo",tree_oak="PrehistoricCycad",PalmTree_3="PrehistoricLepidodendron",palm_tree_2="PrehistoricHorsetail"},
  Sky={tree_thin="SkyCloudCedar",tree_cone="SkyStarCypress",tree_fat="SkyNimbusOak",Tree_Pine_5="SkyAuroraPine",Tree_Pine_3="SkyMoonWillow",CommonTree_Snow_5="SkyBlossomFir",pine_tree_3_snow="SkyRibbonPalm",Tree_Pine_6="SkySunBaobab"},
  MagicalForest={MagicTree="MagicMushroom",NimbusWillow="MagicNimbusWillow",LowpolyWillow="MagicFlowerTree",TwistedTree_2="MagicAmethystOak",Willow_Autumn_4="MagicLanternWillow",TwistedTree_4="MagicCrystalMushroom"},
  AncientRuins={["1"]="RuinsSacredBanyan",["2"]="RuinsMossOak",["3"]="RuinsStoneCedar",AK_AncientRuins_CypressTree="RuinsCypress",AK_AncientRuins_StylizedTree="RuinsCrownBaobab",Tree_Bare_5="RuinsSentinel",Tree_Cedar_2="RuinsRunicCedar",Tree_Cedar_3="RuinsSacredWillow",Willow_Dead_4="RuinsVineFig"},
@@ -218,7 +219,7 @@ local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
 
 -- New tree meshes own rendering; narrow proxies prevent hidden legacy canopies blocking paths.
 local function normalizeCollision(tree,b)
- if b~="Ocean" and b~="AncientRuins" and b~="MagicalForest" and b~="Sky" then return end
+ if b~="Ocean" and b~="AncientRuins" and b~="MagicalForest" and b~="Sky" and b~="Prehistoric" then return end
  local visual=tree:FindFirstChild("AK_FutureTreeVisual");if not visual then return end
  local proxy=tree:FindFirstChild("AK_OverhaulTrunkCollider")
  for _,p in ipairs(tree:GetDescendants()) do
@@ -261,7 +262,7 @@ function M.Apply(scope)
  local report={replaced=0,skipped=0,biomes={}}
  if scope and protected[scope] then return report end
  local magicPlan={}
- for _,b in {"MagicalForest","Sky"} do if not scope or scope==b then for t,p in naturalPlacement(b) do magicPlan[t]=p end end end
+ for _,b in {"MagicalForest","Sky","Prehistoric"} do if not scope or scope==b then for t,p in naturalPlacement(b) do magicPlan[t]=p end end end
  for _,tree in workspace:GetDescendants() do
   if not (tree:IsA("Model") or tree:IsA("BasePart")) or not tree:GetAttribute("AuthoredGatherableTree") then continue end
   local b=biomeOf(tree);local recipe=newRecipes[b]
@@ -340,7 +341,7 @@ function M.DecorateBiome(b)
     local localPos=floor.CFrame:PointToObjectSpace(pos)
     if math.abs(localPos.X)>floor.Size.X/2-5 or math.abs(localPos.Z)>floor.Size.Z/2-5 then clear=false end
     if b=="Ocean" and Vector2.new(localPos.X,localPos.Z).Magnitude<23 then clear=false end
-    if (b=="AncientRuins" or b=="MagicalForest" or b=="Sky") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
+    if (b=="AncientRuins" or b=="MagicalForest" or b=="Sky" or b=="Prehistoric") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
     pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z)
    end
    if clear then

@@ -85,6 +85,15 @@
       "placements": 19,
       "understory": 30,
       "ledger": "documentations/future-trees/sky-assets.json"
+    },
+    {
+      "biome": "Prehistoric",
+      "status": "gameplay_verified",
+      "source": "Roblox Studio native generation",
+      "families": 8,
+      "placements": 27,
+      "understory": 39,
+      "ledger": "documentations/future-trees/prehistoric-assets.json"
     }
   ]
 }
