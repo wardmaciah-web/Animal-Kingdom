@@ -207,6 +207,7 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ MagicalForest={MagicTree="MagicMushroom",NimbusWillow="MagicNimbusWillow",LowpolyWillow="MagicFlowerTree",TwistedTree_2="MagicAmethystOak",Willow_Autumn_4="MagicLanternWillow",TwistedTree_4="MagicCrystalMushroom"},
  AncientRuins={["1"]="RuinsSacredBanyan",["2"]="RuinsMossOak",["3"]="RuinsStoneCedar",AK_AncientRuins_CypressTree="RuinsCypress",AK_AncientRuins_StylizedTree="RuinsCrownBaobab",Tree_Bare_5="RuinsSentinel",Tree_Cedar_2="RuinsRunicCedar",Tree_Cedar_3="RuinsSacredWillow",Willow_Dead_4="RuinsVineFig"},
  Ocean={Tree_Palm_6="OceanStaghorn",Willow_2="OceanKelp",Tree_Palm_1="OceanMangrove",Tree_Palm_3="OceanFanCoral",tree_palm="OceanSeaPalm",tree_palmShort="OceanAnemone",tree_palmBend="OceanPearlWillow",Tree_Palm_5="OceanBloomCoral"},
  Desert={cactus_short="DesertBarrelTree",cactus_tall="DesertColumn",Cactus_1="DesertSaguaro",Cactus_5="DesertPalm",Cactus_4="DesertAcacia",CactusFlowers_2="DesertBloom",BirchTree_Dead_5="DesertIronwood",Cactus_3="DesertJoshua"},
@@ -216,7 +217,7 @@ local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
 
 -- New tree meshes own rendering; narrow proxies prevent hidden legacy canopies blocking paths.
 local function normalizeCollision(tree,b)
- if b~="Ocean" and b~="AncientRuins" then return end
+ if b~="Ocean" and b~="AncientRuins" and b~="MagicalForest" then return end
  local visual=tree:FindFirstChild("AK_FutureTreeVisual");if not visual then return end
  local proxy=tree:FindFirstChild("AK_OverhaulTrunkCollider")
  for _,p in ipairs(tree:GetDescendants()) do
@@ -228,16 +229,37 @@ local function normalizeCollision(tree,b)
   end
  end
  if not proxy then proxy=Instance.new("Part");proxy.Name="AK_OverhaulTrunkCollider";proxy.Parent=tree end
- local cf,size=visual:GetBoundingBox();local p=tree:GetPivot().Position
+ local cf,size=visual:GetBoundingBox();local p=visual:GetAttribute("CosmeticGroundPosition") or tree:GetPivot().Position
  local floor=workspace:FindFirstChild(b) and workspace[b]:FindFirstChild(b.."Floor")
  local ground=floor and floor.Position.Y+floor.Size.Y/2 or cf.Y-size.Y/2
  proxy.Size=Vector3.new(5.5,12,5.5);proxy.CFrame=CFrame.new(p.X,ground+6,p.Z)
  proxy.Transparency=1;proxy.CastShadow=false;proxy.Anchored=true;proxy.CanCollide=true;proxy.CanQuery=true;proxy.CanTouch=false
 end
 
+local function magicPlacement()
+ local trees={};for _,t in workspace:GetDescendants() do if t:IsA("Model") and t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)=="MagicalForest" then table.insert(trees,t) end end
+ table.sort(trees,function(a,b) return a:GetFullName()<b:GetFullName() end)
+ local plan,placed={},{};local floor=workspace.MagicalForest.MagicalForestFloor
+ for i,t in trees do
+  local p=t:GetPivot().Position;local best,score
+  for ring=0,3 do for k=1,(ring==0 and 1 or 24) do
+   local angle=k*math.pi/12+i*2.399963;local radius=ring*3.9
+   local q=Vector3.new(p.X+math.cos(angle)*radius,floor.Position.Y+floor.Size.Y/2,p.Z+math.sin(angle)*radius)
+   local lp=floor.CFrame:PointToObjectSpace(q);local clearance=100
+   for _,v in placed do clearance=math.min(clearance,Vector2.new(q.X-v.X,q.Z-v.Z).Magnitude) end
+   if math.abs(lp.X)<floor.Size.X/2-4 and math.abs(lp.Z)<floor.Size.Z/2-4 then
+    local value=math.min(clearance,8.5)*20-radius
+    if not score or value>score then best=q;score=value end
+   end
+  end end
+  plan[t]=best or Vector3.new(p.X,floor.Position.Y+floor.Size.Y/2,p.Z);table.insert(placed,plan[t])
+ end
+ return plan
+end
 function M.Apply(scope)
  local report={replaced=0,skipped=0,biomes={}}
  if scope and protected[scope] then return report end
+ local magicPlan=(not scope or scope=="MagicalForest") and magicPlacement() or {}
  for _,tree in workspace:GetDescendants() do
   if not (tree:IsA("Model") or tree:IsA("BasePart")) or not tree:GetAttribute("AuthoredGatherableTree") then continue end
   local b=biomeOf(tree);local recipe=newRecipes[b]
@@ -262,7 +284,11 @@ function M.Apply(scope)
   local height=math.clamp(size.Y,36,52)
   visual:ScaleTo(visual:GetScale()*height/sz.Y);cf,sz=visual:GetBoundingBox()
   -- Keep ground contact and orientation; all original gameplay geometry stays intact.
-  visual:PivotTo(bounds*CFrame.new(0,-size.Y/2+sz.Y/2,0)*visual:GetPivot():ToObjectSpace(cf):Inverse())
+  if b=="MagicalForest" then
+   local pos=magicPlan[tree];local n=0;for j=1,#tree.Name do n+=string.byte(tree.Name,j) end
+   visual:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2,0))*CFrame.Angles(0,n*2.399963,0)*visual:GetPivot():ToObjectSpace(cf):Inverse())
+   visual:SetAttribute("CosmeticGroundPosition",pos)
+  else visual:PivotTo(bounds*CFrame.new(0,-size.Y/2+sz.Y/2,0)*visual:GetPivot():ToObjectSpace(cf):Inverse()) end
   for _,v in visual:GetDescendants() do
    if v:IsA("LuaSourceContainer") or v:IsA("PackageLink") then v:Destroy()
    elseif v:IsA("BasePart") then v.Anchored=true;v.CanCollide=false;v.CanTouch=false;v.CanQuery=false
@@ -286,7 +312,7 @@ function M.Apply(scope)
   normalizeCollision(tree,b)
   report.replaced+=1;report.biomes[b]=(report.biomes[b] or 0)+1
  end
- for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b);if b=="Desert" then report.decorativeTrees=M.PolishDesertDecorations() end end end
+ for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b);if b=="Desert" then report.decorativeTrees=M.PolishDesertDecorations() elseif b=="MagicalForest" then report.decorativeFlowers=M.PolishMagicDecorations() end end end
  return report
 end
 
@@ -312,7 +338,7 @@ function M.DecorateBiome(b)
     local localPos=floor.CFrame:PointToObjectSpace(pos)
     if math.abs(localPos.X)>floor.Size.X/2-5 or math.abs(localPos.Z)>floor.Size.Z/2-5 then clear=false end
     if b=="Ocean" and Vector2.new(localPos.X,localPos.Z).Magnitude<23 then clear=false end
-    if b=="AncientRuins" and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
+    if (b=="AncientRuins" or b=="MagicalForest") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
     pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z)
    end
    if clear then
@@ -353,6 +379,26 @@ function M.PolishDesertDecorations()
     m:SetAttribute("BiomeId","Desert");m:SetAttribute("QualityDecoration",true);m:SetAttribute("QualityRevision",3);m.Parent=folder;n+=1
    end
   end
+ end
+ return n
+end
+
+function M.PolishMagicDecorations()
+ local wanted={["rbxassetid://107085363992768"]=true,["rbxassetid://72530001053559"]=true};local roots={}
+ for _,p in workspace:GetDescendants() do if p:IsA("MeshPart") and wanted[p.MeshId] and p.Position.X>-755 and p.Position.X<-550 and p.Position.Z>60 and p.Position.Z<260 then
+  local t=p:FindFirstAncestorWhichIsA("Model");local a=t;local gather=false
+  while a and a~=workspace do if a:GetAttribute("AuthoredGatherableTree") then gather=true end;a=a.Parent end
+  if not gather and t and not t:GetAttribute("AK8DecorationRevision") then roots[t]=true end
+ end end
+ local n=0
+ for t in roots do
+  local backup=game.ServerStorage:FindFirstChild("AK_FinalEight_Checkpoint_20261008")
+  if backup then local copy=t:Clone();copy:SetAttribute("OriginalPath",t:GetFullName());copy.Parent=backup end
+  local old=t:GetPivot();local cf,sz=t:GetBoundingBox();local target=t.Name:find("Balloon") and 8 or 6
+  t:ScaleTo(t:GetScale()*target/sz.Y);cf,sz=t:GetBoundingBox()
+  t:PivotTo(CFrame.new(old.X,9.12893+sz.Y/2,old.Z)*t:GetPivot():ToObjectSpace(cf):Inverse())
+  for _,p in t:GetDescendants() do if p:IsA("BasePart") then p.Anchored=true;p.CanCollide=false;p.CanQuery=false;p.CanTouch=false end end
+  t:SetAttribute("AK8DecorationRevision",3);n+=1
  end
  return n
 end
