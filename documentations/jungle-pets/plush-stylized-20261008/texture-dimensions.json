@@ -1,0 +1,33 @@
+[
+    {
+        "file":  "ocelot_texture_0.jpg",
+        "width":  4096,
+        "height":  4096
+    },
+    {
+        "file":  "ocelot_texture_1.jpg",
+        "width":  4096,
+        "height":  4096
+    },
+    {
+        "file":  "ocelot_texture_2.png",
+        "width":  4096,
+        "height":  4096
+    },
+    {
+        "file":  "tapir_texture_0.jpg",
+        "width":  4096,
+        "height":  4096
+    },
+    {
+        "file":  "tapir_texture_1.jpg",
+        "width":  4096,
+        "height":  4096
+    },
+    {
+        "file":  "tapir_texture_2.png",
+        "width":  4096,
+        "height":  4096
+    }
+]
+

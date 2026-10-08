@@ -1,0 +1,65 @@
+[
+  {
+    "request": {
+      "game_style": "roblox",
+      "quality": "high",
+      "delivery": {
+        "mode": "direct"
+      },
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 4,
+      "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+      "reference_asset_ids": [
+        "mcp-artifact:d72c28d7-b3eb-47b4-a603-940173e17e44:0"
+      ],
+      "request_id": "ak-plush-tapir-model-high-20261008-v2",
+      "prompt": "Create the exact STYLIZED TAPIR fantasy pet from CONTENT image as a richly textured 3D sculpture. Preserve its huge rounded head, enormous expressive glossy dark amber eyes, tiny cute tapir nose with no crest, chubby little body and SHORT thick rounded limbs. The stylized fantasy proportions in the content image are mandatory, NOT realistic wildlife anatomy. Seated hindquarters, both front paws extended forward planted on same ground plane, hindfeet splayed beside body. Species markings and colors from content. Rich dense directional FUR texture: detailed hand-painted individual strand strokes grouped into soft sculpted tapered clumps, layered cheeks/chest/shoulders, subtle natural palette variations and ambient creases. Fine fur detail in color AND normal maps at maximum quality; body cannot be smooth or featureless, no flat color patches. Bear style references specify proportion and premium intricate fur quality only, never bear shape or copied geometry. Matte velvety high roughness fur, zero metalness, only eyes glossy. Preserve high-quality rounded geometry and sculpted fur depth. One original pet only with four limbs. No ground plane, backdrop, scenery, text, people or props. Keep the fantasy baby design exactly, never realistic long muzzle or long legs. Optimized Roblox character mesh, beautiful painterly 4K textures."
+    },
+    "job": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "ff6eb9be-e455-4f83-98a0-7e1b1393416c",
+      "request_id": "ak-plush-tapir-model-high-20261008-v2",
+      "tool": "generation_model_3d",
+      "status": "queued",
+      "attempt_count": 1,
+      "result": null,
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:23:47.122095+00:00",
+      "updated_at": "2026-10-08T18:23:47.122095+00:00"
+    }
+  },
+  {
+    "request": {
+      "game_style": "roblox",
+      "quality": "high",
+      "delivery": {
+        "mode": "direct"
+      },
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 4,
+      "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+      "reference_asset_ids": [
+        "mcp-artifact:792b124c-4786-448d-b6eb-cc4def2e406b:0"
+      ],
+      "request_id": "ak-plush-ocelot-model-high-20261008-v2",
+      "prompt": "Create the exact STYLIZED OCELOT fantasy pet from CONTENT image as a richly textured 3D sculpture. Preserve its huge rounded head, enormous expressive glossy dark amber eyes, tiny cute pink feline nose and no whiskers, chubby little body and SHORT thick rounded limbs. The stylized fantasy proportions in the content image are mandatory, NOT realistic wildlife anatomy. Seated hindquarters, both front paws extended forward planted on same ground plane, hindfeet splayed beside body. Species markings and colors from content. Rich dense directional FUR texture: detailed hand-painted individual strand strokes grouped into soft sculpted tapered clumps, layered cheeks/chest/shoulders, subtle natural palette variations and ambient creases. Fine fur detail in color AND normal maps at maximum quality; body cannot be smooth or featureless, no flat color patches. Bear style references specify proportion and premium intricate fur quality only, never bear shape or copied geometry. Matte velvety high roughness fur, zero metalness, only eyes glossy. Preserve high-quality rounded geometry and sculpted fur depth. One original pet only with four limbs. No ground plane, backdrop, scenery, text, people or props. Keep the fantasy baby design exactly, never realistic long muzzle or long legs. Optimized Roblox character mesh, beautiful painterly 4K textures."
+    },
+    "job": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "606e7bb2-fc27-4c91-9e3e-02786aa3340f",
+      "request_id": "ak-plush-ocelot-model-high-20261008-v2",
+      "tool": "generation_model_3d",
+      "status": "queued",
+      "attempt_count": 1,
+      "result": null,
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:23:48.350692+00:00",
+      "updated_at": "2026-10-08T18:23:48.350692+00:00"
+    }
+  }
+]
+

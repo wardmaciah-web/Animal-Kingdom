@@ -1,0 +1,45 @@
+[
+  {
+    "name": "tapir",
+    "validIndices": 48513,
+    "nodes": [
+      {
+        "name": "tripo_node_d01b9720-c5ed-4fcc-a40f-a4ad65606e26",
+        "mesh": 0
+      }
+    ],
+    "scenes": [
+      {
+        "name": "Scene",
+        "nodes": [
+          0
+        ]
+      }
+    ],
+    "meshPrimitives": [
+      1
+    ],
+    "reopened": true
+  },
+  {
+    "name": "ocelot",
+    "validIndices": 45135,
+    "nodes": [
+      {
+        "name": "tripo_node_aee6094a-89fe-40c6-a2e3-0db12eb19b43",
+        "mesh": 0
+      }
+    ],
+    "scenes": [
+      {
+        "nodes": [
+          0
+        ]
+      }
+    ],
+    "meshPrimitives": [
+      1
+    ],
+    "reopened": true
+  }
+]

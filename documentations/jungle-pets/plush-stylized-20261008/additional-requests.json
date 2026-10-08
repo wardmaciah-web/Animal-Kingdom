@@ -1,0 +1,32 @@
+{
+  "tapirRefinement3": {
+    "count": 1,
+    "type": "thumbnail",
+    "game_style": "roblox",
+    "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "style_version": 4,
+    "style_application": "text_and_images",
+    "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+    "reference_asset_ids": [
+      "mcp-artifact:f7b806ec-8435-43c4-8d90-ae1c34a12fb5:0"
+    ],
+    "request_id": "ak-plush-tapir-concept-20261008-v3",
+    "prompt": "Same adorable stylized juvenile tapir with enormous glossy eyes, giant round head, short tiny tapir snout, chubby body and short seated limbs from CONTENT. Match bear STYLE reference's detailed painterly soft fur. Retain exact character proportions and markings. Draw dense fine fur brushstrokes in grouped small soft locks, subtle sculpted fur tufts around cheeks chest and legs, layered direction and rich cocoa shading. The fur is soft and richly textured, not smooth clay. Fur clumps are small flowing tapered tufts with many thin painted grooves, never big separate overlapping leaves, plates, feathers, scales or shingles. Keep smooth rounded silhouette, no crown crest. Cream juvenile stripes remain visible amid cocoa fur, cream chin. Huge amber-black eyes with large white catchlights, tiny muzzle, head half height, four-legged sitting posture with both short front feet planted forward. STYLIZED ANIMATED FANTASY CHARACTER, premium detailed collectible pet, no photoreal skin/hair/whiskers. One full body original tapir, isolated plain lightgray backdrop, three-quarter front."
+  },
+  "ocelotModel": {
+    "game_style": "roblox",
+    "quality": "high",
+    "delivery": {
+      "mode": "direct"
+    },
+    "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "style_version": 4,
+    "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+    "reference_asset_ids": [
+      "mcp-artifact:94c14314-f385-40c5-86cb-d964a08982c1:0"
+    ],
+    "request_id": "ak-plush-ocelot-model-high-20261008-v1",
+    "prompt": "STYLIZED 3D CHARACTER DESIGN of the exact original adorable Canopy Ocelot in CONTENT reference. Preserve its exaggerated plush proportions: giant round head about 55% seated height, ENORMOUS glossy amber-black eyes with large white highlights, tiny rounded muzzle/pink nose, no whiskers, short round ears. Chubby compact body, almost no neck, SHORT rounded thick forelegs with both front paws forward and flat at same ground height, sitting on hindquarters with hindfeet splayed at sides. Tail thick ringed curled beside rump. Tawny golden fur with distinctive dark ocelot rosettes, cream muzzle and bib. PRIMARY bear STYLE images provide proportions and rich painterly fur only; do not generate a bear or copy mesh. Rich 4K detailed hand-painted stylized fur with fine grooved strand strokes inside sculpted soft locks and cheek tufts; matte high roughness body zero metallic, only eyes glossy. Premium animated fantasy collectible sculpt with full round dimensional form and clean high-quality geometry. No realistic wildlife face/body anatomy, long legs, small eyes, lean torso, plastic, bald smooth skin, photoreal pores or hair. One pet only, no ground plane/backdrop/props/text. Full model suitable for Roblox, preserves original species-specific design and seated ground contact."
+  }
+}
+

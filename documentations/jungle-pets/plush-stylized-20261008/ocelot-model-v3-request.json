@@ -1,0 +1,32 @@
+{
+  "request": {
+    "game_style": "roblox",
+    "quality": "high",
+    "delivery": {
+      "mode": "direct"
+    },
+    "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "style_version": 4,
+    "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+    "reference_asset_ids": [
+      "mcp-artifact:5efd3604-96cf-4eae-86d9-3e1f47ac108b:0"
+    ],
+    "request_id": "ak-plush-ocelot-model-high-20261008-v3",
+    "prompt": "Exact original STYLIZED OCELOT PET character from content image. Premium animated fantasy collectible, giant round head and enormous innocent glossy amber-black eyes, tiny pink nose, simplified short round muzzle, fluffy round cheeks, compact chubby torso, stubby thick legs and round oversized paws. Sitting on hindquarters with BOTH front paws forward and their soles flat at same lowest ground level. Preserve all rich painted fur from reference: layered flowing cream chest locks, fine grooved strand strokes on golden cheeks, paws, arms and whole body; dark ocelot rosettes and elongated spots, cream muzzle/bib, ringed curled tail. Body is matte velvety fur with detailed 4K color/normal maps and sculpted fur tufts. Zero metallic, only eyes glossy. IMPORTANT remove all protruding whisker hairs from reference; leave tiny painted muzzle freckles if needed. No photorealistic skin, long feline muzzle, small eyes or lanky limbs. Primary old bear style images specify fantasy head/body/eye proportions and rich painterly fur quality, never copy bear geometry. One complete original quadruped mesh only, no ground, background, labels, props or other characters. Use maximum texture quality and softly sculpted rounded fur relief; no smooth vinyl body."
+  },
+  "job": {
+    "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+    "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+    "job_id": "47829b9a-859a-4f11-8bb4-78355893c50b",
+    "request_id": "ak-plush-ocelot-model-high-20261008-v3",
+    "tool": "generation_model_3d",
+    "status": "queued",
+    "attempt_count": 1,
+    "result": null,
+    "error": null,
+    "retryable": false,
+    "created_at": "2026-10-08T18:36:36.55744+00:00",
+    "updated_at": "2026-10-08T18:36:36.55744+00:00"
+  }
+}
+

@@ -1,0 +1,116 @@
+{
+  "run": {
+    "run": {
+      "name": "Animal Kingdom black-bear stylization correction",
+      "tags": [
+        "jungle",
+        "plush",
+        "stylized",
+        "tapir",
+        "ocelot"
+      ],
+      "style": {
+        "version": 4,
+        "style_id": "d90b1439-1214-4771-870b-70a307965cc4"
+      },
+      "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+      "status": "open",
+      "revision": 1,
+      "closed_at": null,
+      "created_at": "2026-10-08T18:10:34.182327+00:00",
+      "updated_at": "2026-10-08T18:10:34.182327+00:00",
+      "asset_kinds": [],
+      "description": "Correct Tapir and Ocelot realism using old black bear multi-view style references, huge eyes/head, tiny muzzle, chubby short-limbed seated plush design. High-quality original reference-guided models; review only.",
+      "event_count": 0,
+      "parent_run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "manifest_sha256": null,
+      "reported_outcome": null,
+      "intended_place_id": "132313449035787",
+      "intended_universe_id": "10764288431",
+      "external_project_label": "Animal Kingdom"
+    },
+    "replayed": false,
+    "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+    "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c"
+  },
+  "style": {
+    "id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "name": "Animal Kingdom original Jungle pets",
+    "version": 4,
+    "detailed_brief": "STYLIZED 3D CHARACTER DESIGN: premium adorable animated fantasy collectible pets in exactly the design language of the attached OLD BLACK BEAR front, side and three-quarter views. These images are PRIMARY proportion and face-design references, not just fur references. Transfer its extreme baby proportions: oversized round head about 50-55% of total seated height, head at least as wide as chubby torso, enormous expressive glossy dark eyes with amber lower iris and generous clear white catchlights, each eye about 22-25% of face width. Small simplified muzzle close to face, rounded cheeks, sweet gentle expression, tiny nose, minimal mouth. Compact pear-shaped plush body, no visible long neck, SHORT thick rounded forelegs and paws. Seated on hindquarters, hindfeet splayed beside body, both front paws separately forward and flat on same ground plane. Four limbs. Rich high-resolution stylized fur locks and sculpted soft clumps, fine painterly strand accents, hand-painted color variation, soft matte body shading. Eye gloss only. No photorealistic wildlife anatomy, tiny eyes, elongated face, lean long torso, long legs, individual whisker strands, photorealistic coat pores, smooth plastic, metal or rubber surfaces. Keep original species-specific shapes and markings: tapir has juvenile cream broken stripes/spots on cocoa brown, small oval white-edged ears and a tiny simplified drooping tapir nose (very short, never an extended trunk), no crest; ocelot has tawny fur, black rosettes and elongated spots, cream bib/muzzle, small feline ears, tiny pink nose and rounded ringed tail curled next to body. Bear provides proportion, eye design, fur art and cuteness ONLY, never bear mesh, bear muzzle, bear ears or copied bear markings. Isolated single full-body pet against plain neutral background, no props or landscape. Preserve high-quality geometry and rich texture detail while exaggerating character design. This overrides prior realistic natural-anatomy guidance.",
+    "reference_asset_ids": [
+      "ae694bd4-752a-46b5-9984-28fcf69da37b",
+      "2d0be500-9d59-49ee-a4ab-a536f0b863cc",
+      "faf2b8ce-776a-45a0-a479-6bad4717b732"
+    ]
+  },
+  "concepts": [
+    {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "f7b806ec-8435-43c4-8d90-ae1c34a12fb5",
+      "request_id": "ak-plush-tapir-concept-20261008-v1",
+      "tool": "generation_image",
+      "status": "queued",
+      "attempt_count": 1,
+      "result": null,
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:11:13.120385+00:00",
+      "updated_at": "2026-10-08T18:11:13.120385+00:00"
+    },
+    {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "47a46184-5745-47fe-8faa-c095171d1edb",
+      "request_id": "ak-plush-ocelot-concept-20261008-v1",
+      "tool": "generation_image",
+      "status": "queued",
+      "attempt_count": 1,
+      "result": null,
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:11:14.232154+00:00",
+      "updated_at": "2026-10-08T18:11:14.232154+00:00"
+    }
+  ],
+  "refinements": [
+    {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "ddf37104-f34f-4028-a20a-a6adba4b9165",
+      "request_id": "ak-plush-tapir-concept-20261008-v2",
+      "tool": "generation_image",
+      "status": "queued",
+      "attempt_count": 1,
+      "result": null,
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:13:23.49379+00:00",
+      "updated_at": "2026-10-08T18:13:23.49379+00:00"
+    },
+    {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "94c14314-f385-40c5-86cb-d964a08982c1",
+      "request_id": "ak-plush-ocelot-concept-20261008-v2",
+      "tool": "generation_image",
+      "status": "queued",
+      "attempt_count": 1,
+      "result": null,
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:13:25.025309+00:00",
+      "updated_at": "2026-10-08T18:13:25.025309+00:00"
+    }
+  ],
+  "backup": "ServerStorage.AK_JungleBeforePlushCorrection_20261008",
+  "cost": {
+    "image_jobs": 4,
+    "actual_credits": null
+  },
+  "user_feedback": "Previous candidates rejected as overly realistic. Correct character design without reducing texture quality.",
+  "observed_reference": "Old black bear front: head around half seated height; eye opening around a quarter face width, tiny muzzle and compact short body. Visual estimates, not topology measurements."
+}
+

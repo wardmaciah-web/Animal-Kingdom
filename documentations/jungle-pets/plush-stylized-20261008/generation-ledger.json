@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-08",
+  "forgegui_image_jobs": [
+    "f7b806ec-8435-43c4-8d90-ae1c34a12fb5",
+    "47a46184-5745-47fe-8faa-c095171d1edb",
+    "ddf37104-f34f-4028-a20a-a6adba4b9165",
+    "94c14314-f385-40c5-86cb-d964a08982c1",
+    "45560507-745e-496d-afce-5015c401d78b",
+    "50f19046-0e67-485e-99a2-0541e768844b",
+    "4d0d9a15-4d7b-4bc7-8451-1f50e8eab005",
+    "48436106-5d76-46a7-9055-d386154f1428",
+    "d72c28d7-b3eb-47b4-a603-940173e17e44",
+    "792b124c-4786-448d-b6eb-cc4def2e406b",
+    "5efd3604-96cf-4eae-86d9-3e1f47ac108b"
+  ],
+  "forgegui_model_jobs": [
+    "7e8456e3-51fe-48f8-829b-9f02d399ac94",
+    "ff6eb9be-e455-4f83-98a0-7e1b1393416c",
+    "606e7bb2-fc27-4c91-9e3e-02786aa3340f",
+    "47829b9a-859a-4f11-8bb4-78355893c50b"
+  ],
+  "native_texture_attempts": [
+    {
+      "tag": "RBXAI-TexturedMesh-TextureGen-6565ed40-f197-4602-bb36-09968aa81369",
+      "mesh": "111390098056600",
+      "texture": "98832253433337",
+      "accepted": false,
+      "reason": "Changed markings and weakened eyes; still too smooth."
+    }
+  ],
+  "credits_used": null,
+  "billing_evidence": "ForgeGUI image responses commitDeferred without amounts; model and native texture responses expose no billed charges.",
+  "purchases": 0,
+  "approval_rejections": 0
+}
+

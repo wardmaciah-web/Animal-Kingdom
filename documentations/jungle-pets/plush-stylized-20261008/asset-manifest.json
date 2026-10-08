@@ -1,0 +1,231 @@
+{
+  "status": "blocked_insufficient_credits",
+  "ready_for_final_visual_approval": false,
+  "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+  "style": {
+    "id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "name": "Animal Kingdom original Jungle pets",
+    "version": 4,
+    "detailed_brief": "STYLIZED 3D CHARACTER DESIGN: premium adorable animated fantasy collectible pets in exactly the design language of the attached OLD BLACK BEAR front, side and three-quarter views. These images are PRIMARY proportion and face-design references, not just fur references. Transfer its extreme baby proportions: oversized round head about 50-55% of total seated height, head at least as wide as chubby torso, enormous expressive glossy dark eyes with amber lower iris and generous clear white catchlights, each eye about 22-25% of face width. Small simplified muzzle close to face, rounded cheeks, sweet gentle expression, tiny nose, minimal mouth. Compact pear-shaped plush body, no visible long neck, SHORT thick rounded forelegs and paws. Seated on hindquarters, hindfeet splayed beside body, both front paws separately forward and flat on same ground plane. Four limbs. Rich high-resolution stylized fur locks and sculpted soft clumps, fine painterly strand accents, hand-painted color variation, soft matte body shading. Eye gloss only. No photorealistic wildlife anatomy, tiny eyes, elongated face, lean long torso, long legs, individual whisker strands, photorealistic coat pores, smooth plastic, metal or rubber surfaces. Keep original species-specific shapes and markings: tapir has juvenile cream broken stripes/spots on cocoa brown, small oval white-edged ears and a tiny simplified drooping tapir nose (very short, never an extended trunk), no crest; ocelot has tawny fur, black rosettes and elongated spots, cream bib/muzzle, small feline ears, tiny pink nose and rounded ringed tail curled next to body. Bear provides proportion, eye design, fur art and cuteness ONLY, never bear mesh, bear muzzle, bear ears or copied bear markings. Isolated single full-body pet against plain neutral background, no props or landscape. Preserve high-quality geometry and rich texture detail while exaggerating character design. This overrides prior realistic natural-anatomy guidance.",
+    "reference_asset_ids": [
+      "ae694bd4-752a-46b5-9984-28fcf69da37b",
+      "2d0be500-9d59-49ee-a4ab-a536f0b863cc",
+      "faf2b8ce-776a-45a0-a479-6bad4717b732"
+    ]
+  },
+  "place_id": "132313449035787",
+  "universe_id": "10764288431",
+  "review_folder": "Workspace.AK_JunglePetReview.PlushStylizedReview",
+  "backup": "ServerStorage.AK_JungleBeforePlushCorrection_20261008",
+  "tapir": {
+    "status": "imported_review_candidate_not_user_approved",
+    "model_asset_id": "106468658615650",
+    "mesh_id": "94236683957011",
+    "maps": {
+      "color": "74023728988526",
+      "normal": "136045318609227",
+      "roughness": "104626403832411",
+      "metalness": "103705583867663"
+    },
+    "generation": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "ff6eb9be-e455-4f83-98a0-7e1b1393416c",
+      "request_id": "ak-plush-tapir-model-high-20261008-v2",
+      "tool": "generation_model_3d",
+      "status": "succeeded",
+      "attempt_count": 1,
+      "result": {
+        "status": "done",
+        "artifacts": [
+          {
+            "artifact_ref": "mcp-artifact:ff6eb9be-e455-4f83-98a0-7e1b1393416c:0",
+            "kind": "model",
+            "index": 0,
+            "url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/ff6eb9be-e455-4f83-98a0-7e1b1393416c/9ee443a81d52bb5cfdf64de6d462168b0f0b3651f25168ee1c913058c7b7561f.glb"
+          }
+        ],
+        "model_urls": {
+          "glb": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/ff6eb9be-e455-4f83-98a0-7e1b1393416c/9ee443a81d52bb5cfdf64de6d462168b0f0b3651f25168ee1c913058c7b7561f.glb",
+          "thumbnail": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/d4a525db-94b4-4b0c-a996-711232f13b8a/chat/ff6eb9be-e455-4f83-98a0-7e1b1393416c-thumb.png",
+          "base_color": null
+        },
+        "provider_task_id": "d01b9720-c5ed-4fcc-a40f-a4ad65606e26"
+      },
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:23:47.122095+00:00",
+      "updated_at": "2026-10-08T18:26:45.614+00:00"
+    },
+    "publication": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "publication_id": "69053521-941b-4cce-b21e-5d740008519e",
+      "status": "ready",
+      "asset_type": "Model",
+      "asset_id": "106468658615650",
+      "creator": {
+        "id": "3009757271",
+        "type": "user"
+      },
+      "connection_id": "718e04c2-533c-49fb-9683-e1ef6c7a3b65",
+      "moderation_state": "approved",
+      "safe_error_code": null,
+      "safe_error": null,
+      "publisher_profile_version": "roblox-model-v1"
+    },
+    "height": 2.8,
+    "grounding_offset": 0.02030117,
+    "reopen_verified": true
+  },
+  "ocelot": {
+    "status": "improved_concept_saved_3d_generation_blocked",
+    "approved_concept": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "5efd3604-96cf-4eae-86d9-3e1f47ac108b",
+      "request_id": "ak-plush-ocelot-bear-design-20261008-v7",
+      "tool": "generation_image",
+      "status": "succeeded",
+      "attempt_count": 1,
+      "result": {
+        "assets": [
+          {
+            "x": 20,
+            "y": 20,
+            "id": "asset_1791484488676_0_qf85mpjp2nf",
+            "label": "Create an original 1",
+            "scale": 1,
+            "image_url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/d4a525db-94b4-4b0c-a996-711232f13b8a/mcp/5efd3604-96cf-4eae-86d9-3e1f47ac108b-0.png",
+            "artifact_ref": "mcp-artifact:5efd3604-96cf-4eae-86d9-3e1f47ac108b:0"
+          }
+        ],
+        "billing": {
+          "commitDeferred": true,
+          "freeThumbnailUsed": false
+        },
+        "artifacts": [
+          {
+            "artifact_ref": "mcp-artifact:5efd3604-96cf-4eae-86d9-3e1f47ac108b:0",
+            "kind": "image",
+            "index": 0,
+            "url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/d4a525db-94b4-4b0c-a996-711232f13b8a/mcp/5efd3604-96cf-4eae-86d9-3e1f47ac108b-0.png"
+          }
+        ],
+        "style_application": {
+          "mode": "text_and_images",
+          "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+          "style_version": 4,
+          "resolved_brief": "STYLIZED 3D CHARACTER DESIGN: premium adorable animated fantasy collectible pets in exactly the design language of the attached OLD BLACK BEAR front, side and three-quarter views. These images are PRIMARY proportion and face-design references, not just fur references. Transfer its extreme baby proportions: oversized round head about 50-55% of total seated height, head at least as wide as chubby torso, enormous expressive glossy dark eyes with amber lower iris and generous clear white catchlights, each eye about 22-25% of face width. Small simplified muzzle close to face, rounded cheeks, sweet gentle expression, tiny nose, minimal mouth. Compact pear-shaped plush body, no visible long neck, SHORT thick rounded forelegs and paws. Seated on hindquarters, hindfeet splayed beside body, both front paws separately forward and flat on same ground plane. Four limbs. Rich high-resolution stylized fur locks and sculpted soft clumps, fine painterly strand accents, hand-painted color variation, soft matte body shading. Eye gloss only. No photorealistic wildlife anatomy, tiny eyes, elongated face, lean long torso, long legs, individual whisker strands, photorealistic coat pores, smooth plastic, metal or rubber surfaces. Keep original species-specific shapes and markings: tapir has juvenile cream broken stripes/spots on cocoa brown, small oval white-edged ears and a tiny simplified drooping tapir nose (very short, never an extended trunk), no crest; ocelot has tawny fur, black rosettes and elongated spots, cream bib/muzzle, small feline ears, tiny pink nose and rounded ringed tail curled next to body. Bear provides proportion, eye design, fur art and cuteness ONLY, never bear mesh, bear muzzle, bear ears or copied bear markings. Isolated single full-body pet against plain neutral background, no props or landscape. Preserve high-quality geometry and rich texture detail while exaggerating character design. This overrides prior realistic natural-anatomy guidance.",
+          "adapter_version": "image-style-application-v1",
+          "channels_applied": [
+            "text",
+            "images"
+          ],
+          "style_references": [
+            {
+              "sha256": "777a8c38c8b675db104e538a3b5167d51a63e502833e29d664874625aec2e7e7",
+              "asset_id": "ae694bd4-752a-46b5-9984-28fcf69da37b"
+            },
+            {
+              "sha256": "21494f75d7ac9bcc9b5e0be0dbb43d98c0f106b81b3935d1837db344eae57bfa",
+              "asset_id": "2d0be500-9d59-49ee-a4ab-a536f0b863cc"
+            },
+            {
+              "sha256": "f07bf04bb19dda50e0ed04d2764c4e1f10d19a585355055147fcabdfb6c8e72a",
+              "asset_id": "faf2b8ce-776a-45a0-a479-6bad4717b732"
+            }
+          ],
+          "content_references": [],
+          "unapplied_style_reference_asset_ids": []
+        }
+      },
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:34:22.240534+00:00",
+      "updated_at": "2026-10-08T18:34:49.207+00:00"
+    },
+    "failed_3d": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "47829b9a-859a-4f11-8bb4-78355893c50b",
+      "request_id": "ak-plush-ocelot-model-high-20261008-v3",
+      "tool": "generation_model_3d",
+      "status": "failed",
+      "attempt_count": 1,
+      "result": null,
+      "error": "Insufficient credits",
+      "retryable": false,
+      "created_at": "2026-10-08T18:36:36.55744+00:00",
+      "updated_at": "2026-10-08T18:36:39.839+00:00"
+    },
+    "failed_request": {
+      "game_style": "roblox",
+      "quality": "high",
+      "delivery": {
+        "mode": "direct"
+      },
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 4,
+      "run_id": "37c3d9e5-ee5b-4311-9b4b-5b17e041ff2d",
+      "reference_asset_ids": [
+        "mcp-artifact:5efd3604-96cf-4eae-86d9-3e1f47ac108b:0"
+      ],
+      "request_id": "ak-plush-ocelot-model-high-20261008-v3",
+      "prompt": "Exact original STYLIZED OCELOT PET character from content image. Premium animated fantasy collectible, giant round head and enormous innocent glossy amber-black eyes, tiny pink nose, simplified short round muzzle, fluffy round cheeks, compact chubby torso, stubby thick legs and round oversized paws. Sitting on hindquarters with BOTH front paws forward and their soles flat at same lowest ground level. Preserve all rich painted fur from reference: layered flowing cream chest locks, fine grooved strand strokes on golden cheeks, paws, arms and whole body; dark ocelot rosettes and elongated spots, cream muzzle/bib, ringed curled tail. Body is matte velvety fur with detailed 4K color/normal maps and sculpted fur tufts. Zero metallic, only eyes glossy. IMPORTANT remove all protruding whisker hairs from reference; leave tiny painted muzzle freckles if needed. No photorealistic skin, long feline muzzle, small eyes or lanky limbs. Primary old bear style images specify fantasy head/body/eye proportions and rich painterly fur quality, never copy bear geometry. One complete original quadruped mesh only, no ground, background, labels, props or other characters. Use maximum texture quality and softly sculpted rounded fur relief; no smooth vinyl body."
+    },
+    "rejected_model_asset_id": "118621881235687",
+    "rejected_model_source": {
+      "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+      "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+      "job_id": "606e7bb2-fc27-4c91-9e3e-02786aa3340f",
+      "request_id": "ak-plush-ocelot-model-high-20261008-v2",
+      "tool": "generation_model_3d",
+      "status": "succeeded",
+      "attempt_count": 1,
+      "result": {
+        "status": "done",
+        "artifacts": [
+          {
+            "artifact_ref": "mcp-artifact:606e7bb2-fc27-4c91-9e3e-02786aa3340f:0",
+            "kind": "model",
+            "index": 0,
+            "url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/606e7bb2-fc27-4c91-9e3e-02786aa3340f/42b497522a2e66d8576d7d81363bbc13e628097d740fe4cb9248d502451eed76.glb"
+          }
+        ],
+        "model_urls": {
+          "glb": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/606e7bb2-fc27-4c91-9e3e-02786aa3340f/42b497522a2e66d8576d7d81363bbc13e628097d740fe4cb9248d502451eed76.glb",
+          "thumbnail": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/d4a525db-94b4-4b0c-a996-711232f13b8a/chat/606e7bb2-fc27-4c91-9e3e-02786aa3340f-thumb.png",
+          "base_color": null
+        },
+        "provider_task_id": "aee6094a-89fe-40c6-a2e3-0db12eb19b43"
+      },
+      "error": null,
+      "retryable": false,
+      "created_at": "2026-10-08T18:23:48.350692+00:00",
+      "updated_at": "2026-10-08T18:26:50.109+00:00"
+    },
+    "rejected_native_mesh": "111390098056600",
+    "rejected_native_texture": "98832253433337"
+  },
+  "spending": {
+    "image_jobs": 11,
+    "model_jobs_attempted": 4,
+    "model_jobs_succeeded": 3,
+    "model_jobs_failed_insufficient_credits": 1,
+    "native_texture_attempts": 1,
+    "native_texture_accepted": 0,
+    "actual_credits_used": null,
+    "credit_purchases": 0,
+    "approval_blockers": 0,
+    "account_blocker": "Insufficient credits"
+  },
+  "qa": {
+    "reference": "Old black bear front/side/three-quarter primary character-design reference, style v4; no mesh copying.",
+    "tapir": "Larger round head and eyes, short seated body, rich 4K textured fur and no crest. Both forefeet placed at floor. Still a candidate, no user approval.",
+    "ocelot": "Two smooth meshes and native retexture rejected; newest concept has richer painterly fur and exaggerated proportions but failed to produce 3D due credit balance.",
+    "source": "Saved GLBs reopened/parsed and validated for finite positions, indices, normals and UVs. Embedded textures extracted and decoded as 4096x4096.",
+    "limitations": "Earlier session-only EditableMesh/EditableImage preserved in Studio backup; no durable export endpoint. New source GLBs/textures durable locally and Roblox model IDs durable. No experience published, Jungle unlock, runtime integration, or existing pet changes."
+  }
+}
+

@@ -1,0 +1,19 @@
+[
+  {
+    "job": "ddf37104-f34f-4028-a20a-a6adba4b9165",
+    "reason": "Tapir fur clumps look like oversized plates/leaves."
+  },
+  {
+    "job": "45560507-745e-496d-afce-5015c401d78b",
+    "reason": "Terminal successful image is unrelated fire monster/human scene; visually rejected."
+  },
+  {
+    "job": "50f19046-0e67-485e-99a2-0541e768844b",
+    "reason": "Tapir face reverted to longer muzzle and smaller eyes; fur too smooth."
+  },
+  {
+    "job": "7e8456e3-51fe-48f8-829b-9f02d399ac94",
+    "reason": "Ocelot 3D proportions improved, but preview lost required rich fur. Not published."
+  }
+]
+

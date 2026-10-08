@@ -1,0 +1,73 @@
+{
+  "file": "tapir.glb",
+  "sha256": "9ee443a81d52bb5cfdf64de6d462168b0f0b3651f25168ee1c913058c7b7561f",
+  "bytes": 12908924,
+  "triangles": 16171,
+  "vertices": 17860,
+  "bounds": {
+    "min": [
+      -0.499755859375,
+      -0.437744140625,
+      -0.3054198920726776
+    ],
+    "max": [
+      0.499755859375,
+      0.437744140625,
+      0.3054199516773224
+    ],
+    "dimensions": [
+      0.99951171875,
+      0.87548828125,
+      0.61083984375
+    ]
+  },
+  "images": [
+    {
+      "name": "Color_d01b9720-c5ed-4fcc-a40f-a4ad65606e26",
+      "mimeType": "image/jpeg",
+      "path": "tapir_texture_0.jpg",
+      "bytes": 4224256,
+      "sha256": "6975ae87affccfaa4ee21d1dcddb588c831146248f8c327d690b05acb68233bb"
+    },
+    {
+      "name": "ORM_d01b9720-c5ed-4fcc-a40f-a4ad65606e26",
+      "mimeType": "image/jpeg",
+      "path": "tapir_texture_1.jpg",
+      "bytes": 2588427,
+      "sha256": "338c897bbe974797a0b4d589a0ed9fea8d3f9788bc51184c867a57628498ff70"
+    },
+    {
+      "name": "NormalGL_d01b9720-c5ed-4fcc-a40f-a4ad65606e26",
+      "mimeType": "image/png",
+      "path": "tapir_texture_2.png",
+      "bytes": 5425784,
+      "sha256": "423e058533b92d5405cdb76f6111af5b75f1527efbca974365bf4366a6871e9b"
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_d01b9720-c5ed-4fcc-a40f-a4ad65606e26",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 1
+      },
+      "doubleSided": true
+    }
+  ]
+}
