@@ -1,0 +1,1453 @@
+{
+  "biome": "Mythical",
+  "status": "Implemented; restart and final QA checkpoint pending",
+  "nativeAssets": [
+    {
+      "name": "MythicalAuroraWillow",
+      "generationId": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+      "generationName": "A fantasy willow tree with a silver twisted trunk, golden branches, detailed spreading roots, long cascading turquoise and purple leaves and pink blossoms. Beautiful stylized game art. Tree only.",
+      "publishedAssetId": "91711710602392",
+      "tag": "Assistant-4d4ae661-8354-4d98-9800-1412811602c0",
+      "jobId": "5ecdc904-50b1-494b-90cc-6a2cc1b64d37"
+    },
+    {
+      "name": "MythicalWorldTree",
+      "generationId": "bdb51aa7-3bc1-40ae-8d02-138c8f53129b",
+      "generationName": "One mythical celestial world tree with thick spiraling golden trunk, massive elaborate exposed woven roots, upward curling golden antlerlike branches, huge layered flame-shaped purple and cyan foliage fans, prismatic flowers and gold star fruit, striking fantastical silhouette. Animal Kingdom professional stylized art, beautiful hand-painted textures and sculpted organic 3D geometry. No ground, base, scene or background.",
+      "publishedAssetId": "76557341582296",
+      "tag": "Assistant-1583638b-3600-4b74-9610-94407919ed35",
+      "jobId": "76a7efa2-c821-4078-bc98-b04c321cd4db"
+    },
+    {
+      "name": "MythicalUnderstory",
+      "generationId": "a5614fe4-ba7e-4902-b88f-08e301f8998e",
+      "generationName": "One small beautiful magical vegetation cluster: sculpted faceted amethyst and cyan crystals surrounded by luminous golden-stem pink star flowers, iridescent turquoise leafy ferns and tiny purple celestial blossoms. Animal Kingdom professional stylized art, beautiful hand-painted textures and sculpted organic 3D geometry. No ground, base, scene or background.",
+      "publishedAssetId": "124577221732610",
+      "tag": "Assistant-efaa809d-9393-43ee-a898-2c2e935e6820",
+      "jobId": "a5d7165a-ac0f-4bba-b002-b386eeb8c315"
+    },
+    {
+      "name": "MythicalGoldenBanyan",
+      "generationId": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "generationName": "One ancient magical banyan tree with thick twisting golden-brown bark trunk, intricate hanging aerial roots and spreading buttress roots, large asymmetrical layered turquoise and lavender broadleaf canopy, sculpted individual leaves, many elegant gold branches and pink star flowers. Animal Kingdom professional stylized art, beautiful hand-painted textures and sculpted organic 3D geometry. No ground, base, scene or background.",
+      "publishedAssetId": "124754553530905",
+      "tag": "Assistant-8506c72c-4007-4859-b1a2-63dd0cea4d07",
+      "jobId": "f6c9a16d-b4df-49b6-9d2e-a2bcb6fc001c"
+    }
+  ],
+  "failedVariants": [
+    {
+      "name": "MythicalPrismOak",
+      "generationId": "1a8858d9-3771-4770-b3f9-c326de194d13",
+      "generationName": "One magnificent celestial prismatic oak tree with immense sculpted twisting ivory-gold trunk, intricately intertwined arched roots, many elegant golden branching limbs, layered sharply detailed iridescent crystal-shaped leaves in pink turquoise lavender and azure, extraordinary asymmetrical broad canopy. Animal Kingdom professional stylized fantasy art, rich beautiful hand-painted textures, sculpted organic 3D geometry. No ground, base, scene or background.",
+      "publishedAssetId": "82751925747138",
+      "tag": "Assistant-ec47e850-47d6-4443-b3ad-79c2f99ede93",
+      "jobId": "3920da25-245a-4f3c-98a5-753e50479940",
+      "reason": "Texture requests successful, but canopy absent in actual isolated Studio rendering; replaced"
+    },
+    {
+      "name": "MythicalPrismOak",
+      "generationId": "1aff5742-9646-432f-aa86-ca8bd566ac28",
+      "generationName": "One beautiful celestial oak tree with a large dense full canopy of sharply sculpted multicolored crystal-shaped leaves, luminous cyan pink purple and gold leaves, thick twisted golden trunk, many gold branches, broad intricate exposed curling roots, organic stylized proportions. Rich hand-painted textures, Animal Kingdom fantasy art. No ground or background.",
+      "publishedAssetId": "133277194505215",
+      "tag": "Assistant-fbb81f4d-8607-4461-a8fa-664e207045db",
+      "jobId": "703dd859-e644-4484-8e32-439ad9cbf1b5",
+      "reason": "Leaf geometry only 28 vertices/16 faces; 1.036 x0.418 x0.734 studs at42stud tree scale. Failed foliage quality."
+    },
+    {
+      "name": "MythicalPrismOak",
+      "generationId": "8702eb5e-55af-48a7-89e7-84596f7cb6a7",
+      "generationName": "A lush fantasy oak tree with a huge dense leafy canopy, many broad pink turquoise violet leaves, thick golden brown bark trunk, spreading golden branches and detailed gnarled roots. Stylized Animal Kingdom game art, colorful painted textures. Tree only.",
+      "publishedAssetId": "89179110328720",
+      "tag": "Assistant-1604dfb1-44d4-4202-8c65-c988d4204ca2",
+      "jobId": "c464b678-a317-456a-a630-7f684380cf86",
+      "reason": "Rendered canopy too rounded/generic for user's prismatic professional silhouette requirement; replaced"
+    },
+    {
+      "name": "MythicalPrismMaple",
+      "generationId": "2eb59e76-bae3-457c-9b14-be23a77b8221",
+      "generationName": "A celestial maple tree with a broad layered canopy of many detailed sharply lobed five-point star-shaped leaves, pink purple turquoise leaf clusters with visible serrated individual leaves, gnarled gold bark trunk with asymmetrical spreading branches and prominent sculpted winding exposed roots, textured organic fantasy silhouette. Professional stylized Animal Kingdom fantasy art, beautiful hand-painted textures, intricate sculpted leaf detail. Tree only.",
+      "publishedAssetId": "78021524646944",
+      "tag": "Assistant-684fa7c4-679e-4f6e-b1cf-c43228cd7f41",
+      "jobId": "671cbda8-93a0-4cf4-b35e-b73da03f16d8",
+      "reason": "Box-shaped canopy with painted leaf texture; failed real unique natural model quality"
+    },
+    {
+      "biome": "Mythical",
+      "name": "MythicalAuroraWillow",
+      "jobId": "60a8d799-8759-43af-a509-dc4c6d337217",
+      "reason": "Native tool returned Moderation failed for harmless celestial willow tree prompt; no asset created"
+    }
+  ],
+  "templates": {
+    "name": "AK_MythicalTreeTemplates",
+    "properties": [],
+    "class": "Folder",
+    "children": [
+      {
+        "name": "MythicalAuroraWillow",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.8855438232422,
+                      11.69578742980957,
+                      166.94009399414062,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://99833983099279",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://74460438259618",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      6.273277282714844,
+                      20.66942024230957,
+                      5.212231159210205
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "branches",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "branches_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.86500549316406,
+                      19.562395095825195,
+                      167.47897338867188,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://139602782051573",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://79825111966346",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      31.443103790283203,
+                      25.306991577148438,
+                      32
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.88217163085938,
+                      3.136667251586914,
+                      167.22674560546875,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://137069312506872",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://133362161039258",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      17.68566131591797,
+                      6.273333549499512,
+                      16.144702911376953
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "91711710602392",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "MythicalWorldTree",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.8155975341797,
+                      7.635150909423828,
+                      167.3663330078125,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://82206583577560",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://82260305207408",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      10.6175537109375,
+                      14.09668254852295,
+                      10.06313705444336
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      129.22903442382812,
+                      1.453775405883789,
+                      167.72572326660156,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://95345707946776",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://107086642072428",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      30.368743896484375,
+                      2.907552719116211,
+                      29.1031551361084
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "branches",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "branches_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.83139038085938,
+                      22.948741912841797,
+                      167.44619750976562,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://140107589452288",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://112187482918719",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      31.142770767211914,
+                      22.888660430908203,
+                      32
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "76557341582296",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "bdb51aa7-3bc1-40ae-8d02-138c8f53129b",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "MythicalUnderstory",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "crystals",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "crystals_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.87294006347656,
+                      2.677879810333252,
+                      167.4819793701172,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://96702553954886",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://83217884729048",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      3.100925922393799,
+                      4.644240379333496,
+                      3.175887107849121
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "flowers",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "flowers_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.87435913085938,
+                      1.271432876586914,
+                      167.4873046875,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://133162121197545",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://132029274807486",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      3.4262518882751465,
+                      0.9714328646659851,
+                      3.453339099884033
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "ferns",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "ferns_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      128.86424255371094,
+                      0.6629691123962402,
+                      167.47865295410156,
+                      0.7117211818695068,
+                      0,
+                      -0.7024620771408081,
+                      0,
+                      1,
+                      0,
+                      0.7024620771408081,
+                      0,
+                      0.7117211818695068
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://107374253771829",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://101964858778926",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      5.146254539489746,
+                      1.3259384632110596,
+                      4.955909729003906
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "124577221732610",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "a5614fe4-ba7e-4902-b88f-08e301f8998e",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "MythicalGoldenBanyan",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      113.33132934570312,
+                      14.07552433013916,
+                      202.23817443847656,
+                      0.6896111369132996,
+                      0,
+                      -0.7241798043251038,
+                      0,
+                      0.9999998807907104,
+                      0,
+                      0.7241798639297485,
+                      0,
+                      0.6896110773086548
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://102616750876350",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://117469354787913",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      6.187356472015381,
+                      28.02379608154297,
+                      6.521480560302734
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "canopy",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "canopy_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      113.5613784790039,
+                      27.39067268371582,
+                      201.9380645751953,
+                      0.6896111369132996,
+                      0,
+                      -0.7241798043251038,
+                      0,
+                      0.9999998807907104,
+                      0,
+                      0.7241798639297485,
+                      0,
+                      0.6896110773086548
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://92077326732319",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://108542941201194",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      31.464235305786133,
+                      22.118133544921875,
+                      32
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      113.0429458618164,
+                      2.735706329345703,
+                      202.4571533203125,
+                      0.6896111369132996,
+                      0,
+                      -0.7241798043251038,
+                      0,
+                      0.9999998807907104,
+                      0,
+                      0.7241798639297485,
+                      0,
+                      0.6896110773086548
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://100533408680328",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://85132544333515",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      11.068794250488281,
+                      5.471409797668457,
+                      10.27189826965332
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "124754553530905",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      }
+    ],
+    "attributes": []
+  },
+  "trees": 4,
+  "families": 3,
+  "understory": 63,
+  "decorativeTrees": 14,
+  "decorativeFlowers": 20,
+  "uniqueMeshes": 9,
+  "heights": [
+    52,
+    52
+  ],
+  "decorativeHeights": [
+    27,
+    34.5
+  ],
+  "qa": {
+    "runtime": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"records\":4,\"gateFailures\":0,\"dataUnchanged\":true,\"message\":\"This biome is coming soon!\",\"accepted\":false}"
+        }
+      ],
+      "isError": false
+    },
+    "client": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"effects\":[{\"enabled\":true,\"name\":\"CelestialGlints\",\"rate\":11.496614456176758}],\"client\":\"{\\\"textures\\\":{\\\"rbxassetid://139602782051573\\\":\\\"Success\\\",\\\"rbxassetid://137069312506872\\\":\\\"Success\\\",\\\"rbxassetid://102616750876350\\\":\\\"Success\\\",\\\"rbxassetid://92077326732319\\\":\\\"Success\\\",\\\"rbxassetid://100533408680328\\\":\\\"Success\\\",\\\"rbxassetid://82206583577560\\\":\\\"Success\\\",\\\"rbxassetid://95345707946776\\\":\\\"Success\\\",\\\"rbxassetid://99833983099279\\\":\\\"Success\\\",\\\"rbxassetid://140107589452288\\\":\\\"Success\\\"},\\\"badPhysics\\\":0,\\\"uniqueMeshes\\\":9,\\\"meshParts\\\":12}\"}"
+        }
+      ],
+      "isError": false
+    },
+    "walk": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"finishDistance\":1.711295247077942,\"displacement\":18.60498046875}"
+        }
+      ],
+      "isError": false
+    },
+    "worldBefore": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"checked\":{\"floor_covered\":1,\"clutter\":82,\"interactive_covered\":4,\"spawns\":4},\"warnings\":1,\"findings\":[{\"check\":\"multiple_spawns\",\"severity\":\"warning\",\"subject\":\"neutral\",\"detail\":\"4 enabled spawns (Workspace.PlayerPlots.Plot3Spawn, Workspace.PlayerPlots.Plot4Spawn, Workspace.PlayerPlots.Plot2Spawn, Workspace.PlayerPlots.Plot1Spawn). Roblox picks one at random, so every one must be valid; disable leftovers, or set MultipleSpawnsIntended.\"},{\"check\":\"spawn_clearance\",\"severity\":\"error\",\"subject\":\"Workspace.PlayerPlots.Plot4Spawn\",\"detail\":\"the 4x6x4 space above the spawn overlaps Workspace.Scene.tripo_node_ac50a6f2-8ffd-4acc-b023-6b1a78aa732a.tripo_mesh_ac50a6f2-8ffd-4acc-b023-6b1a78aa732a.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.Mythical.MythicalFloor\",\"detail\":\"Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface417_$AssimpFbx$_RotationPivot.polySurface417_$AssimpFbx$_RotationPivotInverse.polySurface417_$AssimpFbx$_ScalingPivot.polySurface417_$AssimpFbx$_ScalingPivotInverse.polySurface417_Node.polySurface417 covers it: surface at 22.2, top at 9.1.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_2\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface481_$AssimpFbx$_RotationPivot.polySurface481_$AssimpFbx$_RotationPivotInverse.polySurface481_$AssimpFbx$_ScalingPivot.polySurface481_$AssimpFbx$_ScalingPivotInverse.polySurface481_Node.polySurface481, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface875_$AssimpFbx$_RotationPivot.polySurface875_$AssimpFbx$_RotationPivotInverse.polySurface875_$AssimpFbx$_ScalingPivot.polySurface875_$AssimpFbx$_ScalingPivotInverse.polySurface875_Node.polySurface875, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface809_$AssimpFbx$_RotationPivot.polySurface809_$AssimpFbx$_RotationPivotInverse.polySurface809_$AssimpFbx$_ScalingPivot.polySurface809_$AssimpFbx$_ScalingPivotInverse.polySurface809_Node.polySurface809, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface437_$AssimpFbx$_RotationPivot.polySurface437_$AssimpFbx$_RotationPivotInverse.polySurface437_$AssimpFbx$_ScalingPivot.polySurface437_$AssimpFbx$_ScalingPivotInverse.polySurface437_Node.polySurface437: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_5\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface193_$AssimpFbx$_RotationPivot.polySurface193_$AssimpFbx$_RotationPivotInverse.polySurface193_$AssimpFbx$_ScalingPivot.polySurface193_$AssimpFbx$_ScalingPivotInverse.polySurface193_Node.polySurface193, Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface278_$AssimpFbx$_RotationPivot.polySurface278_$AssimpFbx$_RotationPivotInverse.polySurface278_$AssimpFbx$_ScalingPivot.polySurface278_$AssimpFbx$_ScalingPivotInverse.polySurface278_Node.polySurface278, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface801_$AssimpFbx$_RotationPivot.polySurface801_$AssimpFbx$_RotationPivotInverse.polySurface801_$AssimpFbx$_ScalingPivot.polySurface801_$AssimpFbx$_ScalingPivotInverse.polySurface801_Node.polySurface801, Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface222_$AssimpFbx$_RotationPivot.polySurface222_$AssimpFbx$_RotationPivotInverse.polySurface222_$AssimpFbx$_ScalingPivot.polySurface222_$AssimpFbx$_ScalingPivotInverse.polySurface222_Node.polySurface222: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_7\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface752_$AssimpFbx$_RotationPivot.polySurface752_$AssimpFbx$_RotationPivotInverse.polySurface752_$AssimpFbx$_ScalingPivot.polySurface752_$AssimpFbx$_ScalingPivotInverse.polySurface752_Node.polySurface752, Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface917_$AssimpFbx$_RotationPivot.polySurface917_$AssimpFbx$_RotationPivotInverse.polySurface917_$AssimpFbx$_ScalingPivot.polySurface917_$AssimpFbx$_ScalingPivotInverse.polySurface917_Node.polySurface917, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface809_$AssimpFbx$_RotationPivot.polySurface809_$AssimpFbx$_RotationPivotInverse.polySurface809_$AssimpFbx$_ScalingPivot.polySurface809_$AssimpFbx$_ScalingPivotInverse.polySurface809_Node.polySurface809, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface437_$AssimpFbx$_RotationPivot.polySurface437_$AssimpFbx$_RotationPivotInverse.polySurface437_$AssimpFbx$_ScalingPivot.polySurface437_$AssimpFbx$_ScalingPivotInverse.polySurface437_Node.polySurface437: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_10\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface193_$AssimpFbx$_RotationPivot.polySurface193_$AssimpFbx$_RotationPivotInverse.polySurface193_$AssimpFbx$_ScalingPivot.polySurface193_$AssimpFbx$_ScalingPivotInverse.polySurface193_Node.polySurface193, Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface917_$AssimpFbx$_RotationPivot.polySurface917_$AssimpFbx$_RotationPivotInverse.polySurface917_$AssimpFbx$_ScalingPivot.polySurface917_$AssimpFbx$_ScalingPivotInverse.polySurface917_Node.polySurface917, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface815_$AssimpFbx$_RotationPivot.polySurface815_$AssimpFbx$_RotationPivotInverse.polySurface815_$AssimpFbx$_ScalingPivot.polySurface815_$AssimpFbx$_ScalingPivotInverse.polySurface815_Node.polySurface815, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface481_$AssimpFbx$_RotationPivot.polySurface481_$AssimpFbx$_RotationPivotInverse.polySurface481_$AssimpFbx$_ScalingPivot.polySurface481_$AssimpFbx$_ScalingPivotInverse.polySurface481_Node.polySurface481, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface875_$AssimpFbx$_RotationPivot.polySurface875_$AssimpFbx$_RotationPivotInverse.polySurface875_$AssimpFbx$_ScalingPivot.polySurface875_$AssimpFbx$_ScalingPivotInverse.polySurface875_Node.polySurface875, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface484_$AssimpFbx$_RotationPivot.polySurface484_$AssimpFbx$_RotationPivotInverse.polySurface484_$AssimpFbx$_ScalingPivot.polySurface484_$AssimpFbx$_ScalingPivotInverse.polySurface484_Node.polySurface484, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.dimo_fuzhi_polySurface5...AssimpFbx$_RotationPivot.dimo_fuzhi_polySurface5...bx$_RotationPivotInverse.dimo_fuzhi_polySurface589_$AssimpFbx$_ScalingPivot.dimo_fuzhi_polySurface5...Fbx$_ScalingPivotInverse.dimo_fuzhi_polySurface589_Node.dimo_fuzhi_polySurface589, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface436_$AssimpFbx$_RotationPivot.polySurface436_$AssimpFbx$_RotationPivotInverse.polySurface436_$AssimpFbx$_ScalingPivot.polySurface436_$AssimpFbx$_ScalingPivotInverse.polySurface436_Node.polySurface436, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface437_$AssimpFbx$_RotationPivot.polySurface437_$AssimpFbx$_RotationPivotInverse.polySurface437_$AssimpFbx$_ScalingPivot.polySurface437_$AssimpFbx$_ScalingPivotInverse.polySurface437_Node.polySurface437: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_15\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface193_$AssimpFbx$_RotationPivot.polySurface193_$AssimpFbx$_RotationPivotInverse.polySurface193_$AssimpFbx$_ScalingPivot.polySurface193_$AssimpFbx$_ScalingPivotInverse.polySurface193_Node.polySurface193, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface801_$AssimpFbx$_RotationPivot.polySurface801_$AssimpFbx$_RotationPivotInverse.polySurface801_$AssimpFbx$_ScalingPivot.polySurface801_$AssimpFbx$_ScalingPivotInverse.polySurface801_Node.polySurface801: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_17\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.shi_$AssimpFbx$_RotationPivot.shi_$AssimpFbx$_RotationPivotInverse.shi_$AssimpFbx$_ScalingPivot.shi_$AssimpFbx$_ScalingPivotInverse.shi.polySurface917_$AssimpFbx$_RotationPivot.polySurface917_$AssimpFbx$_RotationPivotInverse.polySurface917_$AssimpFbx$_ScalingPivot.polySurface917_$AssimpFbx$_ScalingPivotInverse.polySurface917_Node.polySurface917: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_18\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface810_$AssimpFbx$_RotationPivot.polySurface810_$AssimpFbx$_RotationPivotInverse.polySurface810_$AssimpFbx$_ScalingPivot.polySurface810_$AssimpFbx$_ScalingPivotInverse.polySurface810_Node.polySurface810, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface481_$AssimpFbx$_RotationPivot.polySurface481_$AssimpFbx$_RotationPivotInverse.polySurface481_$AssimpFbx$_ScalingPivot.polySurface481_$AssimpFbx$_ScalingPivotInverse.polySurface481_Node.polySurface481, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface875_$AssimpFbx$_RotationPivot.polySurface875_$AssimpFbx$_RotationPivotInverse.polySurface875_$AssimpFbx$_ScalingPivot.polySurface875_$AssimpFbx$_ScalingPivotInverse.polySurface875_Node.polySurface875, Workspace.EssenceOfNature_Roblox.RootNode.zhiwu_dimo_$AssimpFbx$_RotationPivot.zhiwu_dimo_$AssimpFbx$_RotationPivotInverse.zhiwu_dimo_$AssimpFbx$_ScalingPivot.zhiwu_dimo_$AssimpFbx$_ScalingPivotInverse.zhiwu_dimo.polySurface809_$AssimpFbx$_RotationPivot.polySurface809_$AssimpFbx$_RotationPivotInverse.polySurface809_$AssimpFbx$_ScalingPivot.polySurface809_$AssimpFbx$_ScalingPivotInverse.polySurface809_Node.polySurface809, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface437_$AssimpFbx$_RotationPivot.polySurface437_$AssimpFbx$_RotationPivotInverse.polySurface437_$AssimpFbx$_ScalingPivot.polySurface437_$AssimpFbx$_ScalingPivotInverse.polySurface437_Node.polySurface437: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_1\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_2\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_5\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_7\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_8\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_9\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_10\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_11\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_12\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_13\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_15\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_17\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.rock_smallB_MythicalV4_014.rock_smallB.rock_smallB: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_18\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_20\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_21\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_23\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_24\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_26\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_28\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_29\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_32\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.rock_largeB_MythicalV4_002.rock_largeB.rock_largeB, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_34\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_35\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_36\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_37\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_42\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_43\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_45\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.rock_largeB_MythicalV4_002.rock_largeB.rock_largeB, Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_47\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_49\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_50\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_53\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_55\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_56\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_57\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_59\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_61\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_62\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"},{\"check\":\"clutter_overlap\",\"severity\":\"error\",\"subject\":\"Workspace.AK_Mythical_CelestialGrove.Mythical_GroveDetail_64\",\"detail\":\"its box shrunk to 0.2 overlaps Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface924_$AssimpFbx$_RotationPivot.polySurface924_$AssimpFbx$_RotationPivotInverse.polySurface924_$AssimpFbx$_ScalingPivot.polySurface924_$AssimpFbx$_ScalingPivotInverse.polySurface924_Node.polySurface924: it stands inside something solid.\"}],\"errors\":48}"
+        }
+      ],
+      "isError": false
+    },
+    "worldAfter": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"checked\":{\"floor_covered\":1,\"clutter\":72,\"interactive_covered\":4,\"spawns\":4},\"warnings\":1,\"findings\":[{\"check\":\"multiple_spawns\",\"severity\":\"warning\",\"subject\":\"neutral\",\"detail\":\"4 enabled spawns (Workspace.PlayerPlots.Plot3Spawn, Workspace.PlayerPlots.Plot4Spawn, Workspace.PlayerPlots.Plot2Spawn, Workspace.PlayerPlots.Plot1Spawn). Roblox picks one at random, so every one must be valid; disable leftovers, or set MultipleSpawnsIntended.\"},{\"check\":\"spawn_clearance\",\"severity\":\"error\",\"subject\":\"Workspace.PlayerPlots.Plot4Spawn\",\"detail\":\"the 4x6x4 space above the spawn overlaps Workspace.Scene.tripo_node_ac50a6f2-8ffd-4acc-b023-6b1a78aa732a.tripo_mesh_ac50a6f2-8ffd-4acc-b023-6b1a78aa732a.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.Mythical.MythicalFloor\",\"detail\":\"Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface417_$AssimpFbx$_RotationPivot.polySurface417_$AssimpFbx$_RotationPivotInverse.polySurface417_$AssimpFbx$_ScalingPivot.polySurface417_$AssimpFbx$_ScalingPivotInverse.polySurface417_Node.polySurface417 covers it: surface at 22.2, top at 9.1.\"}],\"errors\":2}"
+        }
+      ],
+      "isError": false
+    },
+    "allEightTextureQA": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"failures\":[],\"counts\":{\"Success\":201},\"preloadFinished\":true}"
+        }
+      ],
+      "isError": false
+    },
+    "allEightGatherQA": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"Jungle\":{\"records\":35,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"AncientRuins\":{\"records\":22,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Mythical\":{\"records\":4,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Ocean\":{\"records\":27,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Desert\":{\"records\":20,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Prehistoric\":{\"records\":27,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"sessionDataChanges\":[\"Data.UncollectedSanctuaryCoins\",\"Data.SanctuaryIncomeUpdatedAt\"],\"Sky\":{\"records\":19,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"MagicalForest\":{\"records\":55,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false}}"
+        }
+      ],
+      "isError": false
+    },
+    "desktopSample": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"framesOver50ms\":0,\"peakMs\":18.26840080320835,\"frames\":480,\"meanMs\":16.665317102645838}"
+        }
+      ],
+      "isError": false
+    },
+    "protected": {
+      "hash": 3138740795,
+      "bytes": 498184,
+      "instances": 1531
+    }
+  },
+  "paidCredits": 0,
+  "publishedExperience": false
+}

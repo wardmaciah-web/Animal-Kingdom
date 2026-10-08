@@ -207,6 +207,7 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ Mythical={Tree3="MythicalGoldenBanyan",Tree4="MythicalAuroraWillow",TwistedTree_5="MythicalWorldTree"},
  Prehistoric={palm_tree_1="PrehistoricAraucaria",Tree_Oak_5="PrehistoricSequoia",palm_tree_3="PrehistoricTreeFern",Tree_Oak_6="PrehistoricMonkeyPuzzle",Willow_3="PrehistoricGinkgo",tree_oak="PrehistoricCycad",PalmTree_3="PrehistoricLepidodendron",palm_tree_2="PrehistoricHorsetail"},
  Sky={tree_thin="SkyCloudCedar",tree_cone="SkyStarCypress",tree_fat="SkyNimbusOak",Tree_Pine_5="SkyAuroraPine",Tree_Pine_3="SkyMoonWillow",CommonTree_Snow_5="SkyBlossomFir",pine_tree_3_snow="SkyRibbonPalm",Tree_Pine_6="SkySunBaobab"},
  MagicalForest={MagicTree="MagicMushroom",NimbusWillow="MagicNimbusWillow",LowpolyWillow="MagicFlowerTree",TwistedTree_2="MagicAmethystOak",Willow_Autumn_4="MagicLanternWillow",TwistedTree_4="MagicCrystalMushroom"},
@@ -219,7 +220,7 @@ local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
 
 -- New tree meshes own rendering; narrow proxies prevent hidden legacy canopies blocking paths.
 local function normalizeCollision(tree,b)
- if b~="Ocean" and b~="AncientRuins" and b~="MagicalForest" and b~="Sky" and b~="Prehistoric" then return end
+ if protected[b] or not newRecipes[b] then return end
  local visual=tree:FindFirstChild("AK_FutureTreeVisual");if not visual then return end
  local proxy=tree:FindFirstChild("AK_OverhaulTrunkCollider")
  for _,p in ipairs(tree:GetDescendants()) do
@@ -244,12 +245,14 @@ local function naturalPlacement(b)
  local plan,placed={},{};local floor=workspace[b][b.."Floor"]
  for i,t in trees do
   local p=t:GetPivot().Position;local best,score
+  local margin=4
+  if b=="Mythical" then local template=findTemplate(newRecipes[b][family(t)]);if template then local _,ts=template:GetBoundingBox();for _,part in template:GetDescendants() do if part:IsA("MeshPart") and part.Name:lower():find("roots") then margin=math.max(margin,math.max(part.Size.X,part.Size.Z)*26/ts.Y+1) end end end end
   for ring=0,3 do for k=1,(ring==0 and 1 or 24) do
    local angle=k*math.pi/12+i*2.399963;local radius=ring*3.9
    local q=Vector3.new(p.X+math.cos(angle)*radius,floor.Position.Y+floor.Size.Y/2,p.Z+math.sin(angle)*radius)
    local lp=floor.CFrame:PointToObjectSpace(q);local clearance=100
    for _,v in placed do clearance=math.min(clearance,Vector2.new(q.X-v.X,q.Z-v.Z).Magnitude) end
-   if math.abs(lp.X)<floor.Size.X/2-4 and math.abs(lp.Z)<floor.Size.Z/2-4 then
+   if math.abs(lp.X)<floor.Size.X/2-margin and math.abs(lp.Z)<floor.Size.Z/2-margin then
     local value=math.min(clearance,8.5)*20-radius
     if not score or value>score then best=q;score=value end
    end
@@ -262,7 +265,7 @@ function M.Apply(scope)
  local report={replaced=0,skipped=0,biomes={}}
  if scope and protected[scope] then return report end
  local magicPlan={}
- for _,b in {"MagicalForest","Sky","Prehistoric"} do if not scope or scope==b then for t,p in naturalPlacement(b) do magicPlan[t]=p end end end
+ for _,b in {"MagicalForest","Sky","Prehistoric","Mythical"} do if not scope or scope==b then for t,p in naturalPlacement(b) do magicPlan[t]=p end end end
  for _,tree in workspace:GetDescendants() do
   if not (tree:IsA("Model") or tree:IsA("BasePart")) or not tree:GetAttribute("AuthoredGatherableTree") then continue end
   local b=biomeOf(tree);local recipe=newRecipes[b]
@@ -270,7 +273,7 @@ function M.Apply(scope)
   local name=recipe[family(tree)];local template=name and findTemplate(name)
   if not template then report.skipped+=1;continue end
   local previous=tree:FindFirstChild("AK_FutureTreeVisual")
-  local revision=(name=="RuinsRunicCedar" or name=="RuinsSacredWillow") and 4 or 3
+  local revision=(b=="Mythical" or name=="RuinsRunicCedar" or name=="RuinsSacredWillow") and 4 or 3
   if previous and previous:GetAttribute("QualityRevision")==revision and previous:GetAttribute("VisualTemplate")==name then normalizeCollision(tree,b);report.skipped+=1;continue end
   local originalPivot=tree:GetPivot()
   if previous then
@@ -289,7 +292,7 @@ function M.Apply(scope)
   -- Keep ground contact and orientation; all original gameplay geometry stays intact.
   if magicPlan[tree] then
    local pos=magicPlan[tree];local n=0;for j=1,#tree.Name do n+=string.byte(tree.Name,j) end
-   visual:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2,0))*CFrame.Angles(0,n*2.399963,0)*visual:GetPivot():ToObjectSpace(cf):Inverse())
+   visual:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2,0))*CFrame.Angles(0,b=="Mythical" and (n%4)*math.pi/2 or n*2.399963,0)*visual:GetPivot():ToObjectSpace(cf):Inverse())
    visual:SetAttribute("CosmeticGroundPosition",pos)
   else visual:PivotTo(bounds*CFrame.new(0,-size.Y/2+sz.Y/2,0)*visual:GetPivot():ToObjectSpace(cf):Inverse()) end
   for _,v in visual:GetDescendants() do
@@ -315,7 +318,8 @@ function M.Apply(scope)
   normalizeCollision(tree,b)
   report.replaced+=1;report.biomes[b]=(report.biomes[b] or 0)+1
  end
- for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b);if b=="Desert" then report.decorativeTrees=M.PolishDesertDecorations() elseif b=="MagicalForest" then report.decorativeFlowers=M.PolishMagicDecorations() end end end
+ for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b);if b=="Desert" then report.decorativeTrees=M.PolishDesertDecorations() elseif b=="MagicalForest" then report.decorativeFlowers=M.PolishMagicDecorations() elseif b=="Mythical" then report.decorativeFlowers=M.PolishMythicalFlowers();report.decorativeGrove=M.DecorateMythicalGrove() end end end
+ report.decorationPlacement=M.RepairDecorationPlacement(scope)
  return report
 end
 
@@ -341,7 +345,7 @@ function M.DecorateBiome(b)
     local localPos=floor.CFrame:PointToObjectSpace(pos)
     if math.abs(localPos.X)>floor.Size.X/2-5 or math.abs(localPos.Z)>floor.Size.Z/2-5 then clear=false end
     if b=="Ocean" and Vector2.new(localPos.X,localPos.Z).Magnitude<23 then clear=false end
-    if (b=="AncientRuins" or b=="MagicalForest" or b=="Sky" or b=="Prehistoric") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
+    if (b=="AncientRuins" or b=="MagicalForest" or b=="Sky" or b=="Prehistoric" or b=="Mythical") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
     pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z)
    end
    if clear then
@@ -404,6 +408,102 @@ function M.PolishMagicDecorations()
   t:SetAttribute("AK8DecorationRevision",3);n+=1
  end
  return n
+end
+
+function M.PolishMythicalFlowers()
+ local roots={}
+ for _,p in workspace:GetDescendants() do if p:IsA("MeshPart") and p.Position.X>-180 and p.Position.X<16 and p.Position.Z>-187 and p.Position.Z<10 then
+  local t=p:FindFirstAncestorWhichIsA("Model");local a=t;local excluded=false
+  while a and a~=workspace do if a:GetAttribute("AuthoredGatherableTree") or protected[a:GetAttribute("BiomeId")] then excluded=true end;a=a.Parent end
+  if not excluded and t and t.Name:match("^Flower_") and not t:GetAttribute("AK8DecorationRevision") then roots[t]=true end
+ end end
+ local n=0
+ for t in roots do
+  local backup=game.ServerStorage:FindFirstChild("AK_FinalEight_Checkpoint_20261008");if backup then local copy=t:Clone();copy:SetAttribute("OriginalPath",t:GetFullName());copy.Parent=backup end
+  local old=t:GetPivot();local cf,sz=t:GetBoundingBox();local target=t.Name:find("Balloon") and 8 or 6
+  t:ScaleTo(t:GetScale()*target/sz.Y);cf,sz=t:GetBoundingBox()
+  t:PivotTo(CFrame.new(old.X,9.12893+sz.Y/2,old.Z)*t:GetPivot():ToObjectSpace(cf):Inverse())
+  for _,p in t:GetDescendants() do if p:IsA("BasePart") then p.Anchored=true;p.CanCollide=false;p.CanQuery=false;p.CanTouch=false end end
+  t:SetAttribute("AK8DecorationRevision",3);n+=1
+ end
+ return n
+end
+
+function M.DecorateMythicalGrove()
+ if workspace:FindFirstChild("AK_Mythical_CelestialGrove") then return 0 end
+ local floor=workspace.Mythical.MythicalFloor;local ground=floor.Position.Y+floor.Size.Y/2
+ local folder=Instance.new("Folder");folder.Name="AK_Mythical_CelestialGrove";folder.Parent=workspace
+ local anchors={};for _,t in workspace:GetDescendants() do if t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)=="Mythical" then table.insert(anchors,t:GetPivot().Position) end end
+ local placed={};local n=0
+ local ignore={floor,folder};for _,t in workspace:GetDescendants() do if t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)=="Mythical" then table.insert(ignore,t) end end
+ local rayParams=RaycastParams.new();rayParams.FilterType=Enum.RaycastFilterType.Exclude;rayParams.FilterDescendantsInstances=ignore;rayParams.RespectCanCollide=true
+ local overlapParams=OverlapParams.new();overlapParams.FilterType=Enum.RaycastFilterType.Exclude;overlapParams.FilterDescendantsInstances=ignore;overlapParams.RespectCanCollide=true
+ local function insert(name,pos,height,angle,label)
+  local template=findTemplate(name);if not template then return false end
+  local hit=workspace:Raycast(pos+Vector3.new(0,160,0),Vector3.new(0,-170,0),rayParams)
+  if hit then if hit.Position.Y>ground+5 or hit.Normal.Y<.75 then return false end;pos=Vector3.new(pos.X,math.max(ground,hit.Position.Y)+.03,pos.Z) end
+  local m=template:Clone();m.Name=label;local cf,sz=m:GetBoundingBox();m:ScaleTo(m:GetScale()*height/sz.Y);cf,sz=m:GetBoundingBox()
+  m:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2,0))*CFrame.Angles(0,angle,0)*m:GetPivot():ToObjectSpace(cf):Inverse())
+  for _,p in m:GetDescendants() do if p:IsA("BasePart") then p.Anchored=true;p.CanCollide=false;p.CanQuery=false;p.CanTouch=false;if p.Name:lower():find("leaves") or p.Name:lower():find("canopy") or name=="MythicalUnderstory" then p.Name="Leaves_"..p.Name end elseif p:IsA("LuaSourceContainer") or p:IsA("PackageLink") then p:Destroy() end end
+  local bc,bs=m:GetBoundingBox();if #workspace:GetPartBoundsInBox(bc,bs*.2,overlapParams)>0 then m:Destroy();return false end
+  m:SetAttribute("BiomeId","Mythical");m:SetAttribute("QualityDecoration",true);m:SetAttribute("VisualTemplate",name);m:SetAttribute("QualityRevision",4);m.Parent=folder;return true
+ end
+ for i=1,120 do
+  local angle=i*2.399963;local radius=62+(i%5)*5.5
+  local pos=floor.Position+Vector3.new(math.cos(angle)*radius,0,math.sin(angle)*radius);pos=Vector3.new(pos.X,ground,pos.Z)
+  local clear=math.abs(pos.X-floor.Position.X)<85 and math.abs(pos.Z-floor.Position.Z)<85
+  for _,q in anchors do if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<16 then clear=false end end
+  for _,q in placed do if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<22 then clear=false end end
+  if clear then
+   local nextIndex=n+1;if insert(({"MythicalGoldenBanyan","MythicalAuroraWillow","MythicalWorldTree"})[(nextIndex-1)%3+1],pos,27+(nextIndex%4)*2.5,angle,"Mythical_DecorTree_"..nextIndex) then n=nextIndex;table.insert(placed,pos) end
+   if n==18 then break end
+  end
+ end
+ local detailCount=0
+ for i=1,180 do
+  local angle=i*2.399963;local radius=54+(i%8)*4
+  local pos=floor.Position+Vector3.new(math.cos(angle)*radius,0,math.sin(angle)*radius);pos=Vector3.new(pos.X,ground,pos.Z)
+  local clear=math.abs(pos.X-floor.Position.X)<89 and math.abs(pos.Z-floor.Position.Z)<89
+  for _,q in anchors do if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<10 then clear=false end end
+  for _,q in placed do if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<7 then clear=false end end
+  if clear then if insert("MythicalUnderstory",pos,2.5+(i%4)*.55,angle,"Mythical_GroveDetail_"..(detailCount+1)) then detailCount+=1 end;if detailCount==64 then break end end
+ end
+ folder:SetAttribute("DecorativeTrees",n);folder:SetAttribute("UnderstoryClusters",detailCount)
+ return {trees=n,understory=detailCount}
+end
+
+function M.RepairDecorationPlacement(scope)
+ local report={moved=0,retained=0,failed=0};local models={}
+ for _,m in workspace:GetDescendants() do local b=m:GetAttribute("BiomeId");if m:IsA("Model") and m:GetAttribute("QualityDecoration") and newRecipes[b] and (not scope or scope==b) then table.insert(models,m) end end
+ table.sort(models,function(a,b) return a:GetFullName()<b:GetFullName() end)
+ local anchors={};for _,t in workspace:GetDescendants() do if t:GetAttribute("AuthoredGatherableTree") and newRecipes[biomeOf(t)] then table.insert(anchors,t:GetPivot().Position) end end
+ for index,m in models do
+  if m:GetAttribute("DecorationPlacementRevision")==4 then report.retained+=1;continue end
+  local b=m:GetAttribute("BiomeId");local floor=workspace:FindFirstChild(b) and workspace[b]:FindFirstChild(b.."Floor");if not floor then report.failed+=1;continue end
+  local cf,sz=m:GetBoundingBox();local pivot=m:GetPivot();local ground=floor.Position.Y+floor.Size.Y/2
+  local overlaps=OverlapParams.new();overlaps.FilterType=Enum.RaycastFilterType.Exclude;overlaps.FilterDescendantsInstances={floor,m};overlaps.RespectCanCollide=true
+  local ray=RaycastParams.new();ray.FilterType=Enum.RaycastFilterType.Exclude;ray.FilterDescendantsInstances={floor,m};ray.RespectCanCollide=true
+  local chosen
+  for ring=0,24 do
+   for k=1,(ring==0 and 1 or 24) do
+    local angle=k*math.pi/12+index*2.399963;local x=cf.X+math.cos(angle)*ring*3.5;local z=cf.Z+math.sin(angle)*ring*3.5
+    local margin=math.min(18,math.max(sz.X,sz.Z)/2)+1;local lp=floor.CFrame:PointToObjectSpace(Vector3.new(x,ground,z))
+    if math.abs(lp.X)>floor.Size.X/2-margin or math.abs(lp.Z)>floor.Size.Z/2-margin then continue end
+    local near=false;for _,p in anchors do if Vector2.new(x-p.X,z-p.Z).Magnitude<(sz.Y>15 and 10 or 7) then near=true;break end end;if near then continue end
+    local y=ground
+    local hit=workspace:Raycast(Vector3.new(x,ground+10,z),Vector3.new(0,-20,0),ray)
+    if hit and hit.Position.Y>ground then if hit.Position.Y>ground+5 or hit.Normal.Y<.75 then continue end;y=hit.Position.Y end
+    local delta=Vector3.new(x-cf.X,y+sz.Y/2+.03-cf.Y,z-cf.Z)
+    if #workspace:GetPartBoundsInBox(cf+delta,sz*.2,overlaps)==0 then chosen=delta;break end
+   end
+   if chosen then break end
+  end
+  if chosen then
+   if chosen.Magnitude>.15 then m:SetAttribute("AK8OriginalDecorationPivot",pivot);report.moved+=1 else report.retained+=1 end
+   m:PivotTo(pivot+chosen);m:SetAttribute("DecorationPlacementRevision",4)
+  else report.failed+=1 end
+ end
+ return report
 end
 
 return M

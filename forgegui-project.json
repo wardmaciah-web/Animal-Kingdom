@@ -94,6 +94,15 @@
       "placements": 27,
       "understory": 39,
       "ledger": "documentations/future-trees/prehistoric-assets.json"
+    },
+    {
+      "biome": "Mythical",
+      "status": "gameplay_verified",
+      "source": "Roblox Studio native generation",
+      "families": 3,
+      "placements": 4,
+      "understory": 63,
+      "ledger": "documentations/future-trees/mythical-assets.json"
     }
   ]
 }
