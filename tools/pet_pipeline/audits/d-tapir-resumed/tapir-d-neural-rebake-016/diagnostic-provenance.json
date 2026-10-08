@@ -1,0 +1,7 @@
+{
+  "fresh_inference": false,
+  "source_run": "tapir-d-frontal-fresh-007",
+  "method": "Optimize mesh then bake same TripoSR neural field on new UVs; no reference mesh material or geometry transfer",
+  "scene_code_sha256": "622c54cabcbfca97d9218b495ccffcfac02037b7cf49f7b19238dd00ad434cee",
+  "credits_used": 0
+}

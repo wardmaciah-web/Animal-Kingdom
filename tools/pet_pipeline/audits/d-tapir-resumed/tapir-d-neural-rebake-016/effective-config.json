@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "pet_id": "JungleTapir",
+  "pet_name": "Jungle Tapir",
+  "biome": "Jungle",
+  "species": "Tapir",
+  "concept_image": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\tapir-front-concept.png",
+  "style_references": [
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-front.jpg",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-side.jpg",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png"
+  ],
+  "concept_preparation": {
+    "background_removal": "none"
+  },
+  "target_dimensions": {
+    "height": 2.8,
+    "width_max": 3.0,
+    "depth_max": 2.5
+  },
+  "generation": {
+    "seed": 42,
+    "foreground_ratio": 0.85,
+    "mc_resolution": 256,
+    "renderer_chunk": 4096
+  },
+  "texture": {
+    "resolution": 2048,
+    "query_chunk": 8192,
+    "roughness": 0.85,
+    "projection": {
+      "enabled": true,
+      "padding": 8,
+      "normal_start": 0.15,
+      "normal_range": 0.6
+    }
+  },
+  "refinement": {
+    "reference_height": 2.8,
+    "yaw_degrees": -90,
+    "weld_distance": 1e-05,
+    "smooth_factor": 0.65,
+    "smooth_iterations": 0,
+    "body_triangle_budget": 18000,
+    "grounding": {
+      "upper": 0.13,
+      "cut": 0.045
+    },
+    "fur": {
+      "enabled": true,
+      "count": 800,
+      "attempts": 4300,
+      "minimum_height": 0.3,
+      "outward_flow": 0.35,
+      "length": [
+        0.035,
+        0.07
+      ],
+      "width_ratio": [
+        0.23,
+        0.33
+      ],
+      "root_inset": 0.007,
+      "shoulder_height": 0.006,
+      "ridge_height": 0.012,
+      "tip_height": 0.003,
+      "exclusions": [
+        {
+          "normal_y_max": 1.1,
+          "z_min": 1.4,
+          "z_max": 2.8
+        }
+      ]
+    }
+  },
+  "preview": {
+    "resolution": 700,
+    "samples": 16
+  },
+  "validation": {
+    "max_triangles": 26800,
+    "height_tolerance": 0.02,
+    "ground_tolerance": 0.001,
+    "reproduction_distance": 0.015,
+    "reproduction_ssim": 0.9,
+    "paw_regions": [
+      {
+        "name": "front_left",
+        "x": [
+          -0.65,
+          -0.1
+        ],
+        "z": [
+          0.2,
+          2
+        ]
+      },
+      {
+        "name": "front_right",
+        "x": [
+          0.1,
+          0.65
+        ],
+        "z": [
+          0.2,
+          2
+        ]
+      }
+    ]
+  },
+  "runtime_root": "D:\\AnimalKingdom3D",
+  "pipeline_root": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline",
+  "output_directory": "D:\\AnimalKingdom3D\\outputs\\tapir-d-neural-rebake-016",
+  "pipeline_version": "1.0.0"
+}

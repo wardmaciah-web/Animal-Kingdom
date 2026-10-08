@@ -1,0 +1,735 @@
+{
+  "status": "second_species_art_qa_blocked",
+  "runtime_health": "passed",
+  "latest_run": "tapir-d-coat-022",
+  "numeric_validation": "passed",
+  "triangles": 25994,
+  "visual_approval": false,
+  "fresh_inference_runs": [
+    "tapir-d-first-species-001",
+    "tapir-d-frontal-fresh-007",
+    "tapir-d-angle-fresh-017"
+  ],
+  "findings": [
+    "Front eye detail and paw-floor checks pass in 022.",
+    "Side and back retain insufficient separation of head, torso and hindquarters.",
+    "Fur locks show dark triangular artifacts; authored rear markings do not yet match front rendering quality.",
+    "Trial 017 is fresh angled-image inference; it fails depth and visual QA.",
+    "Trials 018-022 reuse fresh 007 geometry and are not additional original animals."
+  ],
+  "next_required": "Correct Tapir reconstruction and fur/material artifacts, then prove the resulting recipe from fresh inference with four-view art review and unchanged numeric thresholds.",
+  "not_done": [
+    "Approved Tapir import/registration",
+    "Second-species production acceptance",
+    "Remaining 249 approved models",
+    "Canonical future tree mapping/prices",
+    "All tree-interaction QA"
+  ],
+  "safety": {
+    "meadow_forest_preserved": true,
+    "future_biomes_locked": true,
+    "paid_calls": 0,
+    "published": false,
+    "E_original_retained": true
+  },
+  "studio_local_save": "Not verified: native menu/Save As input produced no dialog. Asset IDs, GLB and idempotent registration script preserve reproducibility.",
+  "trials": [
+    {
+      "run": "tapir-d-angle-fresh-017",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\concept-validation.json",
+          "bytes": 446,
+          "sha256": "4381bd35c039e302667897d8c2b55cbdc17f0ecc1dea44e9f29c824983b601d9"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\concept.png",
+          "bytes": 904218,
+          "sha256": "cec53efed93ba2657a652e692fca3ebbbfee0f712d1146e7183b89f61f1e3763"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\effective-config.json",
+          "bytes": 2702,
+          "sha256": "8e692b3c613b6c147eab25201038aabccb5c4dc7b92c16dfbbab926616ba0642"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generate.log",
+          "bytes": 663,
+          "sha256": "7af635221d2b1d454f472ad471dd1caf8b912bc186b4d07d08449be38480ad8a"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generated\\basecolor.png",
+          "bytes": 3338087,
+          "sha256": "4aac3d0218086adbffffc0949dbe64bbc22b9aaa439c4acb16396bf0d67aed13"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generated\\generation.json",
+          "bytes": 439,
+          "sha256": "adcbab84e93ccb88ee94b755e037f129ca2aa4e76f39f2e7b006f8d4f8d53d55"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generated\\inference-input.png",
+          "bytes": 539712,
+          "sha256": "b5584df4fe2de8d58ef79bd9efe9214713ecfe0ac383e5a972aae26b8f2d891d"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generated\\raw.glb",
+          "bytes": 8267736,
+          "sha256": "8e7b820113377da2798b4d1f719cfdf526418c0db29ddc8db8469eef60c834f0"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generated\\scene-code.pt",
+          "bytes": 984235,
+          "sha256": "da6947abf91f2453bb3b2f82927a2d0fcc0eff50fbd1e922670435f06d4bcb7a"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\generated\\source.ply",
+          "bytes": 3339424,
+          "sha256": "db2bba0d293cbae45fe2b4008f544c371172b65362688ea2bd68c1f1b7671c31"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\manifest.json",
+          "bytes": 1728,
+          "sha256": "7bed6b0a11daa61c5633a9b5c30e5eeea41a17d184fc9241183952a21a34f0fc"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\preflight.json",
+          "bytes": 290,
+          "sha256": "6306b36336ecc90c8b9f51463a6a0ac5f5dfd27ea0e75412c0be1d0ec359af65"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\prepare.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\project.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\projected\\basecolor.png",
+          "bytes": 3823620,
+          "sha256": "28672eeb63d013e2b4e366485bc2eea5594a160ccb268c859704e788386ddcc8"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\projected\\projected.glb",
+          "bytes": 10445244,
+          "sha256": "6f0d8e629cd55428ce3e6281c9b78ca724bf32451fd1615f83675679d8a25a56"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\refine.log",
+          "bytes": 23042,
+          "sha256": "de576de3a71c2895bbe332f96e466d25d27ad0af165f7cdee06226c48b3fcd8e"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\back.png",
+          "bytes": 514552,
+          "sha256": "a0af9827cd5076f3e50ecf4abe39bc5e21739413013ea2b6333d9eb1c2c27242"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\blender-validation.json",
+          "bytes": 400,
+          "sha256": "20bad53aa51e35c67654f3f01fbcc55a1be73d99000e6aeb67c20f4a608db5bf"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\front.png",
+          "bytes": 530545,
+          "sha256": "8441d9d9d7ffbcd181402e4c9d5c658ff5c706957d7b63c67794fc3ce5d0f716"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\high-resolution.blend",
+          "bytes": 19142372,
+          "sha256": "910934217f805615d80eac1b5af97846cf3c7d1937e23e37f8260c3bf6041832"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\pet.blend",
+          "bytes": 6260863,
+          "sha256": "a28e8e0e599d8907dfc04e921eba70bb22fa10e728a4d13bf0a6b75ac095d4de"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\pet.glb",
+          "bytes": 4816920,
+          "sha256": "70bf01b7ec627c4c5ead0d90d111aabbbad65b571f65a8c39413389849d54544"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\preview-scene.blend",
+          "bytes": 6308086,
+          "sha256": "14d296c64fb364fe9582795d03d7fbc9a06230bb863800c19f5293cfff286740"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\side.png",
+          "bytes": 533264,
+          "sha256": "f42ba075e20812e011892d239d29f529b00e5748db7bf77135a08cde7aa48dab"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\review\\three-quarter.png",
+          "bytes": 536596,
+          "sha256": "b5cefe8bd6911f214272fea628d797df62dc241bad5c92601de543e9d1e9449c"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\roblox-import.json",
+          "bytes": 876,
+          "sha256": "f0561dc803c10c022d988dbf4ac0562c9493502f0a3c11ac4418e0a358aaa09b"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\validate.log",
+          "bytes": 1343,
+          "sha256": "57241256eade7bf54182b25f812ff1191706642368f65896b4dd919cfa5b7282"
+        },
+        {
+          "path": "outputs\\tapir-d-angle-fresh-017\\validation.json",
+          "bytes": 1987,
+          "sha256": "b1b092a8426351cb8217e53a7dcc5277e95c7e89ecaec9981d1e6c30494bfb50"
+        }
+      ]
+    },
+    {
+      "run": "tapir-d-coat-019",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-coat-019\\concept.png",
+          "bytes": 858934,
+          "sha256": "997fad606224c16156c1f2da24791b11a1d4d85e5c717445980a803ae6c0af0c"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\diagnostic-provenance.json",
+          "bytes": 272,
+          "sha256": "6e98ca8f6ea9ac8193bdc0eff97cf59bae192b8b0259d1c961398f7437af1566"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\effective-config.json",
+          "bytes": 2720,
+          "sha256": "ba18c9a0f67002d05984685a84f3506bdab8106c8d43708480b5b1cab675540d"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\generated\\basecolor.png",
+          "bytes": 2757712,
+          "sha256": "bc19930f561c695548319ee2fd9c5c2602ef0f36fa95144a7cd0d0f7d9d014a3"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\generated\\raw.glb",
+          "bytes": 3292708,
+          "sha256": "3bc15850470c4ecbbfc996a925a4e573a1788372c544efd009d138cfc5aee06c"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\projected\\basecolor.png",
+          "bytes": 3295292,
+          "sha256": "bf92c92389b439ed00d2bd8a45b76dcf9b59141af17086ffe55c849b3932d4e0"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\projected\\projected.glb",
+          "bytes": 3830288,
+          "sha256": "ba93b95cb7b47a85c198313949c4341a0e99cd87d3a66dfa0dea95d522aab353"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\back.png",
+          "bytes": 445661,
+          "sha256": "6d7b8e5593c6f86c8b6b32d8c9cf243504c7acd477a8bce28b72ef8a9d36c22e"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\blender-validation.json",
+          "bytes": 399,
+          "sha256": "d735a38803e8c7d44f5c6aebd559788ccffb6f1c547066ee3611e6bec859e9cd"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\front.png",
+          "bytes": 521848,
+          "sha256": "a9bceadcc037ec294ccbfe5aed82ecc3ef615f032d7500621aa96b414cde02cb"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\high-resolution.blend",
+          "bytes": 5232822,
+          "sha256": "004ded272b09bbf36a180c6ccd5db02f3b4911ec4e5a276b3f4994b7d93446cd"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\pet.blend",
+          "bytes": 5917243,
+          "sha256": "2648aee01f550f81db7c18e51a8b206c9a4709aa3d92b29fbd6e3390e6b9dc8e"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\pet.glb",
+          "bytes": 3986888,
+          "sha256": "17b6ffe52031623a4705165d12efc32b308eb1715327125e0da15ef010e14b27"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\preview-scene.blend",
+          "bytes": 5964726,
+          "sha256": "6f7bdfd3b5a6ccd1957b2d8dc3c188083d2d638a0ebd97cc31552953829c78b3"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\side.png",
+          "bytes": 491575,
+          "sha256": "485e66a7802443c32277ad3d874bbc4a059ca8bfe3cd0a3dce52fa340f759382"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-019\\review\\three-quarter.png",
+          "bytes": 525775,
+          "sha256": "4a1d73b25642eddf80ee3c523c7032b2c3998640749821ff61e992b56368a0c0"
+        }
+      ]
+    },
+    {
+      "run": "tapir-d-coat-020",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-coat-020\\concept.png",
+          "bytes": 858934,
+          "sha256": "997fad606224c16156c1f2da24791b11a1d4d85e5c717445980a803ae6c0af0c"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\diagnostic-provenance.json",
+          "bytes": 281,
+          "sha256": "f6d313851a4abb8b933c8e9bc0a65f19b1b34d8f10dcb9de70013035568bdf23"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\effective-config.json",
+          "bytes": 2721,
+          "sha256": "d7bfda267671104960f1ceb4ca3d1c6326cd892186d648c85419b7c36645d87f"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\generated\\basecolor.png",
+          "bytes": 2525348,
+          "sha256": "3f604477d7ba30ca0d158ec8e92f45bb54206287363e7cbd5c50d45eb2a5d3a7"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\generated\\raw.glb",
+          "bytes": 3060344,
+          "sha256": "bc7944c123e38171d562318f0a5aa94ca17cdaf9e30cbb50f394e3d4a2af30f0"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\projected\\basecolor.png",
+          "bytes": 3092396,
+          "sha256": "83ba87c9cdc43945a9dc0acb6c7ad5caa1ee1bec2474dd3ffe4e3df8ce43f60f"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\projected\\projected.glb",
+          "bytes": 3627392,
+          "sha256": "712574291a375c9eef2ecf415e3043781d89f820af70e7fbfab58ce155242fa6"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\back.png",
+          "bytes": 492085,
+          "sha256": "11c418f1cbe799962a85b79aea4e65567fb0f686953c2125ca231c3702dc7ec3"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\blender-validation.json",
+          "bytes": 399,
+          "sha256": "d735a38803e8c7d44f5c6aebd559788ccffb6f1c547066ee3611e6bec859e9cd"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\front.png",
+          "bytes": 523676,
+          "sha256": "1a356c747621e6545e87f8d46097e13aa2bcb474098c5f0910b462befe280d26"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\high-resolution.blend",
+          "bytes": 5029926,
+          "sha256": "f0c6e43b6ad4fcb72bfe77bdff82836e4761a0f04287b6f94ed7459e128522d4"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\pet.blend",
+          "bytes": 5714347,
+          "sha256": "a8de600d4a6933da0c4120686040e2c1f2582584fd93e623feadf62a5ae25d99"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\pet.glb",
+          "bytes": 3783992,
+          "sha256": "13b31896f461f4cbb5b627df4f04abb9dc999a17e770aca8d0baf91e392539e7"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\preview-scene.blend",
+          "bytes": 5761830,
+          "sha256": "949f0316ad43232576da4fb9262418428216d0a37ad0a0ece16a06ef1a2e216d"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\side.png",
+          "bytes": 523199,
+          "sha256": "e1576bb6287fd5a32f04fbf427615310bee8d5179d45c0a0b9d75fbcc61ec17f"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-020\\review\\three-quarter.png",
+          "bytes": 534151,
+          "sha256": "bfad1172a3bd4c021672af82fc3b446d300e48e0c5a49e76fce6edc9b3ce4055"
+        }
+      ]
+    },
+    {
+      "run": "tapir-d-coat-022",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-coat-022\\concept.png",
+          "bytes": 858934,
+          "sha256": "997fad606224c16156c1f2da24791b11a1d4d85e5c717445980a803ae6c0af0c"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\diagnostic-provenance.json",
+          "bytes": 281,
+          "sha256": "f6d313851a4abb8b933c8e9bc0a65f19b1b34d8f10dcb9de70013035568bdf23"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\effective-config.json",
+          "bytes": 2722,
+          "sha256": "d7a9cc5d772398dc0af55c5b56a1fd7168dcac7c09b363e7ccbb94c56d2b2930"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\generated\\basecolor.png",
+          "bytes": 2546281,
+          "sha256": "94852d4b91717389a938cf26e6cac13bfcfd21be45f3a2120b242e6291ba5fbb"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\generated\\raw.glb",
+          "bytes": 3081280,
+          "sha256": "ac89bef84e6bbae2a2cd264f29cde7308c65c882e2c3d4bbafd6c59acd803983"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\projected\\basecolor.png",
+          "bytes": 3107774,
+          "sha256": "6581f230e16e86a70061947039ba791b5c3d4b519ffe80c1b0a41e6cbe118859"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\projected\\projected.glb",
+          "bytes": 3642772,
+          "sha256": "e68c155a7ec0011abd377ea8f89f8837e9aef28bc2474a7b6303f7243a182885"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\back.png",
+          "bytes": 477098,
+          "sha256": "c08917f38682e66848625f666ebd58b81395591ad79bcf47745e9f0e0b82de11"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\blender-validation.json",
+          "bytes": 399,
+          "sha256": "1135c1e234d36578ca8c9fb577d911a7285fb3170a36bb9dafcba54c1bb27be2"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\front.png",
+          "bytes": 519719,
+          "sha256": "6f7ff7a2eb082f598c326bee23608df8095c7d690dc5d211ad8726d372dd5271"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\high-resolution.blend",
+          "bytes": 5045304,
+          "sha256": "83a810acf051beb6b5970b8116a99c51644333a4575a6383ca47ffaa87dd6865"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\pet.blend",
+          "bytes": 5667925,
+          "sha256": "11f5090658d1e5bcb334ea518b6abbffc195a9c63e206e10d5bdc7c9ec75c1d3"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\pet.glb",
+          "bytes": 3775368,
+          "sha256": "252dfcc68ced940457cb58c827cf70b39ed527250eeb34cc38401e956b831588"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\preview-scene.blend",
+          "bytes": 5715408,
+          "sha256": "6537d5a9f6bd58fe33b7762196d628e98e169102f0e6e500d3537dfb1fc8accf"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\side.png",
+          "bytes": 513703,
+          "sha256": "9906fe04c5a9f2c4fd0637ed3321cd1bff077a6c9cf1d5a53162f41ce92ce0be"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\review\\three-quarter.png",
+          "bytes": 528527,
+          "sha256": "a7c8fd9341dc398b79c3f41046889a58cd9e9d828a6eef8962eb21d85fad0201"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\roblox-import.json",
+          "bytes": 869,
+          "sha256": "f6df1fa9c715e5b6b89283a2a39a4621b14a9eace05d68029b30af61223e524d"
+        },
+        {
+          "path": "outputs\\tapir-d-coat-022\\validation.json",
+          "bytes": 1897,
+          "sha256": "fe8da5af117b0995315991e251d107107d4f9a8d02acb6ce908018b99876fdb7"
+        }
+      ]
+    },
+    {
+      "run": "tapir-d-fur-normals-021",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\effective-config.json",
+          "bytes": 2728,
+          "sha256": "c5d80de3ddad6de81ed127cdea6e9a6c267388580fb74f47afd87cf5c67f1dae"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\projected\\basecolor.png",
+          "bytes": 3092396,
+          "sha256": "83ba87c9cdc43945a9dc0acb6c7ad5caa1ee1bec2474dd3ffe4e3df8ce43f60f"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\projected\\projected.glb",
+          "bytes": 3627392,
+          "sha256": "712574291a375c9eef2ecf415e3043781d89f820af70e7fbfab58ce155242fa6"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\back.png",
+          "bytes": 492279,
+          "sha256": "fcaddf5e7e907dcc656c4f857ecfb5d167e8bc45fd03d1a044dceb05bfc84417"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\blender-validation.json",
+          "bytes": 399,
+          "sha256": "d735a38803e8c7d44f5c6aebd559788ccffb6f1c547066ee3611e6bec859e9cd"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\front.png",
+          "bytes": 523665,
+          "sha256": "8821d2cbc3481f5a82740445d296d0902f417494917010126d91124241d1ab99"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\high-resolution.blend",
+          "bytes": 5029926,
+          "sha256": "a4775a35202d4026cf48b3a78389bebc6c808c37ce43303e78a4e1c545ebd35e"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\pet.blend",
+          "bytes": 5714347,
+          "sha256": "ca7981e3eee5f525fd5bd5d0be81f19e84722b2659a1ac2a358d9737bd8a031a"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\pet.glb",
+          "bytes": 3783992,
+          "sha256": "62a2cd4bb35f5308537f7795091d676060f8b5d5a7231d596c4a6d4f4796057e"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\preview-scene.blend",
+          "bytes": 5761830,
+          "sha256": "ac51754980eb9a6c8eb7b87189cfa140e6a720ad157500210af889b04f4789cf"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\side.png",
+          "bytes": 523408,
+          "sha256": "d459894d29e17059c78e2fb5b6503aeff960737d4bad7f46b49cf2cd1bb6b690"
+        },
+        {
+          "path": "outputs\\tapir-d-fur-normals-021\\review\\three-quarter.png",
+          "bytes": 534188,
+          "sha256": "de7e12e5c5f384641334a69e02c42a4b588b3656dbc2d86eee5fb1bce9eeb95c"
+        }
+      ]
+    },
+    {
+      "run": "tapir-d-neural-rebake-016",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\concept.png",
+          "bytes": 858934,
+          "sha256": "997fad606224c16156c1f2da24791b11a1d4d85e5c717445980a803ae6c0af0c"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\diagnostic-provenance.json",
+          "bytes": 318,
+          "sha256": "30dc4d46f3156996e6d8efe31802a42ef0f4e9479502b5c7c26683cd7639b0f9"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\effective-config.json",
+          "bytes": 2728,
+          "sha256": "3f1c9745006e1f757ee5185e24a43172f91f74053e09ce3fa3a5ae1a8d753bb5"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\generated\\basecolor.png",
+          "bytes": 2284440,
+          "sha256": "54e3937a4900e5cf64a1938bf74c96e28775e4c24f4719039505ab3eeb3bfdc7"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\generated\\raw.glb",
+          "bytes": 2859208,
+          "sha256": "3e537415aacb04c20a068bc6a4fcb0e29b3d3aa100c814075e0f6ce063b20fe0"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\projected\\basecolor.png",
+          "bytes": 2820766,
+          "sha256": "e29de910d4f13284d074cefab9d51c20b29d3230fd442019535b4e3da0b5e5f0"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\projected\\projected.glb",
+          "bytes": 3395580,
+          "sha256": "a8aa8eac0a38278882e148f28603d2adad9d2c5151ef9a351b9e1725c7e7f51b"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\back.png",
+          "bytes": 483597,
+          "sha256": "49eb19432ff527e148e9e01624312dfa74d6d8a5ab08f71798df70c0ad094152"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\blender-validation.json",
+          "bytes": 399,
+          "sha256": "31ee3fa694b7700a408c7a19b258bae41e5b78e7d64265ce83d2c0ab31cfb454"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\front.png",
+          "bytes": 519623,
+          "sha256": "bc4e91a7f9bea8aeeb9d3c702e6e2ee4d3f473da67619e4c6b39fbd2918b26af"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\high-resolution.blend",
+          "bytes": 4758571,
+          "sha256": "01ff5d451ab4331c4ed2895420f7caf6603153bd795d4fd372239e769a78b46f"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\pet.blend",
+          "bytes": 5257592,
+          "sha256": "dcb878f22198a9bd79df946e041aafdfce33f3905625cd069ebf2b66aa8653cb"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\pet.glb",
+          "bytes": 3480092,
+          "sha256": "ebf10d9c61f2623316a2c8943b646dda767b19ebf1abaf04e1b0194456b9fbb3"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\preview-scene.blend",
+          "bytes": 5305075,
+          "sha256": "729f63161445eff89c6e8afdaff491ddfd880de17f6144b855a735e26d70fd10"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\side.png",
+          "bytes": 512279,
+          "sha256": "168140246d37490e4c406ce5af1bf7f2e8d61e0841c7a900f23c768fe46362dd"
+        },
+        {
+          "path": "outputs\\tapir-d-neural-rebake-016\\review\\three-quarter.png",
+          "bytes": 531396,
+          "sha256": "c2c3a7b4ad8f8cd929ff764b1ceeaf9d28385caf473f4e960d83ebe78272245b"
+        }
+      ]
+    },
+    {
+      "run": "tapir-d-smooth-018",
+      "approved": false,
+      "files": [
+        {
+          "path": "outputs\\tapir-d-smooth-018\\concept.png",
+          "bytes": 858934,
+          "sha256": "997fad606224c16156c1f2da24791b11a1d4d85e5c717445980a803ae6c0af0c"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\diagnostic-provenance.json",
+          "bytes": 318,
+          "sha256": "30dc4d46f3156996e6d8efe31802a42ef0f4e9479502b5c7c26683cd7639b0f9"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\effective-config.json",
+          "bytes": 2721,
+          "sha256": "56fd287c58cf62ff4dcfc919576322fd92085df1304dbd566e642d41a7646ca4"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\generated\\basecolor.png",
+          "bytes": 2078992,
+          "sha256": "1efdcd75e5ad4024d4dbf07e4c8711e615b72c37335d8752d0f2dda14c8ccdcd"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\generated\\raw.glb",
+          "bytes": 2613944,
+          "sha256": "6359cb7ce661a67c1e376e9c9d9f32158cc3d4d3d0e3b470dbcb6d2809d37c22"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\optimized-geometry.npz",
+          "bytes": 432608,
+          "sha256": "a6a08343d8de757a2ea8dbc64df4864dbd358652c510270dc9c2c62d3bc909ea"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\projected\\basecolor.png",
+          "bytes": 2597839,
+          "sha256": "edfd4071f7ab78fc83e2ecf6ee2644f39596e6604d4f135d282361405a09af44"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\projected\\projected.glb",
+          "bytes": 3132836,
+          "sha256": "7323d82661bafd7e1681543e65a0d9917b50f66985da2de27c62b016309911a5"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\projected\\projection.json",
+          "bytes": 247,
+          "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\back.png",
+          "bytes": 480634,
+          "sha256": "38e1e5dfceffa0a912f66bc4c7e5408fde698d9572a48bb4b31f7b1a861977ee"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\blender-validation.json",
+          "bytes": 399,
+          "sha256": "e1c3ca4eee2e2c9abc5b9cd3afbbd94bffcef631d66c17a5ae97f331210a6015"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\front.png",
+          "bytes": 520304,
+          "sha256": "06724829d57254aa20a6a9d9fbb3f8e9c95839c896af793a1096b82ac5188490"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\high-resolution.blend",
+          "bytes": 4535369,
+          "sha256": "7df817bb4e31b56f96462af685d02c323cf9b33441dd4fe038a5afcdab224a77"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\pet.blend",
+          "bytes": 5034390,
+          "sha256": "e43fd1edd72914003e91390d7d0d1e6cca92d6c21bdab14efa153929a7f069b3"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\pet.glb",
+          "bytes": 3217436,
+          "sha256": "da25e03775121d449b3529cf147cdeed7908fd1873a47a6017912d099e5147d4"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\preview-scene.blend",
+          "bytes": 5081873,
+          "sha256": "577e15dc2600fb2899e9db9bc3dfff4cb3dddc71ce408cf6d270a535b9e25cd7"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\side.png",
+          "bytes": 511398,
+          "sha256": "2aa32fb3f6d32a2d6386dcfcafee3bf2bada814d32d403b5c2caee1e7e50f96c"
+        },
+        {
+          "path": "outputs\\tapir-d-smooth-018\\review\\three-quarter.png",
+          "bytes": 530209,
+          "sha256": "1ade55ef77720ed23ed9e14627973199936b893b712b4e8639f83505afe73fb8"
+        }
+      ]
+    }
+  ]
+}

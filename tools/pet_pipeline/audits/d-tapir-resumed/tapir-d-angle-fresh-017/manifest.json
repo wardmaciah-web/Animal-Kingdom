@@ -1,0 +1,49 @@
+{
+  "pipeline_version": "1.0.0",
+  "pet_id": "JungleTapir",
+  "species": "Tapir",
+  "biome": "Jungle",
+  "started_utc": "2026-10-08T23:02:36.306603+00:00",
+  "status": "failed",
+  "credits_used": 0,
+  "roblox_asset_ids": [],
+  "stages": [
+    {
+      "name": "prepare",
+      "seconds": 0.19159674644470215,
+      "exit_code": 0
+    },
+    {
+      "name": "generate",
+      "seconds": 94.92099165916443,
+      "exit_code": 0
+    },
+    {
+      "name": "project",
+      "seconds": 4.861983776092529,
+      "exit_code": 0
+    },
+    {
+      "name": "refine",
+      "seconds": 22.051198720932007,
+      "exit_code": 0
+    },
+    {
+      "name": "validate",
+      "seconds": 1.067918062210083,
+      "exit_code": 1
+    }
+  ],
+  "concept_sha256": "cec53efed93ba2657a652e692fca3ebbbfee0f712d1146e7183b89f61f1e3763",
+  "config_sha256": "8e692b3c613b6c147eab25201038aabccb5c4dc7b92c16dfbbab926616ba0642",
+  "style_references": {
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-front.jpg": "777a8c38c8b675db104e538a3b5167d51a63e502833e29d664874625aec2e7e7",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-side.jpg": "21494f75d7ac9bcc9b5e0be0dbb43d98c0f106b81b3935d1837db344eae57bfa",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b"
+  },
+  "approved_model_sha256": null,
+  "original_geometry_source": "fresh TripoSR inference; no prior mesh input",
+  "visual_qa": "pending",
+  "studio_qa": "pending",
+  "failure": "validate failed; see D:\\AnimalKingdom3D\\outputs\\tapir-d-angle-fresh-017\\validate.log"
+}

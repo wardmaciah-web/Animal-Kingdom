@@ -16,12 +16,24 @@ preserve Meadow/Forest family membership and prices, and confirm all future
 gates remain locked. Actual tree interaction QA is still pending. Source and
 idempotent Studio registration/verification scripts are committed together.
 
-Tapir work continues from saved inference, without rerunning the approved
-Ocelot. Trial 017 performed new inference from a 25-degree concept but failed
-depth/art QA. Trials 016/018 rebuild UVs after optimization and rebake the saved
-neural field; trials 019-022 investigate species coat refinement for unseen
-surfaces. These remain diagnostics pending complete visual and numeric QA.
-No paid calls or publication. The historical blocker notes below are superseded.
+Tapir trial 022 has completed: numeric validation passes (25,994 triangles,
+2048 texture, 2.8 height, both front paws grounded), but four-view art review
+rejects the side/back anatomy and dark fur-lock artifacts. The second original
+species production test is NOT accepted. Repeated downstream material/UV/fur
+experiments do not resolve the reconstructed rear silhouette. Trial 017 tested
+fresh angled-image inference and failed depth/art QA. No failed Tapir is imported.
+See `audits/d-tapir-resumed/review.json` for precise findings, checksums and next
+steps; full GLBs, Blender files, scene codes and logs remain on D:.
+
+The runtime/storage blocker is resolved. The current production blocker is
+Tapir reconstruction/art QA. Remaining scope is 249 approved models, including
+Tapir, future-tree mapping/prices, reward integration and live interaction QA.
+Do not repeat the successful Ocelot reproduction or promote rejected trials.
+Source/asset bindings and registration scripts are saved; a new full-place local
+save was attempted but not verified because Studio's native input produced no
+save dialog. No paid calls or publication; Meadow/Forest and future locks persist.
+
+## Historical continuation notes (superseded where stated above)
 
 Storage blocker verified for a third consecutive goal turn: C: is still at zero
 free bytes and Studio is absent. A 586,572,498-byte Roblox download cache was

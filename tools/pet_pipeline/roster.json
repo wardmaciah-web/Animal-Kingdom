@@ -108,6 +108,7 @@
       "registered": true,
       "confirmed_family_id": "Jungle_Shakeable_03",
       "production_template": "ReplicatedStorage.PetAssets.JungleOcelot",
+      "registration_evidence": "audits/ocelot-registration.json",
       "model_assets": [
         {
           "mesh_id": "86956296653033",
@@ -127,10 +128,11 @@
       "base_weight_kg": 45,
       "base_income": 99,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "concept_needed",
+      "status": "art_qa_failed_reconstruction_correction_needed",
       "model_asset_id": null,
       "glb": null,
-      "registered": false
+      "registered": false,
+      "latest_diagnostic_run": "tapir-d-coat-022"
     },
     {
       "pet_id": "JungleBinturong",

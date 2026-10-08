@@ -42,7 +42,25 @@ class ProductionGates(unittest.TestCase):
         from collections import Counter
         self.assertEqual(set(Counter(r['biome'] for r in rows).values()),{25})
         self.assertEqual(set(Counter(r['proposed_family_id'] for r in rows).values()),{5})
-        self.assertTrue(all(not r['registered'] and r['model_asset_id'] is None for r in rows))
+        # Registration is now real; require evidence instead of freezing all
+        # production slots in the original unregistered planning state.
+        for row in rows:
+            if not row['registered']:
+                self.assertIsNone(row['model_asset_id'])
+                continue
+            self.assertTrue(row['production_template'].startswith('ReplicatedStorage.PetAssets.'))
+            self.assertTrue(row['confirmed_family_id'].startswith(row['biome']+'_'))
+            self.assertTrue(row['glb'])
+            self.assertTrue(row['model_assets'])
+            for asset in row['model_assets']:
+                self.assertGreater(int(asset['mesh_id']),0)
+                self.assertGreater(int(asset['texture_id']),0)
+            evidence=p.read(p.HERE/row['registration_evidence'])
+            self.assertTrue(evidence['passed'])
+            self.assertEqual(evidence['pet'],row['pet_id'])
+            self.assertEqual(evidence['family'],row['confirmed_family_id'])
+            self.assertEqual(evidence['base_weight'],row['base_weight_kg'])
+            self.assertEqual(evidence['base_income'],row['base_income'])
     def test_vendored_source_matches_lock(self):
         for name,digest in p.read(p.HERE/'pipeline-lock.json')['vendor_files'].items():
             self.assertEqual(p.sha(p.HERE/name),digest,name)
