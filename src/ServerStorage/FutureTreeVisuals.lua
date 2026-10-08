@@ -207,11 +207,34 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ AncientRuins={["1"]="RuinsSacredBanyan",["2"]="RuinsMossOak",["3"]="RuinsStoneCedar",AK_AncientRuins_CypressTree="RuinsCypress",AK_AncientRuins_StylizedTree="RuinsCrownBaobab",Tree_Bare_5="RuinsSentinel",Tree_Cedar_2="RuinsRunicCedar",Tree_Cedar_3="RuinsSacredWillow",Willow_Dead_4="RuinsVineFig"},
  Ocean={Tree_Palm_6="OceanStaghorn",Willow_2="OceanKelp",Tree_Palm_1="OceanMangrove",Tree_Palm_3="OceanFanCoral",tree_palm="OceanSeaPalm",tree_palmShort="OceanAnemone",tree_palmBend="OceanPearlWillow",Tree_Palm_5="OceanBloomCoral"},
  Desert={cactus_short="DesertBarrelTree",cactus_tall="DesertColumn",Cactus_1="DesertSaguaro",Cactus_5="DesertPalm",Cactus_4="DesertAcacia",CactusFlowers_2="DesertBloom",BirchTree_Dead_5="DesertIronwood",Cactus_3="DesertJoshua"},
  Jungle={Tree_Oak_7="JungleBanyan",Tree_Palm_2="JungleKapok",Tree_Oak_8="JungleFig",CommonTree_5="JungleOrchid",PalmTree_1="JunglePalm",tree_palmDetailedShort="JungleFanPalm",tree_palmDetailedTall="JungleRainTree",tree_palmTall="JungleDragon"},
 }
 local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
+
+-- New tree meshes own rendering; narrow proxies prevent hidden legacy canopies blocking paths.
+local function normalizeCollision(tree,b)
+ if b~="Ocean" and b~="AncientRuins" then return end
+ local visual=tree:FindFirstChild("AK_FutureTreeVisual");if not visual then return end
+ local proxy=tree:FindFirstChild("AK_OverhaulTrunkCollider")
+ for _,p in ipairs(tree:GetDescendants()) do
+  if p:IsA("BasePart") and p~=proxy and not p:IsDescendantOf(visual) and p.Transparency==1 then
+   if p:GetAttribute("AK8OriginalCanCollide")==nil then
+    p:SetAttribute("AK8OriginalCanCollide",p.CanCollide);p:SetAttribute("AK8OriginalCanQuery",p.CanQuery);p:SetAttribute("AK8OriginalCanTouch",p.CanTouch)
+   end
+   p.CanCollide=false;p.CanQuery=false;p.CanTouch=false
+  end
+ end
+ if not proxy then proxy=Instance.new("Part");proxy.Name="AK_OverhaulTrunkCollider";proxy.Parent=tree end
+ local cf,size=visual:GetBoundingBox();local p=tree:GetPivot().Position
+ local floor=workspace:FindFirstChild(b) and workspace[b]:FindFirstChild(b.."Floor")
+ local ground=floor and floor.Position.Y+floor.Size.Y/2 or cf.Y-size.Y/2
+ proxy.Size=Vector3.new(5.5,12,5.5);proxy.CFrame=CFrame.new(p.X,ground+6,p.Z)
+ proxy.Transparency=1;proxy.CastShadow=false;proxy.Anchored=true;proxy.CanCollide=true;proxy.CanQuery=true;proxy.CanTouch=false
+end
+
 function M.Apply(scope)
  local report={replaced=0,skipped=0,biomes={}}
  if scope and protected[scope] then return report end
@@ -222,7 +245,8 @@ function M.Apply(scope)
   local name=recipe[family(tree)];local template=name and findTemplate(name)
   if not template then report.skipped+=1;continue end
   local previous=tree:FindFirstChild("AK_FutureTreeVisual")
-  if previous and previous:GetAttribute("QualityRevision")==3 and previous:GetAttribute("VisualTemplate")==name then report.skipped+=1;continue end
+  local revision=(name=="RuinsRunicCedar" or name=="RuinsSacredWillow") and 4 or 3
+  if previous and previous:GetAttribute("QualityRevision")==revision and previous:GetAttribute("VisualTemplate")==name then normalizeCollision(tree,b);report.skipped+=1;continue end
   local originalPivot=tree:GetPivot()
   if previous then
    local backup=game.ServerStorage:FindFirstChild("AK_FinalEight_Checkpoint_20261008") or Instance.new("Folder")
@@ -255,10 +279,11 @@ function M.Apply(scope)
     part.Enabled=false
    end
   end
-  visual:SetAttribute("BiomeId",b);visual:SetAttribute("VisualTemplate",name);visual:SetAttribute("VisualFamily",family(tree));visual:SetAttribute("FutureTreeVisual",true);visual:SetAttribute("QualityRevision",3)
+  visual:SetAttribute("BiomeId",b);visual:SetAttribute("VisualTemplate",name);visual:SetAttribute("VisualFamily",family(tree));visual:SetAttribute("FutureTreeVisual",true);visual:SetAttribute("QualityRevision",revision)
   visual.Parent=tree;Collection:AddTag(visual,"FutureBiomeTreeVisual")
   if tree:IsA("Model") and not tree.PrimaryPart then tree.WorldPivot=originalPivot end
   assert((tree:GetPivot().Position-originalPivot.Position).Magnitude<.001,"Tree pivot changed")
+  normalizeCollision(tree,b)
   report.replaced+=1;report.biomes[b]=(report.biomes[b] or 0)+1
  end
  for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b);if b=="Desert" then report.decorativeTrees=M.PolishDesertDecorations() end end end
@@ -287,6 +312,7 @@ function M.DecorateBiome(b)
     local localPos=floor.CFrame:PointToObjectSpace(pos)
     if math.abs(localPos.X)>floor.Size.X/2-5 or math.abs(localPos.Z)>floor.Size.Z/2-5 then clear=false end
     if b=="Ocean" and Vector2.new(localPos.X,localPos.Z).Magnitude<23 then clear=false end
+    if b=="AncientRuins" and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
     pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z)
    end
    if clear then
