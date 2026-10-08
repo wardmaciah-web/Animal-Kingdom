@@ -2,7 +2,14 @@
 local Collection=game:GetService("CollectionService")
 local Templates=game:GetService("ServerStorage"):WaitForChild("AK_FutureTreeTemplates")
 local AdditionalTemplates=game:GetService("ServerStorage"):FindFirstChild("AK_FinalEightTreeTemplates")
-local function findTemplate(name) return Templates:FindFirstChild(name) or (AdditionalTemplates and AdditionalTemplates:FindFirstChild(name)) end
+local function findTemplate(name)
+ local found=Templates:FindFirstChild(name) or (AdditionalTemplates and AdditionalTemplates:FindFirstChild(name))
+ if found then return found end
+ for _,biome in ipairs({"Ocean","AncientRuins","MagicalForest","Sky","Prehistoric","Mythical"}) do
+  local folder=game.ServerStorage:FindFirstChild("AK_"..biome.."TreeTemplates")
+  if folder and folder:FindFirstChild(name) then return folder[name] end
+ end
+end
 local M={}
 local recipes={
  Jungle={"Jungle1","Jungle2","Jungle3","Jungle4","Jungle5"},
@@ -200,6 +207,7 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ Ocean={Tree_Palm_6="OceanStaghorn",Willow_2="OceanKelp",Tree_Palm_1="OceanMangrove",Tree_Palm_3="OceanFanCoral",tree_palm="OceanSeaPalm",tree_palmShort="OceanAnemone",tree_palmBend="OceanPearlWillow",Tree_Palm_5="OceanBloomCoral"},
  Desert={cactus_short="DesertBarrelTree",cactus_tall="DesertColumn",Cactus_1="DesertSaguaro",Cactus_5="DesertPalm",Cactus_4="DesertAcacia",CactusFlowers_2="DesertBloom",BirchTree_Dead_5="DesertIronwood",Cactus_3="DesertJoshua"},
  Jungle={Tree_Oak_7="JungleBanyan",Tree_Palm_2="JungleKapok",Tree_Oak_8="JungleFig",CommonTree_5="JungleOrchid",PalmTree_1="JunglePalm",tree_palmDetailedShort="JungleFanPalm",tree_palmDetailedTall="JungleRainTree",tree_palmTall="JungleDragon"},
 }
@@ -234,7 +242,7 @@ function M.Apply(scope)
   for _,v in visual:GetDescendants() do
    if v:IsA("LuaSourceContainer") or v:IsA("PackageLink") then v:Destroy()
    elseif v:IsA("BasePart") then v.Anchored=true;v.CanCollide=false;v.CanTouch=false;v.CanQuery=false
-    if v.Name:lower():find("foliage") or v.Name:lower():find("canopy") then v.Name="Leaves_"..v.Name end
+    if v.Name:lower():find("foliage") or v.Name:lower():find("canopy") or v.Name:lower():find("leaves") then v.Name="Leaves_"..v.Name end
    end
   end
   local originalParts=tree:GetDescendants();if tree:IsA("BasePart") then table.insert(originalParts,tree) end
@@ -275,7 +283,12 @@ function M.DecorateBiome(b)
    if b=="Jungle" and (pos.X<80 or pos.X>279 or pos.Z<330 or pos.Z>505) then clear=false end
    if b=="Desert" and (pos.X<100 or pos.X>282 or pos.Z<608 or pos.Z>790 or Vector2.new(pos.X-187,pos.Z-705).Magnitude<32) then clear=false end
    local biomeFolder=workspace:FindFirstChild(b);local floor=biomeFolder and biomeFolder:FindFirstChild(b.."Floor")
-   if floor and floor:IsA("BasePart") then pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z) end
+   if floor and floor:IsA("BasePart") then
+    local localPos=floor.CFrame:PointToObjectSpace(pos)
+    if math.abs(localPos.X)>floor.Size.X/2-5 or math.abs(localPos.Z)>floor.Size.Z/2-5 then clear=false end
+    if b=="Ocean" and Vector2.new(localPos.X,localPos.Z).Magnitude<23 then clear=false end
+    pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z)
+   end
    if clear then
     local m=template:Clone();m.Name=b.."_Understory_"..i.."_"..j;local cf,sz=m:GetBoundingBox()
     m:ScaleTo(m:GetScale()*(2.3+(i%4)*.5)/sz.Y);cf,sz=m:GetBoundingBox()
