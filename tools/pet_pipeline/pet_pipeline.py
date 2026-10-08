@@ -74,6 +74,17 @@ def configure(path, runtime, output):
     cfg['pipeline_version'] = VERSION
     return cfg
 
+def check_hardware(hardware):
+    """Reject a run before loading model weights; retain the measured preflight."""
+    for field, minimum in (('free_physical', 4*1024**3), ('free_commit', 6*1024**3)):
+        if field in hardware and hardware[field] < minimum:
+            raise RuntimeError(f'Insufficient {field}: {hardware[field]} bytes; need {minimum}. See preflight.json')
+    if hardware['gpu_probe_exit_code'] != 0:
+        raise RuntimeError('NVIDIA preflight failed; generation not started')
+    gpu_free = [int(row.rsplit(',', 1)[-1].strip()) for row in hardware['gpu'].splitlines()]
+    if not gpu_free or gpu_free[0] < 7*1024:
+        raise RuntimeError('At least 7 GiB free VRAM on the first GPU is required')
+
 def generate(args):
     runtime = Path(args.runtime_root).resolve(); output = Path(args.output).resolve()
     cfg = configure(args.config, runtime, output)
@@ -88,7 +99,15 @@ def generate(args):
         if sha(HERE/relative) != expected: raise ValueError(f'Vendored source changed: {relative}')
     output.mkdir(parents=True)
     effective = output/'effective-config.json'; write(effective, cfg)
-    write(output/'preflight.json',preflight(runtime))
+    hardware = preflight(runtime)
+    write(output/'preflight.json', hardware)
+    try:
+        check_hardware(hardware)
+    except Exception as exc:
+        write(output/'manifest.json', {'status':'preflight_blocked', 'failure':str(exc),
+              'pet_id':cfg['pet_id'], 'credits_used':0, 'stages':[], 'visual_qa':'pending',
+              'studio_qa':'pending', 'roblox_asset_ids':[]})
+        raise
     manifest = {'pipeline_version': VERSION, 'pet_id': cfg['pet_id'], 'species': cfg['species'],
                 'biome': cfg['biome'], 'started_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
                 'status': 'running', 'credits_used': 0, 'roblox_asset_ids': [], 'stages': [],
@@ -100,9 +119,20 @@ def generate(args):
     write(output/'manifest.json', manifest)
     env = os.environ.copy()
     for key, rel in {'TEMP':'temp','TMP':'temp','HF_HOME':'cache/huggingface',
-                     'TORCH_HOME':'cache/torch','U2NET_HOME':'cache/u2net'}.items():
+                     'HF_HUB_CACHE':'cache/huggingface/hub',
+                     'HUGGINGFACE_HUB_CACHE':'cache/huggingface/hub',
+                     'TORCH_HOME':'cache/torch','U2NET_HOME':'cache/u2net',
+                     'TORCH_EXTENSIONS_DIR':'cache/torch-extensions',
+                     'PIP_CACHE_DIR':'cache/pip','UV_CACHE_DIR':'cache/uv',
+                     'XDG_CACHE_HOME':'cache','NUMBA_CACHE_DIR':'cache/numba',
+                     'CUDA_CACHE_PATH':'cache/cuda','MPLCONFIGDIR':'cache/matplotlib',
+                     'BLENDER_USER_CONFIG':'cache/blender/config',
+                     'BLENDER_USER_SCRIPTS':'cache/blender/scripts',
+                     'BLENDER_USER_DATAFILES':'cache/blender/datafiles'}.items():
         (runtime/rel).mkdir(parents=True, exist_ok=True); env[key] = str(runtime/rel)
-    env.update(PYTHONUNBUFFERED='1', CUDA_MODULE_LOADING='LAZY', HF_HUB_DISABLE_SYMLINKS_WARNING='1')
+    env.update(PYTHONUNBUFFERED='1', PYTHONDONTWRITEBYTECODE='1', PYTHONNOUSERSITE='1',
+               AK_3D_ROOT=str(runtime), CUDA_MODULE_LOADING='LAZY',
+               HF_HUB_DISABLE_SYMLINKS_WARNING='1', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
     stages = [('prepare', inference), ('generate', inference), ('project', inference),
               ('refine', blender), ('validate', inference)]
     try:
@@ -145,7 +175,8 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     sub=parser.add_subparsers(dest='command',required=True)
     p=sub.add_parser('generate')
-    p.add_argument('--config',required=True);p.add_argument('--runtime-root',required=True)
+    p.add_argument('--config',required=True)
+    p.add_argument('--runtime-root',default=os.environ.get('AK_3D_ROOT','D:/AnimalKingdom3D'))
     p.add_argument('--output',required=True);p.set_defaults(func=generate)
     p=sub.add_parser('review')
     p.add_argument('--run',required=True);p.add_argument('--evidence',required=True)

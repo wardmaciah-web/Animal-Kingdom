@@ -7,8 +7,17 @@ and the approved GLB are inputs for comparison and are never overwritten.
 Run from the project directory:
 
 ```powershell
-& E:/AnimalKingdom3D/tools/deps-stage/Scripts/python.exe tools/pet_pipeline/pet_pipeline.py generate --config tools/pet_pipeline/configs/ocelot.json --runtime-root E:/AnimalKingdom3D --output E:/AnimalKingdom3D/outputs/ocelot-new-run
+& ./tools/pet_pipeline/run-pet-factory.ps1 -Recipe ocelot
 ```
+
+The launcher defaults to `D:/AnimalKingdom3D`, configures the parent Python process
+and all child stages to keep temporary files and caches there, and creates a new
+timestamped output directory. Use `-Recipe tapir` for the second-species test,
+`-RuntimeRoot` to relocate, and `-Output` to select a new output directory.
+Direct Python invocation accepts `--runtime-root` or `AK_3D_ROOT`, defaulting to D:.
+The generation gate requires 4 GiB free RAM, 6 GiB free system commit, 7 GiB free
+VRAM on the first GPU and 2 GiB free output storage. These are admission thresholds,
+not guarantees of peak memory use. Models load from the verified offline caches.
 
 Every run requires a new output directory. A recipe specifies species, biome,
 concept, style references, target dimensions, neural generation, texture atlas,

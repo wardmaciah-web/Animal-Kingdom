@@ -1,5 +1,30 @@
 # Implementation checkpoint — 2026-10-08
 
+## D: migration continuation
+
+The complete runtime now lives at `D:/AnimalKingdom3D`. Before relocation edits,
+all 70,127 files (18,177,439,800 bytes) matched E: by SHA256. One skipped relative
+Hugging Face symlink was materialized and hash-verified. The Python junction and
+51 copied environment/launcher/script files were repaired for D:. E: is retained.
+See `audits/d-migration-verification.json`, `d-relocation-changes.json` and the
+complete runtime audit CSV. No files were removed from the main game repository.
+
+Fortnite is absent. Initial hardware: RTX 3060 12GB, 9,479 MiB free VRAM,
+7.2 GiB available RAM, 8.5 GiB commit headroom and 445.8 GiB free on D:.
+Both drive write/read probes passed. D: PyTorch CUDA arithmetic and Blender 4.5.3
+imports pass. Nine safety tests pass, including low-commit and GPU admission gates.
+`runtime-env.ps1` and `run-pet-factory.ps1` isolate caches/temp on D: and use offline
+model lookup. User-level `AK_3D_ROOT` points to D:; system TEMP is not modified.
+
+Fresh Ocelot run `outputs/ocelot-d-reproduction-001` passed model loading and fresh
+neural inference, completed texture baking and entered projection. This clears
+the previous loading crash, but full reproduction/visual QA is still pending.
+The recipe, pinned vendor source and model weights are unchanged.
+Live read-only readiness checks still pass Meadow/Forest family bindings; all ten
+future ContentReady gates remain false. This does not certify interaction QA.
+
+The older checkpoint below is retained as failure history.
+
 User approved the original free Ocelot. Its GLB SHA256 is
 `d00c5ceb074ec9e67ec8eeaaae7a358d7cc4f4dd04e9b475958eada868b67cc7`.
 The original asset is preserved unchanged. Approval of that asset is not evidence

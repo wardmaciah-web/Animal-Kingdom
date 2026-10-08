@@ -1,0 +1,16 @@
+{
+    "source":  "E:\\AnimalKingdom3D",
+    "destination":  "D:\\AnimalKingdom3D",
+    "verified_utc":  "2026-10-08T21:21:04.3147503Z",
+    "source_files":  70127,
+    "destination_files":  70127,
+    "source_bytes":  18177439800,
+    "hashed_files":  70127,
+    "issues":  [
+
+               ],
+    "passed":  true,
+    "source_deleted":  false,
+    "excluded_junction":  "tools/python/cpython-3.11-windows-x86_64-none (recreate targeting D after verification)",
+    "repair":  "Dereferenced skipped relative Hugging Face config symlink; bytes and SHA256 verified"
+}

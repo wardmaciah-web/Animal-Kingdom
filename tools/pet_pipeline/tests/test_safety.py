@@ -46,5 +46,13 @@ class ProductionGates(unittest.TestCase):
     def test_vendored_source_matches_lock(self):
         for name,digest in p.read(p.HERE/'pipeline-lock.json')['vendor_files'].items():
             self.assertEqual(p.sha(p.HERE/name),digest,name)
+    def test_insufficient_commit_blocks_even_with_free_vram(self):
+        with self.assertRaisesRegex(RuntimeError, 'free_commit'):
+            p.check_hardware({'free_physical':8*1024**3,'free_commit':2*1024**3,
+                              'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_wrong_gpu_or_failed_probe_blocks(self):
+        for hardware in ({'gpu_probe_exit_code':1,'gpu':''},
+                         {'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 1000'}):
+            with self.assertRaises(RuntimeError): p.check_hardware(hardware)
 
 if __name__=='__main__':unittest.main()
