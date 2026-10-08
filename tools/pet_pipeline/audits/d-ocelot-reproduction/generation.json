@@ -1,0 +1,15 @@
+{
+  "backend": "local TripoSR",
+  "precision": "fp16 weights/autocast",
+  "fresh_inference": true,
+  "seed": 42,
+  "mc_resolution": 256,
+  "weights_sha256": "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+  "triangles": 144854,
+  "vertices": 114490,
+  "runtime_seconds": 66.4949243068695,
+  "peak_vram_bytes": 1684560896,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "torch": "2.5.1+cu124",
+  "credits_used": 0
+}

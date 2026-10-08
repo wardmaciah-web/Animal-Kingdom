@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "matte_body": true,
+    "chubby_body": true,
+    "two_front_paws_grounded": true,
+    "rounded_head": true,
+    "sitting_pose": true,
+    "four_view_comparison": true,
+    "appropriate_surface_detail": true,
+    "no_visible_texture_failure": true,
+    "large_expressive_eyes": true,
+    "original_species": true
+  },
+  "glb_sha256": "e8785f3f4cae8fed19a49ad4a717304bf8d23c97d39a334047e6baac63332c73",
+  "reviewer": "Codex visual review",
+  "notes": "Inspected front, side, back and three-quarter renders against black bear and approved Ocelot. Fresh species inference, large amber eyes, rounded head/chubby seated body, grounded front paws and sculpted matte fur match approved baseline. Side/back inferred texture remains softer, as in approved reference; no new seams or texture failures observed. Exact geometry distance 0 and front SSIM 1.0. Studio import and gameplay QA remain pending.",
+  "decision": "accepted",
+  "reviewed_utc": "2026-10-08T21:25:28.783676+00:00"
+}

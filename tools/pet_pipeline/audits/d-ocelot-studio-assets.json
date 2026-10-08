@@ -1,0 +1,41 @@
+{
+  "place_id": 132313449035787,
+  "run": "ocelot-d-reproduction-001",
+  "imported_name": "JungleOcelot_D_FreeReview",
+  "creator": "Me",
+  "fresh_asset_check": {
+    "path": "Workspace.AK_JunglePetReview.PlushStylizedReview.JungleOcelot_D_FreshAssetCheck",
+    "meshes": {
+      "1": {
+        "loaded": true,
+        "mesh": "rbxassetid://86956296653033",
+        "texture": "rbxassetid://89955741043720"
+      },
+      "2": {
+        "loaded": true,
+        "mesh": "rbxassetid://83705741042121",
+        "texture": "rbxassetid://89955741043720"
+      }
+    },
+    "fetch": {
+      "1": {
+        "id": "rbxassetid://86956296653033",
+        "status": "Enum.AssetFetchStatus.Success"
+      },
+      "2": {
+        "id": "rbxassetid://83705741042121",
+        "status": "Enum.AssetFetchStatus.Success"
+      },
+      "3": {
+        "id": "rbxassetid://89955741043720",
+        "status": "Enum.AssetFetchStatus.Success"
+      },
+      "4": {
+        "id": "rbxassetid://89955741043720",
+        "status": "Enum.AssetFetchStatus.Success"
+      }
+    }
+  },
+  "interaction_qa": "not_run",
+  "game_published": false
+}

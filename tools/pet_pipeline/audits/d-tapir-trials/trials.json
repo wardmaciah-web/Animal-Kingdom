@@ -1,0 +1,93 @@
+﻿[
+    {
+        "run":  "tapir-d-first-species-001",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  true,
+        "numeric_pass":  false,
+        "numeric_errors":  [
+                               "Exceeds depth_max"
+                           ],
+        "glb_sha256":  "8eaf856c6b1f596252c863cc7c0863c1bac3a5782631c7fcc408889cf608e02f",
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-first-species-001"
+    },
+    {
+        "run":  "tapir-d-frontal-fresh-007",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  true,
+        "numeric_pass":  false,
+        "numeric_errors":  [
+                               "Exceeds depth_max"
+                           ],
+        "glb_sha256":  "9590626c65b2689b502d608cbd84ab5c558ae42802de967438ec937b631bdef5",
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-frontal-fresh-007"
+    },
+    {
+        "run":  "tapir-d-multiview-008",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  false,
+        "numeric_pass":  false,
+        "numeric_errors":  [
+                               "Exceeds depth_max"
+                           ],
+        "glb_sha256":  "e04dde807307fa26a1ed99b7d45fced857321c8547b931ce98570b7cf761ef9b",
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-multiview-008"
+    },
+    {
+        "run":  "tapir-d-refinement-002",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  false,
+        "numeric_pass":  false,
+        "numeric_errors":  [
+                               "Incorrect exported height",
+                               "Exceeds depth_max"
+                           ],
+        "glb_sha256":  "de315c660026ac4c4146bcd42fee2591ff574371a23ecccb05dd5aac1b2c32c4",
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-refinement-002"
+    },
+    {
+        "run":  "tapir-d-refinement-003",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  false,
+        "numeric_pass":  null,
+        "numeric_errors":  null,
+        "glb_sha256":  null,
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-refinement-003"
+    },
+    {
+        "run":  "tapir-d-refinement-004",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  false,
+        "numeric_pass":  null,
+        "numeric_errors":  null,
+        "glb_sha256":  null,
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-refinement-004"
+    },
+    {
+        "run":  "tapir-d-texture-005",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  false,
+        "numeric_pass":  true,
+        "numeric_errors":  [
+
+                           ],
+        "glb_sha256":  "694bf61bf0c43d80334bb38f4786f21be8891b0747a8942b48dec1a14d8960a4",
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-texture-005"
+    },
+    {
+        "run":  "tapir-d-texture-006",
+        "status":  "rejected_not_imported",
+        "fresh_inference":  false,
+        "numeric_pass":  null,
+        "numeric_errors":  null,
+        "glb_sha256":  null,
+        "art_qa":  "Rejected: eye/face artifacts, mottled texture or malformed geometry. Latest multiview trial still has jagged eyes and ear detail; all candidates remain diagnostic.",
+        "runtime_path":  "D:\\AnimalKingdom3D\\outputs\\tapir-d-texture-006"
+    }
+]

@@ -16,12 +16,44 @@ imports pass. Nine safety tests pass, including low-commit and GPU admission gat
 `runtime-env.ps1` and `run-pet-factory.ps1` isolate caches/temp on D: and use offline
 model lookup. User-level `AK_3D_ROOT` points to D:; system TEMP is not modified.
 
-Fresh Ocelot run `outputs/ocelot-d-reproduction-001` passed model loading and fresh
-neural inference, completed texture baking and entered projection. This clears
-the previous loading crash, but full reproduction/visual QA is still pending.
-The recipe, pinned vendor source and model weights are unchanged.
+Fresh Ocelot run `outputs/ocelot-d-reproduction-001` passed all local stages and
+four-view visual review. Bidirectional geometry distance to the approved asset
+is zero; front-render SSIM is 1.0. The recipe, source and weights are unchanged.
+Native Studio import succeeded. Body mesh 86956296653033, fur mesh 83705741042121
+and texture 89955741043720 were independently recreated/preloaded successfully.
+See `audits/d-ocelot-reproduction` and `audits/d-ocelot-studio-assets.json`.
+The review scene's saved persistence is unverified; the uploaded assets and local
+GLB are preserved. No gameplay registration or reward interaction is certified.
 Live read-only readiness checks still pass Meadow/Forest family bindings; all ten
 future ContentReady gates remain false. This does not certify interaction QA.
+
+Two fresh Tapir inferences and six downstream diagnostics are preserved under
+`D:/AnimalKingdom3D/outputs/tapir-d-*`. None passes complete art QA. The latest
+four-view texture diagnostic retains jagged eyes, mottled fur and malformed ear
+detail, and exceeds the 2.5 depth limit (2.52735). Both front-paw numeric floor
+checks pass; that does not establish acceptable anatomy. No thresholds were
+relaxed and no failed candidate was imported or registered. The frontal recipe
+is explicitly diagnostic. Its concept was rendered from an existing historical
+Tapir reference asset; only the rendered images feed fresh TripoSR inference.
+No paid generation was invoked. Experimental symmetry/projection scripts remain
+separate from production refinement, which is unchanged.
+
+BLOCKER: C: has zero free bytes. Studio logged SQLite disk-full errors against
+its C: rbx-storage.db-wal and then exited following a failed file write. Native
+imports and live tree interaction QA cannot continue in that state. Studio's
+78 screenshot cache files were copied and individually hash-verified on D:,
+then the exact original cache directory was redirected with a junction. Other
+activity consumed the small amount recovered; C: remains full. No unrelated
+files were deleted and no user processes were terminated. D: still has over
+428 GiB free. Logs and relocation evidence are in the runtime audit directory.
+
+Resume: restore adequate C: headroom for Studio and verify it stays available;
+reopen the test place and recreate the Ocelot review from its uploaded IDs if
+needed; finish a distinct second species that passes four-view art and geometry
+QA; then produce/import/register the 250 planned future-biome pets in batches,
+map families and test every tree reward loop. Keep all future gates locked until
+their QA passes. E: remains intact until the full D: pipeline is verified.
+The full requested goal is incomplete. No Roblox game publication occurred.
 
 The older checkpoint below is retained as failure history.
 
