@@ -1,0 +1,11 @@
+﻿{
+    "timestamp":  "2026-10-08T22:00:51.2348027Z",
+    "c_free_bytes":  0,
+    "studio_processes":  0,
+    "relocation_candidate":  "C:/Users/Kenny/AppData/Local/Roblox/Downloads",
+    "candidate_bytes":  586572498,
+    "proposed_destination":  "D:/AnimalKingdom3D/cache/roblox-downloads",
+    "approval_review":  "Rejected: blocked by policy",
+    "mutation_executed":  false,
+    "action":  "Do not retry removal through alternate tool or shell. Local D texture diagnostic continues; Studio requires external storage recovery."
+}

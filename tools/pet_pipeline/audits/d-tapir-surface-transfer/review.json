@@ -1,0 +1,10 @@
+﻿{
+    "status":  "rejected_not_imported",
+    "numeric_pass":  true,
+    "art_pass":  false,
+    "reason":  "Bounds-aligned nearest-surface texture transfer produces hard patches, damaged eye outlines and misplaced material regions. It does not meet approved Ocelot/bear quality.",
+    "source":  "Fresh TripoSR Tapir 007 geometry; existing owned Tapir texture only; no source geometry reused",
+    "prior_run_014":  "Cancelled inefficient empty-atlas pixel queries; 015 completed surface-only query",
+    "paid_calls":  0,
+    "next_action":  "Keep 012 as the clearest front diagnostic, not an approved pet. Resolve registration/anatomy before promoting. Restore C storage and Studio before mandatory game integration and interaction QA."
+}

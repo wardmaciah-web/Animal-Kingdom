@@ -1,0 +1,8 @@
+{
+  "fresh_inference": false,
+  "source_run": "tapir-d-frontal-fresh-007",
+  "geometry_changed_by_projection": false,
+  "preparation": "Fresh TripoSR mesh smoothed, decimated to 18000 triangles, depth scaled .975, re-unwrapped before projection",
+  "method": "Same-species owned source surface color transferred to freshly inferred optimized mesh; bounds alignment; no source geometry reused",
+  "new_paid_calls": 0
+}

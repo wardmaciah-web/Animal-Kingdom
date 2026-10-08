@@ -2,6 +2,24 @@
 
 ## D: migration continuation
 
+Storage blocker verified for a third consecutive goal turn: C: is still at zero
+free bytes and Studio is absent. A 586,572,498-byte Roblox download cache was
+identified as a possible relocation target. The proposed copy/hash-verification,
+original removal and D: junction operation was rejected by automatic approval
+review with reason "blocked by policy". It did not execute; do not retry the
+same removal through another shell or tool. External C: storage recovery is now
+required for Studio integration and tree-interaction QA.
+
+Surface-transfer diagnostic 015 completed after cancelling 014's inefficient
+queries over empty atlas pixels. It passes numeric validation but visibly fails
+art QA (patches, damaged eye borders, misplaced texture regions). It remains
+rejected, with no imported/registered Tapir. Source geometry is the fresh 007
+inference; only material color was sampled from the existing owned reference.
+Evidence and the diagnostic script are in `audits/d-tapir-surface-transfer`.
+No generation process remains running. The goal is blocked, not complete; after
+storage recovery resume second-species correction and fresh QA, then the full
+250-pet production/integration/tree-testing scope. Keep all future gates locked.
+
 Latest continuation: Studio remains absent and C: remains at zero bytes. No
 default Hugging Face, Torch or pip cache was found on C: to relocate safely.
 Local diagnostics 009-013 continued on D:. Disabling decimation reduced texture
