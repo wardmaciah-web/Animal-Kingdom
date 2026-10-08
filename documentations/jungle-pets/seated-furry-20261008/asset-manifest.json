@@ -1,0 +1,269 @@
+{
+  "status": "ready_for_user_visual_approval",
+  "date": "2026-10-08",
+  "run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+  "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+  "style_version": 3,
+  "review_folder": "Workspace.AK_JunglePetReview.SeatedFurryReview",
+  "preserved_review": "ServerStorage.AK_JungleSeatedBeforeRevision_20261008_145855",
+  "models": [
+    {
+      "name": "Rainstripe Tapir",
+      "slug": "tapir",
+      "asset_id": "70531496785746",
+      "mesh_id": "94683429753835",
+      "publication": {
+        "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+        "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+        "publication_id": "d6be435f-b2d4-4f43-9708-4bb77e683e33",
+        "status": "ready",
+        "asset_type": "Model",
+        "asset_id": "70531496785746",
+        "creator": {
+          "id": "3009757271",
+          "type": "user"
+        },
+        "connection_id": "718e04c2-533c-49fb-9683-e1ef6c7a3b65",
+        "moderation_state": "approved",
+        "safe_error_code": null,
+        "safe_error": null,
+        "publisher_profile_version": "roblox-model-v1"
+      },
+      "source": {
+        "status": "done",
+        "artifacts": [
+          {
+            "artifact_ref": "mcp-artifact:7ea2383b-8ff5-497e-8615-a8ecd3bc14ba:0",
+            "kind": "model",
+            "index": 0,
+            "url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/7ea2383b-8ff5-497e-8615-a8ecd3bc14ba/e4292a4deea5845806ecf1e3cbcb152d47d7850cfea7e9017247f95a79bd3701.glb"
+          }
+        ],
+        "model_urls": {
+          "glb": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/7ea2383b-8ff5-497e-8615-a8ecd3bc14ba/e4292a4deea5845806ecf1e3cbcb152d47d7850cfea7e9017247f95a79bd3701.glb",
+          "thumbnail": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/d4a525db-94b4-4b0c-a996-711232f13b8a/chat/7ea2383b-8ff5-497e-8615-a8ecd3bc14ba-thumb.png",
+          "base_color": null
+        },
+        "provider_task_id": "2cf209d9-110f-41fd-94e4-3aab661bf60d"
+      },
+      "inspection": {
+        "file": "tapir.glb",
+        "sha256": "e4292a4deea5845806ecf1e3cbcb152d47d7850cfea7e9017247f95a79bd3701",
+        "bytes": 12705344,
+        "triangles": 16167,
+        "vertices": 9971,
+        "bounds": {
+          "min": [
+            -0.499755859375,
+            -0.454345703125,
+            -0.344482421875
+          ],
+          "max": [
+            0.499755859375,
+            0.454345703125,
+            0.344482421875
+          ],
+          "dimensions": [
+            0.99951171875,
+            0.90869140625,
+            0.68896484375
+          ]
+        },
+        "images": [
+          {
+            "name": "Color_2cf209d9-110f-41fd-94e4-3aab661bf60d",
+            "mimeType": "image/jpeg",
+            "path": "tapir_texture_0.jpg",
+            "bytes": 4440859,
+            "sha256": "4e111ad79e9bfb9a971300c33fc0a2faded602cdc99df4394f40679e154ccd7d"
+          },
+          {
+            "name": "ORM_2cf209d9-110f-41fd-94e4-3aab661bf60d",
+            "mimeType": "image/jpeg",
+            "path": "tapir_texture_1.jpg",
+            "bytes": 1607842,
+            "sha256": "d030eb797960d2c655874f5c01697c9ea6f9e9421cc35e2ba5c9715041fae80f"
+          },
+          {
+            "name": "NormalGL_2cf209d9-110f-41fd-94e4-3aab661bf60d",
+            "mimeType": "image/png",
+            "path": "tapir_texture_2.png",
+            "bytes": 6141469,
+            "sha256": "7fc6072b51412564f52f45a7775b7b8cb3bdc30fec7df71858ab2850a47346cb"
+          }
+        ],
+        "materials": [
+          {
+            "name": "tripo_material_2cf209d9-110f-41fd-94e4-3aab661bf60d",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "baseColorTexture": {
+                "index": 0
+              },
+              "metallicFactor": 1,
+              "roughnessFactor": 1,
+              "metallicRoughnessTexture": {
+                "index": 1
+              }
+            },
+            "normalTexture": {
+              "index": 2,
+              "scale": 1
+            },
+            "doubleSided": false
+          }
+        ]
+      },
+      "front_foot_settlement_studs": 0.003009134874,
+      "review_height_studs": 2.8,
+      "source_model_file": "tapir.glb"
+    },
+    {
+      "name": "Canopy Ocelot",
+      "slug": "ocelot",
+      "asset_id": "80456788433707",
+      "mesh_id": "129768693773146",
+      "publication": {
+        "conversation_id": "a253c260-aa54-49c4-ad8b-be719f15482c",
+        "conversation_url": "/studio?tab=chat&conversation=a253c260-aa54-49c4-ad8b-be719f15482c",
+        "publication_id": "4c852da5-b710-4a16-af23-e4eddaf90ddb",
+        "status": "ready",
+        "asset_type": "Model",
+        "asset_id": "80456788433707",
+        "creator": {
+          "id": "3009757271",
+          "type": "user"
+        },
+        "connection_id": "718e04c2-533c-49fb-9683-e1ef6c7a3b65",
+        "moderation_state": "approved",
+        "safe_error_code": null,
+        "safe_error": null,
+        "publisher_profile_version": "roblox-model-v1"
+      },
+      "source": {
+        "status": "done",
+        "artifacts": [
+          {
+            "artifact_ref": "mcp-artifact:a9cf5ef3-ca71-4c2f-87c6-df0d477a616d:0",
+            "kind": "model",
+            "index": 0,
+            "url": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/a9cf5ef3-ca71-4c2f-87c6-df0d477a616d/eba09de09f06f2d7ab9f3846714b714114544ca5a2acc10960f7e3f1dd71c107.glb"
+          }
+        ],
+        "model_urls": {
+          "glb": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-models/d4a525db-94b4-4b0c-a996-711232f13b8a/_forgegui-publication/a9cf5ef3-ca71-4c2f-87c6-df0d477a616d/eba09de09f06f2d7ab9f3846714b714114544ca5a2acc10960f7e3f1dd71c107.glb",
+          "thumbnail": "https://azyjlkhpdgafuobyxoax.supabase.co/storage/v1/object/public/asset-images/d4a525db-94b4-4b0c-a996-711232f13b8a/chat/a9cf5ef3-ca71-4c2f-87c6-df0d477a616d-thumb.png",
+          "base_color": null
+        },
+        "provider_task_id": "1fbf6723-13e3-4768-81f2-e43e8a33aa64"
+      },
+      "inspection": {
+        "file": "ocelot.glb",
+        "sha256": "eba09de09f06f2d7ab9f3846714b714114544ca5a2acc10960f7e3f1dd71c107",
+        "bytes": 19322556,
+        "triangles": 15617,
+        "vertices": 16741,
+        "bounds": {
+          "min": [
+            -0.468994140625,
+            -0.499755859375,
+            -0.375732421875
+          ],
+          "max": [
+            0.468994140625,
+            0.499755859375,
+            0.3757323920726776
+          ],
+          "dimensions": [
+            0.93798828125,
+            0.99951171875,
+            0.7514648139476776
+          ]
+        },
+        "images": [
+          {
+            "name": "Color_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+            "mimeType": "image/jpeg",
+            "path": "ocelot_texture_0.jpg",
+            "bytes": 6767849,
+            "sha256": "f66074900acb404afba6aae2f1e2c37e88a06afd38dab1623b5a90c2a8d1ffc6"
+          },
+          {
+            "name": "ORM_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+            "mimeType": "image/jpeg",
+            "path": "ocelot_texture_1.jpg",
+            "bytes": 2709316,
+            "sha256": "24abec78161fd3e2de9ec94b546471a0c148aa0ef9ce4135def94705a9fbdcdd"
+          },
+          {
+            "name": "NormalGL_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+            "mimeType": "image/png",
+            "path": "ocelot_texture_2.png",
+            "bytes": 9214065,
+            "sha256": "5aefdbcc1cf9f694c54bbe5a149572b49e6a267cf94fdabeeeed9ebcf556c7d7"
+          }
+        ],
+        "materials": [
+          {
+            "name": "tripo_material_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+            "pbrMetallicRoughness": {
+              "baseColorFactor": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "baseColorTexture": {
+                "index": 0
+              },
+              "metallicFactor": 1,
+              "roughnessFactor": 1,
+              "metallicRoughnessTexture": {
+                "index": 1
+              }
+            },
+            "normalTexture": {
+              "index": 2,
+              "scale": 1
+            },
+            "doubleSided": true
+          }
+        ]
+      },
+      "front_foot_settlement_studs": 0.02188568637,
+      "review_height_studs": 2.8,
+      "source_model_file": "ocelot.glb"
+    }
+  ],
+  "credits": {
+    "image_jobs": 4,
+    "high_quality_3d_jobs": 2,
+    "publication_jobs": 2,
+    "actual_generation_credits": null,
+    "reason": "ForgeGUI responses expose no charged amounts; image responses say commitDeferred. Publication contract says no generation charged.",
+    "purchases": 0
+  },
+  "validation": {
+    "source_glb": "Reopened, parsed GLB v2, finite vertices, valid indices, UVs and normals, embedded textures extracted and decoded at 4096x4096.",
+    "roblox": "Both durable model asset IDs inserted twice; second import mesh and all four SurfaceAppearance bindings match, no scripts.",
+    "visual": "Front and three-quarter Studio screenshots inspected. Seated hindquarters, two forward forelegs, furry organic textures, no Tapir crest; both forefeet settled to floor. Same height2.8 and shared existing Lighting for reference copies.",
+    "originality": "Original image-to-3D output hashes and mesh IDs; existing pet meshes used only as untouched style references. Ocelot absent live registry.",
+    "limits": "Review assets only; no animation/gameplay integration or user art approval claimed. Old EditableMesh/EditableImage review changes preserved in Studio backup only; no supported durable export endpoint. New GLBs, textures and Roblox model assets are durable.",
+    "texture_enhancement": "Fur-refined image references plus high-quality generation produced embedded 4K color/normal/ORM textures. No separate ForgeGUI texture-enhancement tool exposed."
+  },
+  "reopen_evidence": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"maps\":{\"color\":\"rbxassetid://76315482903672\",\"metalness\":\"rbxassetid://107534272446029\",\"normal\":\"rbxassetid://78956793565092\",\"roughness\":\"rbxassetid://107906618078026\"},\"scripts\":0,\"name\":\"RainstripeTapirReopenCheck\",\"mesh\":\"rbxassetid://94683429753835\",\"size\":\"0.99951171875, 0.90869140625, 0.68896484375\"},\"2\":{\"maps\":{\"color\":\"rbxassetid://106442312609257\",\"metalness\":\"rbxassetid://124976890100361\",\"normal\":\"rbxassetid://79333783212475\",\"roughness\":\"rbxassetid://73480597324633\"},\"scripts\":0,\"name\":\"CanopyOcelotReopenCheck\",\"mesh\":\"rbxassetid://129768693773146\",\"size\":\"0.93798828125, 0.99951171875, 0.75146484375\"}}"
+      }
+    ],
+    "isError": false
+  }
+}
+

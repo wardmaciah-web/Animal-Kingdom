@@ -1,0 +1,83 @@
+{
+  "run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+  "backup": "ServerStorage.AK_JungleSeatedBeforeRevision_20261008_145855",
+  "successful_method": {
+    "tool": "generation_model_3d",
+    "quality": "high",
+    "game_style": "roblox",
+    "delivery": "direct",
+    "concept_reference": "single original animal image artifact",
+    "textures": "provider-generated embedded color/normal/ORM, prior outputs 4096px",
+    "processing": "inspect/download GLB and embedded maps; artifact_publish personal creator; Studio import, normalize and verify"
+  },
+  "style": {
+    "id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "name": "Animal Kingdom original Jungle pets",
+    "version": 3,
+    "detailed_brief": "Permanent Animal Kingdom standard pet style. Existing Meadow and Forest pets guide artistic style ONLY; never copy source meshes or transfer their species anatomy. All standard furry quadrupeds sit on their hindquarters, hind legs folded outward, torso gently upright, BOTH separate forelegs extend forward down to TWO front paws/feet firmly touching the same ground plane, visibly weight bearing. Compact pear-shaped rounded bodies, rounded oversized baby heads, slightly oversized expressive near-black eyes with small bright catchlights, adorable warm eyelids, gentle smiles. Beautiful rich soft natural fur: sculpted layered locks with finely painted individual strands, soft underfur and natural directional flow, varied organic coloration, matte high roughness zero metalness, no toy plastic sheen. Rich detailed high-quality geometry and organic shading. Keep face readable; no invented crests, horns or unnatural protrusions. This Jungle pair is an original juvenile tapir with cocoa fur, cream broken juvenile stripes/spots, tiny rounded white-rim ears and short flexible broad tapir nose, and an original ocelot kitten with golden tawny soft fur, black rosettes/elongated spots, cream muzzle chest and paws, small rounded feline ears, short rounded muzzle and softly curved ringed tail. Tapir forefeet have species-correct broad padded toes, feline front paws are round; both pets have four limbs and seated ground contact. Dinosaurs/mythical creatures can retain appropriate scales/armor while remaining cute. No birds for this pair. The attached existing Forest bear image supplies soft sculpted fur and painterly organic shading STYLE ONLY. Never reproduce bear anatomy, ears, muzzle, markings, pose details or scene. Both forepaws of new pets MUST be extended forward flat on ground. No glossy ceramic figurines. Single new animal centered on empty neutral background.",
+    "reference_asset_ids": [
+      "6e289074-09b2-421c-9513-a7b91ff93f3f"
+    ]
+  },
+  "requests": [
+    {
+      "count": 1,
+      "type": "thumbnail",
+      "game_style": "roblox",
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 2,
+      "run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+      "prompt": "A SINGLE original baby tapir, seated animal pet, full body three-quarter FRONT view, isolated on neutral gray background. CRITICAL POSE: sitting directly on rounded hindquarters, two hind legs folded at sides, TWO separate forelegs extend straight down FORWARD and BOTH broad front feet are flat on the SAME ground plane. All four limbs visible, no standing pose and no raised forepaw. Compact chubby pear-shaped body and cute rounded oversized head. SHORT broad flexible tapir nose with two nostrils, no elephant trunk; tiny round white-rim ears; sweet expressive large glossy dark eyes with tiny catchlights, warm eyelids and subtle smile. Gorgeous SOFT FUR over cocoa body: dense fine underfur, sculpted small overlapping fluffy fur locks on cheeks shoulders chest flanks, individual strand texture and naturally varied color. Cream juvenile broken horizontal stripes and small spots remain readable through fur. Rounded crown absolutely NO CREST, horn, spines, mane or tuft. Species-correct four-toed front feet rendered as broad padded baby toes, hind three toes. Tiny tail. Matte velvety fur and matte nose; reflections ONLY in eyes. High-quality sculpted natural hand-painted Animal Kingdom pet art, no plastic sheen, no toys, no pedestal or scenery. The previous reference is identity and markings only; replace standing posture with seated grounded pose.",
+      "request_id": "ak-seated-tapir-concept-20261008-v1",
+      "reference_asset_ids": [
+        "mcp-artifact:0509ac50-ecf4-4d08-86d2-ff2f4cc83f66:0"
+      ]
+    },
+    {
+      "count": 1,
+      "type": "thumbnail",
+      "game_style": "roblox",
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 2,
+      "run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+      "prompt": "A SINGLE original baby OCELOT jungle wildcat pet, full body three-quarter FRONT view, isolated neutral gray background. Sitting on its rounded hindquarters, two hind legs folded outward, TWO distinct forelegs extending down and FORWARD, BOTH rounded front paws planted flat on SAME ground plane, weight-bearing. All four limbs readable; no standing, no floating paw, no raised paw. Compact chubby pear body, cute rounded oversized kitten head, small rounded feline ears with black backs and white spots, short soft muzzle, huge expressive dark brown glossy eyes with small white catchlights, warm eyelids, adorable gentle smile and subtle whiskers. Beautiful dense tawny GOLDEN FUR with rich sculpted fluffy cheek and chest locks, fine individual fur strands, soft underfur, cream muzzle bib chest front paws belly, detailed black ocelot rosettes and elongated spots along body, dark forehead stripes. A naturally curved ringed tail resting beside hindquarters, not fox bush tail. Premium detailed soft organic hand-painted textures and smooth sculpted high-quality geometry. Matte velvety fur, matte little pink-brown nose, no shiny plastic or metal. Species-correct feline paws, no raccoon mask, no bear face, no fox muzzle, no horns/crest/accessory, no base or backdrop scenery. Original geometry distinct from every Meadow/Forest pet.",
+      "request_id": "ak-seated-ocelot-concept-20261008-v1"
+    },
+    {
+      "count": 1,
+      "type": "thumbnail",
+      "game_style": "roblox",
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 3,
+      "run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+      "prompt": "Refine the CONTENT reference tapir into a premium genuinely FURRY sculpted pet. Keep its species, markings, adorable face, seated hindquarters, both forelegs forward with BOTH separate front paws/feet FLAT ON SAME GROUND. The STYLE reference bear supplies ONLY detailed soft fur rendering and painted shading, NEVER bear anatomy. Replace ALL smooth plastic/ceramic body surfaces with beautiful layered sculpted soft fur locks, dense tiny strand texture and painted natural color variation. Furry cheeks, chest and flanks with delicate soft-edge clumps; not polygon spikes or a uniform noise coat. Velvet matte high roughness, zero metalness, no toy sheen or broad highlights. Smooth adorable facial features contrast fluffy body. Cocoa short fluffy fur with cream juvenile thin broken horizontal stripes and small spots; short broad tapir nose, two nostrils, tiny round white-rim ears. Smooth fur-covered crown without crest/mane/horn, no elephant trunk. Broad front toes firmly grounded. Isolated SINGLE full-body three-quarter front pet on plain neutral background, no pedestal, tree, rock, environment, captions or thick outline. Highest-quality organic fur sculpture and rich fine strand texturing like completed Animal Kingdom pets.",
+      "request_id": "ak-seated-tapir-concept-20261008-v2",
+      "reference_asset_ids": [
+        "mcp-artifact:4812a964-d7d1-4207-96cb-b504cd659e5d:0"
+      ]
+    },
+    {
+      "count": 1,
+      "type": "thumbnail",
+      "game_style": "roblox",
+      "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+      "style_version": 3,
+      "run_id": "756f7435-3d64-44cc-8a76-037dee0bcb10",
+      "prompt": "Refine the CONTENT reference ocelot into a premium genuinely FURRY sculpted pet. Keep its species, markings, adorable face, seated hindquarters, both forelegs forward with BOTH separate front paws/feet FLAT ON SAME GROUND. The STYLE reference bear supplies ONLY detailed soft fur rendering and painted shading, NEVER bear anatomy. Replace ALL smooth plastic/ceramic body surfaces with beautiful layered sculpted soft fur locks, dense tiny strand texture and painted natural color variation. Furry cheeks, chest and flanks with delicate soft-edge clumps; not polygon spikes or a uniform noise coat. Velvet matte high roughness, zero metalness, no toy sheen or broad highlights. Smooth adorable facial features contrast fluffy body. Golden tawny ocelot kitten with small rounded feline ears, black rosettes, elongated spots, cream muzzle/bib/chest/paws and ringed tail resting beside hindquarters. Softer realistic feline eyes with gentle catchlights; no painted cartoon black outline or plastic shell. Isolated SINGLE full-body three-quarter front pet on plain neutral background, no pedestal, tree, rock, environment, captions or thick outline. Highest-quality organic fur sculpture and rich fine strand texturing like completed Animal Kingdom pets.",
+      "request_id": "ak-seated-ocelot-concept-20261008-v2",
+      "reference_asset_ids": [
+        "mcp-artifact:05bdb8ca-9ca9-4328-a064-596fd25e7196:0"
+      ]
+    }
+  ],
+  "jobs": {
+    "tapir": "4812a964-d7d1-4207-96cb-b504cd659e5d",
+    "ocelot": "05bdb8ca-9ca9-4328-a064-596fd25e7196",
+    "tapir_refine": "080eb997-0cad-43a9-8f49-734c30096394",
+    "ocelot_refine": "115895fe-2ce5-4151-8cf3-18dd6ad2eae2"
+  },
+  "credits_used": null,
+  "reason": "No billed amounts in responses",
+  "species_registry": "Ocelot absent from live species and model roots"
+}
+

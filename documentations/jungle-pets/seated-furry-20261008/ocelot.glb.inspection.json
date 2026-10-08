@@ -1,0 +1,73 @@
+{
+  "file": "ocelot.glb",
+  "sha256": "eba09de09f06f2d7ab9f3846714b714114544ca5a2acc10960f7e3f1dd71c107",
+  "bytes": 19322556,
+  "triangles": 15617,
+  "vertices": 16741,
+  "bounds": {
+    "min": [
+      -0.468994140625,
+      -0.499755859375,
+      -0.375732421875
+    ],
+    "max": [
+      0.468994140625,
+      0.499755859375,
+      0.3757323920726776
+    ],
+    "dimensions": [
+      0.93798828125,
+      0.99951171875,
+      0.7514648139476776
+    ]
+  },
+  "images": [
+    {
+      "name": "Color_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+      "mimeType": "image/jpeg",
+      "path": "ocelot_texture_0.jpg",
+      "bytes": 6767849,
+      "sha256": "f66074900acb404afba6aae2f1e2c37e88a06afd38dab1623b5a90c2a8d1ffc6"
+    },
+    {
+      "name": "ORM_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+      "mimeType": "image/jpeg",
+      "path": "ocelot_texture_1.jpg",
+      "bytes": 2709316,
+      "sha256": "24abec78161fd3e2de9ec94b546471a0c148aa0ef9ce4135def94705a9fbdcdd"
+    },
+    {
+      "name": "NormalGL_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+      "mimeType": "image/png",
+      "path": "ocelot_texture_2.png",
+      "bytes": 9214065,
+      "sha256": "5aefdbcc1cf9f694c54bbe5a149572b49e6a267cf94fdabeeeed9ebcf556c7d7"
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_1fbf6723-13e3-4768-81f2-e43e8a33aa64",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 1
+      },
+      "doubleSided": true
+    }
+  ]
+}
