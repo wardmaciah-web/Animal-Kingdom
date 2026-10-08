@@ -1,0 +1,38 @@
+{
+  "status": "generation_in_progress",
+  "place_id": "132313449035787",
+  "universe_id": "10764288431",
+  "prior_checkpoint": "350455df98e98dbf82885f89a3a7e8fc4dcb92ff",
+  "backup": "ServerStorage.AK_JungleResumeBackup_20261008_141018",
+  "backup_durability": "Studio session clone; editable session-only content remains unsaved externally",
+  "run_id": "0d274e8f-7480-4f74-be48-a356b34614b0",
+  "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+  "style_version": 1,
+  "authorization": "Paid generation improvements for Tapir/Toucan only; 25-credit limit removed; no purchases/game publication/unlock",
+  "jobs": {
+    "tapir_concept_rejected": "38eaeb6b-b931-41de-8346-a0afdfc1c631",
+    "tapir_concept": "0509ac50-ecf4-4d08-86d2-ff2f4cc83f66",
+    "toucan_concept_initial": "de094dd3-52d1-49c6-8eb5-3141f52dced1",
+    "toucan_concept_refinement": "d63e27fc-a068-428f-9f9e-c43fde761e5d",
+    "tapir_model": "192b3375-35da-4925-82ac-2b91255d257f"
+  },
+  "tapir_model_request": {
+    "game_style": "roblox",
+    "quality": "high",
+    "delivery": {
+      "mode": "direct"
+    },
+    "reference_asset_ids": [
+      "mcp-artifact:0509ac50-ecf4-4d08-86d2-ff2f4cc83f66:0"
+    ],
+    "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "style_version": 1,
+    "request_id": "ak-jungle-resume-20261008-tapir-high-1",
+    "run_id": "0d274e8f-7480-4f74-be48-a356b34614b0",
+    "prompt": "Generate one original baby Rainstripe TAPIR matching this corrected single-animal concept. High-quality sculpted geometry and rich detailed organic textures for Animal Kingdom pet seen close in inventory. Preserve enormous expressive dark eyes, compact low broad cocoa quadruped body, smooth crest-free rounded head, tiny rounded white-rim ears and SHORT forward sloping fleshy tapir snout with two nostrils. No dangling elephant trunk; no crest, mane, horns or tuft. Correct front four-toed feet rear three-toed feet, tiny tail. Juvenile broken thin cream horizontal stripes and small spots following body curvature; fine velvety short fur and natural skin folds, softly painted color variation. Texture enhancement: highest supported detailed surface textures, fine fur direction, organic diffuse shading, matte high-roughness nonmetallic skin and fur, zero metalness, glossy eyes only. Preserve individual limb and ear silhouettes with clean geometry and UVs. Complete single animal, no base, ground plane, scenery or other animals. Neutral lighting baked minimally; no plastic sheen."
+  },
+  "credits_used": null,
+  "billing": "Image billing commitDeferred=true, no amount; model pending.",
+  "scope": "Review only; reference originals unchanged; no additional species.",
+  "forgegui_texture_enhancement": "No separate ForgeGUI retexture tool exposed; detailed textures requested in quality high reference-guided generation."
+}
