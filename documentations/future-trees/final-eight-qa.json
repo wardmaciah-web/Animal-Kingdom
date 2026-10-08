@@ -1,0 +1,418 @@
+{
+  "dateUTC": "2026-10-08",
+  "implementation": "All eight implemented; overall QA Partial",
+  "biomes": {
+    "Jungle": {
+      "minHeight": 35.99999237060547,
+      "trees": 35,
+      "families": {
+        "JungleKapok": true,
+        "JungleFig": true,
+        "JungleRainTree": true,
+        "JungleBanyan": true,
+        "JungleOrchid": true,
+        "JungleFanPalm": true,
+        "JungleDragon": true,
+        "JunglePalm": true
+      },
+      "meshes": {
+        "rbxassetid://113690777332289": true,
+        "rbxassetid://120783694789432": true,
+        "rbxassetid://83481589184332": true,
+        "rbxassetid://103416366964109": true,
+        "rbxassetid://94549437400621": true,
+        "rbxassetid://110162363061065": true,
+        "rbxassetid://93975208482097": true,
+        "rbxassetid://129484276941844": true,
+        "rbxassetid://80099889858945": true,
+        "rbxassetid://116262508717378": true,
+        "rbxassetid://124112346562554": true,
+        "rbxassetid://87766334025187": true,
+        "rbxassetid://74110571077188": true,
+        "rbxassetid://119329064638899": true,
+        "rbxassetid://89437097619180": true,
+        "rbxassetid://93066960539527": true,
+        "rbxassetid://138429996826625": true,
+        "rbxassetid://102464440362889": true,
+        "rbxassetid://132959296407956": true,
+        "rbxassetid://130266738959509": true,
+        "rbxassetid://98583613146292": true,
+        "rbxassetid://116009987153909": true,
+        "rbxassetid://73208509410105": true,
+        "rbxassetid://79221714994738": true
+      },
+      "minWidth": 27.564010620117188,
+      "maxHeight": 52.000003814697266,
+      "maxWidth": 52.03810501098633
+    },
+    "Desert": {
+      "minHeight": 35.99985122680664,
+      "trees": 19,
+      "families": {
+        "DesertPalm": true,
+        "DesertJoshua": true,
+        "DesertBloom": true,
+        "DesertSaguaro": true,
+        "DesertColumn": true,
+        "DesertIronwood": true,
+        "DesertBarrelTree": true,
+        "DesertAcacia": true
+      },
+      "meshes": {
+        "rbxassetid://82216509253897": true,
+        "rbxassetid://88688446468924": true,
+        "rbxassetid://126236337553476": true,
+        "rbxassetid://118845245473479": true,
+        "rbxassetid://126371552410174": true,
+        "rbxassetid://101409615910599": true,
+        "rbxassetid://139063930979960": true,
+        "rbxassetid://129712320512357": true,
+        "rbxassetid://112235765235235": true,
+        "rbxassetid://86301737048721": true,
+        "rbxassetid://85264318199629": true,
+        "rbxassetid://105569757519742": true,
+        "rbxassetid://136808771946421": true,
+        "rbxassetid://119347932950119": true,
+        "rbxassetid://133900651150907": true,
+        "rbxassetid://101556158562216": true,
+        "rbxassetid://110452495726336": true,
+        "rbxassetid://105895536978905": true,
+        "rbxassetid://125064955126713": true,
+        "rbxassetid://121371644766475": true,
+        "rbxassetid://103188599064768": true,
+        "rbxassetid://96550790689780": true,
+        "rbxassetid://132769373706993": true,
+        "rbxassetid://85907309162349": true
+      },
+      "minWidth": 16.71170425415039,
+      "maxHeight": 52.000003814697266,
+      "maxWidth": 48.84302520751953
+    },
+    "Ocean": {
+      "minHeight": 36,
+      "trees": 27,
+      "families": {
+        "OceanKelp": true,
+        "OceanAnemone": true,
+        "OceanSeaPalm": true,
+        "OceanPearlWillow": true,
+        "OceanFanCoral": true,
+        "OceanBloomCoral": true,
+        "OceanStaghorn": true,
+        "OceanMangrove": true
+      },
+      "meshes": {
+        "rbxassetid://79912722108334": true,
+        "rbxassetid://118451955799341": true,
+        "rbxassetid://76834587109581": true,
+        "rbxassetid://93340444937358": true,
+        "rbxassetid://95098293834652": true,
+        "rbxassetid://132701520751934": true,
+        "rbxassetid://134192603538697": true,
+        "rbxassetid://135887102000581": true,
+        "rbxassetid://133078953184497": true,
+        "rbxassetid://129746594842160": true,
+        "rbxassetid://84966469111056": true,
+        "rbxassetid://130055198506824": true,
+        "rbxassetid://72483533692906": true,
+        "rbxassetid://73596291992974": true,
+        "rbxassetid://132362952028294": true,
+        "rbxassetid://98896402503974": true,
+        "rbxassetid://100916551638373": true,
+        "rbxassetid://110053062876309": true,
+        "rbxassetid://124006762400085": true,
+        "rbxassetid://123988355679927": true,
+        "rbxassetid://81579857432160": true,
+        "rbxassetid://71004994063856": true,
+        "rbxassetid://139531199070433": true,
+        "rbxassetid://101435371748438": true
+      },
+      "minWidth": 25.517061233520508,
+      "maxHeight": 52.00002670288086,
+      "maxWidth": 49.58213806152344
+    },
+    "AncientRuins": {
+      "minHeight": 35.99999237060547,
+      "trees": 22,
+      "families": {
+        "RuinsRunicCedar": true,
+        "RuinsCypress": true,
+        "RuinsCrownBaobab": true,
+        "RuinsSacredBanyan": true,
+        "RuinsSacredWillow": true,
+        "RuinsSentinel": true,
+        "RuinsStoneCedar": true,
+        "RuinsVineFig": true,
+        "RuinsMossOak": true
+      },
+      "meshes": {
+        "rbxassetid://138459469234618": true,
+        "rbxassetid://86174805210938": true,
+        "rbxassetid://100956317122612": true,
+        "rbxassetid://112712325625982": true,
+        "rbxassetid://77307773095380": true,
+        "rbxassetid://112664168495089": true,
+        "rbxassetid://119090721361529": true,
+        "rbxassetid://92882067440479": true,
+        "rbxassetid://81001839786914": true,
+        "rbxassetid://107266454504856": true,
+        "rbxassetid://135011240916376": true,
+        "rbxassetid://73404429071977": true,
+        "rbxassetid://106258784274271": true,
+        "rbxassetid://71071146320391": true,
+        "rbxassetid://107831954854074": true,
+        "rbxassetid://93243081946139": true,
+        "rbxassetid://74476760276274": true,
+        "rbxassetid://97901906897878": true,
+        "rbxassetid://99054549171585": true,
+        "rbxassetid://73895888195984": true,
+        "rbxassetid://117665601433489": true,
+        "rbxassetid://83641164279225": true,
+        "rbxassetid://119595668502186": true,
+        "rbxassetid://132330806003922": true,
+        "rbxassetid://133508677549210": true,
+        "rbxassetid://80576695877961": true,
+        "rbxassetid://112871922344203": true
+      },
+      "minWidth": 24.14328956604004,
+      "maxHeight": 52.000030517578125,
+      "maxWidth": 46.512935638427734
+    },
+    "MagicalForest": {
+      "minHeight": 35.999996185302734,
+      "trees": 55,
+      "families": {
+        "MagicCrystalMushroom": true,
+        "MagicAmethystOak": true,
+        "MagicMushroom": true,
+        "MagicFlowerTree": true,
+        "MagicLanternWillow": true,
+        "MagicNimbusWillow": true
+      },
+      "meshes": {
+        "rbxassetid://84313701118166": true,
+        "rbxassetid://139291261505463": true,
+        "rbxassetid://95174970856850": true,
+        "rbxassetid://120856348224185": true,
+        "rbxassetid://85747635851924": true,
+        "rbxassetid://96237440247735": true,
+        "rbxassetid://129116022958902": true,
+        "rbxassetid://116698661031628": true,
+        "rbxassetid://90292147846436": true,
+        "rbxassetid://101281083987785": true,
+        "rbxassetid://97755594064591": true,
+        "rbxassetid://128656014259004": true,
+        "rbxassetid://83322155461622": true,
+        "rbxassetid://101264304155396": true,
+        "rbxassetid://80014159448055": true,
+        "rbxassetid://116200367144192": true,
+        "rbxassetid://119233417869077": true
+      },
+      "minWidth": 26.300769805908203,
+      "maxHeight": 52,
+      "maxWidth": 48.65324783325195
+    },
+    "Sky": {
+      "minHeight": 36,
+      "trees": 19,
+      "families": {
+        "SkyRibbonPalm": true,
+        "SkyStarCypress": true,
+        "SkyCloudCedar": true,
+        "SkySunBaobab": true,
+        "SkyAuroraPine": true,
+        "SkyNimbusOak": true,
+        "SkyBlossomFir": true,
+        "SkyMoonWillow": true
+      },
+      "meshes": {
+        "rbxassetid://109453394838246": true,
+        "rbxassetid://104053571238822": true,
+        "rbxassetid://101516510892349": true,
+        "rbxassetid://113346706359890": true,
+        "rbxassetid://109226923765652": true,
+        "rbxassetid://100086043854150": true,
+        "rbxassetid://119932316139998": true,
+        "rbxassetid://76231386335552": true,
+        "rbxassetid://70490057795619": true,
+        "rbxassetid://90032064579734": true,
+        "rbxassetid://98787783339493": true,
+        "rbxassetid://108268936777473": true,
+        "rbxassetid://136415976603165": true,
+        "rbxassetid://111316380396366": true,
+        "rbxassetid://84389647753341": true,
+        "rbxassetid://73105922091510": true,
+        "rbxassetid://108982915830538": true,
+        "rbxassetid://99914059111815": true,
+        "rbxassetid://102346208386342": true,
+        "rbxassetid://79248387174344": true,
+        "rbxassetid://130785590374605": true,
+        "rbxassetid://95422877123838": true,
+        "rbxassetid://91072624336741": true,
+        "rbxassetid://71035966806525": true
+      },
+      "minWidth": 13.228598594665527,
+      "maxHeight": 52.00000762939453,
+      "maxWidth": 53.252445220947266
+    },
+    "Prehistoric": {
+      "minHeight": 36,
+      "trees": 27,
+      "families": {
+        "PrehistoricHorsetail": true,
+        "PrehistoricSequoia": true,
+        "PrehistoricGinkgo": true,
+        "PrehistoricCycad": true,
+        "PrehistoricLepidodendron": true,
+        "PrehistoricMonkeyPuzzle": true,
+        "PrehistoricAraucaria": true,
+        "PrehistoricTreeFern": true
+      },
+      "meshes": {
+        "rbxassetid://83750083330871": true,
+        "rbxassetid://74522643770625": true,
+        "rbxassetid://96164112038692": true,
+        "rbxassetid://118427371110793": true,
+        "rbxassetid://117336545014945": true,
+        "rbxassetid://99625039001519": true,
+        "rbxassetid://73416063140623": true,
+        "rbxassetid://77633668740632": true,
+        "rbxassetid://75028092566490": true,
+        "rbxassetid://81545515130725": true,
+        "rbxassetid://123310437533800": true,
+        "rbxassetid://127507875823981": true,
+        "rbxassetid://113852373731699": true,
+        "rbxassetid://94631735247512": true,
+        "rbxassetid://115986094836556": true,
+        "rbxassetid://132282888415650": true,
+        "rbxassetid://80499874657511": true,
+        "rbxassetid://73213808658388": true,
+        "rbxassetid://112762154862693": true,
+        "rbxassetid://138127775316220": true,
+        "rbxassetid://89707242428429": true,
+        "rbxassetid://111634138358149": true,
+        "rbxassetid://132077939067403": true,
+        "rbxassetid://92667262624729": true
+      },
+      "minWidth": 29.638961791992188,
+      "maxHeight": 52.00002670288086,
+      "maxWidth": 52.08909606933594
+    },
+    "Mythical": {
+      "minHeight": 51.999969482421875,
+      "trees": 4,
+      "families": {
+        "MythicalWorldTree": true,
+        "MythicalGoldenBanyan": true,
+        "MythicalAuroraWillow": true
+      },
+      "meshes": {
+        "rbxassetid://82260305207408": true,
+        "rbxassetid://79825111966346": true,
+        "rbxassetid://112187482918719": true,
+        "rbxassetid://117469354787913": true,
+        "rbxassetid://74460438259618": true,
+        "rbxassetid://107086642072428": true,
+        "rbxassetid://133362161039258": true,
+        "rbxassetid://85132544333515": true,
+        "rbxassetid://108542941201194": true
+      },
+      "minWidth": 42.551700592041016,
+      "maxHeight": 52.00000762939453,
+      "maxWidth": 50.75014877319336
+    }
+  },
+  "uniqueTreeMeshAssetIds": 173,
+  "crossBiomeMeshReuse": [],
+  "authoredReplacements": 208,
+  "distinctFamilies": 58,
+  "decorationModels": 388,
+  "protectedFingerprint": {
+    "hash": 3138740795,
+    "bytes": 498184,
+    "instances": 1531
+  },
+  "originalCloudGatherQa": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"Jungle\":{\"records\":35,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"AncientRuins\":{\"records\":22,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Mythical\":{\"records\":4,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Ocean\":{\"records\":27,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Desert\":{\"records\":20,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Prehistoric\":{\"records\":27,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"sessionDataChanges\":[\"Data.UncollectedSanctuaryCoins\",\"Data.SanctuaryIncomeUpdatedAt\"],\"Sky\":{\"records\":19,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"MagicalForest\":{\"records\":55,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false}}"
+      }
+    ],
+    "isError": false
+  },
+  "originalCloudTextures": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"failures\":[],\"counts\":{\"Success\":201},\"preloadFinished\":true}"
+      }
+    ],
+    "isError": false
+  },
+  "restart": {
+    "proof": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"sourceBytes\":38670,\"trees\":{\"Jungle\":35,\"Sky\":19,\"AncientRuins\":22,\"Mythical\":4,\"Ocean\":27,\"Desert\":19,\"MagicalForest\":55,\"Prehistoric\":27},\"decorations\":{\"Jungle\":54,\"MagicalForest\":63,\"AncientRuins\":35,\"Mythical\":77,\"Ocean\":48,\"Desert\":42,\"Sky\":30,\"Prehistoric\":39},\"templates\":{\"AncientRuins\":10,\"Mythical\":4,\"Ocean\":9,\"MagicalForest\":7,\"Sky\":9,\"Prehistoric\":9},\"placeId\":\"0\",\"hasFinalPlacementGuard\":true,\"idempotence\":{\"decorativeFlowers\":0,\"decorationPlacement\":{\"retained\":388,\"failed\":0,\"moved\":0},\"biomes\":[],\"decorativeTrees\":0,\"skipped\":208,\"understory\":{\"Jungle\":0,\"MagicalForest\":0,\"Sky\":0,\"Mythical\":0,\"Ocean\":0,\"Desert\":0,\"AncientRuins\":0,\"Prehistoric\":0},\"replaced\":0,\"decorativeGrove\":0}}"
+        }
+      ],
+      "isError": false
+    },
+    "runtime": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"Jungle\":{\"records\":35,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"Tree unavailable\",\"accepted\":false},\"AncientRuins\":{\"records\":22,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Mythical\":{\"records\":4,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"Tree unavailable\",\"accepted\":false},\"Ocean\":{\"records\":27,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"Tree unavailable\",\"accepted\":false},\"Desert\":{\"records\":20,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"Prehistoric\":{\"records\":27,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"sessionDataChanges\":[\"Data.SanctuaryIncomeUpdatedAt\"],\"Sky\":{\"records\":19,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"This biome is coming soon!\",\"accepted\":false},\"MagicalForest\":{\"records\":55,\"badGates\":0,\"gatherDataChanges\":[],\"message\":\"Tree unavailable\",\"accepted\":false}}"
+        }
+      ],
+      "isError": false
+    },
+    "textures": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"failures\":[],\"counts\":{\"Success\":201},\"preloadFinished\":true}"
+        }
+      ],
+      "isError": false
+    },
+    "savedFile": {
+      "path": "C:/Users/Kenny/Documents/Real_Animal_K/AnimalKingdom_FinalEight_Checkpoint_20261008.rbxl",
+      "bytes": 15712204,
+      "sha256": "D4AF481B14F6796AA1D2F5A46EEA54CC044AF3D0444B4C9F17D9D7B1C128EA9C",
+      "cloudSaveLog": "2026-10-08T04:38:30.167Z StudioSavePlaceToCloud:5139ms",
+      "experiencePublished": false
+    },
+    "localPlaceId": 0
+  },
+  "worldCheck": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"checked\":{\"floor_covered\":8,\"clutter\":388,\"interactive_covered\":208,\"spawns\":4},\"warnings\":1,\"findings\":[{\"check\":\"multiple_spawns\",\"severity\":\"warning\",\"subject\":\"neutral\",\"detail\":\"4 enabled spawns (Workspace.PlayerPlots.Plot3Spawn, Workspace.PlayerPlots.Plot4Spawn, Workspace.PlayerPlots.Plot2Spawn, Workspace.PlayerPlots.Plot1Spawn). Roblox picks one at random, so every one must be valid; disable leftovers, or set MultipleSpawnsIntended.\"},{\"check\":\"spawn_clearance\",\"severity\":\"error\",\"subject\":\"Workspace.PlayerPlots.Plot4Spawn\",\"detail\":\"the 4x6x4 space above the spawn overlaps Workspace.Scene.tripo_node_ac50a6f2-8ffd-4acc-b023-6b1a78aa732a.tripo_mesh_ac50a6f2-8ffd-4acc-b023-6b1a78aa732a.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.MagicalForest.MagicalForestFloor\",\"detail\":\"Workspace.AK_MagicalForest_AncientAltar.Sketchfab_model.0f2d387f320c4d9f9b31c7df508d67e2.fbx.RootNode.Circle.001.Circle.001__0_Node.Circle.001__0 covers it: surface at 20.1, top at 9.1.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.AncientRuins.AncientRuinsFloor\",\"detail\":\"Workspace.AK_AncientRuins_AltarRuins.Sketchfab_model.root.GLTF_SceneRootNode.UnityGlTF_correctionMatrix_0.node_Platform_-3306_4.Object_11.Object_3 covers it: surface at 16.2, top at 9.1.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.Mythical.MythicalFloor\",\"detail\":\"Workspace.EssenceOfNature_Roblox.RootNode.dimo_fuzhi_$AssimpFbx$_RotationPivot.dimo_fuzhi_$AssimpFbx$_RotationPivotInverse.dimo_fuzhi_$AssimpFbx$_ScalingPivot.dimo_fuzhi_$AssimpFbx$_ScalingPivotInverse.dimo_fuzhi.polySurface417_$AssimpFbx$_RotationPivot.polySurface417_$AssimpFbx$_RotationPivotInverse.polySurface417_$AssimpFbx$_ScalingPivot.polySurface417_$AssimpFbx$_ScalingPivotInverse.polySurface417_Node.polySurface417 covers it: surface at 22.2, top at 9.1.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.Desert.DesertFloor\",\"detail\":\"Workspace.Model.Model.Sketchfab_Scene.Sketchfab_model.root.GLTF_SceneRootNode.Sphinx_15.Object_28.Object_142 covers it: surface at 18.7, top at 9.1.\"},{\"check\":\"floor_covered\",\"severity\":\"error\",\"subject\":\"Workspace.Sky.SkyFloor\",\"detail\":\"Workspace.AK_Sky_CloudTemple.Sketchfab_model.6acb80c9da624a428ffa2ffea30ed0b0.fbx.RootNode.Cube.001.Cube.001_rotstoff_0_Node.Cube.001_rotstoff_0 covers it: surface at 66.1, top at 9.1.\"},{\"check\":\"interactive_covered\",\"severity\":\"error\",\"subject\":\"Workspace.cactus_tall_V5_013\",\"detail\":\"Workspace.common_tree_3_snow_V5_025.common_tree_3_snow.common_tree_3_snow_snow covers it: surface at 80.7, top at 43.8.\"},{\"check\":\"interactive_covered\",\"severity\":\"error\",\"subject\":\"Workspace.Cactus_4_V5_005\",\"detail\":\"Workspace.common_tree_3_snow_V5_025.common_tree_3_snow.common_tree_3_snow_snow covers it: surface at 71.4, top at 46.7.\"}],\"errors\":8}"
+      }
+    ],
+    "isError": false
+  },
+  "performance": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"framesOver50ms\":0,\"peakMs\":18.26840080320835,\"frames\":480,\"meanMs\":16.665317102645838}"
+      }
+    ],
+    "isError": false
+  },
+  "limitations": [
+    "WorldCheck retains eight existing/protected architecture, spawn and Snow canopy findings plus one neutral spawn warning; zero new clutter overlaps.",
+    "Existing UI check: 25 findings; UI unchanged.",
+    "Mobile and multiplayer untested; active Hot Tree behavior in locked biomes cannot be validated without unlocking content.",
+    "Original cloud Gather probes return Coming Soon with no Gather data changes. Restarted local PlaceId 0 uses mock/default progression; some requests return Tree unavailable instead.",
+    "Whole-session profile differences were existing passive sanctuary income timestamps/coins; per-Gather structural diffs empty."
+  ],
+  "paidGenerationCreditsSpent": 0,
+  "experiencePublished": false,
+  "rojo": "7.7.1 combined seven template exports build passed"
+}
