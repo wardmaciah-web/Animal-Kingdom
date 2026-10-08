@@ -2,6 +2,20 @@
 
 ## D: migration continuation
 
+Latest continuation: Studio remains absent and C: remains at zero bytes. No
+default Hugging Face, Torch or pip cache was found on C: to relocate safely.
+Local diagnostics 009-013 continued on D:. Disabling decimation reduced texture
+faceting; rebuilding UVs after decimation restored clean front eye detail at
+the game budget. Three degenerate triangles had to be removed before xatlas
+to avoid NaN normals. Candidates 012 and 013 pass numeric QA (24,396 triangles,
+2048 textures, 2.8 height, 2.46955 depth, both paws on the floor), but still fail
+art QA: 012 stretches the side texture, while 013 duplicates eyes/ears in side
+projection. Neither is approved or imported. See `audits/d-tapir-reunwrap` for
+four-view comparison excerpts, validation, configurations and diagnostic scripts.
+Next local step is correcting side-view projection registration and head ridges,
+then proving the revised stages from fresh inference. Production workers and
+the approved Ocelot recipe remain unchanged. The full goal remains active.
+
 The complete runtime now lives at `D:/AnimalKingdom3D`. Before relocation edits,
 all 70,127 files (18,177,439,800 bytes) matched E: by SHA256. One skipped relative
 Hugging Face symlink was materialized and hash-verified. The Python junction and

@@ -1,0 +1,8 @@
+{
+  "fresh_inference": false,
+  "source_run": "tapir-d-frontal-fresh-007",
+  "geometry_changed_by_projection": false,
+  "preparation": "Fresh TripoSR mesh smoothed, decimated to 18000 triangles, depth scaled .975, re-unwrapped before projection",
+  "method": "Four-view projection plus positional front override; head fur excluded",
+  "new_paid_calls": 0
+}

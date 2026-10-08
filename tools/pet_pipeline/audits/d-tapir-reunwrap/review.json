@@ -1,0 +1,11 @@
+﻿{
+    "status":  "rejected_not_imported",
+    "diagnostic_only":  true,
+    "source_inference":  "tapir-d-frontal-fresh-007",
+    "finding":  "Decimation degrades existing UV texture. Re-unwrap optimized mesh before projection restores clean front eye detail. Three degenerate triangles removed before xatlas avoids invalid normals/NaN GLB.",
+    "candidate_012":  "Numeric QA pass, front improved. Side head still stretched and geometry ridged; art QA fails.",
+    "candidate_013":  "Numeric QA pass, normal-weighted side projection creates duplicate eyes and ears; art QA fails.",
+    "next_action":  "Retarget side texture projection to reconstructed geometry, refine head ridges, retain re-unwrap-after-decimation ordering. Do not promote diagnostic code until all four views pass.",
+    "production_source_changed":  false,
+    "paid_calls":  0
+}
