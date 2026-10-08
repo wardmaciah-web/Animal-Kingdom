@@ -1,0 +1,176 @@
+{
+  "place_id": 132313449035787,
+  "universe_id": 10764288431,
+  "scope": "read-only definitions, model resolution, texture bindings and physical tree mapping",
+  "biomes": [
+    {
+      "id": "Meadow",
+      "content_ready": true,
+      "errors": [],
+      "physical_trees": {
+        "mapped": {
+          "Meadow_Shakeable_02": 4,
+          "Meadow_Shakeable_05": 2,
+          "Meadow_Shakeable_01": 5,
+          "Meadow_Shakeable_04": 2,
+          "Meadow_Shakeable_03": 6
+        },
+        "total": 19,
+        "unmapped": 0
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Forest",
+      "content_ready": true,
+      "errors": [],
+      "physical_trees": {
+        "mapped": {
+          "Forest_Shakeable_04": 7,
+          "Forest_Shakeable_05": 6,
+          "Forest_Shakeable_01": 6,
+          "Forest_Shakeable_03": 5,
+          "Forest_Shakeable_02": 6
+        },
+        "total": 30,
+        "unmapped": 0
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Jungle",
+      "content_ready": false,
+      "errors": [
+        "Family incomplete: Jungle_Shakeable_01",
+        "Family incomplete: Jungle_Shakeable_02",
+        "Family incomplete: Jungle_Shakeable_03",
+        "Family incomplete: Jungle_Shakeable_04",
+        "Family incomplete: Jungle_Shakeable_05"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 35,
+        "unmapped": 35
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Desert",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 19,
+        "unmapped": 19
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Snow",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 31,
+        "unmapped": 31
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Volcano",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 24,
+        "unmapped": 24
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Ocean",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 27,
+        "unmapped": 27
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "AncientRuins",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 22,
+        "unmapped": 22
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "MagicalForest",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 55,
+        "unmapped": 55
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Sky",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 19,
+        "unmapped": 19
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Prehistoric",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 27,
+        "unmapped": 27
+      },
+      "interaction_qa": "not_run"
+    },
+    {
+      "id": "Mythical",
+      "content_ready": false,
+      "errors": [
+        "Expected five configured tree families"
+      ],
+      "physical_trees": {
+        "mapped": [],
+        "total": 4,
+        "unmapped": 4
+      },
+      "interaction_qa": "not_run"
+    }
+  ],
+  "existing_asset_errors": []
+}

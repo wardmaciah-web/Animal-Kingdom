@@ -1,0 +1,21 @@
+{
+  "python": "D:\\AnimalKingdom3D\\tools\\deps-stage\\Scripts\\python.exe",
+  "base_prefix": "D:\\AnimalKingdom3D\\tools\\python\\cpython-3.11.17-windows-x86_64-none",
+  "temp": "D:\\AnimalKingdom3D\\temp",
+  "memory": {
+    "total_physical": 17042083840,
+    "free_physical": 6710464512,
+    "total_commit": 28794019840,
+    "free_commit": 12952993792
+  },
+  "disk_free": 446906941440,
+  "torch": "2.5.1+cu124",
+  "torch_path": "D:\\AnimalKingdom3D\\tools\\deps-stage\\Lib\\site-packages\\torch\\__init__.py",
+  "cuda_available": true,
+  "cuda_arithmetic": 1024.0,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "gpu_free_total": [
+    11747196928,
+    12884377600
+  ]
+}

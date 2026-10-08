@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "production_roster_not_registered",
+  "status": "production_in_progress_future_biomes_locked",
   "basis": "25 slots per biome from live audit; existing rarity counts and income ranges. Gameplay kilograms are curated, not biological measurements. Family assignment remains provisional until live art-family mapping and QA.",
   "pets": [
     {
@@ -102,10 +102,22 @@
       "base_weight_kg": 12,
       "base_income": 93,
       "proposed_family_id": "Jungle_Shakeable_03",
-      "status": "approved_source_awaiting_import",
+      "status": "registered_biome_locked_interaction_qa_pending",
       "model_asset_id": null,
-      "glb": null,
-      "registered": false
+      "glb": "D:/AnimalKingdom3D/outputs/ocelot-d-reproduction-001/review/pet.glb",
+      "registered": true,
+      "confirmed_family_id": "Jungle_Shakeable_03",
+      "production_template": "ReplicatedStorage.PetAssets.JungleOcelot",
+      "model_assets": [
+        {
+          "mesh_id": "86956296653033",
+          "texture_id": "89955741043720"
+        },
+        {
+          "mesh_id": "83705741042121",
+          "texture_id": "89955741043720"
+        }
+      ]
     },
     {
       "pet_id": "JungleTapir",

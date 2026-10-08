@@ -1,0 +1,14 @@
+{
+  "meshes": 2,
+  "rarity": "Rare",
+  "passed": true,
+  "published": false,
+  "base_weight": 12,
+  "base_income": 93,
+  "interaction_qa": "pending",
+  "drop_weight": 12,
+  "family": "Jungle_Shakeable_03",
+  "meadow_forest_unchanged": true,
+  "future_gates_locked": true,
+  "pet": "JungleOcelot"
+}

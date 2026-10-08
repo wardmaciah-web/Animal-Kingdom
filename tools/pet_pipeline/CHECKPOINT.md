@@ -2,6 +2,27 @@
 
 ## D: migration continuation
 
+RESUMED after user storage recovery. C: 11.54 GiB free, D: about 416 GiB free;
+Fortnite absent. D: write/read, CUDA arithmetic and Blender 4.5.3 smoke checks
+pass, with all temporary directories on D:. Nine safety tests pass. The correct
+Studio place 132313449035787 / universe 10764288431 is open again. Both prior
+D: Ocelot review models persisted, including their uploaded mesh/texture IDs.
+
+The approved Ocelot is now a verified production template in
+`ReplicatedStorage.PetAssets.JungleOcelot`, registered as Rare, 12 kg base weight,
+93 base income, in Orchidwood (`Jungle_Shakeable_03`, drop weight 12). Fresh
+module-snapshot tests resolve/clone both meshes, validate the economy/pool,
+preserve Meadow/Forest family membership and prices, and confirm all future
+gates remain locked. Actual tree interaction QA is still pending. Source and
+idempotent Studio registration/verification scripts are committed together.
+
+Tapir work continues from saved inference, without rerunning the approved
+Ocelot. Trial 017 performed new inference from a 25-degree concept but failed
+depth/art QA. Trials 016/018 rebuild UVs after optimization and rebake the saved
+neural field; trials 019-022 investigate species coat refinement for unseen
+surfaces. These remain diagnostics pending complete visual and numeric QA.
+No paid calls or publication. The historical blocker notes below are superseded.
+
 Storage blocker verified for a third consecutive goal turn: C: is still at zero
 free bytes and Studio is absent. A 586,572,498-byte Roblox download cache was
 identified as a possible relocation target. The proposed copy/hash-verification,

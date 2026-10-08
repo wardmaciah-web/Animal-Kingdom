@@ -16,7 +16,7 @@ local rows={
   {"Elderbark",{"ForestBadger","ForestLeafAntler"},30000,{Uncommon=7}},
   {"Mooncap",{"ForestRiverOtter","ForestCrestedOwl"},50000},
  },
- Jungle={{"Rainbloom",{}},{"Emerald Canopy",{}},{"Orchidwood",{}},{"Sunvine",{}},{"Ancient Banyan",{}}},
+ Jungle={{"Rainbloom",{}},{"Emerald Canopy",{}},{"Orchidwood",{"JungleOcelot"}},{"Sunvine",{}},{"Ancient Banyan",{}}},
 }
 local jungleAssets={102129896464910,75371450572430,108493964560570,82147578184060,118350292207829}
 -- A row owns its price and optional base rarity-weight overrides. Physical copies
