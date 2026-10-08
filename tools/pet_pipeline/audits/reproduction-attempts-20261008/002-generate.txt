@@ -1,0 +1,17 @@
+Loading inference dependencies
+Loading TripoSR modules
+Initializing pinned model
+E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\transformers\utils\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\transformers\utils\generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+Windows fatal exception: access violation
+
+Current thread 0x0000572c (most recent call first):
+  File "E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\torch\nn\modules\module.py", line 2441 in _load_from_state_dict
+  File "E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\torch\nn\modules\module.py", line 2535 in load
+  File "E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\torch\nn\modules\module.py", line 2552 in load
+  File "E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\torch\nn\modules\module.py", line 2552 in load
+  File "E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\torch\nn\modules\module.py", line 2552 in load
+  File "E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\torch\nn\modules\module.py", line 2564 in load_state_dict
+  File "C:\Users\Kenny\Documents\Real_Animal_K\tools\pet_pipeline\workers\generate.py", line 48 in <module>

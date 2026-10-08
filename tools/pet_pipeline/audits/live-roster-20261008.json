@@ -1,0 +1,3221 @@
+{
+  "pets": [
+    [
+      "Meadow_Common_01",
+      "Meadow Common 01",
+      "Meadow",
+      "Common",
+      true,
+      "Meadow_Common_01",
+      false
+    ],
+    [
+      "Meadow_Common_02",
+      "Meadow Common 02",
+      "Meadow",
+      "Common",
+      true,
+      "Meadow_Common_02",
+      false
+    ],
+    [
+      "Meadow_Uncommon_01",
+      "Meadow Uncommon 01",
+      "Meadow",
+      "Uncommon",
+      true,
+      "Meadow_Uncommon_01",
+      false
+    ],
+    [
+      "Meadow_Uncommon_02",
+      "Meadow Uncommon 02",
+      "Meadow",
+      "Uncommon",
+      true,
+      "Meadow_Uncommon_02",
+      false
+    ],
+    [
+      "Meadow_Uncommon_03",
+      "Meadow Uncommon 03",
+      "Meadow",
+      "Uncommon",
+      true,
+      "Meadow_Uncommon_03",
+      false
+    ],
+    [
+      "Meadow_Uncommon_04",
+      "Meadow Uncommon 04",
+      "Meadow",
+      "Uncommon",
+      true,
+      "Meadow_Uncommon_04",
+      false
+    ],
+    [
+      "Meadow_Uncommon_05",
+      "Meadow Uncommon 05",
+      "Meadow",
+      "Uncommon",
+      true,
+      "Meadow_Uncommon_05",
+      false
+    ],
+    [
+      "Meadow_Rare_01",
+      "Meadow Rare 01",
+      "Meadow",
+      "Rare",
+      true,
+      "Meadow_Rare_01",
+      false
+    ],
+    [
+      "Meadow_Rare_02",
+      "Meadow Rare 02",
+      "Meadow",
+      "Rare",
+      true,
+      "Meadow_Rare_02",
+      false
+    ],
+    [
+      "Meadow_Rare_03",
+      "Meadow Rare 03",
+      "Meadow",
+      "Rare",
+      true,
+      "Meadow_Rare_03",
+      false
+    ],
+    [
+      "Meadow_Rare_04",
+      "Meadow Rare 04",
+      "Meadow",
+      "Rare",
+      true,
+      "Meadow_Rare_04",
+      false
+    ],
+    [
+      "Meadow_Rare_05",
+      "Meadow Rare 05",
+      "Meadow",
+      "Rare",
+      true,
+      "Meadow_Rare_05",
+      false
+    ],
+    [
+      "Meadow_Rare_06",
+      "Meadow Rare 06",
+      "Meadow",
+      "Rare",
+      true,
+      "Meadow_Rare_06",
+      false
+    ],
+    [
+      "Meadow_Epic_01",
+      "Meadow Epic 01",
+      "Meadow",
+      "Epic",
+      true,
+      "Meadow_Epic_01",
+      false
+    ],
+    [
+      "Meadow_Epic_02",
+      "Meadow Epic 02",
+      "Meadow",
+      "Epic",
+      true,
+      "Meadow_Epic_02",
+      false
+    ],
+    [
+      "Meadow_Epic_03",
+      "Meadow Epic 03",
+      "Meadow",
+      "Epic",
+      true,
+      "Meadow_Epic_03",
+      false
+    ],
+    [
+      "Meadow_Epic_04",
+      "Meadow Epic 04",
+      "Meadow",
+      "Epic",
+      true,
+      "Meadow_Epic_04",
+      false
+    ],
+    [
+      "Meadow_Epic_05",
+      "Meadow Epic 05",
+      "Meadow",
+      "Epic",
+      true,
+      "Meadow_Epic_05",
+      false
+    ],
+    [
+      "Meadow_Epic_06",
+      "Meadow Epic 06",
+      "Meadow",
+      "Epic",
+      true,
+      "Meadow_Epic_06",
+      false
+    ],
+    [
+      "Meadow_Legendary_01",
+      "Meadow Legendary 01",
+      "Meadow",
+      "Legendary",
+      true,
+      "Meadow_Legendary_01",
+      false
+    ],
+    [
+      "Meadow_Legendary_02",
+      "Meadow Legendary 02",
+      "Meadow",
+      "Legendary",
+      true,
+      "Meadow_Legendary_02",
+      false
+    ],
+    [
+      "Meadow_Legendary_03",
+      "Meadow Legendary 03",
+      "Meadow",
+      "Legendary",
+      true,
+      "Meadow_Legendary_03",
+      false
+    ],
+    [
+      "Meadow_Legendary_04",
+      "Meadow Legendary 04",
+      "Meadow",
+      "Legendary",
+      true,
+      "Meadow_Legendary_04",
+      false
+    ],
+    [
+      "Meadow_Mystic_01",
+      "Meadow Mystic 01",
+      "Meadow",
+      "Mythical",
+      true,
+      "Meadow_Mystic_01",
+      false
+    ],
+    [
+      "Meadow_Mystic_02",
+      "Meadow Mystic 02",
+      "Meadow",
+      "Mythical",
+      true,
+      "Meadow_Mystic_02",
+      false
+    ],
+    [
+      "Forest_Common_01",
+      "Forest Common 01",
+      "Forest",
+      "Common",
+      true,
+      "Forest_Common_01",
+      false
+    ],
+    [
+      "Forest_Common_02",
+      "Forest Common 02",
+      "Forest",
+      "Common",
+      true,
+      "Forest_Common_02",
+      false
+    ],
+    [
+      "Forest_Uncommon_01",
+      "Forest Uncommon 01",
+      "Forest",
+      "Uncommon",
+      true,
+      "Forest_Uncommon_01",
+      false
+    ],
+    [
+      "Forest_Uncommon_02",
+      "Forest Uncommon 02",
+      "Forest",
+      "Uncommon",
+      true,
+      "Forest_Uncommon_02",
+      false
+    ],
+    [
+      "Forest_Uncommon_03",
+      "Forest Uncommon 03",
+      "Forest",
+      "Uncommon",
+      true,
+      "Forest_Uncommon_03",
+      false
+    ],
+    [
+      "Forest_Uncommon_04",
+      "Forest Uncommon 04",
+      "Forest",
+      "Uncommon",
+      true,
+      "Forest_Uncommon_04",
+      false
+    ],
+    [
+      "Forest_Uncommon_05",
+      "Forest Uncommon 05",
+      "Forest",
+      "Uncommon",
+      true,
+      "Forest_Uncommon_05",
+      false
+    ],
+    [
+      "Forest_Rare_01",
+      "Forest Rare 01",
+      "Forest",
+      "Rare",
+      true,
+      "Forest_Rare_01",
+      false
+    ],
+    [
+      "Forest_Rare_02",
+      "Forest Rare 02",
+      "Forest",
+      "Rare",
+      true,
+      "Forest_Rare_02",
+      false
+    ],
+    [
+      "Forest_Rare_03",
+      "Forest Rare 03",
+      "Forest",
+      "Rare",
+      true,
+      "Forest_Rare_03",
+      false
+    ],
+    [
+      "Forest_Rare_04",
+      "Forest Rare 04",
+      "Forest",
+      "Rare",
+      true,
+      "Forest_Rare_04",
+      false
+    ],
+    [
+      "Forest_Rare_05",
+      "Forest Rare 05",
+      "Forest",
+      "Rare",
+      true,
+      "Forest_Rare_05",
+      false
+    ],
+    [
+      "Forest_Rare_06",
+      "Forest Rare 06",
+      "Forest",
+      "Rare",
+      true,
+      "Forest_Rare_06",
+      false
+    ],
+    [
+      "Forest_Epic_01",
+      "Forest Epic 01",
+      "Forest",
+      "Epic",
+      true,
+      "Forest_Epic_01",
+      false
+    ],
+    [
+      "Forest_Epic_02",
+      "Forest Epic 02",
+      "Forest",
+      "Epic",
+      true,
+      "Forest_Epic_02",
+      false
+    ],
+    [
+      "Forest_Epic_03",
+      "Forest Epic 03",
+      "Forest",
+      "Epic",
+      true,
+      "Forest_Epic_03",
+      false
+    ],
+    [
+      "Forest_Epic_04",
+      "Forest Epic 04",
+      "Forest",
+      "Epic",
+      true,
+      "Forest_Epic_04",
+      false
+    ],
+    [
+      "Forest_Epic_05",
+      "Forest Epic 05",
+      "Forest",
+      "Epic",
+      true,
+      "Forest_Epic_05",
+      false
+    ],
+    [
+      "Forest_Epic_06",
+      "Forest Epic 06",
+      "Forest",
+      "Epic",
+      true,
+      "Forest_Epic_06",
+      false
+    ],
+    [
+      "Forest_Legendary_01",
+      "Forest Legendary 01",
+      "Forest",
+      "Legendary",
+      true,
+      "Forest_Legendary_01",
+      false
+    ],
+    [
+      "Forest_Legendary_02",
+      "Forest Legendary 02",
+      "Forest",
+      "Legendary",
+      true,
+      "Forest_Legendary_02",
+      false
+    ],
+    [
+      "Forest_Legendary_03",
+      "Forest Legendary 03",
+      "Forest",
+      "Legendary",
+      true,
+      "Forest_Legendary_03",
+      false
+    ],
+    [
+      "Forest_Legendary_04",
+      "Forest Legendary 04",
+      "Forest",
+      "Legendary",
+      true,
+      "Forest_Legendary_04",
+      false
+    ],
+    [
+      "Forest_Mystic_01",
+      "Forest Mystic 01",
+      "Forest",
+      "Mythical",
+      true,
+      "Forest_Mystic_01",
+      false
+    ],
+    [
+      "Forest_Mystic_02",
+      "Forest Mystic 02",
+      "Forest",
+      "Mythical",
+      true,
+      "Forest_Mystic_02",
+      false
+    ],
+    [
+      "Jungle_Common_01",
+      "Jungle Common 01",
+      "Jungle",
+      "Common",
+      false,
+      "Jungle_Common_01",
+      false
+    ],
+    [
+      "Jungle_Common_02",
+      "Jungle Common 02",
+      "Jungle",
+      "Common",
+      false,
+      "Jungle_Common_02",
+      false
+    ],
+    [
+      "Jungle_Uncommon_01",
+      "Jungle Uncommon 01",
+      "Jungle",
+      "Uncommon",
+      false,
+      "Jungle_Uncommon_01",
+      false
+    ],
+    [
+      "Jungle_Uncommon_02",
+      "Jungle Uncommon 02",
+      "Jungle",
+      "Uncommon",
+      false,
+      "Jungle_Uncommon_02",
+      false
+    ],
+    [
+      "Jungle_Uncommon_03",
+      "Jungle Uncommon 03",
+      "Jungle",
+      "Uncommon",
+      false,
+      "Jungle_Uncommon_03",
+      false
+    ],
+    [
+      "Jungle_Uncommon_04",
+      "Jungle Uncommon 04",
+      "Jungle",
+      "Uncommon",
+      false,
+      "Jungle_Uncommon_04",
+      false
+    ],
+    [
+      "Jungle_Uncommon_05",
+      "Jungle Uncommon 05",
+      "Jungle",
+      "Uncommon",
+      false,
+      "Jungle_Uncommon_05",
+      false
+    ],
+    [
+      "Jungle_Rare_01",
+      "Jungle Rare 01",
+      "Jungle",
+      "Rare",
+      false,
+      "Jungle_Rare_01",
+      false
+    ],
+    [
+      "Jungle_Rare_02",
+      "Jungle Rare 02",
+      "Jungle",
+      "Rare",
+      false,
+      "Jungle_Rare_02",
+      false
+    ],
+    [
+      "Jungle_Rare_03",
+      "Jungle Rare 03",
+      "Jungle",
+      "Rare",
+      false,
+      "Jungle_Rare_03",
+      false
+    ],
+    [
+      "Jungle_Rare_04",
+      "Jungle Rare 04",
+      "Jungle",
+      "Rare",
+      false,
+      "Jungle_Rare_04",
+      false
+    ],
+    [
+      "Jungle_Rare_05",
+      "Jungle Rare 05",
+      "Jungle",
+      "Rare",
+      false,
+      "Jungle_Rare_05",
+      false
+    ],
+    [
+      "Jungle_Rare_06",
+      "Jungle Rare 06",
+      "Jungle",
+      "Rare",
+      false,
+      "Jungle_Rare_06",
+      false
+    ],
+    [
+      "Jungle_Epic_01",
+      "Jungle Epic 01",
+      "Jungle",
+      "Epic",
+      false,
+      "Jungle_Epic_01",
+      false
+    ],
+    [
+      "Jungle_Epic_02",
+      "Jungle Epic 02",
+      "Jungle",
+      "Epic",
+      false,
+      "Jungle_Epic_02",
+      false
+    ],
+    [
+      "Jungle_Epic_03",
+      "Jungle Epic 03",
+      "Jungle",
+      "Epic",
+      false,
+      "Jungle_Epic_03",
+      false
+    ],
+    [
+      "Jungle_Epic_04",
+      "Jungle Epic 04",
+      "Jungle",
+      "Epic",
+      false,
+      "Jungle_Epic_04",
+      false
+    ],
+    [
+      "Jungle_Epic_05",
+      "Jungle Epic 05",
+      "Jungle",
+      "Epic",
+      false,
+      "Jungle_Epic_05",
+      false
+    ],
+    [
+      "Jungle_Epic_06",
+      "Jungle Epic 06",
+      "Jungle",
+      "Epic",
+      false,
+      "Jungle_Epic_06",
+      false
+    ],
+    [
+      "Jungle_Legendary_01",
+      "Jungle Legendary 01",
+      "Jungle",
+      "Legendary",
+      false,
+      "Jungle_Legendary_01",
+      false
+    ],
+    [
+      "Jungle_Legendary_02",
+      "Jungle Legendary 02",
+      "Jungle",
+      "Legendary",
+      false,
+      "Jungle_Legendary_02",
+      false
+    ],
+    [
+      "Jungle_Legendary_03",
+      "Jungle Legendary 03",
+      "Jungle",
+      "Legendary",
+      false,
+      "Jungle_Legendary_03",
+      false
+    ],
+    [
+      "Jungle_Legendary_04",
+      "Jungle Legendary 04",
+      "Jungle",
+      "Legendary",
+      false,
+      "Jungle_Legendary_04",
+      false
+    ],
+    [
+      "Jungle_Mystic_01",
+      "Jungle Mystic 01",
+      "Jungle",
+      "Mythical",
+      false,
+      "Jungle_Mystic_01",
+      false
+    ],
+    [
+      "Jungle_Mystic_02",
+      "Jungle Mystic 02",
+      "Jungle",
+      "Mythical",
+      false,
+      "Jungle_Mystic_02",
+      false
+    ],
+    [
+      "Desert_Common_01",
+      "Desert Common 01",
+      "Desert",
+      "Common",
+      false,
+      "Desert_Common_01",
+      false
+    ],
+    [
+      "Desert_Common_02",
+      "Desert Common 02",
+      "Desert",
+      "Common",
+      false,
+      "Desert_Common_02",
+      false
+    ],
+    [
+      "Desert_Uncommon_01",
+      "Desert Uncommon 01",
+      "Desert",
+      "Uncommon",
+      false,
+      "Desert_Uncommon_01",
+      false
+    ],
+    [
+      "Desert_Uncommon_02",
+      "Desert Uncommon 02",
+      "Desert",
+      "Uncommon",
+      false,
+      "Desert_Uncommon_02",
+      false
+    ],
+    [
+      "Desert_Uncommon_03",
+      "Desert Uncommon 03",
+      "Desert",
+      "Uncommon",
+      false,
+      "Desert_Uncommon_03",
+      false
+    ],
+    [
+      "Desert_Uncommon_04",
+      "Desert Uncommon 04",
+      "Desert",
+      "Uncommon",
+      false,
+      "Desert_Uncommon_04",
+      false
+    ],
+    [
+      "Desert_Uncommon_05",
+      "Desert Uncommon 05",
+      "Desert",
+      "Uncommon",
+      false,
+      "Desert_Uncommon_05",
+      false
+    ],
+    [
+      "Desert_Rare_01",
+      "Desert Rare 01",
+      "Desert",
+      "Rare",
+      false,
+      "Desert_Rare_01",
+      false
+    ],
+    [
+      "Desert_Rare_02",
+      "Desert Rare 02",
+      "Desert",
+      "Rare",
+      false,
+      "Desert_Rare_02",
+      false
+    ],
+    [
+      "Desert_Rare_03",
+      "Desert Rare 03",
+      "Desert",
+      "Rare",
+      false,
+      "Desert_Rare_03",
+      false
+    ],
+    [
+      "Desert_Rare_04",
+      "Desert Rare 04",
+      "Desert",
+      "Rare",
+      false,
+      "Desert_Rare_04",
+      false
+    ],
+    [
+      "Desert_Rare_05",
+      "Desert Rare 05",
+      "Desert",
+      "Rare",
+      false,
+      "Desert_Rare_05",
+      false
+    ],
+    [
+      "Desert_Rare_06",
+      "Desert Rare 06",
+      "Desert",
+      "Rare",
+      false,
+      "Desert_Rare_06",
+      false
+    ],
+    [
+      "Desert_Epic_01",
+      "Desert Epic 01",
+      "Desert",
+      "Epic",
+      false,
+      "Desert_Epic_01",
+      false
+    ],
+    [
+      "Desert_Epic_02",
+      "Desert Epic 02",
+      "Desert",
+      "Epic",
+      false,
+      "Desert_Epic_02",
+      false
+    ],
+    [
+      "Desert_Epic_03",
+      "Desert Epic 03",
+      "Desert",
+      "Epic",
+      false,
+      "Desert_Epic_03",
+      false
+    ],
+    [
+      "Desert_Epic_04",
+      "Desert Epic 04",
+      "Desert",
+      "Epic",
+      false,
+      "Desert_Epic_04",
+      false
+    ],
+    [
+      "Desert_Epic_05",
+      "Desert Epic 05",
+      "Desert",
+      "Epic",
+      false,
+      "Desert_Epic_05",
+      false
+    ],
+    [
+      "Desert_Epic_06",
+      "Desert Epic 06",
+      "Desert",
+      "Epic",
+      false,
+      "Desert_Epic_06",
+      false
+    ],
+    [
+      "Desert_Legendary_01",
+      "Desert Legendary 01",
+      "Desert",
+      "Legendary",
+      false,
+      "Desert_Legendary_01",
+      false
+    ],
+    [
+      "Desert_Legendary_02",
+      "Desert Legendary 02",
+      "Desert",
+      "Legendary",
+      false,
+      "Desert_Legendary_02",
+      false
+    ],
+    [
+      "Desert_Legendary_03",
+      "Desert Legendary 03",
+      "Desert",
+      "Legendary",
+      false,
+      "Desert_Legendary_03",
+      false
+    ],
+    [
+      "Desert_Legendary_04",
+      "Desert Legendary 04",
+      "Desert",
+      "Legendary",
+      false,
+      "Desert_Legendary_04",
+      false
+    ],
+    [
+      "Desert_Mystic_01",
+      "Desert Mystic 01",
+      "Desert",
+      "Mythical",
+      false,
+      "Desert_Mystic_01",
+      false
+    ],
+    [
+      "Desert_Mystic_02",
+      "Desert Mystic 02",
+      "Desert",
+      "Mythical",
+      false,
+      "Desert_Mystic_02",
+      false
+    ],
+    [
+      "Snow_Common_01",
+      "Snow Common 01",
+      "Snow",
+      "Common",
+      false,
+      "Snow_Common_01",
+      false
+    ],
+    [
+      "Snow_Common_02",
+      "Snow Common 02",
+      "Snow",
+      "Common",
+      false,
+      "Snow_Common_02",
+      false
+    ],
+    [
+      "Snow_Uncommon_01",
+      "Snow Uncommon 01",
+      "Snow",
+      "Uncommon",
+      false,
+      "Snow_Uncommon_01",
+      false
+    ],
+    [
+      "Snow_Uncommon_02",
+      "Snow Uncommon 02",
+      "Snow",
+      "Uncommon",
+      false,
+      "Snow_Uncommon_02",
+      false
+    ],
+    [
+      "Snow_Uncommon_03",
+      "Snow Uncommon 03",
+      "Snow",
+      "Uncommon",
+      false,
+      "Snow_Uncommon_03",
+      false
+    ],
+    [
+      "Snow_Uncommon_04",
+      "Snow Uncommon 04",
+      "Snow",
+      "Uncommon",
+      false,
+      "Snow_Uncommon_04",
+      false
+    ],
+    [
+      "Snow_Uncommon_05",
+      "Snow Uncommon 05",
+      "Snow",
+      "Uncommon",
+      false,
+      "Snow_Uncommon_05",
+      false
+    ],
+    [
+      "Snow_Rare_01",
+      "Snow Rare 01",
+      "Snow",
+      "Rare",
+      false,
+      "Snow_Rare_01",
+      false
+    ],
+    [
+      "Snow_Rare_02",
+      "Snow Rare 02",
+      "Snow",
+      "Rare",
+      false,
+      "Snow_Rare_02",
+      false
+    ],
+    [
+      "Snow_Rare_03",
+      "Snow Rare 03",
+      "Snow",
+      "Rare",
+      false,
+      "Snow_Rare_03",
+      false
+    ],
+    [
+      "Snow_Rare_04",
+      "Snow Rare 04",
+      "Snow",
+      "Rare",
+      false,
+      "Snow_Rare_04",
+      false
+    ],
+    [
+      "Snow_Rare_05",
+      "Snow Rare 05",
+      "Snow",
+      "Rare",
+      false,
+      "Snow_Rare_05",
+      false
+    ],
+    [
+      "Snow_Rare_06",
+      "Snow Rare 06",
+      "Snow",
+      "Rare",
+      false,
+      "Snow_Rare_06",
+      false
+    ],
+    [
+      "Snow_Epic_01",
+      "Snow Epic 01",
+      "Snow",
+      "Epic",
+      false,
+      "Snow_Epic_01",
+      false
+    ],
+    [
+      "Snow_Epic_02",
+      "Snow Epic 02",
+      "Snow",
+      "Epic",
+      false,
+      "Snow_Epic_02",
+      false
+    ],
+    [
+      "Snow_Epic_03",
+      "Snow Epic 03",
+      "Snow",
+      "Epic",
+      false,
+      "Snow_Epic_03",
+      false
+    ],
+    [
+      "Snow_Epic_04",
+      "Snow Epic 04",
+      "Snow",
+      "Epic",
+      false,
+      "Snow_Epic_04",
+      false
+    ],
+    [
+      "Snow_Epic_05",
+      "Snow Epic 05",
+      "Snow",
+      "Epic",
+      false,
+      "Snow_Epic_05",
+      false
+    ],
+    [
+      "Snow_Epic_06",
+      "Snow Epic 06",
+      "Snow",
+      "Epic",
+      false,
+      "Snow_Epic_06",
+      false
+    ],
+    [
+      "Snow_Legendary_01",
+      "Snow Legendary 01",
+      "Snow",
+      "Legendary",
+      false,
+      "Snow_Legendary_01",
+      false
+    ],
+    [
+      "Snow_Legendary_02",
+      "Snow Legendary 02",
+      "Snow",
+      "Legendary",
+      false,
+      "Snow_Legendary_02",
+      false
+    ],
+    [
+      "Snow_Legendary_03",
+      "Snow Legendary 03",
+      "Snow",
+      "Legendary",
+      false,
+      "Snow_Legendary_03",
+      false
+    ],
+    [
+      "Snow_Legendary_04",
+      "Snow Legendary 04",
+      "Snow",
+      "Legendary",
+      false,
+      "Snow_Legendary_04",
+      false
+    ],
+    [
+      "Snow_Mystic_01",
+      "Snow Mystic 01",
+      "Snow",
+      "Mythical",
+      false,
+      "Snow_Mystic_01",
+      false
+    ],
+    [
+      "Snow_Mystic_02",
+      "Snow Mystic 02",
+      "Snow",
+      "Mythical",
+      false,
+      "Snow_Mystic_02",
+      false
+    ],
+    [
+      "Volcano_Common_01",
+      "Volcano Common 01",
+      "Volcano",
+      "Common",
+      false,
+      "Volcano_Common_01",
+      false
+    ],
+    [
+      "Volcano_Common_02",
+      "Volcano Common 02",
+      "Volcano",
+      "Common",
+      false,
+      "Volcano_Common_02",
+      false
+    ],
+    [
+      "Volcano_Uncommon_01",
+      "Volcano Uncommon 01",
+      "Volcano",
+      "Uncommon",
+      false,
+      "Volcano_Uncommon_01",
+      false
+    ],
+    [
+      "Volcano_Uncommon_02",
+      "Volcano Uncommon 02",
+      "Volcano",
+      "Uncommon",
+      false,
+      "Volcano_Uncommon_02",
+      false
+    ],
+    [
+      "Volcano_Uncommon_03",
+      "Volcano Uncommon 03",
+      "Volcano",
+      "Uncommon",
+      false,
+      "Volcano_Uncommon_03",
+      false
+    ],
+    [
+      "Volcano_Uncommon_04",
+      "Volcano Uncommon 04",
+      "Volcano",
+      "Uncommon",
+      false,
+      "Volcano_Uncommon_04",
+      false
+    ],
+    [
+      "Volcano_Uncommon_05",
+      "Volcano Uncommon 05",
+      "Volcano",
+      "Uncommon",
+      false,
+      "Volcano_Uncommon_05",
+      false
+    ],
+    [
+      "Volcano_Rare_01",
+      "Volcano Rare 01",
+      "Volcano",
+      "Rare",
+      false,
+      "Volcano_Rare_01",
+      false
+    ],
+    [
+      "Volcano_Rare_02",
+      "Volcano Rare 02",
+      "Volcano",
+      "Rare",
+      false,
+      "Volcano_Rare_02",
+      false
+    ],
+    [
+      "Volcano_Rare_03",
+      "Volcano Rare 03",
+      "Volcano",
+      "Rare",
+      false,
+      "Volcano_Rare_03",
+      false
+    ],
+    [
+      "Volcano_Rare_04",
+      "Volcano Rare 04",
+      "Volcano",
+      "Rare",
+      false,
+      "Volcano_Rare_04",
+      false
+    ],
+    [
+      "Volcano_Rare_05",
+      "Volcano Rare 05",
+      "Volcano",
+      "Rare",
+      false,
+      "Volcano_Rare_05",
+      false
+    ],
+    [
+      "Volcano_Rare_06",
+      "Volcano Rare 06",
+      "Volcano",
+      "Rare",
+      false,
+      "Volcano_Rare_06",
+      false
+    ],
+    [
+      "Volcano_Epic_01",
+      "Volcano Epic 01",
+      "Volcano",
+      "Epic",
+      false,
+      "Volcano_Epic_01",
+      false
+    ],
+    [
+      "Volcano_Epic_02",
+      "Volcano Epic 02",
+      "Volcano",
+      "Epic",
+      false,
+      "Volcano_Epic_02",
+      false
+    ],
+    [
+      "Volcano_Epic_03",
+      "Volcano Epic 03",
+      "Volcano",
+      "Epic",
+      false,
+      "Volcano_Epic_03",
+      false
+    ],
+    [
+      "Volcano_Epic_04",
+      "Volcano Epic 04",
+      "Volcano",
+      "Epic",
+      false,
+      "Volcano_Epic_04",
+      false
+    ],
+    [
+      "Volcano_Epic_05",
+      "Volcano Epic 05",
+      "Volcano",
+      "Epic",
+      false,
+      "Volcano_Epic_05",
+      false
+    ],
+    [
+      "Volcano_Epic_06",
+      "Volcano Epic 06",
+      "Volcano",
+      "Epic",
+      false,
+      "Volcano_Epic_06",
+      false
+    ],
+    [
+      "Volcano_Legendary_01",
+      "Volcano Legendary 01",
+      "Volcano",
+      "Legendary",
+      false,
+      "Volcano_Legendary_01",
+      false
+    ],
+    [
+      "Volcano_Legendary_02",
+      "Volcano Legendary 02",
+      "Volcano",
+      "Legendary",
+      false,
+      "Volcano_Legendary_02",
+      false
+    ],
+    [
+      "Volcano_Legendary_03",
+      "Volcano Legendary 03",
+      "Volcano",
+      "Legendary",
+      false,
+      "Volcano_Legendary_03",
+      false
+    ],
+    [
+      "Volcano_Legendary_04",
+      "Volcano Legendary 04",
+      "Volcano",
+      "Legendary",
+      false,
+      "Volcano_Legendary_04",
+      false
+    ],
+    [
+      "Volcano_Mystic_01",
+      "Volcano Mystic 01",
+      "Volcano",
+      "Mythical",
+      false,
+      "Volcano_Mystic_01",
+      false
+    ],
+    [
+      "Volcano_Mystic_02",
+      "Volcano Mystic 02",
+      "Volcano",
+      "Mythical",
+      false,
+      "Volcano_Mystic_02",
+      false
+    ],
+    [
+      "Ocean_Common_01",
+      "Ocean Common 01",
+      "Ocean",
+      "Common",
+      false,
+      "Ocean_Common_01",
+      false
+    ],
+    [
+      "Ocean_Common_02",
+      "Ocean Common 02",
+      "Ocean",
+      "Common",
+      false,
+      "Ocean_Common_02",
+      false
+    ],
+    [
+      "Ocean_Uncommon_01",
+      "Ocean Uncommon 01",
+      "Ocean",
+      "Uncommon",
+      false,
+      "Ocean_Uncommon_01",
+      false
+    ],
+    [
+      "Ocean_Uncommon_02",
+      "Ocean Uncommon 02",
+      "Ocean",
+      "Uncommon",
+      false,
+      "Ocean_Uncommon_02",
+      false
+    ],
+    [
+      "Ocean_Uncommon_03",
+      "Ocean Uncommon 03",
+      "Ocean",
+      "Uncommon",
+      false,
+      "Ocean_Uncommon_03",
+      false
+    ],
+    [
+      "Ocean_Uncommon_04",
+      "Ocean Uncommon 04",
+      "Ocean",
+      "Uncommon",
+      false,
+      "Ocean_Uncommon_04",
+      false
+    ],
+    [
+      "Ocean_Uncommon_05",
+      "Ocean Uncommon 05",
+      "Ocean",
+      "Uncommon",
+      false,
+      "Ocean_Uncommon_05",
+      false
+    ],
+    [
+      "Ocean_Rare_01",
+      "Ocean Rare 01",
+      "Ocean",
+      "Rare",
+      false,
+      "Ocean_Rare_01",
+      false
+    ],
+    [
+      "Ocean_Rare_02",
+      "Ocean Rare 02",
+      "Ocean",
+      "Rare",
+      false,
+      "Ocean_Rare_02",
+      false
+    ],
+    [
+      "Ocean_Rare_03",
+      "Ocean Rare 03",
+      "Ocean",
+      "Rare",
+      false,
+      "Ocean_Rare_03",
+      false
+    ],
+    [
+      "Ocean_Rare_04",
+      "Ocean Rare 04",
+      "Ocean",
+      "Rare",
+      false,
+      "Ocean_Rare_04",
+      false
+    ],
+    [
+      "Ocean_Rare_05",
+      "Ocean Rare 05",
+      "Ocean",
+      "Rare",
+      false,
+      "Ocean_Rare_05",
+      false
+    ],
+    [
+      "Ocean_Rare_06",
+      "Ocean Rare 06",
+      "Ocean",
+      "Rare",
+      false,
+      "Ocean_Rare_06",
+      false
+    ],
+    [
+      "Ocean_Epic_01",
+      "Ocean Epic 01",
+      "Ocean",
+      "Epic",
+      false,
+      "Ocean_Epic_01",
+      false
+    ],
+    [
+      "Ocean_Epic_02",
+      "Ocean Epic 02",
+      "Ocean",
+      "Epic",
+      false,
+      "Ocean_Epic_02",
+      false
+    ],
+    [
+      "Ocean_Epic_03",
+      "Ocean Epic 03",
+      "Ocean",
+      "Epic",
+      false,
+      "Ocean_Epic_03",
+      false
+    ],
+    [
+      "Ocean_Epic_04",
+      "Ocean Epic 04",
+      "Ocean",
+      "Epic",
+      false,
+      "Ocean_Epic_04",
+      false
+    ],
+    [
+      "Ocean_Epic_05",
+      "Ocean Epic 05",
+      "Ocean",
+      "Epic",
+      false,
+      "Ocean_Epic_05",
+      false
+    ],
+    [
+      "Ocean_Epic_06",
+      "Ocean Epic 06",
+      "Ocean",
+      "Epic",
+      false,
+      "Ocean_Epic_06",
+      false
+    ],
+    [
+      "Ocean_Legendary_01",
+      "Ocean Legendary 01",
+      "Ocean",
+      "Legendary",
+      false,
+      "Ocean_Legendary_01",
+      false
+    ],
+    [
+      "Ocean_Legendary_02",
+      "Ocean Legendary 02",
+      "Ocean",
+      "Legendary",
+      false,
+      "Ocean_Legendary_02",
+      false
+    ],
+    [
+      "Ocean_Legendary_03",
+      "Ocean Legendary 03",
+      "Ocean",
+      "Legendary",
+      false,
+      "Ocean_Legendary_03",
+      false
+    ],
+    [
+      "Ocean_Legendary_04",
+      "Ocean Legendary 04",
+      "Ocean",
+      "Legendary",
+      false,
+      "Ocean_Legendary_04",
+      false
+    ],
+    [
+      "Ocean_Mystic_01",
+      "Ocean Mystic 01",
+      "Ocean",
+      "Mythical",
+      false,
+      "Ocean_Mystic_01",
+      false
+    ],
+    [
+      "Ocean_Mystic_02",
+      "Ocean Mystic 02",
+      "Ocean",
+      "Mythical",
+      false,
+      "Ocean_Mystic_02",
+      false
+    ],
+    [
+      "AncientRuins_Common_01",
+      "Ancient Ruins Common 01",
+      "AncientRuins",
+      "Common",
+      false,
+      "AncientRuins_Common_01",
+      false
+    ],
+    [
+      "AncientRuins_Common_02",
+      "Ancient Ruins Common 02",
+      "AncientRuins",
+      "Common",
+      false,
+      "AncientRuins_Common_02",
+      false
+    ],
+    [
+      "AncientRuins_Uncommon_01",
+      "Ancient Ruins Uncommon 01",
+      "AncientRuins",
+      "Uncommon",
+      false,
+      "AncientRuins_Uncommon_01",
+      false
+    ],
+    [
+      "AncientRuins_Uncommon_02",
+      "Ancient Ruins Uncommon 02",
+      "AncientRuins",
+      "Uncommon",
+      false,
+      "AncientRuins_Uncommon_02",
+      false
+    ],
+    [
+      "AncientRuins_Uncommon_03",
+      "Ancient Ruins Uncommon 03",
+      "AncientRuins",
+      "Uncommon",
+      false,
+      "AncientRuins_Uncommon_03",
+      false
+    ],
+    [
+      "AncientRuins_Uncommon_04",
+      "Ancient Ruins Uncommon 04",
+      "AncientRuins",
+      "Uncommon",
+      false,
+      "AncientRuins_Uncommon_04",
+      false
+    ],
+    [
+      "AncientRuins_Uncommon_05",
+      "Ancient Ruins Uncommon 05",
+      "AncientRuins",
+      "Uncommon",
+      false,
+      "AncientRuins_Uncommon_05",
+      false
+    ],
+    [
+      "AncientRuins_Rare_01",
+      "Ancient Ruins Rare 01",
+      "AncientRuins",
+      "Rare",
+      false,
+      "AncientRuins_Rare_01",
+      false
+    ],
+    [
+      "AncientRuins_Rare_02",
+      "Ancient Ruins Rare 02",
+      "AncientRuins",
+      "Rare",
+      false,
+      "AncientRuins_Rare_02",
+      false
+    ],
+    [
+      "AncientRuins_Rare_03",
+      "Ancient Ruins Rare 03",
+      "AncientRuins",
+      "Rare",
+      false,
+      "AncientRuins_Rare_03",
+      false
+    ],
+    [
+      "AncientRuins_Rare_04",
+      "Ancient Ruins Rare 04",
+      "AncientRuins",
+      "Rare",
+      false,
+      "AncientRuins_Rare_04",
+      false
+    ],
+    [
+      "AncientRuins_Rare_05",
+      "Ancient Ruins Rare 05",
+      "AncientRuins",
+      "Rare",
+      false,
+      "AncientRuins_Rare_05",
+      false
+    ],
+    [
+      "AncientRuins_Rare_06",
+      "Ancient Ruins Rare 06",
+      "AncientRuins",
+      "Rare",
+      false,
+      "AncientRuins_Rare_06",
+      false
+    ],
+    [
+      "AncientRuins_Epic_01",
+      "Ancient Ruins Epic 01",
+      "AncientRuins",
+      "Epic",
+      false,
+      "AncientRuins_Epic_01",
+      false
+    ],
+    [
+      "AncientRuins_Epic_02",
+      "Ancient Ruins Epic 02",
+      "AncientRuins",
+      "Epic",
+      false,
+      "AncientRuins_Epic_02",
+      false
+    ],
+    [
+      "AncientRuins_Epic_03",
+      "Ancient Ruins Epic 03",
+      "AncientRuins",
+      "Epic",
+      false,
+      "AncientRuins_Epic_03",
+      false
+    ],
+    [
+      "AncientRuins_Epic_04",
+      "Ancient Ruins Epic 04",
+      "AncientRuins",
+      "Epic",
+      false,
+      "AncientRuins_Epic_04",
+      false
+    ],
+    [
+      "AncientRuins_Epic_05",
+      "Ancient Ruins Epic 05",
+      "AncientRuins",
+      "Epic",
+      false,
+      "AncientRuins_Epic_05",
+      false
+    ],
+    [
+      "AncientRuins_Epic_06",
+      "Ancient Ruins Epic 06",
+      "AncientRuins",
+      "Epic",
+      false,
+      "AncientRuins_Epic_06",
+      false
+    ],
+    [
+      "AncientRuins_Legendary_01",
+      "Ancient Ruins Legendary 01",
+      "AncientRuins",
+      "Legendary",
+      false,
+      "AncientRuins_Legendary_01",
+      false
+    ],
+    [
+      "AncientRuins_Legendary_02",
+      "Ancient Ruins Legendary 02",
+      "AncientRuins",
+      "Legendary",
+      false,
+      "AncientRuins_Legendary_02",
+      false
+    ],
+    [
+      "AncientRuins_Legendary_03",
+      "Ancient Ruins Legendary 03",
+      "AncientRuins",
+      "Legendary",
+      false,
+      "AncientRuins_Legendary_03",
+      false
+    ],
+    [
+      "AncientRuins_Legendary_04",
+      "Ancient Ruins Legendary 04",
+      "AncientRuins",
+      "Legendary",
+      false,
+      "AncientRuins_Legendary_04",
+      false
+    ],
+    [
+      "AncientRuins_Mystic_01",
+      "Ancient Ruins Mystic 01",
+      "AncientRuins",
+      "Mythical",
+      false,
+      "AncientRuins_Mystic_01",
+      false
+    ],
+    [
+      "AncientRuins_Mystic_02",
+      "Ancient Ruins Mystic 02",
+      "AncientRuins",
+      "Mythical",
+      false,
+      "AncientRuins_Mystic_02",
+      false
+    ],
+    [
+      "MagicalForest_Common_01",
+      "Magical Forest Common 01",
+      "MagicalForest",
+      "Common",
+      false,
+      "MagicalForest_Common_01",
+      false
+    ],
+    [
+      "MagicalForest_Common_02",
+      "Magical Forest Common 02",
+      "MagicalForest",
+      "Common",
+      false,
+      "MagicalForest_Common_02",
+      false
+    ],
+    [
+      "MagicalForest_Uncommon_01",
+      "Magical Forest Uncommon 01",
+      "MagicalForest",
+      "Uncommon",
+      false,
+      "MagicalForest_Uncommon_01",
+      false
+    ],
+    [
+      "MagicalForest_Uncommon_02",
+      "Magical Forest Uncommon 02",
+      "MagicalForest",
+      "Uncommon",
+      false,
+      "MagicalForest_Uncommon_02",
+      false
+    ],
+    [
+      "MagicalForest_Uncommon_03",
+      "Magical Forest Uncommon 03",
+      "MagicalForest",
+      "Uncommon",
+      false,
+      "MagicalForest_Uncommon_03",
+      false
+    ],
+    [
+      "MagicalForest_Uncommon_04",
+      "Magical Forest Uncommon 04",
+      "MagicalForest",
+      "Uncommon",
+      false,
+      "MagicalForest_Uncommon_04",
+      false
+    ],
+    [
+      "MagicalForest_Uncommon_05",
+      "Magical Forest Uncommon 05",
+      "MagicalForest",
+      "Uncommon",
+      false,
+      "MagicalForest_Uncommon_05",
+      false
+    ],
+    [
+      "MagicalForest_Rare_01",
+      "Magical Forest Rare 01",
+      "MagicalForest",
+      "Rare",
+      false,
+      "MagicalForest_Rare_01",
+      false
+    ],
+    [
+      "MagicalForest_Rare_02",
+      "Magical Forest Rare 02",
+      "MagicalForest",
+      "Rare",
+      false,
+      "MagicalForest_Rare_02",
+      false
+    ],
+    [
+      "MagicalForest_Rare_03",
+      "Magical Forest Rare 03",
+      "MagicalForest",
+      "Rare",
+      false,
+      "MagicalForest_Rare_03",
+      false
+    ],
+    [
+      "MagicalForest_Rare_04",
+      "Magical Forest Rare 04",
+      "MagicalForest",
+      "Rare",
+      false,
+      "MagicalForest_Rare_04",
+      false
+    ],
+    [
+      "MagicalForest_Rare_05",
+      "Magical Forest Rare 05",
+      "MagicalForest",
+      "Rare",
+      false,
+      "MagicalForest_Rare_05",
+      false
+    ],
+    [
+      "MagicalForest_Rare_06",
+      "Magical Forest Rare 06",
+      "MagicalForest",
+      "Rare",
+      false,
+      "MagicalForest_Rare_06",
+      false
+    ],
+    [
+      "MagicalForest_Epic_01",
+      "Magical Forest Epic 01",
+      "MagicalForest",
+      "Epic",
+      false,
+      "MagicalForest_Epic_01",
+      false
+    ],
+    [
+      "MagicalForest_Epic_02",
+      "Magical Forest Epic 02",
+      "MagicalForest",
+      "Epic",
+      false,
+      "MagicalForest_Epic_02",
+      false
+    ],
+    [
+      "MagicalForest_Epic_03",
+      "Magical Forest Epic 03",
+      "MagicalForest",
+      "Epic",
+      false,
+      "MagicalForest_Epic_03",
+      false
+    ],
+    [
+      "MagicalForest_Epic_04",
+      "Magical Forest Epic 04",
+      "MagicalForest",
+      "Epic",
+      false,
+      "MagicalForest_Epic_04",
+      false
+    ],
+    [
+      "MagicalForest_Epic_05",
+      "Magical Forest Epic 05",
+      "MagicalForest",
+      "Epic",
+      false,
+      "MagicalForest_Epic_05",
+      false
+    ],
+    [
+      "MagicalForest_Epic_06",
+      "Magical Forest Epic 06",
+      "MagicalForest",
+      "Epic",
+      false,
+      "MagicalForest_Epic_06",
+      false
+    ],
+    [
+      "MagicalForest_Legendary_01",
+      "Magical Forest Legendary 01",
+      "MagicalForest",
+      "Legendary",
+      false,
+      "MagicalForest_Legendary_01",
+      false
+    ],
+    [
+      "MagicalForest_Legendary_02",
+      "Magical Forest Legendary 02",
+      "MagicalForest",
+      "Legendary",
+      false,
+      "MagicalForest_Legendary_02",
+      false
+    ],
+    [
+      "MagicalForest_Legendary_03",
+      "Magical Forest Legendary 03",
+      "MagicalForest",
+      "Legendary",
+      false,
+      "MagicalForest_Legendary_03",
+      false
+    ],
+    [
+      "MagicalForest_Legendary_04",
+      "Magical Forest Legendary 04",
+      "MagicalForest",
+      "Legendary",
+      false,
+      "MagicalForest_Legendary_04",
+      false
+    ],
+    [
+      "MagicalForest_Mystic_01",
+      "Magical Forest Mystic 01",
+      "MagicalForest",
+      "Mythical",
+      false,
+      "MagicalForest_Mystic_01",
+      false
+    ],
+    [
+      "MagicalForest_Mystic_02",
+      "Magical Forest Mystic 02",
+      "MagicalForest",
+      "Mythical",
+      false,
+      "MagicalForest_Mystic_02",
+      false
+    ],
+    [
+      "Sky_Common_01",
+      "Sky Common 01",
+      "Sky",
+      "Common",
+      false,
+      "Sky_Common_01",
+      false
+    ],
+    [
+      "Sky_Common_02",
+      "Sky Common 02",
+      "Sky",
+      "Common",
+      false,
+      "Sky_Common_02",
+      false
+    ],
+    [
+      "Sky_Uncommon_01",
+      "Sky Uncommon 01",
+      "Sky",
+      "Uncommon",
+      false,
+      "Sky_Uncommon_01",
+      false
+    ],
+    [
+      "Sky_Uncommon_02",
+      "Sky Uncommon 02",
+      "Sky",
+      "Uncommon",
+      false,
+      "Sky_Uncommon_02",
+      false
+    ],
+    [
+      "Sky_Uncommon_03",
+      "Sky Uncommon 03",
+      "Sky",
+      "Uncommon",
+      false,
+      "Sky_Uncommon_03",
+      false
+    ],
+    [
+      "Sky_Uncommon_04",
+      "Sky Uncommon 04",
+      "Sky",
+      "Uncommon",
+      false,
+      "Sky_Uncommon_04",
+      false
+    ],
+    [
+      "Sky_Uncommon_05",
+      "Sky Uncommon 05",
+      "Sky",
+      "Uncommon",
+      false,
+      "Sky_Uncommon_05",
+      false
+    ],
+    [
+      "Sky_Rare_01",
+      "Sky Rare 01",
+      "Sky",
+      "Rare",
+      false,
+      "Sky_Rare_01",
+      false
+    ],
+    [
+      "Sky_Rare_02",
+      "Sky Rare 02",
+      "Sky",
+      "Rare",
+      false,
+      "Sky_Rare_02",
+      false
+    ],
+    [
+      "Sky_Rare_03",
+      "Sky Rare 03",
+      "Sky",
+      "Rare",
+      false,
+      "Sky_Rare_03",
+      false
+    ],
+    [
+      "Sky_Rare_04",
+      "Sky Rare 04",
+      "Sky",
+      "Rare",
+      false,
+      "Sky_Rare_04",
+      false
+    ],
+    [
+      "Sky_Rare_05",
+      "Sky Rare 05",
+      "Sky",
+      "Rare",
+      false,
+      "Sky_Rare_05",
+      false
+    ],
+    [
+      "Sky_Rare_06",
+      "Sky Rare 06",
+      "Sky",
+      "Rare",
+      false,
+      "Sky_Rare_06",
+      false
+    ],
+    [
+      "Sky_Epic_01",
+      "Sky Epic 01",
+      "Sky",
+      "Epic",
+      false,
+      "Sky_Epic_01",
+      false
+    ],
+    [
+      "Sky_Epic_02",
+      "Sky Epic 02",
+      "Sky",
+      "Epic",
+      false,
+      "Sky_Epic_02",
+      false
+    ],
+    [
+      "Sky_Epic_03",
+      "Sky Epic 03",
+      "Sky",
+      "Epic",
+      false,
+      "Sky_Epic_03",
+      false
+    ],
+    [
+      "Sky_Epic_04",
+      "Sky Epic 04",
+      "Sky",
+      "Epic",
+      false,
+      "Sky_Epic_04",
+      false
+    ],
+    [
+      "Sky_Epic_05",
+      "Sky Epic 05",
+      "Sky",
+      "Epic",
+      false,
+      "Sky_Epic_05",
+      false
+    ],
+    [
+      "Sky_Epic_06",
+      "Sky Epic 06",
+      "Sky",
+      "Epic",
+      false,
+      "Sky_Epic_06",
+      false
+    ],
+    [
+      "Sky_Legendary_01",
+      "Sky Legendary 01",
+      "Sky",
+      "Legendary",
+      false,
+      "Sky_Legendary_01",
+      false
+    ],
+    [
+      "Sky_Legendary_02",
+      "Sky Legendary 02",
+      "Sky",
+      "Legendary",
+      false,
+      "Sky_Legendary_02",
+      false
+    ],
+    [
+      "Sky_Legendary_03",
+      "Sky Legendary 03",
+      "Sky",
+      "Legendary",
+      false,
+      "Sky_Legendary_03",
+      false
+    ],
+    [
+      "Sky_Legendary_04",
+      "Sky Legendary 04",
+      "Sky",
+      "Legendary",
+      false,
+      "Sky_Legendary_04",
+      false
+    ],
+    [
+      "Sky_Mystic_01",
+      "Sky Mystic 01",
+      "Sky",
+      "Mythical",
+      false,
+      "Sky_Mystic_01",
+      false
+    ],
+    [
+      "Sky_Mystic_02",
+      "Sky Mystic 02",
+      "Sky",
+      "Mythical",
+      false,
+      "Sky_Mystic_02",
+      false
+    ],
+    [
+      "Prehistoric_Common_01",
+      "Prehistoric Common 01",
+      "Prehistoric",
+      "Common",
+      false,
+      "Prehistoric_Common_01",
+      false
+    ],
+    [
+      "Prehistoric_Common_02",
+      "Prehistoric Common 02",
+      "Prehistoric",
+      "Common",
+      false,
+      "Prehistoric_Common_02",
+      false
+    ],
+    [
+      "Prehistoric_Uncommon_01",
+      "Prehistoric Uncommon 01",
+      "Prehistoric",
+      "Uncommon",
+      false,
+      "Prehistoric_Uncommon_01",
+      false
+    ],
+    [
+      "Prehistoric_Uncommon_02",
+      "Prehistoric Uncommon 02",
+      "Prehistoric",
+      "Uncommon",
+      false,
+      "Prehistoric_Uncommon_02",
+      false
+    ],
+    [
+      "Prehistoric_Uncommon_03",
+      "Prehistoric Uncommon 03",
+      "Prehistoric",
+      "Uncommon",
+      false,
+      "Prehistoric_Uncommon_03",
+      false
+    ],
+    [
+      "Prehistoric_Uncommon_04",
+      "Prehistoric Uncommon 04",
+      "Prehistoric",
+      "Uncommon",
+      false,
+      "Prehistoric_Uncommon_04",
+      false
+    ],
+    [
+      "Prehistoric_Uncommon_05",
+      "Prehistoric Uncommon 05",
+      "Prehistoric",
+      "Uncommon",
+      false,
+      "Prehistoric_Uncommon_05",
+      false
+    ],
+    [
+      "Prehistoric_Rare_01",
+      "Prehistoric Rare 01",
+      "Prehistoric",
+      "Rare",
+      false,
+      "Prehistoric_Rare_01",
+      false
+    ],
+    [
+      "Prehistoric_Rare_02",
+      "Prehistoric Rare 02",
+      "Prehistoric",
+      "Rare",
+      false,
+      "Prehistoric_Rare_02",
+      false
+    ],
+    [
+      "Prehistoric_Rare_03",
+      "Prehistoric Rare 03",
+      "Prehistoric",
+      "Rare",
+      false,
+      "Prehistoric_Rare_03",
+      false
+    ],
+    [
+      "Prehistoric_Rare_04",
+      "Prehistoric Rare 04",
+      "Prehistoric",
+      "Rare",
+      false,
+      "Prehistoric_Rare_04",
+      false
+    ],
+    [
+      "Prehistoric_Rare_05",
+      "Prehistoric Rare 05",
+      "Prehistoric",
+      "Rare",
+      false,
+      "Prehistoric_Rare_05",
+      false
+    ],
+    [
+      "Prehistoric_Rare_06",
+      "Prehistoric Rare 06",
+      "Prehistoric",
+      "Rare",
+      false,
+      "Prehistoric_Rare_06",
+      false
+    ],
+    [
+      "Prehistoric_Epic_01",
+      "Prehistoric Epic 01",
+      "Prehistoric",
+      "Epic",
+      false,
+      "Prehistoric_Epic_01",
+      false
+    ],
+    [
+      "Prehistoric_Epic_02",
+      "Prehistoric Epic 02",
+      "Prehistoric",
+      "Epic",
+      false,
+      "Prehistoric_Epic_02",
+      false
+    ],
+    [
+      "Prehistoric_Epic_03",
+      "Prehistoric Epic 03",
+      "Prehistoric",
+      "Epic",
+      false,
+      "Prehistoric_Epic_03",
+      false
+    ],
+    [
+      "Prehistoric_Epic_04",
+      "Prehistoric Epic 04",
+      "Prehistoric",
+      "Epic",
+      false,
+      "Prehistoric_Epic_04",
+      false
+    ],
+    [
+      "Prehistoric_Epic_05",
+      "Prehistoric Epic 05",
+      "Prehistoric",
+      "Epic",
+      false,
+      "Prehistoric_Epic_05",
+      false
+    ],
+    [
+      "Prehistoric_Epic_06",
+      "Prehistoric Epic 06",
+      "Prehistoric",
+      "Epic",
+      false,
+      "Prehistoric_Epic_06",
+      false
+    ],
+    [
+      "Prehistoric_Legendary_01",
+      "Prehistoric Legendary 01",
+      "Prehistoric",
+      "Legendary",
+      false,
+      "Prehistoric_Legendary_01",
+      false
+    ],
+    [
+      "Prehistoric_Legendary_02",
+      "Prehistoric Legendary 02",
+      "Prehistoric",
+      "Legendary",
+      false,
+      "Prehistoric_Legendary_02",
+      false
+    ],
+    [
+      "Prehistoric_Legendary_03",
+      "Prehistoric Legendary 03",
+      "Prehistoric",
+      "Legendary",
+      false,
+      "Prehistoric_Legendary_03",
+      false
+    ],
+    [
+      "Prehistoric_Legendary_04",
+      "Prehistoric Legendary 04",
+      "Prehistoric",
+      "Legendary",
+      false,
+      "Prehistoric_Legendary_04",
+      false
+    ],
+    [
+      "Prehistoric_Mystic_01",
+      "Prehistoric Mystic 01",
+      "Prehistoric",
+      "Mythical",
+      false,
+      "Prehistoric_Mystic_01",
+      false
+    ],
+    [
+      "Prehistoric_Mystic_02",
+      "Prehistoric Mystic 02",
+      "Prehistoric",
+      "Mythical",
+      false,
+      "Prehistoric_Mystic_02",
+      false
+    ],
+    [
+      "Mythical_Common_01",
+      "Mythical Common 01",
+      "Mythical",
+      "Common",
+      false,
+      "Mythical_Common_01",
+      false
+    ],
+    [
+      "Mythical_Common_02",
+      "Mythical Common 02",
+      "Mythical",
+      "Common",
+      false,
+      "Mythical_Common_02",
+      false
+    ],
+    [
+      "Mythical_Uncommon_01",
+      "Mythical Uncommon 01",
+      "Mythical",
+      "Uncommon",
+      false,
+      "Mythical_Uncommon_01",
+      false
+    ],
+    [
+      "Mythical_Uncommon_02",
+      "Mythical Uncommon 02",
+      "Mythical",
+      "Uncommon",
+      false,
+      "Mythical_Uncommon_02",
+      false
+    ],
+    [
+      "Mythical_Uncommon_03",
+      "Mythical Uncommon 03",
+      "Mythical",
+      "Uncommon",
+      false,
+      "Mythical_Uncommon_03",
+      false
+    ],
+    [
+      "Mythical_Uncommon_04",
+      "Mythical Uncommon 04",
+      "Mythical",
+      "Uncommon",
+      false,
+      "Mythical_Uncommon_04",
+      false
+    ],
+    [
+      "Mythical_Uncommon_05",
+      "Mythical Uncommon 05",
+      "Mythical",
+      "Uncommon",
+      false,
+      "Mythical_Uncommon_05",
+      false
+    ],
+    [
+      "Mythical_Rare_01",
+      "Mythical Rare 01",
+      "Mythical",
+      "Rare",
+      false,
+      "Mythical_Rare_01",
+      false
+    ],
+    [
+      "Mythical_Rare_02",
+      "Mythical Rare 02",
+      "Mythical",
+      "Rare",
+      false,
+      "Mythical_Rare_02",
+      false
+    ],
+    [
+      "Mythical_Rare_03",
+      "Mythical Rare 03",
+      "Mythical",
+      "Rare",
+      false,
+      "Mythical_Rare_03",
+      false
+    ],
+    [
+      "Mythical_Rare_04",
+      "Mythical Rare 04",
+      "Mythical",
+      "Rare",
+      false,
+      "Mythical_Rare_04",
+      false
+    ],
+    [
+      "Mythical_Rare_05",
+      "Mythical Rare 05",
+      "Mythical",
+      "Rare",
+      false,
+      "Mythical_Rare_05",
+      false
+    ],
+    [
+      "Mythical_Rare_06",
+      "Mythical Rare 06",
+      "Mythical",
+      "Rare",
+      false,
+      "Mythical_Rare_06",
+      false
+    ],
+    [
+      "Mythical_Epic_01",
+      "Mythical Epic 01",
+      "Mythical",
+      "Epic",
+      false,
+      "Mythical_Epic_01",
+      false
+    ],
+    [
+      "Mythical_Epic_02",
+      "Mythical Epic 02",
+      "Mythical",
+      "Epic",
+      false,
+      "Mythical_Epic_02",
+      false
+    ],
+    [
+      "Mythical_Epic_03",
+      "Mythical Epic 03",
+      "Mythical",
+      "Epic",
+      false,
+      "Mythical_Epic_03",
+      false
+    ],
+    [
+      "Mythical_Epic_04",
+      "Mythical Epic 04",
+      "Mythical",
+      "Epic",
+      false,
+      "Mythical_Epic_04",
+      false
+    ],
+    [
+      "Mythical_Epic_05",
+      "Mythical Epic 05",
+      "Mythical",
+      "Epic",
+      false,
+      "Mythical_Epic_05",
+      false
+    ],
+    [
+      "Mythical_Epic_06",
+      "Mythical Epic 06",
+      "Mythical",
+      "Epic",
+      false,
+      "Mythical_Epic_06",
+      false
+    ],
+    [
+      "Mythical_Legendary_01",
+      "Mythical Legendary 01",
+      "Mythical",
+      "Legendary",
+      false,
+      "Mythical_Legendary_01",
+      false
+    ],
+    [
+      "Mythical_Legendary_02",
+      "Mythical Legendary 02",
+      "Mythical",
+      "Legendary",
+      false,
+      "Mythical_Legendary_02",
+      false
+    ],
+    [
+      "Mythical_Legendary_03",
+      "Mythical Legendary 03",
+      "Mythical",
+      "Legendary",
+      false,
+      "Mythical_Legendary_03",
+      false
+    ],
+    [
+      "Mythical_Legendary_04",
+      "Mythical Legendary 04",
+      "Mythical",
+      "Legendary",
+      false,
+      "Mythical_Legendary_04",
+      false
+    ],
+    [
+      "Mythical_Mystic_01",
+      "Mythical Mystic 01",
+      "Mythical",
+      "Mythical",
+      false,
+      "Mythical_Mystic_01",
+      false
+    ],
+    [
+      "Mythical_Mystic_02",
+      "Mythical Mystic 02",
+      "Mythical",
+      "Mythical",
+      false,
+      "Mythical_Mystic_02",
+      false
+    ],
+    [
+      "Bunny",
+      "Bunny",
+      "Meadow",
+      "Common",
+      true,
+      "Bunny",
+      false
+    ],
+    [
+      "Dog",
+      "Dog",
+      "Meadow",
+      "Common",
+      true,
+      "Dog",
+      false
+    ],
+    [
+      "Deer",
+      "Deer",
+      "Meadow",
+      "Rare",
+      true,
+      "Deer",
+      false
+    ],
+    [
+      "GoldenFox",
+      "Golden Fox",
+      "Meadow",
+      "Legendary",
+      true,
+      "GoldenFox",
+      false
+    ],
+    [
+      "MeadowFieldMouse",
+      "Field Mouse",
+      "Meadow",
+      "Common",
+      false,
+      "MeadowPetTemplates.MeadowFieldMouse",
+      false
+    ],
+    [
+      "MeadowChick",
+      "Meadow Chick",
+      "Meadow",
+      "Common",
+      false,
+      "MeadowPetTemplates.MeadowChick",
+      false
+    ],
+    [
+      "MeadowHoneyLop",
+      "Honey Lop Bunny",
+      "Meadow",
+      "Uncommon",
+      true,
+      "MeadowPetTemplates.MeadowHoneyLop",
+      true
+    ],
+    [
+      "MeadowRedSquirrel",
+      "Red Squirrel",
+      "Meadow",
+      "Uncommon",
+      false,
+      "MeadowPetTemplates.MeadowRedSquirrel",
+      false
+    ],
+    [
+      "MeadowGoat",
+      "Meadow Goat",
+      "Meadow",
+      "Uncommon",
+      false,
+      "MeadowPetTemplates.MeadowGoat",
+      false
+    ],
+    [
+      "MeadowFawn",
+      "Meadow Fawn",
+      "Meadow",
+      "Rare",
+      false,
+      "MeadowPetTemplates.MeadowFawn",
+      false
+    ],
+    [
+      "MeadowFluffyLop",
+      "Fluffy Lop Bunny",
+      "Meadow",
+      "Rare",
+      false,
+      "MeadowPetTemplates.MeadowFluffyLop",
+      false
+    ],
+    [
+      "MeadowPatchworkLop",
+      "Patchwork Lop Bunny",
+      "Meadow",
+      "Rare",
+      false,
+      "MeadowPetTemplates.MeadowPatchworkLop",
+      false
+    ],
+    [
+      "MeadowDaisyHedgehog",
+      "Daisy Hedgehog",
+      "Meadow",
+      "Epic",
+      false,
+      "MeadowPetTemplates.MeadowDaisyHedgehog",
+      false
+    ],
+    [
+      "MeadowBuck",
+      "Meadow Buck",
+      "Meadow",
+      "Epic",
+      false,
+      "MeadowPetTemplates.MeadowBuck",
+      false
+    ],
+    [
+      "MeadowDaisyCrownBunny",
+      "Daisy-Crown Bunny",
+      "Meadow",
+      "Epic",
+      false,
+      "MeadowPetTemplates.MeadowDaisyCrownBunny",
+      false
+    ],
+    [
+      "MeadowBlossomBunny",
+      "Blossom Bunny",
+      "Meadow",
+      "Legendary",
+      false,
+      "MeadowPetTemplates.MeadowBlossomBunny",
+      false
+    ],
+    [
+      "MeadowPrismAntlerDeer",
+      "Prism-Antler Deer",
+      "Meadow",
+      "Legendary",
+      false,
+      "MeadowPetTemplates.MeadowPrismAntlerDeer",
+      false
+    ],
+    [
+      "MeadowCloudtailFox",
+      "Cloudtail Fox",
+      "Meadow",
+      "Legendary",
+      false,
+      "MeadowPetTemplates.MeadowCloudtailFox",
+      false
+    ],
+    [
+      "MeadowCelestialLamb",
+      "Celestial Lamb",
+      "Meadow",
+      "Secret",
+      false,
+      "MeadowPetTemplates.MeadowCelestialLamb",
+      false
+    ],
+    [
+      "ForestRaccoon",
+      "Raccoon",
+      "Forest",
+      "Common",
+      false,
+      "ForestRaccoon",
+      false
+    ],
+    [
+      "ForestBlackBearCub",
+      "Black Bear Cub",
+      "Forest",
+      "Common",
+      false,
+      "ForestBlackBearCub",
+      false
+    ],
+    [
+      "ForestSkunk",
+      "Skunk",
+      "Forest",
+      "Uncommon",
+      false,
+      "ForestSkunk",
+      false
+    ],
+    [
+      "ForestBadger",
+      "Badger",
+      "Forest",
+      "Uncommon",
+      false,
+      "ForestBadger",
+      false
+    ],
+    [
+      "ForestTreeFrog",
+      "Tree Frog",
+      "Forest",
+      "Rare",
+      false,
+      "ForestTreeFrog",
+      false
+    ],
+    [
+      "ForestRiverOtter",
+      "River Otter",
+      "Forest",
+      "Rare",
+      false,
+      "ForestRiverOtter",
+      false
+    ],
+    [
+      "ForestBrownBat",
+      "Brown Bat",
+      "Forest",
+      "Epic",
+      false,
+      "ForestBrownBat",
+      false
+    ],
+    [
+      "ForestWoodlandOwl",
+      "Woodland Owl",
+      "Forest",
+      "Epic",
+      false,
+      "ForestWoodlandOwl",
+      false
+    ],
+    [
+      "ForestCrestedOwl",
+      "Crested Owl",
+      "Forest",
+      "Legendary",
+      false,
+      "ForestCrestedOwl",
+      false
+    ],
+    [
+      "ForestLeafAntler",
+      "Leaf-Antler Guardian",
+      "Forest",
+      "Legendary",
+      false,
+      "ForestLeafAntler",
+      false
+    ],
+    [
+      "ForestEmeraldWing",
+      "Emerald-Wing Guardian",
+      "Forest",
+      "Secret",
+      false,
+      "ForestEmeraldWing",
+      false
+    ]
+  ],
+  "universeId": 10764288431,
+  "biomes": [
+    {
+      "id": "Meadow",
+      "order": 1,
+      "ready": true
+    },
+    {
+      "id": "Forest",
+      "order": 2,
+      "ready": true
+    },
+    {
+      "id": "Jungle",
+      "order": 3,
+      "ready": false
+    },
+    {
+      "id": "Desert",
+      "order": 4,
+      "ready": false
+    },
+    {
+      "id": "Snow",
+      "order": 5,
+      "ready": false
+    },
+    {
+      "id": "Volcano",
+      "order": 6,
+      "ready": false
+    },
+    {
+      "id": "Ocean",
+      "order": 7,
+      "ready": false
+    },
+    {
+      "id": "AncientRuins",
+      "order": 8,
+      "ready": false
+    },
+    {
+      "id": "MagicalForest",
+      "order": 9,
+      "ready": false
+    },
+    {
+      "id": "Sky",
+      "order": 10,
+      "ready": false
+    },
+    {
+      "id": "Prehistoric",
+      "order": 11,
+      "ready": false
+    },
+    {
+      "id": "Mythical",
+      "order": 12,
+      "ready": false
+    }
+  ],
+  "rarityWeights": {
+    "Legendary": 0.9,
+    "Secret": 0.001,
+    "Common": 55,
+    "Epic": 4,
+    "Mythical": 0.1,
+    "Uncommon": 28,
+    "Rare": 12
+  },
+  "assets": [
+    "ReplicatedStorage.PetAssets.ForestEmeraldWing",
+    "ReplicatedStorage.PetAssets.ForestCrestedOwl",
+    "ReplicatedStorage.PetAssets.ForestRaccoon",
+    "ReplicatedStorage.PetAssets.ForestBlackBearCub",
+    "ReplicatedStorage.PetAssets.ForestSkunk",
+    "ReplicatedStorage.PetAssets.ForestBadger",
+    "ReplicatedStorage.PetAssets.ForestTreeFrog",
+    "ReplicatedStorage.PetAssets.ForestRiverOtter",
+    "ReplicatedStorage.PetAssets.ForestWoodlandOwl",
+    "ReplicatedStorage.PetAssets.ForestBrownBat",
+    "ReplicatedStorage.PetAssets.ForestLeafAntler"
+  ],
+  "placeId": 132313449035787,
+  "petColumns": [
+    "id",
+    "name",
+    "biome",
+    "rarity",
+    "legacy",
+    "modelKey",
+    "retired"
+  ],
+  "families": [
+    {
+      "pets": [
+        "MeadowFieldMouse",
+        "MeadowPatchworkLop",
+        "MeadowBlossomBunny"
+      ],
+      "name": "Blossombark",
+      "tier": 1,
+      "id": "Meadow_Shakeable_01",
+      "cost": 250,
+      "biome": "Meadow"
+    },
+    {
+      "pets": [
+        "MeadowChick",
+        "MeadowFawn",
+        "MeadowCloudtailFox"
+      ],
+      "name": "Honeybloom",
+      "tier": 2,
+      "id": "Meadow_Shakeable_02",
+      "cost": 500,
+      "biome": "Meadow"
+    },
+    {
+      "pets": [
+        "MeadowRedSquirrel",
+        "MeadowFluffyLop",
+        "MeadowPrismAntlerDeer"
+      ],
+      "name": "Clover Crown",
+      "tier": 3,
+      "id": "Meadow_Shakeable_03",
+      "cost": 1000,
+      "biome": "Meadow"
+    },
+    {
+      "pets": [
+        "MeadowGoat",
+        "MeadowBuck",
+        "MeadowDaisyCrownBunny"
+      ],
+      "name": "Sunpetal",
+      "tier": 4,
+      "id": "Meadow_Shakeable_04",
+      "cost": 2000,
+      "biome": "Meadow"
+    },
+    {
+      "pets": [
+        "MeadowDaisyHedgehog",
+        "MeadowCelestialLamb"
+      ],
+      "name": "Whisper Willow",
+      "tier": 5,
+      "id": "Meadow_Shakeable_05",
+      "cost": 4000,
+      "biome": "Meadow"
+    },
+    {
+      "pets": [
+        "ForestRaccoon",
+        "ForestTreeFrog",
+        "ForestEmeraldWing"
+      ],
+      "name": "Mossheart",
+      "tier": 1,
+      "id": "Forest_Shakeable_01",
+      "cost": 6000,
+      "biome": "Forest"
+    },
+    {
+      "pets": [
+        "ForestBlackBearCub",
+        "ForestBrownBat"
+      ],
+      "name": "Fernwood",
+      "tier": 2,
+      "id": "Forest_Shakeable_02",
+      "cost": 10000,
+      "biome": "Forest"
+    },
+    {
+      "pets": [
+        "ForestSkunk",
+        "ForestWoodlandOwl"
+      ],
+      "name": "Duskleaf",
+      "tier": 3,
+      "id": "Forest_Shakeable_03",
+      "cost": 17500,
+      "biome": "Forest"
+    },
+    {
+      "pets": [
+        "ForestBadger",
+        "ForestLeafAntler"
+      ],
+      "name": "Elderbark",
+      "tier": 4,
+      "id": "Forest_Shakeable_04",
+      "cost": 30000,
+      "biome": "Forest"
+    },
+    {
+      "pets": [
+        "ForestRiverOtter",
+        "ForestCrestedOwl"
+      ],
+      "name": "Mooncap",
+      "tier": 5,
+      "id": "Forest_Shakeable_05",
+      "cost": 50000,
+      "biome": "Forest"
+    },
+    {
+      "pets": [],
+      "name": "Rainbloom",
+      "tier": 1,
+      "id": "Jungle_Shakeable_01",
+      "biome": "Jungle"
+    },
+    {
+      "pets": [],
+      "name": "Emerald Canopy",
+      "tier": 2,
+      "id": "Jungle_Shakeable_02",
+      "biome": "Jungle"
+    },
+    {
+      "pets": [],
+      "name": "Orchidwood",
+      "tier": 3,
+      "id": "Jungle_Shakeable_03",
+      "biome": "Jungle"
+    },
+    {
+      "pets": [],
+      "name": "Sunvine",
+      "tier": 4,
+      "id": "Jungle_Shakeable_04",
+      "biome": "Jungle"
+    },
+    {
+      "pets": [],
+      "name": "Ancient Banyan",
+      "tier": 5,
+      "id": "Jungle_Shakeable_05",
+      "biome": "Jungle"
+    }
+  ]
+}

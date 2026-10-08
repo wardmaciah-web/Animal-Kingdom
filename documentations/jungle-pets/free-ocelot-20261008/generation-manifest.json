@@ -1,0 +1,49 @@
+{
+    "status":  "generated_not_approved",
+    "backend":  "TripoSR local CUDA inference",
+    "weights_repo":  "stabilityai/TripoSR",
+    "weights_revision":  "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+    "weights_sha256":  "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+    "input_sha256":  "9e05aa4b771621833bb39cad7222b6d0e31c96034983ead36f876f51b545d40a",
+    "original_geometry":  true,
+    "reused_bear_mesh":  false,
+    "credits_used":  0,
+    "seed":  42,
+    "mc_resolution":  256,
+    "texture_resolution":  2048,
+    "triangles":  144854,
+    "vertices":  114490,
+    "runtime_seconds":  66.10461091995239,
+    "torch":  "2.5.1+cu124",
+    "gpu":  "NVIDIA GeForce RTX 3060",
+    "peak_vram_bytes":  1684560896,
+    "extraction":  "scikit-image CPU marching cubes adapter; no neural model changes",
+    "limitations":  [
+                        "Single image; unseen surfaces inferred",
+                        "No independently generated normal or PBR maps",
+                        "2048 neural atlas does not restore fine source fur; final candidate adds concept projection and sculpted fur"
+                    ],
+    "outputs":  {
+                    "basecolor.png":  {
+                                          "bytes":  3726179,
+                                          "sha256":  "fb18cf407dbd3d8e79719acda231301aa80a248872971e000f3c2a441ffad864"
+                                      },
+                    "inference-input.png":  {
+                                                "bytes":  897148,
+                                                "sha256":  "5638acf81e2384f88579517db6d07b04796d5d316cbee1707612a1571b701994"
+                                            },
+                    "ocelot-local-raw.glb":  {
+                                                 "bytes":  7755580,
+                                                 "sha256":  "622d89a1e8469e2152a230ed8e4583df801f64dd65bf1d93ae8a4d34bde0fa6b"
+                                             },
+                    "scene-code.pt":  {
+                                          "bytes":  984235,
+                                          "sha256":  "f7d4edc8c5eee6e6587a5895e93338c4341cb1a4fe507fbe61b6d991801f95ab"
+                                      },
+                    "untextured-source.ply":  {
+                                                  "bytes":  2752446,
+                                                  "sha256":  "f87acc454702db2eefb74fdf2b0c00ceb617535d018c050e9b9b321249f505a5"
+                                              }
+                },
+    "precision":  "float16 weights/autocast; mmap weights load to fit Windows memory headroom"
+}

@@ -1,0 +1,2553 @@
+{
+  "Snow|pine_tree_2_snow": {
+    "path": "Workspace.pine_tree_2_snow_V5_006",
+    "name": "pine_tree_2_snow_V5_006",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "pine_tree_2_snow",
+      "ReplacementAssetId": 122401075722135,
+      "TreeType": "pine_tree_2_snow",
+      "OriginalFileName": "Willow_Snow_5.fbx",
+      "RobloxAssetId": 122424617408641,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_5",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Snow"
+  },
+  "Desert|Desert_DecorTree_11": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_11",
+    "name": "Desert_DecorTree_11",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "MagicalForest|MagicalForestTree_001_AK_NimbusWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_001_AK_NimbusWillow",
+    "name": "MagicalForestTree_001_AK_NimbusWillow",
+    "attributes": {
+      "AK_SizeVariation": "Small",
+      "AK_SizeMultiplier": 0.827158532600589,
+      "AK_RealSizeMultiplier": 1.1845749589504413,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Large",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "26522af3-0de6-4f21-867e-c2adb1c37184"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "AncientRuins|AncientRuinsTree_07_Type2": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_07_Type2",
+    "name": "AncientRuinsTree_07_Type2",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "d201a9b7-2cba-4fb1-b410-0941508a76f0",
+      "InteractionPosition": null,
+      "AK_TreeType": 2
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Desert|Desert_DecorTree_10": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_10",
+    "name": "Desert_DecorTree_10",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Desert|Desert_DecorTree_8": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_8",
+    "name": "Desert_DecorTree_8",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "MagicalForest|MagicalForestTree_015_AK_LowpolyWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_015_AK_LowpolyWillow",
+    "name": "MagicalForestTree_015_AK_LowpolyWillow",
+    "attributes": {
+      "AK_SizeVariation": "Small",
+      "AK_SizeMultiplier": 0.8636112638059842,
+      "AK_RealSizeMultiplier": 0.9992746689065528,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "e42a6dad-e709-4439-a9ff-ca7c24b6b210"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Desert|Desert_DecorTree_4": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_4",
+    "name": "Desert_DecorTree_4",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "QualityRevision": 3,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "DecorationPlacementRevision": 4
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Ocean|Tree_Palm_1": {
+    "path": "Workspace.Tree_Palm_1_V5_015",
+    "name": "Tree_Palm_1_V5_015",
+    "attributes": {
+      "SourceAssetName": "Tree_Palm_1",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Tree_Palm_1",
+      "RobloxAssetId": 88417900847495,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_1.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Ocean"
+  },
+  "Mythical|Mythical_DecorTree_9": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_9",
+    "name": "Mythical_DecorTree_9",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "76557341582296",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalWorldTree",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "bdb51aa7-3bc1-40ae-8d02-138c8f53129b",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Volcano|Willow_Dead_5": {
+    "path": "Workspace.Willow_Dead_5_V5_019",
+    "name": "Willow_Dead_5_V5_019",
+    "attributes": {
+      "SourceAssetName": "Willow_Dead_5",
+      "ResourceType": "Tree",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "TreeType": "Willow_Dead_5",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 3,
+    "biome": "Volcano"
+  },
+  "AncientRuins|AncientRuinsTree_13_Type3": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_13_Type3",
+    "name": "AncientRuinsTree_13_Type3",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "7b8d9d41-7e42-41cc-866e-add0a768f517",
+      "InteractionPosition": null,
+      "AK_TreeType": 3
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "AncientRuins|AK_AncientRuins_StylizedTree": {
+    "path": "Workspace.AK_AncientRuins_StylizedTree",
+    "name": "AK_AncientRuins_StylizedTree",
+    "attributes": {
+      "ResourceType": "Tree",
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 2,
+    "biome": "AncientRuins"
+  },
+  "Volcano|common_tree_dead_1": {
+    "path": "Workspace.common_tree_dead_1_V5_012",
+    "name": "common_tree_dead_1_V5_012",
+    "attributes": {
+      "SourceAssetName": "common_tree_dead_1",
+      "SourceBatch": "Batch_03",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "common_tree_dead_1",
+      "RobloxAssetId": 111785953289891,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_3.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Volcano"
+  },
+  "Ocean|tree_palmShort": {
+    "path": "Workspace.tree_palmShort_V5_025",
+    "name": "tree_palmShort_V5_025",
+    "attributes": {
+      "SourceAssetName": "tree_palmShort",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "tree_palmShort",
+      "RobloxAssetId": 88417900847495,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_1.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Ocean"
+  },
+  "Prehistoric|Willow_3": {
+    "path": "Workspace.Willow_3_V5_042",
+    "name": "Willow_3_V5_042",
+    "attributes": {
+      "SourceAssetName": "Willow_3",
+      "ResourceType": "Tree",
+      "BiomeId": "Prehistoric",
+      "AuthoredGatherableTree": true,
+      "TreeType": "Willow_3",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 2,
+    "biome": "Prehistoric"
+  },
+  "Desert|Desert_DecorTree_12": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_12",
+    "name": "Desert_DecorTree_12",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "cfacb1b2-b0e2-4479-961f-9f42d255a04c",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Prehistoric|tree_oak": {
+    "path": "Workspace.tree_oak_V5_019",
+    "name": "tree_oak_V5_019",
+    "attributes": {
+      "SourceAssetName": "tree_oak",
+      "ResourceType": "Tree",
+      "BiomeId": "Prehistoric",
+      "AuthoredGatherableTree": true,
+      "TreeType": "tree_oak",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 6,
+    "biome": "Prehistoric"
+  },
+  "Desert|Cactus_3": {
+    "path": "Workspace.Cactus_3_V5_009",
+    "name": "Cactus_3_V5_009",
+    "attributes": {
+      "SourceAssetName": "Cactus_3",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Cactus_3",
+      "RobloxAssetId": 115453782586432,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_5.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Desert"
+  },
+  "Sky|CommonTree_Snow_5": {
+    "path": "Workspace.CommonTree_Snow_5_V5_014",
+    "name": "CommonTree_Snow_5_V5_014",
+    "attributes": {
+      "SourceAssetName": "CommonTree_Snow_5",
+      "ResourceType": "Tree",
+      "BiomeId": "Sky",
+      "AuthoredGatherableTree": true,
+      "TreeType": "CommonTree_Snow_5",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 2,
+    "biome": "Sky"
+  },
+  "Mythical|TwistedTree_5": {
+    "path": "Workspace.TwistedTree_5_V5_018",
+    "name": "TwistedTree_5_V5_018",
+    "attributes": {
+      "SourceAssetName": "TwistedTree_5",
+      "TreeType": "TwistedTree_5",
+      "Biome": "Mythical",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Mythical",
+      "BiomeId": "Mythical",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Mythical"
+  },
+  "Snow|pine_tree_1_snow": {
+    "path": "Workspace.pine_tree_1_snow_V5_005",
+    "name": "pine_tree_1_snow_V5_005",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "pine_tree_1_snow",
+      "ReplacementAssetId": 107525354074125,
+      "TreeType": "pine_tree_1_snow",
+      "OriginalFileName": "Willow_Snow_1.fbx",
+      "RobloxAssetId": 86701618856822,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_1",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Snow"
+  },
+  "Prehistoric|Tree_Oak_5": {
+    "path": "Workspace.Tree_Oak_5_V5_012",
+    "name": "Tree_Oak_5_V5_012",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Prehistoric",
+      "SourceAssetName": "Tree_Oak_5",
+      "ReplacementAssetId": 71216353580005,
+      "TreeType": "Tree_Oak_5",
+      "OriginalFileName": "tree_palmBend.fbx",
+      "RobloxAssetId": 77926005288311,
+      "Biome": "Prehistoric",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Prehistoric",
+      "SourceBatch": "Batch_20",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_palmBend",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 5,
+    "biome": "Prehistoric"
+  },
+  "Desert|Desert_DecorTree_7": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_7",
+    "name": "Desert_DecorTree_7",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Desert|Cactus_5": {
+    "path": "Workspace.Cactus_5_V5_002",
+    "name": "Cactus_5_V5_002",
+    "attributes": {
+      "SourceAssetName": "Cactus_5",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Cactus_5",
+      "RobloxAssetId": 109379274883787,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_1.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Desert"
+  },
+  "Mythical|Mythical_DecorTree_4": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_4",
+    "name": "Mythical_DecorTree_4",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "124754553530905",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalGoldenBanyan",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Desert|Desert_DecorTree_1": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_1",
+    "name": "Desert_DecorTree_1",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Desert|Desert_DecorTree_2": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_2",
+    "name": "Desert_DecorTree_2",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Jungle|tree_palmDetailedTall": {
+    "path": "Workspace.tree_palmDetailedTall_V5_012",
+    "name": "tree_palmDetailedTall_V5_012",
+    "attributes": {
+      "SourceAssetName": "tree_palmDetailedTall",
+      "SourceBatch": "Batch_20",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "tree_palmDetailedTall",
+      "RobloxAssetId": 103098006353206,
+      "RespawnTime": 20,
+      "Biome": "Jungle",
+      "OriginalFileName": "tree_palmDetailedTall.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Jungle",
+      "BiomeId": "Jungle",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 5,
+    "biome": "Jungle"
+  },
+  "Jungle|Tree_Palm_2": {
+    "path": "Workspace.Tree_Palm_2_V5_010",
+    "name": "Tree_Palm_2_V5_010",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Jungle",
+      "SourceAssetName": "Tree_Palm_2",
+      "ReplacementAssetId": 120173286397102,
+      "TreeType": "Tree_Palm_2",
+      "OriginalFileName": "PalmTree_2.fbx",
+      "RobloxAssetId": 79063867044795,
+      "Biome": "Jungle",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Jungle",
+      "SourceBatch": "Batch_04",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "PalmTree_2",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 5,
+    "biome": "Jungle"
+  },
+  "MagicalForest|MagicalForestTree_006_AK_LowpolyWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_006_AK_LowpolyWillow",
+    "name": "MagicalForestTree_006_AK_LowpolyWillow",
+    "attributes": {
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.8939438760873675,
+      "AK_RealSizeMultiplier": 0.7395468133825903,
+      "InteractionPosition": null,
+      "AK_SizeClass": "VerySmall",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "e42a6dad-e709-4439-a9ff-ca7c24b6b210"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|MagicalForestTree_010_AK_NimbusWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_010_AK_NimbusWillow",
+    "name": "MagicalForestTree_010_AK_NimbusWillow",
+    "attributes": {
+      "AK_SizeVariation": "Small",
+      "AK_SizeMultiplier": 0.7555874412672838,
+      "AK_RealSizeMultiplier": 0.9933763745910462,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "26522af3-0de6-4f21-867e-c2adb1c37184"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Snow|common_tree_3_snow": {
+    "path": "Workspace.common_tree_3_snow_V5_016",
+    "name": "common_tree_3_snow_V5_016",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "common_tree_3_snow",
+      "ReplacementAssetId": 122401075722135,
+      "TreeType": "common_tree_3_snow",
+      "OriginalFileName": "Willow_Snow_5.fbx",
+      "RobloxAssetId": 122424617408641,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_5",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Snow"
+  },
+  "Snow|BirchTree_Dead_Snow_2": {
+    "path": "Workspace.BirchTree_Dead_Snow_2_V5_026",
+    "name": "BirchTree_Dead_Snow_2_V5_026",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "BirchTree_Dead_Snow_2",
+      "ReplacementAssetId": 107525354074125,
+      "TreeType": "BirchTree_Dead_Snow_2",
+      "OriginalFileName": "Willow_Snow_1.fbx",
+      "RobloxAssetId": 86701618856822,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_1",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Snow"
+  },
+  "Desert|Desert_DecorTree_6": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_6",
+    "name": "Desert_DecorTree_6",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "cfacb1b2-b0e2-4479-961f-9f42d255a04c",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Jungle|tree_palmTall": {
+    "path": "Workspace.tree_palmTall_V5_036",
+    "name": "tree_palmTall_V5_036",
+    "attributes": {
+      "SourceAssetName": "tree_palmTall",
+      "ResourceType": "Tree",
+      "BiomeId": "Jungle",
+      "AuthoredGatherableTree": true,
+      "TreeType": "tree_palmTall",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 3,
+    "biome": "Jungle"
+  },
+  "Sky|pine_tree_3_snow": {
+    "path": "Workspace.pine_tree_3_snow_V5_007",
+    "name": "pine_tree_3_snow_V5_007",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "pine_tree_3_snow",
+      "ReplacementAssetId": 106655255446360,
+      "TreeType": "pine_tree_3_snow",
+      "OriginalFileName": "tree_default.fbx",
+      "RobloxAssetId": 75663645539426,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_20",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_default",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Sky"
+  },
+  "MagicalForest|MagicalForestTree_021_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_021_AK_MagicTree",
+    "name": "MagicalForestTree_021_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.1513637024053205,
+      "AK_RealSizeMultiplier": 1.0004959909541218,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|MagicalForestTree_018_AK_NimbusWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_018_AK_NimbusWillow",
+    "name": "MagicalForestTree_018_AK_NimbusWillow",
+    "attributes": {
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.929281651390793,
+      "AK_RealSizeMultiplier": 1.2493075603732704,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Large",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "26522af3-0de6-4f21-867e-c2adb1c37184"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "AncientRuins|AncientRuinsTree_14_Type1": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_14_Type1",
+    "name": "AncientRuinsTree_14_Type1",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "ce311b54-7040-4ed7-8f4f-6c106a9175f9",
+      "InteractionPosition": null,
+      "AK_TreeType": 1
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Jungle|AK_FutureTreeVisual": {
+    "path": "Workspace.tree_palmTall_V5_036.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "VisualTemplate": "JungleDragon",
+      "QualityRevision": 3,
+      "VisualFamily": "tree_palmTall",
+      "BiomeId": "Jungle",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "997fee15-058b-4812-8e09-c9d5c800706c",
+      "FutureTreeVisual": true
+    },
+    "count": 35,
+    "biome": "Jungle"
+  },
+  "AncientRuins|Tree_Cedar_3": {
+    "path": "Workspace.Tree_Cedar_3_V5_008",
+    "name": "Tree_Cedar_3_V5_008",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "AncientRuins",
+      "SourceAssetName": "Tree_Cedar_3",
+      "ReplacementAssetId": 134919545670061,
+      "TreeType": "Tree_Cedar_3",
+      "OriginalFileName": "Tree_Bare_1.fbx",
+      "RobloxAssetId": 113874897104903,
+      "Biome": "AncientRuins",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "AncientRuins",
+      "SourceBatch": "Batch_07",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Tree_Bare_1",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "AncientRuins"
+  },
+  "Sky|Tree_Pine_6": {
+    "path": "Workspace.Tree_Pine_6_V5_013",
+    "name": "Tree_Pine_6_V5_013",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "Tree_Pine_6",
+      "ReplacementAssetId": 82485789096120,
+      "TreeType": "Tree_Pine_6",
+      "OriginalFileName": "tree_small.fbx",
+      "RobloxAssetId": 130237193585582,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_21",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_small",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Sky"
+  },
+  "Volcano|CommonTree_Dead_1": {
+    "path": "Workspace.CommonTree_Dead_1_V5_007",
+    "name": "CommonTree_Dead_1_V5_007",
+    "attributes": {
+      "SourceAssetName": "CommonTree_Dead_1",
+      "SourceBatch": "Batch_03",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "CommonTree_Dead_1",
+      "RobloxAssetId": 93694565153194,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_2.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Volcano"
+  },
+  "Mythical|Mythical_DecorTree_7": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_7",
+    "name": "Mythical_DecorTree_7",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "124754553530905",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalGoldenBanyan",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "MagicalForest|MagicalForestTree_024_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_024_AK_MagicTree",
+    "name": "MagicalForestTree_024_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.1724879240767816,
+      "AK_RealSizeMultiplier": 0.6632962333399257,
+      "InteractionPosition": null,
+      "AK_SizeClass": "VerySmall",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Mythical|Mythical_DecorTree_6": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_6",
+    "name": "Mythical_DecorTree_6",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "76557341582296",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalWorldTree",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "bdb51aa7-3bc1-40ae-8d02-138c8f53129b",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Desert|Cactus_4": {
+    "path": "Workspace.Cactus_4_V5_005",
+    "name": "Cactus_4_V5_005",
+    "attributes": {
+      "SourceAssetName": "Cactus_4",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Cactus_4",
+      "RobloxAssetId": 109379274883787,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_1.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Desert"
+  },
+  "Prehistoric|palm_tree_2": {
+    "path": "Workspace.palm_tree_2_V5_034",
+    "name": "palm_tree_2_V5_034",
+    "attributes": {
+      "SourceAssetName": "palm_tree_2",
+      "SourceBatch": "Batch_16",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "palm_tree_2",
+      "RobloxAssetId": 116452993741817,
+      "RespawnTime": 20,
+      "Biome": "Prehistoric",
+      "OriginalFileName": "palm_tree_2.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Prehistoric",
+      "BiomeId": "Prehistoric",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Prehistoric"
+  },
+  "Sky|tree_thin": {
+    "path": "Workspace.tree_thin_V5_021",
+    "name": "tree_thin_V5_021",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "tree_thin",
+      "ReplacementAssetId": 82485789096120,
+      "TreeType": "tree_thin",
+      "OriginalFileName": "tree_small.fbx",
+      "RobloxAssetId": 130237193585582,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_21",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_small",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Sky"
+  },
+  "Desert|Desert_DecorTree_3": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_3",
+    "name": "Desert_DecorTree_3",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "cfacb1b2-b0e2-4479-961f-9f42d255a04c",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "AncientRuins|plant_flatTall": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_08_Type5",
+    "name": "AncientRuinsTree_08_Type5",
+    "attributes": {
+      "SourceAssetName": "plant_flatTall",
+      "ImportedByAnimalKingdomLoader": true,
+      "AK_TreeType": 5,
+      "SourceBatch": "Batch_17",
+      "Category": "Plants",
+      "RobloxAssetId": 133523786481569,
+      "OriginalFileName": "plant_flatTall.fbx",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Biome": "AncientRuins"
+    },
+    "count": 3,
+    "biome": "AncientRuins"
+  },
+  "Desert|AK_FutureTreeVisual": {
+    "path": "Workspace.CactusFlowers_2_V5_016.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "VisualTemplate": "DesertBloom",
+      "QualityRevision": 3,
+      "VisualFamily": "CactusFlowers_2",
+      "BiomeId": "Desert",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "c5dd5d45-26ff-4b33-bb3a-3e453bf1bf6c",
+      "FutureTreeVisual": true
+    },
+    "count": 19,
+    "biome": "Desert"
+  },
+  "Jungle|tree_palmDetailedShort": {
+    "path": "Workspace.tree_palmDetailedShort_V5_002",
+    "name": "tree_palmDetailedShort_V5_002",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Jungle",
+      "SourceAssetName": "tree_palmDetailedShort",
+      "ReplacementAssetId": 96345877134620,
+      "TreeType": "tree_palmDetailedShort",
+      "OriginalFileName": "PalmTree_1.fbx",
+      "RobloxAssetId": 140597003690284,
+      "Biome": "Jungle",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Jungle",
+      "SourceBatch": "Batch_04",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "PalmTree_1",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 7,
+    "biome": "Jungle"
+  },
+  "Jungle|PalmTree_1": {
+    "path": "Workspace.PalmTree_1_V5_029",
+    "name": "PalmTree_1_V5_029",
+    "attributes": {
+      "SourceAssetName": "PalmTree_1",
+      "ResourceType": "Tree",
+      "BiomeId": "Jungle",
+      "AuthoredGatherableTree": true,
+      "TreeType": "PalmTree_1",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 5,
+    "biome": "Jungle"
+  },
+  "Snow|Willow_Snow_5": {
+    "path": "Workspace.Willow_Snow_5_V5_022",
+    "name": "Willow_Snow_5_V5_022",
+    "attributes": {
+      "SourceAssetName": "Willow_Snow_5",
+      "ResourceType": "Tree",
+      "BiomeId": "Snow",
+      "AuthoredGatherableTree": true,
+      "TreeType": "Willow_Snow_5",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 5,
+    "biome": "Snow"
+  },
+  "Prehistoric|PalmTree_3": {
+    "path": "Workspace.PalmTree_3_V5_035",
+    "name": "PalmTree_3_V5_035",
+    "attributes": {
+      "SourceAssetName": "PalmTree_3",
+      "ResourceType": "Tree",
+      "BiomeId": "Prehistoric",
+      "AuthoredGatherableTree": true,
+      "TreeType": "PalmTree_3",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 3,
+    "biome": "Prehistoric"
+  },
+  "Mythical|Tree3": {
+    "path": "Workspace.Tree3_V5_024",
+    "name": "Tree3_V5_024",
+    "attributes": {
+      "SourceAssetName": "Tree3",
+      "TreeType": "Tree3",
+      "RespawnTime": 20,
+      "OriginalPlacementRecord": "Mythical_TreeType3_08_Tree3",
+      "Biome": "Mythical",
+      "RecoveredFromAuthoritativePlan": true,
+      "ResourceType": "Tree",
+      "BiomeName": "Mythical",
+      "BiomeId": "Mythical",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "MagicalForest|MagicalForestTree_007_AK_LowpolyWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_007_AK_LowpolyWillow",
+    "name": "MagicalForestTree_007_AK_LowpolyWillow",
+    "attributes": {
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.1368121289062536,
+      "AK_RealSizeMultiplier": 1.2612995133576486,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Large",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "e42a6dad-e709-4439-a9ff-ca7c24b6b210"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Mythical|Mythical_DecorTree_10": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_10",
+    "name": "Mythical_DecorTree_10",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "124754553530905",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalGoldenBanyan",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Ocean|Tree_Palm_3": {
+    "path": "Workspace.Tree_Palm_3_V5_004",
+    "name": "Tree_Palm_3_V5_004",
+    "attributes": {
+      "SourceAssetName": "Tree_Palm_3",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Tree_Palm_3",
+      "RobloxAssetId": 130670701464740,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_6.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Ocean"
+  },
+  "MagicalForest|TwistedTree_2": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_022_AK_OldMagicalTree_1",
+    "name": "MagicalForestTree_022_AK_OldMagicalTree_1",
+    "attributes": {
+      "SourceAssetName": "TwistedTree_2",
+      "TreeType": "TwistedTree_2",
+      "RespawnTime": 20,
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.1751146958417125,
+      "AK_RealSizeMultiplier": 1.2318736524464688,
+      "Biome": "MagicalForest",
+      "ResourceType": "Tree",
+      "AK_SizeClass": "Large",
+      "BiomeName": "MagicalForest",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 10,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|MagicalForestTree_027_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_027_AK_MagicTree",
+    "name": "MagicalForestTree_027_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.9484294589979093,
+      "AK_RealSizeMultiplier": 1.1832712371234673,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Large",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|TwistedTree_4": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_020_AK_OldMagicalTree_2",
+    "name": "MagicalForestTree_020_AK_OldMagicalTree_2",
+    "attributes": {
+      "SourceAssetName": "TwistedTree_4",
+      "TreeType": "TwistedTree_4",
+      "RespawnTime": 20,
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.9397248513684615,
+      "AK_RealSizeMultiplier": 1.2583086847260776,
+      "Biome": "MagicalForest",
+      "ResourceType": "Tree",
+      "AK_SizeClass": "Large",
+      "BiomeName": "MagicalForest",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 6,
+    "biome": "MagicalForest"
+  },
+  "Mythical|Mythical_DecorTree_14": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_14",
+    "name": "Mythical_DecorTree_14",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "91711710602392",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalAuroraWillow",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "AncientRuins|Willow_Dead_4": {
+    "path": "Workspace.Willow_Dead_4_V5_006",
+    "name": "Willow_Dead_4_V5_006",
+    "attributes": {
+      "SourceAssetName": "Willow_Dead_4",
+      "ResourceType": "Tree",
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "TreeType": "Willow_Dead_4",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 3,
+    "biome": "AncientRuins"
+  },
+  "Desert|BirchTree_Dead_5": {
+    "path": "Workspace.BirchTree_Dead_5_V5_004",
+    "name": "BirchTree_Dead_5_V5_004",
+    "attributes": {
+      "SourceAssetName": "BirchTree_Dead_5",
+      "ResourceType": "Tree",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "TreeType": "BirchTree_Dead_5",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 2,
+    "biome": "Desert"
+  },
+  "AncientRuins|AK_FutureTreeVisual": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_14_Type1.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "123251432256139",
+      "VisualTemplate": "RuinsSacredBanyan",
+      "QualityRevision": 3,
+      "VisualFamily": "1",
+      "BiomeId": "AncientRuins",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "a814a458-659f-41bc-b50c-8ef622f16264",
+      "FutureTreeVisual": true
+    },
+    "count": 22,
+    "biome": "AncientRuins"
+  },
+  "Mythical|Mythical_DecorTree_3": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_3",
+    "name": "Mythical_DecorTree_3",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "76557341582296",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalWorldTree",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "bdb51aa7-3bc1-40ae-8d02-138c8f53129b",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Mythical|AK_FutureTreeVisual": {
+    "path": "Workspace.Tree3_V5_024.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "124754553530905",
+      "CosmeticGroundPosition": null,
+      "VisualTemplate": "MythicalGoldenBanyan",
+      "QualityRevision": 4,
+      "VisualFamily": "Tree3",
+      "BiomeId": "Mythical",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "FutureTreeVisual": true
+    },
+    "count": 4,
+    "biome": "Mythical"
+  },
+  "Sky|tree_fat": {
+    "path": "Workspace.tree_fat_V5_020",
+    "name": "tree_fat_V5_020",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "tree_fat",
+      "ReplacementAssetId": 113919537295190,
+      "TreeType": "tree_fat",
+      "OriginalFileName": "tree_simple.fbx",
+      "RobloxAssetId": 103429797515132,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_21",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_simple",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Sky"
+  },
+  "Snow|common_tree_1_snow": {
+    "path": "Workspace.common_tree_1_snow_V5_001",
+    "name": "common_tree_1_snow_V5_001",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "common_tree_1_snow",
+      "ReplacementAssetId": 96326219658796,
+      "TreeType": "common_tree_1_snow",
+      "OriginalFileName": "Willow_Snow_4.fbx",
+      "RobloxAssetId": 125178902026788,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_4",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Snow"
+  },
+  "Jungle|Tree_Oak_8": {
+    "path": "Workspace.Tree_Oak_8_V5_028",
+    "name": "Tree_Oak_8_V5_028",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Jungle",
+      "SourceAssetName": "Tree_Oak_8",
+      "ReplacementAssetId": 123162912495998,
+      "TreeType": "Tree_Oak_8",
+      "OriginalFileName": "PalmTree_4.fbx",
+      "RobloxAssetId": 118329860787723,
+      "Biome": "Jungle",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Jungle",
+      "SourceBatch": "Batch_04",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "PalmTree_4",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 1,
+    "biome": "Jungle"
+  },
+  "AncientRuins|AncientRuinsTree_04_Type3": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_04_Type3",
+    "name": "AncientRuinsTree_04_Type3",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "7b8d9d41-7e42-41cc-866e-add0a768f517",
+      "InteractionPosition": null,
+      "AK_TreeType": 3
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Prehistoric|Tree_Oak_6": {
+    "path": "Workspace.Tree_Oak_6_V5_005",
+    "name": "Tree_Oak_6_V5_005",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Prehistoric",
+      "SourceAssetName": "Tree_Oak_6",
+      "ReplacementAssetId": 101001626828455,
+      "TreeType": "Tree_Oak_6",
+      "OriginalFileName": "tree_palmTall.fbx",
+      "RobloxAssetId": 99276005966643,
+      "Biome": "Prehistoric",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Prehistoric",
+      "SourceBatch": "Batch_20",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_palmTall",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Prehistoric"
+  },
+  "Desert|cactus_tall": {
+    "path": "Workspace.cactus_tall_V5_014",
+    "name": "cactus_tall_V5_014",
+    "attributes": {
+      "SourceAssetName": "cactus_tall",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "cactus_tall",
+      "RobloxAssetId": 137668501622243,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_3.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Desert"
+  },
+  "Snow|PineTree_Snow_1": {
+    "path": "Workspace.PineTree_Snow_1_V5_024",
+    "name": "PineTree_Snow_1_V5_024",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "PineTree_Snow_1",
+      "ReplacementAssetId": 112703927938577,
+      "TreeType": "PineTree_Snow_1",
+      "OriginalFileName": "Willow_Snow_3.fbx",
+      "RobloxAssetId": 73802694396681,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_3",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 4,
+    "biome": "Snow"
+  },
+  "Mythical|Mythical_DecorTree_11": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_11",
+    "name": "Mythical_DecorTree_11",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "91711710602392",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalAuroraWillow",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Volcano|common_tree_dead_2": {
+    "path": "Workspace.common_tree_dead_2_V5_022",
+    "name": "common_tree_dead_2_V5_022",
+    "attributes": {
+      "SourceAssetName": "common_tree_dead_2",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "common_tree_dead_2",
+      "RobloxAssetId": 97445055008517,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_1.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Volcano"
+  },
+  "Desert|Desert_DecorTree_5": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_5",
+    "name": "Desert_DecorTree_5",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "8c74529a-c0be-441a-bf80-e2e3a9fff619",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Desert|cactus_short": {
+    "path": "Workspace.cactus_short_V5_012",
+    "name": "cactus_short_V5_012",
+    "attributes": {
+      "SourceAssetName": "cactus_short",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "cactus_short",
+      "RobloxAssetId": 108331904846776,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_2.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Desert"
+  },
+  "MagicalForest|Willow_Autumn_4": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.Willow_Autumn_4_V5_039",
+    "name": "Willow_Autumn_4_V5_039",
+    "attributes": {
+      "SourceAssetName": "Willow_Autumn_4",
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.202257955897734,
+      "AK_RealSizeMultiplier": 1.4376327578008348,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Giant",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "TreeType": "Willow_Autumn_4",
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 8,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|AK_FutureTreeVisual": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_024_AK_MagicTree.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "140347260319383",
+      "CosmeticGroundPosition": null,
+      "VisualTemplate": "MagicMushroom",
+      "QualityRevision": 3,
+      "VisualFamily": "MagicTree",
+      "BiomeId": "MagicalForest",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "b31359c8-a3bf-4b69-9c87-b4598783eb11",
+      "FutureTreeVisual": true
+    },
+    "count": 55,
+    "biome": "MagicalForest"
+  },
+  "Snow|AK_FutureTreeVisual": {
+    "path": "Workspace.common_tree_1_snow_V5_001.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "VisualTemplate": "SnowSpruce",
+      "QualityRevision": 2,
+      "VisualFamily": "common_tree_1_snow",
+      "BiomeId": "Snow",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "a766a930-b9fa-4910-884a-4803d073fcb9",
+      "FutureTreeVisual": true
+    },
+    "count": 31,
+    "biome": "Snow"
+  },
+  "Jungle|Tree_Oak_7": {
+    "path": "Workspace.Tree_Oak_7_V5_026",
+    "name": "Tree_Oak_7_V5_026",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Jungle",
+      "SourceAssetName": "Tree_Oak_7",
+      "ReplacementAssetId": 91752313509049,
+      "TreeType": "Tree_Oak_7",
+      "OriginalFileName": "PalmTree_3.fbx",
+      "RobloxAssetId": 128605141434370,
+      "Biome": "Jungle",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Jungle",
+      "SourceBatch": "Batch_04",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "PalmTree_3",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 5,
+    "biome": "Jungle"
+  },
+  "Mythical|Mythical_DecorTree_13": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_13",
+    "name": "Mythical_DecorTree_13",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "124754553530905",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalGoldenBanyan",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Mythical|Tree4": {
+    "path": "Workspace.Tree4_V5_016",
+    "name": "Tree4_V5_016",
+    "attributes": {
+      "SourceAssetName": "Tree4",
+      "TreeType": "Tree4",
+      "Biome": "Mythical",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Mythical",
+      "BiomeId": "Mythical",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "AncientRuins|Tree_Bare_5": {
+    "path": "Workspace.Tree_Bare_5_V5_023",
+    "name": "Tree_Bare_5_V5_023",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "AncientRuins",
+      "SourceAssetName": "Tree_Bare_5",
+      "ReplacementAssetId": 120801602095890,
+      "TreeType": "Tree_Bare_5",
+      "OriginalFileName": "Tree_Bare_4.fbx",
+      "RobloxAssetId": 101845063915108,
+      "Biome": "AncientRuins",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "AncientRuins",
+      "SourceBatch": "Batch_07",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Tree_Bare_4",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "AncientRuins"
+  },
+  "Prehistoric|palm_tree_1": {
+    "path": "Workspace.palm_tree_1_V5_015",
+    "name": "palm_tree_1_V5_015",
+    "attributes": {
+      "SourceAssetName": "palm_tree_1",
+      "SourceBatch": "Batch_16",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "palm_tree_1",
+      "RobloxAssetId": 105974194493465,
+      "RespawnTime": 20,
+      "Biome": "Prehistoric",
+      "OriginalFileName": "palm_tree_1.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Prehistoric",
+      "BiomeId": "Prehistoric",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Prehistoric"
+  },
+  "Ocean|Tree_Palm_6": {
+    "path": "Workspace.Tree_Palm_6_V5_014",
+    "name": "Tree_Palm_6_V5_014",
+    "attributes": {
+      "SourceAssetName": "Tree_Palm_6",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Tree_Palm_6",
+      "RobloxAssetId": 132388878287618,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_3.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 8,
+    "biome": "Ocean"
+  },
+  "Prehistoric|AK_FutureTreeVisual": {
+    "path": "Workspace.tree_oak_V5_019.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "134823019645798",
+      "CosmeticGroundPosition": null,
+      "VisualTemplate": "PrehistoricCycad",
+      "QualityRevision": 3,
+      "VisualFamily": "tree_oak",
+      "BiomeId": "Prehistoric",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "f6ee4478-7d9d-4b2f-aeb5-1986461001ed",
+      "FutureTreeVisual": true
+    },
+    "count": 27,
+    "biome": "Prehistoric"
+  },
+  "Desert|Desert_DecorTree_9": {
+    "path": "Workspace.AK_Desert_NativePalms.Desert_DecorTree_9",
+    "name": "Desert_DecorTree_9",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "DecorationPlacementRevision": 4,
+      "AK8OriginalDecorationPivot": null,
+      "QualityRevision": 3,
+      "BiomeId": "Desert",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "cfacb1b2-b0e2-4479-961f-9f42d255a04c",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Desert"
+  },
+  "Mythical|Mythical_DecorTree_2": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_2",
+    "name": "Mythical_DecorTree_2",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "91711710602392",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalAuroraWillow",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "MagicalForest|MagicalForestTree_005_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_005_AK_MagicTree",
+    "name": "MagicalForestTree_005_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.9272761226318195,
+      "AK_RealSizeMultiplier": 1.004311824823524,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Sky|tree_cone": {
+    "path": "Workspace.tree_cone_V5_018",
+    "name": "tree_cone_V5_018",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "tree_cone",
+      "ReplacementAssetId": 106655255446360,
+      "TreeType": "tree_cone",
+      "OriginalFileName": "tree_default.fbx",
+      "RobloxAssetId": 75663645539426,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_20",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_default",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Sky"
+  },
+  "Ocean|Tree_Palm_5": {
+    "path": "Workspace.Tree_Palm_5_V5_001",
+    "name": "Tree_Palm_5_V5_001",
+    "attributes": {
+      "SourceAssetName": "Tree_Palm_5",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Tree_Palm_5",
+      "RobloxAssetId": 130670701464740,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_6.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 1,
+    "biome": "Ocean"
+  },
+  "Mythical|Mythical_DecorTree_12": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_12",
+    "name": "Mythical_DecorTree_12",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "76557341582296",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalWorldTree",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "bdb51aa7-3bc1-40ae-8d02-138c8f53129b",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Sky|Tree_Pine_3": {
+    "path": "Workspace.Tree_Pine_3_V5_004",
+    "name": "Tree_Pine_3_V5_004",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "Tree_Pine_3",
+      "ReplacementAssetId": 113302997713736,
+      "TreeType": "Tree_Pine_3",
+      "OriginalFileName": "tree_tall.fbx",
+      "RobloxAssetId": 125134116085040,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_21",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_tall",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Sky"
+  },
+  "Volcano|common_tree_dead_3": {
+    "path": "Workspace.common_tree_dead_3_V5_023",
+    "name": "common_tree_dead_3_V5_023",
+    "attributes": {
+      "SourceAssetName": "common_tree_dead_3",
+      "SourceBatch": "Batch_03",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "common_tree_dead_3",
+      "RobloxAssetId": 102043144201515,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_5.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Volcano"
+  },
+  "Mythical|Mythical_DecorTree_1": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_1",
+    "name": "Mythical_DecorTree_1",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "124754553530905",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalGoldenBanyan",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "509adb94-8f3f-4aed-b3ab-71a85a9d9599",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "MagicalForest|MagicalForestTree_011_AK_NimbusWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_011_AK_NimbusWillow",
+    "name": "MagicalForestTree_011_AK_NimbusWillow",
+    "attributes": {
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.1929671103272232,
+      "AK_RealSizeMultiplier": 0.8298917239194319,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Small",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "26522af3-0de6-4f21-867e-c2adb1c37184"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|MagicalForestTree_002_AK_NimbusWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_002_AK_NimbusWillow",
+    "name": "MagicalForestTree_002_AK_NimbusWillow",
+    "attributes": {
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.16279541955185,
+      "AK_RealSizeMultiplier": 0.9908119991635906,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "26522af3-0de6-4f21-867e-c2adb1c37184"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Ocean|tree_palmBend": {
+    "path": "Workspace.tree_palmBend_V5_027",
+    "name": "tree_palmBend_V5_027",
+    "attributes": {
+      "SourceAssetName": "tree_palmBend",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "tree_palmBend",
+      "RobloxAssetId": 132388878287618,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_3.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Ocean"
+  },
+  "Prehistoric|palm_tree_3": {
+    "path": "Workspace.palm_tree_3_V5_021",
+    "name": "palm_tree_3_V5_021",
+    "attributes": {
+      "SourceAssetName": "palm_tree_3",
+      "SourceBatch": "Batch_16",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "palm_tree_3",
+      "RobloxAssetId": 129463965909912,
+      "RespawnTime": 20,
+      "Biome": "Prehistoric",
+      "OriginalFileName": "palm_tree_3.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Prehistoric",
+      "BiomeId": "Prehistoric",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Prehistoric"
+  },
+  "Sky|AK_FutureTreeVisual": {
+    "path": "Workspace.Tree_Pine_6_V5_013.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "103629072590216",
+      "CosmeticGroundPosition": null,
+      "VisualTemplate": "SkySunBaobab",
+      "QualityRevision": 3,
+      "VisualFamily": "Tree_Pine_6",
+      "BiomeId": "Sky",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "f0a3cb16-0a2a-4161-be66-453fb269ee2d",
+      "FutureTreeVisual": true
+    },
+    "count": 19,
+    "biome": "Sky"
+  },
+  "Ocean|AK_FutureTreeVisual": {
+    "path": "Workspace.Tree_Palm_6_V5_014.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "VisualTemplate": "OceanStaghorn",
+      "QualityRevision": 3,
+      "VisualFamily": "Tree_Palm_6",
+      "BiomeId": "Ocean",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "b8025da6-15a7-4881-b82f-c5c03b783bfc",
+      "FutureTreeVisual": true
+    },
+    "count": 27,
+    "biome": "Ocean"
+  },
+  "MagicalForest|MagicalForestTree_017_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_017_AK_MagicTree",
+    "name": "MagicalForestTree_017_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Small",
+      "AK_SizeMultiplier": 0.8554401801579155,
+      "AK_RealSizeMultiplier": 0.9976322263095352,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Mythical|Mythical_DecorTree_5": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_5",
+    "name": "Mythical_DecorTree_5",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "91711710602392",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalAuroraWillow",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Ocean|Willow_2": {
+    "path": "Workspace.Willow_2_V5_006",
+    "name": "Willow_2_V5_006",
+    "attributes": {
+      "SourceAssetName": "Willow_2",
+      "ResourceType": "Tree",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "TreeType": "Willow_2",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 6,
+    "biome": "Ocean"
+  },
+  "AncientRuins|Tree_Cedar_2": {
+    "path": "Workspace.Tree_Cedar_2_V5_004",
+    "name": "Tree_Cedar_2_V5_004",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "AncientRuins",
+      "SourceAssetName": "Tree_Cedar_2",
+      "ReplacementAssetId": 135024555181661,
+      "TreeType": "Tree_Cedar_2",
+      "OriginalFileName": "Tree_Bare_3.fbx",
+      "RobloxAssetId": 77174872908483,
+      "Biome": "AncientRuins",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "AncientRuins",
+      "SourceBatch": "Batch_07",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Tree_Bare_3",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "AncientRuins"
+  },
+  "Volcano|AK_FutureTreeVisual": {
+    "path": "Workspace.CommonTree_Dead_1_V5_007.AK_FutureTreeVisual",
+    "name": "AK_FutureTreeVisual",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "VisualTemplate": "VolcanoEmber",
+      "QualityRevision": 2,
+      "VisualFamily": "CommonTree_Dead_1",
+      "BiomeId": "Volcano",
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_MODEL_FLOW": "mesh",
+      "RBX_AI_GENERATION_ID": "39010606-4304-4710-8e20-ab09a3ac3010",
+      "FutureTreeVisual": true
+    },
+    "count": 26,
+    "biome": "Volcano"
+  },
+  "AncientRuins|AK_AncientRuins_CypressTree": {
+    "path": "Workspace.AK_AncientRuins_CypressTree",
+    "name": "AK_AncientRuins_CypressTree",
+    "attributes": {
+      "ResourceType": "Tree",
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 3,
+    "biome": "AncientRuins"
+  },
+  "AncientRuins|AncientRuinsTree_09_Type2": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_09_Type2",
+    "name": "AncientRuinsTree_09_Type2",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "d201a9b7-2cba-4fb1-b410-0941508a76f0",
+      "InteractionPosition": null,
+      "AK_TreeType": 2
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Desert|Cactus_1": {
+    "path": "Workspace.Cactus_1_V5_008",
+    "name": "Cactus_1_V5_008",
+    "attributes": {
+      "SourceAssetName": "Cactus_1",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "Cactus_1",
+      "RobloxAssetId": 108331904846776,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_2.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Desert"
+  },
+  "AncientRuins|AncientRuinsTree_12_Type2": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_12_Type2",
+    "name": "AncientRuinsTree_12_Type2",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "d201a9b7-2cba-4fb1-b410-0941508a76f0",
+      "InteractionPosition": null,
+      "AK_TreeType": 2
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Jungle|CommonTree_5": {
+    "path": "Workspace.CommonTree_5_V5_039",
+    "name": "CommonTree_5_V5_039",
+    "attributes": {
+      "SourceAssetName": "CommonTree_5",
+      "ResourceType": "Tree",
+      "BiomeId": "Jungle",
+      "AuthoredGatherableTree": true,
+      "TreeType": "CommonTree_5",
+      "RespawnTime": 20,
+      "InteractionPosition": null
+    },
+    "count": 4,
+    "biome": "Jungle"
+  },
+  "AncientRuins|AncientRuinsTree_11_Type3": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_11_Type3",
+    "name": "AncientRuinsTree_11_Type3",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "7b8d9d41-7e42-41cc-866e-add0a768f517",
+      "InteractionPosition": null,
+      "AK_TreeType": 3
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Ocean|tree_palm": {
+    "path": "Workspace.tree_palm_V5_003",
+    "name": "tree_palm_V5_003",
+    "attributes": {
+      "SourceAssetName": "tree_palm",
+      "SourceBatch": "Batch_08",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "tree_palm",
+      "RobloxAssetId": 101500626288037,
+      "RespawnTime": 20,
+      "Biome": "Ocean",
+      "OriginalFileName": "Tree_Palm_4.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Ocean",
+      "BiomeId": "Ocean",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Ocean"
+  },
+  "AncientRuins|AncientRuinsTree_02_Type1": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_02_Type1",
+    "name": "AncientRuinsTree_02_Type1",
+    "attributes": {
+      "ResourceType": "Tree",
+      "RespawnTime": 20,
+      "BiomeId": "AncientRuins",
+      "AuthoredGatherableTree": true,
+      "RBX_ReimportId": "ce311b54-7040-4ed7-8f4f-6c106a9175f9",
+      "InteractionPosition": null,
+      "AK_TreeType": 1
+    },
+    "count": 1,
+    "biome": "AncientRuins"
+  },
+  "Mythical|Mythical_DecorTree_8": {
+    "path": "Workspace.AK_Mythical_CelestialGrove.Mythical_DecorTree_8",
+    "name": "Mythical_DecorTree_8",
+    "attributes": {
+      "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+      "NativePublishedAssetId": "91711710602392",
+      "DecorationPlacementRevision": 4,
+      "QualityRevision": 4,
+      "VisualTemplate": "MythicalAuroraWillow",
+      "BiomeId": "Mythical",
+      "QualityDecoration": true,
+      "RBX_AI_GENERATED": true,
+      "RBX_AI_GENERATION_ID": "24c838d9-3f78-4d92-ab0c-d6b5b42ac77f",
+      "RBX_AI_MODEL_FLOW": "mesh"
+    },
+    "count": 1,
+    "biome": "Mythical"
+  },
+  "Volcano|CommonTree_Dead_5": {
+    "path": "Workspace.CommonTree_Dead_5_V5_001",
+    "name": "CommonTree_Dead_5_V5_001",
+    "attributes": {
+      "SourceAssetName": "CommonTree_Dead_5",
+      "SourceBatch": "Batch_03",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "CommonTree_Dead_5",
+      "RobloxAssetId": 122786707612586,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_4.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Volcano"
+  },
+  "AncientRuins|Root_4": {
+    "path": "Workspace.AK_AncientRuins_RandomizedTrees.AncientRuinsTree_15_Type4",
+    "name": "AncientRuinsTree_15_Type4",
+    "attributes": {
+      "SourceAssetName": "Root_4",
+      "ImportedByAnimalKingdomLoader": true,
+      "AK_TreeType": 4,
+      "SourceBatch": "Batch_06",
+      "Category": "Plants",
+      "RobloxAssetId": 112685362553667,
+      "OriginalFileName": "Root_4.fbx",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Biome": "AncientRuins"
+    },
+    "count": 3,
+    "biome": "AncientRuins"
+  },
+  "Volcano|CommonTree_Dead_4": {
+    "path": "Workspace.CommonTree_Dead_4_V5_006",
+    "name": "CommonTree_Dead_4_V5_006",
+    "attributes": {
+      "SourceAssetName": "CommonTree_Dead_4",
+      "SourceBatch": "Batch_03",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "CommonTree_Dead_4",
+      "RobloxAssetId": 111785953289891,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_3.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Volcano"
+  },
+  "Snow|Willow_Dead_Snow_3": {
+    "path": "Workspace.Willow_Dead_Snow_3_V5_029",
+    "name": "Willow_Dead_Snow_3_V5_029",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Snow",
+      "SourceAssetName": "Willow_Dead_Snow_3",
+      "ReplacementAssetId": 96326219658796,
+      "TreeType": "Willow_Dead_Snow_3",
+      "OriginalFileName": "Willow_Snow_4.fbx",
+      "RobloxAssetId": 125178902026788,
+      "Biome": "Snow",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Snow",
+      "SourceBatch": "Batch_09",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "Willow_Snow_4",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Snow"
+  },
+  "Sky|Tree_Pine_5": {
+    "path": "Workspace.Tree_Pine_5_V5_005",
+    "name": "Tree_Pine_5_V5_005",
+    "attributes": {
+      "ImportedByAnimalKingdomLoader": true,
+      "InteractionPosition": null,
+      "BiomeId": "Sky",
+      "SourceAssetName": "Tree_Pine_5",
+      "ReplacementAssetId": 130687671499721,
+      "TreeType": "Tree_Pine_5",
+      "OriginalFileName": "tree_detailed.fbx",
+      "RobloxAssetId": 91438329735137,
+      "Biome": "Sky",
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "BiomeName": "Sky",
+      "SourceBatch": "Batch_20",
+      "AuthoredGatherableTree": true,
+      "ReplacedFromSource": "tree_detailed",
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Sky"
+  },
+  "MagicalForest|MagicalForestTree_014_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_014_AK_MagicTree",
+    "name": "MagicalForestTree_014_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.9222570263308947,
+      "AK_RealSizeMultiplier": 0.9901388508894096,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Normal",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "MagicalForest|MagicalForestTree_025_AK_NimbusWillow": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_025_AK_NimbusWillow",
+    "name": "MagicalForestTree_025_AK_NimbusWillow",
+    "attributes": {
+      "AK_SizeVariation": "Medium",
+      "AK_SizeMultiplier": 0.9348425217111858,
+      "AK_RealSizeMultiplier": 1.205349527082441,
+      "InteractionPosition": null,
+      "AK_SizeClass": "Large",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree",
+      "RBX_ReimportId": "26522af3-0de6-4f21-867e-c2adb1c37184"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Desert|CactusFlowers_2": {
+    "path": "Workspace.CactusFlowers_2_V5_016",
+    "name": "CactusFlowers_2_V5_016",
+    "attributes": {
+      "SourceAssetName": "CactusFlowers_2",
+      "SourceBatch": "Batch_02",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "CactusFlowers_2",
+      "RobloxAssetId": 100722013207626,
+      "RespawnTime": 20,
+      "Biome": "Desert",
+      "OriginalFileName": "Cactus_4.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Desert",
+      "BiomeId": "Desert",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 2,
+    "biome": "Desert"
+  },
+  "MagicalForest|MagicalForestTree_012_AK_MagicTree": {
+    "path": "Workspace.AK_MagicalForest_RestoredTrees.MagicalForestTree_012_AK_MagicTree",
+    "name": "MagicalForestTree_012_AK_MagicTree",
+    "attributes": {
+      "AK_SizeVariation": "Large",
+      "AK_SizeMultiplier": 1.1365614261686512,
+      "AK_RealSizeMultiplier": 0.7140087891328213,
+      "InteractionPosition": null,
+      "AK_SizeClass": "VerySmall",
+      "BiomeId": "MagicalForest",
+      "AuthoredGatherableTree": true,
+      "RespawnTime": 20,
+      "ResourceType": "Tree"
+    },
+    "count": 2,
+    "biome": "MagicalForest"
+  },
+  "Volcano|CommonTree_Dead_3": {
+    "path": "Workspace.CommonTree_Dead_3_V5_005",
+    "name": "CommonTree_Dead_3_V5_005",
+    "attributes": {
+      "SourceAssetName": "CommonTree_Dead_3",
+      "SourceBatch": "Batch_03",
+      "ImportedByAnimalKingdomLoader": true,
+      "TreeType": "CommonTree_Dead_3",
+      "RobloxAssetId": 122786707612586,
+      "RespawnTime": 20,
+      "Biome": "Volcano",
+      "OriginalFileName": "CommonTree_Dead_4.fbx",
+      "ResourceType": "Tree",
+      "BiomeName": "Volcano",
+      "BiomeId": "Volcano",
+      "AuthoredGatherableTree": true,
+      "InteractionPosition": null,
+      "AnimalKingdomPlacedEnvironment": true,
+      "Category": "Trees"
+    },
+    "count": 3,
+    "biome": "Volcano"
+  }
+}

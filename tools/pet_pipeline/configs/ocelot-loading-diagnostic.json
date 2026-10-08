@@ -1,0 +1,120 @@
+﻿{
+    "schema_version":  1,
+    "pet_id":  "JungleOcelot",
+    "pet_name":  "Jungle Ocelot",
+    "biome":  "Jungle",
+    "species":  "Ocelot",
+    "concept_image":  "../references/ocelot-v7.png",
+    "style_references":  [
+                             "../references/bear-front.jpg",
+                             "../references/bear-side.jpg",
+                             "../references/approved-ocelot-front.png"
+                         ],
+    "approved_model":  "../../../documentations/jungle-pets/free-ocelot-20261008/ocelot-review.glb",
+    "approved_front_render":  "../references/approved-ocelot-front.png",
+    "concept_preparation":  {
+                                "background_removal":  "none"
+                            },
+    "target_dimensions":  {
+                              "height":  2.8,
+                              "width_max":  3.0,
+                              "depth_max":  2.5
+                          },
+    "generation":  {
+                       "seed":  42,
+                       "foreground_ratio":  0.85,
+                       "mc_resolution":  256,
+                       "renderer_chunk":  4096,
+                       "checkpoint_loading":  "cuda_streamed"
+                   },
+    "texture":  {
+                    "resolution":  2048,
+                    "query_chunk":  8192,
+                    "roughness":  0.85,
+                    "projection":  {
+                                       "enabled":  true,
+                                       "padding":  8,
+                                       "normal_start":  0.15,
+                                       "normal_range":  0.6
+                                   }
+                },
+    "refinement":  {
+                       "reference_height":  2.8,
+                       "yaw_degrees":  -90,
+                       "weld_distance":  0.00001,
+                       "smooth_factor":  0.65,
+                       "smooth_iterations":  5,
+                       "body_triangle_budget":  18000,
+                       "grounding":  {
+                                         "upper":  0.13,
+                                         "cut":  0.045
+                                     },
+                       "fur":  {
+                                   "enabled":  true,
+                                   "count":  1100,
+                                   "attempts":  4300,
+                                   "minimum_height":  0.3,
+                                   "outward_flow":  0.35,
+                                   "length":  [
+                                                  0.055,
+                                                  0.10
+                                              ],
+                                   "width_ratio":  [
+                                                       0.23,
+                                                       0.33
+                                                   ],
+                                   "root_inset":  0.007,
+                                   "shoulder_height":  0.009,
+                                   "ridge_height":  0.019,
+                                   "tip_height":  0.003,
+                                   "exclusions":  [
+                                                      {
+                                                          "normal_y_max":  -0.25,
+                                                          "z_min":  1.50,
+                                                          "z_max":  2.48,
+                                                          "abs_x_max":  0.85
+                                                      },
+                                                      {
+                                                          "normal_y_max":  -0.4,
+                                                          "z_min":  2.42,
+                                                          "abs_x_min":  0.55
+                                                      }
+                                                  ]
+                               }
+                   },
+    "preview":  {
+                    "resolution":  700,
+                    "samples":  16
+                },
+    "validation":  {
+                       "max_triangles":  26800,
+                       "height_tolerance":  0.02,
+                       "ground_tolerance":  0.001,
+                       "reproduction_distance":  0.015,
+                       "reproduction_ssim":  0.90,
+                       "paw_regions":  [
+                                           {
+                                               "name":  "front_left",
+                                               "x":  [
+                                                         0,
+                                                         0.45
+                                                     ],
+                                               "z":  [
+                                                         0.3,
+                                                         2
+                                                     ]
+                                           },
+                                           {
+                                               "name":  "front_right",
+                                               "x":  [
+                                                         0.5,
+                                                         0.95
+                                                     ],
+                                               "z":  [
+                                                         0.3,
+                                                         2
+                                                     ]
+                                           }
+                                       ]
+                   }
+}

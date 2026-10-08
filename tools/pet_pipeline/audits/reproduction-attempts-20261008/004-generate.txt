@@ -1,0 +1,19 @@
+Loading inference dependencies
+Loading TripoSR modules
+Initializing pinned model
+E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\transformers\utils\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+E:\AnimalKingdom3D\tools\deps-stage\Lib\site-packages\transformers\utils\generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+Traceback (most recent call last):
+  File "C:\Users\Kenny\Documents\Real_Animal_K\tools\pet_pipeline\workers\generate.py", line 52, in <module>
+    state={k:v.to(device='cuda:0',dtype=torch.float16 if v.is_floating_point() else v.dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kenny\Documents\Real_Animal_K\tools\pet_pipeline\workers\generate.py", line 52, in <dictcomp>
+    state={k:v.to(device='cuda:0',dtype=torch.float16 if v.is_floating_point() else v.dtype)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

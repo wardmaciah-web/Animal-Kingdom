@@ -1,0 +1,66 @@
+{
+  "glb_sha256": "d00c5ceb074ec9e67ec8eeaaae7a358d7cc4f4dd04e9b475958eada868b67cc7",
+  "meshes": [
+    {
+      "name": "geometry_0",
+      "triangles": 18000,
+      "vertices": 20191,
+      "finite_positions": true,
+      "finite_normals": true,
+      "valid_indices": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "SculptedFurLocks",
+      "triangles": 8800,
+      "vertices": 6600,
+      "finite_positions": true,
+      "finite_normals": true,
+      "valid_indices": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "bounds": [
+    [
+      -1.2451993227005005,
+      -0.00035177922109141946,
+      -0.8981871604919434
+    ],
+    [
+      1.2577606439590454,
+      2.795717716217041,
+      0.8902795314788818
+    ]
+  ],
+  "total_triangles": 26800,
+  "both_front_paws_contact_tolerance_studs": 0.001,
+  "studio_import": "pending",
+  "visual_approval": "pending",
+  "cost": 0,
+  "front_paw_measurements": {
+    "front_paw_center": {
+      "x_range": [
+        0,
+        0.45
+      ],
+      "forward_z_min": 0.3,
+      "minimum_y": -3.920253584510647e-05
+    },
+    "front_paw_right": {
+      "x_range": [
+        0.5,
+        0.95
+      ],
+      "forward_z_min": 0.3,
+      "minimum_y": 4.182270913588582e-06
+    }
+  }
+}

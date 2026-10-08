@@ -1,0 +1,21 @@
+﻿{
+    "source_commit":  "107cefdc244c39106fa830359024f6a2f1c78871",
+    "weights":  {
+                    "model.ckpt":  "429e2c6b22a0923967459de24d67f05962b235f79cde6b032aa7ed2ffcd970ee",
+                    "config.yaml":  "74ca708ce086bf68e97709ea6b3d91f14717921c04691e84043f0eb8fcc68e62"
+                },
+    "model_revision":  "5b521936b01fbe1890f6f9baed0254ab6351c04a",
+    "vendor_files":  {
+                         "vendor/TripoSR/tsr/models/nerf_renderer.py":  "867b7b840ae82b90120e2058056c5c05d1a130e5c07b84fd1814e494a1fd43b3",
+                         "vendor/TripoSR/tsr/models/transformer/transformer_1d.py":  "5e4a2d3085834f699aafd71c3198e45d9a0c80a0dcef95f36f26fe102d916e68",
+                         "vendor/TripoSR/tsr/models/network_utils.py":  "aa58bd479c8ab0a035816844ea9d38ec55374c7c07dbb77c68cfd6cbaaaa2de8",
+                         "vendor/TripoSR/tsr/models/tokenizers/triplane.py":  "4de016e2dc5120c46eda8e9b994e4352769af25fd6a47dddacf2825d5eb45f10",
+                         "vendor/TripoSR/tsr/utils.py":  "a306bedf79ca6d9417dda4fb6e9d61057962987dd7dcc3555893f640c13c7bf4",
+                         "vendor/TripoSR/tsr/models/transformer/attention.py":  "a421066aba88eec96197296de89d03bbe07e2befe08d62544fba6c1c10fdc1ac",
+                         "vendor/TripoSR/tsr/models/transformer/basic_transformer_block.py":  "fd0d8c27b9f26dcb48be3dbcf050cbbffc8fb64bc0d7c1c63ebfe62c4159d15e",
+                         "vendor/TripoSR/tsr/models/tokenizers/image.py":  "df1e886ee0751a64c895a0eaca30c5b4be5b09bd0a9f72bd90b6fe2045db1d35",
+                         "vendor/TripoSR/tsr/bake_texture.py":  "5c4aa6964f07a0ca10c342c7d9cbfc0b9a65f5e11396bb307c46569349c3e1af",
+                         "vendor/TripoSR/tsr/models/isosurface.py":  "8cf780d5218f4e3b2b340b0765baa55f61ba1c53cf66240687053c6870277b0f",
+                         "vendor/TripoSR/tsr/system.py":  "b98a4d20bcc7555570911f9201121276df8c0ae7ee3000dc985bda8eeb87b053"
+                     }
+}
