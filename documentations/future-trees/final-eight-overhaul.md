@@ -12,3 +12,11 @@ Remaining: Desert, Ocean, Ancient Ruins, Magical Forest, Sky, Prehistoric, Mythi
 ![Before](evidence/jungle-before.jpg)
 ![After Edit](evidence/jungle-after-edit.jpg)
 ![After Play](evidence/jungle-after-play.jpg)
+
+## Desert checkpoint
+19 searchable visuals across eight native textured families, 30 ground-detail clusters and 12 native decorative trees replace three merged untextured decorative palm meshes. Pyramid/terrain retained; old decorative mesh render/collision settings backed up to remove invisible decorative obstacles. Original searchable tree gameplay geometry remains unchanged. Models use24 distinct mesh IDs. Recoverable moderation failures documented; alternatives succeeded.
+Actual Play: all265 records/prompts/gates pass, data unchanged, zero new visual physics failures, two nearby moving canopies, active ambient particles4.56/s. Approved4 hash unchanged. Remaining six biomes and hardware/reopen QA pending.
+
+![Desert before](evidence/desert-before.jpg)
+![Desert Edit after](evidence/desert-after-edit.jpg)
+![Desert Play after](evidence/desert-after-play.jpg)

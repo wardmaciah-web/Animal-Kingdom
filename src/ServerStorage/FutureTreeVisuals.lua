@@ -200,6 +200,7 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ Desert={cactus_short="DesertBarrelTree",cactus_tall="DesertColumn",Cactus_1="DesertSaguaro",Cactus_5="DesertPalm",Cactus_4="DesertAcacia",CactusFlowers_2="DesertBloom",BirchTree_Dead_5="DesertIronwood",Cactus_3="DesertJoshua"},
  Jungle={Tree_Oak_7="JungleBanyan",Tree_Palm_2="JungleKapok",Tree_Oak_8="JungleFig",CommonTree_5="JungleOrchid",PalmTree_1="JunglePalm",tree_palmDetailedShort="JungleFanPalm",tree_palmDetailedTall="JungleRainTree",tree_palmTall="JungleDragon"},
 }
 local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
@@ -252,7 +253,7 @@ function M.Apply(scope)
   assert((tree:GetPivot().Position-originalPivot.Position).Magnitude<.001,"Tree pivot changed")
   report.replaced+=1;report.biomes[b]=(report.biomes[b] or 0)+1
  end
- for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b) end end
+ for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b);if b=="Desert" then report.decorativeTrees=M.PolishDesertDecorations() end end end
  return report
 end
 
@@ -272,12 +273,45 @@ function M.DecorateBiome(b)
    local clear=true
    for _,other in anchors do local q=other:GetPivot().Position;if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<10 then clear=false;break end end
    if b=="Jungle" and (pos.X<80 or pos.X>279 or pos.Z<330 or pos.Z>505) then clear=false end
+   if b=="Desert" and (pos.X<100 or pos.X>282 or pos.Z<608 or pos.Z>790 or Vector2.new(pos.X-187,pos.Z-705).Magnitude<32) then clear=false end
+   local biomeFolder=workspace:FindFirstChild(b);local floor=biomeFolder and biomeFolder:FindFirstChild(b.."Floor")
+   if floor and floor:IsA("BasePart") then pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z) end
    if clear then
     local m=template:Clone();m.Name=b.."_Understory_"..i.."_"..j;local cf,sz=m:GetBoundingBox()
     m:ScaleTo(m:GetScale()*(2.3+(i%4)*.5)/sz.Y);cf,sz=m:GetBoundingBox()
     m:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2-.1,0))*CFrame.Angles(0,angle,0)*m:GetPivot():ToObjectSpace(cf):Inverse())
     for _,d in m:GetDescendants() do if d:IsA("BasePart") then d.Anchored=true;d.CanCollide=false;d.CanTouch=false;d.CanQuery=false;d.Name="Leaves_"..d.Name elseif d:IsA("LuaSourceContainer") or d:IsA("PackageLink") then d:Destroy() end end
     m:SetAttribute("BiomeId",b);m:SetAttribute("QualityDecoration",true);m:SetAttribute("QualityRevision",3);m.Parent=folder;n+=1
+   end
+  end
+ end
+ return n
+end
+
+
+function M.PolishDesertDecorations()
+ local folder=workspace:FindFirstChild("AK_Desert_NativePalms");if folder then return 0 end
+ local wanted={["rbxassetid://91669506494073"]=true,["rbxassetid://115582189664030"]=true,["rbxassetid://132769925644408"]=true}
+ local backup=game.ServerStorage:FindFirstChild("AK_FinalEight_Checkpoint_20261008")
+ for _,p in workspace:GetDescendants() do
+  if p:IsA("MeshPart") and wanted[p.MeshId] and p.Position.X>90 and p.Position.X<300 and p.Position.Z>600 and p.Position.Z<810 then
+   if p:GetAttribute("AK8OriginalTransparency")==nil then
+    if backup then local c=p:Clone();c:SetAttribute("OriginalPath",p:GetFullName());c.Parent=backup end
+    p:SetAttribute("AK8OriginalTransparency",p.Transparency);p:SetAttribute("AK8OriginalCanCollide",p.CanCollide);p:SetAttribute("AK8OriginalCanQuery",p.CanQuery);p:SetAttribute("AK8OriginalCanTouch",p.CanTouch);p:SetAttribute("AK8OriginalCastShadow",p.CastShadow)
+   end
+   p.Transparency=1;p.CastShadow=false;p.CanCollide=false;p.CanQuery=false;p.CanTouch=false
+  end
+ end
+ local anchors={} for _,t in workspace:GetDescendants() do if t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)=="Desert" and t:IsA("Model") then table.insert(anchors,t:GetPivot().Position) end end
+ folder=Instance.new("Folder");folder.Name="AK_Desert_NativePalms";folder.Parent=workspace;local n=0
+ for i,pos in {Vector3.new(275,9.05,780),Vector3.new(235,9.05,780),Vector3.new(279,9.05,737),Vector3.new(270,9.05,703),Vector3.new(235,9.05,758),Vector3.new(108,9.05,769),Vector3.new(115,9.05,660),Vector3.new(237,9.05,614),Vector3.new(100,9.05,626),Vector3.new(270,9.05,765),Vector3.new(249,9.05,719),Vector3.new(177,9.05,788)} do
+  local clear=true;for _,q in anchors do if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<10 then clear=false end end
+  if clear then
+   local name=i%3==0 and "DesertAcacia" or "DesertPalm";local template=findTemplate(name)
+   if template then local m=template:Clone();m.Name="Desert_DecorTree_"..i;local cf,sz=m:GetBoundingBox();m:ScaleTo(m:GetScale()*(28+i%4*3)/sz.Y);cf,sz=m:GetBoundingBox()
+    m:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2,0))*CFrame.Angles(0,i*2.399963,0)*m:GetPivot():ToObjectSpace(cf):Inverse())
+    for _,p in m:GetDescendants() do if p:IsA("BasePart") then p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;if p.Name:lower():find("foliage") then p.Name="Leaves_"..p.Name end end end
+    m:SetAttribute("BiomeId","Desert");m:SetAttribute("QualityDecoration",true);m:SetAttribute("QualityRevision",3);m.Parent=folder;n+=1
    end
   end
  end
