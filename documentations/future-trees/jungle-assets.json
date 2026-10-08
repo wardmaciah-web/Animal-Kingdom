@@ -1,0 +1,1558 @@
+{
+  "approvedProtected": {
+    "hash": 632889028,
+    "bytes": 336304,
+    "instances": 1070
+  },
+  "biome": "Jungle",
+  "treeFamilies": 8,
+  "replaced": 35,
+  "understory": 54,
+  "assets": [
+    {
+      "name": "JungleBanyan",
+      "generationId": "acea995e-5eaf-4fae-b9aa-59cdfaa3114f",
+      "assetId": "83922346528214"
+    },
+    {
+      "name": "JungleKapok",
+      "generationId": "634d8427-49b0-4143-a0df-6bf9a96ea495",
+      "assetId": "84653314940618"
+    },
+    {
+      "name": "JungleFig",
+      "generationId": "044aa3c7-b3d9-4571-8d48-ad95b7938bc1",
+      "assetId": "125246599003648"
+    },
+    {
+      "name": "JungleOrchid",
+      "generationId": "ab9581bc-30fe-492a-94f0-cfac77f79a69",
+      "assetId": "106043907362794"
+    },
+    {
+      "name": "JunglePalm",
+      "generationId": "21eb18ea-c062-43a8-a501-8ef27b217789",
+      "assetId": "82296814728934"
+    },
+    {
+      "name": "JungleFanPalm",
+      "generationId": "322dc7e5-2db3-41f2-90ab-994230a8dcbd",
+      "assetId": "139542484613431"
+    },
+    {
+      "name": "JungleRainTree",
+      "generationId": "71758f7e-a66e-4d46-8b21-215ec1fb1a9f",
+      "assetId": "75869210053361"
+    },
+    {
+      "name": "JungleDragon",
+      "generationId": "997fee15-058b-4812-8e09-c9d5c800706c",
+      "assetId": "73487726180314"
+    },
+    {
+      "name": "JungleUnderstory",
+      "generationId": "1f973637-5e9a-43d9-a7bb-2e545e393e62",
+      "assetId": "80461418059327"
+    }
+  ],
+  "templates": [
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://120881464748281",
+                "CFrame": [
+                  -578.0924072265625,
+                  13.877379417419434,
+                  489.2348327636719,
+                  0.8818631172180176,
+                  0,
+                  0.47150564193725586,
+                  0,
+                  1,
+                  0,
+                  -0.47150570154190063,
+                  0,
+                  0.881862998008728
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  19.51304817199707,
+                  27.754756927490234,
+                  18.642147064208984
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://132959296407956",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://88546978377749",
+                "CFrame": [
+                  -577.623291015625,
+                  20.925771713256836,
+                  489.15777587890625,
+                  0.8818631172180176,
+                  0,
+                  0.47150564193725586,
+                  0,
+                  1,
+                  0,
+                  -0.47150570154190063,
+                  0,
+                  0.881862998008728
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  24.977882385253906,
+                  23.495853424072266,
+                  27.13472557067871
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://73208509410105",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://105437767091195",
+                "CFrame": [
+                  -578.194091796875,
+                  25.75058364868164,
+                  488.95611572265625,
+                  0.8818631172180176,
+                  0,
+                  0.47150564193725586,
+                  0,
+                  1,
+                  0,
+                  -0.47150570154190063,
+                  0,
+                  0.881862998008728
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  32.129947662353516,
+                  17.951879501342773,
+                  32
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://116262508717378",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleBanyan"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://113298361388144",
+                "CFrame": [
+                  -578.1907958984375,
+                  14.955066680908203,
+                  489.0110168457031,
+                  0.8818631172180176,
+                  0,
+                  0.47150564193725586,
+                  0,
+                  1,
+                  0,
+                  -0.47150570154190063,
+                  0,
+                  0.881862998008728
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  14.961466789245605,
+                  29.910139083862305,
+                  14.746088027954102
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://119329064638899",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://122121442576180",
+                "CFrame": [
+                  -578.23486328125,
+                  19.97610855102539,
+                  488.9343566894531,
+                  0.8818631172180176,
+                  0,
+                  0.47150564193725586,
+                  0,
+                  1,
+                  0,
+                  -0.47150570154190063,
+                  0,
+                  0.881862998008728
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  21.271448135375977,
+                  12.174606323242188,
+                  20.02041244506836
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://130266738959509",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://132762521635597",
+                "CFrame": [
+                  -578.194091796875,
+                  22.3806095123291,
+                  488.95611572265625,
+                  0.8818631172180176,
+                  0,
+                  0.47150564193725586,
+                  0,
+                  1,
+                  0,
+                  -0.47150570154190063,
+                  0,
+                  0.881862998008728
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  29.993755340576172,
+                  20.146419525146484,
+                  30
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://80099889858945",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleKapok"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://73173107314013",
+                "CFrame": [
+                  394.1918640136719,
+                  8.81601333618164,
+                  1278.429443359375,
+                  -0.2795106768608093,
+                  0,
+                  -0.9601425528526306,
+                  0,
+                  1,
+                  0,
+                  0.9601425528526306,
+                  0,
+                  -0.2795106768608093
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  24.759613037109375,
+                  17.632028579711914,
+                  24.818939208984375
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://79221714994738",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://132678770428711",
+                "CFrame": [
+                  394.1795349121094,
+                  22.05280303955078,
+                  1278.1241455078125,
+                  -0.2795106768608093,
+                  0,
+                  -0.9601425528526306,
+                  0,
+                  1,
+                  0,
+                  0.9601425528526306,
+                  0,
+                  -0.2795106768608093
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  27.391014099121094,
+                  15.626958847045898,
+                  27.01329803466797
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://116009987153909",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://92843532615379",
+                "CFrame": [
+                  394.6132507324219,
+                  20.707752227783203,
+                  1278.111572265625,
+                  -0.2795106768608093,
+                  0,
+                  -0.9601425528526306,
+                  0,
+                  1,
+                  0,
+                  0.9601425528526306,
+                  0,
+                  -0.2795106768608093
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  30.868011474609375,
+                  26.430458068847656,
+                  32
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://87766334025187",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleFig"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://90683744825541",
+                "CFrame": [
+                  236.0792694091797,
+                  8.383792877197266,
+                  621.4396362304688,
+                  0.6866850256919861,
+                  0,
+                  -0.7269550561904907,
+                  0,
+                  1,
+                  0,
+                  0.7269550561904907,
+                  0,
+                  0.6866850256919861
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  20.731063842773438,
+                  16.76758575439453,
+                  20.671968460083008
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://102464440362889",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://103043970341491",
+                "CFrame": [
+                  235.1133270263672,
+                  20.573123931884766,
+                  622.1522827148438,
+                  0.6866850256919861,
+                  0,
+                  -0.7269550561904907,
+                  0,
+                  1,
+                  0,
+                  0.7269550561904907,
+                  0,
+                  0.6866850256919861
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  24.159536361694336,
+                  14.774948120117188,
+                  23.347206115722656
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://103416366964109",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://91480499656545",
+                "CFrame": [
+                  236.1620635986328,
+                  21.33721923828125,
+                  621.5799560546875,
+                  0.6866850256919861,
+                  0,
+                  -0.7269550561904907,
+                  0,
+                  1,
+                  0,
+                  0.7269550561904907,
+                  0,
+                  0.6866850256919861
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  32,
+                  22.169891357421875,
+                  31.553359985351562
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://89437097619180",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleOrchid"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://74492025030988",
+                "CFrame": [
+                  234.9198760986328,
+                  13.315969467163086,
+                  622.2486572265625,
+                  0.6866850256919861,
+                  0,
+                  -0.7269550561904907,
+                  0,
+                  1,
+                  0,
+                  0.7269550561904907,
+                  0,
+                  0.6866850256919861
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  19.38930892944336,
+                  26.63251495361328,
+                  18.31932258605957
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://74110571077188",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://89428157648918",
+                "CFrame": [
+                  236.1681671142578,
+                  28.429855346679688,
+                  621.693359375,
+                  0.6866850256919861,
+                  0,
+                  -0.7269550561904907,
+                  0,
+                  1,
+                  0,
+                  0.7269550561904907,
+                  0,
+                  0.6866850256919861
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  27.08922576904297,
+                  8.242481231689453,
+                  25.550151824951172
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://120783694789432",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://139988113939685",
+                "CFrame": [
+                  236.16204833984375,
+                  29.12584686279297,
+                  621.5799560546875,
+                  0.6866850256919861,
+                  0,
+                  -0.7269550561904907,
+                  0,
+                  1,
+                  0,
+                  0.7269550561904907,
+                  0,
+                  0.6866850256919861
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  32,
+                  20.04813575744629,
+                  31.86324119567871
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://113690777332289",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JunglePalm"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://92546549895901",
+                "CFrame": [
+                  381.4904479980469,
+                  15.097492218017578,
+                  1318.225341796875,
+                  -0.33877870440483093,
+                  0,
+                  -0.9408660531044006,
+                  0,
+                  1,
+                  0,
+                  0.9408661723136902,
+                  0,
+                  -0.33877867460250854
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  19.08142852783203,
+                  30.194984436035156,
+                  19.368938446044922
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://83481589184332",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://80562416130771",
+                "CFrame": [
+                  381.1510314941406,
+                  18.833995819091797,
+                  1318.46337890625,
+                  -0.33877870440483093,
+                  0,
+                  -0.9408660531044006,
+                  0,
+                  1,
+                  0,
+                  0.9408661723136902,
+                  0,
+                  -0.33877867460250854
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  27.861879348754883,
+                  19.03984832763672,
+                  28.440628051757812
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://93975208482097",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://83807552834268",
+                "CFrame": [
+                  381.5148620605469,
+                  20.69450569152832,
+                  1318.38427734375,
+                  -0.33877870440483093,
+                  0,
+                  -0.9408660531044006,
+                  0,
+                  1,
+                  0,
+                  0.9408661723136902,
+                  0,
+                  -0.33877867460250854
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  31.98058319091797,
+                  22.525371551513672,
+                  32
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://110162363061065",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleRainTree"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://75963246045129",
+                "CFrame": [
+                  381.1850891113281,
+                  13.617865562438965,
+                  1318.243896484375,
+                  -0.33877870440483093,
+                  0,
+                  -0.9408660531044006,
+                  0,
+                  1,
+                  0,
+                  0.9408661723136902,
+                  0,
+                  -0.33877867460250854
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  11.528984069824219,
+                  27.235729217529297,
+                  11.121517181396484
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://129484276941844",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://118948907665709",
+                "CFrame": [
+                  381.5198059082031,
+                  26.29667854309082,
+                  1318.324462890625,
+                  -0.33877870440483093,
+                  0,
+                  -0.9408660531044006,
+                  0,
+                  1,
+                  0,
+                  0.9408661723136902,
+                  0,
+                  -0.33877867460250854
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  8.01111888885498,
+                  3.9819655418395996,
+                  7.980672836303711
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://94549437400621",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://119280060970488",
+                "CFrame": [
+                  381.5148620605469,
+                  27.34588623046875,
+                  1318.38427734375,
+                  -0.33877870440483093,
+                  0,
+                  -0.9408660531044006,
+                  0,
+                  1,
+                  0,
+                  0.9408661723136902,
+                  0,
+                  -0.33877867460250854
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  32.86821746826172,
+                  18.8433837890625,
+                  32
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://93066960539527",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleFanPalm"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://82225101872238",
+                "CFrame": [
+                  398.4299011230469,
+                  19.389404296875,
+                  1263.2911376953125,
+                  -0.2576722800731659,
+                  0,
+                  -0.9662322998046875,
+                  0,
+                  0.9999999403953552,
+                  0,
+                  0.966232419013977,
+                  0,
+                  -0.2576722502708435
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  14.73999309539795,
+                  38.778812408447266,
+                  16.51629066467285
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://124112346562554",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "trunk and roots_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "trunk and roots"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://104641692377120",
+                "CFrame": [
+                  398.7386779785156,
+                  27.56971549987793,
+                  1263.5152587890625,
+                  -0.2576722800731659,
+                  0,
+                  -0.9662322998046875,
+                  0,
+                  0.9999999403953552,
+                  0,
+                  0.966232419013977,
+                  0,
+                  -0.2576722502708435
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  23.830806732177734,
+                  17.238882064819336,
+                  23.82105255126953
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://138429996826625",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "branches_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "branches"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://132274033263517",
+                "CFrame": [
+                  398.75091552734375,
+                  29.70618438720703,
+                  1263.2730712890625,
+                  -0.2576722800731659,
+                  0,
+                  -0.9662322998046875,
+                  0,
+                  0.9999999403953552,
+                  0,
+                  0.966232419013977,
+                  0,
+                  -0.2576722502708435
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  31.72547149658203,
+                  23.45370864868164,
+                  32
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://98583613146292",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "foliage_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "foliage"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleDragon"
+      }
+    },
+    {
+      "class": "Model",
+      "children": [
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://77325141588229",
+                "CFrame": [
+                  398.7513122558594,
+                  2.4998779296875,
+                  1263.2723388671875,
+                  -0.2576722800731659,
+                  0,
+                  -0.9662322998046875,
+                  0,
+                  0.9999999403953552,
+                  0,
+                  0.966232419013977,
+                  0,
+                  -0.2576722502708435
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  4.521920680999756,
+                  5,
+                  5.049642562866211
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://133336719150541",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "ferns_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "ferns"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://129492257732554",
+                "CFrame": [
+                  398.7125244140625,
+                  2.8552358150482178,
+                  1263.2855224609375,
+                  -0.2576722800731659,
+                  0,
+                  -0.9662322998046875,
+                  0,
+                  0.9999999403953552,
+                  0,
+                  0.966232419013977,
+                  0,
+                  -0.2576722502708435
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  4.156728267669678,
+                  4.036443710327148,
+                  4.125811576843262
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://127358729343222",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "broad leaves_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "broad leaves"
+          }
+        },
+        {
+          "class": "Model",
+          "children": [
+            {
+              "class": "MeshPart",
+              "children": [],
+              "props": {
+                "CanQuery": false,
+                "TextureID": "rbxassetid://79536838607327",
+                "CFrame": [
+                  398.666259765625,
+                  1.926187515258789,
+                  1263.2113037109375,
+                  -0.2576722800731659,
+                  0,
+                  -0.9662322998046875,
+                  0,
+                  0.9999999403953552,
+                  0,
+                  0.966232419013977,
+                  0,
+                  -0.2576722502708435
+                ],
+                "RenderFidelity": 0,
+                "Material": 256,
+                "Size": [
+                  1.9953439235687256,
+                  3.5827486515045166,
+                  1.6256704330444336
+                ],
+                "CanCollide": false,
+                "MeshId": "rbxassetid://109050780880778",
+                "CanTouch": false,
+                "CollisionFidelity": 0,
+                "Transparency": 0,
+                "Name": "flowers and vines_geom",
+                "Anchored": true,
+                "DoubleSided": false,
+                "Color": [
+                  0.6392157077789307,
+                  0.6352941393852234,
+                  0.6470588445663452
+                ],
+                "CastShadow": true,
+                "MaterialVariant": ""
+              }
+            }
+          ],
+          "props": {
+            "Name": "flowers and vines"
+          }
+        }
+      ],
+      "props": {
+        "Name": "JungleUnderstory"
+      }
+    }
+  ],
+  "qa": {
+    "distinctMeshIds": 24,
+    "physicsFailures": 0,
+    "heightRange": [
+      36,
+      52
+    ],
+    "allFutureRecords": 265,
+    "allComingSoonPrompts": 265,
+    "dataUnchanged": true,
+    "movingCanopies": 8,
+    "particleRate": 30.1735
+  },
+  "remaining": [
+    "Desert",
+    "Ocean",
+    "AncientRuins",
+    "MagicalForest",
+    "Sky",
+    "Prehistoric",
+    "Mythical"
+  ]
+}

@@ -1,6 +1,8 @@
 -- Visual-only, idempotent replacement. Never registers rewards or unlocks a biome.
 local Collection=game:GetService("CollectionService")
 local Templates=game:GetService("ServerStorage"):WaitForChild("AK_FutureTreeTemplates")
+local AdditionalTemplates=game:GetService("ServerStorage"):FindFirstChild("AK_FinalEightTreeTemplates")
+local function findTemplate(name) return Templates:FindFirstChild(name) or (AdditionalTemplates and AdditionalTemplates:FindFirstChild(name)) end
 local M={}
 local recipes={
  Jungle={"Jungle1","Jungle2","Jungle3","Jungle4","Jungle5"},
@@ -51,7 +53,7 @@ local function tint(visual,biome,index)
   end
  end end
 end
-function M.Apply()
+local function applyApprovedLegacy()
  local groups={};local report={replaced=0,skipped=0,biomes={}}
  for _,tree in workspace:GetDescendants() do
   if (tree:IsA("Model") or tree:IsA("BasePart")) and (tree:GetAttribute("AuthoredGatherableTree")==true or special(tree)) then
@@ -195,5 +197,92 @@ function M.Restore()
  end end end
  return n
 end
+
+-- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
+local newRecipes = {
+ Jungle={Tree_Oak_7="JungleBanyan",Tree_Palm_2="JungleKapok",Tree_Oak_8="JungleFig",CommonTree_5="JungleOrchid",PalmTree_1="JunglePalm",tree_palmDetailedShort="JungleFanPalm",tree_palmDetailedTall="JungleRainTree",tree_palmTall="JungleDragon"},
+}
+local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
+function M.Apply(scope)
+ local report={replaced=0,skipped=0,biomes={}}
+ if scope and protected[scope] then return report end
+ for _,tree in workspace:GetDescendants() do
+  if not (tree:IsA("Model") or tree:IsA("BasePart")) or not tree:GetAttribute("AuthoredGatherableTree") then continue end
+  local b=biomeOf(tree);local recipe=newRecipes[b]
+  if not recipe or (scope and b~=scope) then continue end
+  local name=recipe[family(tree)];local template=name and findTemplate(name)
+  if not template then report.skipped+=1;continue end
+  local previous=tree:FindFirstChild("AK_FutureTreeVisual")
+  if previous and previous:GetAttribute("QualityRevision")==3 and previous:GetAttribute("VisualTemplate")==name then report.skipped+=1;continue end
+  local originalPivot=tree:GetPivot()
+  if previous then
+   local backup=game.ServerStorage:FindFirstChild("AK_FinalEight_Checkpoint_20261008") or Instance.new("Folder")
+   backup.Name="AK_FinalEight_Checkpoint_20261008";backup.Parent=game.ServerStorage
+   local copy=previous:Clone();copy:SetAttribute("OriginalTreePath",tree:GetFullName());copy:SetAttribute("OriginalTreePivot",originalPivot);copy.Parent=backup
+   for _,v in {copy,table.unpack(copy:GetDescendants())} do for _,tag in Collection:GetTags(v) do Collection:RemoveTag(v,tag) end end
+   previous:Destroy()
+  end
+  local bounds,size
+  if tree:IsA("Model") then bounds,size=tree:GetBoundingBox() else bounds,size=tree.CFrame,tree.Size end
+  local visual=template:Clone();visual.Name="AK_FutureTreeVisual"
+  local cf,sz=visual:GetBoundingBox()
+  local height=math.clamp(size.Y,36,52)
+  visual:ScaleTo(visual:GetScale()*height/sz.Y);cf,sz=visual:GetBoundingBox()
+  -- Keep ground contact and orientation; all original gameplay geometry stays intact.
+  visual:PivotTo(bounds*CFrame.new(0,-size.Y/2+sz.Y/2,0)*visual:GetPivot():ToObjectSpace(cf):Inverse())
+  for _,v in visual:GetDescendants() do
+   if v:IsA("LuaSourceContainer") or v:IsA("PackageLink") then v:Destroy()
+   elseif v:IsA("BasePart") then v.Anchored=true;v.CanCollide=false;v.CanTouch=false;v.CanQuery=false
+    if v.Name:lower():find("foliage") or v.Name:lower():find("canopy") then v.Name="Leaves_"..v.Name end
+   end
+  end
+  local originalParts=tree:GetDescendants();if tree:IsA("BasePart") then table.insert(originalParts,tree) end
+  for _,part in originalParts do
+   if part:IsA("BasePart") then
+    if part:GetAttribute("AKFutureOriginalTransparency")==nil then part:SetAttribute("AKFutureOriginalTransparency",part.Transparency);part:SetAttribute("AKFutureOriginalCastShadow",part.CastShadow) end
+    part.Transparency=1;part.CastShadow=false
+   elseif part:IsA("ParticleEmitter") then
+    if part:GetAttribute("AKFutureOriginalEnabled")==nil then part:SetAttribute("AKFutureOriginalEnabled",part.Enabled) end
+    part.Enabled=false
+   end
+  end
+  visual:SetAttribute("BiomeId",b);visual:SetAttribute("VisualTemplate",name);visual:SetAttribute("VisualFamily",family(tree));visual:SetAttribute("FutureTreeVisual",true);visual:SetAttribute("QualityRevision",3)
+  visual.Parent=tree;Collection:AddTag(visual,"FutureBiomeTreeVisual")
+  if tree:IsA("Model") and not tree.PrimaryPart then tree.WorldPivot=originalPivot end
+  assert((tree:GetPivot().Position-originalPivot.Position).Magnitude<.001,"Tree pivot changed")
+  report.replaced+=1;report.biomes[b]=(report.biomes[b] or 0)+1
+ end
+ for b in newRecipes do if not scope or scope==b then report.understory=report.understory or {};report.understory[b]=M.DecorateBiome(b) end end
+ return report
+end
+
+function M.DecorateBiome(b)
+ if protected[b] or not newRecipes[b] then return 0 end
+ local name="AK_"..b.."_Understory";if workspace:FindFirstChild(name) then return 0 end
+ local template=findTemplate(b.."Understory");if not template then return 0 end
+ local anchors={}
+ for _,t in workspace:GetDescendants() do if t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)==b and (t:IsA("Model") or t:IsA("BasePart")) then table.insert(anchors,t) end end
+ table.sort(anchors,function(a,c) local p,q=a:GetPivot().Position,c:GetPivot().Position;return p.X==q.X and p.Z<q.Z or p.X<q.X end)
+ local folder=Instance.new("Folder");folder.Name=name;folder.Parent=workspace
+ local n=0
+ for i,t in anchors do
+  local p=t:GetPivot().Position
+  for j=1,2 do
+   local angle=i*2.399963+j*1.73;local pos=p+Vector3.new(math.cos(angle)*(12+j*2),0,math.sin(angle)*(12+j*2))
+   local clear=true
+   for _,other in anchors do local q=other:GetPivot().Position;if Vector2.new(pos.X-q.X,pos.Z-q.Z).Magnitude<10 then clear=false;break end end
+   if b=="Jungle" and (pos.X<80 or pos.X>279 or pos.Z<330 or pos.Z>505) then clear=false end
+   if clear then
+    local m=template:Clone();m.Name=b.."_Understory_"..i.."_"..j;local cf,sz=m:GetBoundingBox()
+    m:ScaleTo(m:GetScale()*(2.3+(i%4)*.5)/sz.Y);cf,sz=m:GetBoundingBox()
+    m:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2-.1,0))*CFrame.Angles(0,angle,0)*m:GetPivot():ToObjectSpace(cf):Inverse())
+    for _,d in m:GetDescendants() do if d:IsA("BasePart") then d.Anchored=true;d.CanCollide=false;d.CanTouch=false;d.CanQuery=false;d.Name="Leaves_"..d.Name elseif d:IsA("LuaSourceContainer") or d:IsA("PackageLink") then d:Destroy() end end
+    m:SetAttribute("BiomeId",b);m:SetAttribute("QualityDecoration",true);m:SetAttribute("QualityRevision",3);m.Parent=folder;n+=1
+   end
+  end
+ end
+ return n
+end
+
 return M
 
