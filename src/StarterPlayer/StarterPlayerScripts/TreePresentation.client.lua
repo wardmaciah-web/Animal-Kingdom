@@ -10,6 +10,7 @@ local Quality=require(RS.Shared.WeatherVFXQuality)
 local player=Players.LocalPlayer
 local Theme=require(game:GetService('StarterGui').AnimalKingdomUI.AnimalKingdomUIV2.Theme)
 local folder=Instance.new('Folder');folder.Name='KingdomAmbientVisuals';folder.Parent=workspace
+local FutureTrees=require(RS.Shared.Gameplay.FutureTreeAmbience);FutureTrees.Init(folder)
 local connections={};local alive=true;local targeted;local burstAt=0;local random=Random.new()
 local SPARK='rbxasset://textures/particles/sparkles_main.dds'
 local SMOKE='rbxasset://textures/particles/smoke_main.dds'
@@ -87,6 +88,7 @@ local function spawnLeaf(item,r,initial)
  item.Start=Vector3.new(origin.X,y,origin.Z);item.Age=0;item.Life=random:NextNumber(7,12);item.Velocity=Vector3.new(random:NextNumber(.5,1.5),random:NextNumber(-1.35,-.65),random:NextNumber(-.4,.6))
  item.Leaf.BackgroundColor3=meadow and(random:NextNumber()<.7 and Color3.fromRGB(255,180+random:NextInteger(0,35),210)or Color3.fromRGB(173,219,123))or Color3.fromRGB(random:NextInteger(146,195),random:NextInteger(151,192),random:NextInteger(64,105))
  item.IsLeaf=not meadow or random:NextNumber()>.72;item.Art.Visible=item.IsLeaf;item.Art.ImageColor3=meadow and Color3.fromRGB(225,255,190)or Color3.fromRGB(235,223,167);item.Vein.Visible=false;if not item.IsLeaf then item.Leaf.BackgroundColor3=Color3.fromRGB(255,random:NextInteger(185,220),216)end
+ FutureTrees.StyleLeaf(item,biome)
  local size=random:NextNumber(.35,.65);item.Gui.Size=UDim2.fromScale(size,size*1.4);item.Gui.Enabled=true
 end
 local function updateZones(r)
@@ -163,7 +165,7 @@ local function tick(r,now)
  if(player:GetAttribute('LuckyTreeEndsAt')or 0)>now then for _,tree in ipairs(workspace:GetChildren())do if tree:GetAttribute('LuckyEventId')then local pos=tree:IsA('Model')and tree:GetPivot().Position or tree.Position;if(pos-r.Position).Magnitude<120 then luckyAnchor.Position=groundAt(pos,player:GetAttribute('LuckyTreeBiome'))+Vector3.new(0,5,0);luckyGlints.Rate=8*quality end;break end end end
  townTarget=chooseTown(r);townHighlight.Enabled=townTarget~=nil;townEmitter.Rate=townTarget and 4*quality or 0
  if townTarget then townAnchor.Position=townTarget.Position+Vector3.new(0,1,0);local path=townTarget:GetAttribute('ExistingLandmark');townHighlight.Adornee=path and workspace:FindFirstChild(path:gsub('^Workspace%.',''));townHighlight.OutlineColor=Color3.fromRGB(255,226,154);townEmitter.Color=ColorSequence.new(Color3.fromRGB(255,231,157))end
- local rate=motes.Rate+hotUp.Rate+luckyGlints.Rate+townEmitter.Rate
+ local rate=motes.Rate+hotUp.Rate+luckyGlints.Rate+townEmitter.Rate+FutureTrees.Update(r,biome,quality,wind,time)
  for _,o in ipairs(orbit)do rate+=o.Emitter.Rate end;for _,z in ipairs(zones)do rate+=z.Fireflies.Rate+z.Mist.Rate end
  -- Hard cap all continuous emitters, including concurrent special/Town attention.
  if rate>96*quality then local scale=96*quality/rate;for _,e in ipairs(folder:GetDescendants())do if e:IsA('ParticleEmitter')then e.Rate*=scale end end;rate=96*quality end
@@ -196,7 +198,7 @@ connections[#connections+1]=Run.RenderStepped:Connect(function(dt)
  for i,o in ipairs(orbit)do local t=reduced and i*math.pi or time*.85+i*math.pi;o.Attachment.Position=Vector3.new(math.cos(t)*4,math.sin(t*.6)*.4,math.sin(t)*4)end
  for i,h in ipairs(ready)do h.OutlineTransparency=reduced and .92 or h.Adornee==targeted and .53 or .88+.055*math.sin(time*(biome=='Forest'and 1.2 or 1.8)+i)end
  townHighlight.OutlineTransparency=reduced and .45 or .32+.18*pulse
- local count=(biome=='Meadow'or biome=='Forest')and math.min(36,math.ceil(24*quality*density))or biome=='Town'and math.ceil(5*quality)or 0
+ local count=(biome=='Meadow'or biome=='Forest')and math.min(36,math.ceil(24*quality*density))or biome=='Town'and math.ceil(5*quality)or FutureTrees.FoliageCount(biome,quality)
  for i,item in ipairs(foliage)do
   if i>count then item.Gui.Enabled=false;continue end
   if item.Age>=item.Life or(item.Anchor.Position-r.Position).Magnitude>85 then spawnLeaf(item,r,item.Age==100)end

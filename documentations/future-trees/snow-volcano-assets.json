@@ -1,0 +1,465 @@
+{
+  "date": "2026-10-07",
+  "placeId": "132313449035787",
+  "provider": "Roblox Studio native GenerateModelAsync",
+  "forgeguiPaidCalls": 0,
+  "scope": [
+    "Snow",
+    "Volcano"
+  ],
+  "protected": [
+    "Meadow",
+    "Forest"
+  ],
+  "assetSourceFile": "src/ServerStorage/AK_FutureTreeTemplates.rbxmx",
+  "assets": [
+    {
+      "name": "SnowPine",
+      "modelAssetId": "132458028826793",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://87680980185521",
+          "textureId": "rbxassetid://86752890946797"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://104680999752467",
+          "textureId": "rbxassetid://85331491753744"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://78725793149542",
+          "textureId": "rbxassetid://83467787272981"
+        }
+      ]
+    },
+    {
+      "name": "SnowFir",
+      "modelAssetId": "136279198571409",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://111072753836683",
+          "textureId": "rbxassetid://94306118988230"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://73574428793859",
+          "textureId": "rbxassetid://99878188029703"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://94901697432537",
+          "textureId": "rbxassetid://122846205961934"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoEmber",
+      "modelAssetId": "128378319522346",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://75480024443636",
+          "textureId": "rbxassetid://133762480040211"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://94354367751856",
+          "textureId": "rbxassetid://91576939802622"
+        },
+        {
+          "name": "canopy_geom",
+          "meshId": "rbxassetid://88672132513068",
+          "textureId": "rbxassetid://107188412469682"
+        }
+      ]
+    },
+    {
+      "name": "SnowBirch",
+      "modelAssetId": "129545687781308",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://116713139529098",
+          "textureId": "rbxassetid://98659457032858"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://82704831957842",
+          "textureId": "rbxassetid://83736805578156"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://135478417263055",
+          "textureId": "rbxassetid://137949121754645"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoWillow",
+      "modelAssetId": "94071884593754",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://121527296338179",
+          "textureId": "rbxassetid://121244375733293"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://108113221540708",
+          "textureId": "rbxassetid://101233789042929"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://120825137247859",
+          "textureId": "rbxassetid://113472308637711"
+        }
+      ]
+    },
+    {
+      "name": "SnowLarch",
+      "modelAssetId": "134986383720876",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://105032730985925",
+          "textureId": "rbxassetid://87717875797756"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://126564775397892",
+          "textureId": "rbxassetid://122154371823352"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://132368653838065",
+          "textureId": "rbxassetid://123332963235864"
+        }
+      ]
+    },
+    {
+      "name": "SnowCedar",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://71827344001595",
+          "textureId": "rbxassetid://114433037724623"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://133888859855011",
+          "textureId": "rbxassetid://99364687849474"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://88553620312449",
+          "textureId": "rbxassetid://81513541143450"
+        }
+      ],
+      "generationId": "f4b234e8-0520-4aed-a9a0-c28766e1cfd2"
+    },
+    {
+      "name": "SnowAspen",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://79837906956538",
+          "textureId": "rbxassetid://88583902382071"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://92170011406228",
+          "textureId": "rbxassetid://140461880906637"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://71581510709749",
+          "textureId": "rbxassetid://129499883545209"
+        }
+      ],
+      "generationId": "0e2ede5a-881a-4bf4-82d4-a3ad5526f7b4"
+    },
+    {
+      "name": "SnowCrystal",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://134884424829706",
+          "textureId": "rbxassetid://111412939439942"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://71643368224003",
+          "textureId": "rbxassetid://128405208986444"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://133190616003291",
+          "textureId": "rbxassetid://113148929045263"
+        }
+      ],
+      "generationId": "93f8dda9-1de4-47d5-9b85-ab443e14da81"
+    },
+    {
+      "name": "VolcanoCinder",
+      "modelAssetId": "102501337784741",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://121514659521899",
+          "textureId": "rbxassetid://103136237414868"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://129834629627837",
+          "textureId": "rbxassetid://116141590821584"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://133447300342868",
+          "textureId": "rbxassetid://75723670049102"
+        }
+      ]
+    },
+    {
+      "name": "SnowSpruce",
+      "modelAssetId": "121608062291336",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://114721077588341",
+          "textureId": "rbxassetid://103465757893090"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://140076978021212",
+          "textureId": "rbxassetid://92880991524111"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://117172927114506",
+          "textureId": "rbxassetid://121086243741798"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoBanyan",
+      "modelAssetId": "74446981783769",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://137389489375003",
+          "textureId": "rbxassetid://83534995903291"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://110435264535870",
+          "textureId": "rbxassetid://83518452455161"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://138000323458145",
+          "textureId": "rbxassetid://123457447470364"
+        }
+      ]
+    },
+    {
+      "name": "SnowBushA",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "Bush_Snow_1",
+          "meshId": "rbxassetid://132147151504563",
+          "textureId": ""
+        }
+      ]
+    },
+    {
+      "name": "SnowBushB",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "Bush_Snow_2",
+          "meshId": "rbxassetid://94843535865210",
+          "textureId": ""
+        }
+      ]
+    },
+    {
+      "name": "SnowRockA",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "Rock_Snow_1",
+          "meshId": "rbxassetid://106027751006942",
+          "textureId": ""
+        }
+      ]
+    },
+    {
+      "name": "VolcanoRockA",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "Rock_7",
+          "meshId": "rbxassetid://134725059697231",
+          "textureId": ""
+        }
+      ]
+    },
+    {
+      "name": "VolcanoRockB",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "stone_largeD",
+          "meshId": "rbxassetid://118757518772911",
+          "textureId": ""
+        }
+      ]
+    },
+    {
+      "name": "VolcanoAshShrub",
+      "modelAssetId": null,
+      "meshes": [
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://120825137247859",
+          "textureId": "rbxassetid://113472308637711"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoThorn",
+      "modelAssetId": "89786997825906",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://97550448169050",
+          "textureId": "rbxassetid://125298519962152"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://95896687297606",
+          "textureId": "rbxassetid://104372280483077"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://90500413582533",
+          "textureId": "rbxassetid://114938493121606"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoPhoenix",
+      "modelAssetId": "119187803288221",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://112020389118181",
+          "textureId": "rbxassetid://101881934090461"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://75034914314443",
+          "textureId": "rbxassetid://88547096609643"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://70427640536000",
+          "textureId": "rbxassetid://125453447844400"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoPalm",
+      "modelAssetId": "132354876643704",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://137642405090334",
+          "textureId": "rbxassetid://115021767909649"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://135640113086928",
+          "textureId": "rbxassetid://97915424799912"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://94561595942965",
+          "textureId": "rbxassetid://128018791728921"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoBaobab",
+      "modelAssetId": "140384904493418",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://87981213608946",
+          "textureId": "rbxassetid://135783157925353"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://77217046180519",
+          "textureId": "rbxassetid://108240225563550"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://139160255716175",
+          "textureId": "rbxassetid://124893446074989"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoIronwood",
+      "modelAssetId": "112920623509763",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://136547432088126",
+          "textureId": "rbxassetid://119737500288417"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://103349520947770",
+          "textureId": "rbxassetid://139633398161406"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://107819742305972",
+          "textureId": "rbxassetid://72241761182528"
+        }
+      ]
+    },
+    {
+      "name": "VolcanoDrake",
+      "modelAssetId": "120250121794650",
+      "meshes": [
+        {
+          "name": "trunk and roots_geom",
+          "meshId": "rbxassetid://121538433214543",
+          "textureId": "rbxassetid://116277741554247"
+        },
+        {
+          "name": "branches_geom",
+          "meshId": "rbxassetid://81331701034439",
+          "textureId": "rbxassetid://90821289590573"
+        },
+        {
+          "name": "foliage_geom",
+          "meshId": "rbxassetid://100705827024544",
+          "textureId": "rbxassetid://117010598174818"
+        }
+      ]
+    }
+  ],
+  "note": "Model publication receipts for Cedar, Aspen and Crystal were lost when the orchestration cell was stopped; all per-part mesh and texture IDs are retained. Native assets are real textured meshes, not procedural primitive placeholders."
+}
