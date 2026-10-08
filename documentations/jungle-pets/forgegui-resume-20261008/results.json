@@ -1,0 +1,189 @@
+{
+  "status": "two_candidates_awaiting_visual_approval",
+  "scope": "Exactly Rainstripe Tapir and Canopy Toucan, review only",
+  "place_id": "132313449035787",
+  "universe_id": "10764288431",
+  "run_id": "0d274e8f-7480-4f74-be48-a356b34614b0",
+  "preservation": {
+    "session_backup": "ServerStorage.AK_JungleResumeBackup_20261008_141018",
+    "original_review_retained": true,
+    "session_edits_durable_export": "unavailable; keep Studio open; backup clones do not guarantee EditableImage/Mesh persistence"
+  },
+  "models": [
+    {
+      "name": "RainstripeTapirForgeGUI",
+      "scale": 4.244558334350586,
+      "sourceModelAsset": "90892194616152",
+      "pivot": [
+        0,
+        1001.4000244140625,
+        60,
+        -4.371138828673793e-8,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -4.371138828673793e-8
+      ],
+      "parts": [
+        {
+          "normal": "rbxassetid://77597723267436",
+          "color": "rbxassetid://86707381674726",
+          "anchored": true,
+          "size": [
+            4.242486000061035,
+            2.799999237060547,
+            2.0082895755767822
+          ],
+          "metalness": "",
+          "roughness": "rbxassetid://106197023367448",
+          "originalMetalness": "rbxassetid://108796834138006",
+          "collision": false,
+          "cframe": [
+            0,
+            1001.4000244140625,
+            60,
+            -4.371139183945161e-8,
+            0,
+            -1.0000001192092896,
+            0,
+            1.000000238418579,
+            0,
+            1.0000001192092896,
+            0,
+            -4.371139183945161e-8
+          ],
+          "material": 256,
+          "mesh": "rbxassetid://88560317015645",
+          "texture": ""
+        }
+      ]
+    },
+    {
+      "name": "CanopyToucanForgeGUI",
+      "scale": 3.780092239379883,
+      "sourceModelAsset": "130107465527364",
+      "pivot": [
+        15,
+        1001.4000244140625,
+        60,
+        -4.371138828673793e-8,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -4.371138828673793e-8
+      ],
+      "parts": [
+        {
+          "collision": false,
+          "anchored": true,
+          "cframe": [
+            15,
+            1001.4005126953125,
+            60,
+            -5.8612553033299264e-8,
+            0,
+            -0.9999999403953552,
+            0,
+            1,
+            0,
+            1.0000001192092896,
+            0,
+            -2.8810223540176594e-8
+          ],
+          "size": [
+            3.7782464027404785,
+            2.799999952316284,
+            1.9066578149795532
+          ],
+          "material": 1312,
+          "mesh": "rbxassetid://85695548678361",
+          "texture": "rbxassetid://88393154702567"
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "quality": "high",
+    "reference_guided": true,
+    "original_concepts": true,
+    "style_id": "d90b1439-1214-4771-870b-70a307965cc4",
+    "style_version": 1,
+    "model_jobs": [
+      "192b3375-35da-4925-82ac-2b91255d257f",
+      "6c71ec21-5188-4ef3-9d03-1b82ee0179de"
+    ],
+    "image_jobs": [
+      "38eaeb6b-b931-41de-8346-a0afdfc1c631",
+      "0509ac50-ecf4-4d08-86d2-ff2f4cc83f66",
+      "de094dd3-52d1-49c6-8eb5-3141f52dced1",
+      "d63e27fc-a068-428f-9f9e-c43fde761e5d"
+    ],
+    "publications": [
+      "daef69e9-7791-458a-b3d8-9e6810afd9f0",
+      "e4e86540-ac45-4472-9d75-e723f1d39b4f"
+    ],
+    "triangle_counts": {
+      "tapir": 15446,
+      "toucan": 16290
+    },
+    "source_texture_resolution": 4096
+  },
+  "credit_report": {
+    "forgegui_paid_operations": 6,
+    "image_operations": 4,
+    "model_operations": 2,
+    "actual_credits": null,
+    "evidence": "Images commitDeferred without amount; models no billing amounts. Standalone publications free per tool contract.",
+    "native_texture_attempts": 2,
+    "native_texture_credits": null
+  },
+  "approval": {
+    "generation_calls_accepted": true,
+    "policy_rejections": 0
+  },
+  "qa": {
+    "equal_apparent_height_studs": 2.8,
+    "same_lighting": true,
+    "meadow_reference": "FieldMouse",
+    "forest_references": [
+      "BlackBearCub",
+      "WoodlandOwl"
+    ],
+    "anchored": true,
+    "noncolliding": true,
+    "script_free": true,
+    "crest_free_tapir_observed": true,
+    "loaded_durable_PBR_maps": "Tapir yes; original Toucan yes, enhanced Toucan uses durable TextureID without PBR",
+    "finite_large_scale_probe": true,
+    "weight_probe": "geometric cube-root scale approximation only, NOT actual PetWeight integration test",
+    "inventory_follower_sanctuary": "not tested",
+    "visual_approval": false
+  },
+  "texture_enhancement": {
+    "forgegui_endpoint": "not exposed",
+    "concept_texture_refinement": "succeeded",
+    "native_nested_model": "failed Bad Request",
+    "native_flat_mesh": "succeeded",
+    "studio_material_change": "MetalnessMap cleared on review models; original durable metalness stored in attribute; sheen remains on Toucan beak",
+    "final": "Native durable mesh 85695548678361 and texture 88393154702567 displayed with Fabric material, Reflectance 0; no SurfaceAppearance on final Toucan. Original ForgeGUI PBR version preserved. Warmer amber palette; not yet visually approved."
+  },
+  "local_assets": "C:/Users/Kenny/Documents/Real_Animal_K/documentations/jungle-pets/forgegui-resume-20261008",
+  "source_glb_sha256": {
+    "tapir": "c04965d3002818743017f9bb2fea828d2d63d8d0ce8b41cfd9d6bce84571dd17",
+    "toucan": "b305c6d05b31bcbb0c998d2f14d392f2f48d85b691463783991f274f7d5866fd"
+  },
+  "constraints": {
+    "no_additional_species": true,
+    "no_existing_pet_changes": true,
+    "no_jungle_unlock": true,
+    "no_game_publication": true
+  }
+}
