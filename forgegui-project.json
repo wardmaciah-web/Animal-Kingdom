@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "game_style": "roblox",
+  "art_direction": "Animal Kingdom stylized textured fantasy-natural trees. Use approved Snow and Volcano native segmented mesh designs as visual quality and placement benchmarks.",
+  "material_language": "Hand-painted bark, sculpted roots and branches, layered detailed textured foliage. Distinct generated mesh geometry for each family.",
+  "reference": {
+    "supplied": true,
+    "type": "existing-approved-Studio-models",
+    "biomes": [
+      "Meadow",
+      "Forest",
+      "Snow",
+      "Volcano"
+    ]
+  },
+  "place_context": {
+    "studio_id": "206c30b5-9ac1-4386-80c7-b35cbf32aa0d",
+    "place_id": "132313449035787",
+    "universe_id": "10764288431"
+  },
+  "decisions": [
+    {
+      "topic": "protected_biomes",
+      "value": [
+        "Meadow",
+        "Forest",
+        "Snow",
+        "Volcano"
+      ],
+      "by": "user",
+      "date": "2026-10-08"
+    },
+    {
+      "topic": "paid_generation",
+      "value": {
+        "authorized": false,
+        "ceiling": 0
+      },
+      "by": "user",
+      "date": "2026-10-08"
+    },
+    {
+      "topic": "publication",
+      "value": "Do not publish Roblox experience; save and commit verified visual improvements.",
+      "by": "user",
+      "date": "2026-10-08"
+    }
+  ],
+  "assets": [
+    {
+      "biome": "Ocean",
+      "status": "gameplay_verified",
+      "ledger": "documentations/future-trees/ocean-assets.json",
+      "source": "Roblox Studio native generation",
+      "families": 8,
+      "placements": 27,
+      "understory": 48,
+      "commit": "184df3e8d75e03335d1543e723124cb737fa219c"
+    },
+    {
+      "biome": "AncientRuins",
+      "status": "gameplay_verified",
+      "source": "Roblox Studio native generation",
+      "families": 9,
+      "placements": 22,
+      "understory": 35,
+      "commit": "a0d131ea99f501ae6f975db63f77b2c9cb8a9dbc",
+      "ledger": "documentations/future-trees/ancient-ruins-assets.json"
+    },
+    {
+      "biome": "MagicalForest",
+      "status": "gameplay_verified",
+      "source": "Roblox Studio native generation",
+      "families": 6,
+      "placements": 55,
+      "understory": 63,
+      "commit": "48d34553b552b4f7112b1a57c4847f25c48d466b",
+      "ledger": "documentations/future-trees/magical-forest-assets.json"
+    },
+    {
+      "biome": "Sky",
+      "status": "gameplay_verified",
+      "source": "Roblox Studio native generation",
+      "families": 8,
+      "placements": 19,
+      "understory": 30,
+      "ledger": "documentations/future-trees/sky-assets.json"
+    }
+  ]
+}

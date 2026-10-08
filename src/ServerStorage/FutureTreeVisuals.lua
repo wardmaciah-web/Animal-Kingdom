@@ -207,6 +207,7 @@ end
 
 -- Approved biomes are immutable. Only explicitly enabled unfinished-biome recipes run.
 local newRecipes = {
+ Sky={tree_thin="SkyCloudCedar",tree_cone="SkyStarCypress",tree_fat="SkyNimbusOak",Tree_Pine_5="SkyAuroraPine",Tree_Pine_3="SkyMoonWillow",CommonTree_Snow_5="SkyBlossomFir",pine_tree_3_snow="SkyRibbonPalm",Tree_Pine_6="SkySunBaobab"},
  MagicalForest={MagicTree="MagicMushroom",NimbusWillow="MagicNimbusWillow",LowpolyWillow="MagicFlowerTree",TwistedTree_2="MagicAmethystOak",Willow_Autumn_4="MagicLanternWillow",TwistedTree_4="MagicCrystalMushroom"},
  AncientRuins={["1"]="RuinsSacredBanyan",["2"]="RuinsMossOak",["3"]="RuinsStoneCedar",AK_AncientRuins_CypressTree="RuinsCypress",AK_AncientRuins_StylizedTree="RuinsCrownBaobab",Tree_Bare_5="RuinsSentinel",Tree_Cedar_2="RuinsRunicCedar",Tree_Cedar_3="RuinsSacredWillow",Willow_Dead_4="RuinsVineFig"},
  Ocean={Tree_Palm_6="OceanStaghorn",Willow_2="OceanKelp",Tree_Palm_1="OceanMangrove",Tree_Palm_3="OceanFanCoral",tree_palm="OceanSeaPalm",tree_palmShort="OceanAnemone",tree_palmBend="OceanPearlWillow",Tree_Palm_5="OceanBloomCoral"},
@@ -217,7 +218,7 @@ local protected={Meadow=true,Forest=true,Snow=true,Volcano=true}
 
 -- New tree meshes own rendering; narrow proxies prevent hidden legacy canopies blocking paths.
 local function normalizeCollision(tree,b)
- if b~="Ocean" and b~="AncientRuins" and b~="MagicalForest" then return end
+ if b~="Ocean" and b~="AncientRuins" and b~="MagicalForest" and b~="Sky" then return end
  local visual=tree:FindFirstChild("AK_FutureTreeVisual");if not visual then return end
  local proxy=tree:FindFirstChild("AK_OverhaulTrunkCollider")
  for _,p in ipairs(tree:GetDescendants()) do
@@ -236,10 +237,10 @@ local function normalizeCollision(tree,b)
  proxy.Transparency=1;proxy.CastShadow=false;proxy.Anchored=true;proxy.CanCollide=true;proxy.CanQuery=true;proxy.CanTouch=false
 end
 
-local function magicPlacement()
- local trees={};for _,t in workspace:GetDescendants() do if t:IsA("Model") and t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)=="MagicalForest" then table.insert(trees,t) end end
+local function naturalPlacement(b)
+ local trees={};for _,t in workspace:GetDescendants() do if t:IsA("Model") and t:GetAttribute("AuthoredGatherableTree") and biomeOf(t)==b then table.insert(trees,t) end end
  table.sort(trees,function(a,b) return a:GetFullName()<b:GetFullName() end)
- local plan,placed={},{};local floor=workspace.MagicalForest.MagicalForestFloor
+ local plan,placed={},{};local floor=workspace[b][b.."Floor"]
  for i,t in trees do
   local p=t:GetPivot().Position;local best,score
   for ring=0,3 do for k=1,(ring==0 and 1 or 24) do
@@ -259,7 +260,8 @@ end
 function M.Apply(scope)
  local report={replaced=0,skipped=0,biomes={}}
  if scope and protected[scope] then return report end
- local magicPlan=(not scope or scope=="MagicalForest") and magicPlacement() or {}
+ local magicPlan={}
+ for _,b in {"MagicalForest","Sky"} do if not scope or scope==b then for t,p in naturalPlacement(b) do magicPlan[t]=p end end end
  for _,tree in workspace:GetDescendants() do
   if not (tree:IsA("Model") or tree:IsA("BasePart")) or not tree:GetAttribute("AuthoredGatherableTree") then continue end
   local b=biomeOf(tree);local recipe=newRecipes[b]
@@ -284,7 +286,7 @@ function M.Apply(scope)
   local height=math.clamp(size.Y,36,52)
   visual:ScaleTo(visual:GetScale()*height/sz.Y);cf,sz=visual:GetBoundingBox()
   -- Keep ground contact and orientation; all original gameplay geometry stays intact.
-  if b=="MagicalForest" then
+  if magicPlan[tree] then
    local pos=magicPlan[tree];local n=0;for j=1,#tree.Name do n+=string.byte(tree.Name,j) end
    visual:PivotTo(CFrame.new(pos+Vector3.new(0,sz.Y/2,0))*CFrame.Angles(0,n*2.399963,0)*visual:GetPivot():ToObjectSpace(cf):Inverse())
    visual:SetAttribute("CosmeticGroundPosition",pos)
@@ -338,7 +340,7 @@ function M.DecorateBiome(b)
     local localPos=floor.CFrame:PointToObjectSpace(pos)
     if math.abs(localPos.X)>floor.Size.X/2-5 or math.abs(localPos.Z)>floor.Size.Z/2-5 then clear=false end
     if b=="Ocean" and Vector2.new(localPos.X,localPos.Z).Magnitude<23 then clear=false end
-    if (b=="AncientRuins" or b=="MagicalForest") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
+    if (b=="AncientRuins" or b=="MagicalForest" or b=="Sky") and Vector2.new(localPos.X,localPos.Z).Magnitude<32 then clear=false end
     pos=Vector3.new(pos.X,floor.Position.Y+floor.Size.Y/2,pos.Z)
    end
    if clear then

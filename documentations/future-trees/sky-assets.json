@@ -1,0 +1,2991 @@
+{
+  "biome": "Sky",
+  "status": "Implemented; final restart and broader QA pending",
+  "nativeAssets": [
+    {
+      "name": "SkyCloudCedar",
+      "generationId": "10385723-cadb-4538-a88a-4d07de413209",
+      "generationName": "One elegant ivory cedar with sculpted spiral trunk, broad exposed curled roots and tiered scalloped cloud-shaped blue-white needle fans, tiny gold celestial blossoms, airy asymmetric crown. Animal Kingdom professional stylized fantasy art matching Snow and Volcano tree quality, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "102886381861626",
+      "tag": "Assistant-56f5923d-c394-4c84-be73-a96e19185ecc",
+      "jobId": "7240b06e-78bf-4f03-9ad1-004f135cb6da"
+    },
+    {
+      "name": "SkyStarCypress",
+      "generationId": "55a0dab1-37c8-4a5e-9391-9b592dd9f9bb",
+      "generationName": "One slender ancient cypress with corkscrew pearl trunk, intertwined floating-tip roots, tall layered silver-lavender featherlike foliage, carved gold star flowers, tapering elegant silhouette. Animal Kingdom professional stylized fantasy art, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "96514141286679",
+      "tag": "Assistant-65d3280f-89f3-450f-8d5c-1d95a4ad5afc",
+      "jobId": "71ba712c-2f34-4480-bc7c-584e7644e00c"
+    },
+    {
+      "name": "SkyNimbusOak",
+      "generationId": "28db6ab8-528f-403b-810a-760da6546de8",
+      "generationName": "One stout branching sky oak with broad twisted silver trunk, arching buttress roots, massive layered hand-sculpted billowing cloud canopy, pale blue rounded lobed leaves and pink celestial blossoms. Animal Kingdom professional stylized fantasy art, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "121737059174804",
+      "tag": "Assistant-6c1cb0f1-5cab-4f4a-ae0a-7835c0479225",
+      "jobId": "1894921e-650d-4cc9-8c1f-35148048e609"
+    },
+    {
+      "name": "SkyAuroraPine",
+      "generationId": "db241477-167e-49e8-8f55-aeee2f8d2a8d",
+      "generationName": "One windswept celestial pine with leaning split trunk, sweeping golden branches, exposed curled roots, distinct horizontal tiers of pale teal feathery foliage and silver star cones. Animal Kingdom professional stylized fantasy art, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "95929451485442",
+      "tag": "Assistant-51333aca-e883-415a-aeb1-4d740cd04c0d",
+      "jobId": "ce542237-c766-46f7-9ab7-2416cf9f8646"
+    },
+    {
+      "name": "SkyMoonWillow",
+      "generationId": "a865a32d-0b92-4876-850d-de0db4f246f4",
+      "generationName": "One delicate moon willow with slender S-curved white trunk, open arched roots, cascading long blue pearl leafy ribbons and star blossoms, wide graceful weeping silhouette. Animal Kingdom professional stylized fantasy art, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "125684035105082",
+      "tag": "Assistant-c5ca04d8-3fea-4552-973f-f7bbd678a41d",
+      "jobId": "e6d51f36-0b87-4d20-a9ce-292e03145d4d"
+    },
+    {
+      "name": "SkyBlossomFir",
+      "generationId": "088e56b7-cc23-4239-b473-135b421ae177",
+      "generationName": "One airy flowering sky fir with braided rose-gold trunk, radiating root arches, dense layered pink-white blossom sprays forming a conical crown, navy-blue leaf accents. Animal Kingdom professional stylized fantasy art, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "133884499515791",
+      "tag": "Assistant-4d562388-71af-4c38-85c5-947d5c3495e7",
+      "jobId": "b7bef119-8e06-4768-8f05-0a206b328cca"
+    },
+    {
+      "name": "SkyRibbonPalm",
+      "generationId": "1793f1cc-4502-4760-a9fe-b11334557213",
+      "generationName": "One otherworldly floating-root cloud palm with ancient bowed pearl trunk, twisting curled exposed roots, enormous sweeping silver-blue ribbon fronds, white cloudlike flower clusters and golden seed bells. Animal Kingdom professional stylized fantasy art, rich hand-painted textures, sculpted organic 3D geometry, attractive natural proportions. No ground, pedestal, scene or background.",
+      "publishedAssetId": "123450365296222",
+      "tag": "Assistant-5e59a76b-fdf7-4979-a3fc-277c58317879",
+      "jobId": "1e517694-392f-45ce-959a-95034ee21e55"
+    },
+    {
+      "name": "SkySunBaobab",
+      "generationId": "f0a3cb16-0a2a-4161-be66-453fb269ee2d",
+      "generationName": "A celestial baobab tree. Thick ivory and golden bottle-shaped trunk, organic spiraling roots, asymmetrical spreading gold branches, layered pale blue cloud-shaped foliage, small yellow blossoms. Beautiful stylized Animal Kingdom fantasy tree, textured hand-painted surfaces. Tree only, no base or scene.",
+      "publishedAssetId": "103629072590216",
+      "tag": "Assistant-a838b0e8-2ad8-4c40-a82f-955d911ee134",
+      "jobId": "b06708c9-057b-480c-b214-df946dd22680"
+    },
+    {
+      "name": "SkyUnderstory",
+      "generationId": "eee061d7-9285-4531-ad7b-94a417200c4e",
+      "generationName": "One small cohesive vegetation cluster: three sculpted luminous silver-blue ferns, low cloud-petal flowers with golden star centers, curved pearl roots and tiny lavender leafy shrubs, no tree. Animal Kingdom stylized fantasy art, beautiful hand-painted textures. No ground or background.",
+      "publishedAssetId": "71501774335769",
+      "tag": "Assistant-c04bef36-2339-4fdd-9642-d930e51aa24a",
+      "jobId": "1eb15377-b89d-4e1c-bac5-64d60e0858a1"
+    }
+  ],
+  "failedRequests": [
+    {
+      "biome": "Sky",
+      "name": "SkySunBaobab",
+      "jobId": "2cfe1dc6-b788-425c-a2c9-d3a1b1fe2298",
+      "reason": "Auto-segmentation could not derive part names; no model created"
+    }
+  ],
+  "templates": {
+    "name": "AK_SkyTreeTemplates",
+    "properties": [],
+    "class": "Folder",
+    "children": [
+      {
+        "name": "SkyCloudCedar",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -409.65625,
+                      13.281305313110352,
+                      100.78060150146484,
+                      0.1469988375902176,
+                      0,
+                      -0.9891365766525269,
+                      0,
+                      0.9999999403953552,
+                      0,
+                      0.9891366958618164,
+                      0,
+                      0.1469988226890564
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://77470961458439",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://136415976603165",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      6.142618656158447,
+                      21.793212890625,
+                      5.589601516723633
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -409.7240295410156,
+                      2.748509407043457,
+                      101.91507720947266,
+                      0.1469988375902176,
+                      0,
+                      -0.9891365766525269,
+                      0,
+                      0.9999999403953552,
+                      0,
+                      0.9891366958618164,
+                      0,
+                      0.1469988226890564
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://125881747803303",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://108268936777473",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      21.156827926635742,
+                      5.497016906738281,
+                      18.55057144165039
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "foliage",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "foliage_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -410.08489990234375,
+                      21.3843994140625,
+                      101.25872802734375,
+                      0.1469988375902176,
+                      0,
+                      -0.9891365766525269,
+                      0,
+                      0.9999999403953552,
+                      0,
+                      0.9891366958618164,
+                      0,
+                      0.1469988226890564
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://82330101580388",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://111316380396366",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      29.196613311767578,
+                      19.685916900634766,
+                      30
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "102886381861626",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "10385723-cadb-4538-a88a-4d07de413209",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyStarCypress",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.3262939453125,
+                      3.4718055725097656,
+                      -47.94376754760742,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://95266771530507",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://91072624336741",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      13.800296783447266,
+                      6.9439802169799805,
+                      13.342008590698242
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.2242431640625,
+                      10.627311706542969,
+                      -47.819068908691406,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://122583654486808",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://119932316139998",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      4.677647590637207,
+                      14.334857940673828,
+                      4.742737770080566
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "foliage",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "foliage_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.2125244140625,
+                      26.054115295410156,
+                      -47.93632888793945,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://108710688268740",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://100086043854150",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      14.699031829833984,
+                      27.891399383544922,
+                      15.334476470947266
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "96514141286679",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "55a0dab1-37c8-4a5e-9391-9b592dd9f9bb",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyNimbusOak",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.00244140625,
+                      9.93519401550293,
+                      -47.95656204223633,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://103382142521479",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://95422877123838",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      7.125046730041504,
+                      18.669044494628906,
+                      5.829218864440918
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.1691284179688,
+                      2.8037986755371094,
+                      -47.899742126464844,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://121418475293377",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://102346208386342",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      17.500343322753906,
+                      5.607983589172363,
+                      16.186134338378906
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "canopy",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "canopy_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.21240234375,
+                      18.28432273864746,
+                      -47.93646240234375,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://139631211062507",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://73105922091510",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      30,
+                      22.018787384033203,
+                      27.912918090820312
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "121737059174804",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "28db6ab8-528f-403b-810a-760da6546de8",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyAuroraPine",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.5780029296875,
+                      13.556539535522461,
+                      -48.22019958496094,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://84481008568243",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://98787783339493",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      17.992237091064453,
+                      27.113109588623047,
+                      17.63726043701172
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "branches",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "branches_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.9866943359375,
+                      23.023208618164062,
+                      -48.811275482177734,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://93884951513953",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://104053571238822",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      20.851970672607422,
+                      16.37286376953125,
+                      22.123180389404297
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "foliage",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "foliage_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.212646484375,
+                      23.46640396118164,
+                      -47.93620681762695,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://91749514826372",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://76231386335552",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      30,
+                      24.898540496826172,
+                      29.057212829589844
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "95929451485442",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "db241477-167e-49e8-8f55-aeee2f8d2a8d",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyMoonWillow",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -545.6504516601562,
+                      12.639041900634766,
+                      -47.77543640136719,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://105021623729522",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://71035966806525",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      9.428255081176758,
+                      25.19986343383789,
+                      8.054266929626465
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.1436157226562,
+                      1.3906517028808594,
+                      -47.91147994995117,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://113598151328453",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://70490057795619",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      10.832945823669434,
+                      2.78133487701416,
+                      9.257781982421875
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "foliage",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "foliage_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.212158203125,
+                      18.568859100341797,
+                      -47.93669128417969,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://90325236027259",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://90032064579734",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      30,
+                      27.79987144470215,
+                      26.092735290527344
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "125684035105082",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "a865a32d-0b92-4876-850d-de0db4f246f4",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyBlossomFir",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.7228393554688,
+                      14.969339370727539,
+                      -48.71947479248047,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://121974616188983",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://109453394838246",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      6.6030731201171875,
+                      28.97011947631836,
+                      6.970883369445801
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.4285278320312,
+                      1.4279899597167969,
+                      -49.7396354675293,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://95087482413500",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://79248387174344",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      16.195480346679688,
+                      2.8560104370117188,
+                      18.31834602355957
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "crown",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "crown_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.212646484375,
+                      20.629579544067383,
+                      -47.93622589111328,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://92346571921941",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://109226923765652",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      29.999998092651367,
+                      22.82463836669922,
+                      27.01455307006836
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "133884499515791",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "088e56b7-cc23-4239-b473-135b421ae177",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyRibbonPalm",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.293701171875,
+                      13.923141479492188,
+                      -47.89805603027344,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://72681199934746",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://113346706359890",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      6.096811294555664,
+                      27.078792572021484,
+                      6.536090850830078
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.14453125,
+                      5.873324394226074,
+                      -48.59550857543945,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://74899776352743",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://130785590374605",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      27.833126068115234,
+                      11.747430801391602,
+                      25.50086212158203
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "fronds",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "fronds_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.2122192382812,
+                      26.556194305419922,
+                      -47.936283111572266,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://98207248910496",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://99914059111815",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      30,
+                      17.328296661376953,
+                      29.760332107543945
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "123450365296222",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "1793f1cc-4502-4760-a9fe-b11334557213",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkySunBaobab",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "trunk",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "trunk_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.2015380859375,
+                      10.540748596191406,
+                      -47.92145919799805,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://92146677564321",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://101516510892349",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      17.440711975097656,
+                      21.08255958557129,
+                      17.249683380126953
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "branches",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "branches_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.1567993164062,
+                      26.144065856933594,
+                      -47.91408157348633,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://114249284217747",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://84389647753341",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      23.511150360107422,
+                      15.93000602722168,
+                      23.883804321289062
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "foliage",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "foliage_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.21240234375,
+                      26.029006958007812,
+                      -47.93646240234375,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://101230131333332",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://108982915830538",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      30,
+                      20.127315521240234,
+                      29.515522003173828
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "103629072590216",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "f0a3cb16-0a2a-4161-be66-453fb269ee2d",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      },
+      {
+        "name": "SkyUnderstory",
+        "properties": [],
+        "class": "Model",
+        "children": [
+          {
+            "name": "ferns",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "ferns_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.22216796875,
+                      2.738734006881714,
+                      -47.926300048828125,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://85468282476855",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://78407582042320",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      4.892813682556152,
+                      2.451807975769043,
+                      0.3664497137069702
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "flowers",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "flowers_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.1666259765625,
+                      2.638627052307129,
+                      -47.98674011230469,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://127127500963079",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://78827840789137",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      1.5029630661010742,
+                      4.722715377807617,
+                      0.5618683099746704
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          },
+          {
+            "name": "roots",
+            "properties": [],
+            "class": "Model",
+            "children": [
+              {
+                "name": "roots_geom",
+                "properties": {
+                  "CFrame": {
+                    "value": [
+                      -546.2141723632812,
+                      0.9315768480300903,
+                      -47.93814468383789,
+                      0.7221977114677429,
+                      0,
+                      -0.6916866898536682,
+                      0,
+                      1,
+                      0,
+                      0.691686749458313,
+                      0,
+                      0.7221976518630981
+                    ],
+                    "kind": "CFrame"
+                  },
+                  "RenderFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "CanQuery": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "CanCollide": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Color": {
+                    "value": [
+                      0.6392157077789307,
+                      0.6352941393852234,
+                      0.6470588445663452
+                    ],
+                    "kind": "Color3"
+                  },
+                  "Anchored": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "CanTouch": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "MaterialVariant": {
+                    "value": "",
+                    "kind": "string"
+                  },
+                  "TextureID": {
+                    "value": "rbxassetid://80088613853361",
+                    "kind": "string"
+                  },
+                  "Transparency": {
+                    "value": 0,
+                    "kind": "number"
+                  },
+                  "MeshId": {
+                    "value": "rbxassetid://110280775278712",
+                    "kind": "string"
+                  },
+                  "CollisionFidelity": {
+                    "value": 0,
+                    "kind": "EnumItem"
+                  },
+                  "DoubleSided": {
+                    "value": false,
+                    "kind": "boolean"
+                  },
+                  "Material": {
+                    "value": 256,
+                    "kind": "EnumItem"
+                  },
+                  "CastShadow": {
+                    "value": true,
+                    "kind": "boolean"
+                  },
+                  "Size": {
+                    "value": [
+                      4.108138561248779,
+                      1.8631842136383057,
+                      4.080568313598633
+                    ],
+                    "kind": "Vector3"
+                  }
+                },
+                "class": "MeshPart",
+                "children": [],
+                "attributes": []
+              }
+            ],
+            "attributes": []
+          }
+        ],
+        "attributes": {
+          "RBX_AI_GENERATION_TYPE": "GenerateMesh",
+          "NativePublishedAssetId": "71501774335769",
+          "RBX_AI_GENERATED": "true",
+          "RBX_AI_GENERATION_ID": "eee061d7-9285-4531-ad7b-94a417200c4e",
+          "RBX_AI_MODEL_FLOW": "mesh"
+        }
+      }
+    ],
+    "attributes": []
+  },
+  "trees": 19,
+  "families": 8,
+  "understory": 30,
+  "uniqueMeshes": 24,
+  "heights": [
+    36,
+    52
+  ],
+  "qa": {
+    "runtime": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"records\":19,\"gateFailures\":0,\"dataUnchanged\":true,\"message\":\"This biome is coming soon!\",\"accepted\":false}"
+        }
+      ],
+      "isError": false
+    },
+    "client": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"effects\":[{\"enabled\":true,\"path\":\"Workspace.KingdomAmbientVisuals.FutureBiomeAir1.CloudPetals\",\"rate\":11.190404891967774},{\"enabled\":true,\"path\":\"Workspace.KingdomAmbientVisuals.FutureBiomeAir2.CloudPetals\",\"rate\":10.056459426879883},{\"enabled\":true,\"path\":\"Workspace.KingdomAmbientVisuals.FutureBiomeAir3.CloudPetals\",\"rate\":7.229576587677002},{\"enabled\":true,\"path\":\"Workspace.KingdomAmbientVisuals.FutureBiomeAir4.CloudPetals\",\"rate\":4.905432224273682}],\"client\":\"{\\\"textures\\\":{\\\"rbxassetid://91749514826372\\\":\\\"Success\\\",\\\"rbxassetid://92346571921941\\\":\\\"Success\\\",\\\"rbxassetid://72681199934746\\\":\\\"Success\\\",\\\"rbxassetid://103382142521479\\\":\\\"Success\\\",\\\"rbxassetid://113598151328453\\\":\\\"Success\\\",\\\"rbxassetid://82330101580388\\\":\\\"Success\\\",\\\"rbxassetid://93884951513953\\\":\\\"Success\\\",\\\"rbxassetid://95266771530507\\\":\\\"Success\\\",\\\"rbxassetid://114249284217747\\\":\\\"Success\\\",\\\"rbxassetid://139631211062507\\\":\\\"Success\\\",\\\"rbxassetid://84481008568243\\\":\\\"Success\\\",\\\"rbxassetid://121418475293377\\\":\\\"Success\\\",\\\"rbxassetid://98207248910496\\\":\\\"Success\\\",\\\"rbxassetid://121974616188983\\\":\\\"Success\\\",\\\"rbxassetid://105021623729522\\\":\\\"Success\\\",\\\"rbxassetid://122583654486808\\\":\\\"Success\\\",\\\"rbxassetid://74899776352743\\\":\\\"Success\\\",\\\"rbxassetid://92146677564321\\\":\\\"Success\\\",\\\"rbxassetid://108710688268740\\\":\\\"Success\\\",\\\"rbxassetid://95087482413500\\\":\\\"Success\\\",\\\"rbxassetid://90325236027259\\\":\\\"Success\\\",\\\"rbxassetid://101230131333332\\\":\\\"Success\\\",\\\"rbxassetid://125881747803303\\\":\\\"Success\\\",\\\"rbxassetid://77470961458439\\\":\\\"Success\\\"},\\\"badPhysics\\\":0,\\\"uniqueMeshes\\\":24,\\\"meshParts\\\":57}\"}"
+        }
+      ],
+      "isError": false
+    },
+    "walk": {
+      "displacement": 18.6015625,
+      "finishDistance": 1.714648
+    },
+    "protected": {
+      "hash": 3138740795,
+      "bytes": 498184,
+      "instances": 1531
+    },
+    "limitations": [
+      "Full Studio restart pending",
+      "Existing unrelated WorldCheck/UI issues retained",
+      "Mobile/multiplayer not tested"
+    ]
+  },
+  "paidCredits": 0,
+  "publishedExperience": false
+}
