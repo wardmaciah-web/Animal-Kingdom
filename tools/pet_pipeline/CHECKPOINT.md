@@ -30,6 +30,25 @@ Live audit: each of ten future biomes has 25 anonymous registered pet slots,
 explicit family definitions. Physical art copies are not equivalent to reward
 families and require deliberate mapping. Meadow and Forest are preserved.
 
+Follow-up: seven gate/roster/source-lock tests now pass. The downstream diagnostic
+reused the preserved raw neural mesh (NOT fresh inference) and successfully ran
+projection, Blender refinement, export, previews and validation. Exported vertex
+distances against the approved GLB are exactly zero and front-render SSIM is 1.0.
+Both meshes and the 2048 texture reopen correctly. See the downstream audit JSON.
+An unused PyTorch import was removed from projection by preserving the licensed
+rasterizer in its own module with explicit graphics-context release.
+
+Fresh inference remains 0/5. Attempt 005 directly constructed the same FP16 model
+on CUDA; it failed allocating 20MB despite reporting 10.49GB free VRAM. Diagnostic
+recipes are retained separately; the approved recipe remains unchanged. A Tapir
+recipe and background preparation test have been added for the second-species test.
+
+`roster.json` contains 250 distinct production species names, curated gameplay
+weights and incomes calculated from existing biome ranges. Rarity counts match
+the current architecture. Each proposed family has five slots. Assignment is
+provisional pending live tree-art mapping; none of these entries is registered
+in gameplay, and missing models are explicitly marked rather than substituted.
+
 Remaining: resolve loading failure, clean Ocelot comparison, second original
 species generation and art QA, durable Studio import verification, complete
 unique rosters, all future-biome production, full feature integration, and every

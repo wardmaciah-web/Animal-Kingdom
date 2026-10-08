@@ -7,7 +7,7 @@ import numpy as np
 import trimesh
 from PIL import Image
 from scipy.ndimage import map_coordinates,distance_transform_edt
-from tsr.bake_texture import rasterize_position_atlas
+from rasterize import rasterize_position_atlas
 src=out/'generated';dest=out/'projected';dest.mkdir()
 mesh=list(trimesh.load(src/'raw.glb',process=False).geometry.values())[0]
 n=cfg['texture']['resolution'];projection=cfg['texture']['projection']

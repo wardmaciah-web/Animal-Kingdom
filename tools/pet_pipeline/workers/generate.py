@@ -44,7 +44,11 @@ torch.manual_seed(g['seed']);np.random.seed(g['seed'])
 if not torch.cuda.is_available():raise RuntimeError('The approved CUDA workflow requires a working NVIDIA GPU')
 weights=root/'tools/TripoSR-weights'
 model_cfg=OmegaConf.load(weights/'config.yaml');OmegaConf.resolve(model_cfg)
-torch.set_default_dtype(torch.float16);model=TSR(model_cfg);torch.set_default_dtype(torch.float32)
+torch.set_default_dtype(torch.float16)
+if g.get('checkpoint_loading')=='cuda_constructor':
+    with torch.device('cuda:0'):model=TSR(model_cfg)
+else:model=TSR(model_cfg)
+torch.set_default_dtype(torch.float32)
 state=torch.load(weights/'model.ckpt',map_location='cpu',weights_only=True,mmap=True)
 if g.get('checkpoint_loading','approved_cpu_copy')=='cuda_streamed':
     # Same FP16 weights, transferred one tensor at a time; avoid the Windows

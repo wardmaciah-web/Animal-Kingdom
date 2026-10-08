@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "errors": [],
+  "glb_sha256": "d2c1e819c7fc7fae22f0d0cba9140e35d1d9626f4a874bec5183042f905e5b0c",
+  "meshes": [
+    {
+      "name": "geometry_0",
+      "vertices": 20191,
+      "triangles": 18000,
+      "finite_positions": true,
+      "finite_normals": true,
+      "indices_valid": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8500000238418579
+    },
+    {
+      "name": "SculptedFurLocks",
+      "vertices": 6600,
+      "triangles": 8800,
+      "finite_positions": true,
+      "finite_normals": true,
+      "indices_valid": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8500000238418579
+    }
+  ],
+  "bounds": [
+    [
+      -1.2451993227005005,
+      -0.00035177922109141946,
+      -0.8981871604919434
+    ],
+    [
+      1.2577606439590454,
+      2.795717716217041,
+      0.8902795314788818
+    ]
+  ],
+  "dimensions": [
+    2.502959966659546,
+    2.7960694954381324,
+    1.7884666919708252
+  ],
+  "front_paws": [
+    {
+      "name": "front_left",
+      "minimum_above_floor": 0.000312576685246313,
+      "passed": true,
+      "region": {
+        "name": "front_left",
+        "x": [
+          0,
+          0.45
+        ],
+        "z": [
+          0.3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "front_right",
+      "minimum_above_floor": 0.00035596149200500804,
+      "passed": true,
+      "region": {
+        "name": "front_right",
+        "x": [
+          0.5,
+          0.95
+        ],
+        "z": [
+          0.3,
+          2
+        ]
+      }
+    }
+  ],
+  "approved_comparison": {
+    "approved_sha256": "d00c5ceb074ec9e67ec8eeaaae7a358d7cc4f4dd04e9b475958eada868b67cc7",
+    "mean_vertex_distance": 0.0,
+    "p99_vertex_distance": 0.0,
+    "max_vertex_distance": 0.0,
+    "geometry_pass": true,
+    "front_ssim": 1.0,
+    "appearance_metric_pass": true
+  },
+  "semantic_art_checks": "pending actual four-view review; geometry tests do not certify anatomy or style",
+  "roblox_import": "prepared_not_imported"
+}

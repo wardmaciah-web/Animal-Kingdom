@@ -34,5 +34,17 @@ class ProductionGates(unittest.TestCase):
         cfg=p.configure(p.HERE/'configs/ocelot.json',self.root,self.root/'new')
         self.assertTrue(Path(cfg['approved_front_render']).is_absolute())
         self.assertTrue(Path(cfg['approved_model']).is_file())
+    def test_roster_has_unique_species_and_five_slots_per_family(self):
+        rows=p.read(p.HERE/'roster.json')['pets']
+        self.assertEqual(len(rows),250)
+        self.assertEqual(len({r['species'] for r in rows}),250)
+        self.assertEqual(len({r['pet_id'] for r in rows}),250)
+        from collections import Counter
+        self.assertEqual(set(Counter(r['biome'] for r in rows).values()),{25})
+        self.assertEqual(set(Counter(r['proposed_family_id'] for r in rows).values()),{5})
+        self.assertTrue(all(not r['registered'] and r['model_asset_id'] is None for r in rows))
+    def test_vendored_source_matches_lock(self):
+        for name,digest in p.read(p.HERE/'pipeline-lock.json')['vendor_files'].items():
+            self.assertEqual(p.sha(p.HERE/name),digest,name)
 
 if __name__=='__main__':unittest.main()

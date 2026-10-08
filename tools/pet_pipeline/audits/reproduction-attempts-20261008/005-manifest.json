@@ -1,0 +1,34 @@
+{
+  "pipeline_version": "1.0.0",
+  "pet_id": "JungleOcelot",
+  "species": "Ocelot",
+  "biome": "Jungle",
+  "started_utc": "2026-10-08T20:31:06.562084+00:00",
+  "status": "failed",
+  "credits_used": 0,
+  "roblox_asset_ids": [],
+  "stages": [
+    {
+      "name": "prepare",
+      "seconds": 0.28215646743774414,
+      "exit_code": 0
+    },
+    {
+      "name": "generate",
+      "seconds": 10.74565577507019,
+      "exit_code": 1
+    }
+  ],
+  "concept_sha256": "9e05aa4b771621833bb39cad7222b6d0e31c96034983ead36f876f51b545d40a",
+  "config_sha256": "756269149947e0a4e470bfe2c5d23941e9af87750905541eccb5583a0d3e0f16",
+  "style_references": {
+    "C:\\Users\\Kenny\\Documents\\Real_Animal_K\\tools\\pet_pipeline\\references\\bear-front.jpg": "777a8c38c8b675db104e538a3b5167d51a63e502833e29d664874625aec2e7e7",
+    "C:\\Users\\Kenny\\Documents\\Real_Animal_K\\tools\\pet_pipeline\\references\\bear-side.jpg": "21494f75d7ac9bcc9b5e0be0dbb43d98c0f106b81b3935d1837db344eae57bfa",
+    "C:\\Users\\Kenny\\Documents\\Real_Animal_K\\tools\\pet_pipeline\\references\\approved-ocelot-front.png": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b"
+  },
+  "approved_model_sha256": "d00c5ceb074ec9e67ec8eeaaae7a358d7cc4f4dd04e9b475958eada868b67cc7",
+  "original_geometry_source": "fresh TripoSR inference; no prior mesh input",
+  "visual_qa": "pending",
+  "studio_qa": "pending",
+  "failure": "generate failed; see E:\\AnimalKingdom3D\\outputs\\factory-ocelot-reproduction-005\\generate.log"
+}
