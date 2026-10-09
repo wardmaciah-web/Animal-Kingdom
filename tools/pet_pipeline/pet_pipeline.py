@@ -34,7 +34,8 @@ VERSION = '1.0.0'
 HERE = Path(__file__).resolve().parent
 CHECKS = ('original_species', 'large_expressive_eyes', 'rounded_head', 'chubby_body',
           'appropriate_surface_detail', 'matte_body', 'sitting_pose', 'two_front_paws_grounded',
-          'four_view_comparison', 'no_visible_texture_failure')
+          'four_view_comparison', 'no_visible_texture_failure', 'no_duplicated_limbs',
+          'well_formed_paws', 'stylized_proportions')
 
 def sha(path):
     h = hashlib.sha256()
@@ -57,21 +58,118 @@ def python_in(root, name):
         if path.is_file(): return path
     raise ValueError(f'Missing {name} environment beneath {root}; see INSTALL.md')
 
+
+def runtime_environment(runtime, scratch=None):
+    """Set paths in Python too: direct CLI launches must not fall back to C:."""
+    runtime = Path(runtime).resolve()
+    from factory_storage import safe_path
+    if os.name == 'nt' and runtime != Path('D:/AnimalKingdom3D').resolve():
+        raise ValueError('Production runtime must be D:/AnimalKingdom3D')
+    scratch = Path(scratch or os.environ.get('AK_JOB_SCRATCH') or runtime/'scratch/session-temp').absolute()
+    if not scratch.is_relative_to(runtime/'scratch'):
+        raise ValueError('Temporary files must stay in the runtime scratch directory')
+    safe_path(runtime, scratch.relative_to(runtime))
+    env = os.environ.copy()
+    locations = {'TEMP':scratch, 'TMP':scratch, 'HF_HOME':runtime/'cache/huggingface',
+        'HF_HUB_CACHE':runtime/'cache/huggingface/hub',
+        'HUGGINGFACE_HUB_CACHE':runtime/'cache/huggingface/hub',
+        'TORCH_HOME':runtime/'cache/torch', 'U2NET_HOME':runtime/'cache/u2net',
+        'TORCH_EXTENSIONS_DIR':runtime/'cache/torch-extensions',
+        'PIP_CACHE_DIR':runtime/'cache/pip', 'UV_CACHE_DIR':runtime/'cache/uv',
+        'XDG_CACHE_HOME':runtime/'cache', 'NUMBA_CACHE_DIR':runtime/'cache/numba',
+        'CUDA_CACHE_PATH':runtime/'cache/cuda', 'MPLCONFIGDIR':runtime/'cache/matplotlib',
+        'BLENDER_USER_CONFIG':runtime/'cache/blender/config',
+        'BLENDER_USER_SCRIPTS':runtime/'cache/blender/scripts',
+        'BLENDER_USER_DATAFILES':runtime/'cache/blender/datafiles'}
+    for key, path in locations.items():
+        safe_path(runtime, path.relative_to(runtime))
+        path.mkdir(parents=True, exist_ok=True); env[key] = str(path)
+    env.update(PYTHONUNBUFFERED='1', PYTHONDONTWRITEBYTECODE='1', PYTHONNOUSERSITE='1',
+        AK_3D_ROOT=str(runtime), CUDA_MODULE_LOADING='LAZY', HF_HUB_DISABLE_SYMLINKS_WARNING='1',
+        HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
+    return env
+
+def system_memory():
+    """System-wide commit, not GlobalMemoryStatusEx's process commit allowance.
+
+    GetPerformanceInfo returns page counts; convert using its actual PageSize.
+    Missing/failed telemetry must never permit model loading.
+    """
+    if os.name != 'nt':
+        raise RuntimeError('Windows system memory telemetry is required')
+    import ctypes
+    from ctypes import wintypes
+    class Performance(ctypes.Structure):
+        _fields_ = [('cb', wintypes.DWORD)] + [(name, ctypes.c_size_t) for name in (
+            'CommitTotal', 'CommitLimit', 'CommitPeak', 'PhysicalTotal',
+            'PhysicalAvailable', 'SystemCache', 'KernelTotal', 'KernelPaged',
+            'KernelNonpaged', 'PageSize')] + [(name, wintypes.DWORD) for name in (
+            'HandleCount', 'ProcessCount', 'ThreadCount')]
+    info = Performance(); info.cb = ctypes.sizeof(info)
+    probe = ctypes.WinDLL('psapi', use_last_error=True).GetPerformanceInfo
+    probe.argtypes = [ctypes.POINTER(Performance), wintypes.DWORD]
+    probe.restype = wintypes.BOOL
+    if not probe(ctypes.byref(info), info.cb) or not info.PageSize:
+        raise RuntimeError('GetPerformanceInfo failed; generation not started')
+    page = info.PageSize
+    return {'memory_source': 'GetPerformanceInfo',
+            'total_physical': info.PhysicalTotal * page,
+            'free_physical': info.PhysicalAvailable * page,
+            'total_commit': info.CommitLimit * page,
+            'used_commit': info.CommitTotal * page,
+            'peak_commit': info.CommitPeak * page,
+            'free_commit': (info.CommitLimit - info.CommitTotal) * page}
+
+
+def supervise_worker(command, runtime, log, telemetry, env=None, interval=0.5):
+    """Monitor only the child we launch; never terminate unrelated processes.
+
+    Admission remains 4/16/7 GiB. Runtime reserves are emergency stop limits,
+    not permission to start with less memory. Native allocations can outrun a
+    sampling watchdog, so this supplements rather than replaces admission.
+    """
+    before = preflight(runtime)
+    check_hardware(before)
+    if before['free_disk_bytes'] < 10*1024**3:
+        raise RuntimeError('At least 10 GiB free D: storage required; use factory run for verified reclamation')
+    with Path(telemetry).open('x', encoding='utf-8') as evidence:
+        evidence.write(json.dumps({'event':'before', **before}) + '\n'); evidence.flush()
+        process = subprocess.Popen(command, env=env, stdout=log, stderr=subprocess.STDOUT)
+        try:
+            while process.poll() is None:
+                sample = system_memory()
+                sample.update(time_utc=dt.datetime.now(dt.timezone.utc).isoformat(), pid=process.pid)
+                evidence.write(json.dumps(sample) + '\n'); evidence.flush()
+                for field, reserve in (('free_commit', 4*1024**3), ('free_physical', 1024**3)):
+                    if sample[field] < reserve:
+                        raise RuntimeError(f'Memory watchdog stopped worker: {field}={sample[field]}, reserve={reserve}')
+                try:
+                    return process.wait(timeout=interval)
+                except subprocess.TimeoutExpired:
+                    pass
+            return process.returncode
+        finally:
+            if process.poll() is None:
+                process.terminate()
+                try:
+                    process.wait(timeout=10)
+                except subprocess.TimeoutExpired:
+                    process.kill(); process.wait(timeout=10)
+            # Process exit releases native/Python/CUDA/Blender allocations even
+            # after a native crash; telemetry does not assume immediate recovery.
+            try:
+                after = preflight(runtime)
+                evidence.write(json.dumps({'event':'after', 'exit_code':process.returncode, **after}) + '\n')
+            except Exception as error:
+                evidence.write(json.dumps({'event':'after_probe_failed', 'error':str(error)}) + '\n')
+
+
 def preflight(runtime):
     result={'runtime_root':str(runtime),'free_disk_bytes':shutil.disk_usage(runtime).free}
     probe=subprocess.run(['nvidia-smi','--query-gpu=name,memory.total,memory.free',
-                          '--format=csv,noheader,nounits'],capture_output=True,text=True,check=False)
+                          '--format=csv,noheader,nounits'],capture_output=True,text=True,check=False,timeout=10)
     result['gpu']=probe.stdout.strip();result['gpu_probe_exit_code']=probe.returncode
-    if os.name=='nt':
-        import ctypes
-        class Memory(ctypes.Structure):
-            _fields_=[('length',ctypes.c_ulong),('load',ctypes.c_ulong)]+[
-                (name,ctypes.c_ulonglong) for name in ('total_physical','free_physical',
-                 'total_commit','free_commit','total_virtual','free_virtual','extended')]
-        memory=Memory();memory.length=ctypes.sizeof(memory)
-        if ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(memory)):
-            result.update({name:getattr(memory,name) for name in
-                           ('total_physical','free_physical','total_commit','free_commit')})
+    result.update(system_memory())
     return result
 
 def configure(path, runtime, output):
@@ -122,7 +220,9 @@ def check_attempt_budget(cfg, runtime, policy):
     if pet_id in policy.get('deferred_species',{}):
         raise RuntimeError('Species deferred: '+policy['deferred_species'][pet_id])
     attempts=0
-    for config in (Path(runtime)/'outputs').glob('*/effective-config.json'):
+    configs = list((Path(runtime)/'outputs').glob('*/effective-config.json'))
+    configs += list((Path(runtime)/'scratch/jobs').glob('*/work/effective-config.json'))
+    for config in configs:
         previous=read(config)
         if previous.get('pet_id')!=pet_id:continue
         # Count actual fresh inference, not downstream saved-mesh diagnostics.
@@ -144,6 +244,8 @@ def generate(args):
 
 def _generate(args):
     runtime = Path(args.runtime_root).resolve(); output = Path(args.output).resolve()
+    if not output.is_relative_to(runtime) or output.is_relative_to(HERE.parents[1]):
+        raise ValueError('Generation output must stay in D: runtime outside the Git checkout')
     cfg = configure(args.config, runtime, output)
     check_attempt_budget(cfg,runtime,read(HERE/'production-policy.json'))
     if output.exists(): raise ValueError('Output already exists; select a NEW run directory. Approved assets are never overwritten.')
@@ -175,22 +277,7 @@ def _generate(args):
                 'original_geometry_source': 'fresh TripoSR inference; no prior mesh input',
                 'visual_qa': 'pending', 'studio_qa': 'pending'}
     write(output/'manifest.json', manifest)
-    env = os.environ.copy()
-    for key, rel in {'TEMP':'temp','TMP':'temp','HF_HOME':'cache/huggingface',
-                     'HF_HUB_CACHE':'cache/huggingface/hub',
-                     'HUGGINGFACE_HUB_CACHE':'cache/huggingface/hub',
-                     'TORCH_HOME':'cache/torch','U2NET_HOME':'cache/u2net',
-                     'TORCH_EXTENSIONS_DIR':'cache/torch-extensions',
-                     'PIP_CACHE_DIR':'cache/pip','UV_CACHE_DIR':'cache/uv',
-                     'XDG_CACHE_HOME':'cache','NUMBA_CACHE_DIR':'cache/numba',
-                     'CUDA_CACHE_PATH':'cache/cuda','MPLCONFIGDIR':'cache/matplotlib',
-                     'BLENDER_USER_CONFIG':'cache/blender/config',
-                     'BLENDER_USER_SCRIPTS':'cache/blender/scripts',
-                     'BLENDER_USER_DATAFILES':'cache/blender/datafiles'}.items():
-        (runtime/rel).mkdir(parents=True, exist_ok=True); env[key] = str(runtime/rel)
-    env.update(PYTHONUNBUFFERED='1', PYTHONDONTWRITEBYTECODE='1', PYTHONNOUSERSITE='1',
-               AK_3D_ROOT=str(runtime), CUDA_MODULE_LOADING='LAZY',
-               HF_HUB_DISABLE_SYMLINKS_WARNING='1', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
+    env = runtime_environment(runtime)
     stages = [('prepare', inference), ('generate', inference), ('project', inference),
               ('refine', blender), ('validate', inference)]
     try:
@@ -198,12 +285,12 @@ def _generate(args):
             started = time.time()
             print(f'[{cfg["pet_id"]}] {name}', flush=True)
             with (output/f'{name}.log').open('w', encoding='utf-8') as log:
-                result = subprocess.run([str(interpreter), str(HERE/'workers'/f'{name}.py'),
-                                         '--config', str(effective)], env=env, stdout=log,
-                                        stderr=subprocess.STDOUT, check=False)
-            manifest['stages'].append({'name': name, 'seconds': time.time()-started, 'exit_code': result.returncode})
+                code = supervise_worker([str(interpreter), str(HERE/'workers'/f'{name}.py'),
+                                         '--config', str(effective)], runtime, log,
+                                        output/f'{name}-memory.jsonl', env=env)
+            manifest['stages'].append({'name': name, 'seconds': time.time()-started, 'exit_code': code})
             write(output/'manifest.json', manifest)
-            if result.returncode: raise RuntimeError(f'{name} failed; see {output/name}.log')
+            if code: raise RuntimeError(f'{name} failed; see {output/name}.log')
         manifest['status'] = 'technical_pass_pending_visual'
         manifest['artifacts'] = {str(p.relative_to(output)): {'sha256': sha(p), 'bytes': p.stat().st_size}
                                  for p in output.rglob('*') if p.is_file() and p.name != 'manifest.json'}

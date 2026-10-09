@@ -1,7 +1,7 @@
 """Free local SDXL concept candidates; separate environment, no paid endpoints."""
 import argparse,json,os,time,gc,faulthandler
 from pathlib import Path
-from pet_pipeline import preflight,check_hardware,read,write,sha,HERE,generation_lock
+from pet_pipeline import preflight,check_hardware,read,write,sha,HERE,generation_lock,runtime_environment
 
 def main():
     faulthandler.enable()
@@ -10,6 +10,7 @@ def main():
     parser.add_argument('--output',required=True)
     args=parser.parse_args()
     root=Path(os.environ.get('AK_3D_ROOT','D:/AnimalKingdom3D')).resolve()
+    os.environ.update(runtime_environment(root))
     output=Path(args.output).resolve()
     if not output.is_relative_to(root):raise ValueError('Concept output must stay beneath the D runtime')
     if output.exists():raise ValueError('Choose a new concept output directory')
@@ -46,15 +47,19 @@ def main():
         weights=root/'tools/SDXL-weights'
         download=read(weights/'download-manifest.json')
         if download['revision']!=cfg['revision']:raise ValueError('Unexpected model revision')
+        # Reject truncated species/anatomy instructions before allocating SDXL.
+        from transformers import CLIPTokenizer
+        for folder in ('tokenizer', 'tokenizer_2'):
+            tokenizer=CLIPTokenizer.from_pretrained(str(weights/folder),local_files_only=True)
+            for label in ('prompt','negative_prompt'):
+                if len(tokenizer(cfg[label]).input_ids)>tokenizer.model_max_length:
+                    raise ValueError(f'{label} exceeds tokenizer limit; shorten it instead of silently losing anatomy/style instructions')
+        del tokenizer
         pipeline_class=StableDiffusionXLImg2ImgPipeline if cfg.get('design_reference_image') else StableDiffusionXLPipeline
         pipe=pipeline_class.from_pretrained(str(weights),torch_dtype=torch.float16,
             variant='fp16',use_safetensors=True,local_files_only=True,add_watermarker=False,
             device_map='cuda',low_cpu_mem_usage=True)
         pipe.enable_vae_slicing();pipe.enable_vae_tiling()
-        for tokenizer in (pipe.tokenizer,pipe.tokenizer_2):
-            for label in ('prompt','negative_prompt'):
-                if len(tokenizer(cfg[label]).input_ids)>tokenizer.model_max_length:
-                    raise ValueError(f'{label} exceeds tokenizer limit; shorten it instead of silently losing anatomy/style instructions')
         manifest['status']='encoding_prompt';write(output/'manifest.json',manifest)
         # All three candidates share text; release encoders after embedding so
         # their GPU allocation is available for 1024px denoising and decoding.

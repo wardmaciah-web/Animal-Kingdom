@@ -1,0 +1,10 @@
+{
+  "tokenizer": {
+    "prompt": 60,
+    "negative_prompt": 51
+  },
+  "tokenizer_2": {
+    "prompt": 60,
+    "negative_prompt": 51
+  }
+}

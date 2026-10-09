@@ -25,7 +25,9 @@ and all child stages to keep temporary files and caches there, and creates a new
 timestamped output directory. Read `CHECKPOINT.md` before resuming the second pet;
 reuse its saved mesh instead of repeating completed inference. Use a named recipe,
 `-RuntimeRoot` to relocate, and `-Output` to select a new output directory.
-Direct Python invocation accepts `--runtime-root` or `AK_3D_ROOT`, defaulting to D:.
+Direct Python invocation accepts `--runtime-root` or `AK_3D_ROOT`; production is
+restricted to D:/AnimalKingdom3D. See [FACTORY.md](FACTORY.md) for the resumable
+queue, per-job scratch, memory supervision and verified-only cleanup.
 Concept and reconstruction workers share an OS-held exclusive `generation.lock`
 under the D: runtime. Inspect active processes and prior manifests/logs before
 retrying; a stale `loading` manifest is not evidence of a running worker. The
@@ -36,7 +38,7 @@ was stopped. This margin is conservative, not a guarantee of successful loading.
 Monitor runtime pressure and keep caches and outputs on D:.
 
 The generation gate requires 4 GiB free RAM, 16 GiB free system commit, 7 GiB free
-VRAM on the first GPU and 2 GiB free output storage. These are admission thresholds,
+VRAM on the first GPU and 10 GiB free output storage. These are admission thresholds,
 not guarantees of peak memory use. Models load from the verified offline caches.
 
 Every run requires a new output directory. A recipe specifies species, biome,

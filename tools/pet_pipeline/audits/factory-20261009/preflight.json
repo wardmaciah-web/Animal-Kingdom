@@ -1,0 +1,13 @@
+{
+  "runtime_root": "D:\\AnimalKingdom3D",
+  "free_disk_bytes": 438839791616,
+  "gpu": "NVIDIA GeForce RTX 3060, 12288, 11409",
+  "gpu_probe_exit_code": 0,
+  "memory_source": "GetPerformanceInfo",
+  "total_physical": 17042083840,
+  "free_physical": 6766940160,
+  "total_commit": 28791578624,
+  "used_commit": 16565944320,
+  "peak_commit": 31852445696,
+  "free_commit": 12225634304
+}

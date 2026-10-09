@@ -1,4 +1,49 @@
-# Latest checkpoint - physical Jungle tree mapping and isolated payout/rejoin QA
+# Latest checkpoint - guarded storage, queue and memory supervision
+
+2026-10-09: continued from 2a3c54e. Added the resumable factory controller,
+per-job D: scratch, immutable preserved bundles and verification-gated cleanup.
+Only explicitly inventoried disposable files in new factory-owned scratch jobs
+can be removed, after matching durable import/registration/full Studio QA and a
+pushed canonical Git checkpoint. Final meshes, Blender files, textures, references,
+recipes, QA, asset IDs and checkpoint records survive. Historical and failed
+unverified outputs are never adopted for deletion. Low-disk cleanup uses the same
+gates; 10 GiB storage reserve is enforced. See FACTORY.md for receipt/queue use.
+
+System commit is measured with GetPerformanceInfo. Owned child workers have a
+0.5-second RAM/commit watchdog, before/after resource telemetry, bounded shutdown
+and wait. Shared generation locking now also covers saved-mesh refinement.
+Admission remains 4 GiB RAM / 16 GiB commit / 7 GiB VRAM; emergency stop reserves
+are 1 GiB RAM / 4 GiB commit. No claim of successful full SDXL loading yet.
+Proven FP16/mmap, low-CPU-memory loading, VAE/chunking and model quality fixes
+remain. Prompt lengths are checked before SDXL allocation; Coati's revised seated
+species prompt and explicit malformed-paw/photorealism exclusions use 60/51 tokens
+in both tokenizers. New final art checks explicitly reject duplicated limbs,
+malformed paws and photorealistic proportions.
+
+46 automated tests pass, including owned-process termination with an unrelated
+test process left running, real Windows junction rejection, archive corruption,
+unpushed checkpoint rejection and idempotent cleanup. Initial archive tests ran
+on low-space C: temp and correctly hit the disk gate; the fixture now isolates
+disk measurements, final tests run with D: temp. Both logs are retained.
+Python compilation and unchanged src/tests gameplay diff verified.
+
+Actual queue initialized at D:/AnimalKingdom3D/factory/queue.json: 248 remaining
+pets, Coati ready, 247 need species recipes. Real queue run returned
+resource_blocked without launching a model or recording an inference attempt:
+5.44 GiB RAM, 10.33 GiB commit headroom, 11.09 GiB VRAM, 408.71 GiB D: free.
+Automatic C: pagefile remains 11205 MiB (3988 MiB used); unchanged. No generation,
+Blender or Studio worker remains. Studio tool listing returns no connected place.
+ForgeGUI read-only capabilities respond but expose no balance or per-call cost;
+no paid generation submitted. No subscriptions, pagefile edits or app termination.
+
+All 35 Jungle mappings, approved Ocelot/Red Panda, Meadow/Forest and ContentReady
+gates remain unchanged. No game publication. Evidence: audits/factory-20261009/.
+Remaining: fresh admission pass, supervised Coati concept/mesh/four-view approval,
+durable Studio import/registration, real physical-tree reward, rarity/weight/income,
+Inventory/Held/followers/Sanctuary/Index and isolated save/rejoin/ownership checks;
+then archive/checkpoint/cleanup and next pet. Multiplayer remains unverified.
+
+## Previous checkpoint - physical Jungle tree mapping and isolated payout/rejoin QA
 
 2026-10-09: all 35 existing Jungle trees are assigned through canonical explicit
 visual/source metadata. Rainbloom5, EmeraldCanopy5, Orchidwood4, Sunvine15,

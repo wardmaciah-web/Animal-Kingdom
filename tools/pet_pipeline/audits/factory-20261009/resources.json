@@ -1,0 +1,147 @@
+{
+  "time_utc": "2026-10-09T08:42:55.849440+00:00",
+  "thresholds": {
+    "ram_gib": 4,
+    "commit_gib": 16,
+    "vram_gib": 7,
+    "disk_gib": 10
+  },
+  "hardware": {
+    "runtime_root": "D:\\AnimalKingdom3D",
+    "free_disk_bytes": 438846418944,
+    "gpu": "NVIDIA GeForce RTX 3060, 12288, 11355",
+    "gpu_probe_exit_code": 0,
+    "memory_source": "GetPerformanceInfo",
+    "total_physical": 17042083840,
+    "free_physical": 5834592256,
+    "total_commit": 28791578624,
+    "used_commit": 17719164928,
+    "peak_commit": 31852445696,
+    "free_commit": 11072413696
+  },
+  "admission": "blocked",
+  "reason": "Insufficient free_commit: 11072413696 bytes; need 17179869184. See preflight.json",
+  "system": {
+    "automatic_pagefile": true,
+    "pagefiles": [
+      {
+        "Name": "C:\\pagefile.sys",
+        "AllocatedBaseSize": 11205,
+        "CurrentUsage": 3988,
+        "PeakUsage": 8632
+      }
+    ],
+    "pagefile_settings": [],
+    "disks": [
+      {
+        "DriveLetter": "D",
+        "SizeRemaining": 438846418944,
+        "Size": 478753562624
+      },
+      {
+        "DriveLetter": "C",
+        "SizeRemaining": 10430676992,
+        "Size": 118482898944
+      }
+    ],
+    "largest_private_processes": [
+      {
+        "Id": 192,
+        "ProcessName": "chrome",
+        "WorkingSet64": 919076864,
+        "PrivateMemorySize64": 921300992
+      },
+      {
+        "Id": 5352,
+        "ProcessName": "svchost",
+        "WorkingSet64": 13373440,
+        "PrivateMemorySize64": 868511744
+      },
+      {
+        "Id": 1484,
+        "ProcessName": "dwm",
+        "WorkingSet64": 304828416,
+        "PrivateMemorySize64": 565428224
+      },
+      {
+        "Id": 17544,
+        "ProcessName": "chrome",
+        "WorkingSet64": 525815808,
+        "PrivateMemorySize64": 517697536
+      },
+      {
+        "Id": 17940,
+        "ProcessName": "steamwebhelper",
+        "WorkingSet64": 119296000,
+        "PrivateMemorySize64": 448241664
+      },
+      {
+        "Id": 11828,
+        "ProcessName": "ExitLag",
+        "WorkingSet64": 106053632,
+        "PrivateMemorySize64": 421814272
+      },
+      {
+        "Id": 6216,
+        "ProcessName": "explorer",
+        "WorkingSet64": 245420032,
+        "PrivateMemorySize64": 391184384
+      },
+      {
+        "Id": 3956,
+        "ProcessName": "chrome",
+        "WorkingSet64": 308441088,
+        "PrivateMemorySize64": 379985920
+      },
+      {
+        "Id": 3048,
+        "ProcessName": "chrome",
+        "WorkingSet64": 454041600,
+        "PrivateMemorySize64": 362418176
+      },
+      {
+        "Id": 3004,
+        "ProcessName": "wallpaper64",
+        "WorkingSet64": 61435904,
+        "PrivateMemorySize64": 338817024
+      },
+      {
+        "Id": 20072,
+        "ProcessName": "chrome",
+        "WorkingSet64": 291065856,
+        "PrivateMemorySize64": 318455808
+      },
+      {
+        "Id": 400,
+        "ProcessName": "chrome",
+        "WorkingSet64": 395722752,
+        "PrivateMemorySize64": 315330560
+      },
+      {
+        "Id": 19936,
+        "ProcessName": "chrome",
+        "WorkingSet64": 376340480,
+        "PrivateMemorySize64": 311283712
+      },
+      {
+        "Id": 28096,
+        "ProcessName": "chrome",
+        "WorkingSet64": 528007168,
+        "PrivateMemorySize64": 309985280
+      },
+      {
+        "Id": 1300,
+        "ProcessName": "chrome",
+        "WorkingSet64": 404549632,
+        "PrivateMemorySize64": 306491392
+      }
+    ],
+    "workers": [
+      {
+        "ProcessId": 25436,
+        "ParentProcessId": 4504,
+        "Name": "python.exe"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "task": "Automatic pet factory storage and memory management",
+  "base_commit": "2a3c54e2b6a03c2f6a7b14c8d179d3a355f6b816",
+  "automated_tests": 46,
+  "test_result": "pass",
+  "python_compile": "pass",
+  "gameplay_source_unchanged": true,
+  "queue_pets": 248,
+  "queue_ready": [
+    "JungleCoati"
+  ],
+  "queue_needs_recipe": 247,
+  "queue_run": "resource_blocked",
+  "inference_attempts": 0,
+  "production_files_deleted": 0,
+  "pagefile_changed": false,
+  "unrelated_apps_terminated": false,
+  "studio_instances": [],
+  "forgegui_capabilities": "asset-capabilities-v5; read only; no generation cost or balance exposed",
+  "paid_generation_calls": 0,
+  "game_published": false,
+  "live_model_peak_validation": "blocked pending 16 GiB free commit",
+  "studio_qa": "pending for next pet; prior Ocelot and Red Panda evidence preserved",
+  "limitations": [
+    "Unverified/legacy failed runs are retained, never automatically adopted for cleanup.",
+    "Studio import/registration/QA require actual tools and evidence; Python does not fabricate results.",
+    "Fast native allocations may outrun watchdog polling."
+  ]
+}

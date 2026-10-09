@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 $runtimePath = (Resolve-Path -LiteralPath $RuntimeRoot).Path
 $env:AK_3D_ROOT = $runtimePath
 $locations = @{
-    TEMP='temp'; TMP='temp'; HF_HOME='cache\huggingface';
+    TEMP='scratch\session-temp'; TMP='scratch\session-temp'; HF_HOME='cache\huggingface';
     HF_HUB_CACHE='cache\huggingface\hub'; HUGGINGFACE_HUB_CACHE='cache\huggingface\hub';
     TORCH_HOME='cache\torch'; TORCH_EXTENSIONS_DIR='cache\torch-extensions';
     U2NET_HOME='cache\u2net'; UV_CACHE_DIR='cache\uv'; PIP_CACHE_DIR='cache\pip';

@@ -2,11 +2,10 @@
 import argparse
 import os
 from pathlib import Path
-import subprocess
 import sys
 import time
 
-from pet_pipeline import HERE, read, write
+from pet_pipeline import HERE, read, write, supervise_worker, runtime_environment
 
 
 def record_exit(output, returncode, elapsed):
@@ -35,18 +34,24 @@ def main():
     output.parent.mkdir(parents=True, exist_ok=True)
     log = output.with_suffix('.worker.log')
     started = time.monotonic()
+    failure = None
+    telemetry = output.with_suffix('.memory.jsonl')
     with log.open('x', encoding='utf-8') as stream:
-        process = subprocess.Popen([sys.executable, '-u', str(HERE/'generate_concepts.py'),
-                                    '--config', args.config, '--output', str(output)],
-                                   stdout=stream, stderr=subprocess.STDOUT)
         try:
-            code = process.wait()
-        except KeyboardInterrupt:
-            process.terminate()
-            code = process.wait()
+            code = supervise_worker([sys.executable, '-u', str(HERE/'generate_concepts.py'),
+                                    '--config', args.config, '--output', str(output)],
+                                    root, stream, telemetry, env=runtime_environment(root))
+        except (Exception, KeyboardInterrupt) as error:
+            failure = f'{type(error).__name__}: {error}'
+            stream.write(failure + '\n')
+            code = -1
     output.mkdir(exist_ok=True)
     log.replace(output/'worker.log')
+    if telemetry.exists(): telemetry.replace(output/'memory.jsonl')
     manifest = record_exit(output, code, time.monotonic()-started)
+    if failure:
+        manifest.update(status='blocked', failure=failure)
+        write(output/'manifest.json', manifest)
     print(manifest['status'], output, flush=True)
     return 0 if manifest['status'] == 'concepts_pending_visual_qa' else 1
 

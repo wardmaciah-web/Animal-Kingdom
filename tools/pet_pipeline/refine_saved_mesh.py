@@ -2,8 +2,7 @@
 import argparse
 from pathlib import Path
 import shutil
-import subprocess
-from pet_pipeline import HERE, configure, python_in, read, sha, write
+from pet_pipeline import HERE, configure, python_in, read, sha, write, generation_lock, supervise_worker, runtime_environment
 
 
 def main():
@@ -29,16 +28,19 @@ def main():
               'source_run':str(source),'source_mesh_sha256':sha(source/'projected/projected.glb'),
               'config_sha256':sha(effective),'stages':[]}
     write(output/'manifest.json',manifest)
-    for stage,environment in [('refine','blender-env'),('validate','deps-stage')]:
-        with (output/f'{stage}.log').open('w') as log:
-            result=subprocess.run([str(python_in(root,environment)),str(HERE/'workers'/f'{stage}.py'),
-                                   '--config',str(effective)],stdout=log,stderr=subprocess.STDOUT)
-        manifest['stages'].append({'name':stage,'exit_code':result.returncode})
-        write(output/'manifest.json',manifest)
-        if result.returncode:
-            manifest.update(status='failed',failure=f'{stage} failed; see log')
-            write(output/'manifest.json',manifest)
-            return 1
+    try:
+        with generation_lock(root):
+            for stage,environment in [('refine','blender-env'),('validate','deps-stage')]:
+                with (output/f'{stage}.log').open('w') as log:
+                    code=supervise_worker([str(python_in(root,environment)),str(HERE/'workers'/f'{stage}.py'),
+                                           '--config',str(effective)],root,log,output/f'{stage}-memory.jsonl',
+                                          env=runtime_environment(root))
+                manifest['stages'].append({'name':stage,'exit_code':code})
+                write(output/'manifest.json',manifest)
+                if code: raise RuntimeError(f'{stage} failed; see log')
+    except Exception as error:
+        manifest.update(status='failed',failure=str(error));write(output/'manifest.json',manifest)
+        return 1
     manifest.update(status='technical_pass_pending_visual',glb_sha256=sha(output/'review/pet.glb'))
     write(output/'manifest.json',manifest)
     return 0

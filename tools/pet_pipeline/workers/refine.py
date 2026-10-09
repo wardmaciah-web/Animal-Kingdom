@@ -14,7 +14,7 @@ args=SimpleNamespace(input=str(run/'projected/projected.glb'),output=str(run/'re
                      source_z_up=True,yaw=settings['yaw_degrees'],refine=True)
 out=Path(args.output); out.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
-bpy.context.preferences.filepaths.temporary_directory=str(root/'temp')
+bpy.context.preferences.filepaths.temporary_directory=os.environ['TEMP']
 bpy.ops.import_scene.gltf(filepath=str(Path(args.input).resolve()))
 meshes=[o for o in bpy.context.scene.objects if o.type=='MESH']
 for o in meshes:

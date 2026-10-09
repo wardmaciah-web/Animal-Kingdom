@@ -12,8 +12,8 @@
     "height":  1024,
     "steps":  35,
     "guidance_scale":  7.0,
-    "prompt":  "Baby coatimundi, side view, very long narrow pointed muzzle, upturned black nose, small round ears, long upright ringed tail. Chubby quadruped, huge friendly eyes, fluffy brown fur, cream throat. Cute stylized 3D game pet, full body, white background.",
-    "negative_prompt":  "raccoon, red panda, bear, cat, short muzzle, flat face, round snout, short tail, multiple animals, collage, text, watermark, clothing, plastic, extra limbs, distorted anatomy, cropped body",
+    "prompt":  "Baby coatimundi sitting, side view, long narrow pointed muzzle, upturned black nose, small round ears, long ringed tail. Chubby quadruped, huge friendly eyes, fluffy brown fur, cream throat. Cute stylized 3D game pet, full body, white background.",
+    "negative_prompt":  "raccoon, red panda, bear, cat, short muzzle, flat face, short tail, multiple animals, collage, text, watermark, clothing, plastic, extra limbs, malformed paws, photorealistic, distorted anatomy, cropped body",
     "style_references":  [
                              "references/bear-front.jpg",
                              "references/approved-ocelot-front.png"
