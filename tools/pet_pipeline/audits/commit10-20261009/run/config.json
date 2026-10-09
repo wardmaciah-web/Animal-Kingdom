@@ -1,0 +1,25 @@
+{
+  "pet_id": "JungleCoati",
+  "species": "Coati",
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+  "seeds": [
+    1071,
+    2071,
+    3071
+  ],
+  "width": 1024,
+  "height": 1024,
+  "steps": 35,
+  "guidance_scale": 7.0,
+  "prompt": "Baby coatimundi sitting, side view, long narrow pointed muzzle, upturned black nose, small round ears, long ringed tail. Chubby quadruped, huge friendly eyes, fluffy brown fur, cream throat. Cute stylized 3D game pet, full body, white background.",
+  "negative_prompt": "raccoon, red panda, bear, cat, short muzzle, flat face, short tail, multiple animals, collage, text, watermark, clothing, plastic, extra limbs, malformed paws, photorealistic, distorted anatomy, cropped body",
+  "style_references": [
+    "references/bear-front.jpg",
+    "references/approved-ocelot-front.png"
+  ],
+  "style_conditioning": "Single bounded anatomy correction after guided005 produced raccoon-like muzzles. Stronger denoising permits original coati snout and tail; approved Ocelot supplies image composition only.",
+  "acceptance": "Mandatory comparison with original black bear and approved Ocelot. Prioritize species identity, face, fur and proportions. Minor pose/paw issues receive Blender correction; reject collages, severe distortion and wrong species. Final mesh still needs four-view and Studio QA.",
+  "design_reference_image": "references/approved-ocelot-front.png",
+  "design_strength": 0.9
+}

@@ -1,0 +1,54 @@
+qa_accepted_awaiting_studio
+test_completed_concepts_still_need_visual_review (test_concept_runner.ConceptRunnerTests.test_completed_concepts_still_need_visual_review) ... ok
+test_native_crash_preserves_completed_candidates (test_concept_runner.ConceptRunnerTests.test_native_crash_preserves_completed_candidates) ... ok
+test_zero_exit_without_completion_is_not_success (test_concept_runner.ConceptRunnerTests.test_zero_exit_without_completion_is_not_success) ... ok
+test_failed_hardware_keeps_recipe_ready_without_attempt (test_factory.QueueTests.test_failed_hardware_keeps_recipe_ready_without_attempt) ... ok
+test_pending_review_prevents_next_pet (test_factory.QueueTests.test_pending_review_prevents_next_pet) ... ok
+test_repeated_candidate_refused_even_after_renaming_recipe (test_factory.QueueTests.test_repeated_candidate_refused_even_after_renaming_recipe) ... ok
+test_seed_excludes_approved_pets_and_prioritizes_coati (test_factory.QueueTests.test_seed_excludes_approved_pets_and_prioritizes_coati) ... ok
+test_changed_disposable_preserves_entire_batch (test_factory.StorageTests.test_changed_disposable_preserves_entire_batch) ... ok
+test_complete_receipt_and_archive_allow_cleanup (test_factory.StorageTests.test_complete_receipt_and_archive_allow_cleanup) ... ok
+test_corrupt_archive_blocks_deletion (test_factory.StorageTests.test_corrupt_archive_blocks_deletion) ... ok
+test_hardlink_refused (test_factory.StorageTests.test_hardlink_refused) ... ok
+test_junction_refused (test_factory.StorageTests.test_junction_refused) ... ok
+test_low_disk_only_attempts_verified_reclaim (test_factory.StorageTests.test_low_disk_only_attempts_verified_reclaim) ... ok
+test_manifest_cannot_nominate_approved_files (test_factory.StorageTests.test_manifest_cannot_nominate_approved_files) ... ok
+test_missing_archive_or_missing_qa_blocks (test_factory.StorageTests.test_missing_archive_or_missing_qa_blocks) ... ok
+test_only_inventoried_disposables_deleted_and_restart_safe (test_factory.StorageTests.test_only_inventoried_disposables_deleted_and_restart_safe) ... ok
+test_traversal_absolute_and_git_paths_refused (test_factory.StorageTests.test_traversal_absolute_and_git_paths_refused) ... ok
+test_unknown_legacy_job_is_never_adopted (test_factory.StorageTests.test_unknown_legacy_job_is_never_adopted) ... ok
+test_unpushed_checkpoint_blocks_deletion (test_factory.StorageTests.test_unpushed_checkpoint_blocks_deletion) ... ok
+test_unverified_work_cannot_be_deleted (test_factory.StorageTests.test_unverified_work_cannot_be_deleted) ... ok
+test_upload_only_does_not_authorize_cleanup (test_factory.StorageTests.test_upload_only_does_not_authorize_cleanup) ... ok
+test_failed_admission_launches_nothing (test_factory.WatchdogTests.test_failed_admission_launches_nothing) ... ok
+test_low_memory_terminates_only_owned_child (test_factory.WatchdogTests.test_low_memory_terminates_only_owned_child) ... ok
+test_normal_completion_returns_exit_code (test_factory.WatchdogTests.test_normal_completion_returns_exit_code) ... ok
+test_telemetry_failure_reaps_owned_child (test_factory.WatchdogTests.test_telemetry_failure_reaps_owned_child) ... ok
+test_joint_rotation_uses_authored_pivot (test_pose_adjustments.PoseAdjustments.test_joint_rotation_uses_authored_pivot) ... ok
+test_paw_moves_but_outside_torso_is_preserved (test_pose_adjustments.PoseAdjustments.test_paw_moves_but_outside_torso_is_preserved) ... ok
+test_soft_selection_and_scale (test_pose_adjustments.PoseAdjustments.test_soft_selection_and_scale) ... ok
+test_acceptance_still_requires_studio (test_safety.ProductionGates.test_acceptance_still_requires_studio) ... ok
+test_authorized_ten_gib_trial_boundary_is_system_commit (test_safety.ProductionGates.test_authorized_ten_gib_trial_boundary_is_system_commit) ... ok
+test_deferred_species_cannot_start_inference (test_safety.ProductionGates.test_deferred_species_cannot_start_inference) ... ok
+test_documented_preprocessing_retry_is_still_bounded (test_safety.ProductionGates.test_documented_preprocessing_retry_is_still_bounded) ... ok
+test_failed_inference_worker_uses_retry_budget (test_safety.ProductionGates.test_failed_inference_worker_uses_retry_budget) ... ok
+test_generation_lock_excludes_another_process_and_recovers (test_safety.ProductionGates.test_generation_lock_excludes_another_process_and_recovers) ... ok
+test_insufficient_commit_blocks_even_with_free_vram (test_safety.ProductionGates.test_insufficient_commit_blocks_even_with_free_vram) ... ok
+test_just_below_current_commit_admission_blocks (test_safety.ProductionGates.test_just_below_current_commit_admission_blocks) ... ok
+test_missing_memory_measurements_fail_closed (test_safety.ProductionGates.test_missing_memory_measurements_fail_closed) ... ok
+test_old_commit_admission_is_no_longer_sufficient (test_safety.ProductionGates.test_old_commit_admission_is_no_longer_sufficient) ... ok
+test_rejects_failed_technical_validation (test_safety.ProductionGates.test_rejects_failed_technical_validation) ... ok
+test_rejects_missing_visual_check (test_safety.ProductionGates.test_rejects_missing_visual_check) ... ok
+test_rejects_review_for_different_asset (test_safety.ProductionGates.test_rejects_review_for_different_asset) ... ok
+test_retry_limit_counts_inference_not_saved_mesh_trials (test_safety.ProductionGates.test_retry_limit_counts_inference_not_saved_mesh_trials) ... ok
+test_roster_has_unique_species_and_five_slots_per_family (test_safety.ProductionGates.test_roster_has_unique_species_and_five_slots_per_family) ... ok
+test_sufficient_memory_admits (test_safety.ProductionGates.test_sufficient_memory_admits) ... ok
+test_trial_emergency_floor_is_below_admission (test_safety.ProductionGates.test_trial_emergency_floor_is_below_admission) ... ok
+test_valid_recipe_resolves_reference_paths (test_safety.ProductionGates.test_valid_recipe_resolves_reference_paths) ... ok
+test_vendored_source_matches_lock (test_safety.ProductionGates.test_vendored_source_matches_lock) ... ok
+test_wrong_gpu_or_failed_probe_blocks (test_safety.ProductionGates.test_wrong_gpu_or_failed_probe_blocks) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 1.132s
+
+OK

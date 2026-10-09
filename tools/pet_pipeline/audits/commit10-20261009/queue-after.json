@@ -1,0 +1,1776 @@
+{
+  "schema_version": 1,
+  "pets": [
+    {
+      "pet_id": "JungleCoati",
+      "biome": "Jungle",
+      "state": "failed",
+      "attempts": [
+        {
+          "run_id": "9881d71055024ae484433bdd58a07a97",
+          "fingerprint": "aa433eabd8fddfdfbb0e564f331d7087ac08be7ab566427c1f5878f0fff538e5",
+          "config": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\concept_coati_anatomy.json",
+          "started_utc": "2026-10-09T15:14:59.885198+00:00",
+          "exit_code": 1,
+          "resources_after": {
+            "runtime_root": "D:\\AnimalKingdom3D",
+            "free_disk_bytes": 438839644160,
+            "gpu": "NVIDIA GeForce RTX 3060, 12288, 11361",
+            "gpu_probe_exit_code": 0,
+            "memory_source": "GetPerformanceInfo",
+            "total_physical": 17042083840,
+            "free_physical": 6126526464,
+            "total_commit": 28791578624,
+            "used_commit": 21685039104,
+            "peak_commit": 31852445696,
+            "free_commit": 7106539520
+          }
+        }
+      ],
+      "family": "Jungle_Shakeable_05",
+      "config": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\concept_coati_anatomy.json",
+      "kind": "concept",
+      "fingerprint": "aa433eabd8fddfdfbb0e564f331d7087ac08be7ab566427c1f5878f0fff538e5",
+      "change_reason": "Prior anatomy007 failed memory loading. Keep 16 GiB admission, add supervised memory protection and explicit sitting, malformed-paw and photorealism constraints; no retry until preflight passes.",
+      "disk_before": {
+        "free_before": 438839660544,
+        "free_after": 438839660544,
+        "minimum": 10737418240,
+        "cleanup": [],
+        "passed": true
+      },
+      "run_id": "9881d71055024ae484433bdd58a07a97",
+      "failure": "RuntimeError: Memory watchdog stopped worker: free_commit=4284784640, reserve=4294967296"
+    },
+    {
+      "pet_id": "JungleAgouti",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_01"
+    },
+    {
+      "pet_id": "JunglePaca",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_02"
+    },
+    {
+      "pet_id": "JungleCapybara",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_03"
+    },
+    {
+      "pet_id": "JungleKinkajou",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_04"
+    },
+    {
+      "pet_id": "JungleCapuchin",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_01"
+    },
+    {
+      "pet_id": "JungleTamandua",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_02"
+    },
+    {
+      "pet_id": "JungleTapir",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_04"
+    },
+    {
+      "pet_id": "JungleBinturong",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_05"
+    },
+    {
+      "pet_id": "JunglePangolin",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_01"
+    },
+    {
+      "pet_id": "JungleSloth",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_02"
+    },
+    {
+      "pet_id": "JungleOkapi",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_03"
+    },
+    {
+      "pet_id": "JungleAyeAye",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_05"
+    },
+    {
+      "pet_id": "JungleFossa",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_01"
+    },
+    {
+      "pet_id": "JungleMandrill",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_02"
+    },
+    {
+      "pet_id": "JungleProboscisMonkey",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_03"
+    },
+    {
+      "pet_id": "JungleCloudedLeopard",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_04"
+    },
+    {
+      "pet_id": "JungleJaguar",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_05"
+    },
+    {
+      "pet_id": "JungleGiantAnteater",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_01"
+    },
+    {
+      "pet_id": "JungleOrangutan",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_02"
+    },
+    {
+      "pet_id": "JungleGorilla",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_03"
+    },
+    {
+      "pet_id": "JungleSumatranRhinoceros",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_04"
+    },
+    {
+      "pet_id": "JunglePygmyHippopotamus",
+      "biome": "Jungle",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Jungle_Shakeable_05"
+    },
+    {
+      "pet_id": "DesertJerboa",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_01"
+    },
+    {
+      "pet_id": "DesertSandRat",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_02"
+    },
+    {
+      "pet_id": "DesertFennecFox",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_03"
+    },
+    {
+      "pet_id": "DesertMeerkat",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_04"
+    },
+    {
+      "pet_id": "DesertRockHyrax",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_05"
+    },
+    {
+      "pet_id": "DesertDegu",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_01"
+    },
+    {
+      "pet_id": "DesertSandCat",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_02"
+    },
+    {
+      "pet_id": "DesertCaracal",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_03"
+    },
+    {
+      "pet_id": "DesertAardwolf",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_04"
+    },
+    {
+      "pet_id": "DesertRuppellsFox",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_05"
+    },
+    {
+      "pet_id": "DesertDromedary",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_01"
+    },
+    {
+      "pet_id": "DesertAddax",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_02"
+    },
+    {
+      "pet_id": "DesertOryx",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_03"
+    },
+    {
+      "pet_id": "DesertDorcasGazelle",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_04"
+    },
+    {
+      "pet_id": "DesertDikDik",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_05"
+    },
+    {
+      "pet_id": "DesertGundi",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_01"
+    },
+    {
+      "pet_id": "DesertPallasCat",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_02"
+    },
+    {
+      "pet_id": "DesertBatEaredFox",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_03"
+    },
+    {
+      "pet_id": "DesertAfricanWildAss",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_04"
+    },
+    {
+      "pet_id": "DesertSandfishSkink",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_05"
+    },
+    {
+      "pet_id": "DesertThornyDevil",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_01"
+    },
+    {
+      "pet_id": "DesertHornedViper",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_02"
+    },
+    {
+      "pet_id": "DesertDesertTortoise",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_03"
+    },
+    {
+      "pet_id": "DesertSpinyTailedLizard",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_04"
+    },
+    {
+      "pet_id": "DesertArabianLeopard",
+      "biome": "Desert",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Desert_Shakeable_05"
+    },
+    {
+      "pet_id": "SnowLemming",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_01"
+    },
+    {
+      "pet_id": "SnowPika",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_02"
+    },
+    {
+      "pet_id": "SnowArcticHare",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_03"
+    },
+    {
+      "pet_id": "SnowStoat",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_04"
+    },
+    {
+      "pet_id": "SnowArcticFox",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_05"
+    },
+    {
+      "pet_id": "SnowWolverine",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_01"
+    },
+    {
+      "pet_id": "SnowSnowshoeHare",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_02"
+    },
+    {
+      "pet_id": "SnowMountainVole",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_03"
+    },
+    {
+      "pet_id": "SnowMuskOx",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_04"
+    },
+    {
+      "pet_id": "SnowReindeer",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_05"
+    },
+    {
+      "pet_id": "SnowYak",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_01"
+    },
+    {
+      "pet_id": "SnowChamois",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_02"
+    },
+    {
+      "pet_id": "SnowAlpineIbex",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_03"
+    },
+    {
+      "pet_id": "SnowTakin",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_04"
+    },
+    {
+      "pet_id": "SnowSnowLeopard",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_05"
+    },
+    {
+      "pet_id": "SnowCanadaLynx",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_01"
+    },
+    {
+      "pet_id": "SnowPolarBear",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_02"
+    },
+    {
+      "pet_id": "SnowDallSheep",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_03"
+    },
+    {
+      "pet_id": "SnowHimalayanMarmot",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_04"
+    },
+    {
+      "pet_id": "SnowJapaneseMacaque",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_05"
+    },
+    {
+      "pet_id": "SnowHarpSeal",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_01"
+    },
+    {
+      "pet_id": "SnowWalrus",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_02"
+    },
+    {
+      "pet_id": "SnowEmperorPenguin",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_03"
+    },
+    {
+      "pet_id": "SnowSnowySheathbill",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_04"
+    },
+    {
+      "pet_id": "SnowPtarmigan",
+      "biome": "Snow",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Snow_Shakeable_05"
+    },
+    {
+      "pet_id": "VolcanoLavaLizard",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_01"
+    },
+    {
+      "pet_id": "VolcanoFireSalamander",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_02"
+    },
+    {
+      "pet_id": "VolcanoGalapagosLandIguana",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_03"
+    },
+    {
+      "pet_id": "VolcanoMarineIguana",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_04"
+    },
+    {
+      "pet_id": "VolcanoGilaMonster",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_05"
+    },
+    {
+      "pet_id": "VolcanoFrilledLizard",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_01"
+    },
+    {
+      "pet_id": "VolcanoArmadilloGirdledLizard",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_02"
+    },
+    {
+      "pet_id": "VolcanoPancakeTortoise",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_03"
+    },
+    {
+      "pet_id": "VolcanoPlatedLizard",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_04"
+    },
+    {
+      "pet_id": "VolcanoTokayGecko",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_05"
+    },
+    {
+      "pet_id": "VolcanoKomodoDragon",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_01"
+    },
+    {
+      "pet_id": "VolcanoEchidna",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_02"
+    },
+    {
+      "pet_id": "VolcanoShortEaredSengi",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_03"
+    },
+    {
+      "pet_id": "VolcanoTasmanianDevil",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_04"
+    },
+    {
+      "pet_id": "VolcanoQuokka",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_05"
+    },
+    {
+      "pet_id": "VolcanoWombat",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_01"
+    },
+    {
+      "pet_id": "VolcanoHoneyBadger",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_02"
+    },
+    {
+      "pet_id": "VolcanoBushpig",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_03"
+    },
+    {
+      "pet_id": "VolcanoBabirusa",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_04"
+    },
+    {
+      "pet_id": "VolcanoKlipspringer",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_05"
+    },
+    {
+      "pet_id": "VolcanoJapaneseSerow",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_01"
+    },
+    {
+      "pet_id": "VolcanoSulawesiBearCuscus",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_02"
+    },
+    {
+      "pet_id": "VolcanoGiantMoleRat",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_03"
+    },
+    {
+      "pet_id": "VolcanoRockMonitor",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_04"
+    },
+    {
+      "pet_id": "VolcanoSulfurCrestedCockatoo",
+      "biome": "Volcano",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Volcano_Shakeable_05"
+    },
+    {
+      "pet_id": "OceanHermitCrab",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_01"
+    },
+    {
+      "pet_id": "OceanMudskipper",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_02"
+    },
+    {
+      "pet_id": "OceanClownfish",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_03"
+    },
+    {
+      "pet_id": "OceanSeahorse",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_04"
+    },
+    {
+      "pet_id": "OceanAxolotl",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_05"
+    },
+    {
+      "pet_id": "OceanBlueTang",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_01"
+    },
+    {
+      "pet_id": "OceanPufferfish",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_02"
+    },
+    {
+      "pet_id": "OceanMantaRay",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_03"
+    },
+    {
+      "pet_id": "OceanStingray",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_04"
+    },
+    {
+      "pet_id": "OceanHawksbillTurtle",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_05"
+    },
+    {
+      "pet_id": "OceanGreenSeaTurtle",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_01"
+    },
+    {
+      "pet_id": "OceanSeaOtter",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_02"
+    },
+    {
+      "pet_id": "OceanManatee",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_03"
+    },
+    {
+      "pet_id": "OceanDugong",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_04"
+    },
+    {
+      "pet_id": "OceanBottlenoseDolphin",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_05"
+    },
+    {
+      "pet_id": "OceanBeluga",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_01"
+    },
+    {
+      "pet_id": "OceanNarwhal",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_02"
+    },
+    {
+      "pet_id": "OceanHarborPorpoise",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_03"
+    },
+    {
+      "pet_id": "OceanOrca",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_04"
+    },
+    {
+      "pet_id": "OceanWhaleShark",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_05"
+    },
+    {
+      "pet_id": "OceanHammerheadShark",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_01"
+    },
+    {
+      "pet_id": "OceanOctopus",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_02"
+    },
+    {
+      "pet_id": "OceanCuttlefish",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_03"
+    },
+    {
+      "pet_id": "OceanNautilus",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_04"
+    },
+    {
+      "pet_id": "OceanSeaLion",
+      "biome": "Ocean",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Ocean_Shakeable_05"
+    },
+    {
+      "pet_id": "AncientRuinsElephantShrew",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_01"
+    },
+    {
+      "pet_id": "AncientRuinsSpinyMouse",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_02"
+    },
+    {
+      "pet_id": "AncientRuinsEgyptianMongoose",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_03"
+    },
+    {
+      "pet_id": "AncientRuinsGenet",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_04"
+    },
+    {
+      "pet_id": "AncientRuinsServal",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_05"
+    },
+    {
+      "pet_id": "AncientRuinsAfricanCivet",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_01"
+    },
+    {
+      "pet_id": "AncientRuinsAardvark",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_02"
+    },
+    {
+      "pet_id": "AncientRuinsStripedHyena",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_03"
+    },
+    {
+      "pet_id": "AncientRuinsIndianCrestedPorcupine",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_04"
+    },
+    {
+      "pet_id": "AncientRuinsNineBandedArmadillo",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_05"
+    },
+    {
+      "pet_id": "AncientRuinsGiantArmadillo",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_01"
+    },
+    {
+      "pet_id": "AncientRuinsGuanaco",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_02"
+    },
+    {
+      "pet_id": "AncientRuinsVicuna",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_03"
+    },
+    {
+      "pet_id": "AncientRuinsBongo",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_04"
+    },
+    {
+      "pet_id": "AncientRuinsSableAntelope",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_05"
+    },
+    {
+      "pet_id": "AncientRuinsMarkhor",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_01"
+    },
+    {
+      "pet_id": "AncientRuinsSaiga",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_02"
+    },
+    {
+      "pet_id": "AncientRuinsTibetanAntelope",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_03"
+    },
+    {
+      "pet_id": "AncientRuinsPrzewalskiHorse",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_04"
+    },
+    {
+      "pet_id": "AncientRuinsOnager",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_05"
+    },
+    {
+      "pet_id": "AncientRuinsAsiaticLion",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_01"
+    },
+    {
+      "pet_id": "AncientRuinsNileCrocodile",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_02"
+    },
+    {
+      "pet_id": "AncientRuinsGharial",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_03"
+    },
+    {
+      "pet_id": "AncientRuinsSacredIbis",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_04"
+    },
+    {
+      "pet_id": "AncientRuinsSecretaryBird",
+      "biome": "AncientRuins",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "AncientRuins_Shakeable_05"
+    },
+    {
+      "pet_id": "MagicalForestJackalope",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_01"
+    },
+    {
+      "pet_id": "MagicalForestWolpertinger",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_02"
+    },
+    {
+      "pet_id": "MagicalForestAlmiraj",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_03"
+    },
+    {
+      "pet_id": "MagicalForestCarbuncle",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_04"
+    },
+    {
+      "pet_id": "MagicalForestPeryton",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_05"
+    },
+    {
+      "pet_id": "MagicalForestCaitSith",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_01"
+    },
+    {
+      "pet_id": "MagicalForestRatatoskr",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_02"
+    },
+    {
+      "pet_id": "MagicalForestWolfsbaneBasilisk",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_03"
+    },
+    {
+      "pet_id": "MagicalForestMandrakeSprite",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_04"
+    },
+    {
+      "pet_id": "MagicalForestMushroomLeshy",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_05"
+    },
+    {
+      "pet_id": "MagicalForestKodama",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_01"
+    },
+    {
+      "pet_id": "MagicalForestBaku",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_02"
+    },
+    {
+      "pet_id": "MagicalForestDokkaebi",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_03"
+    },
+    {
+      "pet_id": "MagicalForestTanuki",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_04"
+    },
+    {
+      "pet_id": "MagicalForestKappa",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_05"
+    },
+    {
+      "pet_id": "MagicalForestKelpie",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_01"
+    },
+    {
+      "pet_id": "MagicalForestNuckelaveeFoal",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_02"
+    },
+    {
+      "pet_id": "MagicalForestBarometz",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_03"
+    },
+    {
+      "pet_id": "MagicalForestChamrosh",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_04"
+    },
+    {
+      "pet_id": "MagicalForestMossTatzelwurm",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_05"
+    },
+    {
+      "pet_id": "MagicalForestTsuchinoko",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_01"
+    },
+    {
+      "pet_id": "MagicalForestDewdropNixie",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_02"
+    },
+    {
+      "pet_id": "MagicalForestSpriggan",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_03"
+    },
+    {
+      "pet_id": "MagicalForestCernunnosFawn",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_04"
+    },
+    {
+      "pet_id": "MagicalForestNineTailedKitsune",
+      "biome": "MagicalForest",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "MagicalForest_Shakeable_05"
+    },
+    {
+      "pet_id": "SkyHouseSparrow",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_01"
+    },
+    {
+      "pet_id": "SkyBudgerigar",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_02"
+    },
+    {
+      "pet_id": "SkyCockatiel",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_03"
+    },
+    {
+      "pet_id": "SkyLovebird",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_04"
+    },
+    {
+      "pet_id": "SkyCanary",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_05"
+    },
+    {
+      "pet_id": "SkyZebraFinch",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_01"
+    },
+    {
+      "pet_id": "SkyKingfisher",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_02"
+    },
+    {
+      "pet_id": "SkyAtlanticPuffin",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_03"
+    },
+    {
+      "pet_id": "SkyTocoToucan",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_04"
+    },
+    {
+      "pet_id": "SkyRainbowLorikeet",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_05"
+    },
+    {
+      "pet_id": "SkyHoopoe",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_01"
+    },
+    {
+      "pet_id": "SkyQuetzal",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_02"
+    },
+    {
+      "pet_id": "SkyBirdOfParadise",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_03"
+    },
+    {
+      "pet_id": "SkyVioletBackedStarling",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_04"
+    },
+    {
+      "pet_id": "SkyShoebill",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_05"
+    },
+    {
+      "pet_id": "SkyCrownedCrane",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_01"
+    },
+    {
+      "pet_id": "SkyFlamingo",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_02"
+    },
+    {
+      "pet_id": "SkyPelican",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_03"
+    },
+    {
+      "pet_id": "SkyWanderingAlbatross",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_04"
+    },
+    {
+      "pet_id": "SkyHarpyEagle",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_05"
+    },
+    {
+      "pet_id": "SkyPeregrineFalcon",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_01"
+    },
+    {
+      "pet_id": "SkyAndeanCondor",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_02"
+    },
+    {
+      "pet_id": "SkyScarletMacaw",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_03"
+    },
+    {
+      "pet_id": "SkyGreatHornbill",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_04"
+    },
+    {
+      "pet_id": "SkyKakapo",
+      "biome": "Sky",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Sky_Shakeable_05"
+    },
+    {
+      "pet_id": "PrehistoricCompsognathus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_01"
+    },
+    {
+      "pet_id": "PrehistoricMicroraptor",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_02"
+    },
+    {
+      "pet_id": "PrehistoricPsittacosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_03"
+    },
+    {
+      "pet_id": "PrehistoricProtoceratops",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_04"
+    },
+    {
+      "pet_id": "PrehistoricPachycephalosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_05"
+    },
+    {
+      "pet_id": "PrehistoricParasaurolophus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_01"
+    },
+    {
+      "pet_id": "PrehistoricIguanodon",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_02"
+    },
+    {
+      "pet_id": "PrehistoricDryosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_03"
+    },
+    {
+      "pet_id": "PrehistoricOviraptor",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_04"
+    },
+    {
+      "pet_id": "PrehistoricDeinonychus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_05"
+    },
+    {
+      "pet_id": "PrehistoricVelociraptor",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_01"
+    },
+    {
+      "pet_id": "PrehistoricDilophosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_02"
+    },
+    {
+      "pet_id": "PrehistoricCarnotaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_03"
+    },
+    {
+      "pet_id": "PrehistoricAllosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_04"
+    },
+    {
+      "pet_id": "PrehistoricTyrannosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_05"
+    },
+    {
+      "pet_id": "PrehistoricSpinosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_01"
+    },
+    {
+      "pet_id": "PrehistoricBaryonyx",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_02"
+    },
+    {
+      "pet_id": "PrehistoricTherizinosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_03"
+    },
+    {
+      "pet_id": "PrehistoricStegosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_04"
+    },
+    {
+      "pet_id": "PrehistoricAnkylosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_05"
+    },
+    {
+      "pet_id": "PrehistoricTriceratops",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_01"
+    },
+    {
+      "pet_id": "PrehistoricStyracosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_02"
+    },
+    {
+      "pet_id": "PrehistoricBrachiosaurus",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_03"
+    },
+    {
+      "pet_id": "PrehistoricWoollyMammoth",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_04"
+    },
+    {
+      "pet_id": "PrehistoricSmilodon",
+      "biome": "Prehistoric",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Prehistoric_Shakeable_05"
+    },
+    {
+      "pet_id": "MythicalGryphon",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_01"
+    },
+    {
+      "pet_id": "MythicalHippogriff",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_02"
+    },
+    {
+      "pet_id": "MythicalUnicorn",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_03"
+    },
+    {
+      "pet_id": "MythicalPegasus",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_04"
+    },
+    {
+      "pet_id": "MythicalPhoenix",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_05"
+    },
+    {
+      "pet_id": "MythicalDragon",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_01"
+    },
+    {
+      "pet_id": "MythicalWyvern",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_02"
+    },
+    {
+      "pet_id": "MythicalDrake",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_03"
+    },
+    {
+      "pet_id": "MythicalWyrm",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_04"
+    },
+    {
+      "pet_id": "MythicalLindworm",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_05"
+    },
+    {
+      "pet_id": "MythicalAmphiptere",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_01"
+    },
+    {
+      "pet_id": "MythicalCockatrice",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_02"
+    },
+    {
+      "pet_id": "MythicalQilin",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_03"
+    },
+    {
+      "pet_id": "MythicalPixiu",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_04"
+    },
+    {
+      "pet_id": "MythicalXiezhi",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_05"
+    },
+    {
+      "pet_id": "MythicalNian",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_01"
+    },
+    {
+      "pet_id": "MythicalChimera",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_02"
+    },
+    {
+      "pet_id": "MythicalManticore",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_03"
+    },
+    {
+      "pet_id": "MythicalSphinx",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_04"
+    },
+    {
+      "pet_id": "MythicalCerberus",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_05"
+    },
+    {
+      "pet_id": "MythicalOrthrus",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_01"
+    },
+    {
+      "pet_id": "MythicalFenrir",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_02"
+    },
+    {
+      "pet_id": "MythicalSleipnir",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_03"
+    },
+    {
+      "pet_id": "MythicalTarasque",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_04"
+    },
+    {
+      "pet_id": "MythicalQuestingBeast",
+      "biome": "Mythical",
+      "state": "needs_recipe",
+      "attempts": [],
+      "family": "Mythical_Shakeable_05"
+    }
+  ],
+  "blocked": "Insufficient free_commit: 7106539520 bytes; need 10737418240. See preflight.json"
+}

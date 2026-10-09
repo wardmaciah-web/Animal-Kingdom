@@ -50,6 +50,24 @@ Git commits are development checkpoints. They do **not** publish the Roblox expe
 
 ## Roblox/QA rules
 
+### Autonomous pet-production handoff loop
+
+Before each new pet-production batch and after every failed generation, fetch
+the existing Notion Development Pipeline task and the matching biome task. Read
+their current Codex Handoff and Next Action fields; record the page IDs/revisions
+and applicable decisions in the batch evidence. Apply relevant verified fixes
+against current canonical source, run their required tests and update the same
+Notion rows and GitHub checkpoint. Historical instructions cannot override the
+current user request or repeat completed work. If Notion cannot be checked, record
+the blocked handoff instead of claiming an hourly review happened. These checks
+are performed by the connected Codex agent; the local Python controller does not
+have Notion credentials or run the external hourly monitor.
+
+Continue only through real asset, resource and QA gates. Do not overwrite approved
+assets, bypass biome locks or publish the experience. Request approval before an
+action needs new permissions, purchases or unsafe system changes; continue any
+independent authorized work. A memory-failed candidate is not automatically retried.
+
 Use Rojo/current source architecture instead of editing historical place snapshots as source. Keep server-authoritative gameplay server-authoritative, especially rewards, ownership, UIDs, currencies, rarity, weight, unlocks, and persistence.
 
 For gameplay changes, verify the affected loop and obvious regressions. Use existing tests/audits where relevant. Roblox Studio remains the final authority for live world/UI/interaction behavior. If Studio verification is unavailable, say exactly what remains unverified and leave the Notion task in `Studio Testing`/`Partial` rather than claiming a full pass.

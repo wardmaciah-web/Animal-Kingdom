@@ -1,0 +1,17 @@
+{
+  "run_id": "9881d71055024ae484433bdd58a07a97",
+  "attempts": 1,
+  "trial_commit_gib": 10,
+  "restored_commit_gib": 16,
+  "initial_free_commit_bytes": 12815134720,
+  "minimum_free_commit_bytes": 4284784640,
+  "maximum_sampled_system_commit_bytes": 24506793984,
+  "minimum_available_ram_bytes": 4952961024,
+  "system_commit_limit_bytes": 28791578624,
+  "observed_commit_increase_bytes": 8530350080,
+  "watchdog_reserve_bytes": 4294967296,
+  "worker_exit_code": 1,
+  "result": "watchdog stopped partial SDXL loading; no candidate",
+  "measurement_limit": "System-wide sampled peak, not per-process allocation or boot peak; GPU measured before/after only. No full-load safety claim.",
+  "automatic_retry": false
+}

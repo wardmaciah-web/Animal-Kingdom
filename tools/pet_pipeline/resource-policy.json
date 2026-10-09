@@ -1,0 +1,9 @@
+{
+  "ram_gib": 4,
+  "commit_gib": 16,
+  "vram_gib": 7,
+  "disk_gib": 10,
+  "stop_ram_gib": 1,
+  "stop_commit_gib": 4,
+  "reason": "Restored after the authorized 10 GiB trial: Coati run 9881d71055024ae484433bdd58a07a97 consumed about 8 GiB system commit headroom during partial SDXL loading and hit the 4 GiB watchdog reserve. Prior anatomy007 nearly exhausted 12.27 GiB. Keep 16 GiB conservative admission; full-load sufficiency remains unproven. No unchanged retry."
+}

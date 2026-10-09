@@ -1,0 +1,4 @@
+Loading local SDXL dependencies
+
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading pipeline components...:  14%|#4        | 1/7 [00:00<00:05,  1.03it/s]RuntimeError: Memory watchdog stopped worker: free_commit=4284784640, reserve=4294967296

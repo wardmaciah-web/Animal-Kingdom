@@ -1,0 +1,150 @@
+{
+  "time_utc": "2026-10-09T15:16:48.474709+00:00",
+  "thresholds": {
+    "ram_gib": 4,
+    "commit_gib": 16,
+    "vram_gib": 7,
+    "disk_gib": 10,
+    "stop_ram_gib": 1,
+    "stop_commit_gib": 4,
+    "reason": "Restored after the authorized 10 GiB trial: Coati run 9881d71055024ae484433bdd58a07a97 consumed about 8 GiB system commit headroom during partial SDXL loading and hit the 4 GiB watchdog reserve. Prior anatomy007 nearly exhausted 12.27 GiB. Keep 16 GiB conservative admission; full-load sufficiency remains unproven. No unchanged retry."
+  },
+  "hardware": {
+    "runtime_root": "D:\\AnimalKingdom3D",
+    "free_disk_bytes": 438839574528,
+    "gpu": "NVIDIA GeForce RTX 3060, 12288, 11361",
+    "gpu_probe_exit_code": 0,
+    "memory_source": "GetPerformanceInfo",
+    "total_physical": 17042083840,
+    "free_physical": 6480420864,
+    "total_commit": 28791578624,
+    "used_commit": 16295305216,
+    "peak_commit": 31852445696,
+    "free_commit": 12496273408
+  },
+  "admission": "blocked",
+  "reason": "Insufficient free_commit: 12496273408 bytes; need 17179869184. See preflight.json",
+  "system": {
+    "automatic_pagefile": true,
+    "pagefiles": [
+      {
+        "Name": "C:\\pagefile.sys",
+        "AllocatedBaseSize": 11205,
+        "CurrentUsage": 3555,
+        "PeakUsage": 8632
+      }
+    ],
+    "pagefile_settings": [],
+    "disks": [
+      {
+        "DriveLetter": "D",
+        "SizeRemaining": 438839574528,
+        "Size": 478753562624
+      },
+      {
+        "DriveLetter": "C",
+        "SizeRemaining": 10472833024,
+        "Size": 118482898944
+      }
+    ],
+    "largest_private_processes": [
+      {
+        "Id": 5352,
+        "ProcessName": "svchost",
+        "WorkingSet64": 13385728,
+        "PrivateMemorySize64": 868478976
+      },
+      {
+        "Id": 24612,
+        "ProcessName": "chrome",
+        "WorkingSet64": 721043456,
+        "PrivateMemorySize64": 554954752
+      },
+      {
+        "Id": 17544,
+        "ProcessName": "chrome",
+        "WorkingSet64": 565542912,
+        "PrivateMemorySize64": 546447360
+      },
+      {
+        "Id": 5688,
+        "ProcessName": "chrome",
+        "WorkingSet64": 552132608,
+        "PrivateMemorySize64": 452104192
+      },
+      {
+        "Id": 17940,
+        "ProcessName": "steamwebhelper",
+        "WorkingSet64": 204730368,
+        "PrivateMemorySize64": 449224704
+      },
+      {
+        "Id": 11828,
+        "ProcessName": "ExitLag",
+        "WorkingSet64": 130588672,
+        "PrivateMemorySize64": 421838848
+      },
+      {
+        "Id": 6216,
+        "ProcessName": "explorer",
+        "WorkingSet64": 254328832,
+        "PrivateMemorySize64": 390606848
+      },
+      {
+        "Id": 3956,
+        "ProcessName": "chrome",
+        "WorkingSet64": 310464512,
+        "PrivateMemorySize64": 367304704
+      },
+      {
+        "Id": 3004,
+        "ProcessName": "wallpaper64",
+        "WorkingSet64": 63295488,
+        "PrivateMemorySize64": 341815296
+      },
+      {
+        "Id": 3048,
+        "ProcessName": "chrome",
+        "WorkingSet64": 423571456,
+        "PrivateMemorySize64": 331227136
+      },
+      {
+        "Id": 1300,
+        "ProcessName": "chrome",
+        "WorkingSet64": 417804288,
+        "PrivateMemorySize64": 320753664
+      },
+      {
+        "Id": 3628,
+        "ProcessName": "NVDisplay.Container",
+        "WorkingSet64": 150970368,
+        "PrivateMemorySize64": 317812736
+      },
+      {
+        "Id": 17224,
+        "ProcessName": "chrome",
+        "WorkingSet64": 311648256,
+        "PrivateMemorySize64": 316301312
+      },
+      {
+        "Id": 20072,
+        "ProcessName": "chrome",
+        "WorkingSet64": 279547904,
+        "PrivateMemorySize64": 303136768
+      },
+      {
+        "Id": 1484,
+        "ProcessName": "dwm",
+        "WorkingSet64": 148307968,
+        "PrivateMemorySize64": 299343872
+      }
+    ],
+    "workers": [
+      {
+        "ProcessId": 6196,
+        "ParentProcessId": 15296,
+        "Name": "python.exe"
+      }
+    ]
+  }
+}

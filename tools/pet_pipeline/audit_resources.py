@@ -5,12 +5,12 @@ import json
 from pathlib import Path
 import subprocess
 
-from pet_pipeline import preflight, check_hardware, write
+from pet_pipeline import preflight, check_hardware, write, resource_policy
 
 
 def audit(root):
     report = {'time_utc':dt.datetime.now(dt.timezone.utc).isoformat(),
-              'thresholds':{'ram_gib':4, 'commit_gib':16, 'vram_gib':7, 'disk_gib':10}}
+              'thresholds':resource_policy()}
     try:
         report['hardware'] = preflight(root)
         check_hardware(report['hardware'])

@@ -121,16 +121,21 @@ def system_memory():
             'free_commit': (info.CommitLimit - info.CommitTotal) * page}
 
 
+def resource_policy():
+    return read(HERE/'resource-policy.json')
+
+
 def supervise_worker(command, runtime, log, telemetry, env=None, interval=0.5):
     """Monitor only the child we launch; never terminate unrelated processes.
 
-    Admission remains 4/16/7 GiB. Runtime reserves are emergency stop limits,
+    Admission uses resource-policy.json. Runtime reserves are emergency stop limits,
     not permission to start with less memory. Native allocations can outrun a
     sampling watchdog, so this supplements rather than replaces admission.
     """
+    policy = resource_policy()
     before = preflight(runtime)
     check_hardware(before)
-    if before['free_disk_bytes'] < 10*1024**3:
+    if before['free_disk_bytes'] < policy['disk_gib']*1024**3:
         raise RuntimeError('At least 10 GiB free D: storage required; use factory run for verified reclamation')
     with Path(telemetry).open('x', encoding='utf-8') as evidence:
         evidence.write(json.dumps({'event':'before', **before}) + '\n'); evidence.flush()
@@ -140,7 +145,8 @@ def supervise_worker(command, runtime, log, telemetry, env=None, interval=0.5):
                 sample = system_memory()
                 sample.update(time_utc=dt.datetime.now(dt.timezone.utc).isoformat(), pid=process.pid)
                 evidence.write(json.dumps(sample) + '\n'); evidence.flush()
-                for field, reserve in (('free_commit', 4*1024**3), ('free_physical', 1024**3)):
+                for field, reserve in (('free_commit', policy['stop_commit_gib']*1024**3),
+                                       ('free_physical', policy['stop_ram_gib']*1024**3)):
                     if sample[field] < reserve:
                         raise RuntimeError(f'Memory watchdog stopped worker: {field}={sample[field]}, reserve={reserve}')
                 try:
@@ -201,10 +207,11 @@ def configure(path, runtime, output):
 
 def check_hardware(hardware):
     """Reject a run before loading model weights; retain the measured preflight."""
-    # Coati anatomy007 consumed nearly all of its 12.27 GiB starting commit
-    # headroom while loading. Require 16 GiB before retrying; this conservative
-    # margin is not a guarantee against changing system pressure during a run.
-    for field, minimum in (('free_physical', 4*1024**3), ('free_commit', 16*1024**3)):
+    # System commit is independent of VRAM. User-authorized trial and any
+    # evidence-based restoration share this policy across all entry points.
+    policy = resource_policy()
+    for field, minimum in (('free_physical', policy['ram_gib']*1024**3),
+                           ('free_commit', policy['commit_gib']*1024**3)):
         if field not in hardware:
             raise RuntimeError(f'Missing {field} measurement; generation not started')
         if hardware[field] < minimum:
@@ -212,7 +219,7 @@ def check_hardware(hardware):
     if hardware['gpu_probe_exit_code'] != 0:
         raise RuntimeError('NVIDIA preflight failed; generation not started')
     gpu_free = [int(row.rsplit(',', 1)[-1].strip()) for row in hardware['gpu'].splitlines()]
-    if not gpu_free or gpu_free[0] < 7*1024:
+    if not gpu_free or gpu_free[0] < policy['vram_gib']*1024:
         raise RuntimeError('At least 7 GiB free VRAM on the first GPU is required')
 
 def check_attempt_budget(cfg, runtime, policy):

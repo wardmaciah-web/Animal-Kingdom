@@ -75,13 +75,29 @@ class ProductionGates(unittest.TestCase):
     def test_missing_memory_measurements_fail_closed(self):
         with self.assertRaisesRegex(RuntimeError, 'Missing free_physical'):
             p.check_hardware({'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
-    def test_observed_unsafe_loading_headroom_blocks(self):
+    def test_just_below_current_commit_admission_blocks(self):
         with self.assertRaisesRegex(RuntimeError, 'free_commit'):
-            p.check_hardware({'free_physical':7239262208,'free_commit':13174988800,
+            p.check_hardware({'free_physical':7239262208,'free_commit':p.resource_policy()['commit_gib']*1024**3-1,
                               'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 11922'})
     def test_sufficient_memory_admits(self):
-        p.check_hardware({'free_physical':8*1024**3,'free_commit':16*1024**3,
+        p.check_hardware({'free_physical':8*1024**3,'free_commit':p.resource_policy()['commit_gib']*1024**3,
                           'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_authorized_ten_gib_trial_boundary_is_system_commit(self):
+        from unittest.mock import patch
+        policy=dict(p.resource_policy(),commit_gib=10)
+        hardware={'free_physical':4*1024**3,'free_commit':10*1024**3,
+                  'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 7168'}
+        with patch.object(p,'resource_policy',return_value=policy):
+            p.check_hardware(hardware)
+            with self.assertRaisesRegex(RuntimeError,'free_commit'):
+                p.check_hardware(dict(hardware,free_commit=10*1024**3-1))
+            with self.assertRaisesRegex(RuntimeError,'VRAM'):
+                p.check_hardware(dict(hardware,gpu='RTX 3060, 12288, 7167'))
+    def test_trial_emergency_floor_is_below_admission(self):
+        policy=p.resource_policy()
+        self.assertEqual(policy['stop_commit_gib'],4)
+        self.assertEqual(policy['stop_ram_gib'],1)
+        self.assertGreater(policy['commit_gib'],policy['stop_commit_gib'])
     def test_generation_lock_excludes_another_process_and_recovers(self):
         import subprocess,sys
         command=[sys.executable,'-c',
@@ -96,7 +112,7 @@ class ProductionGates(unittest.TestCase):
     def test_wrong_gpu_or_failed_probe_blocks(self):
         for hardware in ({'gpu_probe_exit_code':1,'gpu':''},
                          {'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 1000'}):
-            hardware.update(free_physical=8*1024**3,free_commit=16*1024**3)
+            hardware.update(free_physical=8*1024**3,free_commit=p.resource_policy()['commit_gib']*1024**3)
             with self.assertRaises(RuntimeError): p.check_hardware(hardware)
     def test_deferred_species_cannot_start_inference(self):
         with self.assertRaisesRegex(RuntimeError,'Species deferred'):

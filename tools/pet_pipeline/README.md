@@ -32,9 +32,13 @@ Concept and reconstruction workers share an OS-held exclusive `generation.lock`
 under the D: runtime. Inspect active processes and prior manifests/logs before
 retrying; a stale `loading` manifest is not evidence of a running worker. The
 lock covers these entry points, not manually launched legacy worker scripts.
-Missing RAM/commit measurements block admission. The commit margin is now 16 GiB:
+Missing RAM/commit measurements block admission. `resource-policy.json` is the
+shared factory/preflight/audit authority. The commit margin is restored to 16 GiB:
 Coati anatomy007 nearly exhausted 12.27 GiB starting headroom during loading and
 was stopped. This margin is conservative, not a guarantee of successful loading.
+The user's 10 GiB trial passed admission, but partial SDXL loading consumed
+7.94 GiB of observed system-wide headroom and triggered the 4 GiB watchdog stop.
+See audits/commit10-20261009/; do not repeat the unchanged failed candidate.
 Monitor runtime pressure and keep caches and outputs on D:.
 
 The generation gate requires 4 GiB free RAM, 16 GiB free system commit, 7 GiB free

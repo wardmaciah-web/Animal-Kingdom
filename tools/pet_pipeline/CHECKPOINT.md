@@ -1,4 +1,39 @@
-# Latest checkpoint - guarded storage, queue and memory supervision
+# Latest checkpoint - 10 GiB trial stopped safely; 16 GiB restored
+
+2026-10-09: user authorized reducing available SYSTEM COMMIT admission to10 GiB
+for one supervised Coati trial, restoring a safer threshold if it failed.
+Centralized policy in resource-policy.json, used by factory/worker admission and
+resource audits. RAM4/VRAM7 GiB, RAM1/commit4 GiB emergency reserves and exclusive
+generation locking unchanged. Initial46 safety tests passed before launch.
+
+Run9881d71055024ae484433bdd58a07a97 admitted with11.94 GiB free system commit.
+Partial SDXL loading consumed7.94 GiB observed system-wide headroom in9.83s.
+Minimum free commit4284784640 bytes (3.99 GiB); sampled peak system commit
+24506793984 bytes (22.82 GiB) / limit28791578624 bytes (26.81 GiB).
+Minimum available RAM4952961024 bytes (4.61 GiB). Watchdog stopped only its child
+when commit crossed the4 GiB reserve. No concept/mesh produced, no art approval,
+no import or registration. VRAM was measured before/after, not a sampled peak.
+All worker processes exited; system commit later recovered to11.64 GiB free.
+
+Restored16 GiB admission based on measured partial-load pressure plus prior
+anatomy007 near-exhaustion. It remains conservative, not a verified successful
+full-load requirement. No repeated inference; queue records Coati failed.
+Final48 tests include explicit10 GiB boundary/VRAM distinction and restored-policy
+boundary checks. Logs, manifests, all memory samples and before/after audits:
+audits/commit10-20261009/. Existing failed/unverified files remain preserved.
+
+Checked existing Notion free-pipeline and Jungle tasks before batch and after
+failure. No newer applicable verified memory fix; Jungle handoff describing
+pre-Red-Panda work is historical relative to source. Check results/revisions saved.
+AGENTS.md now persists the requested pre-batch/post-failure handoff loop; the
+external hourly ChatGPT monitor was not recreated or claimed to run locally.
+
+No pagefile edits, unrelated process termination, purchases, gameplay/asset/tree
+changes, biome unlock or publication. Next: a verified lower-peak loading fix or
+safe admission headroom, changed evidence-based recipe/retry decision, then real
+Coati art and Studio reward/Inventory/Held/follower/Sanctuary/Index/save-rejoin QA.
+
+## Previous checkpoint - guarded storage, queue and memory supervision
 
 2026-10-09: continued from 2a3c54e. Added the resumable factory controller,
 per-job D: scratch, immutable preserved bundles and verification-gated cleanup.

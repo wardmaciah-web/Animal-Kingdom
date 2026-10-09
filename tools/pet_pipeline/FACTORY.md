@@ -75,7 +75,20 @@ their generation lock prevents cleanup during active production.
 
 ## Memory and storage
 
-Admission remains **4 GiB available RAM, 16 GiB system commit headroom and 7 GiB
+The user-authorized 10 GiB trial on 2026-10-09 stopped during SDXL loading at
+3.99 GiB remaining system commit; the watchdog worked. Admission was restored
+to 16 GiB as requested on failure, based on that partial-load pressure and the
+earlier anatomy007 near-exhaustion. This is a conservative guard, not proof of
+full-load sufficiency. Trial telemetry is in `audits/commit10-20261009/`.
+Tests cover the 10 GiB boundary independently of the restored production policy.
+
+Before every new batch and after each failed generation, the connected Codex
+agent checks the existing Notion pipeline and biome tasks for new handoff fixes.
+Record page revisions and apply only relevant verified fixes against current
+source. The user's external hourly ChatGPT monitor is not a local Python service.
+
+Admission is centralized in `resource-policy.json`: **4 GiB available RAM,
+16 GiB system commit headroom and 7 GiB
 free VRAM**. Storage reserve increases to **10 GiB**. Low-disk recovery considers
 only verified scratch receipts; if reclamation is insufficient, production stops.
 Archive creation reserves space for the preserved copy plus 10 GiB.
