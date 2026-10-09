@@ -39,6 +39,9 @@ function World:RegisterAuthoredTrees()
    local def,issue=require(RS.Shared.Gameplay.Definitions.ForestTreeDefinitions).Get(object,entry.Biome)
    object:SetAttribute("EggId",def and def.Id or nil)
    if not def then warn("[ForestTrees] "..tostring(issue)) end
+  elseif entry.Biome=="Jungle" then
+   local def,issue=require(RS.Shared.Gameplay.Definitions.TreeFamilyDefinitions).BindJungle(object)
+   if not def then warn("[JungleTrees] "..tostring(issue)..": "..object:GetFullName()) end
   else object:SetAttribute("EggId",Biomes[entry.Biome].EggId) end
   Collection:AddTag(object,"GatherableTree");counts[entry.Biome]+=1
  end

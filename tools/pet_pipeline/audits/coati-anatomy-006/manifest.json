@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "pet_id": "JungleCoati",
+  "credits_used": 0,
+  "hosted_inference_calls": 0,
+  "candidates": [],
+  "style_references": {
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-front.jpg": "777a8c38c8b675db104e538a3b5167d51a63e502833e29d664874625aec2e7e7",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b"
+  },
+  "failure": "ValueError: prompt exceeds tokenizer limit; shorten it instead of silently losing anatomy/style instructions",
+  "worker_exit_code": 1,
+  "elapsed_seconds": 34.25
+}

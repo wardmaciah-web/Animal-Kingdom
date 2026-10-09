@@ -1,0 +1,41 @@
+{
+  "status": "concepts_pending_visual_qa",
+  "pet_id": "JungleCoati",
+  "credits_used": 0,
+  "hosted_inference_calls": 0,
+  "candidates": [
+    {
+      "path": "concept-1061.png",
+      "seed": 1061,
+      "sha256": "b59fa3834ba44ae37d860acbfdb4980a72e756cee2054033d855cf92aa63c372",
+      "seconds": 24.728130340576172,
+      "visual_qa": "pending"
+    },
+    {
+      "path": "concept-2061.png",
+      "seed": 2061,
+      "sha256": "9b0a4def0d89939d964514c23b0026924da7d7c2a23f7565f6f51471752dc2b9",
+      "seconds": 23.882269382476807,
+      "visual_qa": "pending"
+    },
+    {
+      "path": "concept-3061.png",
+      "seed": 3061,
+      "sha256": "ce597116aeec270644126ece42e7979fcb8841f57b0d1b7aeb0f917202fdb20a",
+      "seconds": 32.36697340011597,
+      "visual_qa": "pending"
+    }
+  ],
+  "style_references": {
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-front.jpg": "777a8c38c8b675db104e538a3b5167d51a63e502833e29d664874625aec2e7e7",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b"
+  },
+  "design_reference": {
+    "path": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png",
+    "sha256": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b",
+    "strength": 0.76
+  },
+  "active_seed": 3061,
+  "worker_exit_code": 0,
+  "elapsed_seconds": 116.82800000000861
+}

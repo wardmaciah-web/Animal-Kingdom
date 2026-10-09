@@ -1,0 +1,14 @@
+{
+  "reviewer": "Codex visual inspection",
+  "decision": "rejected_for_reconstruction",
+  "reason": "All three candidates have round short raccoon/red-panda-like muzzles and insufficient ringed-tail identity. Cute proportions do not satisfy correct-species acceptance.",
+  "candidates": {
+    "1061": "Short muzzle, no distinct rings, crossed forepaws",
+    "2061": "Short muzzle, curled ringless tail, paws otherwise repairable",
+    "3061": "Short round muzzle, ringless tail, raccoon-like mask"
+  },
+  "runtime_result": "All three free SDXL candidates completed; worker exit0; 116.828 seconds; no overlapping job",
+  "mesh_generated": false,
+  "registered": false,
+  "next": "One bounded anatomy-focused corrective batch; do not reconstruct or register a wrong-species concept"
+}

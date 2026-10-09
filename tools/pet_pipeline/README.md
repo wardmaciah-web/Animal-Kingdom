@@ -30,11 +30,12 @@ Concept and reconstruction workers share an OS-held exclusive `generation.lock`
 under the D: runtime. Inspect active processes and prior manifests/logs before
 retrying; a stale `loading` manifest is not evidence of a running worker. The
 lock covers these entry points, not manually launched legacy worker scripts.
-Missing RAM/commit measurements block admission. The 12 GiB commit margin was
-raised after Coati failed despite passing the old 6 GiB check; it is conservative,
-not a guarantee of successful loading. Keep caches and outputs on D:.
+Missing RAM/commit measurements block admission. The commit margin is now 16 GiB:
+Coati anatomy007 nearly exhausted 12.27 GiB starting headroom during loading and
+was stopped. This margin is conservative, not a guarantee of successful loading.
+Monitor runtime pressure and keep caches and outputs on D:.
 
-The generation gate requires 4 GiB free RAM, 12 GiB free system commit, 7 GiB free
+The generation gate requires 4 GiB free RAM, 16 GiB free system commit, 7 GiB free
 VRAM on the first GPU and 2 GiB free output storage. These are admission thresholds,
 not guarantees of peak memory use. Models load from the verified offline caches.
 

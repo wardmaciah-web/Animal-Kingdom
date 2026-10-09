@@ -37,6 +37,11 @@ function Egg:CheckTreeHatch(player,tree)
   if not def then warn("[ForestRewards] "..tostring(issue));return false,"This tree is temporarily unavailable. Please try another tree." end
   id=def.Id
  end
+ if record and record.Biome=="Jungle" then
+  local family,issue=require(RS.Shared.Gameplay.Definitions.TreeFamilyDefinitions).ResolveJungle(tree)
+  if not family then return false,issue end
+  id=family.Id;def=Eggs[id]
+ end
  if not record or not def or def.Biome~=record.Biome or not tree:IsDescendantOf(workspace) then return false,"Invalid tree egg" end
  local ready,why=PoolValidation.Check(def)
  if not ready then return false,why end

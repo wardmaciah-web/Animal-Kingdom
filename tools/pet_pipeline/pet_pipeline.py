@@ -103,9 +103,10 @@ def configure(path, runtime, output):
 
 def check_hardware(hardware):
     """Reject a run before loading model weights; retain the measured preflight."""
-    # Coati loading failed after passing the old 6 GiB commit gate. Reserve
-    # 12 GiB conservatively; free VRAM alone does not prove WDDM admission.
-    for field, minimum in (('free_physical', 4*1024**3), ('free_commit', 12*1024**3)):
+    # Coati anatomy007 consumed nearly all of its 12.27 GiB starting commit
+    # headroom while loading. Require 16 GiB before retrying; this conservative
+    # margin is not a guarantee against changing system pressure during a run.
+    for field, minimum in (('free_physical', 4*1024**3), ('free_commit', 16*1024**3)):
         if field not in hardware:
             raise RuntimeError(f'Missing {field} measurement; generation not started')
         if hardware[field] < minimum:

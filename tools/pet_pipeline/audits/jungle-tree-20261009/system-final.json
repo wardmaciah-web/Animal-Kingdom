@@ -1,0 +1,29 @@
+{
+    "automaticPagefile":  true,
+    "pagefileUsage":  [
+                          {
+                              "Name":  "C:\\pagefile.sys",
+                              "AllocatedBaseSize":  11205,
+                              "CurrentUsage":  4189,
+                              "PeakUsage":  8632
+                          }
+                      ],
+    "pagefileSettings":  [
+
+                         ],
+    "generationProcesses":  [
+
+                            ],
+    "disks":  [
+                  {
+                      "DeviceID":  "C:",
+                      "FreeSpace":  10530152448,
+                      "Size":  118482898944
+                  },
+                  {
+                      "DeviceID":  "D:",
+                      "FreeSpace":  438850072576,
+                      "Size":  478753562624
+                  }
+              ]
+}

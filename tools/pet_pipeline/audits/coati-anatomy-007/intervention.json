@@ -1,0 +1,14 @@
+{
+  "action": "Stopped only the current generation worker after verifying PID, parent PID and generate_concepts.py command line",
+  "worker_pid": 30092,
+  "parent_pid": 17680,
+  "reason": "Windows commit headroom collapsed during model loading despite passing the 12 GiB admission gate",
+  "observed_free_commit_kib": 289220,
+  "observed_free_physical_kib": 2874468,
+  "measurement_source": "Win32_OperatingSystem FreeVirtualMemory and FreePhysicalMemory",
+  "supervisor_recorded_exit": 4294967295,
+  "all_workers_exited": true,
+  "overlapping_jobs": false,
+  "new_commit_gate_gib": 16,
+  "next": "No retry until fresh admission passes. Monitor loading pressure. No generated Coati mesh or registration."
+}

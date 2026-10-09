@@ -48,6 +48,10 @@ function Resource:Register(object)
  if isTree and object:GetAttribute("AuthoredGatherableTree")~=true then return end
  local biome=object:GetAttribute("BiomeId");local tableId=object:GetAttribute("DropTable") or (type(biome)=="string" and biome.."Tree")
  if not Tables[tableId] then warn("[ResourceService] Missing biome/drop table: "..object:GetFullName());return end
+ if isTree and biome=="Jungle" then
+  local def,issue=require(RS.Shared.Gameplay.Definitions.TreeFamilyDefinitions).BindJungle(object)
+  if not def then warn("[JungleTrees] "..tostring(issue)..": "..object:GetFullName());return end
+ end
  local root=object:IsA("BasePart") and object or object.PrimaryPart or object:FindFirstChildWhichIsA("BasePart",true)
  if not root then return end
  local original=object:GetPivot()

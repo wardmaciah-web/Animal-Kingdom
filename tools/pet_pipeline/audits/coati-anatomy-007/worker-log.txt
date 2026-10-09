@@ -1,0 +1,2 @@
+Loading local SDXL dependencies
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|##8       | 2/7 [00:00<00:01,  4.00it/s]Loading pipeline components...:  71%|#######1  | 5/7 [00:04<00:01,  1.01it/s]Loading pipeline components...:  86%|########5 | 6/7 [00:23<00:05,  5.49s/it]

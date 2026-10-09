@@ -75,8 +75,12 @@ class ProductionGates(unittest.TestCase):
     def test_missing_memory_measurements_fail_closed(self):
         with self.assertRaisesRegex(RuntimeError, 'Missing free_physical'):
             p.check_hardware({'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_observed_unsafe_loading_headroom_blocks(self):
+        with self.assertRaisesRegex(RuntimeError, 'free_commit'):
+            p.check_hardware({'free_physical':7239262208,'free_commit':13174988800,
+                              'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 11922'})
     def test_sufficient_memory_admits(self):
-        p.check_hardware({'free_physical':8*1024**3,'free_commit':12*1024**3,
+        p.check_hardware({'free_physical':8*1024**3,'free_commit':16*1024**3,
                           'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
     def test_generation_lock_excludes_another_process_and_recovers(self):
         import subprocess,sys
@@ -92,7 +96,7 @@ class ProductionGates(unittest.TestCase):
     def test_wrong_gpu_or_failed_probe_blocks(self):
         for hardware in ({'gpu_probe_exit_code':1,'gpu':''},
                          {'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 1000'}):
-            hardware.update(free_physical=8*1024**3,free_commit=12*1024**3)
+            hardware.update(free_physical=8*1024**3,free_commit=16*1024**3)
             with self.assertRaises(RuntimeError): p.check_hardware(hardware)
     def test_deferred_species_cannot_start_inference(self):
         with self.assertRaisesRegex(RuntimeError,'Species deferred'):

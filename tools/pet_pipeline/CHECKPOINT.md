@@ -1,4 +1,49 @@
-# Latest checkpoint - stability and reward cache verified, generation held
+# Latest checkpoint - physical Jungle tree mapping and isolated payout/rejoin QA
+
+2026-10-09: all 35 existing Jungle trees are assigned through canonical explicit
+visual/source metadata. Rainbloom5, EmeraldCanopy5, Orchidwood4, Sunvine15,
+AncientBanyan6. Positions, visuals, rarity weights, progression and release gates
+are unchanged. Unknown/conflicting mappings fail closed; no generic pool fallback.
+TreeFamilyDefinitions owns the mapping; WorldContentService and ResourceService
+bind metadata; EggService verifies the authored family at payout.
+
+Actual Orchidwood/Ocelot and Sunvine/Red Panda gathers passed in the private Studio
+server with the separate AKJungleTreeQA_4e9674b_20261009 datastore. Unique UIDs,
+duplicate gather rejection, foreign UID rejection, Inventory/Held transitions,
+owned Sanctuary placement, durable datastore reads and full stop/start rejoin
+passed. Client rendered the same owned follower/Sanctuary models; Pets STORE and
+HELD buttons worked. Only runtime Jungle.ContentReady was temporarily enabled
+during controlled gathers, then restored. OriginalData1 source and mock setting
+are restored; no QA scripts remain. Solo testing does not certify multiplayer.
+
+Evidence: `audits/jungle-tree-20261009/`; regression harnesses under `tests/`.
+24 safety tests and Studio family regression pass. Initial harness Source-access
+and rate-limit failures were corrected without bypassing production validation;
+their evidence is retained. Existing unrelated Studio source differences were
+preserved with targeted edits rather than a whole-project overwrite.
+
+Full local Studio recovery copy saved through Download a Copy:
+`D:/AnimalKingdom3D/checkpoints/AnimalKingdom-JungleMappings-20261009.rbxl`
+SHA256 940e8bc257221da35aed982b0873828cdcc7ec869ba17d525a61c6b5888f7eb8.
+Studio closed normally afterward. Stopped animated wallpaper using its supported
+control command and closed NVIDIA settings normally; no forced app termination,
+pagefile change, reboot or publication. AI/cache/output paths remain D:.
+
+Coati guided005 completed three free concepts, exit0 (116.828s); visual inspection
+rejected all for short raccoon-like muzzles and insufficient ringed-tail identity.
+Anatomy006 failed cleanly on the tokenizer limit (78 > 77); its prompt was shortened.
+Anatomy007 passed admission at 6.74 GiB RAM / 12.27 GiB commit / 11.64 GiB VRAM free,
+but loading reduced commit headroom to 289220 KiB. Stopped only its identity-checked
+worker PID30092; supervisor recorded exit4294967295 and all Python workers exited.
+No overlapping jobs. No mesh produced or pet registered. Logs/configs retained.
+Commit admission is now 16 GiB with an observed-pressure regression test. Generation
+is paused until a fresh check passes; no pagefile resize or reboot was performed.
+Animated wallpaper restored after worker exit. Studio remains closed; use the saved
+local recovery copy above. Approved pets unchanged; 2/250 registered.
+Remaining: restore safe headroom, finish species-correct Coati concept/mesh/four-view
+and Studio QA, then continue roster; multiplayer reward/ownership QA is outstanding.
+
+## Previous checkpoint - stability and reward cache verified, generation held
 
 2026-10-09 UTC: see `audits/stability-20261009/`. No generation worker is
 running. Coati guided 001 failed the old commit gate; 002/003 have orphaned

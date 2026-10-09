@@ -1,0 +1,12 @@
+{
+  "runtime_root": "D:\\AnimalKingdom3D",
+  "free_disk_bytes": 438850072576,
+  "gpu": "NVIDIA GeForce RTX 3060, 12288, 11577",
+  "gpu_probe_exit_code": 0,
+  "total_physical": 17042083840,
+  "free_physical": 7942344704,
+  "total_commit": 28791578624,
+  "free_commit": 12918743040,
+  "admission": "blocked",
+  "reason": "Insufficient free_commit: 12918743040 bytes; need 17179869184. See preflight.json"
+}

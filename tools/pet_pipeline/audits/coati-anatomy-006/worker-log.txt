@@ -1,0 +1,9 @@
+Loading local SDXL dependencies
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|#4        | 1/7 [00:02<00:16,  2.76s/it]Loading pipeline components...:  43%|####2     | 3/7 [00:06<00:08,  2.16s/it]Loading pipeline components...:  71%|#######1  | 5/7 [00:25<00:11,  5.96s/it]Loading pipeline components...:  86%|########5 | 6/7 [00:26<00:04,  4.60s/it]Loading pipeline components...: 100%|##########| 7/7 [00:26<00:00,  3.81s/it]
+Token indices sequence length is longer than the specified maximum sequence length for this model (78 > 77). Running this sequence through the model will result in indexing errors
+Traceback (most recent call last):
+  File "D:\AnimalKingdom3D\github-review\tools\pet_pipeline\generate_concepts.py", line 93, in <module>
+    main()
+  File "D:\AnimalKingdom3D\github-review\tools\pet_pipeline\generate_concepts.py", line 57, in main
+    raise ValueError(f'{label} exceeds tokenizer limit; shorten it instead of silently losing anatomy/style instructions')
+ValueError: prompt exceeds tokenizer limit; shorten it instead of silently losing anatomy/style instructions

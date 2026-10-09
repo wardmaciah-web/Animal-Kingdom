@@ -1,0 +1,40 @@
+{
+    "mapping_policy":  "Explicit grouping by existing visual/source metadata, not positions or alphabetical order",
+    "families":  {
+                     "Rainbloom":  5,
+                     "Emerald Canopy":  5,
+                     "Orchidwood":  4,
+                     "Sunvine":  15,
+                     "Ancient Banyan":  6
+                 },
+    "geometry_positions_preserved":  true,
+    "approved_pet_assets_modified":  false,
+    "reward_probabilities_modified":  false,
+    "production_content_ready_modified":  false,
+    "isolated_test":  {
+                          "datastore":  "AKJungleTreeQA_4e9674b_20261009",
+                          "payouts":  "Real ResourceService Gather/Finish and EggService CommitTree on existing Orchidwood/Sunvine trees",
+                          "gate_override":  "Only private Studio server in-memory Jungle.ContentReady during the two gathers; restored on completion/error. Source gate never changed.",
+                          "server_checks":  "Unique UIDs, forged UID rejection, duplicate gather rejection, pool/cost, Held/Inventory, owned Sanctuary, datastore read and full stop/start rejoin",
+                          "client_checks":  "Rejoin rendered Red Panda follower and Ocelot Sanctuary model with matching owned UIDs; Pets panel lists both; STORE removed follower and moved Red Panda into Inventory; HELD recreated same-UID follower",
+                          "restoration":  "ProfileService original source and AKUseMockProfiles=true restored; temporary runtime scripts removed by stop; Jungle locked",
+                          "failed_probes_retained":  "First harness read Source at Script security and was denied before executing; fixed to verified QA attribute. Second harness correctly encountered existing Gather rate limit after negative gate check; added 0.5s wait without bypassing guard. Failed rate-limit report retained."
+                      },
+    "tests":  {
+                  "pet_pipeline_safety":  "24 passed including the observed unsafe loading-headroom regression",
+                  "studio_family_regression":  "PASS eight variants, idempotence, unknown/conflicting/cross-biome rejection, unchanged reward weights and release gate"
+              },
+    "local_place_checkpoint":  {
+                                   "path":  "D:/AnimalKingdom3D/checkpoints/AnimalKingdom-JungleMappings-20261009.rbxl",
+                                   "bytes":  16846410,
+                                   "sha256":  "940e8bc257221da35aed982b0873828cdcc7ec869ba17d525a61c6b5888f7eb8",
+                                   "method":  "Studio File \u003e Download a Copy after restoration, then normal window close",
+                                   "reference":  "https://create.roblox.com/docs/projects/place-files"
+                               },
+    "memory_optimization":  "Closed saved Studio normally; temporarily stopped animated wallpaper with documented control command, restored after AI worker exit; closed NVIDIA Control Panel normally. No user app force-kill or pagefile modification. Stopped only identity-verified anatomy007 AI worker when commit fell to 289220 KiB; supervisor recorded termination and all workers exited. Gate now16 GiB; final admission blocked at12.03 GiB commit.",
+    "wallpaper_control_reference":  "https://help.wallpaperengine.io/en/functionality/cli.html",
+    "pagefile_configuration":  "Windows automatic C:/pagefile.sys, allocated 11205 MiB; no reboot or manual resize",
+    "pagefile_reference":  "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-pagefilesetting",
+    "published":  false,
+    "limitations":  "Solo controlled Studio QA, no multiplayer certification. Existing live service differences retained via targeted patches. Broad 250-pet production remains incomplete."
+}
