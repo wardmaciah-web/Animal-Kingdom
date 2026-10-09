@@ -215,7 +215,8 @@
           "mesh_id": "114629416154775",
           "texture_id": "91899617902182"
         }
-      ]
+      ],
+      "registration_evidence": "audits/red-panda-studio-001/registration-evidence.json"
     },
     {
       "pet_id": "JungleAyeAye",

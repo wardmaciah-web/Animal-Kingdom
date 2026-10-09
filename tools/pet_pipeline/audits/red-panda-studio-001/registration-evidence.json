@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "pet": "JungleRedPanda",
+  "family": "Jungle_Shakeable_04",
+  "base_weight": 7,
+  "base_income": 130,
+  "rarity": "Epic",
+  "drop_weight": 4,
+  "scope": "Pet registration, visual and isolated-profile gameplay QA; not biome release",
+  "runtime_evidence": "registration-qa.json",
+  "visual_and_gameplay_evidence": "review-summary.json",
+  "biome_released": false,
+  "physical_sunvine_payout_tested": false
+}
