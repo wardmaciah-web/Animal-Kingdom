@@ -72,9 +72,78 @@ if args.refine:
 # Keep original high-resolution geometry and a separate game-mesh export.
 source_tris=sum(len(p.vertices)-2 for p in pet.data.polygons)
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'high-resolution.blend'))
+bake_source=None
+if settings.get('rebake_after_decimation'):
+    bake_source=pet.copy();bake_source.data=pet.data.copy()
+    bpy.context.collection.objects.link(bake_source)
+    bake_source.name=cfg['pet_id']+'_BakeSource'
+    for i,material in enumerate(pet.data.materials):
+        pet.data.materials[i]=material.copy()
 if source_tris>settings['body_triangle_budget']:
     dec=pet.modifiers.new('Game export budget','DECIMATE'); dec.ratio=settings['body_triangle_budget']/source_tris
     bpy.ops.object.modifier_apply(modifier=dec.name)
+if bake_source:
+    # Repack and bake the projected high-resolution color onto the game mesh.
+    # This avoids tiny wrong-color UV triangles introduced by decimation.
+    bpy.ops.object.select_all(action='DESELECT');pet.select_set(True)
+    bpy.context.view_layer.objects.active=pet
+    bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_all(action='SELECT')
+    bpy.ops.uv.smart_project(angle_limit=math.radians(66),island_margin=.01)
+    bpy.ops.object.mode_set(mode='OBJECT')
+    baked=bpy.data.images.new('RebakedColor',width=cfg['texture']['resolution'],height=cfg['texture']['resolution'])
+    for material in pet.data.materials:
+        node=material.node_tree.nodes.new('ShaderNodeTexImage');node.image=baked
+        material.node_tree.nodes.active=node
+    scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.samples=1
+    scene.render.bake.use_pass_direct=False;scene.render.bake.use_pass_indirect=False
+    scene.render.bake.use_pass_color=True
+    bake_source.select_set(True)
+    bpy.ops.object.bake(type='DIFFUSE',use_selected_to_active=True,cage_extrusion=.03*unit,
+                       max_ray_distance=.08*unit,margin=12)
+    baked.filepath_raw=str(out/'rebaked-basecolor.png');baked.file_format='PNG';baked.save();baked.pack()
+    if settings.get('rebake_median_filter'):
+        from PIL import Image,ImageFilter
+        image_path=out/'rebaked-basecolor.png'
+        with Image.open(image_path) as image:
+            image.filter(ImageFilter.MedianFilter(3)).save(image_path)
+        baked.unpack(method='REMOVE');baked.filepath=str(image_path);baked.reload();baked.pack()
+    for material in pet.data.materials:
+        for node in material.node_tree.nodes:
+            if node.type=='TEX_IMAGE':node.image=baked
+    bpy.data.objects.remove(bake_source,do_unlink=True)
+if settings.get('baked_fur_detail'):
+    # Bake subtle directional fur relief into a portable tangent normal map.
+    # The frontal face is protected by a geometry mask; no new body geometry.
+    detail_mask=pet.data.attributes.new('FurDetailMask','FLOAT','POINT')
+    for vertex in pet.data.vertices:
+        x,y,z=vertex.co
+        detail_mask.data[vertex.index].value=max(min(1.,max(0.,(1.45*unit-z)/(.2*unit))),
+                                               min(1.,max(0.,(y+.5*unit)/(.3*unit))))
+    normal_image=bpy.data.images.new('FurNormal',width=cfg['texture']['resolution'],height=cfg['texture']['resolution'])
+    normal_image.colorspace_settings.name='Non-Color'
+    temporary=[]
+    for material in pet.data.materials:
+        nodes=material.node_tree.nodes;links=material.node_tree.links
+        coordinate=nodes.new('ShaderNodeTexCoord');scale_node=nodes.new('ShaderNodeVectorMath');scale_node.operation='MULTIPLY'
+        scale_node.inputs[1].default_value=(95,95,14);links.new(coordinate.outputs['Generated'],scale_node.inputs[0])
+        noise=nodes.new('ShaderNodeTexNoise');noise.inputs['Scale'].default_value=1.;noise.inputs['Detail'].default_value=2.
+        links.new(scale_node.outputs['Vector'],noise.inputs['Vector'])
+        mask_node=nodes.new('ShaderNodeAttribute');mask_node.attribute_name='FurDetailMask'
+        strength=nodes.new('ShaderNodeMath');strength.operation='MULTIPLY';strength.inputs[1].default_value=.3
+        links.new(mask_node.outputs['Fac'],strength.inputs[0])
+        bump=nodes.new('ShaderNodeBump');bump.inputs['Distance'].default_value=.018*unit
+        links.new(strength.outputs[0],bump.inputs['Strength']);links.new(noise.outputs['Fac'],bump.inputs['Height'])
+        shader=next(n for n in nodes if n.type=='BSDF_PRINCIPLED');links.new(bump.outputs['Normal'],shader.inputs['Normal'])
+        target=nodes.new('ShaderNodeTexImage');target.image=normal_image;nodes.active=target
+        temporary.append((material,[coordinate,scale_node,noise,mask_node,strength,bump],shader,target))
+    bpy.context.scene.render.engine='CYCLES';bpy.context.scene.cycles.samples=1
+    bpy.ops.object.bake(type='NORMAL',use_selected_to_active=False,normal_space='TANGENT',margin=12)
+    normal_image.filepath_raw=str(out/'fur-normal.png');normal_image.file_format='PNG';normal_image.save();normal_image.pack()
+    for material,nodes_to_remove,shader,target in temporary:
+        nodes=material.node_tree.nodes;links=material.node_tree.links
+        for node in nodes_to_remove:nodes.remove(node)
+        normal_map=nodes.new('ShaderNodeNormalMap');links.new(target.outputs['Color'],normal_map.inputs['Color'])
+        links.new(normal_map.outputs['Normal'],shader.inputs['Normal'])
 if args.refine and fur_settings['enabled']:
     # Sculpt short, curved, broad fur locks on the actual reconstructed surface.
     # Separate material primitive keeps each exported mesh below 20k triangles.
@@ -82,7 +151,7 @@ if args.refine and fur_settings['enabled']:
     triangles=list(pet.data.loop_triangles)
     areas=[t.area for t in triangles]
     rng=random.Random(cfg['generation']['seed'])
-    positions=[];faces=[];uvs=[]
+    positions=[];faces=[];uvs=[];surface_normals=[]
     uvdata=pet.data.uv_layers.active.data
     for tri in rng.choices(triangles,weights=areas,k=fur_settings['attempts']):
         a,b=rng.random(),rng.random()
@@ -111,15 +180,31 @@ if args.refine and fur_settings['enabled']:
                root+direction*length*.40+normal*fur_settings['ridge_height']*unit,
                root+direction*length+normal*fur_settings['tip_height']*unit]
         start=len(positions);positions.extend(verts)
-        faces.extend(tuple(start+j for j in face) for face in [(0,1,4),(0,4,2),(1,3,4),(2,4,5),(4,3,5),(0,2,5),(0,5,1),(1,5,3)])
+        local_faces=[(0,1,4),(0,4,2),(1,3,4),(2,4,5),(4,3,5),(0,2,5),(0,5,1),(1,5,3)]
+        if fur_settings.get('style')=='open_shingles':
+            # Keep only the outer surface. Closed, buried undersides caused
+            # dark triangular wedges in rejected Tapir/Red Panda reviews.
+            local_faces=local_faces[:5]
+            local_faces=[face if (verts[face[1]]-verts[face[0]]).cross(verts[face[2]]-verts[face[0]]).dot(normal)>0
+                         else tuple(reversed(face)) for face in local_faces]
+        faces.extend(tuple(start+j for j in face) for face in local_faces)
+        surface_normals.extend([tuple(normal)]*6)
         uv=sum((uvdata[i].uv*w for i,w in zip(tri.loops,weights)),Vector((0,0)))
         uvs.extend([uv.copy()]*6)
     data=bpy.data.meshes.new('SculptedFurLocks');data.from_pydata(positions,[],faces);data.update()
     fur=bpy.data.objects.new(cfg['pet_id']+'_SculptedFur',data);bpy.context.collection.objects.link(fur)
-    data.materials.append(pet.data.materials[0])
+    fur.visible_shadow=fur_settings.get('cast_shadow',True)
+    fur_material=pet.data.materials[0]
+    if settings.get('baked_fur_detail'):
+        fur_material=fur_material.copy()
+        shader=next(n for n in fur_material.node_tree.nodes if n.type=='BSDF_PRINCIPLED')
+        for link in list(shader.inputs['Normal'].links):fur_material.node_tree.links.remove(link)
+    data.materials.append(fur_material)
     uv_layer=data.uv_layers.new(name='FurUV')
     for loop in data.loops:uv_layer.data[loop.index].uv=uvs[loop.vertex_index]
     for face in data.polygons:face.use_smooth=True
+    if fur_settings.get('style')=='open_shingles':
+        data.normals_split_custom_set_from_vertices(surface_normals)
     fur.select_set(True)
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'pet.blend'))
 bpy.ops.export_scene.gltf(filepath=str(out/'pet.glb'),export_format='GLB',use_selection=True,export_materials='EXPORT')

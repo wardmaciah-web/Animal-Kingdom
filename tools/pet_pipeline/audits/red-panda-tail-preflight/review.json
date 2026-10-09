@@ -1,0 +1,6 @@
+{
+  "decision": "approved_for_inference",
+  "prepared_sha256": "c472a583df3f8b858384c8cff83727a8a263d925553c297d593b0d1ad0b87ca1",
+  "notes": "Visually checked inference composite: full original tail restored, neutral background removed, face/fur RGB unchanged. Final 3D approval remains pending.",
+  "source_rgb_synthesized": false
+}

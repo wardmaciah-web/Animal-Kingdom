@@ -1,3 +1,40 @@
+# Latest second-pet checkpoint - 2026-10-08, completed local trials
+
+Design-first workflow is implemented. Preserve the selected guided Red Panda
+2051; stop discarding designs for minor paw pose. The latest real review model is
+`audits/red-panda-final-review/red-panda-polish-003/red-panda-review.glb`.
+SHA256: abaf670650c3e6155662c230ea74bd81685c915ca6ca017bc38cdec13679e9e8.
+It is NOT art-approved, imported or registered. Surface speckles and patchy
+side/back material still need cleanup; do not claim an excellent second pet yet.
+The selected design and complete seated mesh are retained for continued work.
+
+Found/fixed a concrete preprocessing defect: rembg removed the original tail
+before reconstruction 003. Reviewed original-pixel alpha restoration and pinned
+prepared SHA256 c472a583df3f8b858384c8cff83727a8a263d925553c297d593b0d1ad0b87ca1.
+One documented fourth inference rebuilt the full tail. The current bounded
+inference budget is exhausted; continue refining this saved mesh before any more
+inference. This is a production retry limit, not a request for user permission.
+
+Blender polish: optional high-resolution color rebake after decimation, median
+speckle filtering, outward open fur shingles, decorative fur shadows disabled,
+and masked directional fur normal bake. Ocelot defaults/assets are unchanged.
+Latest GLB passes numeric/ground-contact/Blender-reopen checks: body 18,000 and
+fur 5,500 triangles; embedded 2048px color and normal maps; 2.8-stud target height.
+19 automated tests pass. Four-view art review is explicitly rejected for surface
+finish, not for slight concept pose. Latest source-run path is
+D:/AnimalKingdom3D/outputs/red-panda-polish-003; original projected mesh is in
+D:/AnimalKingdom3D/outputs/red-panda-reconstruction-004. All worker processes ended.
+
+Studio MCP remained disconnected on three checks. Next: clean the saved model's
+surface and rear fur/tail definition without regenerating its design, repeat
+four-view comparison against black bear/Ocelot, then reconnect Real_Animal_K.
+Verify import/color/normal maps and decorative fur CastShadow=false, actual paw
+stance, correct tree pool/reward rarity/weight, ownership/UID, equip/follower and
+save/rejoin. No src changes, no Meadow/Forest changes, no biome unlocks, no paid
+calls and no Roblox publication. Registered production count remains 1/250.
+
+---
+
 # Design-first / Blender-repair checkpoint - 2026-10-08
 
 User revised the workflow after 36d17ce: AI designs face, fur, proportions and

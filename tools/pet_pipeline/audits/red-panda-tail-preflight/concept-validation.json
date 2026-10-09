@@ -1,0 +1,51 @@
+{
+  "input_sha256": "4b94142caab5e3843c07dccc227f68f768b090fb865e3984f2324b3291e28239",
+  "prepared_sha256": "c472a583df3f8b858384c8cff83727a8a263d925553c297d593b0d1ad0b87ca1",
+  "size": [
+    1024,
+    1024
+  ],
+  "foreground_repairs": [
+    {
+      "reason": "Visually verified rembg erased original tail in reconstruction 003; restore colored pixels from the original concept only.",
+      "polygon": [
+        [
+          100,
+          560
+        ],
+        [
+          305,
+          560
+        ],
+        [
+          330,
+          805
+        ],
+        [
+          410,
+          835
+        ],
+        [
+          410,
+          950
+        ],
+        [
+          100,
+          950
+        ]
+      ],
+      "chroma_threshold": 4,
+      "chroma_feather": 8,
+      "maximum_value": 200
+    }
+  ],
+  "foreground_box": [
+    146,
+    124,
+    867,
+    924
+  ],
+  "foreground_ratio": 0.85,
+  "rgb_background": 0.5,
+  "style_conditioning": "concept and downstream visual review; TripoSR has no style-reference input"
+}

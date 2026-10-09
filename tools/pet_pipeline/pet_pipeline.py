@@ -99,6 +99,10 @@ def check_attempt_budget(cfg, runtime, policy):
                 or (config.parent/'generate.log').exists()):
             attempts+=1
     limit=policy['max_fresh_inferences_per_unapproved_species']
+    override=policy.get('inference_budget_overrides',{}).get(pet_id)
+    if override:
+        if not override.get('reason'):raise ValueError('Inference override needs an evidence-based reason')
+        limit=override['limit']
     if attempts>=limit:
         raise RuntimeError(f'{pet_id} reached {attempts}/{limit} fresh attempts; defer it and choose another species')
 

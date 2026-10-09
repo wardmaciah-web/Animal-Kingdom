@@ -1,0 +1,19 @@
+{
+  "glb_sha256": "abaf670650c3e6155662c230ea74bd81685c915ca6ca017bc38cdec13679e9e8",
+  "reviewer": "Codex four-view inspection against original black bear and approved Ocelot",
+  "notes": "Improved complete tail and seated design. Reject final art approval because tiny surface speckles, patchy side/back color and insufficiently polished fur remain. Minor concept pose is not the rejection reason. No imported or registered Red Panda. Fur CastShadow=false must be reproduced in Studio if eventually imported.",
+  "checks": {
+    "original_species": true,
+    "large_expressive_eyes": true,
+    "rounded_head": true,
+    "chubby_body": true,
+    "matte_body": true,
+    "sitting_pose": true,
+    "two_front_paws_grounded": true,
+    "four_view_comparison": true,
+    "appropriate_surface_detail": false,
+    "no_visible_texture_failure": false
+  },
+  "decision": "rejected",
+  "reviewed_utc": "2026-10-09T05:03:59.145589+00:00"
+}

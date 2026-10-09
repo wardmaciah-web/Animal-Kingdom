@@ -65,6 +65,21 @@ concept, copies the projected mesh, and runs Blender plus technical validation.
 Four-view inspection remains mandatory. A broad box can move torso skin along
 with a fused paw; reject stretched surfaces even if their vertices reach floor.
 
+Inspect the prepared foreground, not just the original concept: rembg erased
+the full tail of guided Red Panda 2051. Explicit `preserve_regions` can recover
+the original subject pixels within a reviewed polygon, using chroma/value bounds
+to exclude neutral background. No RGB is generated. Save the reviewed composite
+and `reviewed_prepared_sha256`; preparation must match it before reconstruction.
+This verified defect justified one bounded fourth Red Panda inference, recorded
+in production policy, rather than abandoning the design or inventing a tail.
+
+Optional Blender polish can rebake high-resolution color after decimation to
+avoid wrong-color UV triangles, then filter isolated texture speckles. Open fur
+shingles use outward winding and surface normals instead of closed undersides.
+When `cast_shadow` is false for decorative fur, Studio must set that fur mesh's
+`CastShadow=false` and verify the appearance; the body still casts its shadow.
+These options are off in the approved Ocelot recipe.
+
 The single saved-mesh diagnostic `tapir-d-surface-normals-023` corrected the
 normal alignment but made the black fur wedges worse in actual renders. It is
 rejected. The optional normal-setting experiment was removed from production

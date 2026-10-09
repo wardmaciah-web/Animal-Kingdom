@@ -194,10 +194,11 @@
       "base_weight_kg": 7,
       "base_income": 130,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "blender_anatomy_refinement",
+      "status": "surface_polish_needed",
       "model_asset_id": null,
       "glb": null,
-      "registered": false
+      "registered": false,
+      "review_glb": "audits/red-panda-final-review/red-panda-polish-003/red-panda-review.glb"
     },
     {
       "pet_id": "JungleAyeAye",

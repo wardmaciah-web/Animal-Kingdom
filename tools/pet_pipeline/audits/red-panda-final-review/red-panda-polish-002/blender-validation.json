@@ -1,0 +1,24 @@
+{
+  "blender": "4.5.3 LTS",
+  "source_triangles": 129496,
+  "export_triangles": 23500,
+  "pose_adjustments": [],
+  "reopened_glb": true,
+  "uv_layers": [
+    1,
+    1
+  ],
+  "images": [
+    {
+      "name": "rebaked-basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "has_data": true
+    }
+  ],
+  "normalization_height": 2.8,
+  "original_files_modified": false,
+  "visual_approval": "pending"
+}

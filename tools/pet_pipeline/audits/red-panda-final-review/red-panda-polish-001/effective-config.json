@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "pet_id": "JungleRedPanda",
+  "pet_name": "Jungle Red Panda",
+  "biome": "Jungle",
+  "species": "Red Panda",
+  "concept_image": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\audits\\red-panda-guided-concepts-001\\concept-2051.png",
+  "style_references": [
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-front.jpg",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-side.jpg",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png"
+  ],
+  "concept_preparation": {
+    "background_removal": "rembg",
+    "preserve_regions": [
+      {
+        "reason": "Visually verified rembg erased original tail in reconstruction 003; restore colored pixels from the original concept only.",
+        "polygon": [
+          [
+            100,
+            560
+          ],
+          [
+            305,
+            560
+          ],
+          [
+            330,
+            805
+          ],
+          [
+            410,
+            835
+          ],
+          [
+            410,
+            950
+          ],
+          [
+            100,
+            950
+          ]
+        ],
+        "chroma_threshold": 4,
+        "chroma_feather": 8,
+        "maximum_value": 200
+      }
+    ],
+    "reviewed_prepared_sha256": "c472a583df3f8b858384c8cff83727a8a263d925553c297d593b0d1ad0b87ca1"
+  },
+  "target_dimensions": {
+    "height": 2.8,
+    "width_max": 3.5,
+    "depth_max": 3.5
+  },
+  "generation": {
+    "seed": 42,
+    "foreground_ratio": 0.85,
+    "mc_resolution": 256,
+    "renderer_chunk": 4096
+  },
+  "texture": {
+    "resolution": 2048,
+    "query_chunk": 8192,
+    "roughness": 0.85,
+    "projection": {
+      "enabled": true,
+      "padding": 8,
+      "normal_start": 0.0,
+      "normal_range": 0.3
+    }
+  },
+  "refinement": {
+    "reference_height": 2.8,
+    "yaw_degrees": -90,
+    "weld_distance": 1e-05,
+    "smooth_factor": 0.65,
+    "smooth_iterations": 5,
+    "body_triangle_budget": 18000,
+    "grounding": {
+      "upper": 0.13,
+      "cut": 0.045
+    },
+    "fur": {
+      "enabled": true,
+      "count": 1100,
+      "attempts": 4300,
+      "minimum_height": 0.3,
+      "outward_flow": 0.35,
+      "length": [
+        0.045,
+        0.075
+      ],
+      "width_ratio": [
+        0.23,
+        0.33
+      ],
+      "root_inset": -0.001,
+      "shoulder_height": 0.004,
+      "ridge_height": 0.009,
+      "tip_height": 0.002,
+      "exclusions": [
+        {
+          "normal_y_max": 0.15,
+          "z_min": 1.25,
+          "z_max": 3.2,
+          "abs_x_max": 3
+        }
+      ],
+      "style": "open_shingles"
+    },
+    "rebake_after_decimation": true
+  },
+  "preview": {
+    "resolution": 700,
+    "samples": 16
+  },
+  "validation": {
+    "max_triangles": 26800,
+    "height_tolerance": 0.02,
+    "ground_tolerance": 0.001,
+    "reproduction_distance": 0.015,
+    "reproduction_ssim": 0.9,
+    "paw_regions": [
+      {
+        "name": "front_left",
+        "x": [
+          0.15,
+          0.55
+        ],
+        "z": [
+          0.45,
+          1.3
+        ]
+      },
+      {
+        "name": "front_right",
+        "x": [
+          0.65,
+          1.1
+        ],
+        "z": [
+          0.45,
+          1.3
+        ]
+      }
+    ]
+  },
+  "concept_review": {
+    "selected_seed": 2051,
+    "decision": "approved_for_reconstruction",
+    "reviewer": "Codex visual inspection",
+    "mandatory_comparison": [
+      "original black bear front and side",
+      "approved Ocelot front"
+    ],
+    "notes": "Single distinct stylized red-panda design; broad white cheek mask, rust fur, rounded ears, large glossy eyes, compact body and full tail. Minor paw placement allowed for Blender correction. Tail stripe definition needs material review. No final mesh or Studio approval.",
+    "other_candidates": {
+      "1051": "Blue eye mask and generated footer text weaken design/species clarity.",
+      "3051": "Valid alternative design; 2051 has stronger expressive eyes."
+    }
+  },
+  "runtime_root": "D:\\AnimalKingdom3D",
+  "pipeline_root": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline",
+  "output_directory": "D:\\AnimalKingdom3D\\outputs\\red-panda-polish-001",
+  "pipeline_version": "1.0.0"
+}

@@ -94,4 +94,15 @@ class ProductionGates(unittest.TestCase):
             p.check_attempt_budget({'pet_id':'JungleRedPanda'},self.root,
                 {'max_fresh_inferences_per_unapproved_species':1})
 
+    def test_documented_preprocessing_retry_is_still_bounded(self):
+        policy={'max_fresh_inferences_per_unapproved_species':3,
+                'inference_budget_overrides':{'JungleRedPanda':{'limit':4,'reason':'Reviewed foreground lost tail'}}}
+        for index in range(4):
+            run=self.root/'outputs'/str(index);run.mkdir(parents=True)
+            p.write(run/'effective-config.json',{'pet_id':'JungleRedPanda'})
+            (run/'generate.log').write_text('fresh inference')
+            if index==2:p.check_attempt_budget({'pet_id':'JungleRedPanda'},self.root,policy)
+        with self.assertRaisesRegex(RuntimeError,'reached 4/4'):
+            p.check_attempt_budget({'pet_id':'JungleRedPanda'},self.root,policy)
+
 if __name__=='__main__':unittest.main()

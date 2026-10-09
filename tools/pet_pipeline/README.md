@@ -12,7 +12,8 @@ Run from the project directory:
 
 The launcher defaults to `D:/AnimalKingdom3D`, configures the parent Python process
 and all child stages to keep temporary files and caches there, and creates a new
-timestamped output directory. Use `-Recipe red-panda` for the second-species test,
+timestamped output directory. Read `CHECKPOINT.md` before resuming the second pet;
+reuse its saved mesh instead of repeating completed inference. Use a named recipe,
 `-RuntimeRoot` to relocate, and `-Output` to select a new output directory.
 Direct Python invocation accepts `--runtime-root` or `AK_3D_ROOT`, defaulting to D:.
 The generation gate requires 4 GiB free RAM, 6 GiB free system commit, 7 GiB free

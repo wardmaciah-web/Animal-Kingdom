@@ -18,6 +18,7 @@ for name,mesh in scene.geometry.items():
          'indices_valid':bool(mesh.faces.min()>=0 and mesh.faces.max()<len(mesh.vertices)),
          'uv_finite':bool(mesh.visual.kind=='texture' and np.isfinite(mesh.visual.uv).all()),
          'texture_size':list(material.baseColorTexture.size) if material.baseColorTexture else None,
+         'normal_texture_size':list(material.normalTexture.size) if getattr(material,'normalTexture',None) else None,
          'metallic':float(material.metallicFactor),'roughness':float(material.roughnessFactor)}
     if not all(row[k] for k in ('finite_positions','finite_normals','indices_valid','uv_finite')):errors.append(f'Invalid mesh data: {name}')
     if row['triangles']>20000:errors.append(f'Mesh exceeds 20k: {name}')
@@ -31,6 +32,10 @@ for axis,key in ((0,'width_max'),(2,'depth_max')):
     if cfg['target_dimensions'].get(key) and size[axis]>cfg['target_dimensions'][key]:errors.append(f'Exceeds {key}')
 if sum(x['triangles'] for x in meshes)>rules['max_triangles']:errors.append('Total triangle budget exceeded')
 body=max(scene.geometry.values(),key=lambda m:len(m.faces));paws=[]
+if cfg['refinement'].get('baked_fur_detail'):
+    normal=getattr(body.visual.material,'normalTexture',None)
+    if normal is None or list(normal.size)!=[cfg['texture']['resolution']]*2:
+        errors.append('Missing/wrong embedded body fur normal map')
 for region in rules['paw_regions']:
     v=body.vertices
     selected=v[(v[:,0]>=region['x'][0]*unit)&(v[:,0]<=region['x'][1]*unit)&

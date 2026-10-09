@@ -1,0 +1,22 @@
+{
+  "pet_id": "JungleRedPanda",
+  "status": "technical_pass_pending_visual",
+  "visual_qa": "pending",
+  "studio_qa": "pending",
+  "credits_used": 0,
+  "fresh_inference": false,
+  "source_run": "D:\\AnimalKingdom3D\\outputs\\red-panda-reconstruction-004",
+  "source_mesh_sha256": "4654ba0cba8c0a77b49acc42287b5918bc9468287b279ac0d68ba96f18f8a094",
+  "config_sha256": "6043f3c6d7e442c6959b9065b3180bc6d350f61a139c16dfd21ef1cdd46fe750",
+  "stages": [
+    {
+      "name": "refine",
+      "exit_code": 0
+    },
+    {
+      "name": "validate",
+      "exit_code": 0
+    }
+  ],
+  "glb_sha256": "b537ad65692e78bbf37c5155483520a982e5d0fe7cd2535601b8dae7c3dc8841"
+}

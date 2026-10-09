@@ -30,5 +30,11 @@
       "original black bear",
       "approved Ocelot"
     ]
+  },
+  "inference_budget_overrides": {
+    "JungleRedPanda": {
+      "limit": 4,
+      "reason": "Reconstruction 003 received a tail-erased rembg mask, visually verified against original guided concept. One additional run with hash-reviewed tail-preserving foreground; preserve failed run evidence."
+    }
   }
 }

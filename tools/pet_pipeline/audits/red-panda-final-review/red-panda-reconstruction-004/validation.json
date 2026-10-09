@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "errors": [],
+  "glb_sha256": "60ebfe966190a0208e0dc9cf7b050b34d0268582cc29e34b94a44814a39e7fb8",
+  "meshes": [
+    {
+      "name": "geometry_0",
+      "vertices": 18481,
+      "triangles": 18000,
+      "finite_positions": true,
+      "finite_normals": true,
+      "indices_valid": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8500000238418579
+    }
+  ],
+  "bounds": [
+    [
+      -1.2565441131591797,
+      -0.0001280398719245568,
+      -1.0225416421890259
+    ],
+    [
+      1.2538914680480957,
+      2.7956736087799072,
+      1.0189480781555176
+    ]
+  ],
+  "dimensions": [
+    2.5104355812072754,
+    2.795801648651832,
+    2.0414897203445435
+  ],
+  "front_paws": [
+    {
+      "name": "front_left",
+      "minimum_above_floor": 9.561569095239975e-05,
+      "passed": true,
+      "region": {
+        "name": "front_left",
+        "x": [
+          0,
+          0.45
+        ],
+        "z": [
+          0.3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "front_right",
+      "minimum_above_floor": 0.0001311838007040933,
+      "passed": true,
+      "region": {
+        "name": "front_right",
+        "x": [
+          0.5,
+          0.95
+        ],
+        "z": [
+          0.3,
+          2
+        ]
+      }
+    }
+  ],
+  "approved_comparison": null,
+  "semantic_art_checks": "pending actual four-view review; geometry tests do not certify anatomy or style",
+  "roblox_import": "prepared_not_imported"
+}
