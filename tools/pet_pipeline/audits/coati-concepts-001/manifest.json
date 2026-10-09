@@ -1,0 +1,38 @@
+{
+  "status": "concepts_rejected",
+  "pet_id": "JungleCoati",
+  "credits_used": 0,
+  "hosted_inference_calls": 0,
+  "candidates": [
+    {
+      "path": "concept-1042.png",
+      "seed": 1042,
+      "sha256": "0441aa03ff9ac78fa713c146956ede85c204d8c2bcceb32ee82620ac09c817c4",
+      "seconds": 28.132866382598877,
+      "visual_qa": "rejected",
+      "reason": "Two subjects, raised forepaws, thin body and small eyes; fails isolation/pose/style."
+    },
+    {
+      "path": "concept-2042.png",
+      "seed": 2042,
+      "sha256": "ceecb53a91081d730d27737257c15a75689323b39e7e1d15578ea602790a6134",
+      "seconds": 30.957315683364868,
+      "visual_qa": "rejected",
+      "reason": "Forepaws raised against belly; tail absent. Reject reconstruction input."
+    },
+    {
+      "path": "concept-3042.png",
+      "seed": 3042,
+      "sha256": "54f7410d878efee532cea619e1da058b2ec1f41163f2068607f8085b43d25582",
+      "seconds": 30.98563313484192,
+      "visual_qa": "rejected",
+      "reason": "Multiple subjects in collage; fails isolation and proportions."
+    }
+  ],
+  "active_seed": 3042,
+  "worker_exit_code": 0,
+  "elapsed_seconds": 127.26499999999942,
+  "reviewer": "Codex visual inspection",
+  "comparison": "Approved Ocelot and bear front references",
+  "studio_connected": false
+}

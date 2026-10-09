@@ -3,14 +3,21 @@
   "species": "Red Panda",
   "model": "stabilityai/stable-diffusion-xl-base-1.0",
   "revision": "462165984030d82259a11f4367a4eed129e94a7b",
-  "seeds": [1042, 2042, 3042],
+  "seeds": [
+    1042,
+    2042,
+    3042
+  ],
   "width": 1024,
   "height": 1024,
   "steps": 35,
   "guidance_scale": 7.0,
-  "prompt": "A single adorable baby red panda, full body stylized 3D game pet character, sitting on its hindquarters, BOTH short front legs straight down with two separate round front paws resting on the same ground plane, two plump hind paws visible outside the front paws. Oversized round head, enormous glossy expressive amber eyes, small black nose, tiny short muzzle, white cheek mask and eyebrows, rounded furry ears, rich rust red fur, dark chocolate brown legs and belly. Compact chubby rounded body distinctly smaller than the head, clear neck, sculpted painterly layered fluffy fur. One thick bushy orange and cream ringed tail curves to the side and rests beside the body. Three-quarter view turned only fifteen degrees, both eyes visible, head and paws facing viewer. Original charming polished collectible game character, matte fur, soft even studio light, isolated on plain white background, entire animal and tail visible, generous white margin, eye level camera, no accessories.",
-  "negative_prompt": "two animals, multiple characters, grid, collage, text, watermark, logo, clothes, collar, toy seams, plastic, shiny body, realistic wildlife photo, human, biped, standing, raised front paws, waving, missing legs, extra legs, merged legs, distorted eyes, tiny eyes, long snout, thin body, cropped feet, cropped ears, cropped tail, foliage, furniture, scenery, strong shadow",
-  "style_references": ["references/bear-front.jpg", "references/approved-ocelot-front.png"],
+  "prompt": "One baby red panda sitting, four separate paws on ground, front legs straight. Full body, front view, white background. Huge round head, big glossy eyes, chubby body, rust-red sculpted matte fur, white cheeks, dark legs, bushy ringed tail beside body. Cute stylized 3D game character, soft light.",
+  "negative_prompt": "multiple animals, collage, text, watermark, clothes, plastic, realistic photograph, human, biped, standing, raised front paws, missing legs, extra legs, merged paws, deformed eyes, small eyes, long snout, thin body, cropped feet, cropped ears, cropped tail, scenery, harsh shadows",
+  "style_references": [
+    "references/bear-front.jpg",
+    "references/approved-ocelot-front.png"
+  ],
   "style_conditioning": "References guide prompt and mandatory visual comparison; base SDXL text-to-image does not ingest these reference images.",
   "acceptance": "One concept must pass anatomy/style review before any TripoSR run. No automatic import or registration."
 }

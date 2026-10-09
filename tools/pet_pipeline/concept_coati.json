@@ -1,0 +1,16 @@
+{
+  "pet_id": "JungleCoati",
+  "species": "Coati",
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+  "seeds": [1042, 2042, 3042],
+  "width": 1024,
+  "height": 1024,
+  "steps": 35,
+  "guidance_scale": 7.0,
+  "prompt": "One baby coati sitting, four separate paws on ground, front legs straight. Full body, front view, white background. Huge round head, big glossy amber eyes, long nose, chubby body, brown sculpted matte fur, cream muzzle, ringed tail beside body. Cute stylized 3D game character, soft light.",
+  "negative_prompt": "multiple animals, collage, text, watermark, clothes, plastic, photo, human, standing, raised paws, missing legs, extra legs, merged paws, deformed eyes, small eyes, cropped feet, cropped ears, cropped tail, scenery, harsh shadows",
+  "style_references": ["references/bear-front.jpg", "references/approved-ocelot-front.png"],
+  "style_conditioning": "Text conditioning only; references used for mandatory visual comparison.",
+  "acceptance": "Separate grounded front paws, seated quadruped anatomy, full tail, matte fur and large expressive eyes. Concept review before reconstruction; four-view mesh review before Studio."
+}

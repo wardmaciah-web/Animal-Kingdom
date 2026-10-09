@@ -1,0 +1,35 @@
+{
+  "status": "concepts_rejected",
+  "pet_id": "JungleRedPanda",
+  "credits_used": 0,
+  "hosted_inference_calls": 0,
+  "candidates": [
+    {
+      "path": "concept-1042.png",
+      "seed": 1042,
+      "sha256": "c2a5a94611874ce48dc05ba5c732e1e17485e317f0a3f8cbfc8efde9ae7e95b5",
+      "seconds": 40.857969999313354,
+      "visual_qa": "rejected",
+      "reason": "Hind paws not visible; rear silhouette merges into seated body. Reject as reconstruction input."
+    },
+    {
+      "path": "concept-2042.png",
+      "seed": 2042,
+      "sha256": "b3f66b040fbadfa347c6d37bf6ce44c22bfd036d7a6bef4a375e627991e19c00",
+      "seconds": 29.036099672317505,
+      "visual_qa": "rejected",
+      "reason": "Front paws raised and clasped above ground. Reject."
+    },
+    {
+      "path": "concept-3042.png",
+      "seed": 3042,
+      "sha256": "28bb4fea7f233856f9f4c8b3b1abcaf5ca6c1106d27a36dfba2be61668dfcfea",
+      "seconds": 28.026572465896606,
+      "visual_qa": "rejected",
+      "reason": "Many animals in collage; no isolated subject. Reject."
+    }
+  ],
+  "reviewer": "Codex visual inspection",
+  "comparison": "Compared with approved Ocelot front and bear front references",
+  "studio_connected": false
+}

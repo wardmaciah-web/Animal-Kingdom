@@ -1,6 +1,8 @@
 # Local concept stage
 
-Red Panda is the next original Jungle quadruped. Tapir is deferred: no more
+Red Panda's first three rendered concepts failed anatomy/isolation review;
+their exact prompt and previews are preserved in `audits/red-panda-concepts-006`.
+Coati is the next bounded concept trial (`concept_coati.json`). Tapir is deferred: no more
 fresh inference after three reconstructions and 22 saved trials. At most one
 saved-mesh supporting-surface-normal diagnostic remains; it does not qualify
 Tapir for import. The approved Ocelot recipe/assets stay unchanged.
@@ -22,13 +24,18 @@ Dot-source `runtime-env.ps1` before every invocation. Run
 the pinned FP16 components and checks the published LFS SHA256 digests.
 Downloads do not allocate an AI model. Weights/temp/cache remain on D:.
 
-Once the standard memory/VRAM gate passes, run `generate_concepts.py` using
+Once the standard memory/VRAM gate passes, run `run_concepts.py` using
 the concept environment, `--config concept_red_panda.json` and a NEW
 `--output D:/AnimalKingdom3D/outputs/red-panda-concepts-001` directory.
 The script checks hardware before importing PyTorch or loading weights and
 generates at most three candidates. Inspect all concepts against the actual
 bear and approved Ocelot references before selecting a TripoSR input.
 SDXL is text-conditioned here; references are not secretly fed into the model.
+
+The supervisor captures native stderr directly in `worker.log` and records
+worker exit codes, including native Windows crashes. This avoids treating
+progress output as a PowerShell terminating error after `runtime-env.ps1`.
+Each run uses a new directory; completed candidates survive a later failure.
 
 Reject wrong anatomy, small eyes, fused paws, cropped tail, plastic fur or
 incompatible proportions before expensive 3D work. Fresh TripoSR inference

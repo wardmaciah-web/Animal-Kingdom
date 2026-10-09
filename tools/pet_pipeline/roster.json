@@ -63,7 +63,7 @@
       "base_weight_kg": 6,
       "base_income": 74,
       "proposed_family_id": "Jungle_Shakeable_05",
-      "status": "concept_needed",
+      "status": "concept_qa_rejected",
       "model_asset_id": null,
       "glb": null,
       "registered": false
@@ -194,7 +194,7 @@
       "base_weight_kg": 7,
       "base_income": 130,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "local_concept_preparation",
+      "status": "concept_qa_rejected",
       "model_asset_id": null,
       "glb": null,
       "registered": false

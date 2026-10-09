@@ -1,0 +1,23 @@
+{
+  "pet_id": "JungleRedPanda",
+  "species": "Red Panda",
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+  "seeds": [
+    1042,
+    2042,
+    3042
+  ],
+  "width": 1024,
+  "height": 1024,
+  "steps": 35,
+  "guidance_scale": 7.0,
+  "prompt": "Adorable baby red panda, stylized 3D game pet, huge rounded head, enormous glossy eyes, tiny muzzle, chubby body, rich sculpted fluffy rust-red fur, white cheeks, brown legs. Sitting, two separate front paws grounded, hind paws visible, bushy ringed tail beside body. Slight three-quarter view, full body, isolated white background, matte painterly fur, soft studio lighting.",
+  "negative_prompt": "multiple animals, collage, text, watermark, clothes, plastic, realistic photograph, human, biped, standing, raised front paws, missing legs, extra legs, merged paws, deformed eyes, small eyes, long snout, thin body, cropped feet, cropped ears, cropped tail, scenery, harsh shadows",
+  "style_references": [
+    "references/bear-front.jpg",
+    "references/approved-ocelot-front.png"
+  ],
+  "style_conditioning": "References guide prompt and mandatory visual comparison; base SDXL text-to-image does not ingest these reference images.",
+  "acceptance": "One concept must pass anatomy/style review before any TripoSR run. No automatic import or registration."
+}

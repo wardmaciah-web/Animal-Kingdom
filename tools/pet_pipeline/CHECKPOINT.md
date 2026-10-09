@@ -1,3 +1,35 @@
+# Resume checkpoint - 2026-10-08 evening
+
+Verified origin/main and local main at af7a2397aa6fc4a821047e78eecb824d6340565a,
+a descendant of requested 8cc744d. Continued existing uncommitted concept work.
+Approved Ocelot GLB SHA256 remains d00c5ceb074ec9e67ec8eeaaae7a358d7cc4f4dd04e9b475958eada868b67cc7.
+No src/ changes; Meadow/Forest and future ContentReady gates preserved.
+
+Free local SDXL now completed two batches: Red Panda 006 and Coati 001, three
+1024px concepts each. All SIX fail visual review (raised/hidden paws, missing tail,
+or multiple subjects). Exact prompts, seeds, hashes and previews are in audits.
+No second pet is approved, reconstructed, imported or registered. Count remains
+1/250. Do not promote these images or resume rejected Tapir trials.
+
+Pipeline improvements: retained CUDA checkpoint loading workaround and encoder
+release from interrupted work; supervised stderr/exit recording; stage records;
+reject truncated prompts; release candidate/cache allocations between images.
+Coati supervisor ran end-to-end with exit 0. Fifteen tests pass. All twenty local
+SDXL files match pinned SHA256 hashes. No paid inference. A transient git malloc
+failure occurred during concurrent generation; serialize memory-heavy operations.
+No workers remain running at checkpoint. Studio MCP returned no instances twice;
+Studio import, Rojo connection, and tree/ownership QA remain unavailable.
+
+Next: controlled-pose original concept that visibly passes isolation, four paws,
+matte sculpted fur and expressive-eye review; then fresh TripoSR and four-view
+mesh QA. Prompt-only SDXL has not established acceptable repeatable anatomy.
+Reconnect Real_Animal_K (place 132313449035787, universe 10764288431) before import;
+verify Ocelot template/texture and Orchidwood tree shake, authoritative reward UID,
+weight/rarity, inventory ownership, equip/follower and save/rejoin behavior in an
+isolated Studio session. Keep future biomes locked; never publish the experience.
+
+---
+
 # Implementation checkpoint — 2026-10-08
 
 ## Bounded retries and next species
