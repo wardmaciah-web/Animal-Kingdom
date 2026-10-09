@@ -1,0 +1,43 @@
+{
+  "blender": "4.5.3 LTS",
+  "reopened_glb": true,
+  "uv_layers": [
+    1,
+    1
+  ],
+  "export_triangles": 23500,
+  "images": [
+    {
+      "name": "clean-basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "has_data": true
+    },
+    {
+      "name": "fur-normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "has_data": true
+    },
+    {
+      "name": "clean-basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "has_data": true
+    }
+  ],
+  "original_files_modified": false,
+  "visual_approval": "pending Studio",
+  "comparison": {
+    "ocelot_height": 2.8,
+    "red_panda_height": 2.8,
+    "lighting": "same saved neutral scene",
+    "black_bear": "screenshots only; matched Studio comparison outstanding"
+  }
+}

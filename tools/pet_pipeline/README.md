@@ -4,6 +4,16 @@ This packages the approved free Ocelot's TripoSR and Blender process. Original
 scripts remain in `preserved/`; source and weights are hash-pinned. Original pets
 and the approved GLB are inputs for comparison and are never overwritten.
 
+For the accepted Red Panda geometry, use the texture-only checkpoint described in
+`CHECKPOINT.md`; do not rerun generation or `refine_saved_mesh.py`. Its Blender
+worker `workers/clean_saved_red_panda.py --source <saved-review> --output <new-review>`
+reads the saved `preview-scene.blend`, repairs side/back pigment in surface space,
+bakes a portable atlas and asserts unchanged geometry, UVs and transforms. The
+output directory must be new. `workers/verify_texture_export.py --review <new-review>
+--ocelot <approved-ocelot.glb>` reopens the actual GLB, checks embedded textures,
+renders four views and renders the Ocelot under the same neutral rig. These are
+local checks; Studio art approval and ownership/persistence QA are still required.
+
 Run from the project directory:
 
 ```powershell

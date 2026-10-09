@@ -1,0 +1,141 @@
+{
+  "source": "D:\\AnimalKingdom3D\\outputs\\red-panda-polish-003\\review",
+  "geometry_and_uv_unchanged": true,
+  "before": {
+    "JungleRedPanda_Body": {
+      "vertices": 9002,
+      "polygons": 18000,
+      "geometry_sha256": "41a1bfb7bfbae5b18ae7fc2d98f545a704757c6137e0f06b6926ba61034e65ea",
+      "uv_sha256": "f5f004c3553961a80bb8df83b1917e0c4e5cfaa2581e5f06097ecc32e8c9145b",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "JungleRedPanda_SculptedFur": {
+      "vertices": 6600,
+      "polygons": 5500,
+      "geometry_sha256": "9b6fee437ffaf80f758fb43e4de6eaad0ba8f416cb0db6495ad98ccd3579f44b",
+      "uv_sha256": "5f0a50e23a3b2c0d4e1797f59a869df09f5d9991b428a242b2a37f5b3c301ad5",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "after": {
+    "JungleRedPanda_Body": {
+      "vertices": 9002,
+      "polygons": 18000,
+      "geometry_sha256": "41a1bfb7bfbae5b18ae7fc2d98f545a704757c6137e0f06b6926ba61034e65ea",
+      "uv_sha256": "f5f004c3553961a80bb8df83b1917e0c4e5cfaa2581e5f06097ecc32e8c9145b",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "JungleRedPanda_SculptedFur": {
+      "vertices": 6600,
+      "polygons": 5500,
+      "geometry_sha256": "9b6fee437ffaf80f758fb43e4de6eaad0ba8f416cb0db6495ad98ccd3579f44b",
+      "uv_sha256": "5f0a50e23a3b2c0d4e1797f59a869df09f5d9991b428a242b2a37f5b3c301ad5",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "blender": "4.5.3 LTS",
+  "glb_sha256": "a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd",
+  "visual_approval": "pending",
+  "studio_qa": "not tested",
+  "decorative_fur_cast_shadow": false
+}

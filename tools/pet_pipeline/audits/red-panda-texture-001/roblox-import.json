@@ -1,0 +1,25 @@
+{
+  "pet_id": "JungleRedPanda",
+  "biome": "Jungle",
+  "species": "Red Panda",
+  "glb_path": "D:\\AnimalKingdom3D\\outputs\\red-panda-texture-001\\review\\pet.glb",
+  "glb_sha256": "a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd",
+  "review_folder": "Workspace.AK_PetFactoryReview.Jungle",
+  "asset_folder": "ReplicatedStorage.PetAssets.JungleRedPanda",
+  "native_import": {
+    "anchored": true,
+    "set_pivot_to_scene_origin": true,
+    "upload_to_roblox": true,
+    "import_as_package": false
+  },
+  "model_asset_id": null,
+  "mesh_asset_ids": [],
+  "texture_asset_ids": [],
+  "requirements": [
+    "visual QA acceptance",
+    "durable native importer receipt",
+    "fresh reinsert and texture load",
+    "Inventory/Held/Followers/Sanctuary/Garden/Index/variants/70kg QA before biome release"
+  ],
+  "game_publication_authorized": false
+}

@@ -1,4 +1,36 @@
-# Latest second-pet checkpoint - 2026-10-08, completed local trials
+# Latest second-pet checkpoint - 2026-10-08, texture-only repair
+
+Resume `audits/red-panda-texture-001/pet.glb` (same accepted geometry).
+SHA256: a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd.
+Editable Blender scene: `audits/red-panda-texture-001/preview-scene.blend`.
+Runtime output: D:/AnimalKingdom3D/outputs/red-panda-texture-001/review.
+DO NOT regenerate or adjust the user-approved geometry, tail or sitting pose.
+
+Blender surface-space pigment repair removed the neural white patches and colored
+speckles from the sides/back. Retained original front facial pigment, expressive
+eyes, normal map, fur geometry and UVs. All exported vertices/faces/UVs are exactly
+identical to checkpoint 528f6b5 (maximum vertex delta 0). Both grounded-paw checks,
+embedded 2048 color/normal maps, 23,500 triangle budget and Blender reopen pass.
+19 existing tests pass. Four original-scene and four reopened-export views saved.
+Approved Ocelot rendered with the same neutral lighting at nominal 2.8 height;
+original black bear screenshots reviewed. Ocelot file hash is unchanged.
+
+Local side/back texture repair passes inspection. This is NOT final art acceptance:
+front retains some small inherited dark flecks; fur is less sculptural than Ocelot.
+Matched black bear comparison, overall art acceptance and all live gameplay QA
+remain outstanding. Studio MCP reports no connected instances on repeated checks.
+No import/registration/ownership test has happened for this candidate. Notion stage
+is Studio Testing / Partial. Next: connect Real_Animal_K, import this exact GLB to
+Workspace.AK_PetFactoryReview.Jungle, set decorative fur CastShadow=false, compare
+all three pets at matching scale/lighting. Only after Studio art approval, confirm
+Sunvine family mapping (proposed Jungle_Shakeable_04, Epic, 7kg, income130), then
+register the reward and test tree grants, UID ownership, Held, followers, Sanctuary,
+save/rejoin and old-pet regressions. Keep all ContentReady gates unchanged.
+
+No src changes, Meadow/Forest edits, new inference, paid tools or game publication.
+Registered count stays 1/250. Remaining production waits for second-species QA.
+
+## Previous checkpoint - completed local trials
 
 Design-first workflow is implemented. Preserve the selected guided Red Panda
 2051; stop discarding designs for minor paw pose. The latest real review model is

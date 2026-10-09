@@ -1,0 +1,32 @@
+{
+  "glb_sha256": "a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd",
+  "reviewer": "Codex four-view visual inspection",
+  "decision": "texture_repair_passed_pending_studio_art_review",
+  "notes": [
+    "Sides/back no longer show the prior white projection patches and colored speckles.",
+    "Geometry, UVs and original facial identity retained; no regeneration.",
+    "Original and reopened export inspected; matching neutral Ocelot render and original black bear screenshots compared.",
+    "Front retains small inherited dark flecks; fur remains less sculptural than Ocelot. Do not call full art-style acceptance from these local renders.",
+    "Studio unavailable: cannot yet import, compare all three native models, register or test gameplay."
+  ],
+  "checks": {
+    "side_back_texture_consistency": true,
+    "geometry_preserved": true,
+    "grounded_paw_numeric_checks": true,
+    "expressive_eyes_preserved": true,
+    "ocelot_same_neutral_lighting": true,
+    "black_bear_same_lighting": null,
+    "studio_fur_quality": null,
+    "final_art_style": null,
+    "tree_reward": null,
+    "ownership": null,
+    "Held": null,
+    "followers": null,
+    "Sanctuary": null,
+    "persistence": null
+  },
+  "studio_connections": [],
+  "registered": false,
+  "production_count": 1,
+  "next_action": "Connect canonical Real_Animal_K and import exact GLB to Jungle review folder; final style acceptance before reward registration or remaining production."
+}

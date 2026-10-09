@@ -1,0 +1,13 @@
+{
+  "species": "Red Panda",
+  "pet_id": "JungleRedPanda",
+  "status": "texture_corrected_awaiting_studio",
+  "parent_checkpoint": "528f6b5a0d955cddb2f68691dfd29dd39baede03",
+  "source_glb_sha256": "abaf670650c3e6155662c230ea74bd81685c915ca6ca017bc38cdec13679e9e8",
+  "glb_sha256": "a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd",
+  "new_inference_calls": 0,
+  "paid_tools_used": false,
+  "studio_imported": false,
+  "registered": false,
+  "game_published": false
+}
