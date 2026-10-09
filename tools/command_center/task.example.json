@@ -1,0 +1,13 @@
+{
+  "task_id": "command-center-smoke",
+  "revision": 1,
+  "source": "chatgpt",
+  "priority": 10,
+  "approval_class": "safe-edit",
+  "allowed_paths": ["documentations/command-center-tasks/smoke.txt"],
+  "notion_page": "3f4d6658-7369-8105-8222-ca8aa367a6f7",
+  "instructions": "Create the allowed text file containing exactly Animal Kingdom command center smoke test passed. followed by a newline.",
+  "acceptance": [{"path": "documentations/command-center-tasks/smoke.txt", "equals": "Animal Kingdom command center smoke test passed.\n"}],
+  "tests": ["text-contract", "git-diff-check"],
+  "requires_studio": false
+}

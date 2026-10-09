@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-09",
+  "controller_tests": {
+    "command": "python -m unittest tools.command_center.test_bridge -v",
+    "passed": 26
+  },
+  "cli_version": "0.162.0",
+  "live_demo": {
+    "task_id": "command-center-smoke",
+    "revision": 3,
+    "issue": 3,
+    "notion_page": "3f4d6658-7369-8105-8222-ca8aa367a6f7",
+    "state": "done",
+    "summary": "Allowlisted changes committed and pushed to a task branch; checks passed.",
+    "files": [
+      "documentations/command-center-tasks/smoke.txt"
+    ],
+    "commit": "31c141be7d04eb9c28016393b0fa641b606a6d5b",
+    "branch": "akcc/command-center-smoke/r3",
+    "tests": [
+      {
+        "test": "text-contract",
+        "path": "documentations/command-center-tasks/smoke.txt",
+        "passed": true
+      },
+      {
+        "test": "git-diff-check",
+        "passed": true
+      }
+    ],
+    "studio_status": "not required for this text task",
+    "asset_validation": "not run; no model or texture edits allowed",
+    "blockers": [],
+    "next_action": "Task branch reviewed. Merge remains a separate human action.",
+    "credits": "No paid generation used; Codex uses existing login",
+    "confidence": "automated checks passed; human review pending",
+    "reviewer_decision": "approved",
+    "base_commit": "408a970325917c5a07ba2a1e670b9f19a56b1f9a"
+  },
+  "notion_delivery": "verified through authenticated deterministic Codex connector; existing handoff preserved",
+  "dashboard": {
+    "html_status": 200,
+    "authenticated_status": 200,
+    "authenticated_stop": 204,
+    "unauthenticated_status_test": 401,
+    "cross_origin_control_test": 403,
+    "stopped_cleanly": true,
+    "token_storage": "Windows current-user DPAPI; plaintext legacy token inactive"
+  },
+  "sandbox_canary": {
+    "write_attempt": "denied by read-only sandbox",
+    "file_exists": false
+  },
+  "deduplication": {
+    "unchanged_revision_after_success": "polled without another Codex execution",
+    "stored_revisions": 3
+  },
+  "startup": {
+    "installed": false,
+    "reason": "Explicit user opt-in and separately provisioned repository-scoped GitHub credential are required before unattended installation"
+  },
+  "preservation": {
+    "approved_pet_assets": "not edited",
+    "jungle_tree_mappings": "not edited",
+    "biome_locks": "not edited",
+    "main_user_changes": "preserved",
+    "roblox_publication": "not attempted"
+  },
+  "production_issue_2": "not executed",
+  "failed_attempts": [
+    {
+      "revision": 1,
+      "reason": "Notion RPC tool-name mismatch; corrected and verified"
+    },
+    {
+      "revision": 2,
+      "reason": "Sparse clone empty index; corrected and covered by actual Git fixture test"
+    }
+  ],
+  "review_loop": "Authenticated commit-bound review observed; smoke task moved to done without merge",
+  "limitations": [
+    "Default edit scope is documentation-only; game/pet-pipeline paths and arbitrary runtime test commands require separate reviewed policy expansion",
+    "Task Scheduler installation and a real user-logon cycle have not been performed",
+    "Studio is outside this worker; no gameplay or pet-production execution was attempted"
+  ]
+}
