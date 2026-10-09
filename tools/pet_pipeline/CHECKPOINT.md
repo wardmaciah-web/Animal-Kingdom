@@ -1,4 +1,46 @@
-# Latest second-pet checkpoint - 2026-10-08, texture-only repair
+# Latest checkpoint - Red Panda imported, pet QA passed, registered
+
+Resume from the Git commit containing `audits/red-panda-studio-001/`.
+DO NOT regenerate Red Panda. Native model: `src/ReplicatedStorage/PetAssets/JungleRedPanda.rbxm`.
+Saved GLB remains a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd.
+Studio review: `Workspace.AK_JunglePetReview.RedPandaTextureReview` (existing Jungle review root).
+Canonical template: `ReplicatedStorage.PetAssets.JungleRedPanda`.
+
+Native import, shared-lighting 2.8-stud comparison with original black bear and
+approved Ocelot, face/front/side/back inspection passed. Red Panda has softer fur
+than the references, with no prior side/back white patches. Body normal texture
+and cleaned color bindings retained. Body casts shadows; decorative fur does not.
+Source model is engine-serialized RBXM, roundtripped with two real MeshParts.
+
+Actual runtime Script tests (not plugin-context Knit copies) passed UID uniqueness,
+foreign/forged UID rejection, Held/Inventory movement, client UI Inventory and
+equip, follower creation, owned Sanctuary placement, durable datastore read and
+full stop/start rejoin. Both UIDs, locations and weights survived; follower and
+Sanctuary display reappeared. Tests used separate `AKPetFactoryQA_RedPanda_21b30d9`
+store; production OriginalData1 source and mock attribute restored afterward.
+Temporary QA definitions restored before final registration; no QA scripts remain.
+
+Registered Epic Red Panda in Sunvine / Jungle_Shakeable_04: BaseWeight7,
+BaseIncome130, DropWeight4. Note live Studio uses its existing absolute 0.01-70kg
+weight policy; BaseWeight7 is reference metadata, not a minimum rolled weight.
+Existing live weight/HUD code differs from this checkout and was preserved.
+Source changes are only Red Panda definition, Sunvine membership and real RBXM.
+Ocelot, Meadow, Forest, all existing assets and ContentReady gates unchanged.
+Registered production count: 2/250. Next bounded candidate: JungleCoati guided
+concept using original bear/Ocelot references; no mass auto-acceptance.
+
+Remaining BIOME QA: no physical trees currently map to Sunvine in the loaded
+place. Correct reward pool is ready, but a real Sunvine tree payout cannot be
+claimed tested. An in-range Jungle tree interaction returned COMING SOON and
+changed neither coins nor pets. Jungle/future biomes stay locked. Existing HUD
+Shop overlaps part of Pets navigation; its unobscured right edge opens Inventory
+and was tested. Existing ActivityCoordinator startup error on a fresh QA profile
+was observed; no related source was modified. These are not pet-model failures
+or full-game QA. Direct asynchronous normal-map preload did not complete before
+the test session ended; bound normal-map rendering was visually reviewed instead.
+No paid calls or Roblox experience publication.
+
+## Previous checkpoint - 2026-10-08, texture-only repair
 
 Resume `audits/red-panda-texture-001/pet.glb` (same accepted geometry).
 SHA256: a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd.

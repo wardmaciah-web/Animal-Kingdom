@@ -1,0 +1,53 @@
+{
+  "pet_id": "JungleRedPanda",
+  "decision": "pet_visual_and_gameplay_qa_passed",
+  "reviewer": "Codex Studio inspection and actual runtime Scripts",
+  "source_checkpoint": "21b30d9b8e4bb7f51e24c349b3803b090caf4962",
+  "glb_sha256": "a9388ee117900de354169310c9396e7697009e5e5e26c410a9672db800a791fd",
+  "rbxm_sha256": "63dad8b51197e90aa96a8043fb8adb3737567157a79bcc0cf8607da45813e029",
+  "checks": {
+    "single_original_red_panda": true,
+    "reference_comparison_same_scale_lighting": true,
+    "fur_side_back_consistent": true,
+    "expressive_face_eyes": true,
+    "sitting_pose": true,
+    "paws_grounded": true,
+    "native_textured_import": true,
+    "engine_rbxm_roundtrip": true,
+    "inventory_ui": true,
+    "held_ui_equip": true,
+    "follower_client_model": true,
+    "ownership_lookup": true,
+    "foreign_uid_rejected": true,
+    "forged_equip_rejected": true,
+    "distinct_UIDs_match_UniquePetId": true,
+    "sanctuary_owned_slot": true,
+    "datastore_write_and_independent_read": true,
+    "stop_start_rejoin_same_UIDs_weights_locations": true,
+    "client_follower_and_sanctuary_restored": true,
+    "normal_profile_source_mock_restored": true,
+    "jungle_content_gate": true,
+    "reward_pool_membership": true
+  },
+  "family": "Jungle_Shakeable_04",
+  "rarity": "Epic",
+  "base_weight_reference_kg": 7,
+  "base_income": 130,
+  "drop_weight": 4,
+  "registered": true,
+  "biome_released": false,
+  "game_published": false,
+  "paid_calls": 0,
+  "remaining": [
+    "Physical Sunvine trees currently unmapped: no successful world Sunvine payout claimed.",
+    "Existing live weight/HUD code differs from checkout; preserved. HUD Shop overlaps left part of Pets; unobscured right edge used for Inventory UI QA.",
+    "Existing ActivityCoordinator startup error on fresh profile observed, outside pet changes.",
+    "Direct normal-map PreloadAsync did not finish in test window; rendering and native binding reviewed."
+  ],
+  "notes": [
+    "Softer fur finish than bear/Ocelot accepted within rounded plush style; original Red Panda geometry never regenerated.",
+    "QA used isolated AKPetFactoryQA_RedPanda_21b30d9 datastore, never production profile writes.",
+    "OriginalData1 configuration and AKUseMockProfiles=true restored.",
+    "Runtime tests must run via transient Script: MCP plugin-context require creates separate Knit module state."
+  ]
+}

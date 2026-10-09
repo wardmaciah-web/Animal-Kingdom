@@ -194,11 +194,28 @@
       "base_weight_kg": 7,
       "base_income": 130,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "texture_corrected_awaiting_studio",
+      "status": "registered_studio_pet_qa_passed_biome_locked",
       "model_asset_id": null,
-      "glb": null,
-      "registered": false,
-      "review_glb": "audits/red-panda-texture-001/pet.glb"
+      "glb": "audits/red-panda-texture-001/pet.glb",
+      "registered": true,
+      "review_glb": "audits/red-panda-texture-001/pet.glb",
+      "roblox_template": "src/ReplicatedStorage/PetAssets/JungleRedPanda.rbxm",
+      "studio_evidence": "audits/red-panda-studio-001",
+      "drop_weight": 4,
+      "production_template": "ReplicatedStorage.PetAssets.JungleRedPanda",
+      "confirmed_family_id": "Jungle_Shakeable_04",
+      "model_assets": [
+        {
+          "mesh_id": "101125666523290",
+          "color_map": "91899617902182",
+          "normal_map": "86440326379848",
+          "texture_id": "91899617902182"
+        },
+        {
+          "mesh_id": "114629416154775",
+          "texture_id": "91899617902182"
+        }
+      ]
     },
     {
       "pet_id": "JungleAyeAye",
