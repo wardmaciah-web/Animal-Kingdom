@@ -2,7 +2,7 @@
   "date": "2026-10-09",
   "controller_tests": {
     "command": "python -m unittest tools.command_center.test_bridge -v",
-    "passed": 26
+    "passed": 27
   },
   "cli_version": "0.162.0",
   "live_demo": {
@@ -82,5 +82,11 @@
     "Default edit scope is documentation-only; game/pet-pipeline paths and arbitrary runtime test commands require separate reviewed policy expansion",
     "Task Scheduler installation and a real user-logon cycle have not been performed",
     "Studio is outside this worker; no gameplay or pet-production execution was attempted"
-  ]
+  ],
+  "notion_rich_text_roundtrip": {
+    "consecutive_updates": 2,
+    "controller_report_sections": 1,
+    "legacy_duplicate_sections": 0,
+    "original_instructions_preserved": true
+  }
 }

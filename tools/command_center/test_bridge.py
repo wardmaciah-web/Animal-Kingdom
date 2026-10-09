@@ -11,7 +11,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 from tools.command_center.bridge import (ApprovalRequired, Blocked, Lock, State,
-    Worker, Connectors, apply_proposal, clean_environment, dashboard, dashboard_token, git, parse_task, run_command, run_tests, safe_path)
+    Worker, Connectors, apply_proposal, clean_environment, dashboard, dashboard_token, git, handoff_prefix, parse_task, run_command, run_tests, safe_path)
 from tools.command_center.codex_rpc import NotionRPC, ConnectorError
 
 HERE = Path(__file__).parent
@@ -363,6 +363,11 @@ class BridgeTests(unittest.TestCase):
             self.assertNotIn('mock-not-a-real-secret', ' '.join(args))
             self.assertEqual(environment['GIT_CONFIG_KEY_0'], 'http.https://github.com/wardmaciah-web/Animal-Kingdom.extraHeader')
             self.assertTrue(environment['GIT_CONFIG_VALUE_0'].startswith('Authorization: Basic '))
+
+    def test_notion_rich_text_roundtrip_replaces_only_own_report(self):
+        for value in ['Keep instructions.\n\n[Command Center report]\nold', r'Keep instructions.<br><br>\\[Command Center report\\]<br>old', 'Keep instructions.<br><br>AKCC_REPORT_V1<br>old<br><br>AKCC_REPORT_V1<br>duplicate']:
+            self.assertEqual(handoff_prefix(value), 'Keep instructions.')
+        self.assertEqual(handoff_prefix('Original [reference](https://example.com).'), 'Original [reference](https://example.com).')
 
 
 if __name__ == '__main__':

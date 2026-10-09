@@ -50,6 +50,14 @@ def digest(value):
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
+def handoff_prefix(value):
+    """Notion fetch serializes rich-text newlines as <br> and escapes brackets."""
+    text = str(value)
+    marker = re.search(r"AKCC_REPORT_V1|\\*\[Command Center report\\*\]", text)
+    prefix = text[:marker.start()] if marker else text
+    return re.sub(r"(?:(?:<br\s*/?>)|\s)+$", "", prefix)
+
+
 def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -282,8 +290,8 @@ class Connectors:
                     # our own previous report section in these shared handoff fields.
                     for key in ("Codex Handoff", "Next Action", "Studio Evidence"):
                         if key in values:
-                            original = str(properties.get(key, "")).split("\n\n[Command Center report]")[0]
-                            values[key] = original + "\n\n[Command Center report]\n" + values[key]
+                            original = handoff_prefix(properties.get(key, ""))
+                            values[key] = original + "\n\nAKCC_REPORT_V1\n" + values[key]
                     updated = rpc.tool("notion.notion-update-page", {"page_id": page, "command": "update_properties", "properties": values, "allow_async": False})
                     if "async_task" in json.dumps(updated):
                         raise Blocked("Notion update is asynchronous; verification pending")
@@ -500,6 +508,10 @@ class Worker:
                 task, report = json.loads(row["payload"]), json.loads(row["report"])
                 if self.remote.reviewer_decision(task, report) == "approved":
                     report.update(state="done", reviewer_decision="approved", next_action="Task branch reviewed. Merge remains a separate human action.")
+                    if report.get("dashboard"):
+                        status = json.loads(report["dashboard"])
+                        status.update(state="done", heartbeat=time.time())
+                        report["dashboard"] = json.dumps(status)
                     self.state.update(task, "done", report)
                     self.queue_report(task, report, "reviewed")
         rejections = []
