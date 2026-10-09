@@ -1,0 +1,14 @@
+{
+  "selected_seed": 2051,
+  "decision": "approved_for_reconstruction",
+  "reviewer": "Codex visual inspection",
+  "mandatory_comparison": [
+    "original black bear front and side",
+    "approved Ocelot front"
+  ],
+  "notes": "Single distinct stylized red-panda design; broad white cheek mask, rust fur, rounded ears, large glossy eyes, compact body and full tail. Minor paw placement allowed for Blender correction. Tail stripe definition needs material review. No final mesh or Studio approval.",
+  "other_candidates": {
+    "1051": "Blue eye mask and generated footer text weaken design/species clarity.",
+    "3051": "Valid alternative design; 2051 has stronger expressive eyes."
+  }
+}

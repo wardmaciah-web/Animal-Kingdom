@@ -1,3 +1,29 @@
+# Design-first / Blender-repair checkpoint - 2026-10-08
+
+User revised the workflow after 36d17ce: AI designs face, fur, proportions and
+species; Blender repairs minor sitting/paw/hind-leg issues. Collages, severe
+anatomy distortion and wrong species remain rejected. Final mesh and Studio
+QA remain mandatory. Focus on ONE excellent second Jungle pet.
+
+Added optional soft-selection Blender pose operations and saved-mesh refinement
+runner. Eighteen tests pass. Approved Ocelot recipe/GLB and all src/ are unchanged.
+Red Panda designs 1042 and 2042 were reassessed as reconstruction-eligible under
+the new gate. Two fresh reconstructions and two Blender repairs are preserved
+in audits/red-panda-blender-repair. The first reconstruction is badly damaged;
+the frontal one is numerically valid but not art-approved. The first repair
+stretched the chin/chest; the narrowed repair preserves all 51,451 upper-body
+vertices exactly but still flattens the forelegs. None is approved for import.
+
+Free local SDXL img2img now explicitly uses the Ocelot render for design guidance,
+with black bear comparison still mandatory. Three new Red Panda designs rendered;
+2051 selected for stronger face/eyes/species identity, with tail material detail
+still requiring review. Its source is audits/red-panda-guided-concepts-001.
+Fresh reconstruction 003 is running on D: at this checkpoint. Resume its manifest
+rather than starting another inference. No second pet registered; remains 1/250.
+Studio MCP currently reports no connected instances. No paid calls or game publish.
+
+---
+
 # Resume checkpoint - 2026-10-08 evening
 
 Verified origin/main and local main at af7a2397aa6fc4a821047e78eecb824d6340565a,

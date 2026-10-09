@@ -1,0 +1,8 @@
+{
+  "status": "not_approved",
+  "notes": "Rejected final art: upper body preserved exactly, but forelegs flattened/stretched and tail indistinct; numeric pass is insufficient.",
+  "glb_sha256": "f6f6664d08f411dc91d76711b160573e8f11ed0bb207902f393d4c2a3d768007",
+  "source_run": "D:\\AnimalKingdom3D\\outputs\\red-panda-pose-repair-002",
+  "final_art_approved": false,
+  "studio_verified": false
+}

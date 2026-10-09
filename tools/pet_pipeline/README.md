@@ -12,7 +12,7 @@ Run from the project directory:
 
 The launcher defaults to `D:/AnimalKingdom3D`, configures the parent Python process
 and all child stages to keep temporary files and caches there, and creates a new
-timestamped output directory. Use `-Recipe tapir` for the second-species test,
+timestamped output directory. Use `-Recipe red-panda` for the second-species test,
 `-RuntimeRoot` to relocate, and `-Output` to select a new output directory.
 Direct Python invocation accepts `--runtime-root` or `AK_3D_ROOT`, defaulting to D:.
 The generation gate requires 4 GiB free RAM, 6 GiB free system commit, 7 GiB free
@@ -32,6 +32,10 @@ and technical validation. Each stage records logs, duration and exit status.
 Failures remain on disk as evidence. A passing technical result is not art approval.
 
 Both the original black bear and approved Ocelot are mandatory visual references.
+Judge AI concepts primarily by original species design, face, fur and proportions.
+Allow repairable pose defects, including a slightly raised paw. Correct sitting
+pose and limb placement in Blender on the actual reconstruction before final QA;
+see `LOCAL_CONCEPTS.md`. Reject collages, wrong species and severe distortions.
 Normal animals require large expressive eyes, rounded heads, compact chubby bodies,
 rich stylized fur, matte surfaces, short paws and a seated pose with both front paws
 forward and grounded. Scaled or armored species retain the same cute proportions.

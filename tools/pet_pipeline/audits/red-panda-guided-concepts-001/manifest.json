@@ -1,0 +1,37 @@
+{
+  "status": "concepts_pending_visual_qa",
+  "pet_id": "JungleRedPanda",
+  "credits_used": 0,
+  "hosted_inference_calls": 0,
+  "candidates": [
+    {
+      "path": "concept-1051.png",
+      "seed": 1051,
+      "sha256": "156c9c47a0c007a26d86ad258506fb7af08cef78967f25a6fe94cba18b9aba4a",
+      "seconds": 33.68689846992493,
+      "visual_qa": "pending"
+    },
+    {
+      "path": "concept-2051.png",
+      "seed": 2051,
+      "sha256": "4b94142caab5e3843c07dccc227f68f768b090fb865e3984f2324b3291e28239",
+      "seconds": 31.413203716278076,
+      "visual_qa": "pending"
+    },
+    {
+      "path": "concept-3051.png",
+      "seed": 3051,
+      "sha256": "a10d53537ee97df8778f2e604b1d41fd952c9dc011010e8a2bd8780f8f40e3b6",
+      "seconds": 32.49473834037781,
+      "visual_qa": "pending"
+    }
+  ],
+  "design_reference": {
+    "path": "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png",
+    "sha256": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b",
+    "strength": 0.72
+  },
+  "active_seed": 3051,
+  "worker_exit_code": 0,
+  "elapsed_seconds": 132.32799999999406
+}

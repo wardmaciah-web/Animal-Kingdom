@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "pet_id": "JungleRedPanda",
+  "pet_name": "Jungle Red Panda",
+  "biome": "Jungle",
+  "species": "Red Panda",
+  "concept_image": "../audits/red-panda-concepts-006/concept-2042.png",
+  "style_references": [
+    "../references/bear-front.jpg",
+    "../references/bear-side.jpg",
+    "../references/approved-ocelot-front.png"
+  ],
+  "concept_preparation": {
+    "background_removal": "rembg"
+  },
+  "target_dimensions": {
+    "height": 2.8,
+    "width_max": 3.5,
+    "depth_max": 3.5
+  },
+  "generation": {
+    "seed": 42,
+    "foreground_ratio": 0.85,
+    "mc_resolution": 256,
+    "renderer_chunk": 4096
+  },
+  "texture": {
+    "resolution": 2048,
+    "query_chunk": 8192,
+    "roughness": 0.85,
+    "projection": {
+      "enabled": true,
+      "padding": 8,
+      "normal_start": 0.15,
+      "normal_range": 0.6
+    }
+  },
+  "refinement": {
+    "reference_height": 2.8,
+    "yaw_degrees": -90,
+    "weld_distance": 1e-05,
+    "smooth_factor": 0.3,
+    "smooth_iterations": 2,
+    "body_triangle_budget": 18000,
+    "grounding": {
+      "upper": 0.13,
+      "cut": 0.045
+    },
+    "fur": {
+      "enabled": false,
+      "count": 1100,
+      "attempts": 4300,
+      "minimum_height": 0.3,
+      "outward_flow": 0.35,
+      "length": [
+        0.055,
+        0.1
+      ],
+      "width_ratio": [
+        0.23,
+        0.33
+      ],
+      "root_inset": 0.007,
+      "shoulder_height": 0.009,
+      "ridge_height": 0.019,
+      "tip_height": 0.003,
+      "exclusions": [
+        {
+          "normal_y_max": -0.25,
+          "z_max": 2.5,
+          "abs_x_max": 1,
+          "z_min": 1.35
+        },
+        {
+          "normal_y_max": -0.4,
+          "abs_x_min": 0.5,
+          "z_min": 2.4
+        }
+      ]
+    }
+  },
+  "preview": {
+    "resolution": 700,
+    "samples": 16
+  },
+  "validation": {
+    "max_triangles": 26800,
+    "height_tolerance": 0.02,
+    "ground_tolerance": 0.001,
+    "reproduction_distance": 0.015,
+    "reproduction_ssim": 0.9,
+    "paw_regions": [
+      {
+        "name": "front_left",
+        "x": [
+          0,
+          0.45
+        ],
+        "z": [
+          0.3,
+          2
+        ]
+      },
+      {
+        "name": "front_right",
+        "x": [
+          0.5,
+          0.95
+        ],
+        "z": [
+          0.3,
+          2
+        ]
+      }
+    ]
+  },
+  "concept_review": {
+    "decision": "approved_for_reconstruction_with_pose_review",
+    "basis": "Revised gate: excellent rounded face, expressive eyes, chubby seated proportions and matte red-panda fur. Raised front paws are a Blender repair target. Inspect tail and all reconstructed anatomy before final approval.",
+    "mandatory_references": [
+      "black bear",
+      "approved Ocelot"
+    ],
+    "final_model_approved": false
+  }
+}

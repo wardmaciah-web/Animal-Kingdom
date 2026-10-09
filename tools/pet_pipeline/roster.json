@@ -194,7 +194,7 @@
       "base_weight_kg": 7,
       "base_income": 130,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "concept_qa_rejected",
+      "status": "blender_anatomy_refinement",
       "model_asset_id": null,
       "glb": null,
       "registered": false

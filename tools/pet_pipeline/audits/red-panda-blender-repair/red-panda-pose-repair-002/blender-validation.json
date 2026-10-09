@@ -1,0 +1,36 @@
+{
+  "blender": "4.5.3 LTS",
+  "source_triangles": 151784,
+  "export_triangles": 18000,
+  "pose_adjustments": [
+    {
+      "name": "front_paw_left_grounding",
+      "reason": "Restrict soft selection to low, forward paw surface; preserve head, neck and upper torso after rejecting the overly broad first repair.",
+      "affected_vertices": 1512,
+      "maximum_displacement": 0.37841775856849
+    },
+    {
+      "name": "front_paw_right_grounding",
+      "reason": "Restrict soft selection to low, forward paw surface; preserve head, neck and upper torso after rejecting the overly broad first repair.",
+      "affected_vertices": 1083,
+      "maximum_displacement": 0.37841775856849
+    }
+  ],
+  "reopened_glb": true,
+  "uv_layers": [
+    1
+  ],
+  "images": [
+    {
+      "name": "basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "has_data": true
+    }
+  ],
+  "normalization_height": 2.8,
+  "original_files_modified": false,
+  "visual_approval": "pending"
+}

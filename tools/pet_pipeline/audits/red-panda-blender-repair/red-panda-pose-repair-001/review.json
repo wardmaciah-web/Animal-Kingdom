@@ -1,0 +1,8 @@
+{
+  "status": "not_approved",
+  "notes": "Rejected broad deformation: chest/chin stretched despite numeric floor contact.",
+  "glb_sha256": "e2425e1c8a094b5dcb4392f871937e9663e8b96093d06c1b397cb1552fe52fd2",
+  "source_run": "D:\\AnimalKingdom3D\\outputs\\red-panda-pose-repair-001",
+  "final_art_approved": false,
+  "studio_verified": false
+}

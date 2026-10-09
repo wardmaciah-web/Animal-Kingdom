@@ -12,12 +12,12 @@
   "height": 1024,
   "steps": 35,
   "guidance_scale": 7.0,
-  "prompt": "One baby red panda sitting, four separate paws on ground, front legs straight. Full body, front view, white background. Huge round head, big glossy eyes, chubby body, rust-red sculpted matte fur, white cheeks, dark legs, bushy ringed tail beside body. Cute stylized 3D game character, soft light.",
-  "negative_prompt": "multiple animals, collage, text, watermark, clothes, plastic, realistic photograph, human, biped, standing, raised front paws, missing legs, extra legs, merged paws, deformed eyes, small eyes, long snout, thin body, cropped feet, cropped ears, cropped tail, scenery, harsh shadows",
+  "prompt": "One adorable baby red panda, full body, isolated white background. Huge rounded head, enormous glossy eyes, compact chubby body, beautifully sculpted matte fluffy fur. Rust red fur, white cheeks, dark legs, bushy ringed tail. Original polished 3D game pet, relaxed seated pose, soft studio lighting.",
+  "negative_prompt": "multiple animals, collage, text, watermark, clothes, plastic, human, extra limbs, badly distorted anatomy, deformed eyes, small eyes, cropped body, scenery",
   "style_references": [
     "references/bear-front.jpg",
     "references/approved-ocelot-front.png"
   ],
   "style_conditioning": "References guide prompt and mandatory visual comparison; base SDXL text-to-image does not ingest these reference images.",
-  "acceptance": "One concept must pass anatomy/style review before any TripoSR run. No automatic import or registration."
+  "acceptance": "Mandatory comparison with original black bear and approved Ocelot. Prioritize species identity, face, fur and proportions. Minor pose/paw issues receive Blender correction; reject collages, severe distortion and wrong species. Final mesh still needs four-view and Studio QA."
 }

@@ -1,0 +1,166 @@
+{
+  "pipeline_version": "1.0.0",
+  "pet_id": "JungleRedPanda",
+  "species": "Red Panda",
+  "biome": "Jungle",
+  "started_utc": "2026-10-09T04:37:22.707625+00:00",
+  "status": "technical_pass_pending_visual",
+  "credits_used": 0,
+  "roblox_asset_ids": [],
+  "stages": [
+    {
+      "name": "prepare",
+      "seconds": 2.5847604274749756,
+      "exit_code": 0
+    },
+    {
+      "name": "generate",
+      "seconds": 76.21539306640625,
+      "exit_code": 0
+    },
+    {
+      "name": "project",
+      "seconds": 4.289144515991211,
+      "exit_code": 0
+    },
+    {
+      "name": "refine",
+      "seconds": 20.378501176834106,
+      "exit_code": 0
+    },
+    {
+      "name": "validate",
+      "seconds": 0.9897661209106445,
+      "exit_code": 0
+    }
+  ],
+  "concept_sha256": "b3f66b040fbadfa347c6d37bf6ce44c22bfd036d7a6bef4a375e627991e19c00",
+  "config_sha256": "3fdf5f674ca51b8b2eba7b82429ae84c243b6ce75b049812a8f0b6eb805b8079",
+  "style_references": {
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-front.jpg": "777a8c38c8b675db104e538a3b5167d51a63e502833e29d664874625aec2e7e7",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\bear-side.jpg": "21494f75d7ac9bcc9b5e0be0dbb43d98c0f106b81b3935d1837db344eae57bfa",
+    "D:\\AnimalKingdom3D\\github-review\\tools\\pet_pipeline\\references\\approved-ocelot-front.png": "ac5f8d0c3780f71eff4f852888611eae3c68c9023a69e20d3ab3425c7e14fa7b"
+  },
+  "approved_model_sha256": null,
+  "original_geometry_source": "fresh TripoSR inference; no prior mesh input",
+  "visual_qa": "pending",
+  "studio_qa": "pending",
+  "artifacts": {
+    "concept-validation.json": {
+      "sha256": "5aaa7d439bb8690d7f9b5ce75d253dfd5b66bdfd2bac139794806ce589294a2c",
+      "bytes": 446
+    },
+    "concept.png": {
+      "sha256": "52b2b97d5ecefcbcd8167023e015e5ae5b12223822eed43201dbefbf16c5185b",
+      "bytes": 1003911
+    },
+    "effective-config.json": {
+      "sha256": "3fdf5f674ca51b8b2eba7b82429ae84c243b6ce75b049812a8f0b6eb805b8079",
+      "bytes": 3341
+    },
+    "generate.log": {
+      "sha256": "7af635221d2b1d454f472ad471dd1caf8b912bc186b4d07d08449be38480ad8a",
+      "bytes": 663
+    },
+    "preflight.json": {
+      "sha256": "47c0f37d6a0e6e186126a3df337cf5263fc6815c2f404305db981b68f44714be",
+      "bytes": 290
+    },
+    "prepare.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "project.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "refine.log": {
+      "sha256": "9c36e8686f85b2c4c4dd72af12f49b3fffe51385aaf6bea05f678693bd7b6025",
+      "bytes": 22859
+    },
+    "roblox-import.json": {
+      "sha256": "6df7cc314a305da27a9eb4ba2a7d53951f0d7b610ad6a751f44debdb6dc4ac3a",
+      "bytes": 891
+    },
+    "validate.log": {
+      "sha256": "6a5deace74da43ac326b3d66c8bcd5f9992f7159fddca2260fad38327cb4b9d0",
+      "bytes": 1076
+    },
+    "validation.json": {
+      "sha256": "97a31a3deedc8690265375e187a912c384c0e1aa2d9fe4c4c77c4546fcb2011f",
+      "bytes": 1601
+    },
+    "generated\\basecolor.png": {
+      "sha256": "e5d759d1b1ce2f94b02de7e1a0e7e034a79ae09c7eb3ae45c35a925c7b68e80a",
+      "bytes": 2446539
+    },
+    "generated\\generation.json": {
+      "sha256": "836773a354e85e9aeb885d838bd3ee9ef0f6395fb1a46de94916f6c6c5b5cda0",
+      "bytes": 440
+    },
+    "generated\\inference-input.png": {
+      "sha256": "4715a74395b3b99cfbe935c76fad0113e9049fd708b60e6608b28c8d7db38d15",
+      "bytes": 837169
+    },
+    "generated\\raw.glb": {
+      "sha256": "1ae92442b84d4cf847ef0a338829f22cd1b1c3c73b09d6f837df97e1dc5be8aa",
+      "bytes": 6621256
+    },
+    "generated\\scene-code.pt": {
+      "sha256": "9ddd28eb2c6241d5ff7f4c6b058b0731c4a9ee9ea20ed95ab3973ac14605c341",
+      "bytes": 984235
+    },
+    "generated\\source.ply": {
+      "sha256": "1481b99350d3048f05862ce4816701c9906da7bff2eaa49d972ada5efcb2e2de",
+      "bytes": 2888320
+    },
+    "projected\\basecolor.png": {
+      "sha256": "918dcc33bfe1efa4e63584134c52ff43e6970a62d63913c09840f5cf96fc1c0f",
+      "bytes": 3166644
+    },
+    "projected\\projected.glb": {
+      "sha256": "7fee49f8d8ee583333ba2a51da8769de8a850a8238d9e65150bcdfbc141958ba",
+      "bytes": 8751280
+    },
+    "projected\\projection.json": {
+      "sha256": "c05e07975cf1d8df8d7be2f49173c2a797cad1ec639ad4bee3514d7418b978e7",
+      "bytes": 247
+    },
+    "review\\back.png": {
+      "sha256": "f44e5fd3caab4421cbc896a1dcb982879361b8518e6ec3ae74ca4757e3172131",
+      "bytes": 435768
+    },
+    "review\\blender-validation.json": {
+      "sha256": "be3b2edb6e8ffed67063d5bca37a1257556a3b01cc6650aa07cab9089f85d557",
+      "bytes": 419
+    },
+    "review\\front.png": {
+      "sha256": "0e91fd4f7b42139f02b648a1945ec26ca8aef96258c2e5896bb1a4604d471dac",
+      "bytes": 553202
+    },
+    "review\\high-resolution.blend": {
+      "sha256": "dee66941de39f9b68252e2012c5977fe4337cdc0045278cf946d7eda93df2c19",
+      "bytes": 16476376
+    },
+    "review\\pet.blend": {
+      "sha256": "e802dac53735185f69fed5cc1acbbcd32344a38a6474c441158a81c98f5d02e3",
+      "bytes": 5104736
+    },
+    "review\\pet.glb": {
+      "sha256": "08133d193b28a2740d116acdafa8482c21043e12903f54955fe1e8616fde8778",
+      "bytes": 3866972
+    },
+    "review\\preview-scene.blend": {
+      "sha256": "df196ee206a73b82b391475a3f68db2ab0a88f37a748601c693a5c105363c997",
+      "bytes": 5152219
+    },
+    "review\\side.png": {
+      "sha256": "b269770868c2568e1387f3d719cfd99c9008549f599ec716106c8d071b7f6d24",
+      "bytes": 475261
+    },
+    "review\\three-quarter.png": {
+      "sha256": "1cc77dbd70e556fe365f31dbc4dc43986ffa4a28331578dd0741222ee57e5317",
+      "bytes": 536054
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "blender": "4.5.3 LTS",
+  "source_triangles": 151784,
+  "export_triangles": 18000,
+  "pose_adjustments": [
+    {
+      "name": "front_paw_left_grounding",
+      "reason": "Lower and separate existing raised front paw while blending into foreleg; inspect joint continuity in four views.",
+      "affected_vertices": 2818,
+      "maximum_displacement": 0.4939635614091388
+    },
+    {
+      "name": "front_paw_right_grounding",
+      "reason": "Lower and separate existing raised front paw without moving head or rear body.",
+      "affected_vertices": 2707,
+      "maximum_displacement": 0.4939635614091388
+    }
+  ],
+  "reopened_glb": true,
+  "uv_layers": [
+    1
+  ],
+  "images": [
+    {
+      "name": "basecolor",
+      "size": [
+        2048,
+        2048
+      ],
+      "has_data": true
+    }
+  ],
+  "normalization_height": 2.8,
+  "original_files_modified": false,
+  "visual_approval": "pending"
+}

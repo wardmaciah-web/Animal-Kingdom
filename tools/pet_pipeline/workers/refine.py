@@ -5,6 +5,7 @@ from types import SimpleNamespace
 from common import context
 import bpy
 from mathutils import Vector, Matrix
+from pose_adjustments import apply_to_mesh
 
 cfg,run,root,pipeline=context()
 settings=cfg['refinement']; fur_settings=settings['fur']
@@ -60,6 +61,9 @@ if args.refine:
     smooth=pet.modifiers.new('Refine neural surface','SMOOTH')
     smooth.factor=settings['smooth_factor']; smooth.iterations=settings['smooth_iterations']
     bpy.ops.object.modifier_apply(modifier=smooth.name)
+    # Optional per-species soft selections move original anatomy and preserve UVs.
+    # Empty by default: approved Ocelot recipes retain their original geometry.
+    pose_report=apply_to_mesh(pet.data,settings.get('pose_adjustments',[]),unit)
     # A shared flat contact plane for paws; preserve the upper paw silhouettes.
     for vertex in pet.data.vertices:
         z=vertex.co.z
@@ -158,6 +162,7 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=str(out/'pet.glb'))
 opened=[o for o in bpy.context.scene.objects if o.type=='MESH']
 report={'blender':bpy.app.version_string,'source_triangles':source_tris,'export_triangles':export_tris,
+ 'pose_adjustments':pose_report if args.refine else [],
  'reopened_glb':bool(opened),'uv_layers':[len(o.data.uv_layers) for o in opened],
  'images':[{'name':i.name,'size':list(i.size),'has_data':i.has_data} for i in bpy.data.images if i.type=='IMAGE'],
  'normalization_height':height,'original_files_modified':False,'visual_approval':'pending'}

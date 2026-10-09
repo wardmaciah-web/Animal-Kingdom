@@ -7,5 +7,28 @@
   "next_species": "JungleRedPanda",
   "concept_candidates_per_species": 3,
   "downstream_diagnostics_per_species": 2,
-  "release_rule": "Only four-view art-approved and technically validated models may enter isolated Studio import. Biome locks remain until all content and interactions pass."
+  "release_rule": "Only four-view art-approved and technically validated models may enter isolated Studio import. Biome locks remain until all content and interactions pass.",
+  "priority": "One excellent second Jungle pet before mass production",
+  "concept_gate": {
+    "required": [
+      "single original animal",
+      "correct species",
+      "appealing face and expressive eyes",
+      "reference-compatible fur and proportions"
+    ],
+    "repair_in_blender": [
+      "slightly raised front paw",
+      "minor sitting-pose issue",
+      "hind-leg placement"
+    ],
+    "reject": [
+      "multi-animal collage",
+      "severely distorted anatomy",
+      "incorrect species"
+    ],
+    "mandatory_style_references": [
+      "original black bear",
+      "approved Ocelot"
+    ]
+  }
 }

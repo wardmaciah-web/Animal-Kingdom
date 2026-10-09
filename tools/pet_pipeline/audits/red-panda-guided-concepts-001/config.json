@@ -1,0 +1,25 @@
+{
+  "pet_id": "JungleRedPanda",
+  "species": "Red Panda",
+  "model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "revision": "462165984030d82259a11f4367a4eed129e94a7b",
+  "seeds": [
+    1051,
+    2051,
+    3051
+  ],
+  "width": 1024,
+  "height": 1024,
+  "steps": 35,
+  "guidance_scale": 7.0,
+  "prompt": "One adorable baby red panda, full body, isolated white background. Huge rounded head, enormous glossy eyes, compact chubby body, beautifully sculpted matte fluffy fur. Rust red fur, white cheeks, dark legs, bushy ringed tail. Original polished 3D game pet, relaxed seated pose, soft studio lighting.",
+  "negative_prompt": "ocelot, leopard, spotted fur, cat, multiple animals, collage, text, watermark, clothes, plastic, human, extra limbs, distorted anatomy, deformed eyes, cropped body",
+  "style_references": [
+    "references/bear-front.jpg",
+    "references/approved-ocelot-front.png"
+  ],
+  "style_conditioning": "Approved Ocelot render guides local SDXL img2img proportions and pose. Black bear remains a mandatory comparison reference. Output must be a distinct red panda design, not an Ocelot recolor.",
+  "acceptance": "Mandatory comparison with original black bear and approved Ocelot. Prioritize species identity, face, fur and proportions. Minor pose/paw issues receive Blender correction; reject collages, severe distortion and wrong species. Final mesh still needs four-view and Studio QA.",
+  "design_reference_image": "references/approved-ocelot-front.png",
+  "design_strength": 0.72
+}
