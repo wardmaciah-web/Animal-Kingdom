@@ -1,5 +1,27 @@
 # Implementation checkpoint — 2026-10-08
 
+## Bounded retries and next species
+
+Resumed from 8cc744d. Ocelot registration/assets and its recipe are preserved.
+No source/game changes. Tapir is now explicitly deferred in production policy;
+the entry point blocks more inference. Pending species receive at most three
+fresh-worker attempts, including failed starts; downstream saved-mesh trials
+do not consume that inference budget. Twelve safety tests pass.
+
+The single allowed saved-mesh diagnostic 023 corrected fur normal alignment
+(63.3% inward to 0%) but visibly worsened black triangular fur artifacts.
+It is rejected. The experimental normal override was removed from production;
+its exact worker, output hashes, validation and renders are preserved. Merged
+rear anatomy remains unresolved; do not keep iterating Tapir.
+
+Red Panda is selected as the next distinct furry Jungle species. A separate
+D: concept environment and pinned public SDXL FP16 download add a free local
+concept path without changing TripoSR dependencies or invoking paid services.
+See LOCAL_CONCEPTS.md. Initial RAM was below admission threshold; a later
+4.01 GiB RAM / 7.62 GiB commit / 9.56 GiB VRAM preflight admitted diagnostic 023.
+Recheck before loading any new model. Concept weight download/verification is
+in progress; no Red Panda concept, mesh or approval is claimed yet.
+
 ## D: migration continuation
 
 RESUMED after user storage recovery. C: 11.54 GiB free, D: about 416 GiB free;

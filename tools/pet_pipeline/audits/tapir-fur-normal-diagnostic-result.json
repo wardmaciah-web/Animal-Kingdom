@@ -1,0 +1,10 @@
+{
+  "glb": "D:/AnimalKingdom3D/outputs/tapir-d-surface-normals-023/review/pet.glb",
+  "sha256": "abe09a16b5010a52894c3953fd96334a8ac6ec29d62aed50bde02c88a78f259b",
+  "fur_vertices": 6000,
+  "inward_fraction": 0.0,
+  "poor_alignment_fraction": 0.0006666666666666666,
+  "median_alignment": 0.9988492930455608,
+  "interpretation": "Closed thin fur-lock underside/top smoothing is a candidate cause of dark wedge shading. Compare opt-in supporting_surface normals in renders before promoting.",
+  "scope": "Normal directions only; does not establish visual acceptance or repair anatomy."
+}

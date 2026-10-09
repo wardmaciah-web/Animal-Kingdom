@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "errors": [],
+  "glb_sha256": "abe09a16b5010a52894c3953fd96334a8ac6ec29d62aed50bde02c88a78f259b",
+  "meshes": [
+    {
+      "name": "geometry_0",
+      "vertices": 9918,
+      "triangles": 17994,
+      "finite_positions": true,
+      "finite_normals": true,
+      "indices_valid": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8500000238418579
+    },
+    {
+      "name": "SculptedFurLocks",
+      "vertices": 6000,
+      "triangles": 8000,
+      "finite_positions": true,
+      "finite_normals": true,
+      "indices_valid": true,
+      "uv_finite": true,
+      "texture_size": [
+        2048,
+        2048
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8500000238418579
+    }
+  ],
+  "bounds": [
+    [
+      -0.9557790160179138,
+      0.0,
+      -1.2386796474456787
+    ],
+    [
+      0.9574708342552185,
+      2.799999952316284,
+      1.2386796474456787
+    ]
+  ],
+  "dimensions": [
+    1.9132498502731323,
+    2.799999952316284,
+    2.4773592948913574
+  ],
+  "front_paws": [
+    {
+      "name": "front_left",
+      "minimum_above_floor": 0.0,
+      "passed": true,
+      "region": {
+        "name": "front_left",
+        "x": [
+          -0.65,
+          -0.1
+        ],
+        "z": [
+          0.2,
+          2
+        ]
+      }
+    },
+    {
+      "name": "front_right",
+      "minimum_above_floor": 0.0,
+      "passed": true,
+      "region": {
+        "name": "front_right",
+        "x": [
+          0.1,
+          0.65
+        ],
+        "z": [
+          0.2,
+          2
+        ]
+      }
+    }
+  ],
+  "approved_comparison": null,
+  "semantic_art_checks": "pending actual four-view review; geometry tests do not certify anatomy or style",
+  "roblox_import": "prepared_not_imported"
+}

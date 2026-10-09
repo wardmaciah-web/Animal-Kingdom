@@ -1,0 +1,10 @@
+{
+  "glb": "D:/AnimalKingdom3D/outputs/tapir-d-coat-022/review/pet.glb",
+  "sha256": "252dfcc68ced940457cb58c827cf70b39ed527250eeb34cc38401e956b831588",
+  "fur_vertices": 6000,
+  "inward_fraction": 0.6331666666666667,
+  "poor_alignment_fraction": 0.998,
+  "median_alignment": -0.057033805264963267,
+  "interpretation": "Closed thin fur-lock underside/top smoothing is a candidate cause of dark wedge shading. Compare opt-in supporting_surface normals in renders before promoting.",
+  "scope": "Normal directions only; does not establish visual acceptance or repair anatomy."
+}

@@ -85,9 +85,27 @@ def check_hardware(hardware):
     if not gpu_free or gpu_free[0] < 7*1024:
         raise RuntimeError('At least 7 GiB free VRAM on the first GPU is required')
 
+def check_attempt_budget(cfg, runtime, policy):
+    pet_id=cfg['pet_id']
+    if pet_id in policy.get('deferred_species',{}):
+        raise RuntimeError('Species deferred: '+policy['deferred_species'][pet_id])
+    attempts=0
+    for config in (Path(runtime)/'outputs').glob('*/effective-config.json'):
+        previous=read(config)
+        if previous.get('pet_id')!=pet_id:continue
+        # Count actual fresh inference, not downstream saved-mesh diagnostics.
+        report=config.parent/'generated/generation.json'
+        if ((report.is_file() and read(report).get('fresh_inference') is True)
+                or (config.parent/'generate.log').exists()):
+            attempts+=1
+    limit=policy['max_fresh_inferences_per_unapproved_species']
+    if attempts>=limit:
+        raise RuntimeError(f'{pet_id} reached {attempts}/{limit} fresh attempts; defer it and choose another species')
+
 def generate(args):
     runtime = Path(args.runtime_root).resolve(); output = Path(args.output).resolve()
     cfg = configure(args.config, runtime, output)
+    check_attempt_budget(cfg,runtime,read(HERE/'production-policy.json'))
     if output.exists(): raise ValueError('Output already exists; select a NEW run directory. Approved assets are never overwritten.')
     if shutil.disk_usage(output.parent if output.parent.exists() else runtime).free < 2*1024**3:
         raise ValueError('At least 2 GiB free output space is required')

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "max_fresh_inferences_per_unapproved_species": 3,
+  "deferred_species": {
+    "JungleTapir": "Three fresh reconstructions and 22 trials already failed art QA. No further inference; one saved-mesh fur-normal diagnostic is allowed."
+  },
+  "next_species": "JungleRedPanda",
+  "concept_candidates_per_species": 3,
+  "downstream_diagnostics_per_species": 2,
+  "release_rule": "Only four-view art-approved and technically validated models may enter isolated Studio import. Biome locks remain until all content and interactions pass."
+}

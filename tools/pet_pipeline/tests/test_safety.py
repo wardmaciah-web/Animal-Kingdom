@@ -72,5 +72,26 @@ class ProductionGates(unittest.TestCase):
         for hardware in ({'gpu_probe_exit_code':1,'gpu':''},
                          {'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 1000'}):
             with self.assertRaises(RuntimeError): p.check_hardware(hardware)
+    def test_deferred_species_cannot_start_inference(self):
+        with self.assertRaisesRegex(RuntimeError,'Species deferred'):
+            p.check_attempt_budget({'pet_id':'JungleTapir'},self.root,
+                {'deferred_species':{'JungleTapir':'Art QA failed'},'max_fresh_inferences_per_unapproved_species':3})
+    def test_retry_limit_counts_inference_not_saved_mesh_trials(self):
+        policy={'max_fresh_inferences_per_unapproved_species':2}
+        for index,fresh in enumerate([True,False,True]):
+            run=self.root/'outputs'/str(index);(run/'generated').mkdir(parents=True)
+            p.write(run/'effective-config.json',{'pet_id':'JungleRedPanda'})
+            p.write(run/'generated/generation.json',{'fresh_inference':fresh})
+            if index==1:p.check_attempt_budget({'pet_id':'JungleRedPanda'},self.root,policy)
+        with self.assertRaisesRegex(RuntimeError,'reached 2/2'):
+            p.check_attempt_budget({'pet_id':'JungleRedPanda'},self.root,policy)
+        p.check_attempt_budget({'pet_id':'JungleCoati'},self.root,policy)
+    def test_failed_inference_worker_uses_retry_budget(self):
+        run=self.root/'outputs/failed';run.mkdir(parents=True)
+        p.write(run/'effective-config.json',{'pet_id':'JungleRedPanda'})
+        (run/'generate.log').write_text('Loading model; process interrupted')
+        with self.assertRaisesRegex(RuntimeError,'reached 1/1'):
+            p.check_attempt_budget({'pet_id':'JungleRedPanda'},self.root,
+                {'max_fresh_inferences_per_unapproved_species':1})
 
 if __name__=='__main__':unittest.main()

@@ -128,11 +128,11 @@
       "base_weight_kg": 45,
       "base_income": 99,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "art_qa_failed_reconstruction_correction_needed",
+      "status": "deferred_after_bounded_retries",
       "model_asset_id": null,
       "glb": null,
       "registered": false,
-      "latest_diagnostic_run": "tapir-d-coat-022"
+      "latest_diagnostic_run": "tapir-d-surface-normals-023"
     },
     {
       "pet_id": "JungleBinturong",
@@ -194,7 +194,7 @@
       "base_weight_kg": 7,
       "base_income": 130,
       "proposed_family_id": "Jungle_Shakeable_04",
-      "status": "concept_needed",
+      "status": "local_concept_preparation",
       "model_asset_id": null,
       "glb": null,
       "registered": false
