@@ -26,7 +26,15 @@ timestamped output directory. Read `CHECKPOINT.md` before resuming the second pe
 reuse its saved mesh instead of repeating completed inference. Use a named recipe,
 `-RuntimeRoot` to relocate, and `-Output` to select a new output directory.
 Direct Python invocation accepts `--runtime-root` or `AK_3D_ROOT`, defaulting to D:.
-The generation gate requires 4 GiB free RAM, 6 GiB free system commit, 7 GiB free
+Concept and reconstruction workers share an OS-held exclusive `generation.lock`
+under the D: runtime. Inspect active processes and prior manifests/logs before
+retrying; a stale `loading` manifest is not evidence of a running worker. The
+lock covers these entry points, not manually launched legacy worker scripts.
+Missing RAM/commit measurements block admission. The 12 GiB commit margin was
+raised after Coati failed despite passing the old 6 GiB check; it is conservative,
+not a guarantee of successful loading. Keep caches and outputs on D:.
+
+The generation gate requires 4 GiB free RAM, 12 GiB free system commit, 7 GiB free
 VRAM on the first GPU and 2 GiB free output storage. These are admission thresholds,
 not guarantees of peak memory use. Models load from the verified offline caches.
 

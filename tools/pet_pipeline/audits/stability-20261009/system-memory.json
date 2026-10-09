@@ -1,0 +1,89 @@
+{
+    "captured_utc":  "2026-10-09T06:56:30.2387037Z",
+    "os":  {
+               "TotalVisibleMemorySize":  16642660,
+               "FreePhysicalMemory":  4251400,
+               "TotalVirtualMemorySize":  28116776,
+               "FreeVirtualMemory":  6957040
+           },
+    "automatic_pagefile":  true,
+    "pagefile_usage":  [
+                           {
+                               "Name":  "C:\\pagefile.sys",
+                               "AllocatedBaseSize":  11205,
+                               "CurrentUsage":  4923,
+                               "PeakUsage":  8632
+                           }
+                       ],
+    "pagefile_settings":  [
+
+                          ],
+    "disks":  [
+                  {
+                      "Name":  "C",
+                      "Free":  10554249216,
+                      "Used":  107928649728
+                  },
+                  {
+                      "Name":  "D",
+                      "Free":  438876397568,
+                      "Used":  39877165056
+                  }
+              ],
+    "generation_processes":  [
+
+                             ],
+    "gpu":  [
+                "NVIDIA GeForce RTX 3060, 12288, 10249"
+            ],
+    "top_private_memory":  [
+                               {
+                                   "Id":  5840,
+                                   "ProcessName":  "RobloxStudioBeta",
+                                   "WorkingSet64":  2108743680,
+                                   "PrivateMemorySize64":  5248995328
+                               },
+                               {
+                                   "Id":  5352,
+                                   "ProcessName":  "svchost",
+                                   "WorkingSet64":  13590528,
+                                   "PrivateMemorySize64":  868487168
+                               },
+                               {
+                                   "Id":  192,
+                                   "ProcessName":  "chrome",
+                                   "WorkingSet64":  849633280,
+                                   "PrivateMemorySize64":  770224128
+                               },
+                               {
+                                   "Id":  1484,
+                                   "ProcessName":  "dwm",
+                                   "WorkingSet64":  187801600,
+                                   "PrivateMemorySize64":  546607104
+                               },
+                               {
+                                   "Id":  17544,
+                                   "ProcessName":  "chrome",
+                                   "WorkingSet64":  614584320,
+                                   "PrivateMemorySize64":  485875712
+                               },
+                               {
+                                   "Id":  17940,
+                                   "ProcessName":  "steamwebhelper",
+                                   "WorkingSet64":  194949120,
+                                   "PrivateMemorySize64":  448401408
+                               },
+                               {
+                                   "Id":  11828,
+                                   "ProcessName":  "ExitLag",
+                                   "WorkingSet64":  185212928,
+                                   "PrivateMemorySize64":  420175872
+                               },
+                               {
+                                   "Id":  14684,
+                                   "ProcessName":  "nvcplui",
+                                   "WorkingSet64":  121831424,
+                                   "PrivateMemorySize64":  398741504
+                               }
+                           ]
+}

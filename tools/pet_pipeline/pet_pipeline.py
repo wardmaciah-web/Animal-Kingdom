@@ -2,6 +2,33 @@
 from __future__ import annotations
 import argparse, datetime as dt, hashlib, json, os, re, shutil, subprocess, sys, time
 from pathlib import Path
+from contextlib import contextmanager
+
+@contextmanager
+def generation_lock(runtime):
+    """One concept/reconstruction worker per runtime; OS releases on process exit."""
+    path = Path(runtime) / 'generation.lock'
+    with path.open('a+b') as stream:
+        if path.stat().st_size == 0:
+            stream.write(b'0'); stream.flush()
+        stream.seek(0)
+        try:
+            if os.name == 'nt':
+                import msvcrt
+                msvcrt.locking(stream.fileno(), msvcrt.LK_NBLCK, 1)
+            else:
+                import fcntl
+                fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError as exc:
+            raise RuntimeError('Another generation owns this runtime; inspect it before retrying') from exc
+        try:
+            yield
+        finally:
+            stream.seek(0)
+            if os.name == 'nt':
+                msvcrt.locking(stream.fileno(), msvcrt.LK_UNLCK, 1)
+            else:
+                fcntl.flock(stream, fcntl.LOCK_UN)
 
 VERSION = '1.0.0'
 HERE = Path(__file__).resolve().parent
@@ -76,8 +103,12 @@ def configure(path, runtime, output):
 
 def check_hardware(hardware):
     """Reject a run before loading model weights; retain the measured preflight."""
-    for field, minimum in (('free_physical', 4*1024**3), ('free_commit', 6*1024**3)):
-        if field in hardware and hardware[field] < minimum:
+    # Coati loading failed after passing the old 6 GiB commit gate. Reserve
+    # 12 GiB conservatively; free VRAM alone does not prove WDDM admission.
+    for field, minimum in (('free_physical', 4*1024**3), ('free_commit', 12*1024**3)):
+        if field not in hardware:
+            raise RuntimeError(f'Missing {field} measurement; generation not started')
+        if hardware[field] < minimum:
             raise RuntimeError(f'Insufficient {field}: {hardware[field]} bytes; need {minimum}. See preflight.json')
     if hardware['gpu_probe_exit_code'] != 0:
         raise RuntimeError('NVIDIA preflight failed; generation not started')
@@ -107,6 +138,10 @@ def check_attempt_budget(cfg, runtime, policy):
         raise RuntimeError(f'{pet_id} reached {attempts}/{limit} fresh attempts; defer it and choose another species')
 
 def generate(args):
+    with generation_lock(Path(args.runtime_root).resolve()):
+        return _generate(args)
+
+def _generate(args):
     runtime = Path(args.runtime_root).resolve(); output = Path(args.output).resolve()
     cfg = configure(args.config, runtime, output)
     check_attempt_budget(cfg,runtime,read(HERE/'production-policy.json'))

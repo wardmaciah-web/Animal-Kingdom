@@ -68,9 +68,31 @@ class ProductionGates(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, 'free_commit'):
             p.check_hardware({'free_physical':8*1024**3,'free_commit':2*1024**3,
                               'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_old_commit_admission_is_no_longer_sufficient(self):
+        with self.assertRaisesRegex(RuntimeError, 'free_commit'):
+            p.check_hardware({'free_physical':8*1024**3,'free_commit':8*1024**3,
+                              'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_missing_memory_measurements_fail_closed(self):
+        with self.assertRaisesRegex(RuntimeError, 'Missing free_physical'):
+            p.check_hardware({'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_sufficient_memory_admits(self):
+        p.check_hardware({'free_physical':8*1024**3,'free_commit':12*1024**3,
+                          'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 10000'})
+    def test_generation_lock_excludes_another_process_and_recovers(self):
+        import subprocess,sys
+        command=[sys.executable,'-c',
+                 'from pet_pipeline import generation_lock; import sys; '
+                 'exec("with generation_lock(sys.argv[1]): pass")',str(self.root)]
+        with p.generation_lock(self.root):
+            blocked=subprocess.run(command,cwd=p.HERE,capture_output=True,text=True)
+            self.assertNotEqual(blocked.returncode,0)
+            self.assertIn('Another generation',blocked.stderr)
+        allowed=subprocess.run(command,cwd=p.HERE,capture_output=True,text=True)
+        self.assertEqual(allowed.returncode,0,allowed.stderr)
     def test_wrong_gpu_or_failed_probe_blocks(self):
         for hardware in ({'gpu_probe_exit_code':1,'gpu':''},
                          {'gpu_probe_exit_code':0,'gpu':'RTX 3060, 12288, 1000'}):
+            hardware.update(free_physical=8*1024**3,free_commit=12*1024**3)
             with self.assertRaises(RuntimeError): p.check_hardware(hardware)
     def test_deferred_species_cannot_start_inference(self):
         with self.assertRaisesRegex(RuntimeError,'Species deferred'):

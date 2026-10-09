@@ -1,0 +1,2 @@
+# Raw process logs include carriage-return progress bars. Preserve their bytes.
+coati-guided-*-worker.txt -text -diff

@@ -1,7 +1,7 @@
 """Free local SDXL concept candidates; separate environment, no paid endpoints."""
 import argparse,json,os,time,gc,faulthandler
 from pathlib import Path
-from pet_pipeline import preflight,check_hardware,read,write,sha,HERE
+from pet_pipeline import preflight,check_hardware,read,write,sha,HERE,generation_lock
 
 def main():
     faulthandler.enable()
@@ -19,13 +19,14 @@ def main():
     if not mandatory.issubset(references) or not all(p.is_file() for p in references):
         raise ValueError('Original black bear and approved Ocelot references are mandatory')
     if len(cfg['seeds'])>policy['concept_candidates_per_species']:raise ValueError('Concept retry limit exceeded')
-    hardware=preflight(root);check_hardware(hardware)
+    hardware=preflight(root)
     output.mkdir(parents=True)
     write(output/'preflight.json',hardware);write(output/'config.json',cfg)
     manifest={'status':'loading','pet_id':cfg['pet_id'],'credits_used':0,'hosted_inference_calls':0,'candidates':[]}
     manifest['style_references']={str(p):sha(p) for p in references}
     write(output/'manifest.json',manifest)
     try:
+        check_hardware(hardware)
         import torch
         print('Loading local SDXL dependencies',flush=True)
         from diffusers import StableDiffusionXLPipeline,StableDiffusionXLImg2ImgPipeline
@@ -83,8 +84,10 @@ def main():
             gc.collect();torch.cuda.empty_cache()
         manifest['status']='concepts_pending_visual_qa'
     except Exception as error:
-        manifest.update(status='failed',failure=str(error));write(output/'manifest.json',manifest)
+        manifest.update(status='failed',failure=f'{type(error).__name__}: {error}');write(output/'manifest.json',manifest)
         raise
     write(output/'manifest.json',manifest)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    with generation_lock(Path(os.environ.get('AK_3D_ROOT','D:/AnimalKingdom3D')).resolve()):
+        main()

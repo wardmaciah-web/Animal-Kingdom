@@ -1,0 +1,14 @@
+{
+  "observation": "No python, Blender, TripoSR or Rojo process running at inspection",
+  "new_generation_launched": false,
+  "allocation_message_attribution": "The reported 1048576-byte allocation failure could not be attributed to a specific process from preserved logs.",
+  "runs": {
+    "coati-guided-001": {"status": "failed", "worker_exit_code": 1, "reason": "Old 6 GiB commit admission check failed"},
+    "coati-guided-002": {"status": "interrupted_or_crashed", "worker_exit_code": null, "reason": "Manifest says loading; no worker exists; log ends at component loading"},
+    "coati-guided-003": {"status": "interrupted_or_crashed", "worker_exit_code": null, "reason": "Manifest says loading; no worker exists; log ends at component loading"},
+    "coati-guided-004": {"status": "failed", "worker_exit_code": null, "reason": "CUDA 26 MiB allocation failed while 6.58 GiB VRAM reported free; exception fallback then raised MemoryError reading checkpoint"}
+  },
+  "candidates_from_these_runs": 0,
+  "original_manifests_and_logs": "Preserved unchanged in runtime and copied beside this audit",
+  "resume_requirement": "At least 4 GiB available physical RAM, 12 GiB commit headroom and 7 GiB free VRAM; inspect processes and acquire exclusive generation lock. Recheck immediately before loading."
+}

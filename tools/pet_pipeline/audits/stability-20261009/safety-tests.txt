@@ -1,0 +1,28 @@
+test_completed_concepts_still_need_visual_review (test_concept_runner.ConceptRunnerTests.test_completed_concepts_still_need_visual_review) ... ok
+test_native_crash_preserves_completed_candidates (test_concept_runner.ConceptRunnerTests.test_native_crash_preserves_completed_candidates) ... ok
+test_zero_exit_without_completion_is_not_success (test_concept_runner.ConceptRunnerTests.test_zero_exit_without_completion_is_not_success) ... ok
+test_joint_rotation_uses_authored_pivot (test_pose_adjustments.PoseAdjustments.test_joint_rotation_uses_authored_pivot) ... ok
+test_paw_moves_but_outside_torso_is_preserved (test_pose_adjustments.PoseAdjustments.test_paw_moves_but_outside_torso_is_preserved) ... ok
+test_soft_selection_and_scale (test_pose_adjustments.PoseAdjustments.test_soft_selection_and_scale) ... ok
+test_acceptance_still_requires_studio (test_safety.ProductionGates.test_acceptance_still_requires_studio) ... ok
+test_deferred_species_cannot_start_inference (test_safety.ProductionGates.test_deferred_species_cannot_start_inference) ... ok
+test_documented_preprocessing_retry_is_still_bounded (test_safety.ProductionGates.test_documented_preprocessing_retry_is_still_bounded) ... ok
+test_failed_inference_worker_uses_retry_budget (test_safety.ProductionGates.test_failed_inference_worker_uses_retry_budget) ... ok
+test_generation_lock_excludes_another_process_and_recovers (test_safety.ProductionGates.test_generation_lock_excludes_another_process_and_recovers) ... ok
+test_insufficient_commit_blocks_even_with_free_vram (test_safety.ProductionGates.test_insufficient_commit_blocks_even_with_free_vram) ... ok
+test_missing_memory_measurements_fail_closed (test_safety.ProductionGates.test_missing_memory_measurements_fail_closed) ... ok
+test_old_commit_admission_is_no_longer_sufficient (test_safety.ProductionGates.test_old_commit_admission_is_no_longer_sufficient) ... ok
+test_rejects_failed_technical_validation (test_safety.ProductionGates.test_rejects_failed_technical_validation) ... ok
+test_rejects_missing_visual_check (test_safety.ProductionGates.test_rejects_missing_visual_check) ... ok
+test_rejects_review_for_different_asset (test_safety.ProductionGates.test_rejects_review_for_different_asset) ... ok
+test_retry_limit_counts_inference_not_saved_mesh_trials (test_safety.ProductionGates.test_retry_limit_counts_inference_not_saved_mesh_trials) ... ok
+test_roster_has_unique_species_and_five_slots_per_family (test_safety.ProductionGates.test_roster_has_unique_species_and_five_slots_per_family) ... ok
+test_sufficient_memory_admits (test_safety.ProductionGates.test_sufficient_memory_admits) ... ok
+test_valid_recipe_resolves_reference_paths (test_safety.ProductionGates.test_valid_recipe_resolves_reference_paths) ... ok
+test_vendored_source_matches_lock (test_safety.ProductionGates.test_vendored_source_matches_lock) ... ok
+test_wrong_gpu_or_failed_probe_blocks (test_safety.ProductionGates.test_wrong_gpu_or_failed_probe_blocks) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.257s
+
+OK

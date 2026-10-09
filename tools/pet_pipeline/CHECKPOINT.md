@@ -1,4 +1,44 @@
-# Latest checkpoint - Red Panda imported, pet QA passed, registered
+# Latest checkpoint - stability and reward cache verified, generation held
+
+2026-10-09 UTC: see `audits/stability-20261009/`. No generation worker is
+running. Coati guided 001 failed the old commit gate; 002/003 have orphaned
+loading manifests and truncated logs (exit status unknown); 004 logged CUDA
+allocation failure followed by MemoryError. No candidate was produced by these
+four runs. Preserve the original logs; do not assume a loading manifest is live.
+
+Current admission snapshot: available RAM 4.47 GiB, commit headroom 7.13 GiB,
+RTX 3060 free VRAM 10.07 GiB. Windows automatic C: pagefile is 11,205 MiB;
+usage 4,923 MiB, peak 8,632 MiB. C: has about 9.83 GiB free, D: 408.74 GiB.
+No OS/pagefile changes or unrelated process termination. All generation/cache/
+output paths remain on D:. Commit admission raised from 6 to a conservative
+12 GiB after failures passed the old threshold. This is a safety margin, not a
+guarantee or proof of the failure's root cause. RAM/VRAM checks remain 4/7 GiB.
+Unknown RAM/commit measurements fail closed. Concept and reconstruction entry
+points share an OS-held exclusive runtime lock; no overlapping job was launched.
+
+Studio cache reproduced: saved Sunvine source contained Red Panda but require()
+returned empty family/reward arrays. Refreshed ImportedPetDefinitions,
+PetDefinitions, TreeFamilyDefinitions and EggDefinitions instances in Edit;
+the three registration/pool sources use canonical saved source, and the live
+PetDefinitions source (including existing absolute-weight policy) is preserved.
+No approved models, probabilities, or ContentReady gates changed.
+
+Fresh Play runtime Server Script verifies all 15 configured family memberships;
+Sunvine contains JungleRedPanda at DropWeight4, Orchidwood contains JungleOcelot
+at DropWeight12. Client agrees. Existing Meadow/Forest pools unchanged.
+All 35 physical Jungle trees still lack Sunvine mapping; their prompts are
+disabled COMING SOON. Real Sunvine payout is NOT verified and cannot be claimed
+until authentic tree-family mapping/content readiness is resolved. Play stopped;
+temporary runtime audit objects are gone. No game publication or place save.
+
+23 safety tests pass. Resume generation only after a fresh admission pass and
+checking active workers; inspect one supervised result before another attempt.
+Remaining Studio QA: authentic Sunvine/Orchidwood physical mappings and eventual
+real tree payout, ownership/save/rejoin and existing-tree regressions when the
+biome is legitimately ready; keep Jungle locked meanwhile. Pipeline remains
+incomplete (2/250 registered). Pre-existing review-script edits are left unstaged.
+
+## Previous checkpoint - Red Panda imported, pet QA passed, registered
 
 Resume from the Git commit containing `audits/red-panda-studio-001/`.
 DO NOT regenerate Red Panda. Native model: `src/ReplicatedStorage/PetAssets/JungleRedPanda.rbxm`.
@@ -28,6 +68,12 @@ Source changes are only Red Panda definition, Sunvine membership and real RBXM.
 Ocelot, Meadow, Forest, all existing assets and ContentReady gates unchanged.
 Registered production count: 2/250. Next bounded candidate: JungleCoati guided
 concept using original bear/Ocelot references; no mass auto-acceptance.
+
+Coati initially failed the unchanged 4 GiB RAM admission check. Reclaiming the
+task-launched Studio's cached working pages subsequently freed enough RAM
+(6,074,421,248 bytes free); no unrelated apps were closed and no guard bypassed.
+Guided concept run: D:/AnimalKingdom3D/outputs/coati-guided-001. Inspect its live
+manifest and candidates before proceeding; do not assume inference or QA passed.
 
 Remaining BIOME QA: no physical trees currently map to Sunvine in the loaded
 place. Correct reward pool is ready, but a real Sunvine tree payout cannot be

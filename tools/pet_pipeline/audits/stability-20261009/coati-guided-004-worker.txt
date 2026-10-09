@@ -1,0 +1,42 @@
+Loading local SDXL dependencies
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|#4        | 1/7 [00:00<00:00,  7.40it/s]Loading pipeline components...:  29%|##8       | 2/7 [00:02<00:08,  1.66s/it]Loading pipeline components...:  43%|####2     | 3/7 [00:06<00:10,  2.70s/it]Loading pipeline components...:  71%|#######1  | 5/7 [00:07<00:02,  1.42s/it]Loading pipeline components...:  71%|#######1  | 5/7 [00:27<00:11,  5.56s/it]
+Traceback (most recent call last):
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\diffusers\models\model_loading_utils.py", line 180, in load_state_dict
+    return safetensors.torch.load_file(checkpoint_file, device=map_location)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\safetensors\torch.py", line 315, in load_file
+    result[k] = f.get_tensor(k)
+                ^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 0 has a total capacity of 12.00 GiB of which 6.58 GiB is free. Of the allocated memory 4.14 GiB is allocated by PyTorch, and 265.35 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\AnimalKingdom3D\github-review\tools\pet_pipeline\generate_concepts.py", line 90, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\AnimalKingdom3D\github-review\tools\pet_pipeline\generate_concepts.py", line 49, in main
+    pipe=pipeline_class.from_pretrained(str(weights),torch_dtype=torch.float16,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\diffusers\pipelines\pipeline_utils.py", line 1025, in from_pretrained
+    loaded_sub_model = load_sub_model(
+                       ^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\diffusers\pipelines\pipeline_loading_utils.py", line 849, in load_sub_model
+    loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\diffusers\models\modeling_utils.py", line 1260, in from_pretrained
+    state_dict = load_state_dict(resolved_model_file[0], disable_mmap=disable_mmap, dduf_entries=dduf_entries)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\github-review\tools\pet_pipeline\generate_concepts.py", line 42, in cuda_checkpoint_load
+    return original_load(checkpoint_file,*positional,**keywords)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AnimalKingdom3D\tools\concept-env\Lib\site-packages\diffusers\models\model_loading_utils.py", line 199, in load_state_dict
+    if f.read().startswith("version"):
+       ^^^^^^^^
+MemoryError

@@ -1,0 +1,7 @@
+{
+  "candidates": [],
+  "worker_exit_code": 1,
+  "elapsed_seconds": 0.15600000000267755,
+  "status": "failed",
+  "failure": "Concept worker exited with code 1; see worker.log"
+}
