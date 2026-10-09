@@ -25,9 +25,11 @@ import urllib.request
 try:
     from .windows_job import Job, protect_token
     from .codex_rpc import NotionRPC, ConnectorError
+    from . import production
 except ImportError:
     from windows_job import Job, protect_token
     from codex_rpc import NotionRPC, ConnectorError
+    import production
 
 CONTROL = None
 
@@ -115,20 +117,31 @@ def parse_task(issue, cfg):
         raise Blocked("Exactly one bounded ak-task JSON block is required")
     task = json.loads(blocks[0])
     required = {"task_id", "revision", "source", "priority", "approval_class", "allowed_paths", "notion_page", "instructions", "acceptance", "tests", "requires_studio"}
+    is_production = task.get('approval_class') == production.CLASS
+    if is_production:
+        required |= {'actions', 'policy_sha256'}
     if set(task) != required or not re.fullmatch(r"[a-z0-9][a-z0-9-]{2,63}", task["task_id"]):
         raise Blocked("Invalid task contract")
     if type(task["revision"]) is not int or task["revision"] < 1 or type(task["priority"]) is not int:
         raise Blocked("Invalid revision or priority")
-    if task["approval_class"] != "safe-edit":
+    if is_production:
+        try:
+            production.authorize(task, cfg, issue['number'])
+        except production.Denied as error:
+            raise ApprovalRequired(str(error)) from error
+    elif task["approval_class"] != "safe-edit":
         raise ApprovalRequired("Task requires separate human approval; queue cannot grant it")
-    if task["notion_page"] not in cfg["notion_pages"]:
+    if not is_production and task["notion_page"] not in cfg["notion_pages"]:
         raise ApprovalRequired("Notion destination is not locally authorized")
     if type(task["requires_studio"]) is not bool or not isinstance(task["instructions"], str):
         raise Blocked("Invalid instructions or Studio requirement")
     if not isinstance(task["allowed_paths"], list) or not 1 <= len(task["allowed_paths"]) <= 20:
         raise Blocked("One to twenty exact paths required")
     for name in task["allowed_paths"]:
-        safe_path(name, cfg["allowed_roots"])
+        if is_production:
+            production.regular_path(Path(cfg['runtime']), name)
+        else:
+            safe_path(name, cfg["allowed_roots"])
     if not task["acceptance"] or not set(task["tests"]).issubset({"text-contract", "git-diff-check", "syntax"}) or "text-contract" not in task["tests"]:
         raise Blocked("Only locally implemented tests are permitted; acceptance is required")
     for check in task["acceptance"]:
@@ -267,12 +280,18 @@ class Connectors:
         return api("https://api.github.com", self.github_token, route, method, payload)
 
     def notion(self, route, method="GET", payload=None):
+        allowed_pages = list(self.cfg['notion_pages'])
+        try:
+            production.read_grant(self.cfg['runtime'])
+            allowed_pages.append(production.policy()['notion_page'])
+        except production.Denied:
+            pass
         if self.cfg.get("notion_auth") == "codex-connector":
             page = route.removeprefix("/pages/")
-            if page not in self.cfg["notion_pages"]:
+            if page not in allowed_pages:
                 raise Blocked("Notion destination is not authorized")
             try:
-                with NotionRPC(self.cfg["codex"], Path(self.cfg["runtime"]), self.cfg["notion_pages"], clean_environment()) as rpc:
+                with NotionRPC(self.cfg["codex"], Path(self.cfg["runtime"]), allowed_pages, clean_environment()) as rpc:
                     result = rpc.tool("notion.fetch", {"id": page})
                     data = result.get("structuredContent")
                     if data is None:
@@ -390,6 +409,11 @@ def run_command(args, cwd, timeout=120, stdin=None, env=None):
         while True:
             if CONTROL:
                 CONTROL.heartbeat()
+                if getattr(CONTROL,'active_production',False):
+                    try:
+                        production.read_grant(CONTROL.root)
+                    except production.Denied as error:
+                        raise Blocked('Production approval revoked; owned child stopped') from error
                 if CONTROL.state.setting("stop") == "true":
                     raise Blocked("Operator stopped this worker job")
             if time.monotonic() - started > timeout:
@@ -431,6 +455,10 @@ def codex_proposal(cfg, task, checkout, evidence):
         file = contained_file(checkout, name)
         snapshots[name] = file.read_text(encoding="utf-8") if file.exists() else None
     payload = {"task": task, "files": snapshots, "contract": (checkout / "AGENTS.md").read_text(encoding="utf-8")}
+    if task['approval_class'] == production.CLASS:
+        payload['read_only_context'] = {name: contained_file(checkout, name).read_text(encoding='utf-8-sig') for name in sorted(production.READ_PATHS)}
+        payload['resource_profile'] = json.loads((evidence/'production-preflight.json').read_text())
+        payload['execution_boundary'] = 'Propose source changes only. Your source and tests will never execute on this host. One seed; preserve 16 GiB commit admission and 4 GiB reserve. Human code review and a verified isolated backend are required before any trial.'
     handoff = evidence / "handoff.json"
     if handoff.exists():
         payload["notion_handoff_untrusted_data"] = json.loads(handoff.read_text(encoding="utf-8"))
@@ -454,7 +482,13 @@ def apply_proposal(proposal, task, checkout, cfg):
         raise Blocked("Empty, duplicate or oversized edit set")
     prepared = []
     for edit in edits:
-        name = safe_path(edit["path"], cfg["allowed_roots"])
+        if task['approval_class'] == production.CLASS:
+            production.authorize(task, cfg, task['issue'])
+            name = edit['path']
+            if name not in production.SOURCE_PATHS:
+                raise ApprovalRequired('Production path is not authorized')
+        else:
+            name = safe_path(edit["path"], cfg["allowed_roots"])
         if name not in task["allowed_paths"] or not isinstance(edit["content"], str) or len(edit["content"].encode()) > 100000:
             raise Blocked("Proposal exceeds authorized task scope")
         if "\x00" in edit["content"]:
@@ -497,6 +531,7 @@ class Worker:
         self.cfg, self.remote, self.proposer = cfg, connectors or Connectors(cfg), proposer
         self.root = Path(cfg["runtime"])
         self.state = State(self.root)
+        self.active_production = False
 
     def heartbeat(self):
         self.state.setting("heartbeat", time.time())
@@ -535,6 +570,7 @@ class Worker:
     def execute(self, task):
         global CONTROL
         CONTROL = self
+        self.active_production = task['approval_class'] == production.CLASS
         report = {"task_id": task["task_id"], "revision": task["revision"], "issue": task["issue"], "notion_page": task["notion_page"], "state": "claimed", "summary": "Task started", "files": [], "commit": None, "branch": f"akcc/{task['task_id']}/r{task['revision']}", "tests": [], "studio_status": "unavailable" if task["requires_studio"] else "not required for this text task", "asset_validation": "not run; no model or texture edits allowed", "blockers": [], "next_action": "Review branch and evidence", "credits": "No paid generation used; Codex uses existing login", "confidence": "unverified", "reviewer_decision": "pending"}
         evidence = self.root / "jobs" / task["task_id"] / str(task["revision"])
         evidence.mkdir(parents=True, exist_ok=True)
@@ -547,6 +583,18 @@ class Worker:
                 raise Blocked("Issue changed after queue admission")
             parse_task(current, self.cfg)
             self.remote.verify_dispatch(current, task)
+            if task['approval_class'] == production.CLASS:
+                production.consume_workflow(self.root, task)
+                # Fixed read-only telemetry, before any candidate is requested.
+                # A low-memory profile is useful evidence, but never a trial permit.
+                profile = production.sample_resources()
+                write_json(evidence/'production-preflight.json',profile)
+                report['resources'] = profile
+                try:
+                    production.resource_gate(profile)
+                    report['trial_resource_admission'] = 'passed; execution boundary still required'
+                except production.Denied as error:
+                    report['trial_resource_admission'] = str(error)
             self.remote.comment(task["issue"], f"<!-- akcc-claim:{task['task_id']}:{task['revision']} -->", "claimed: authenticated local worker holds its OS lock. No other job will overlap.")
             self.remote.sync_notion(report)
             if task["requires_studio"]:
@@ -563,7 +611,8 @@ class Worker:
                 raise Blocked("Canonical origin mismatch")
             # Separate clone: dirty canonical checkout and its index are never touched.
             git(evidence, "clone", "--filter=blob:none", "--depth=1", "--no-checkout", "--single-branch", "--branch", "main", origin, str(checkout))
-            git(checkout, "sparse-checkout", "set", "--no-cone", "--stdin", stdin="\n".join("/" + name for name in ["AGENTS.md", *task["allowed_paths"]]) + "\n")
+            context_paths = sorted(production.READ_PATHS) if task['approval_class'] == production.CLASS else []
+            git(checkout, "sparse-checkout", "set", "--no-cone", "--stdin", stdin="\n".join("/" + name for name in ["AGENTS.md", *task["allowed_paths"], *context_paths]) + "\n")
             # A --no-checkout clone has an empty index. Populate it once, under
             # sparse rules, before branching; never run this against user work.
             git(checkout, "read-tree", "-mu", "HEAD")
@@ -578,12 +627,16 @@ class Worker:
             report["files"] = apply_proposal(proposal, task, checkout, self.cfg)
             self.state.update(task, "testing", report)
             report["tests"] = run_tests(task, checkout)
+            if task['approval_class'] == production.CLASS:
+                report['tests'] += production.validate_source(task, checkout)
             if not all(test["passed"] for test in report["tests"]):
                 raise Blocked("Acceptance failed; preserve candidate and submit corrected revision")
             current = self.remote.gh(f"/repos/{REPOSITORY}/issues/{task['issue']}")
             if current["state"] != "open" or digest(current["body"]) != task["body_hash"]:
                 raise Blocked("Issue authorization changed during implementation; candidate preserved without pushing")
             self.remote.verify_dispatch(current, task)
+            if task['approval_class'] == production.CLASS:
+                production.authorize(task,self.cfg,task['issue'])
             git(checkout, "add", "--", *report["files"])
             git(checkout, "diff", "--cached", "--check")
             staged = set(git(checkout, "diff", "--cached", "--name-only").splitlines())
@@ -593,6 +646,8 @@ class Worker:
             report["commit"] = git(checkout, "rev-parse", "HEAD")
             git(checkout, "push", "origin", "HEAD:refs/heads/" + report["branch"])
             report.update(state="review", summary="Allowlisted changes committed and pushed to a task branch; checks passed.", confidence="automated checks passed; human review pending")
+            if task['approval_class'] == production.CLASS:
+                report.update(summary='Coati source proposal pushed for human review. Candidate Python was not executed; no model was loaded.',next_action='Review the exact source diff. A separately verified isolated GPU execution backend is required before one Coati trial. No Studio or full-queue authority.')
         except (Blocked, subprocess.TimeoutExpired, OSError, ValueError, KeyError, TypeError, SyntaxError) as exc:
             reason = str(exc) if isinstance(exc, Blocked) else type(exc).__name__ + ": inspect preserved local evidence"
             report.update(state="needs-approval" if isinstance(exc, ApprovalRequired) else "blocked", summary="Task stopped safely", blockers=[reason], next_action="Inspect diagnostics and submit a corrected higher revision on the same issue. No automatic regeneration or repeat execution.")
@@ -601,6 +656,7 @@ class Worker:
         write_json(evidence / "qa.json", report)
         (evidence / "qa.md").write_text(markdown(report) + "\n", encoding="utf-8")
         self.queue_report(task, report)
+        self.active_production = False
         CONTROL = None
         return report
 
@@ -647,7 +703,7 @@ class Worker:
             pets = {"status": "unknown"}
         with self.state.mutex:
             pending = [dict(row) for row in self.state.db.execute("SELECT key,destination,attempts,due,error FROM outbox")]
-        return {"paused": self.state.setting("paused", default="true"), "heartbeat": self.state.setting("heartbeat"), "active": self.state.setting("active", default=""), "last_error": self.state.setting("last_error", default=""), "tasks": tasks, "pet_production": pets, "rejections": json.loads(self.state.setting("rejections", default="[]")), "pending_delivery": pending}
+        return {"permission_policy": production.status(self.root), "paused": self.state.setting("paused", default="true"), "heartbeat": self.state.setting("heartbeat"), "active": self.state.setting("active", default=""), "last_error": self.state.setting("last_error", default=""), "tasks": tasks, "pet_production": pets, "rejections": json.loads(self.state.setting("rejections", default="[]")), "pending_delivery": pending}
 
 
 def dashboard_token(root):

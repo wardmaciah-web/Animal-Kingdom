@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-09",
+  "tests": [
+    {
+      "command": "python -m unittest tools.command_center.test_bridge tools.command_center.test_production -v",
+      "exit_code": 0,
+      "evidence": "suite-1.txt"
+    },
+    {
+      "command": "python -m unittest discover -s tools/pet_pipeline/tests -v",
+      "exit_code": 0,
+      "evidence": "suite-2.txt"
+    }
+  ],
+  "counts": {
+    "existing_command_center": 27,
+    "new_production_security": 32,
+    "pet_pipeline_regressions": 48,
+    "total": 107
+  },
+  "policy_sha256": "ffe0bb15c4366d98d1384374dd6fbfb7349575d71fc5339a0795b5cd03569f83",
+  "controller_sha256": "4175f9d7bcc0beded853f5c5fe3f27eaaa61c071c578b4263697605512f344a5",
+  "runtime_execution": {
+    "ready": false,
+    "windows_sandbox_installed": false,
+    "reason": "No verified GPU execution backend with credential/network isolation and an owned cancellable VM lease. Host execution is prohibited.",
+    "required_evidence": [
+      "credential access denied",
+      "network denied",
+      "unmapped host paths denied",
+      "approved assets read/write denied",
+      "only owned VM cancelled on watchdog/stop/crash",
+      "CUDA usable within isolated VM",
+      "single Coati seed and artifact limits enforced"
+    ]
+  },
+  "live_worker": {
+    "paused": "false",
+    "heartbeat_age_seconds": 0.07,
+    "production_grant_exists": false,
+    "configuration_changed": false,
+    "restarted": false
+  },
+  "issue_2": {
+    "dispatched": false,
+    "executed": false
+  },
+  "activation": "not performed; all grant tests used disposable fixture runtimes",
+  "publication": false,
+  "approved_assets_modified": false,
+  "source_runtime_tests": "Candidate Python never executed; only fixed broker static checks are available"
+}

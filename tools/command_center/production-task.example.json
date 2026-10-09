@@ -1,0 +1,18 @@
+{
+  "task_id": "coati-sdxl-memory",
+  "revision": 1,
+  "source": "chatgpt",
+  "priority": 100,
+  "approval_class": "production-coati-v1",
+  "policy_sha256": "REPLACE_WITH_LOCAL_REVIEWED_POLICY_SHA256_AFTER_APPROVAL",
+  "actions": ["profile-resources", "propose-source", "static-qa"],
+  "allowed_paths": ["tools/pet_pipeline/generate_concepts.py", "tools/pet_pipeline/concept_coati_anatomy.json"],
+  "notion_page": "3f3d6658-7369-812c-b612-ef141e6fe703",
+  "instructions": "Issue #2: inspect the supplied memory profile and propose a lower-commit free SDXL loading fix. Preserve 16 GiB admission and 4 GiB watchdog reserve. Reduce the Coati recipe to one seed. Preserve species/anatomy/style instructions and references. Source review only: no host execution, no Studio, no generation, no full queue.",
+  "acceptance": [
+    {"path": "tools/pet_pipeline/generate_concepts.py", "contains": "local_files_only=True"},
+    {"path": "tools/pet_pipeline/concept_coati_anatomy.json", "contains": "JungleCoati"}
+  ],
+  "tests": ["text-contract", "git-diff-check", "syntax"],
+  "requires_studio": false
+}
