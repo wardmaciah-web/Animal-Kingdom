@@ -1,0 +1,24 @@
+# Opt-in Animal Kingdom free-only review profile. Base config is unchanged.
+model = "openrouter/cohere/north-mini-code:free"
+model_provider = "ak_free"
+model_reasoning_effort = "none"
+approval_policy = "never"
+sandbox_mode = "read-only"
+web_search = "disabled"
+
+[model_providers.ak_free]
+name = "Animal Kingdom strict free-only OmniRoute"
+base_url = "http://127.0.0.1:20129/v1"
+env_key = "AK_FREE_ROUTER_KEY"
+wire_api = "responses"
+requires_openai_auth = false
+request_max_retries = 0
+stream_max_retries = 0
+stream_idle_timeout_ms = 60000
+
+[features]
+apps = false
+multi_agent = false
+shell_tool = false
+hooks = false
+plugins = false

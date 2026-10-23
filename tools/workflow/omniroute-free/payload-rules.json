@@ -1,0 +1,18 @@
+{
+  "override": [
+    {
+      "models": [{"name": "cohere/north-mini-code:free"}, {"name": "openrouter/cohere/north-mini-code:free"}],
+      "params": {
+        "provider": {"only": ["cohere"], "allow_fallbacks": false, "max_price": {"prompt": 0, "completion": 0, "request": 0, "image": 0}},
+        "reasoning": {"effort": "none"},
+        "max_tokens": 2048
+      }
+    }
+  ],
+  "filter": [
+    {
+      "models": [{"name": "*"}],
+      "params": ["models", "route", "plugins", "preset", "transforms", "web_search_options", "service_tier"]
+    }
+  ]
+}
