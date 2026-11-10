@@ -1,0 +1,43 @@
+{
+  "id": "production-coati-v1",
+  "version": 1,
+  "default_enabled": false,
+  "repository": "wardmaciah-web/Animal-Kingdom",
+  "issue": 2,
+  "task_id": "coati-sdxl-memory",
+  "approval_class": "production-coati-v1",
+  "notion_page": "3f3d6658-7369-812c-b612-ef141e6fe703",
+  "edit_paths": [
+    "tools/pet_pipeline/generate_concepts.py",
+    "tools/pet_pipeline/run_concepts.py",
+    "tools/pet_pipeline/concept_coati_anatomy.json"
+  ],
+  "read_only_paths": [
+    "tools/pet_pipeline/pet_pipeline.py",
+    "tools/pet_pipeline/resource-policy.json",
+    "tools/pet_pipeline/production-policy.json"
+  ],
+  "actions": ["profile-resources", "propose-source", "static-qa"],
+  "reviewed_trial_action": "coati-concept-once",
+  "tests": ["text-contract", "git-diff-check", "syntax"],
+  "artifact_extensions": [".json", ".jsonl", ".md", ".png"],
+  "scratch_root": "D:/AnimalKingdom3D/scratch/command-center-coati-v1",
+  "output_root": "D:/AnimalKingdom3D/outputs/command-center-coati-v1",
+  "resource_limits": {
+    "admit_commit_gib": 16,
+    "admit_ram_gib": 4,
+    "admit_vram_gib": 7,
+    "admit_disk_gib": 10,
+    "stop_commit_gib": 4,
+    "stop_ram_gib": 1,
+    "stop_vram_gib": 0.25,
+    "max_seconds": 900,
+    "sample_seconds": 0.5,
+    "max_trials": 1,
+    "max_width": 1024,
+    "max_height": 1024,
+    "max_steps": 35
+  },
+  "execution_boundary": "offline-windows-sandbox-reviewed-bundle",
+  "forbidden": ["host-python-execution", "shell-commands", "credentials", "network", "src", "approved-assets", "policy-edits", "controller-edits", "AGENTS.md", ".git", "merging", "publishing", "paid-credits", "purchases", "pagefile-changes", "deletion", "studio", "biome-unlocks", "full-queue", "reconstruction"]
+}
